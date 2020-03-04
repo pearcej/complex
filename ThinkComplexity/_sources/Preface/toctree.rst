@@ -7,3 +7,6 @@ Preface
     introduction.rst
     who.rst
     changes.rst
+    usingCode.rst
+    contributors.rst
+    
