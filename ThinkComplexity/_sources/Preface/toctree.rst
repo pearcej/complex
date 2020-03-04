@@ -9,4 +9,4 @@ Preface
     changes.rst
     usingCode.rst
     contributors.rst
-    Test.rst
+    Test2.rst
