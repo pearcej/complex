@@ -10,10 +10,10 @@
 .. toc_version: 2
 
 =============================================================
-Problem Solving with Algorithms and Data Structures using C++
+Thinking Complexity
 =============================================================
 
-By Brad Miller and David Ranum, Luther College,
+By Allen B. Downey,
 and Jan Pearce, Berea College
 
 .. raw:: html
