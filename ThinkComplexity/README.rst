@@ -1,4 +1,4 @@
-Problem Solving with Algorithms and Data Structures Using C++
+Thinking Complexity
 =============================================================
 
 This book began as the paper book, *Problem Solving with Algorithms and Data Structures Using Python*, first published by Franklin Beedle & Associates written by Brad Miller and David Ranum back in 2005.  It was translated to C++ by Jan Pearce and a team of excellent Berea

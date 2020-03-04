@@ -306,3 +306,7 @@
    Graphs/Dijkstra’sAlgorithm.rst
    Graphs/AnalysisofDijkstra’sAlgorithm.rst
    Graphs/Prim’sSpanningTreeAlgorithm.rst
+
+   Preface/who.rst
+   Preface/introduction.rst
+   Preface/changes.rst
