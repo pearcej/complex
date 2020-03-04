@@ -2,6 +2,8 @@ Preface
 ::::::::::::
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 3
 
-    Introduction.rst
+    introduction.rst
+    who.rst
+    changes.rst
