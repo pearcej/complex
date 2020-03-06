@@ -28,7 +28,9 @@ and Jan Pearce, Berea College
 
    Preface/toctree.rst
    ComplexityScience/toctree.rst
-   
+
+
+
 
 Acknowledgements
 ::::::::::::::::

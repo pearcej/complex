@@ -2,11 +2,11 @@ Preface
 ::::::::::::
 
 .. toctree::
-    :maxdepth: 3
+    :maxdepth: 2
 
     introduction.rst
     who.rst
     changes.rst
     usingCode.rst
     contributors.rst
-    Test2.rst
+    
