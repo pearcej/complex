@@ -1,7 +1,11 @@
-Complexity Science
+ComplexityScience
 ::::::::::::::::::
 
 .. toctree::
     :maxdepth: 2
 
-    Objectives.rst
+    introduction.rst
+    changingcriteriainscience.rst
+    TheaxesofScientificModels.rst
+    ComplexityEngineering.rst
+    ComplexityThinking.rst
