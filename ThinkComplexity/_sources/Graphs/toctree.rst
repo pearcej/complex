@@ -6,4 +6,5 @@ Graphs
     
     Introduction.rst
     What.rst
-   
+    NetworkX.rst
+    Random.rst
