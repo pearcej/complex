@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 #
 # Problem Solving with Algorithms and Data Structures documentation build configuration file, created by
 # sphinx-quickstart on Thu Oct 27 08:17:45 2011.
