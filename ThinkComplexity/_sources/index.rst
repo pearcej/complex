@@ -29,6 +29,7 @@ and Jan Pearce, Berea College
    Preface/toctree.rst
    ComplexityScience/toctree.rst
    Graphs/toctree.rst
+   Small World Graphs/toctree.rst
 
 
 
