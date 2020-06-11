@@ -33,6 +33,7 @@ and Jan Pearce, Berea College
    Scale-free networks/toctree.rst
    Cellular Automatons/toctree.rst
    Game of Life/toctree.rst
+   Physical modeling/toctree.rst
 
 
 
