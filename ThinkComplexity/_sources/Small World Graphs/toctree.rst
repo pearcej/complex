@@ -12,5 +12,7 @@ Small World Graphs
     Clustering.rst
     Shortest path lengths.rst
     The WS experiment.rst
-
-
+    What kind of explanation is that.rst
+    Breadth-First Search.rst
+    Dijkstra’s algorithm.rst
+    Exercises.rst
