@@ -32,6 +32,7 @@ and Jan Pearce, Berea College
    Small World Graphs/toctree.rst
    Scale-free networks/toctree.rst
    Cellular Automatons/toctree.rst
+   Game of Life/toctree.rst
 
 
 
