@@ -34,6 +34,7 @@ and Jan Pearce, Berea College
    Cellular Automatons/toctree.rst
    Game of Life/toctree.rst
    Physical modeling/toctree.rst
+   Self-organized criticality/toctree.rst
 
 
 
