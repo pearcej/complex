@@ -32,4 +32,4 @@ In  classical  engineering,  the  complexity  of  large systems  is  managed  by
 
 **Design→search **
 
- Engineering is sometimes described as a search for solutions in a landscape of possible designs.  Increasingly, the search process can be automated.  For example, genetic algorithms explore large design spaces  and  discover  solutions  human  engineers  would  not  imagine  (orlike).  The ultimate genetic algorithm, evolution, notoriously generates designs that violate the rules of human engineering.
+Engineering is sometimes described as a search for solutions in a landscape of possible designs.  Increasingly, the search process can be automated.  For example, genetic algorithms explore large design spaces  and  discover  solutions  human  engineers  would  not  imagine  (orlike).  The ultimate genetic algorithm, evolution, notoriously generates designs that violate the rules of human engineering.

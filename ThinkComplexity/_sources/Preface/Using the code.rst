@@ -2,9 +2,9 @@
     This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
     To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
 
-
 Using the code
-~~~~~~~~~~~~~~
+----------------
+
 All code used in this book is available from a Git repository on GitHub: http://thinkcomplex.com/repo. If you are not familiar with Git, it is a version control system that allows you to keep track of the files that make up a project.
 A collection of files under Git’s control is called a “repository”. GitHub is a hosting service that provides storage for Git repositories and a convenient web interface.
 
@@ -26,33 +26,27 @@ There are three ways you can work with the Jupyter notebooks:
 
 ::
 
-$ conda install jupyter
-
-::
+    $ conda install jupyter
 
 Before you launch Jupyter, you should cd into the directory that contains the code:
 
 ::
 
-$ cd ThinkComplexity2/code
-
-::
+    $ cd ThinkComplexity2/code
 
 And then start the Jupyter server:
 
 ::
 
-$ jupyter notebook
-
-::
+    $ jupyter notebook
 
 When you start the server, it should launch your default web browser or create a new tab in an open browser window. Then you can open and run the notebooks.
 
-Run Jupyter on Binder Binder is a service that runs Jupyter in a virtual machine. If you follow this link, http://thinkcomplex.com/binder , you should get a Jupyter home page with the notebooks for this book and the supporting data and scripts.
+**Run Jupyter on Binder**  Binder is a service that runs Jupyter in a virtual machine. If you follow this link, http://thinkcomplex.com/binder , you should get a Jupyter home page with the notebooks for this book and the supporting data and scripts.
 
 You can run the scripts and modify them to run your own code, but the virtual machine you run them in is temporary. If you leave it idle, the virtual machine disappears along with any changes you made.
 
-View notebooks on GitHub GitHub provides a view of the notebooks you can can use to read the notebooks and see the results I generated, but you won’t be able to modify or run the code.
+**View notebooks on GitHub**  GitHub provides a view of the notebooks you can can use to read the notebooks and see the results I generated, but you won’t be able to modify or run the code.
 
 Good luck, and have fun!
 Allen B. Downey

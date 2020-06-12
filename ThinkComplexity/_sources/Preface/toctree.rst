@@ -1,12 +1,12 @@
 Preface
-::::::::::::
+:::::::
 
 .. toctree::
     :maxdepth: 2
 
     introduction.rst
-    who.rst
-    changes.rst
-    usingCode.rst
-    contributors.rst
+    Who is this book for.rst
+    Changes from the first edition.rst
+    Using the code.rst
+    Contributor List.rst 
     
