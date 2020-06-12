@@ -51,8 +51,8 @@ A natural question about the Watts and Strogatz paper is whether the small world
 
 To answer this question, choose a variation of the Watts and Strogatz model and repeat the experiment. There are two kinds of variation you might consider:
 
-    - Instead of starting with a regular graph, start with another graph with high clustering. For example, you could put nodes at random locations in a 2-D space and connect each node to its nearest k neighbors.
-    - Experiment with different kinds of rewiring.
+- Instead of starting with a regular graph, start with another graph with high clustering. For example, you could put nodes at random locations in a 2-D space and connect each node to its nearest k neighbors.
+- Experiment with different kinds of rewiring.
 
 If a range of similar models yield similar behavior, we say that the results of the paper are robust.
 

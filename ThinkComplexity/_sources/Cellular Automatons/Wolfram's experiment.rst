@@ -8,11 +8,11 @@ The rules that determine how the system evolves in time are based on the notion 
 
 In these experiments, the cells have two states, denoted 0 and 1 or “off" and “on". A rule can be summarized by a table that maps from the state of the neighborhood (a tuple of three states) to the next state of the center cell. The following table shows an example:
 
-Figure::
+Figure:
 
 The first row shows the eight states a neighborhood can be in. The second row shows the state of the center cell during the next time step. As a concise encoding of this table, Wolfram suggested reading the bottom row as a binary number; because 00110010 in binary is 50 in decimal, Wolfram calls this CA “Rule 50”.
 
-Figure::
+Figure:
 
 Figure ?? shows the effect of Rule 50 over 10 time steps. The first row shows the state of the system during the first time step; it starts with one cell “on” and the rest “off”. The second row shows the state of the system during the next time step, and so on.
 

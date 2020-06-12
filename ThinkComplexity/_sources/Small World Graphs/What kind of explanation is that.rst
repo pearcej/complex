@@ -12,8 +12,8 @@ By comparison, Watts and Strogatz’s explanation of the small world phenomenon 
 
 Many of the models in this book are like the Watts and Strogatz model: abstract, simulation-based and (at least superficially) less formal than conventional mathematical models. One of the goals of this book is to consider the questions these models raise:
 
-    - What kind of work can these models do: are they predictive, or explanatory, or both?
-    - Are the explanations these models offer less satisfying than explanations based on more traditional models? Why?
-    - How should we characterize the differences between these and more conventional models? Are they different in kind or only in degree?
+- What kind of work can these models do: are they predictive, or explanatory, or both?
+- Are the explanations these models offer less satisfying than explanations based on more traditional models? Why?
+- How should we characterize the differences between these and more conventional models? Are they different in kind or only in degree?
 
 Over the course of the book I will offer my answers to these questions, but they are tentative and sometimes speculative. I encourage you to consider them skeptically and reach your own conclusions.
