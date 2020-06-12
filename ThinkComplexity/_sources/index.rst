@@ -36,6 +36,7 @@ and Jan Pearce, Berea College
    Physical modeling/toctree.rst
    Self-organized criticality/toctree.rst
    Agent-based models/toctree.rst
+   Herds, Flocks, and Traffic Jams/toctree.rst
 
 
 
