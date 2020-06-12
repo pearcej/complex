@@ -10,6 +10,7 @@ In the Facebook dataset, the average number of edges per node is about 22. Since
 We can make a WS graph with n=4039 and k=44. When p=0, we get a ring lattice.
 
 ::
+
     lattice = nx.watts_strogatz_graph(n, k, 0)
 
 In this graph, clustering is high: C is 0.73, compared to 0.61 in the dataset. But L is 46, much higher than in the dataset!
@@ -17,6 +18,7 @@ In this graph, clustering is high: C is 0.73, compared to 0.61 in the dataset. B
 With p=1 we get a random graph:
 
 ::
+
     random_graph = nx.watts_strogatz_graph(n, k, 1)
 
 In the random graph, L is 2.6, even shorter than in the dataset (3.7), but C is only 0.011, so that’s no good.

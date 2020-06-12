@@ -4,6 +4,7 @@ Physical modeling
 .. toctree::
     :maxdepth: 2
 
+    Introduction.rst
     Diffusion.rst
     Reaction-diffusion.rst
     Percolation.rst
