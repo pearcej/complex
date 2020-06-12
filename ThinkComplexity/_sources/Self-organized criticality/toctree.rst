@@ -1,5 +1,5 @@
-Scale-free networks
-:::::::::::::::::::
+Self-organized criticality
+::::::::::::::::::::::::::
 
 .. toctree::
     :maxdepth: 2
