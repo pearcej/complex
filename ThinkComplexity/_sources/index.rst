@@ -28,6 +28,17 @@ and Jan Pearce, Berea College
 
    Preface/toctree.rst
    ComplexityScience/toctree.rst
+   Graphs/toctree.rst
+   Small World Graphs/toctree.rst
+   Scale-free networks/toctree.rst
+   Cellular Automatons/toctree.rst
+   Game of Life/toctree.rst
+   Physical modeling/toctree.rst
+   Self-organized criticality/toctree.rst
+   Agent-based models/toctree.rst
+   Herds, Flocks, and Traffic Jams/toctree.rst
+   Evolution/toctree.rst
+   Evolution of cooperation/toctree.rst
 
 
 
