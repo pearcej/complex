@@ -37,6 +37,7 @@ and Jan Pearce, Berea College
    Self-organized criticality/toctree.rst
    Agent-based models/toctree.rst
    Herds, Flocks, and Traffic Jams/toctree.rst
+   Evolution/toctree.rst
 
 
 
