@@ -2,7 +2,7 @@
     This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
 
 
-introduction
+Introduction
 ------------
 
 Complexity science is an interdisciplinary field — at the intersection of mathematics, computer science and natural science — that focuses on complex systems, which are systems with many interacting components.
