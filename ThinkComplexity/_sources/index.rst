@@ -38,6 +38,7 @@ and Jan Pearce, Berea College
    Agent-based models/toctree.rst
    Herds, Flocks, and Traffic Jams/toctree.rst
    Evolution/toctree.rst
+   Evolution of cooperation/toctree.rst
 
 
 
