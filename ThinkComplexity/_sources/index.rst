@@ -35,6 +35,7 @@ and Jan Pearce, Berea College
    Game of Life/toctree.rst
    Physical modeling/toctree.rst
    Self-organized criticality/toctree.rst
+   Agent-based models/toctree.rst
 
 
 
