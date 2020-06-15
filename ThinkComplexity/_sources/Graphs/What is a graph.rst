@@ -5,9 +5,9 @@ What is a Graph?
 
 .. figure:: Figures/thinkcomplexity2001.png
    :align: center
-   :alt: "Figure 2.1: A directed graph that represents a social network."
+   :alt: "Figure 3.1: A directed graph that represents a social network."
 
-   Figure 2.1: A directed graph that represents a social network.
+   Figure 3.1: A directed graph that represents a social network.
 
    
 To most people a “graph" is a visual representation of data, like a bar chart or a plot of stock prices over time. That’s not what this chapter is about.
