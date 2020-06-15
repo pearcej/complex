@@ -1,8 +1,17 @@
 Generating graphs
 -----------------
-Figure 2.3: A complete graph with 10 nodes.
 
-I’ll start by generating a complete graph, which is a graph where every node is connected to every other.
+.. _fig_cpp_reference:
+
+.. figure:: Figures/thinkcomplexity2003.png
+   :align: center
+   :alt: "Figure 2.3: A complete graph with 10 nodes."
+
+   Figure 2.3: A complete graph with 10 nodes.
+
+
+
+I’ll start by generating a **complete** graph, which is a graph where every node is connected to every other.
 
 Here’s a generator function that takes a list of nodes and enumerates all distinct pairs. If you are not familiar with generator functions, you can read about them at http://thinkcomplex.com/gen.
 

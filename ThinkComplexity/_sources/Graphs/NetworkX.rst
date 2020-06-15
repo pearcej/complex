@@ -1,12 +1,14 @@
 NetworkX
 ---------
-..figure_cpp_reference:
+.. _fig_cpp_reference:
 
-.. figure:: _images/figure_2.2.png
+.. figure:: Figures/thinkcomplexity2002.png
    :align: center
-   :alt: "Location named varN containing value of 100"
+   :alt: "Figure 2.2: An undirected graph that represents driving time between cities."
 
-Figure 2.2: An undirected graph that represents driving time between cities.
+   Figure 2.2: An undirected graph that represents driving time between cities.
+
+
 To represent graphs, we’ll use a package called NetworkX, which is the most commonly used network library in Python. You can read more about it at http://thinkcomplex.com/netx, but I’ll explain it as we go along.
 
 

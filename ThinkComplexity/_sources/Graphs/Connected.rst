@@ -1,12 +1,13 @@
 Connected Graphs
 ----------------
-A graph is connected if there is a path from every node to every other node (see http://thinkcomplex.com/conn).
+
+A graph is **connected** if there is a path from every node to every other node (see http://thinkcomplex.com/conn).
 
 For many applications involving graphs, it is useful to check whether a graph is connected. Fortunately, there is a simple algorithm that does it.
 
 You can start at any node and check whether you can reach all other nodes. If you can reach a node, v, you can reach any of the neighbors of v, which are the nodes connected to v by an edge.
 
-The Graph class provides a method called neighbors that returns a list of neighbors for a given node. For example, in the complete graph we generated in the previous section:
+The Graph class provides a method called neighbors that returns a list of **neighbors** for a given node. For example, in the complete graph we generated in the previous section:
 
 ::
 

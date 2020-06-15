@@ -1,8 +1,21 @@
 Probability of Connectivity
 ---------------------------
-Figure 2.5: Probability of connectivity with n=10 and a range of p. The vertical line shows the predicted critical value.
 
-Figure 2.6: Probability of connectivity for several values of n and a range of p.
+.. _fig_cpp_reference:
+
+.. figure:: Figures/thinkcomplexity2005.png
+   :align: center
+   :alt: "Figure 2.5: Probability of connectivity with n=10 and a range of p. The vertical line shows the predicted critical valu"
+
+   Figure 2.5: Probability of connectivity with n=10 and a range of p. The vertical line shows the predicted critical value.
+
+
+.. figure:: Figures/thinkcomplexity2006.png
+   :align: center
+   :alt: "Figure 2.6: Probability of connectivity for several values of n and a range of p."
+
+   Figure 2.6: Probability of connectivity for several values of n and a range of p.
+
 
 For given values of n and p, we would like to know the probability that G(n, p) is connected. We can estimate it by generating a large number of random graphs and counting how many are connected. Here’s how:
 
@@ -41,7 +54,7 @@ The NumPy function logspace returns an array of 11 values from 10−2.5 to 100 =
 
 For each value of p in the array, we compute the probability that a graph with parameter p is connected and store the results in ys.
 
-Figure ?? shows the results, with a vertical line at the computed critical value, p* = 0.23. As expected, the transition from 0 to 1 occurs near the critical value.
+Figure 2.6 shows the results, with a vertical line at the computed critical value, p* = 0.23. As expected, the transition from 0 to 1 occurs near the critical value.
 
 Figure ?? shows similar results for larger values of n. As n increases, the critical value gets smaller and the transition gets more abrupt.
 

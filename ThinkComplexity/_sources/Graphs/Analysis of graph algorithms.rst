@@ -2,7 +2,7 @@ Analysis of Graph Algorithms
 ----------------------------
 Earlier in this chapter I presented an algorithm for checking whether a graph is connected; in the next few chapters, we will see other graph algorithms. Along the way, we will analyze the performance of those algorithms, figuring out how their run times grow as the size of the graphs increases.
 
-If you are not already familiar with analysis of algorithms, you might want to read Appendix B of Think Python, 2nd Edition, at http://thinkcomplex.com/tp2.
+If you are not already familiar with analysis of algorithms, you might want to read *Appendix B of Think Python, 2nd Edition*, at http://thinkcomplex.com/tp2.
 
 The order of growth for graph algorithms is usually expressed as a function of n, the number of vertices (nodes), and m, the number of edges.
 
