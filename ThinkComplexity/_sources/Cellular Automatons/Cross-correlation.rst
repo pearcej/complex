@@ -1,9 +1,9 @@
 Cross-correlation
 -----------------
 
-The operation in the previous section — selecting elements from an array and adding them up — is an example of an operation that is so useful, in so many domains, that it has a name: cross-correlation. And NumPy provides a function, called correlate, that computes it. In this section I’ll show how we can use NumPy to write a simpler, faster version of step.
+The operation in the previous section — selecting elements from an array and adding them up — is an example of an operation that is so useful, in so many domains, that it has a name: **cross-correlation**. And NumPy provides a function, called ``correlate``, that computes it. In this section I’ll show how we can use NumPy to write a simpler, faster version of ``step``.
 
-The NumPy correlate function takes an array, a, and a “window", w, with length N and computes a new array, c, where element k is the following summation:
+The NumPy ``correlate`` function takes an array, a, and a “window", w, with length N and computes a new array, c, where element k is the following summation:
 
 Figure:
 
@@ -15,7 +15,7 @@ We can write this operation in Python like this:
         N = len(w)
         return sum(a[k:k+N] * w)
 
-This function computes element k of the correlation between a and w. To show how it works, I’ll create an array of integers:
+This function computes element ``k`` of the correlation between ``a`` and ``w``. To show how it works, I’ll create an array of integers:
 
 ::
 
@@ -29,13 +29,21 @@ And a window:
 
 ::
 
+    window = [1, 1, 1]
+
+    print(window)
+
+With this window, each element, ``c_k``, is the sum of consecutive elements from ``a``:
+
+::
+
     c_k(row, window, 0)
     3
 
     c_k(row, window, 1)
     6
 
-We can use c_k to write correlate, which computes the elements of c for all values of k where the window and the array overlap.
+We can use ``c_k`` to write ``correlate``, which computes the elements of ``c`` for all values of ``k`` where the window and the array overlap.
 
 ::
  
@@ -54,7 +62,7 @@ Here’s the result:
 
     [ 3  6  9 12 15 18 21 24]
 
-The NumPy function correlate does the same thing:
+The NumPy function ``correlate`` does the same thing:
 
 ::
 
@@ -63,9 +71,9 @@ The NumPy function correlate does the same thing:
 
     [ 3  6  9 12 15 18 21 24]
 
-The argument mode='valid' means that the result contains only the elements where the window and array overlap, which are considered valid.
+The argument ``mode='valid'`` means that the result contains only the elements where the window and ``array`` overlap, which are considered valid.
 
-The drawback of this mode is that the result is not the same size as array. We can fix that with mode='same', which adds zeros to the beginning and end of array:
+The drawback of this mode is that the result is not the same size as ``array``. We can fix that with ``mode='same'``, which adds zeros to the beginning and end of ``array``:
 
 ::
 
@@ -74,9 +82,9 @@ The drawback of this mode is that the result is not the same size as array. We c
 
     [ 1  3  6  9 12 15 18 21 24 17]
 
-Now the result is the same size as array. As an exercise at the end of this chapter, you’ll have a chance to write a version of correlate that does the same thing.
+Now the result is the same size as ``array``. As an exercise at the end of this chapter, you’ll have a chance to write a version of ``correlate`` that does the same thing.
 
-We can use NumPy’s implementation of correlate to write a simple, faster version of step:
+We can use NumPy’s implementation of ``correlate`` to write a simple, faster version of ``step``:
 
 ::
 
@@ -85,4 +93,4 @@ We can use NumPy’s implementation of correlate to write a simple, faster versi
     c = np.correlate(row, window, mode='same')
     array[i] = c % 2
 
-In the notebook for this chapter, you’ll see that step2 yields the same results as step.
+In the notebook for this chapter, you’ll see that ``step2`` yields the same results as ``step``.
