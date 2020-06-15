@@ -1,6 +1,6 @@
 Results
--------
-Suppose we start with a population of three agents: one always cooperates, one always defects, and one plays the TFT strategy. If we run Tournament.melee with this population, the cooperator gets 1.5 points per round, the TFT agent gets 1.9, and the defector gets 3.33. This result suggests that “always defect" should quickly become the dominant strategy.
+-------------
+Suppose we start with a population of three agents: one always cooperates, one always defects, and one plays the TFT strategy. If we run ``Tournament.melee`` with this population, the cooperator gets 1.5 points per round, the TFT agent gets 1.9, and the defector gets 3.33. This result suggests that “always defect" should quickly become the dominant strategy.
 
 But “always defect" contains the seeds of its own destruction. If nicer strategies are driven to extinction, the defectors have no one to take advantage of. Their fitness drops, and they become vulnerable to invasion by cooperators.
 
@@ -14,7 +14,12 @@ I start with 100 identical agents who always defect, and run the simulation for 
     agents = make_identical_agents(100, list('DDDDDDD'))
     sim = PDSimulation(tour, agents)
 
-Figure 12.1:
+.. figure:: Figures/figure_13.1.png
+    :align: center
+
+    Figure 13.1: Average fitness (points scored per round of Prisoner’s Dilemma)
+   
+
 
 Figure ?? shows mean fitness over time (using the MeanFitness instrument from Section ??). Initially mean fitness is 1, because when defectors face each other, they get only 1 point each per round.
 
@@ -24,7 +29,7 @@ The rest of the simulation is highly variable, but with the exception of one big
 
 And that’s not bad! It’s not quite a utopia of cooperation, which would average 3 points per round, but it’s a long way from the dystopia of perpetual defection. And it’s a lot better than what we might expect from the natural selection of self-interested agents.
 
-To get some insight into this level of fitness, let’s look at a few more instruments. Niceness measures the fraction of cooperation in the genotypes of the agents after each time step:
+To get some insight into this level of fitness, let’s look at a few more instruments. ``Niceness`` measures the fraction of cooperation in the genotypes of the agents after each time step:
 
 ::
 
@@ -36,9 +41,12 @@ To get some insight into this level of fitness, let’s look at a few more instr
             metric = np.mean(responses == 'C')
             self.metrics.append(metric)
 
-responses is an array with one row for each agent and one column for each element of the genome. metric is the fraction of elements that are 'C', averaged across agents.
+``responses`` is an array with one row for each agent and one column for each element of the genome. ``metric`` is the fraction of elements that are 'C', averaged across agents.
 
-Figure 12.2:
+.. figure:: Figures/figure_13.2.png
+    :align: center
+   
+    Figure 13.2: Average niceness across all genomes in the population (left), and fraction of population that cooperates in the first round (right).
 
 Figure ?? (left) shows the results: starting from 0, average niceness increases quickly to 0.75, then oscillates between 0.4 and 0.85, with a long-term mean near 0.65. Again, that’s a lot of niceness!
 
@@ -70,7 +78,7 @@ The other characteristics Axelrod identifies in successful strategies are retali
             metric = np.mean(after_d=='D') - np.mean(after_c=='D')
             self.metrics.append(metric)
 
-Retaliating compares the number of elements in all genomes where an agent defects after the opponent defects (elements 2, 4, and 6) with the number of places where an agents defects after the opponent cooperates. As you might expect by now, the results vary substantially (you can see the graph in the notebook). On average the difference between these fractions is less than 0.1, so if agents defect 30% of the time after the opponent cooperates, they might defect 40% of the time after a defection.
+``Retaliating`` compares the number of elements in all genomes where an agent defects after the opponent defects (elements 2, 4, and 6) with the number of places where an agents defects after the opponent cooperates. As you might expect by now, the results vary substantially (you can see the graph in the notebook). On average the difference between these fractions is less than 0.1, so if agents defect 30% of the time after the opponent cooperates, they might defect 40% of the time after a defection.
 
 This result provides weak support for the claim that successful strategies retaliate. But maybe it’s not necessary for all agents, or even many, to be retaliatory; if there is at least some tendency toward retaliation in the population as a whole, that might be enough to prevent high-defection strategies from gaining ground.
 

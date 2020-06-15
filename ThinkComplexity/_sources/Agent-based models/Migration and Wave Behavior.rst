@@ -1,7 +1,10 @@
 Migration and Wave Behavior
 ----------------------------
 
-Figure 9.5::
+.. figure:: Figures/figure_10.5.png
+    :align: center
+
+    Figure 10.5: Wave behavior in Sugarscape: initial configuration (left), after 6 steps (middle) and after 12 steps (right).
 
 Although the purpose of Sugarscape is not primarily to explore the movement of agents in space, Epstein and Axtell observed some interesting patterns when agents migrate.
 

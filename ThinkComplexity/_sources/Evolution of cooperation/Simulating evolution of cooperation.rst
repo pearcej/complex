@@ -1,5 +1,5 @@
 Simulating evolution of cooperation
------------------------------------
+-----------------------------------------
 *Evolution of Cooperation* is the title of the first book where Axelrod presented results from Prisoner’s Dilemma tournaments and discussed the implications for the problem of altruism. Since then, he and other researchers have explored the evolutionary dynamics of PD tournaments, that is, how the distribution of strategies changes over time in a population of PD contestants. In the rest of this chapter, I run a version of those experiments and present the results.
 
 First, we’ll need a way to encode a PD strategy as a genotype. For this experiment, I consider strategies where the agent’s choice in each round depends only on the opponent’s choice in the previous two rounds. I represent a strategy using a dictionary that maps from the opponent’s previous two choices to the agent’s next choice.
@@ -23,13 +23,13 @@ Here is the class definition for these agents:
             self.responses = dict(zip(self.keys, values))
             self.fitness = fitness
 
-keys is the sequence of keys in each agent’s dictionary, where the tuple ('C', 'C') means that the opponent cooperated in the previous two rounds; (None, 'C') means that only one round has been played and the opponent cooperated; and (None, None) means that no rounds have been played.
+``keys`` is the sequence of keys in each agent’s dictionary, where the tuple ('C', 'C') means that the opponent cooperated in the previous two rounds; (None, 'C') means that only one round has been played and the opponent cooperated; and (None, None) means that no rounds have been played.
 
-In the __init__ method, values is a sequence of choices, either 'C' or 'D', that correspond to keys. So if the first element of values is 'C', that means that this agent will cooperate in the first round. If the last element of values is 'D', this agent will defect if the opponent defected in the previous two rounds.
+In the ``__init__`` method, ``values`` is a sequence of choices, either 'C' or 'D', that correspond to ``keys``. So if the first element of values is 'C', that means that this agent will cooperate in the first round. If the last element of ``values`` is 'D', this agent will defect if the opponent defected in the previous two rounds.
 
 In this implementation, the genotype of an agent who always defects is 'DDDDDDD'; the genotype of an agent who always cooperates is 'CCCCCCC', and the genotype for TFT is 'CCDCDCD'.
 
-The Agent class provides copy, which makes another agent with the same genotype, but with some probability of mutation:
+The ``Agent`` class provides ``copy``, which makes another agent with the same genotype, but with some probability of mutation:
 
 ::
 
