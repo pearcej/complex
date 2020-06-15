@@ -3,7 +3,11 @@ Conway’s conjecture
 
 From most initial conditions, GoL quickly reaches a stable state where the number of live cells is nearly constant (possibly with some oscillation).
 
-Figure 6.4::
+.. figure:: Figures/figure_7.4.png
+    :align: center
+
+    Figure 7.4: Starting and final configurations of the r-pentomino.
+
 
 But there are some simple starting conditions that yield a surprising number of live cells, and take a long time to settle down. Because these patterns are so long-lived, they are called “Methuselahs”.
 
@@ -11,7 +15,11 @@ One of the simplest Methuselahs is the r-pentomino, which has only five cells, r
 
 This configuration is “final” in the sense that all remaining patterns are either stable, oscillators, or gliders that will never collide with another pattern. In total, the r-pentomino yields 6 gliders, 8 blocks, 4 blinkers, 4 beehives, 1 boat, 1 ship, and 1 loaf.
 
-Figure 6.5::
+.. figure:: Figures/figure_7.5.png
+    :align: center
+
+    Figure 7.5: Gosper’s glider gun, which produces a stream of gliders.
+
 
 The existence of long-lived patterns prompted Conway to wonder if there are initial patterns that never stabilize. He conjectured that there were not, but he described two kinds of pattern that would prove him wrong, a “gun” and a “puffer train”. A gun is a stable pattern that periodically produces a spaceship — as the stream of spaceships moves out from the source, the number of live cells grows indefinitely. A puffer train is a translating pattern that leaves live cells in its wake.
 

@@ -1,5 +1,5 @@
 Mutation
----------
+--------------
 
 In the simulations so far, we start with the maximum possible diversity — one agent at every location in the landscape — and end with the minimum possible diversity, all agents at one location.
 
@@ -7,7 +7,7 @@ That’s almost the opposite of what happened in the natural world, which appare
 
 With perfect copying in our model, we never see increasing diversity. But if we add mutation, along with differential survival and reproduction, we get a step closer to understanding evolution in nature.
 
-Here is a class definition that extends Agent and overrides copy:
+Here is a class definition that extends ``Agent`` and overrides ``copy``:
 
 ::
 
@@ -34,11 +34,19 @@ The operator ^= computes “exclusive OR"; with the operand 1, it has the effect
 
 Now that we have mutation, we don’t have to start with an agent at every location. Instead, we can start with the minimum variability: all agents at the same location.
 
-Figure 11.3::
+.. figure:: Figures/figure_12.3.png
+    :align: center
+
+    Figure 12.3: Mean fitness over time for 10 simulations with mutation and differential survival and reproduction.
+
+   
 
 Figure ?? shows the results of 10 simulations with mutation and differential survival and reproduction. In every case, the population evolves toward the location with maximum fitness.
 
-Figure 11.4::
+.. figure:: Figures/figure_12.4.png
+    :align: center
+
+    Figure 12.4: Number of occupied locations over time for 10 simulations with mutation and differential survival and reproduction.
 
 To measure diversity in the population, we can plot the number of occupied locations after each time step. Figure ?? shows the results. We start with 100 agents at the same location. As mutations occur, the number of occupied locations increases quickly.
 
