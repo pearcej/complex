@@ -4,6 +4,7 @@ Self-organized criticality
 .. toctree::
     :maxdepth: 2
 
+    Introduction.rst
     Critical Systems.rst
     Sand Piles.rst
     Implementing the Sand Pile.rst

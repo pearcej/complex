@@ -1,7 +1,7 @@
 Classifying CAs
 ---------------
 
-Figure::
+Figure:
 
 How many of these CAs are there?
 
