@@ -18,6 +18,7 @@ Complexity science is different in several other ways.  I present them here so y
 Classical  models  tend  to  be  based  on  continuous mathematics, like calculus; models of complex systems are often based on discrete mathematics, including graphs and cellular automatons.
 
 **Linear→nonlinear**
+
 Classical models are often linear, or use linear approximations  to  nonlinear  systems;  complexity  science  is  more  friendly  to nonlinear models.
 
 **Deterministic→stochastic**
@@ -36,5 +37,10 @@ Classical models are often limited to small numbers of components.  For example,
 
 In classical models, the components and interactions  tend  to  be  identical;  complex  models  more  often  include heterogeneity.
 
+These are generalizations, so we should not take them too seriously. And I don’t mean to deprecate classical science. A more complicated model is not necessarily better; in fact, it is usually worse.
 
-These are generalizations,  so we should not take them too seriously.  And I don’t mean to deprecate classical science.  A more complicated model is not necessarily better; in fact, it is usually worse.And I don’t mean to say that these changes are abrupt or complete. Rather, there is a gradual migration in the frontier of what is considered acceptable, respectable work.  Some tools that used to be regarded with suspicion are now common, and some models that were widely accepted are now regarded with scrutiny.For example, when Appel and Haken proved the four-color theorem in 1976, they used a computer to enumerate 1,936 special cases that were, in some sense, lemmas of their proof.  At the time,  many mathematicians did not consider the  theorem  truly  proved.   Now  computer-assisted  proofs  are  common  andgenerally (but not universally) accepted.Conversely,  a  substantial  body  of  economic  analysis  is  based  on  a  model  ofhuman  behavior  called  “Economic  man”,  or,  with  tongue  in  cheek, Homoeconomicus. Research  based  on  this  model  was  highly  regarded  for  several decades, especially if it involved mathematical virtuosity.  More recently, this model is treated with skepticism, and models that include imperfect information and bounded rationality are hot topics.
+And I don’t mean to say that these changes are abrupt or complete. Rather, there is a gradual migration in the frontier of what is considered acceptable, respectable work. Some tools that used to be regarded with suspicion are now common, and some models that were widely accepted are now regarded with scrutiny.
+
+For example, when Appel and Haken proved the four-color theorem in 1976, they used a computer to enumerate 1,936 special cases that were, in some sense, lemmas of their proof. At the time, many mathematicians did not consider the theorem truly proved. Now computer-assisted proofs are common and generally (but not universally) accepted.
+
+Conversely, a substantial body of economic analysis is based on a model of human behavior called “Economic man”, or, with tongue in cheek, *Homo economicus*. Research based on this model was highly regarded for several decades, especially if it involved mathematical virtuosity. More recently, this model is treated with skepticism, and models that include imperfect information and bounded rationality are hot topics.

@@ -8,6 +8,7 @@ Different models for different purposes
 Complex models are often appropriate for different purposes and interpretations:
 
 **Predictive→explanatory**
+
 Schelling’s model of segregation might shed light on a complex social phenomenon, but it is not useful for prediction.  Onthe other hand, a simple model of celestial mechanics can predict solar eclipses, down to the second, years in the future.
 
 **Realism→instrumentalism**
