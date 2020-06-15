@@ -14,7 +14,7 @@ I start with 100 identical agents who always defect, and run the simulation for 
     agents = make_identical_agents(100, list('DDDDDDD'))
     sim = PDSimulation(tour, agents)
 
-Figure 12.1::
+Figure 12.1:
 
 Figure ?? shows mean fitness over time (using the MeanFitness instrument from Section ??). Initially mean fitness is 1, because when defectors face each other, they get only 1 point each per round.
 
@@ -38,7 +38,7 @@ To get some insight into this level of fitness, let’s look at a few more instr
 
 responses is an array with one row for each agent and one column for each element of the genome. metric is the fraction of elements that are 'C', averaged across agents.
 
-Figure 12.2::
+Figure 12.2:
 
 Figure ?? (left) shows the results: starting from 0, average niceness increases quickly to 0.75, then oscillates between 0.4 and 0.85, with a long-term mean near 0.65. Again, that’s a lot of niceness!
 

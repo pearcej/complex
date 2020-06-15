@@ -58,7 +58,7 @@ And we can use it to write an efficient BFS:
 
 The differences are:
 
-    - I replaced the list called stack with a deque called queue.
-    - I replaced pop with popleft, which removes and returns the leftmost element of the queue.
+- I replaced the list called stack with a deque called queue.
+- I replaced pop with popleft, which removes and returns the leftmost element of the queue.
 
 This version is back to being O(n + m). Now we’re ready to find shortest paths.

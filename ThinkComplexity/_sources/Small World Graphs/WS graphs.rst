@@ -21,10 +21,10 @@ The parameter p is the probability of rewiring an edge. The for loop enumerates 
 
 If we are rewiring an edge from node u to node v, we have to choose a replacement for v, called new_v.
 
-    1. To compute the possible choices, we start with nodes, which is a set, and subtract off u and its neighbors, which avoids self loops and multiple edges.
-    2. To choose new_v, we use the NumPy function choice, which is in the module random.
-    3. Then we remove the existing edge from u to v, and
-    4. Add a new edge from u to new_v.
+1. To compute the possible choices, we start with nodes, which is a set, and subtract off u and its neighbors, which avoids self loops and multiple edges.
+2. To choose new_v, we use the NumPy function choice, which is in the module random.
+3. Then we remove the existing edge from u to v, and
+4. Add a new edge from u to new_v.
 
 As an aside, the expression G[u] returns a dictionary that contains the neighbors of u as keys. It is usually faster than using G.neighbors (see http://thinkcomplex.com/neigh).
 

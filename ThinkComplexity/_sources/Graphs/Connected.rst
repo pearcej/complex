@@ -35,9 +35,9 @@ Initially the set, seen, is empty, and we create a list called stack that keeps 
 
 Now, each time through the loop, we:
 
-    1. Remove one node from the stack.
-    2. If the node is already in seen, we go back to Step 1.
-    3. Otherwise, we add the node to seen and add its neighbors to the stack.
+1. Remove one node from the stack.
+2. If the node is already in seen, we go back to Step 1.
+3. Otherwise, we add the node to seen and add its neighbors to the stack.
 
 When the stack is empty, we can’t reach any more nodes, so we break out of the loop and return seen.
 

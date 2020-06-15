@@ -1,6 +1,6 @@
 Generating ER Graphs
 --------------------
-Figure 2.4 Figure 2.4: An ER graph with n=10 and p=0.3.
+Figure 2.4: An ER graph with n=10 and p=0.3.
 
 The ER graph G(n, p) contains n nodes, and each pair of nodes is connected by an edge with probability p. Generating an ER graph is similar to generating a complete graph.
 
