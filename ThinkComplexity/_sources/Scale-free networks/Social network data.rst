@@ -17,9 +17,9 @@ The data file contains one line per edge, with users identified by integers from
         G.add_edges_from(array)
         return G
 
-NumPy provides a function called loadtext that reads the given file and returns the contents as a NumPy array. The parameter dtype indicates that the “data type” of the array is int.
+NumPy provides a function called ``loadtext`` that reads the given file and returns the contents as a NumPy array. The parameter ``dtype`` indicates that the “data type” of the array is int.
 
-Then we use add_edges_from to iterate the rows of the array and make edges. Here are the results:
+Then we use ``add_edges_from`` to iterate the rows of the array and make edges. Here are the results:
 
 ::
 
@@ -33,7 +33,7 @@ The node and edge counts are consistent with the documentation of the dataset.
 
 Now we can check whether this dataset has the characteristics of a small world graph: high clustering and low path lengths.
 
-In Section ?? we wrote a function to compute the network average clustering coefficient. NetworkX provides a function called average_clustering, which does the same thing a little faster.
+In Section ?? we wrote a function to compute the network average clustering coefficient. NetworkX provides a function called ``average_clustering``, which does the same thing a little faster.
 
 But for larger graphs, they are both too slow, taking time proportional to n k2, where n is the number of nodes and k is the number of neighbors each node is connected to.
 
@@ -58,25 +58,25 @@ The following function does something similar for path lengths.
                 for pair in pairs]
         return lengths
 
-G is a graph, nodes is the list of nodes to sample from, and trials is the number of random paths to sample. If nodes is None, we sample from the entire graph.
+G is a graph, ``nodes`` is the list of nodes to sample from, and ``trials`` is the number of random paths to sample. If ``nodes`` is None, we sample from the entire graph.
 
-pairs is a NumPy array of randomly chosen nodes with one row for each trial and two columns.
+``pairs`` is a NumPy array of randomly chosen nodes with one row for each trial and two columns.
 
 The list comprehension enumerates the rows in the array and computes the shortest distance between each pair of nodes. The result is a list of path lengths.
 
-estimate_path_length generates a list of random path lengths and returns their mean:
+``estimate_path_length`` generates a list of random path lengths and returns their mean:
 
 ::
 
     def estimate_path_length(G, nodes=None, trials=1000):
         return np.mean(sample_path_lengths(G, nodes, trials))
 
-I’ll use average_clustering to compute C:
+I’ll use ``average_clustering`` to compute C:
 ::
 
     C = average_clustering(fb)
 
-And estimate_path_lengths to compute L:
+And ``estimate_path_lengths`` to compute L:
 
 ::
 

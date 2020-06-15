@@ -23,9 +23,9 @@ However, the standard deviation of degree in the model is 1.5, which is not clos
 
 What’s the problem? To get a better view, we have to look at the distribution of degrees, not just the mean and standard deviation.
 
-I’ll represent the distribution of degrees with a Pmf object, which is defined in the thinkstats2 module. Pmf stands for “probability mass function”; if you are not familiar with this concept, you might want to read Chapter 3 of *Think Stats, 2nd edition* at http://thinkcomplex.com/ts2.
+I’ll represent the distribution of degrees with a ``Pmf`` object, which is defined in the ``thinkstats2`` module. ``Pmf`` stands for “probability mass function”; if you are not familiar with this concept, you might want to read Chapter 3 of *Think Stats, 2nd edition* at http://thinkcomplex.com/ts2.
 
-Briefly, a Pmf maps from values to their probabilities. A Pmf of degrees is a mapping from each possible degree, d, to the fraction of nodes with degree d.
+Briefly, a ``Pmf`` maps from values to their probabilities. A ``Pmf`` of degrees is a mapping from each possible degree, d, to the fraction of nodes with degree d.
 
 As an example, I’ll construct a graph with nodes 1, 2, and 3 connected to a central node, 0:
 
@@ -44,7 +44,7 @@ Here’s the list of degrees in this graph:
     >>> degrees(G)
     [3, 1, 1, 1]
 
-Node 0 has degree 3, the others have degree 1. Now I can make a Pmf that represents this degree **distribution**:
+Node 0 has degree 3, the others have degree 1. Now I can make a ``Pmf`` that represents this degree **distribution**:
 
 ::
 
@@ -52,9 +52,9 @@ Node 0 has degree 3, the others have degree 1. Now I can make a Pmf that represe
     >>> Pmf(degrees(G))
     Pmf({1: 0.75, 3: 0.25})
 
-The result is a Pmf object that maps from each degree to a fraction or probability. In this example, 75% of the nodes have degree 1 and 25% have degree 3.
+The result is a ``Pmf`` object that maps from each degree to a fraction or probability. In this example, 75% of the nodes have degree 1 and 25% have degree 3.
 
-Now we can make a Pmf that contains node degrees from the dataset, and compute the mean and standard deviation:
+Now we can make a ``Pmf`` that contains node degrees from the dataset, and compute the mean and standard deviation:
 
 ::
 
@@ -71,7 +71,7 @@ And the same for the WS model:
     >>> pmf_ws.mean(), pmf_ws.std()
     (44.000, 1.465)
 
-We can use the thinkplot module to plot the results:
+We can use the ``thinkplot`` module to plot the results:
 
 ::
 

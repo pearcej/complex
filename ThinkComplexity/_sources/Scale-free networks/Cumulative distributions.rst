@@ -12,7 +12,7 @@ Figure ?? represents the degree distribution by plotting the probability mass fu
 
 A better alternative is a **cumulative distribution function** (CDF), which maps from a value, x, to the fraction of values less than or equal to x.
 
-Given a Pmf, the simplest way to compute a cumulative probability is to add up the probabilities for values up to and including x:
+Given a ``Pmf``, the simplest way to compute a cumulative probability is to add up the probabilities for values up to and including x:
 
 ::
 
@@ -20,7 +20,7 @@ Given a Pmf, the simplest way to compute a cumulative probability is to add up t
     ps = [pmf[value] for value in pmf if value<=x]
     return np.sum(ps)
 
-For example, given the degree distribution in the dataset, pmf_fb, we can compute the fraction of users with 25 or fewer friends:
+For example, given the degree distribution in the dataset, ``pmf_fb``, we can compute the fraction of users with 25 or fewer friends:
 
 ::
 
@@ -31,14 +31,14 @@ The result is close to 0.5, which means that the median number of friends is abo
 
 CDFs are better for visualization because they are less noisy than PMFs. Once you get used to interpreting CDFs, they provide a clearer picture of the shape of a distribution than PMFs.
 
-The thinkstats module provides a class called Cdf that represents a cumulative distribution function. We can use it to compute the CDF of degree in the dataset.
+The ``thinkstats`` module provides a class called Cdf that represents a cumulative distribution function. We can use it to compute the CDF of degree in the dataset.
 
 ::
 
     from thinkstats2 import Cdf
     cdf_fb = Cdf(degrees(fb), label='Facebook')
 
-And thinkplot provides a function called Cdf that plots cumulative distribution functions.
+And ``thinkplot`` provides a function called ``Cdf`` that plots cumulative distribution functions.
 
 ::
 
