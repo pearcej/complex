@@ -5,9 +5,9 @@ Generating ER Graphs
 
 .. figure:: Figures/thinkcomplexity2004.png
    :align: center
-   :alt: "Figure 2.4: An ER graph with n=10 and p=0.3."
+   :alt: "Figure 3.4: An ER graph with n=10 and p=0.3."
 
-   Figure 2.4: An ER graph with n=10 and p=0.3.
+   Figure 3.4: An ER graph with n=10 and p=0.3.
 
 The ER graph G(n, p) contains n nodes, and each pair of nodes is connected by an edge with probability p. Generating an ER graph is similar to generating a complete graph.
 
@@ -21,18 +21,18 @@ The following generator function enumerates all possible edges and chooses which
         if flip(p):
             yield edge
 
-random_pairs uses flip:
+``random_pairs`` uses ``flip``:
 
 ::
 
     def flip(p):
     return np.random.random() < p
 
-This is the first example we’re seen that uses NumPy. Following convention, I import numpy as np. NumPy provides a module named random, which provides a method named random, which returns a number between 0 and 1, uniformly distributed.
+This is the first example we’re seen that uses NumPy. Following convention, I import ``numpy`` as ``np``. NumPy provides a module named ``random``, which provides a method named ``random``, which returns a number between 0 and 1, uniformly distributed.
 
-So flip returns True with the given probability, p, and False with the complementary probability, 1-p.
+So ``flip`` returns ``True`` with the given probability, ``p``, and ``False`` with the complementary probability, ``1-p``.
 
-Finally, make_random_graph generates and returns the ER graph G(n, p):
+Finally, ``make_random_graph`` generates and returns the ER graph G(n, p):
 
 ::
 
@@ -43,7 +43,7 @@ Finally, make_random_graph generates and returns the ER graph G(n, p):
     G.add_edges_from(random_pairs(nodes, p))
     return G
 
-make_random_graph is almost identical to make_complete_graph; the only difference is that it uses random_pairs instead of all_pairs.
+``make_random_graph`` is almost identical to ``make_complete_graph``; the only difference is that it uses ``random_pairs`` instead of ``all_pairs``.
 
 Here’s an example with p=0.3:
 
