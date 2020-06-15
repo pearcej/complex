@@ -1,7 +1,7 @@
 Social network data
 -------------------
 
-Watts-Strogatz graphs are intended to model networks in the natural and social sciences. In their original paper, Watts and Strogatz looked at the network of film actors (connected if they have appeared in a movie together); the electrical power grid in the western United States; and the network of neurons in the brain of the roundworm C. elegans. They found that all of these networks had the high connectivity and low path lengths characteristic of small world graphs.
+Watts-Strogatz graphs are intended to model networks in the natural and social sciences. In their original paper, Watts and Strogatz looked at the network of film actors (connected if they have appeared in a movie together); the electrical power grid in the western United States; and the network of neurons in the brain of the roundworm C. *elegans*. They found that all of these networks had the high connectivity and low path lengths characteristic of small world graphs.
 
 In this section we’ll perform the same analysis with a different dataset, a set of Facebook users and their friends. If you are not familiar with Facebook, users who are connected to each other are called “friends”, regardless of the nature of their relationship in the real world.
 
