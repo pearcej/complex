@@ -1,11 +1,22 @@
 Life pattern
 -------------
 
-Figure 6.1::
+.. figure:: Figures/figure_7.1.png
+    :align: center
 
-Figure 6.2::
+    Figure 7.1: A stable pattern called a beehive.
 
-Figure 6.3::
+
+.. figure:: Figures/figure_7.2.png
+    :align: center
+
+    Figure 7.2: An oscillator called a toad.
+
+
+.. figure:: Figures/figure_7.3.png
+    :align: center
+
+    Figure 7.3: A spaceship called a glider.
 
 
 If you run GoL from a random starting state, a number of stable patterns are likely to appear. Over time, people have identified these patterns and given them names.

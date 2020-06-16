@@ -1,5 +1,5 @@
 Emergence and free will
------------------------
+---------------------------
 Many complex systems have properties, as a whole, that their components do not:
 
 - The Rule 30 cellular automaton is deterministic, and the rules that govern its evolution are completely known. Nevertheless, it generates a sequence that is statistically indistinguishable from random.

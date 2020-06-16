@@ -1,5 +1,5 @@
 Prisoner’s dilemma tournaments
-------------------------------
+------------------------------------
 
 In the late 1970s Robert Axelrod, a political scientist at the University of Michigan, organized a tournament to compare strategies for playing Prisoner’s Dilemma (PD).
 

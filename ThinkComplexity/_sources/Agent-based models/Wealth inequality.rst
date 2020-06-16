@@ -12,7 +12,10 @@ In this version of the model, agents have an age that gets incremented each time
 When an agent dies, from starvation or old age, it is replaced by a new agent with random attributes, so the number of agents is constant.
 
 
-Figure 9.4::
+.. figure:: Figures/figure_10.4.png
+    :align: center
+
+    Figure 10.4: Distribution of sugar (wealth) after 100, 200, 300, and 400 steps (gray lines) and 500 steps (dark line). Linear scale (left) and log-x scale (right).
 
 Starting with 250 agents (which is close to carrying capacity) I run the model for 500 steps. After each 100 steps, I plot the cumulative distribution function (CDF) of sugar accumulated by the agents. We saw CDFs in Section ??. Figure ?? shows the results on a linear scale (left) and a log-x scale (right).
 

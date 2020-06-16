@@ -1,7 +1,7 @@
 Exercises
 ----------
 
-The code for this chapter is in the Jupyter notebook chap09.ipynb in the repository for this book. Open this notebook, read the code, and run the cells. You can use this notebook to work on the following exercises. My solutions are in chap09soln.ipynb.
+The code for this chapter is in the Jupyter notebook ``chap09.ipynb`` in the repository for this book. Open this notebook, read the code, and run the cells. You can use this notebook to work on the following exercises. My solutions are in ``chap09soln.ipynb``.
 
 
 **Exercise 1:**  Bill Bishop, author of *The Big Sort*, argues that American society is increasingly segregated by political opinion, as people choose to live among like-minded neighbors.
@@ -16,7 +16,7 @@ There are several ways you can model Bishop’s hypothesis. In my implementation
 
 Write a version of SugarScape that adds a new agent at the end of every step. Add code to compute the average vision and the average metabolism of the agents at the end of each step. Run the model for a few hundred steps and plot the population over time, as well as the average vision and average metabolism.
 
-You should be able to implement this model by inheriting from SugarScape and overriding __init__ and step.
+You should be able to implement this model by inheriting from ``SugarScape`` and overriding ``__init__`` and ``step``.
 
 **Exercise 3:**  Among people who study philosophy of mind, “Strong AI" is the theory that an appropriately-programmed computer could have a mind in the same sense that humans have minds.
 
