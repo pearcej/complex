@@ -1,7 +1,7 @@
-Spaceships.rst
---------------
+Spaceships
+----------
 
-.. _fig_cpp_reference:
+.. _fig_TC_reference:
 
 .. figure:: Figures/thinkcomplexity2019.png
    :align: center

@@ -3,7 +3,7 @@
 
 
 Who is this book for?
-----------------------
+---------------------
 
 The examples and supporting code for this book are in Python. You should know core Python and be familiar with its object-oriented features, specifically using and defining classes.
 
