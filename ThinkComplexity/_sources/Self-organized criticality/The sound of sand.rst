@@ -1,12 +1,12 @@
 The sound of sand
 -----------------
-As my implementation of SandPile runs, it records the number of cells that topple during each time step, accumulating the results in a list called toppled_seq. After running the model in Section ??, we can extract the resulting signal:
+As my implementation of SandPile runs, it records the number of cells that topple during each time step, accumulating the results in a list called ``toppled_seq``. After running the model in Section ??, we can extract the resulting signal:
 
 ::
 
     signal = pile2.toppled_seq
 
-To compute the power spectrum of this signal we can use the SciPy function welch:
+To compute the power spectrum of this signal we can use the SciPy function ``welch``:
 
 ::
         
@@ -17,13 +17,17 @@ To compute the power spectrum of this signal we can use the SciPy function welch
 
 This function uses Welch’s method, which splits the signal into segments and computes the power spectrum of each segment. The result is typically noisy, so Welch’s method averages across segments to estimate the average power at each frequency. For more about Welch’s method, see http://thinkcomplex.com/welch.
 
-The parameter nperseg specifies the number of time steps per segment. With longer segments, we can estimate the power for more frequencies. With shorter segments, we get better estimates for each frequency. The value I chose, 2048, balances these tradeoffs.
+The parameter ``nperseg`` specifies the number of time steps per segment. With longer segments, we can estimate the power for more frequencies. With shorter segments, we get better estimates for each frequency. The value I chose, 2048, balances these tradeoffs.
 
-The parameter fs is the “sampling frequency”, which is the number of data points in the signal per unit of time. By setting fs=nperseg, we get a range of frequencies from 0 to nperseg/2. This range is convenient, but because the units of time in the model are arbitrary, it doesn’t mean much.
+The parameter ``fs`` is the “sampling frequency”, which is the number of data points in the signal per unit of time. By setting ``fs=nperseg``, we get a range of frequencies from ``0`` to ``nperseg/2``. This range is convenient, but because the units of time in the model are arbitrary, it doesn’t mean much.
 
-The return values, freqs and powers, are NumPy arrays containing the frequencies of the components and their corresponding powers, which we can plot. Figure ?? shows the result.
+The return values, ``freqs`` and ``powers``, are NumPy arrays containing the frequencies of the components and their corresponding powers, which we can plot. Figure ?? shows the result.
 
-Figure 8.6::
+.. figure:: Figures/figure_9.6.png
+    :align: center
+
+    Figure 9.6: Power spectrum of the number of toppled cells over time, log-log scale.
+
 
 For frequencies between 10 and 1000 (in arbitrary units), the spectrum falls on a straight line, which is what we expect for pink or red noise.
 

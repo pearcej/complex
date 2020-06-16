@@ -6,13 +6,13 @@ Percolation models are often represented using random graphs like the ones we sa
 
 In this model:
 
-- Initially, each cell is either “porous” with probability q or “non-porous” with probability 1-q.
+- Initially, each cell is either “porous” with probability ``q`` or “non-porous” with probability 1-``q``.
 - When the simulation begins, all cells are considered “dry” except the top row, which is “wet”.
 - During each time step, if a porous cell has at least one wet neighbor, it becomes wet. Non-porous cells stay dry.
 - The simulation runs until it reaches a “fixed point” where no more cells change state.
 - If there is a path of wet cells from the top to the bottom row, we say that the CA has a “percolating cluster”.
 
-Two questions of interest regarding percolation are (1) the probability that a random array contains a percolating cluster, and (2) how that probability depends on q. These questions might remind you of Section ??, where we considered the probability that a random Erdős-Rényi graph is connected. We will see several connections between that model and this one.
+Two questions of interest regarding percolation are (1) the probability that a random array contains a percolating cluster, and (2) how that probability depends on ``q``. These questions might remind you of Section ??, where we considered the probability that a random Erdős-Rényi graph is connected. We will see several connections between that model and this one.
 
 I define a new class to represent a percolation model:
 
@@ -25,11 +25,11 @@ I define a new class to represent a percolation model:
             self.array = np.random.choice([1, 0], (n, n), p=[q, 1-q])
             self.array[0] = 5
 
-n and m are the number of rows and columns in the CA.
+``n`` and ``m`` are the number of rows and columns in the CA.
 
-The state of the CA is stored in array, which is initialized using np.random.choice to choose 1 (porous) with probability q, and 0 (non-porous) with probability 1-q.
+The state of the CA is stored in ``array``, which is initialized using ``np.random.choice`` to choose 1 (porous) with probability q, and 0 (non-porous) with probability 1-``q``.
 
-The state of the top row is set to 5, which represents a wet cell. Using 5, rather than the more obvious 2, makes it possible to use correlate2d to check whether any porous cell has a wet neighbor. Here is the kernel:
+The state of the top row is set to 5, which represents a wet cell. Using 5, rather than the more obvious 2, makes it possible to use ``correlate2d`` to check whether any porous cell has a wet neighbor. Here is the kernel:
 
 ::
 
@@ -41,7 +41,7 @@ This kernel defines a 4-cell “von Neumann” neighborhood; unlike the Moore ne
 
 This kernel adds up the states of the neighbors. If any of them are wet, the result will exceed 5. Otherwise the maximum result is 4 (if all neighbors happen to be porous).
 
-We can use this logic to write a simple, fast step function:
+We can use this logic to write a simple, fast ``step`` function:
 
 ::
 
@@ -50,9 +50,12 @@ We can use this logic to write a simple, fast step function:
         c = correlate2d(a, self.kernel, mode='same')
         self.array[(a==1) & (c>=5)] = 5
 
-This function identifies porous cells, where a==1, that have at least one wet neighbor, where c>=5, and sets their state to 5, which indicates that they are wet.
+This function identifies porous cells, where ``a==1``, that have at least one wet neighbor, where ``c>=5``, and sets their state to 5, which indicates that they are wet.
 
-Figure 7.5::
+.. figure:: Figures/figure_8.5.png
+    :align: center
 
-Figure ?? shows the first few steps of a percolation model with n=10 and p=0.7. Non-porous cells are white, porous cells are lightly shaded, and wet cells are dark.
+    Figure 8.5: The first three steps of a percolation model with n=10 and p=0.7.
+
+Figure ?? shows the first few steps of a percolation model with ``n=10`` and ``p=0.7``. Non-porous cells are white, porous cells are lightly shaded, and wet cells are dark.
 

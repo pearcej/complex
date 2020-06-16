@@ -1,8 +1,8 @@
 Exercises
 ---------
-The code for this chapter is in the Jupyter notebook chap08.ipynb in the repository for this book. Open this notebook, read the code, and run the cells. You can use this notebook to work on the following exercises. My solutions are in chap08soln.ipynb.
+The code for this chapter is in the Jupyter notebook ``chap08.ipynb`` in the repository for this book. Open this notebook, read the code, and run the cells. You can use this notebook to work on the following exercises. My solutions are in ``chap08soln.ipynb``.
 
-**Exercise 1:** To test whether the distributions of T and S are heavy-tailed, we plotted their PMFs on a log-log scale, which is what Bak, Tang and Wiesenfeld show in their paper. But as we saw in Section ??, this visualization can obscure the shape of the distribution. Using the same data, make a plot that shows the cumulative distributions (CDFs) of S and T. What can you say about their shape? Do they follow a power law? Are they heavy-tailed?
+**Exercise 1:** To test whether the distributions of ``T`` and ``S`` are heavy-tailed, we plotted their PMFs on a log-log scale, which is what Bak, Tang and Wiesenfeld show in their paper. But as we saw in Section ??, this visualization can obscure the shape of the distribution. Using the same data, make a plot that shows the cumulative distributions (CDFs) of ``S`` and ``T``. What can you say about their shape? Do they follow a power law? Are they heavy-tailed?
 
 You might find it helpful to plot the CDFs on a log-x scale and on a log-log scale.
 
@@ -16,7 +16,7 @@ You can read more about this version of the sand pile model at http://thinkcompl
 
 **Exercise 4:** In their 1989 paper, Bak, Chen and Creutz suggest that the Game of Life is a self-organized critical system (see http://thinkcomplex.com/bak89).
 
-To replicate their tests, start with a random configuration and run the GoL CA until it stabilizes. Then choose a random cell and flip it. Run the CA until it stabilizes again, keeping track of T, the number of time steps it takes, and S, the number of cells affected. Repeat for a large number of trials and plot the distributions of T and S. Also, estimate the power spectrums of T and S as signals in time, and see if they are consistent with pink noise.
+To replicate their tests, start with a random configuration and run the GoL CA until it stabilizes. Then choose a random cell and flip it. Run the CA until it stabilizes again, keeping track of ``T``, the number of time steps it takes, and ``S``, the number of cells affected. Repeat for a large number of trials and plot the distributions of ``T`` and ``S``. Also, estimate the power spectrums of ``T`` and ``S`` as signals in time, and see if they are consistent with pink noise.
 
 **Exercise 5:** In The Fractal Geometry of Nature, Benoit Mandelbrot proposes what he calls a “heretical” explanation for the prevalence of heavy-tailed distributions in natural systems. It may not be, as Bak suggests, that many systems can generate this behavior in isolation. Instead there may be only a few, but interactions between systems might cause the behavior to propagate.
 

@@ -12,7 +12,10 @@ This version of Sugarscape is often used to explore and explain the distribution
 In the Sugarscape grid, each cell has a capacity, which is the maximum amount of sugar it can hold. In the original configuration, there are two high-sugar regions, with capacity 4, surrounded by concentric rings with capacities 3, 2, and 1.
 
 
-Figure 9.3::
+.. figure:: Figures/figure_10.3.png
+    :align: center
+
+    Figure 10.3: Replication of the original Sugarscape model: initial configuration (left), after 2 steps (middle) and after 100 steps (right).
 
 Figure ?? (left) shows the initial configuration, with the darker areas indicating cells with higher capacity, and small dots representing the agents.
 
