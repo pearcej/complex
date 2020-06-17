@@ -10,3 +10,4 @@ ComplexityScience
     DifferentModelForDifferentPurposes.rst
     ComplexityEngineering.rst
     ComplexityThinking.rst
+    Glossary.rst
