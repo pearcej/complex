@@ -1,11 +1,14 @@
 Random perturbation
 -----------------------
+
+.. _avg_speed:
+
 .. figure:: Figures/figure_11.2.png
     :align: center
 
     Figure 11.2: Average speed as a function of the number of cars, for three magnitudes of added random noise.
 
-As the number of cars increases, traffic jams become more severe. Figure ?? shows the average speed cars are able to achieve, as a function of the number of cars.
+As the number of cars increases, traffic jams become more severe. :ref:`Figure 11.2 <avg_speed>` shows the average speed cars are able to achieve, as a function of the number of cars.
 
 The top line shows results with ``eps=0``, that is, with no random variation in speed. With 25 or fewer cars, the spacing between cars is greater than 40, which allows cars to reach and maintain the maximum speed, which is 40. With more than 25 cars, traffic jams form and the average speed drops quickly.
 
@@ -13,7 +16,7 @@ This effect is a direct result of the physics of the simulation, so it should no
 
 But that’s the best case scenario. With just a small amount of randomness, things get much worse.
 
-Figure ?? also shows results with ``eps=0.001`` and ``eps=0.01``, which correspond to errors in speed of 0.1% and 1%.
+:ref:`Figure 11.2 <avg_speed>` also shows results with ``eps=0.001`` and ``eps=0.01``, which correspond to errors in speed of 0.1% and 1%.
 
 With 0.1% errors, the capacity of the highway drops from 25 to 20 (by “capacity” I mean the maximum number of cars that can reach and sustain the speed limit). And with 1% errors, the capacity drops to 10. Ugh.
 
