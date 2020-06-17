@@ -25,6 +25,7 @@ The result is a list of tuples where each tuple contains ``size``, ``size**2``, 
 
 .. figure:: Figures/figure_8.9.png
     :align: center
+    :alt: "Figure 8.9: Number of cells in the percolating cluster versus CA size."
 
     Figure 8.9: Number of cells in the percolating cluster versus CA size.
 

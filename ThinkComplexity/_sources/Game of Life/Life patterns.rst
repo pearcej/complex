@@ -3,18 +3,21 @@ Life pattern
 
 .. figure:: Figures/figure_7.1.png
     :align: center
+    :alt: "Figure 7.1: A stable pattern called a beehive."
 
     Figure 7.1: A stable pattern called a beehive.
 
 
 .. figure:: Figures/figure_7.2.png
     :align: center
+    :alt: "Figure 7.2: An oscillator called a toad."
 
     Figure 7.2: An oscillator called a toad.
 
 
 .. figure:: Figures/figure_7.3.png
     :align: center
+    :alt: "Figure 7.3: A spaceship called a glider."
 
     Figure 7.3: A spaceship called a glider.
 

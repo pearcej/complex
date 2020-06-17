@@ -77,6 +77,7 @@ As long as the rate parameters are not too high, the values of ``A`` and ``B`` u
 
 .. figure:: Figures/figure_8.2.png
     :align: center
+    :alt: "Figure 9.1: Sand pile model initial state (left), after 200 steps (middle), and 400 steps (right)."
 
     Figure 8.2: Reaction-diffusion model with parameters f=0.035 and k=0.057 after 1000, 2000, and 4000 steps.
 
@@ -88,6 +89,7 @@ Figure ?? shows results with ``f=0.035`` and ``k=0.057``, with the concentration
 
 .. figure:: Figures/figure_8.3.png
     :align: center
+    :alt: "Figure 9.1: Sand pile model initial state (left), after 200 steps (middle), and 400 steps (right)."
 
     Figure 8.3: Reaction-diffusion model with parameters f=0.055 and k=0.062 after 1000, 2000, and 4000 steps.
 
@@ -95,6 +97,7 @@ Figure ?? shows results with ``f=0.055`` and ``k=0.062``, which yields a coral-l
 
 .. figure:: Figures/figure_8.4.png
     :align: center
+    :alt: "Figure 9.1: Sand pile model initial state (left), after 200 steps (middle), and 400 steps (right)."
 
     Figure 8.4: A reaction-diffusion model with parameters f=0.039 and k=0.065 after 1000, 2000, and 4000 steps.
 

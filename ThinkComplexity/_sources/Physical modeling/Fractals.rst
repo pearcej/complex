@@ -11,6 +11,7 @@ As an example, I’ll estimate the dimension of a 1-D cellular automaton by meas
 
 .. figure:: Figures/figure_8.6.png
     :align: center
+    :alt: "Figure 8.6: One-dimensional CAs with rules 20, 50, and 18, after 32 time steps."
 
     Figure 8.6: One-dimensional CAs with rules 20, 50, and 18, after 32 time steps.
 
@@ -34,6 +35,7 @@ I’ll estimate the dimension of these CAs with the following function, which co
 
 .. figure:: Figures/figure_8.7.png
     :align: center
+    :alt: "Figure 8.7: Number of “on” cells versus number of time steps for rules 20, 50, and 18."
 
     Figure 8.7: Number of “on” cells versus number of time steps for rules 20, 50, and 18.
 

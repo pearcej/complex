@@ -5,6 +5,7 @@ From most initial conditions, GoL quickly reaches a stable state where the numbe
 
 .. figure:: Figures/figure_7.4.png
     :align: center
+    :alt: "Figure 7.4: Starting and final configurations of the r-pentomino."
 
     Figure 7.4: Starting and final configurations of the r-pentomino.
 
@@ -17,6 +18,7 @@ This configuration is “final” in the sense that all remaining patterns are e
 
 .. figure:: Figures/figure_7.5.png
     :align: center
+    :alt: "Figure 7.5: Gosper’s glider gun, which produces a stream of gliders."
 
     Figure 7.5: Gosper’s glider gun, which produces a stream of gliders.
 
