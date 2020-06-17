@@ -96,12 +96,14 @@ This implementation of ``choose_acceleration`` is simple: it always accelerates 
 
 Since the cars start out equally spaced, we expect them all to accelerate until they reach the speed limit, or until their speed exceeds the space between them. At that point, at least one “collision” will occur, causing some cars to stop.
 
+.. _sim_of_drivers:
+
 .. figure:: Figures/figure_11.1.png
     :align: center
 
     Figure 11.1: Simulation of drivers on a circular highway at three points in time. Squares indicate the position of the drivers; triangles indicate places where one driver has to brake to avoid another.
 
-Figure ?? shows a few steps in this process, starting with 30 cars and ``eps=0.02``. On the left is the configuration after 16 time steps, with the highway mapped to a circle. Because of random noise, some cars are going faster than others, and the spacing has become uneven.
+:ref:`Figure 11.1 <sim_of_drivers>` shows a few steps in this process, starting with 30 cars and ``eps=0.02``. On the left is the configuration after 16 time steps, with the highway mapped to a circle. Because of random noise, some cars are going faster than others, and the spacing has become uneven.
 
 During the next time step (middle) there are two collisions, indicated by the triangles.
 
