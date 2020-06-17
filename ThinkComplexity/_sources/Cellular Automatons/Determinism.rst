@@ -1,16 +1,15 @@
 Determinism
 -----------
 
-The existence of Class 3 CAs is surprising. To explain how surprising, let me start with philosophical determinism (see http://thinkcomplex.com/deter). Many philosophical stances are hard to define precisely because they come in a variety of flavors. I often find it useful to define them with a list of statements ordered from weak to strong:
+The existence of Class 3 CAs is surprising. To explain how surprising, let me start with philosophical **determinism** (see http://thinkcomplex.com/deter). Many philosophical stances are hard to define precisely because they come in a variety of flavors. I often find it useful to define them with a list of statements ordered from weak to strong:
 
-D1: Deterministic models can make accurate predictions for some physical systems.
+**D1:**  Deterministic models can make accurate predictions for some physical systems.
 
-D2:
-    Many physical systems can be modeled by deterministic processes, but some are intrinsically random.
-D3:
-    All events are caused by prior events, but many physical systems are nevertheless fundamentally unpredictable.
-D4:
-    All events are caused by prior events, and can (at least in principle) be predicted.
+**D2:**  Many physical systems can be modeled by deterministic processes, but some are intrinsically random.
+
+**D3:**  All events are caused by prior events, but many physical systems are nevertheless fundamentally unpredictable.
+
+**D4:**  All events are caused by prior events, and can (at least in principle) be predicted.
 
 My goal in constructing this range is to make D1 so weak that virtually everyone would accept it, D4 so strong that almost no one would accept it, with intermediate statements that some people accept.
 
