@@ -15,3 +15,4 @@ Self-organized criticality
     Reductionism and Holism.rst
     SOC, causation, and prediction.rst
     Exercises.rst
+    Glossary.rst
