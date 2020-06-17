@@ -12,3 +12,4 @@ Game of Life
     Instrumentalism.rst
     Implementing Life.rst
     Exercises.rst 
+    Glossary.rst
