@@ -16,3 +16,4 @@ Evolution
     Speciation.rst
     Summary.rst
     Exercises.rst
+    Glossary.rst
