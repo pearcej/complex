@@ -30,6 +30,8 @@ In this model of mutation, every time we call copy, there is a 5% chance of muta
         new_loc[direction] ^= 1
         return new_loc
 
+.. _mean_fig_over_time:
+
 The operator ^= computes “exclusive OR"; with the operand 1, it has the effect of flipping a bit (see http://thinkcomplex.com/xor).
 
 Now that we have mutation, we don’t have to start with an agent at every location. Instead, we can start with the minimum variability: all agents at the same location.
@@ -41,14 +43,16 @@ Now that we have mutation, we don’t have to start with an agent at every locat
 
    
 
-Figure ?? shows the results of 10 simulations with mutation and differential survival and reproduction. In every case, the population evolves toward the location with maximum fitness.
+:ref:`Figure 12.3 <mean_fig_over_time>` shows the results of 10 simulations with mutation and differential survival and reproduction. In every case, the population evolves toward the location with maximum fitness.
+
+.. _num_oc:
 
 .. figure:: Figures/figure_12.4.png
     :align: center
 
     Figure 12.4: Number of occupied locations over time for 10 simulations with mutation and differential survival and reproduction.
 
-To measure diversity in the population, we can plot the number of occupied locations after each time step. Figure ?? shows the results. We start with 100 agents at the same location. As mutations occur, the number of occupied locations increases quickly.
+To measure diversity in the population, we can plot the number of occupied locations after each time step. :ref:`Figure 12.4 <num_oc>` shows the results. We start with 100 agents at the same location. As mutations occur, the number of occupied locations increases quickly.
 
 When an agent discovers a high-fitness location, it is more likely to survive and reproduce. Agents at lower-fitness locations eventually die out. Over time, the population migrates through the landscape until most agents are at the location with the highest fitness.
 
