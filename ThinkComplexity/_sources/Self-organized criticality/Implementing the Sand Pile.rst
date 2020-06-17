@@ -117,6 +117,8 @@ Finally, the drop method chooses a random cell and adds a grain of sand:
         index = np.random.randint(n), np.random.randint(m)
         a[index] += 1
 
+.. _sand_pile:
+
 Let’s look at a bigger example, with ``n=20``:
 
 ::
@@ -129,8 +131,8 @@ Let’s look at a bigger example, with ``n=20``:
 
     Figure 9.1: Sand pile model initial state (left), after 200 steps (middle), and 400 steps (right).
 
-With an initial level of 10, this sand pile takes 332 time steps to reach equilibrium, with a total of 53,336 topplings. Figure ?? (left) shows the configuration after this initial run. Notice that it has the repeating elements that are characteristic of fractals. We’ll come back to that soon.
+With an initial level of 10, this sand pile takes 332 time steps to reach equilibrium, with a total of 53,336 topplings. :ref:`Figure 9.1<sand_pile>` (left) shows the configuration after this initial run. Notice that it has the repeating elements that are characteristic of fractals. We’ll come back to that soon.
 
-Figure ?? (middle) shows the configuration of the sand pile after dropping 200 grains onto random cells, each time running until the pile reaches equilibrium. The symmetry of the initial configuration has been broken; the configuration looks random.
+:ref:`Figure 9.1 <sand_pile>` (middle) shows the configuration of the sand pile after dropping 200 grains onto random cells, each time running until the pile reaches equilibrium. The symmetry of the initial configuration has been broken; the configuration looks random.
 
-Finally Figure ?? (right) shows the configuration after 400 drops. It looks similar to the configuration after 200 drops. In fact, the pile is now in a steady state where its statistical properties don’t change over time. I’ll explain some of those statistical properties in the next section.
+Finally :ref:`Figure 9.1<sand_pile>` (right) shows the configuration after 400 drops. It looks similar to the configuration after 200 drops. In fact, the pile is now in a steady state where its statistical properties don’t change over time. I’ll explain some of those statistical properties in the next section.
