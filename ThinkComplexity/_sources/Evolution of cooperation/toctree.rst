@@ -14,3 +14,4 @@ Evolution of cooperation
     Results.rst
     Conclusions.rst
     Exercises.rst
+    Glossary.rst
