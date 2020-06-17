@@ -5,15 +5,20 @@
 Introduction
 ------------
 
-Complexity science is relatively new; it became recognizable as a field, and was given a name, in the 1980s. But its newness is not because it applies the tools of science to a new subject, but because it uses different tools, allows different kinds of work, and ultimately changes what we mean by “science”.
-
-To demonstrate the difference, I’ll start with an example of classical science: suppose someone asks you why planetary orbits are elliptical. You might invoke Newton’s law of universal gravitation and use it to write a differential equation that describes planetary motion. Then you can solve the differential equation and show that the solution is an ellipse. QED!
-
-Most people find this kind of explanation satisfying. It includes a mathematical derivation — so it has some of the rigor of a proof — and it explains a specific observation, elliptical orbits, by appealing to a general principle, gravitation.
-
-Let me contrast that with a different kind of explanation. Suppose you move to a city like Detroit that is racially segregated, and you want to know why it’s like that. If you do some research, you might find a paper by Thomas Schelling called “Dynamic Models of Segregation”, which proposes a simple model of racial segregation:
-
-Here is my description of the model, from Chapter 9:
+Complexity Science Complexity  science  is  relatively  new;  it  became  recognizable  as  a  field, 
+and was given a name, in the 1980s.  But its newness is not because it applies the tools  of science to  a 
+new  subject,  but because  it uses different tools,  allows different kinds of work, and ultimately 
+changes what we mean by “science”.To demonstrate the difference, I’ll start with an example of classical 
+science:suppose  someone  asks  you  why  planetary  orbits  are  elliptical.   You  might invoke 
+Newton’s law of universal gravitation and use it to write a differential equation that describes
+planetary motion.  Then you can solve the differential equation and show that the solution is an ellipse.
+QED!Most people find this kind of explanation satisfying. It includes a mathematical derivation — so it
+has some of the rigor of a proof — and it explains a specific observation, elliptical orbits, by 
+appealing to a general principle, gravitation.Let me contrast that with a different kind of 
+explanation.  Suppose you move to a city like Detroit that is racially segregated, and you want to 
+know why it’s  like  that.   If  you  do  some  research,  you  might  find  a  paper  by  
+Thomas Schelling called “Dynamic Models of Segregation”,  which proposes a simple model of racial segregation:
+Here is my description of the model, from `Chapter 10.2`_:
 
 - The  Schelling  model  of  the  city  is  an  array  of  cells  where  each cell represents a house. The houses are occupied by two kinds of
   2 Chapter 1    Complexity Science“agents”, labeled red and blue, in roughly equal numbers.  About 10% of the houses are empty.

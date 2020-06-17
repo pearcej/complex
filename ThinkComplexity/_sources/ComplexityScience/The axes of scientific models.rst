@@ -23,7 +23,7 @@ Classical models are often linear, or use linear approximations  to  nonlinear  
 
 **Deterministic→stochastic**
 
-Classical models are usually deterministic, which may  reflect  underlying  philosophical  determinism,  discussed  in  Chapter 5; complex models often include randomness.
+Classical models are usually deterministic, which may  reflect  underlying  philosophical  determinism,  discussed  in  `Chapter 6.1`_; complex models often include randomness.
 
 **Abstract→detailed**
 
