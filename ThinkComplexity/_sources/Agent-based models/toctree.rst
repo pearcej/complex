@@ -14,6 +14,7 @@ Agent-based models
     Migration and Wave Behavior.rst
     Emergence.rst
     Exercises.rst
+    Glossary.rst
 
 
     
