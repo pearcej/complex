@@ -31,7 +31,9 @@ A large majority of drops have duration 1 and no toppled cells; if we filter the
     T = T[T>1]
     S = S[S>0]
 
-The distributions of ``T`` and ``S`` have many small values and a few very large ones. I’ll use the ``Pmf`` class from thinkstats2 to make a PMF of the values, that is, a map from each value to its probability of occurring (see Section ??).
+The distributions of ``T`` and ``S`` have many small values and a few very large ones. I’ll use the ``Pmf`` class from thinkstats2 to make a PMF of the values, that is, a map from each value to its probability of occurring (see `Section 5.3 <>`_).
+
+.. _linear_scale:
 
 ::
 
@@ -43,15 +45,17 @@ The distributions of ``T`` and ``S`` have many small values and a few very large
 
     Figure 9.2: Distribution of avalanche duration (left) and size (right), linear scale.
 
+.. _log_log:
+
 .. figure:: Figures/figure_9.3.png
     :align: center
 
     Figure 9.3: Distribution of avalanche duration (left) and size (right), log-log scale.
 
 
-Figure ?? shows the results for values less than 50.
+:ref:`Figure 9.2 <linear_scale>` shows the results for values less than 50.
 
-As we saw in Section ??, we can get a clearer picture of these distributions by plotting them on a log-log scale, as shown in Figure ??.
+As we saw in `Section 5.5 <>`_, we can get a clearer picture of these distributions by plotting them on a log-log scale, as shown in :ref:`Figure 9.3 <log_log>`.
 
 For values between 1 and 100, the distributions are nearly straight on a log-log scale, which is characteristic of a heavy tail. The gray lines in the figure have slopes near -1, which suggests that these distributions follow a power law with parameters near α=1.
 
