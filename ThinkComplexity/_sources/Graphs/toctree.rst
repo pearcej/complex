@@ -14,6 +14,7 @@ Graphs
     Probability of connectivity.rst
     Analysis of graph algorithms.rst
     Exercises.rst
+    Glossary.rst
 
 
     
