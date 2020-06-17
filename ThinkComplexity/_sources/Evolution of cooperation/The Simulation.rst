@@ -1,6 +1,6 @@
 The Simulation
 --------------------
-The ``Simulation`` class for this chapter is based on the one in Section ??; the only differences are in ``__init__`` and ``step``.
+The ``Simulation`` class for this chapter is based on the one in `Section 12.5`_; the only differences are in ``__init__`` and ``step``.
 
 Here’s the ``__init__`` method:
 
@@ -13,7 +13,7 @@ Here’s the ``__init__`` method:
             self.agents = np.asarray(agents)
             self.instruments = []
 
-A Simulation object contains a Tournament object, a sequence of agents, and a sequence of ``Instrument`` objects (as in Section ??).
+A Simulation object contains a Tournament object, a sequence of agents, and a sequence of ``Instrument`` objects (as in `Section 12.7`_).
 
 Here’s the ``step`` method:
 
@@ -46,4 +46,4 @@ This version of ``step`` USES ``Tournament.melee``, which sets the ``fitness`` a
 
 ``Simulation.step`` collects the agents’ fitnesses in an array; then it calls ``choose_dead`` to decide which agents die, and ``choose_replacements`` to decide which agents reproduce.
 
-My simulation includes differential survival, as in Section ??, but not differential reproduction. You can see the details in the notebook for this chapter. As one of the exercises, you will have a chance to explore the effect of differential reproduction.
+My simulation includes differential survival, as in `Section 12.8`_, but not differential reproduction. You can see the details in the notebook for this chapter. As one of the exercises, you will have a chance to explore the effect of differential reproduction.
