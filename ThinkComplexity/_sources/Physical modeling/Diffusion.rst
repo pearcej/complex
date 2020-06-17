@@ -30,6 +30,7 @@ We’ll use a diffusion constant, ``r``, that relates the difference in concentr
 
 .. figure:: Figures/figure_8.1.png
     :align: center
+    :alt: "Figure 8.1: A simple diffusion model after 0, 5, and 10 steps."
 
     Figure 8.1: A simple diffusion model after 0, 5, and 10 steps.
 
