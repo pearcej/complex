@@ -1,6 +1,6 @@
 Exercises
----------
-The code for this chapter is in the Jupyter notebook chap12.ipynb in the repository for this book. Open the notebook, read the code, and run the cells. You can use this notebook to work on the following exercises. My solutions are in chap12soln.ipynb.
+---------------
+The code for this chapter is in the Jupyter notebook ``chap12.ipynb`` in the repository for this book. Open the notebook, read the code, and run the cells. You can use this notebook to work on the following exercises. My solutions are in ``chap12soln.ipynb``.
 
 **Exercise 1:**  The simulations in this chapter depend on conditions and parameters I chose arbitrarily. As an exercise, I encourage you to explore other conditions to see what effect they have on the results. Here are some suggestions:
 

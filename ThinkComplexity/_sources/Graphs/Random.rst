@@ -15,7 +15,7 @@ Erdős and Rényi studied the properties of these random graphs; one of their su
 One of the properties that displays this kind of transition is connectivity. An undirected graph is connected if there is a path from every node to every other node.
 
 
-In an ER graph, the probability that the graph is connected is very low when p is small and nearly 1 when p is large. Between these two regimes, there is a rapid transition at a particular value of p, denoted p*.
+In an ER graph, the probability that the graph is **connected** is very low when p is small and nearly 1 when p is large. Between these two regimes, there is a rapid transition at a particular value of p, denoted p*.
 
 Erdős and Rényi showed that this critical value is p* = (lnn) / n, where n is the number of nodes. A random graph, G(n, p), is unlikely to be connected if p < p* and very likely to be connected if p > p*.
 
