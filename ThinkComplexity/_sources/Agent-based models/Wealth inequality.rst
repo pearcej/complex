@@ -1,6 +1,8 @@
 Wealth inequality
 -----------------
 
+.. _dis_of_sugar:
+
 In its current form, Sugarscape models a simple ecology, and could be used to explore the relationship between the parameters of the model, like the growth rate and the attributes of the agents, and the carrying capacity of the system (the number of agents that survive in steady state). And it models a form of natural selection, where agents with higher “fitness” are more likely to survive.
 
 The model also demonstrates a kind of wealth inequality, with some agents accumulating sugar faster than others. But it would be hard to say anything specific about the distribution of wealth because it is not “stationary”; that is, the distribution changes over time and does not reach a steady state.
@@ -17,7 +19,7 @@ When an agent dies, from starvation or old age, it is replaced by a new agent wi
 
     Figure 10.4: Distribution of sugar (wealth) after 100, 200, 300, and 400 steps (gray lines) and 500 steps (dark line). Linear scale (left) and log-x scale (right).
 
-Starting with 250 agents (which is close to carrying capacity) I run the model for 500 steps. After each 100 steps, I plot the cumulative distribution function (CDF) of sugar accumulated by the agents. We saw CDFs in Section ??. Figure ?? shows the results on a linear scale (left) and a log-x scale (right).
+Starting with 250 agents (which is close to carrying capacity) I run the model for 500 steps. After each 100 steps, I plot the cumulative distribution function (CDF) of sugar accumulated by the agents. We saw CDFs in `Section 5.8 <>`_. :ref:`Figure 10.4 <dis_of_sugar>` shows the results on a linear scale (left) and a log-x scale (right).
 
 After about 200 steps (which is twice the longest lifespan) the distribution doesn’t change much. And it is skewed to the right.
 
