@@ -12,3 +12,4 @@ Herds, Flocks, and Traffic Jams
     Arbitration.rst
     Emergence and free will.rst
     Exercises.rst
+    Glossary.rst
