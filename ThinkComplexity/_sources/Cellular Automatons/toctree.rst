@@ -17,5 +17,4 @@ Cellular Automatons
     Cross-correlation.rst
     CATables.rst
     Exercises.rst
-    Glossary.rst
     
