@@ -5,6 +5,8 @@
 Using the code
 ----------------
 
+.. _1.4:
+
 All code used in this book is available from a Git repository on GitHub: http://thinkcomplex.com/repo. If you are not familiar with Git, it is a version control system that allows you to keep track of the files that make up a project.
 A collection of files under Git’s control is called a “repository”. GitHub is a hosting service that provides storage for Git repositories and a convenient web interface.
 

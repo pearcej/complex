@@ -24,7 +24,7 @@ I start with 100 identical agents who always defect, and run the simulation for 
 
    
 
-:ref:`Figure 13.1 <fig_avg_fit>` shows mean fitness over time (using the MeanFitness instrument from `Section 12.7 <>`_). Initially mean fitness is 1, because when defectors face each other, they get only 1 point each per round.
+:ref:`Figure 13.1 <fig_avg_fit>` shows mean fitness over time (using the MeanFitness instrument from :ref:`Section 12.7 <12.7>`). Initially mean fitness is 1, because when defectors face each other, they get only 1 point each per round.
 
 After about 500 time steps, mean fitness increases to nearly 3, which is what cooperators get when they face each other. However, as we suspected, this situation in unstable. Over the next 500 steps, mean fitness drops below 2, climbs back toward 3, and continues to oscillate.
 

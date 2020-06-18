@@ -1,7 +1,12 @@
+
+.. _fig_6.4:
+
 Spaceships
 ----------
 
 .. _fig_TC_reference:
+
+.. _6.6:
 
 .. figure:: Figures/thinkcomplexity2019.png
    :align: center
@@ -9,11 +14,13 @@ Spaceships
 
    Figure 6.4: Rule 110 after 100 time steps.
 
+.. _fig_6.5:
+
 The behavior of Class 4 CAs is even more surprising. Several 1-D CAs, most notably Rule 110, are **Turing complete**, which means that they can compute any computable function. This property, also called **universality**, was proved by Matthew Cook in 1998. See http://thinkcomplex.com/r110.
 
-Figure ?? shows what Rule 110 looks like with an initial condition of a single cell and 100 time steps. At this time scale it is not apparent that anything special is going on. There are some regular patterns but also some features that are hard to characterize.
+:ref:`Figure 6.4 <fig_6.4>` shows what Rule 110 looks like with an initial condition of a single cell and 100 time steps. At this time scale it is not apparent that anything special is going on. There are some regular patterns but also some features that are hard to characterize.
 
-Figure ?? shows a bigger picture, starting with a random initial condition and 600 time steps:
+:ref:`Figure 6.5<fig_6.5>` shows a bigger picture, starting with a random initial condition and 600 time steps:
 
 .. figure:: Figures/thinkcomplexity2020.png
    :align: center

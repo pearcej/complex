@@ -6,4 +6,4 @@ In this chapter we consider a CA that models chemicals that diffuse (spread out)
 
 And we’ll experiment with a CA that models percolation of liquid through porous material, like water through coffee grounds. This model is the first of several models that exhibit **phase change** behavior and **fractal geometry**, and I’ll explain what both of those mean.
 
-The code for this chapter is in ``chap07.ipynb`` in the repository for this book. More information about working with the code is in Section ??.
+The code for this chapter is in ``chap07.ipynb`` in the repository for this book. More information about working with the code is in :ref:`Section 1.4 <1.4>`.

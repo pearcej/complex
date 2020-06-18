@@ -2,7 +2,7 @@ Breadth-First Search
 --------------------
 When we computed shortest paths, we used a function provided by NetworkX, but I have not explained how it works. To do that, I’ll start with breadth-first search, which is the basis of Dijkstra’s algorithm for computing shortest paths.
 
-In Section ?? I presented ``reachable_nodes``, which finds all the nodes that can be reached from a given starting node:
+In :ref:`Section 3.6 <3.6>` I presented ``reachable_nodes``, which finds all the nodes that can be reached from a given starting node:
 
 ::
 

@@ -1,3 +1,5 @@
+.. _9.9:
+
 Reductionism and Holism
 -----------------------
 The original paper by Bak, Tang and Wiesenfeld is one of the most frequently-cited papers in the last few decades. Some subsequent papers have reported other systems that are apparently self-organized critical (SOC). Others have studied the sand pile model in more detail.
