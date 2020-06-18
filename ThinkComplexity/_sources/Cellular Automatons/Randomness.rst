@@ -3,8 +3,6 @@ Randomness
 
 .. _fig_6.3:
 
-.. _fig_cpp_reference:
-
 .. figure:: Figures/thinkcomplexity2018.png
    :align: center
    :alt: "Figure 6.3: Rule 30 after 100 time steps."
