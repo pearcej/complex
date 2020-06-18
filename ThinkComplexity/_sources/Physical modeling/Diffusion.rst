@@ -18,6 +18,8 @@ The following kernel computes the difference between each cell and the average o
 
 Using ``np.correlate2d``, we can apply this kernel to each cell in an array:
 
+.. _fig_simp_dif:
+
 ::
 
      c = correlate2d(array, kernel, mode='same')
@@ -34,4 +36,4 @@ We’ll use a diffusion constant, ``r``, that relates the difference in concentr
 
     Figure 8.1: A simple diffusion model after 0, 5, and 10 steps.
 
-Figure ?? shows results for a CA with size ``n=9``, diffusion constant ``r=0.1``, and initial concentration 0 everywhere except for an “island” in the middle. The figure shows the starting configuration and the state of the CA after 5 and 10 steps. The chemical spreads from the center outward, continuing until the concentration is the same everywhere.
+:ref:`Figure 8.1 <fig_simp_dif>` shows results for a CA with size ``n=9``, diffusion constant ``r=0.1``, and initial concentration 0 everywhere except for an “island” in the middle. The figure shows the starting configuration and the state of the CA after 5 and 10 steps. The chemical spreads from the center outward, continuing until the concentration is the same everywhere.

@@ -1,7 +1,11 @@
+.. _fig_3.1:
+
 What is a Graph?
 ----------------
 
 .. _fig_cpp_reference:
+
+.. _3.2:
 
 .. figure:: Figures/thinkcomplexity2001.png
    :align: center
@@ -24,9 +28,9 @@ Graphs have interesting mathematical properties, and there is a branch of mathem
 
 Graphs are also useful, because there are many real world problems that can be solved using **graph algorithms**. For example, Dijkstra’s shortest path algorithm is an efficient way to find the shortest path from a node to all other nodes in a graph. A **path** is a sequence of nodes with an edge between each consecutive pair.
 
-Graphs are usually drawn with squares or circles for nodes and lines for edges. For example, the directed graph in Figure 2.1 might represent three people who follow each other on Twitter. The arrow indicates the direction of the relationship. In this example, Alice and Bob follow each other, both follow Chuck, and Chuck follows no one.
+Graphs are usually drawn with squares or circles for nodes and lines for edges. For example, the directed graph in :ref:`Figure 3.1 <fig_3.1>` might represent three people who follow each other on Twitter. The arrow indicates the direction of the relationship. In this example, Alice and Bob follow each other, both follow Chuck, and Chuck follows no one.
 
-The undirected graph in Figure 2.2 shows four cities in the northeast United States; the labels on the edges indicate driving time in hours. In this example the placement of the nodes corresponds roughly to the geography of the cities, but in general the layout of a graph is arbitrary.
+The undirected graph in :ref:`Figure 3.2 <fig_3.2>` shows four cities in the northeast United States; the labels on the edges indicate driving time in hours. In this example the placement of the nodes corresponds roughly to the geography of the cities, but in general the layout of a graph is arbitrary.
 
 
 
