@@ -1,6 +1,8 @@
 Cross-correlation
 -----------------
 
+.. _6.11:
+
 The operation in the previous section — selecting elements from an array and adding them up — is an example of an operation that is so useful, in so many domains, that it has a name: **cross-correlation**. And NumPy provides a function, called ``correlate``, that computes it. In this section I’ll show how we can use NumPy to write a simpler, faster version of ``step``.
 
 The NumPy ``correlate`` function takes an array, a, and a “window", w, with length N and computes a new array, c, where element k is the following summation:

@@ -1,3 +1,6 @@
+
+.. _4.11:
+
 Dijkstra’s algorithm
 --------------------
 Edsger W. Dijkstra was a Dutch computer scientist who invented an efficient shortest-path algorithm (see http://thinkcomplex.com/dijk). He also invented the semaphore, which is a data structure used to coordinate programs that communicate with each other (see http://thinkcomplex.com/sem and Downey, *The Little Book of Semaphores*).

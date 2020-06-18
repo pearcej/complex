@@ -1,6 +1,12 @@
+
+.. _5.9:
+
 Explanatory models
 ------------------
+
 .. _fig_cpp_reference:
+
+.. _fig_5.6:
 
 .. figure:: Figures/thinkcomplexity2015.png
    :align: center
@@ -11,7 +17,7 @@ Explanatory models
 
 We started the discussion of networks with Milgram’s Small World Experiment, which shows that path lengths in social networks are surprisingly small; hence, “six degrees of separation”.
 
-When we see something surprising, it is natural to ask “Why?” but sometimes it’s not clear what kind of answer we are looking for. One kind of answer is an **explanatory model** (see Figure ??). The logical structure of an explanatory model is:
+When we see something surprising, it is natural to ask “Why?” but sometimes it’s not clear what kind of answer we are looking for. One kind of answer is an **explanatory model** (see :ref:`Figure 5.6 <fig_5.6>`). The logical structure of an explanatory model is:
 
 1. In a system, S, we see something observable, O, that warrants explanation.
 2. We construct a model, M, that is analogous to the system; that is, there is a correspondence between the elements of the model and the elements of the system.
@@ -30,4 +36,4 @@ The WS model suggests that social networks are “small” because they include 
 
 The BA model suggests that social networks are small because they include nodes with high degree that act as hubs, and that hubs grow, over time, due to preferential attachment.
 
-As is often the case in young areas of science, the problem is not that we have no explanations, but too many.
+As is often the case in young areas of science, the problem is not that we have no explanations, but too many..

@@ -1,6 +1,8 @@
 Differential survival
 ----------------------
 
+.. _12.8:
+
 Let’s add one more ingredient, differential survival. Here’s a class that extends ``Simulation`` and overrides ``choose_dead``:
 
 ::

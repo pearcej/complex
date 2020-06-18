@@ -17,6 +17,8 @@ Graphs with this property are sometimes called **scale-free networks**, for reas
 
 NetworkX provides a function that generates BA graphs. We will use it first; then I’ll show you how it works.
 
+.. _fig_5.3:
+
 ::
 
     ba = nx.barabasi_albert_graph(n=4039, k=22)
@@ -35,7 +37,7 @@ The resulting graph has 4039 nodes and 21.9 edges per node. Since every edge is 
 
 And the standard deviation of degree is 40.9, which is a bit less than in the dataset, 52.4, but it is much better than what we got from the WS graph, 1.5.
 
-Figure ?? shows the degree distributions for the Facebook dataset and the BA model on a log-log scale. The model is not perfect; in particular, it deviates from the data when k is less than 10. But the tail looks like a straight line, which suggests that this process generates degree distributions that follow a power law.
+:ref:`Figure 5.3 <fig_5.3>` shows the degree distributions for the Facebook dataset and the BA model on a log-log scale. The model is not perfect; in particular, it deviates from the data when k is less than 10. But the tail looks like a straight line, which suggests that this process generates degree distributions that follow a power law.
 
 So the BA model is better than the WS model at reproducing the degree distribution. But does it have the small world property?
 
@@ -43,9 +45,11 @@ In this example, the average path length, L, is 2.5, which is even more “small
 
 On the other hand, the clustering coefficient, C, is 0.037, not even close to the value in the dataset, 0.61. So that’s a problem.
 
-Table ?? summarizes these results. The WS model captures the small world characteristics, but not the degree distribution. The BA model captures the degree distribution, at least approximately, and the average path length, but not the clustering coefficient.
+:ref:`Table 5.1 <fig_tbl_5.1>` summarizes these results. The WS model captures the small world characteristics, but not the degree distribution. The BA model captures the degree distribution, at least approximately, and the average path length, but not the clustering coefficient.
 
 In the exercises at the end of this chapter, you can explore other models intended to capture all of these characteristics.
+
+.. _fig_tbl_5.1:
 
 .. figure:: Figures/table1.PNG
    :align: center

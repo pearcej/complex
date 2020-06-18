@@ -1,3 +1,5 @@
+.. _3.9:
+
 Analysis of Graph Algorithms
 ----------------------------
 Earlier in this chapter I presented an algorithm for checking whether a graph is connected; in the next few chapters, we will see other graph algorithms. Along the way, we will analyze the performance of those algorithms, figuring out how their run times grow as the size of the graphs increases.
@@ -6,7 +8,7 @@ If you are not already familiar with analysis of algorithms, you might want to r
 
 The order of growth for graph algorithms is usually expressed as a function of n, the number of vertices (nodes), and m, the number of edges.
 
-As an example, let’s analyze reachable_nodes from Section ??:
+As an example, let’s analyze reachable_nodes from :ref:`Section 3.6 <3.6>`
 
 ::
     

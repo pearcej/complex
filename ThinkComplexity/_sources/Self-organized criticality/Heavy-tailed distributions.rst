@@ -1,5 +1,8 @@
 Heavy-tailed distributions
 --------------------------
+
+.. _9.5:
+
 If the sand pile model is in a critical state, we expect to find heavy-tailed distributions for quantities like the duration and size of avalanches. So let’s take a look.
 
 I’ll make a larger sand pile, with ``n=50`` and an initial level of ``30``, and run until equilibrium:
@@ -31,8 +34,8 @@ A large majority of drops have duration 1 and no toppled cells; if we filter the
     T = T[T>1]
     S = S[S>0]
 
-The distributions of ``T`` and ``S`` have many small values and a few very large ones. I’ll use the ``Pmf`` class from thinkstats2 to make a PMF of the values, that is, a map from each value to its probability of occurring (see Section ??).
-
+The distributions of ``T`` and ``S`` have many small values and a few very large ones. I’ll use the ``Pmf`` class from thinkstats2 to make a PMF of the values, that is, a map from each value to its probability of occurring (see :ref:`Section 5.4<5.4>`).
+<>
 ::
 
     pmfT = Pmf(T)
@@ -53,7 +56,7 @@ The distributions of ``T`` and ``S`` have many small values and a few very large
 
 Figure ?? shows the results for values less than 50.
 
-As we saw in Section ??, we can get a clearer picture of these distributions by plotting them on a log-log scale, as shown in Figure ??.
+As we saw in :ref:`Section 5.5 <5.5>`, we can get a clearer picture of these distributions by plotting them on a log-log scale, as shown in Figure ??.
 
 For values between 1 and 100, the distributions are nearly straight on a log-log scale, which is characteristic of a heavy tail. The gray lines in the figure have slopes near -1, which suggests that these distributions follow a power law with parameters near α=1.
 
