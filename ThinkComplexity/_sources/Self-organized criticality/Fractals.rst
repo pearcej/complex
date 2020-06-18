@@ -32,6 +32,7 @@ Inside the loop, it uses ``a==level`` to make a boolean array that’s ``True`` 
 
 .. figure:: Figures/figure_9.4.png
     :align: center
+    :alt: "Figure 9.4: Sand pile model in equilibrium, selecting cells with levels 0, 1, 2, and 3, left to right, top to bottom."
 
     Figure 9.4: Sand pile model in equilibrium, selecting cells with levels 0, 1, 2, and 3, left to right, top to bottom.
 
@@ -81,6 +82,7 @@ The second line unpacks the rows and assigns them to ``steps``, ``steps2``, and 
 
 .. figure:: Figures/figure_9.5.png
     :align: center
+    :alt: "Figure 9.5: Box counts for cells with levels 0, 1, 2, and 3, compared to dashed lines with slopes 1 and 2."
 
     Figure 9.5: Box counts for cells with levels 0, 1, 2, and 3, compared to dashed lines with slopes 1 and 2.
 
