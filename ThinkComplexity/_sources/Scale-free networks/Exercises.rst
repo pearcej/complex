@@ -1,7 +1,7 @@
 Exercises
 ---------
 **Exercise 1:**  
-In Section ?? we discussed two explanations for the small world phenomenon, “weak ties” and “hubs”. Are these explanations compatible; that is, can they both be right? Which do you find more satisfying as an explanation, and why?
+In :ref:`Section 5.9 <5.9>` we discussed two explanations for the small world phenomenon, “weak ties” and “hubs”. Are these explanations compatible; that is, can they both be right? Which do you find more satisfying as an explanation, and why?
 
 Is there data you could collect, or experiments you could perform, that would provide evidence in favor of one model over the other?
 

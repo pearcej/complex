@@ -1,6 +1,8 @@
 Speciation
 ---------------
 
+.. _12.10:
+
 The theory of evolution says that natural selection changes existing species and creates new ones. In our model, we have seen changes, but we have not seen a new species. It’s not even clear, in the model, what a new species would look like.
 
 Among species that reproduce sexually, two organisms are considered the same species if they can breed and produce fertile offspring. But the agents in the model don’t reproduce sexually, so this definition doesn’t apply.

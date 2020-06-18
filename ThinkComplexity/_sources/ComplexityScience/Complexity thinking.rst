@@ -23,11 +23,11 @@ The Enlightenment,  and philosophic  modernism, are based on belief in objective
 
 Some  people  distinguish  between  laws, theories, and models.  Calling something a “law” implies that it is objectively  true  and  immutable;  “theory”  suggests  that  it  is  subject  to revision;  and “model” concedes that it is a subjective choice based on simplifications and approximations.
 
-I think they are all the same thing.  Some concepts that are called laws are really definitions;  others are,  in effect,  the assertion that a certainmodel  predicts  or  explains  the  behavior  of  a  system  particularly  well.We come back to the nature of physical laws in Section 4.8, Section 5.9 and Section 8.8.
+I think they are all the same thing.  Some concepts that are called laws are really definitions;  others are,  in effect,  the assertion that a certainmodel  predicts  or  explains  the  behavior  of  a  system  particularly  well.We come back to the nature of physical laws in :ref:`Section 5.9 <5.9>`, :ref:`Section 6.9 <6.9>` and :ref:`Section 9.9 <9.9>`
 
 **Determinism→indeterminism**
 
-Determinism  is  the  view  that  all  events are caused, inevitably, by prior events.  Forms of indeterminism include randomness, probabilistic causation, and fundamental uncertainty.  Welcome back to this topic in Section 5.5 and Section 10.6 
+Determinism  is  the  view  that  all  events are caused, inevitably, by prior events.  Forms of indeterminism include randomness, probabilistic causation, and fundamental uncertainty.  Welcome back to this topic in :ref:`Section 6.6 <6.6>` and :ref:`Section 11.7 <11.7>`
 
 
 These trends are not universal or complete, but the center of opinion is shifting along these axes.  As evidence, consider the reaction to Thomas Kuhn’s *The Structure  of  Scientific  Revolutions*, which was reviled when it was published and is now considered almost uncontroversial.
