@@ -6,7 +6,6 @@
 What is this a model of?
 ------------------------
 
-.. _fig_cpp_reference:
 
 .. figure:: Figures/thinkcomplexity2021.png
    :align: center

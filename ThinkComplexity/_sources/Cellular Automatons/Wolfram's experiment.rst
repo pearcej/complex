@@ -17,7 +17,6 @@ Figure:
 
 The first row shows the eight states a neighborhood can be in. The second row shows the state of the center cell during the next time step. As a concise encoding of this table, Wolfram suggested reading the bottom row as a binary number; because 00110010 in binary is 50 in decimal, Wolfram calls this CA “Rule 50”.
 
-.. _fig_cpp_reference:
 
 .. figure:: Figures/thinkcomplexity2016.png
    :align: center

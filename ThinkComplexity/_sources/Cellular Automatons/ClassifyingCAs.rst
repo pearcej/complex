@@ -2,9 +2,6 @@ Classifying CAs
 ---------------
 
 .. _fig_6.2:
-
-.. _fig_cpp_reference:
-
 .. figure:: Figures/thinkcomplexity2017.png
    :align: center
    :alt: "Figure 6.2: Rule 18 after 64 steps."
