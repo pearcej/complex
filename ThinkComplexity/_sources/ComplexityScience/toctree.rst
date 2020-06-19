@@ -6,8 +6,8 @@ ComplexityScience
     
     introduction.rst
     changingcriteriainscience.rst
-    TheaxesofScientificModels.rst
-    DifferentModelForDifferentPurposes.rst
-    ComplexityEngineering.rst
-    ComplexityThinking.rst
+    The axes of scientific models.rst
+    Different models for different purposes.rst
+    Complexity engineering.rst
+    Complexity thinking.rst
     Glossary.rst

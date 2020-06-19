@@ -35,7 +35,7 @@ A large majority of drops have duration 1 and no toppled cells; if we filter the
     S = S[S>0]
 
 The distributions of ``T`` and ``S`` have many small values and a few very large ones. I’ll use the ``Pmf`` class from thinkstats2 to make a PMF of the values, that is, a map from each value to its probability of occurring (see :ref:`Section 5.4<5.4>`).
-<>
+
 ::
 
     pmfT = Pmf(T)
@@ -43,11 +43,13 @@ The distributions of ``T`` and ``S`` have many small values and a few very large
 
 .. figure:: Figures/figure_9.2.png
     :align: center
+    :alt: "Figure 9.2: Distribution of avalanche duration (left) and size (right), linear scale."
 
     Figure 9.2: Distribution of avalanche duration (left) and size (right), linear scale.
 
 .. figure:: Figures/figure_9.3.png
     :align: center
+    :alt: "Figure 9.3: Distribution of avalanche duration (left) and size (right), log-log scale."
 
     Figure 9.3: Distribution of avalanche duration (left) and size (right), log-log scale.
 

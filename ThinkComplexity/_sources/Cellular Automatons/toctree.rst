@@ -4,6 +4,7 @@ Cellular Automatons
 .. toctree::
     :maxdepth: 2
 
+    introduction.rst
     ASimpleCA.rst
     Wolfram's experiment.rst
     ClassifyingCAs.rst

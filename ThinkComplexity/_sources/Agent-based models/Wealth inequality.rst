@@ -14,6 +14,7 @@ When an agent dies, from starvation or old age, it is replaced by a new agent wi
 
 .. figure:: Figures/figure_10.4.png
     :align: center
+    :alt: "Figure 10.4: Distribution of sugar (wealth) after 100, 200, 300, and 400 steps (gray lines) and 500 steps (dark line). Linear scale (left) and log-x scale (right)."
 
     Figure 10.4: Distribution of sugar (wealth) after 100, 200, 300, and 400 steps (gray lines) and 500 steps (dark line). Linear scale (left) and log-x scale (right).
 

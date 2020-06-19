@@ -19,6 +19,7 @@ I start with 100 identical agents who always defect, and run the simulation for 
 
 .. figure:: Figures/figure_13.1.png
     :align: center
+    :alt: "Figure 13.1: Average fitness (points scored per round of Prisoner’s Dilemma)"
 
     Figure 13.1: Average fitness (points scored per round of Prisoner’s Dilemma)
 
@@ -50,7 +51,8 @@ To get some insight into this level of fitness, let’s look at a few more instr
 
 .. figure:: Figures/figure_13.2.png
     :align: center
-   
+    :alt: "Figure 13.2: Average niceness across all genomes in the population (left), and fraction of population that cooperates in the first round (right)."
+
     Figure 13.2: Average niceness across all genomes in the population (left), and fraction of population that cooperates in the first round (right).
 
 :ref:`Figure 13.2 <fig_avg_nice>` (left) shows the results: starting from 0, average niceness increases quickly to 0.75, then oscillates between 0.4 and 0.85, with a long-term mean near 0.65. Again, that’s a lot of niceness!
