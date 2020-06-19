@@ -49,6 +49,7 @@ Now we can create and add a ``MeanFitness`` instrument, run the simulation, and 
 
 .. figure:: Figures/figure_12.1.png
     :align: center
+    :alt: "Figure 12.1: Mean fitness over time for 10 simulations with no differential survival or reproduction."
 
     Figure 12.1: Mean fitness over time for 10 simulations with no differential survival or reproduction.
    

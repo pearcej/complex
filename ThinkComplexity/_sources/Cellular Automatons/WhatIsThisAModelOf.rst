@@ -9,9 +9,9 @@ What is this a model of?
 
 .. figure:: Figures/thinkcomplexity2021.png
    :align: center
-   :alt: "Figure 5.6: The logical structure of a simple physical model.."
+   :alt: "Figure 6.6: The logical structure of a simple physical model.."
 
-   Figure 5.6: The logical structure of a simple physical model.
+   Figure 6.6: The logical structure of a simple physical model.
 
 Some cellular automatons are primarily mathematical artifacts. They are interesting because they are surprising, or useful, or pretty, or because they provide tools for creating new mathematics (like the Church-Turing thesis).
 

@@ -21,6 +21,7 @@ Since agents with low fitness are more likely to die, agents with high fitness a
 
 .. figure:: Figures/figure_12.2.png
     :align: center
+    :alt: "Figure 12.2: Mean fitness over time for 10 simulations with differential survival."
 
     Figure 12.2: Mean fitness over time for 10 simulations with differential survival.
    

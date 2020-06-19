@@ -56,6 +56,7 @@ This function identifies porous cells, where ``a==1``, that have at least one we
 
 .. figure:: Figures/figure_8.5.png
     :align: center
+    :alt: "Figure 9.1: Sand pile model initial state (left), after 200 steps (middle), and 400 steps (right)."
 
     Figure 8.5: The first three steps of a percolation model with n=10 and p=0.7.
 
