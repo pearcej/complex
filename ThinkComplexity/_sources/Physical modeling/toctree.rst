@@ -12,3 +12,4 @@ Physical modeling
     Fractals.rst
     Fractals and Percolation Models.rst
     Exercises.rst
+    Glossary.rst

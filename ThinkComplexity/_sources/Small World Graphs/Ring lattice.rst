@@ -1,8 +1,17 @@
+.. _fig_4.1:
+
 Ring lattice
 ------------
-Figure 3.1: A ring lattice with n=10 and k=4.
 
-A regular graph is a graph where each node has the same number of neighbors; the number of neighbors is also called the degree of the node.
+.. _fig_cpp_reference:
+
+.. figure:: Figures/thinkcomplexity2007.png
+   :align: center
+   :alt: "Figure 4.1: A ring lattice with n=10 and k=4."
+
+   Figure 4.1: A ring lattice with n=10 and k=4.
+
+A **regular** graph is a graph where each node has the same number of neighbors; the number of neighbors is also called the **degree** of the node.
 
 A ring lattice is a kind of regular graph, which Watts and Strogatz use as the basis of their model. In a ring lattice with n nodes, the nodes can be arranged in a circle with each node connected to the k nearest neighbors.
 
@@ -19,7 +28,7 @@ More generally, we can enumerate the edges like this:
             v = nodes[j % n]
             yield u, v
 
-adjacent_edges takes a list of nodes and a parameter, halfk, which is half of k. It is a generator function that yields one edge at a time. It uses the modulus operator, %, to wrap around from the highest-numbered node to the lowest.
+``adjacent_edges`` takes a list of nodes and a parameter, ``halfk``, which is half of k. It is a generator function that yields one edge at a time. It uses the modulus operator, %, to wrap around from the highest-numbered node to the lowest.
 
 We can test it like this:
 
@@ -32,7 +41,7 @@ We can test it like this:
     (1, 2)
     (2, 0)
 
-Now we can use adjacent_edges to make a ring lattice:
+Now we can use ``adjacent_edges`` to make a ring lattice:
 
 ::
 
@@ -43,12 +52,12 @@ Now we can use adjacent_edges to make a ring lattice:
     G.add_edges_from(adjacent_edges(nodes, k//2))
     return G
 
-Notice that make_ring_lattice uses floor division to compute halfk, so it is only correct if k is even. If k is odd, floor division rounds down, so the result is a ring lattice with degree k-1. As one of the exercises at the end of the chapter, you will generate regular graphs with odd values of k.
+Notice that ``make_ring_lattice`` uses floor division to compute ``halfk``, so it is only correct if k is even. If k is odd, floor division rounds down, so the result is a ring lattice with degree k-1. As one of the exercises at the end of the chapter, you will generate regular graphs with odd values of k.
 
-We can test make_ring_lattice like this:
+We can test ``make_ring_lattice`` like this:
 
 ::
 
     lattice = make_ring_lattice(10, 4)
 
-Figure ?? shows the result.
+:ref:`Figure 4.1 <fig_4.1>` shows the result.

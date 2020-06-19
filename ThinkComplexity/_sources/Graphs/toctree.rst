@@ -5,7 +5,7 @@ Graphs
     :maxdepth: 2
     
     Introduction.rst
-    What.rst
+    What is a graph.rst
     NetworkX.rst
     Random.rst
     Generating.rst
@@ -14,6 +14,7 @@ Graphs
     Probability of connectivity.rst
     Analysis of graph algorithms.rst
     Exercises.rst
+    Glossary.rst
 
 
     

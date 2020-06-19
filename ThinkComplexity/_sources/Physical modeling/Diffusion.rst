@@ -16,18 +16,24 @@ The following kernel computes the difference between each cell and the average o
                        [1,-4, 1],
                        [0, 1, 0]])
 
-Using np.correlate2d, we can apply this kernel to each cell in an array:
+Using ``np.correlate2d``, we can apply this kernel to each cell in an array:
+
+.. _fig_simp_dif:
 
 ::
 
      c = correlate2d(array, kernel, mode='same')
 
-We’ll use a diffusion constant, r, that relates the difference in concentration to the rate of flow:
+We’ll use a diffusion constant, ``r``, that relates the difference in concentration to the rate of flow:
 
 ::
 
     array += r * c
 
-Figure 7.1::
+.. figure:: Figures/figure_8.1.png
+    :align: center
+    :alt: "Figure 8.1: A simple diffusion model after 0, 5, and 10 steps."
 
-Figure ?? shows results for a CA with size n=9, diffusion constant r=0.1, and initial concentration 0 everywhere except for an “island” in the middle. The figure shows the starting configuration and the state of the CA after 5 and 10 steps. The chemical spreads from the center outward, continuing until the concentration is the same everywhere.
+    Figure 8.1: A simple diffusion model after 0, 5, and 10 steps.
+
+:ref:`Figure 8.1 <fig_simp_dif>` shows results for a CA with size ``n=9``, diffusion constant ``r=0.1``, and initial concentration 0 everywhere except for an “island” in the middle. The figure shows the starting configuration and the state of the CA after 5 and 10 steps. The chemical spreads from the center outward, continuing until the concentration is the same everywhere.

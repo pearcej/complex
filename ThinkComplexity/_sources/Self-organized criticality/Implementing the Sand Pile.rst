@@ -1,6 +1,6 @@
 Implementing the Sand Pile
 --------------------------
-To implement the sand pile model, I define a class called SandPile that inherits from Cell2D, which is defined in Cell2D.py in the repository for this book.
+To implement the sand pile model, I define a class called ``SandPile`` that inherits from ``Cell2D``, which is defined in ``Cell2D.py`` in the repository for this book.
 
 ::
 
@@ -9,9 +9,9 @@ To implement the sand pile model, I define a class called SandPile that inherits
         def __init__(self, n, m, level=9):
             self.array = np.ones((n, m)) * level
 
-All values in the array are initialized to level, which is generally greater than the toppling threshold, K.
+All values in the array are initialized to ``level``, which is generally greater than the toppling threshold, ``K``.
 
-Here’s the step method that finds all cells above K and topples them:
+Here’s the step method that finds all cells above ``K`` and topples them:
 
 ::
 
@@ -56,7 +56,7 @@ The result is a boolean array, but we can use it as if it were an array of integ
      [0 1 0 1 0]
      [0 0 0 0 0]]
 
-If we correlate this array with the kernel, it makes copies of the kernel at each location where toppling is 1.
+If we correlate this array with the kernel, it makes copies of the kernel at each location where ``toppling`` is 1.
 
 ::
 
@@ -87,11 +87,11 @@ And here’s the result.
      [1 0 2 0 1]
      [0 1 0 1 0]]
 
-So that’s how step works.
+So that’s how ``step`` works.
 
-With mode='same', correlate2d considers the boundary of the array to be fixed at zero, so any grains of sand that go over the edge disappear.
+With ``mode='same'``, correlate2d considers the boundary of the array to be fixed at zero, so any grains of sand that go over the edge disappear.
 
-SandPile also provides run, which calls step until no more cells topple:
+``SandPile`` also provides ``run``, which calls ``step`` until no more cells topple:
 
 ::
 
@@ -105,7 +105,7 @@ SandPile also provides run, which calls step until no more cells topple:
 
 The return value is a tuple that contains the number of time steps and the total number of cells that toppled.
 
-If you are not familiar with itertools.count, it is an infinite generator that counts up from the given initial value, so the for loop runs until step returns 0. You can read about the itertools module at http://thinkcomplex.com/iter.
+If you are not familiar with ``itertools.count``, it is an infinite generator that counts up from the given initial value, so the for loop runs until step returns 0. You can read about the ``itertools`` module at http://thinkcomplex.com/iter.
 
 Finally, the drop method chooses a random cell and adds a grain of sand:
 
@@ -117,14 +117,18 @@ Finally, the drop method chooses a random cell and adds a grain of sand:
         index = np.random.randint(n), np.random.randint(m)
         a[index] += 1
 
-Let’s look at a bigger example, with n=20:
+Let’s look at a bigger example, with ``n=20``:
 
 ::
 
     pile = SandPile(n=20, level=10)
     pile.run()
 
-Figure 8.1::
+.. figure:: Figures/figure_9.1.png
+    :align: center 
+    :alt: "Figure 9.1: Sand pile model initial state (left), after 200 steps (middle), and 400 steps (right)."
+
+    Figure 9.1: Sand pile model initial state (left), after 200 steps (middle), and 400 steps (right).
 
 With an initial level of 10, this sand pile takes 332 time steps to reach equilibrium, with a total of 53,336 topplings. Figure ?? (left) shows the configuration after this initial run. Notice that it has the repeating elements that are characteristic of fractals. We’ll come back to that soon.
 

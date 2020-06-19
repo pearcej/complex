@@ -1,7 +1,17 @@
+
+.. _fig_6.6:
+
+.. _6.9:
+
 What is this a model of?
 ------------------------
 
-Figure::
+
+.. figure:: Figures/thinkcomplexity2021.png
+   :align: center
+   :alt: "Figure 6.6: The logical structure of a simple physical model.."
+
+   Figure 6.6: The logical structure of a simple physical model.
 
 Some cellular automatons are primarily mathematical artifacts. They are interesting because they are surprising, or useful, or pretty, or because they provide tools for creating new mathematics (like the Church-Turing thesis).
 
@@ -21,4 +31,4 @@ With simple models we can’t claim that S is similar to M, because it isn’t. 
 
 For this kind of argument, adding more features doesn’t help. Making the model more realistic doesn’t make the model more reliable; it only obscures the difference between the essential features that cause B and the incidental features that are particular to S.
 
-Figure ?? shows the logical structure of this kind of model. The features x and y are sufficient to produce the behavior. Adding more detail, like features w and z, might make the model more realistic, but that realism adds no explanatory power.
+:ref:`Figure 6.6 <fig_6.6>` shows the logical structure of this kind of model. The features x and y are sufficient to produce the behavior. Adding more detail, like features w and z, might make the model more realistic, but that realism adds no explanatory power.
