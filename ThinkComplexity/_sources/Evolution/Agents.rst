@@ -1,5 +1,5 @@
 Agents
--------
+-----------
 
 Next we need agents. Here’s the class definition:
 
@@ -18,9 +18,9 @@ Next we need agents. Here’s the class definition:
 
 The attributes of an Agent are:
 
-- loc: The location of the Agent in the fitness landscape.
-- fit_land: A reference to a FitnessLandscape object.
-- fitness: The fitness of this Agent in the FitnessLandscape, represented as a number between 0 and 1.
+- ``loc``: The location of the ``Agent`` in the fitness landscape.
+- ``fit_land``: A reference to a ``FitnessLandscape`` object.
+- ``fitness``: The fitness of this ``Agent`` in the ``FitnessLandscape``, represented as a number between 0 and 1.
 
-Agent provides copy, which copies the genotype exactly. Later, we will see a version that copies with mutation, but mutation is not necessary for evolution.
+``Agent`` provides ``copy``, which copies the genotype exactly. Later, we will see a version that copies with mutation, but mutation is not necessary for evolution.
 

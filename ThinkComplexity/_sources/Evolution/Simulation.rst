@@ -1,9 +1,11 @@
 Simulation
------------
+---------------
 
-Now that we have agents and a fitness landscape, I’ll define a class called Simulation that simulates the creation, reproduction, and death of the agents. To avoid getting bogged down, I’ll present a simplified version of the code here; you can see the details in the notebook for this chapter.
+.. _12.5:
 
-Here’s the definition of Simulation:
+Now that we have agents and a fitness landscape, I’ll define a class called ``Simulation`` that simulates the creation, reproduction, and death of the agents. To avoid getting bogged down, I’ll present a simplified version of the code here; you can see the details in the notebook for this chapter.
+
+Here’s the definition of ``Simulation``:
 
 ::
 
@@ -15,8 +17,8 @@ Here’s the definition of Simulation:
 
 The attributes of a Simulation are:
 
-- fit_land: A reference to a FitnessLandscape object.
-- agents: An array of Agent objects.
+- ``fit_land``: A reference to a FitnessLandscape object.
+- ``agents``: An array of Agent objects.
 
 The most important function in Simulation is step, which simulates one time step:
 
@@ -38,9 +40,9 @@ The most important function in Simulation is step, which simulates one time step
 
 step uses three other methods:
 
-- get_fitnesses returns an array containing the fitness of each agent.
-- choose_dead decides which agents die during this time step, and returns an array that contains the indices of the dead agents.
-- choose_replacements decides which agents reproduce during this time step, invokes copy on each one, and returns an array of new Agent objects.
+- ``get_fitnesses`` returns an array containing the fitness of each agent.
+- ``choose_dead`` decides which agents die during this time step, and returns an array that contains the indices of the dead agents.
+- ``choose_replacements`` decides which agents reproduce during this time step, invokes copy on each one, and returns an array of new ``Agent`` objects.
 
 In this version of the simulation, the number of new agents during each time step equals the number of dead agents, so the number of live agents is constant.
 

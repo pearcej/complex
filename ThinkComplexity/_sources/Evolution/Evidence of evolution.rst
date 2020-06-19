@@ -1,11 +1,13 @@
 Evidence of evolution
----------------------
+----------------------
+
+.. _12.7:
 
 The most inclusive definition of evolution is a change in the distribution of genotypes in a population. Evolution is an aggregate effect: in other words, individuals don’t evolve; populations do.
 
 In this simulation, genotypes are locations in a high-dimensional space, so it is hard to visualize changes in their distribution. However, if the genotypes change, we expect their fitness to change as well. So we will use *changes in the distribution of fitness* as evidence of evolution. In particular, we’ll look at the mean and standard deviation of fitness over time.
 
-Before we run the simulation, we have to add an Instrument, which is an object that gets updated after each time step, computes a statistic of interest, or “metric", and stores the result in a sequence we can plot later.
+Before we run the simulation, we have to add an ``Instrument``, which is an object that gets updated after each time step, computes a statistic of interest, or “metric", and stores the result in a sequence we can plot later.
 
 Here is the parent class for all instruments:
 
@@ -15,7 +17,7 @@ Here is the parent class for all instruments:
         def __init__(self):
             self.metrics = []
 
-And here’s the definition for MeanFitness, an instrument that computes the mean fitness of the population at each time step:
+And here’s the definition for ``MeanFitness``, an instrument that computes the mean fitness of the population at each time step:
 
 ::
 
@@ -24,7 +26,7 @@ And here’s the definition for MeanFitness, an instrument that computes the mea
             mean = np.nanmean(sim.get_fitnesses())
             self.metrics.append(mean)
 
-Now we’re ready to run the simulation. To avoid the effect of random changes in the starting population, we start every simulation with the same set of agents. And to make sure we explore the entire fitness landscape, we start with one agent at every location. Here’s the code that creates the Simulation:
+Now we’re ready to run the simulation. To avoid the effect of random changes in the starting population, we start every simulation with the same set of agents. And to make sure we explore the entire fitness landscape, we start with one agent at every location. Here’s the code that creates the ``Simulation``:
 
 ::
 
@@ -33,9 +35,9 @@ Now we’re ready to run the simulation. To avoid the effect of random changes i
     agents = make_all_agents(fit_land, Agent)
     sim = Simulation(fit_land, agents)
 
-make_all_agents creates one Agent for every location; the implementation is in the notebook for this chapter.
+``make_all_agents`` creates one ``Agent`` for every location; the implementation is in the notebook for this chapter.
 
-Now we can create and add a MeanFitness instrument, run the simulation, and plot the results:
+Now we can create and add a ``MeanFitness`` instrument, run the simulation, and plot the results:
 
 ::
 
@@ -43,9 +45,14 @@ Now we can create and add a MeanFitness instrument, run the simulation, and plot
     sim.add_instrument(instrument)
     sim.run()
 
-Simulation keeps a list of Instrument objects. After each time step it invokes update on each Instrument in the list.
+``Simulation`` keeps a list of ``Instrument`` objects. After each time step it invokes ``update`` on each ``Instrument`` in the list.
 
-Figure 11.1::
+.. figure:: Figures/figure_12.1.png
+    :align: center
+    :alt: "Figure 12.1: Mean fitness over time for 10 simulations with no differential survival or reproduction."
+
+    Figure 12.1: Mean fitness over time for 10 simulations with no differential survival or reproduction.
+   
 
 Figure ?? shows the result of running this simulation 10 times. The mean fitness of the population drifts up or down at random. Since the distribution of fitness changes over time, we infer that the distribution of phenotypes is also changing. By the most inclusive definition, this **random walk** is a kind of evolution. But it is not a particularly interesting kind.
 

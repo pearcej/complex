@@ -1,3 +1,5 @@
+.. _9.9:
+
 Reductionism and Holism
 -----------------------
 The original paper by Bak, Tang and Wiesenfeld is one of the most frequently-cited papers in the last few decades. Some subsequent papers have reported other systems that are apparently self-organized critical (SOC). Others have studied the sand pile model in more detail.
@@ -10,7 +12,14 @@ To understand this point, it is useful to think about two kinds of models, reduc
 
 For example, to explain why the ideal gas law holds, we can model the molecules that make up a gas with point masses and model their interactions as elastic collisions. If you simulate or analyze this model, you find that it obeys the ideal gas law. This model is satisfactory to the degree that molecules in a gas behave like molecules in the model. The analogy is between the parts of the system and the parts of the model.
 
-Figure 8.7::
+
+.. figure:: Figures/figure_9.7.png
+    :align: center
+    :alt: "Figure 9.7: The logical structure of a holistic model."
+
+    Figure 9.7: The logical structure of a holistic model.
+
+
 
 Holistic models are more focused on similarities between systems and less interested in analogous parts. A holistic approach to modeling consists of these steps:
 

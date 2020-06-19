@@ -1,8 +1,8 @@
 Traffic jams
-------------
+----------------
 What causes traffic jams? Sometimes there is an obvious cause, like an accident, a speed trap, or something else that disturbs the flow of traffic. But other times traffic jams appear for no apparent reason.
 
-Agent-based models can help explain spontaneous traffic jams. As an example, I implement a highway simulation based on a model in Mitchell Resnick’s book, Turtles, Termites and Traffic Jams.
+Agent-based models can help explain spontaneous traffic jams. As an example, I implement a highway simulation based on a model in Mitchell Resnick’s book, *Turtles, Termites and Traffic Jams.*
 
 Here’s the class that represents the “highway”:
 
@@ -23,13 +23,13 @@ Here’s the class that represents the “highway”:
                 j = (i+1) % n
                 self.drivers[i].next = self.drivers[j]
 
-n is the number of cars, length is the length of the highway, and eps is the amount of random noise we’ll add to the system.
+``n`` is the number of cars, ``length`` is the length of the highway, and ``eps`` is the amount of random noise we’ll add to the system.
 
-locs contains the locations of the drivers; the NumPy function linspace creates an array of n locations equally spaced between 0 and length.
+``locs`` contains the locations of the drivers; the NumPy function ``linspace`` creates an array of n locations equally spaced between ``0`` and ``length``.
 
-The drivers attribute is a list of Driver objects. The for loop links them so each Driver contains a reference to the next. The highway is circular, so the last Driver contains a reference to the first.
+The ``drivers`` attribute is a list of ``Driver`` objects. The ``for`` loop links them so each ``Driver`` contains a reference to the next. The highway is circular, so the last ``Driver`` contains a reference to the first.
 
-During each time step, the Highway moves each of the drivers:
+During each time step, the ``Highway`` moves each of the drivers:
 
 ::
 
@@ -39,7 +39,7 @@ During each time step, the Highway moves each of the drivers:
             for driver in self.drivers:
                 self.move(driver)
 
-The move method lets the Driver choose its acceleration. Then move computes the updated speed and position. Here’s the implementation:
+The move method lets the ``Driver`` choose its acceleration. Then ``move`` computes the updated speed and position. Here’s the implementation:
 
 ::
 
@@ -69,15 +69,15 @@ The move method lets the Driver choose its acceleration. Then move computes the 
             driver.speed = speed
             driver.loc += speed
 
-dist is the distance between driver and the next driver ahead. This distance is passed to choose_acceleration, which specifies the behavior of the driver. This is the only decision the driver gets to make; everything else is determined by the “physics” of the simulation.
+``dist`` is the distance between ``driver`` and the next driver ahead. This distance is passed to ``choose_acceleration``, which specifies the behavior of the driver. This is the only decision the driver gets to make; everything else is determined by the “physics” of the simulation.
 
-- acc is acceleration, which is bounded by min_acc and max_acc. In my implementation, cars can accelerate with max_acc=1 and brake with min_acc=-10.
-- speed is the old speed plus the requested acceleration, but then we make some adjustments. First, we add random noise to speed, because the world is not perfect. eps determines the magnitude of the relative error; for example, if eps is 0.02, speed is multiplied by a random factor between 0.98 and 1.02.
-- Speed is bounded between 0 and speed_limit, which is 40 in my implementation, so cars are not allowed to go backward or speed.
-- If the requested speed would cause a collision with the next car, speed is set to 0.
-- Finally, we update the speed and loc attributes of driver.
+- ``acc`` is acceleration, which is bounded by ``min_acc`` and ``max_acc``. In my implementation, cars can accelerate with ``max_acc=1`` and brake with ``min_acc=-10``.
+- ``speed`` is the old speed plus the requested acceleration, but then we make some adjustments. First, we add random noise to ``speed``, because the world is not perfect. ``eps`` determines the magnitude of the relative error; for example, if ``eps`` is 0.02, speed is multiplied by a random factor between 0.98 and 1.02.
+- Speed is bounded between 0 and ``speed_limit``, which is 40 in my implementation, so cars are not allowed to go backward or speed.
+- If the requested speed would cause a collision with the next car, ``speed`` is set to 0.
+- Finally, we update the ``speed`` and ``loc`` attributes of driver.
 
-Here’s the definition for the Driver class:
+Here’s the definition for the ``Driver`` class:
 
 ::
 
@@ -90,15 +90,19 @@ Here’s the definition for the Driver class:
         def choose_acceleration(self, dist):
             return 1
 
-The attributes loc and speed are the location and speed of the driver.
+The attributes ``loc`` and ``speed`` are the location and speed of the driver.
 
-This implementation of choose_acceleration is simple: it always accelerates at the maximum rate.
+This implementation of ``choose_acceleration`` is simple: it always accelerates at the maximum rate.
 
 Since the cars start out equally spaced, we expect them all to accelerate until they reach the speed limit, or until their speed exceeds the space between them. At that point, at least one “collision” will occur, causing some cars to stop.
 
-Figure 10.1::
+.. figure:: Figures/figure_11.1.png
+    :align: center
+    :alt: "Figure 11.1: Simulation of drivers on a circular highway at three points in time. Squares indicate the position of the drivers; triangles indicate places where one driver has to brake to avoid another."
 
-Figure ?? shows a few steps in this process, starting with 30 cars and eps=0.02. On the left is the configuration after 16 time steps, with the highway mapped to a circle. Because of random noise, some cars are going faster than others, and the spacing has become uneven.
+    Figure 11.1: Simulation of drivers on a circular highway at three points in time. Squares indicate the position of the drivers; triangles indicate places where one driver has to brake to avoid another.
+
+Figure ?? shows a few steps in this process, starting with 30 cars and ``eps=0.02``. On the left is the configuration after 16 time steps, with the highway mapped to a circle. Because of random noise, some cars are going faster than others, and the spacing has become uneven.
 
 During the next time step (middle) there are two collisions, indicated by the triangles.
 
