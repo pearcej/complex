@@ -62,3 +62,16 @@ The differences are:
 - I replaced ``pop`` with ``popleft``, which removes and returns the leftmost element of the queue.
 
 This version is back to being O(n + m). Now we’re ready to find shortest paths.
+
+.. mchoice:: q1_4.10
+    :answer_a: Starting from the root node a BFS will search all the nodes at one level before moving to the next one while a DFS will explore down a full branch and then backtrack.
+    :answer_b: Starting from the root node a BFS will explore down a full branch and then backtrack while a DFS will search all the nodes at one level before moving on to the next one.
+    :answer_c: Starting from the root node a BFS will look at the distance of all of the neighboring nodes and find the one with the shortest path and you can do this to find the shortest path between two nodes or multiple nodes. Also starting from the root node a DFS will search all of the nodes at one level before moving on.
+    :answer_d: Starting from the root node a BFS will look at the distance of all of the neighboring nodes and find the one with the shortest path and you can do this to find the shortest path between two nodes or multiple nodes. Also starting from the root node a DFS will explore down a full branch and then backtrack.
+    :correct: a
+    :feedback_a: Correct!
+    :feedback_b: Swap your definitions and you will be good!
+    :feedback_c: The BFS definition is a basic outline for dijkstra’s algorithm, which only works with a BFS, and the DFS definition is actually the definition of BFS.
+    :feedback_d: The BFS definition is a basic outline for dijkstra’s algorithm, which only works with a BFS,  and the DFS definition is correct. 
+
+    Which of the following is an accurate statement when talking about BFS and DFS?
