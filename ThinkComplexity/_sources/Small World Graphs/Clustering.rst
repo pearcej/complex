@@ -60,3 +60,15 @@ We can test ``clustering_coefficient`` like this:
     0.5
 
 In this graph, the local clustering coefficient for all nodes is 0.5, so the average across nodes is 0.5. Of course, we expect this value to be different for WS graphs.
+
+.. fillintheblank:: question_4.6.1
+        :casei:
+
+        If a node has fewer than ``|blank|`` neighbors, the clustering coefficient is ``|blank|``, so we return np.nan, which is a special value that indicates ``|blank|``.
+
+        - :2: Correct!
+          :x: Try again
+        - :undefined: Correct!
+          :x: Try again
+        - :not a number: Correct!
+          :x: Try again

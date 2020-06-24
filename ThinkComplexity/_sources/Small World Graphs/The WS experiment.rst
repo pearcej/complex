@@ -67,3 +67,18 @@ In order to plot ``L`` and ``C`` on the same axes, we standardize them by dividi
 As a result, there is a wide range of ``p`` where a WS graph has the properties of a small world graph, high clustering and low path lengths.
 
 And that’s why Watts and Strogatz propose WS graphs as a model for real-world networks that exhibit the small world phenomenon.
+
+
+.. mchoice:: q_4.8
+    :answer_a: Shortcuts are created during the rewiring process.
+    :answer_b: The path does not actual get shorter, It grows
+    :answer_c: The edges shrink
+    :answer_d: All of the above
+    :correct: a
+    :feedback_a: Correct!
+    :feedback_b: Try looking at how a rewiring could connect different regions of the graph.
+    :feedback_c: Look again at what is created during the rewiring process.
+    :feedback_d: Incorrect! Only one of the above is correct. 
+
+    Given that a node returns np.nan, what can you say about the number of edges that node has?
+
