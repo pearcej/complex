@@ -19,3 +19,19 @@ Figure ?? shows the initial condition (left) and the state of the model after 6 
 
 These waves move diagonally, which is surprising because the agents themselves only move north or east, never northeast. Outcomes like this — groups or “aggregates” with properties and behaviors that the agents don’t have — are common in agent-based models. We will see more examples in the next chapter.
 
+.. shortanswer:: q_10.6
+
+    Explain the wave behavior in Sugarscape. How does the pattern evolve and why does waves resemble a coherent object?
+
+.. mchoice:: q_10.7
+   :answer_a: Gun
+   :answer_b: Beehive
+   :answer_c: Spaceship
+   :answer_d: Toad
+   :correct: c
+   :feedback_a: Incorrect, a gun in a stable pattern that periodically produces a spaceship. 
+   :feedback_b: Incorrect, a beehive is a stable pattern that no new cells are ever born in. 
+   :feedback_c: Correct!
+   :feedback_d: Incorrect, a toad pattern oscillates between two states. 
+
+   The resulting series of migrating waves is compared to what pattern from GoL?

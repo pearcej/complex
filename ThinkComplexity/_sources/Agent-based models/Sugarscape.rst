@@ -47,6 +47,19 @@ When sugar grows back at 1 unit per time step, there is not enough sugar to sust
 
 Figure ?? (right) shows the state of the model after 100 time steps, with about 250 agents. The agents who survive tend to be the lucky ones, born with high vision and/or low metabolism. Having survived to this point, they are likely to survive forever, accumulating unbounded stockpiles of sugar.
 
+.. mchoice:: q_10.4
+   :answer_a: They are a model of a simple economy.
+   :answer_b: Agents move around a 3-D grid.
+   :answer_c: They are often used to explore and explain the distribution of wealth.
+   :answer_d: All of the agents in the sugarscape are able to hold the same amount of sugar and are all just as likely to locate sugar.
+   :answer_e: None of the above are related to sugarscapes.
+   :correct: a,c
+   :feedback_a: Correct!
+   :feedback_b: Sorry they do use grids but they use 2-D grids.
+   :feedback_c: Correct!
+   :feedback_d: Sorry but some agents are better than others at finding sugar.
+   :feedback_e: Sorry two of the answers given above are correct.
 
+   Which of the following are true about Sugarscapes:
 
 

@@ -40,3 +40,26 @@ Figure ?? shows how the degree of segregation increases and where it levels off 
 
 These results are surprising to many people, and they make a striking example of the unpredictable relationship between individual decisions and system behavior.
 
+.. fillintheblank:: 1_10.2
+
+    The average fraction of similar neighbors is |blank| % in the initial configuration, |blank| % after two steps, and |blank| % after 10 steps!
+
+    - :50: Correct!
+      :x: Incorrect, please refer back to the text.
+    - :65: Correct!
+      :x: Incorrect, please refer back to the text.
+    - :75: Correct!
+      :x: Incorrect, please refer back to the text.
+
+.. mchoice:: q_10.3
+   :answer_a: 30%
+   :answer_b: 82%
+   :answer_c: 76%
+   :answer_d: 50%
+   :correct: b
+   :feedback_a: Sorry but that is what percentage of agents will be unhappy if p=0.3.
+   :feedback_b: Correct!
+   :feedback_c: Sorry but that was the percentage from 10 steps into the p=0.3 example above.
+   :feedback_d: Sorry but that was the initial configuration of the p=0.3 example above.
+
+   When p=0.4 what is the approximate degree of segregation in a steady state?
