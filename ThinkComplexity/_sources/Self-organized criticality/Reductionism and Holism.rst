@@ -41,3 +41,23 @@ Many natural systems demonstrate behaviors characteristic of critical systems. B
 The first approach, which I characterize as reductionist, can explain the behavior of a particular system. The second approach, which I am calling holistic, can explain the prevalence of criticality in natural systems. They are different models with different purposes.
 
 For reductionist models, realism is the primary virtue, and simplicity is secondary. For holistic models, it is the other way around.
+
+.. fillintheblank:: q_9.9
+   :casei:
+
+   What is compared to genes as a means of understanding the evolutionary system? 
+
+   |blank|
+
+   - :memes: Correct! 
+     :x: Incorrect, please go back and reread the section.
+
+.. mchoice:: q_9.9.2
+   :answer_a: Reductionist Model
+   :answer_b: Holistic Model
+   :correct: b
+   :feedback_a: sorry try again, this is a more abstract model than what a reductionist approach would use.
+   :feedback_b: Correct!
+
+   Given the explanation above, the sand pile model is  most accurately described as a? 
+   
