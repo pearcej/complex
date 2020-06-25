@@ -17,3 +17,12 @@ If you did not know the process and only saw the result, you might assume that t
 Racism is a complex human problem; it is hard to imagine that such a simple model could shed light on it. But in fact it provides a strong argument about the relationship between a system and its parts: if you observe segregation in a real city, you cannot conclude that individual racism is the immediate cause, or even that the people in the city are racists.
 
 Of course, we have to keep in mind the limitations of this argument: Schelling’s model demonstrates a possible cause of segregation, but says nothing about actual causes.
+
+.. mchoice:: q_10
+    :answer_a: True
+    :answer_b: False
+    :correct: b
+    :feedback_a: Incorrect as it only gives the possible causes.
+    :feedback_b: Correct!
+
+    Schelling model gives the actual causes for racism.
