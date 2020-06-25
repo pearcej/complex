@@ -20,3 +20,11 @@ If you are more comfortable with some of these statements than others, ask yours
 
 For more on instrumentalism, see http://thinkcomplex.com/instr.
 
+.. mchoice:: q_7.11
+   :answer_a: True
+   :answer_b: False
+   :correct: b
+   :feedback_a: Incorrect, please re-read the section.
+   :feedback_b: Correct, instrumentalism is the views on theories not laws.
+
+   Instrumentalism is the view that laws are instruments that we use for our purposes: a law is useful, or not, to the degree that it is fit for its purpose, but we can’t say whether it is true or false.

@@ -25,4 +25,27 @@ GoL is popular because:
 
     - Finally, the increasing availability of computers made it possible to automate the computation and display the results graphically.
 
+.. fillintheblank:: q_7.1
+   :casei:
+
+   In the Game of life, cells are arranged in a 2-D grid and each cell in the grid has two states — live and dead. Keeping that in mind, fill in the blanks, please give the numeral not the spelling.
+   
+   In GoL (Game of life), If a cell is alive, it stays alive if it has |blank| or |blank| neighbors, and dies otherwise. If a cell is dead, it stays dead unless it has exactly |blank| neighbors.
+   
+   - :2: Correct, with 2 neighboring cells the cell would stay alive.
+     :two: **Please give the numeral not the spelling.**
+     :x: Incorrect. 
+   - :3: Correct, with 2 or 3 neighboring cells the cell would stay alive.
+     :three: **Please give the numeral not the spelling.** 
+     :x: Incorrect, try again.
+   - :3: Correct, a cell needs 3 neighbors to stay alive. 
+     :three: **Please give the numeral not the spelling.** 
+     :x: Incorrect. Please refer back to the book and explore how GoL evolves over time according to rules.
+
+
+.. shortanswer:: q_7.2
+
+   What are two of the reasons the author says GoL is popular?
+   
+
     
