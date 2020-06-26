@@ -4,7 +4,11 @@ The code for the traffic jam simulation is in the Jupyter notebook ``chap09.ipyn
 
 **Exercise 1:**  In the traffic jam simulation, define a class, ``BetterDriver``, that inherits from ``Driver`` and ``overrides`` ``choose_acceleration``. See if you can define driving rules that do better than the basic implementation in ``Driver``. You might try to achieve higher average speed, or a lower number of collisions.
 
+<<<<<<< HEAD
 **Exercise 2:**  The code for my Boid implementation is in Boids7.py in the repository for this book. To run it, you will need VPython, a library for 3-D graphics and animation. If you use Anaconda (as I recommend in `Section 1.4 <>`_ ), you can run the following in a terminal or Command Window:
+=======
+**Exercise 2:**  The code for my Boid implementation is in Boids7.py in the repository for this book. To run it, you will need VPython, a library for 3-D graphics and animation. If you use Anaconda (as I recommend in :ref:`Section 1.4 <1.4>`), you can run the following in a terminal or Command Window:
+>>>>>>> 961d64d129fe8ad4bac657368baf72ac974f7856
 
 ::
 

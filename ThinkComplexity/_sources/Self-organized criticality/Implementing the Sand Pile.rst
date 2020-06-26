@@ -127,7 +127,8 @@ Let’s look at a bigger example, with ``n=20``:
     pile.run()
 
 .. figure:: Figures/figure_9.1.png
-    :align: center
+    :align: center 
+    :alt: "Figure 9.1: Sand pile model initial state (left), after 200 steps (middle), and 400 steps (right)."
 
     Figure 9.1: Sand pile model initial state (left), after 200 steps (middle), and 400 steps (right).
 

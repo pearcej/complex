@@ -5,8 +5,9 @@ ComplexityScience
     :maxdepth: 2
     
     introduction.rst
-    The changing criteria of science.rst
+    changingcriteriainscience.rst
     The axes of scientific models.rst
     Different models for different purposes.rst
     Complexity engineering.rst
     Complexity thinking.rst
+    Glossary.rst

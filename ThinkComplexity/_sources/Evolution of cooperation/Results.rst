@@ -19,12 +19,13 @@ I start with 100 identical agents who always defect, and run the simulation for 
 
 .. figure:: Figures/figure_13.1.png
     :align: center
+    :alt: "Figure 13.1: Average fitness (points scored per round of Prisoner’s Dilemma)"
 
     Figure 13.1: Average fitness (points scored per round of Prisoner’s Dilemma)
 
    
 
-:ref:`Figure 13.1 <fig_avg_fit>` shows mean fitness over time (using the MeanFitness instrument from `Section 12.7 <>`_). Initially mean fitness is 1, because when defectors face each other, they get only 1 point each per round.
+:ref:`Figure 13.1 <fig_avg_fit>` shows mean fitness over time (using the MeanFitness instrument from :ref:`Section 12.7 <12.7>`). Initially mean fitness is 1, because when defectors face each other, they get only 1 point each per round.
 
 After about 500 time steps, mean fitness increases to nearly 3, which is what cooperators get when they face each other. However, as we suspected, this situation in unstable. Over the next 500 steps, mean fitness drops below 2, climbs back toward 3, and continues to oscillate.
 
@@ -50,7 +51,8 @@ To get some insight into this level of fitness, let’s look at a few more instr
 
 .. figure:: Figures/figure_13.2.png
     :align: center
-   
+    :alt: "Figure 13.2: Average niceness across all genomes in the population (left), and fraction of population that cooperates in the first round (right)."
+
     Figure 13.2: Average niceness across all genomes in the population (left), and fraction of population that cooperates in the first round (right).
 
 :ref:`Figure 13.2 <fig_avg_nice>` (left) shows the results: starting from 0, average niceness increases quickly to 0.75, then oscillates between 0.4 and 0.85, with a long-term mean near 0.65. Again, that’s a lot of niceness!

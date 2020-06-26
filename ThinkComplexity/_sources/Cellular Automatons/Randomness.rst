@@ -1,7 +1,7 @@
 Randomness
 ----------
 
-.. _fig_cpp_reference:
+.. _fig_6.3:
 
 .. figure:: Figures/thinkcomplexity2018.png
    :align: center
@@ -9,7 +9,7 @@ Randomness
 
    Figure 6.3: Rule 30 after 100 time steps.
 
-Class 3 contains CAs that generate randomness. Rule 30 is an example; Figure ?? shows what it looks like after 100 time steps.
+Class 3 contains CAs that generate randomness. Rule 30 is an example; :ref:`Figure 6.3 <fig_6.3>` shows what it looks like after 100 time steps.
 
 Along the left side there is an apparent pattern, and on the right side there are triangles in various sizes, but the center seems quite random. In fact, if you take the center column and treat it as a sequence of bits, it is hard to distinguish from a truly random sequence. It passes many of the statistical tests people use to test whether a sequence of bits is random.
 

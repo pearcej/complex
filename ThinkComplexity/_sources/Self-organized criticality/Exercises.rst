@@ -2,6 +2,7 @@ Exercises
 ---------
 The code for this chapter is in the Jupyter notebook ``chap08.ipynb`` in the repository for this book. Open this notebook, read the code, and run the cells. You can use this notebook to work on the following exercises. My solutions are in ``chap08soln.ipynb``.
 
+<<<<<<< HEAD
 **Exercise 1:** To test whether the distributions of ``T`` and ``S`` are heavy-tailed, we plotted their PMFs on a log-log scale, which is what Bak, Tang and Wiesenfeld show in their paper. But as we saw in `Section 5.8 <>`_, this visualization can obscure the shape of the distribution. Using the same data, make a plot that shows the cumulative distributions (CDFs) of ``S`` and ``T``. What can you say about their shape? Do they follow a power law? Are they heavy-tailed?
 
 You might find it helpful to plot the CDFs on a log-x scale and on a log-log scale.
@@ -9,6 +10,15 @@ You might find it helpful to plot the CDFs on a log-x scale and on a log-log sca
 **Exercise 2:** In `Section 9.5 <>`_ we showed that the initial configuration of the sand pile model produces fractal patterns. But after we drop a large number of random grains, the patterns look more random.
 
 Starting with the example in `Section 9.5 <>`_, run the sand pile model for a while and then compute fractal dimensions for each of the 4 levels. Is the sand pile model fractal in steady state?
+=======
+**Exercise 1:** To test whether the distributions of ``T`` and ``S`` are heavy-tailed, we plotted their PMFs on a log-log scale, which is what Bak, Tang and Wiesenfeld show in their paper. But as we saw in :ref:`Section 5.8 <5.8>`, this visualization can obscure the shape of the distribution. Using the same data, make a plot that shows the cumulative distributions (CDFs) of ``S`` and ``T``. What can you say about their shape? Do they follow a power law? Are they heavy-tailed?
+
+You might find it helpful to plot the CDFs on a log-x scale and on a log-log scale.
+
+**Exercise 2:** In :ref:`Section 9.6<9.6>` we showed that the initial configuration of the sand pile model produces fractal patterns. But after we drop a large number of random grains, the patterns look more random.
+
+Starting with the example in :ref:`Section 9.6<9.6>`, run the sand pile model for a while and then compute fractal dimensions for each of the 4 levels. Is the sand pile model fractal in steady state?
+>>>>>>> 961d64d129fe8ad4bac657368baf72ac974f7856
 
 **Exercise 3:** Another version of the sand pile model, called the “single source” model, starts from a different initial condition: instead of all cells at the same level, all cells are set to 0 except the center cell, which is set to a large value. Write a function that creates a SandPile object, sets up the single source initial condition, and runs until the pile reaches equilibrium. Does the result appear to be fractal?
 
