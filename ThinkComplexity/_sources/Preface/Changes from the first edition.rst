@@ -15,3 +15,4 @@ Also, the Jupyter notebooks are new. For every chapter there are two notebooks: 
 
 Finally, all supporting software has been updated to Python 3 (but most of it runs unmodified in Python 2).
 
+
