@@ -30,6 +30,7 @@ Here’s the function that computes the table:
 The parameter, ``rule``, is an integer between 0 and 255. The first line puts ``rule`` into an array with a single element so we can use ``unpackbits``, which converts the rule number to its binary representation. For example, here’s the table for Rule 150:
 
 ::
+
     >>> table = make_table(150)
     >>> print(table)
     [0 1 1 0 1 0 0 1]

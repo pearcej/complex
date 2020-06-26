@@ -19,5 +19,6 @@ Cellular Automatons
     CATables.rst
     Exercises.rst
     Glossary.rst
+    Matching.rst
     
     

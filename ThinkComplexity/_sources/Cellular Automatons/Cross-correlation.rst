@@ -7,7 +7,8 @@ The operation in the previous section — selecting elements from an array and a
 
 The NumPy ``correlate`` function takes an array, a, and a “window", w, with length N and computes a new array, c, where element k is the following summation:
 
-Figure:
+.. figure:: Figures/Equation.png
+    :align: center
 
 We can write this operation in Python like this:
 
