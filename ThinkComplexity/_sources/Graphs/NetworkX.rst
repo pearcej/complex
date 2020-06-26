@@ -1,3 +1,6 @@
+
+.. _fig_3.2:
+
 NetworkX
 ---------
 .. _fig_cpp_reference:
@@ -61,10 +64,10 @@ NetworkX provides several functions for drawing graphs; ``draw_circular`` arrang
                  node_size=2000,
                  with_labels=True)
 
-That’s the code I use to generate Figure ??. The option ``with_labels`` causes the nodes to be labeled; in the next example we’ll see how to label the edges.
+That’s the code I use to generate :ref:`Figure 3.1 <fig_3.1>`. The option ``with_labels`` causes the nodes to be labeled; in the next example we’ll see how to label the edges.
 
 
-To generate Figure ??, I start with a dictionary that maps from each city name to its approximate longitude and latitude:
+To generate :ref:`Figure 3.2 <fig_3.2>`, I start with a dictionary that maps from each city name to its approximate longitude and latitude:
 
 ::
 
@@ -119,6 +122,6 @@ To add the edge labels, we use ``draw_networkx_edge_labels``:
      x.draw_networkx_edge_labels(G, positions,
                              edge_labels=drive_times)
 
-The ``edge_labels`` parameter expects a dictionary that maps from each pair of nodes to a label; in this case, the labels are driving times between cities. And that’s how I generated Figure ??.
+The ``edge_labels`` parameter expects a dictionary that maps from each pair of nodes to a label; in this case, the labels are driving times between cities. And that’s how I generated :ref:`Figure 3.2 <fig_3.2>`.
 
 In both of these examples, the nodes are strings, but in general they can be any hashable type.

@@ -1,3 +1,5 @@
+.. _9.9:
+
 Reductionism and Holism
 -----------------------
 The original paper by Bak, Tang and Wiesenfeld is one of the most frequently-cited papers in the last few decades. Some subsequent papers have reported other systems that are apparently self-organized critical (SOC). Others have studied the sand pile model in more detail.
@@ -13,6 +15,7 @@ For example, to explain why the ideal gas law holds, we can model the molecules 
 
 .. figure:: Figures/figure_9.7.png
     :align: center
+    :alt: "Figure 9.7: The logical structure of a holistic model."
 
     Figure 9.7: The logical structure of a holistic model.
 

@@ -14,6 +14,7 @@ In the Sugarscape grid, each cell has a capacity, which is the maximum amount of
 
 .. figure:: Figures/figure_10.3.png
     :align: center
+    :alt: "Figure 10.3: Replication of the original Sugarscape model: initial configuration (left), after 2 steps (middle) and after 100 steps (right)."
 
     Figure 10.3: Replication of the original Sugarscape model: initial configuration (left), after 2 steps (middle) and after 100 steps (right).
 
