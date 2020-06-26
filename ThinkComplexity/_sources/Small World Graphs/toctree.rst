@@ -17,3 +17,4 @@ Small World Graphs
     Dijkstra’s algorithm.rst
     Exercises.rst
     Glossary.rst
+    Matching.rst
