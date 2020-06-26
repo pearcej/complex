@@ -5,11 +5,11 @@ Herds, Flocks, and Traffic Jams
     :maxdepth: 2
 
     Introduction.rst
-    Traffic jams.rst
-    Random perturbation.rst
+    TrafficJams.rst
+    RandomPerturbation.rst
     Boids.rst
-    The Boid algorithm.rst
+    TheBoidAlgorithm.rst
     Arbitration.rst
-    Emergence and free will.rst
+    EmergenceAndFreeWill.rst
     Exercises.rst
     Glossary.rst
