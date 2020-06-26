@@ -16,13 +16,13 @@ This behavior is loosely analogous to real cell growth: cells that are isolated 
 
 GoL is popular because:
 
-    - There are simple initial conditions that yield surprisingly complex behavior.
+- There are simple initial conditions that yield surprisingly complex behavior.
 
-    - There are many interesting stable patterns: some oscillate (with various periods) and some move like the spaceships in Wolfram’s Rule 110 CA.
-    - And like Rule 110, GoL is Turing complete.
+- There are many interesting stable patterns: some oscillate (with various periods) and some move like the spaceships in Wolfram’s Rule 110 CA.
+- And like Rule 110, GoL is Turing complete.
 
-    - Another factor that generated interest was Conway’s conjecture — that there is no initial condition that yields unbounded growth in the number of live cells — and the $50 bounty he offered to anyone who could prove or disprove it.
+- Another factor that generated interest was Conway’s conjecture — that there is no initial condition that yields unbounded growth in the number of live cells — and the $50 bounty he offered to anyone who could prove or disprove it.
 
-    - Finally, the increasing availability of computers made it possible to automate the computation and display the results graphically.
+- Finally, the increasing availability of computers made it possible to automate the computation and display the results graphically.
 
     
