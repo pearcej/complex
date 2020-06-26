@@ -12,7 +12,7 @@ Life pattern
 
     Figure 7.1: A stable pattern called a beehive.
 
-.. _7.2:
+.. _fig7.2:
 
 .. figure:: Figures/figure_7.2.png
     :align: center

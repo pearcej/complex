@@ -43,7 +43,7 @@ GoL is popular because:
      :x: Incorrect. Please refer back to the book and explore how GoL evolves over time according to rules.
 
 
-.. shortanswer:: q_7.2
+.. shortanswer:: q7.2
 
    What are two of the reasons the author says GoL is popular?
    
