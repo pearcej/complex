@@ -15,6 +15,7 @@ Graphs
     Analysis of graph algorithms.rst
     Exercises.rst
     Glossary.rst
+    Matching.rst
 
 
     
