@@ -31,7 +31,7 @@ To estimate the probability of a percolating cluster, we generate many random ar
         t = [test_perc(Percolation(n, q)) for i in range(iters)]
         return np.mean(t)
 
-``estimate_prob_percolating`` makes 100 Percolation objects with the given values of ``n`` and ``q`` and calls ``test_perc`` to see how many of them have a percolating cluster. The return value is the fraction that do.
+``estimate_prob_percolating`` makes 100 Percolation objects with the given values of ``n`` and ``q`` and calls ``test_perc`` to see how many of them have a percolating cluster. The return value is the fraction of those that have a percolating cluster.
 
 When ``p=0.55``, the probability of a percolating cluster is near 0. At ``p=0.60``, it is about 70%, and at ``p=0.65`` it is near 1. This rapid transition suggests that there is a critical value of ``p`` near 0.6.
 

@@ -45,16 +45,18 @@ Here is the ``step`` function that updates the arrays:
         self.array += ra * cA - reaction + f * (1-A)
         self.array2 += rb * cB + reaction - (f+k) * B
 
-The parameters are
+The parameters are:
 
 **ra**:
 The diffusion rate of ``A`` (analogous to ``r`` in the previous section).
+
 **rb**:
 The diffusion rate of ``B``. In most versions of this model, ``rb`` is about half of ra.
-**f**:
-The “feed” rate, which controls how quickly ``A`` is added to the system.
-**k**:
 
+**f**:
+The “feed” rate, which controls how quickly ``A`` is added to the system
+
+**k**:
 The “kill” rate, which controls how quickly ``B`` is removed from the system.
 
 Now let’s look more closely at the update statements:
