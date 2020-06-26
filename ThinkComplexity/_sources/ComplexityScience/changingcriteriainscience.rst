@@ -18,3 +18,17 @@ Nevertheless, there is rough consensus among scientists about which models are c
 A central thesis of this book is that the criteria this consensus is based on change over time, and that the emergence of complexity science reflects a gradual shift in these criteria.
 
 .. _Chapter 10.2: http://localhost:8000/Agent-based%20models/Schelling%E2%80%99s%20Model.html
+
+.. mchoice:: unique_id
+   :answer_a: Law-based, expressed in the form of equations, and solved by mathematical derivation. 
+   :answer_b: Law-based, expressed as computations, and derived from mathematical derivations.
+   :answer_c: Rule-based, expressed as computations, and derived from mathematical derivations.
+   :answer_d: Rule-based, expressed in the form of equations, and expressed as computations.
+   :correct: a   
+   :feedback_a: Correct!
+   :feedback_b: Not quite. Classical models are not expressed as computations.
+   :feedback_c: No, they usually define the correct procedure or behavior for classical models.
+   :feedback_d: No, classical models are not expressed in the form of equations
+
+
+   Classical models tend to be what?
