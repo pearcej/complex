@@ -46,4 +46,19 @@ step uses three other methods:
 
 In this version of the simulation, the number of new agents during each time step equals the number of dead agents, so the number of live agents is constant.
 
+.. mchoice:: q_12.5
+   :answer_a: If an agent dies then a new agent will be made in the next time step so the amount of agents is always changing.
+   :answer_b: If an agent dies no new agent will take its place leading to all the agents being dead eventually. 
+   :answer_c: If an agent dies then a new agent is made within that same time step so that the number of live agents is constant.  
+   :answer_d: None of the above.
+   :correct: c
+   :feedback_a: Sorry but when one agent dies another is made within that same time step so the amount of agents is constant.  
+   :feedback_b: Sorry but a new agent will be made to replace an agent if it dies. 
+   :feedback_c: Correct!
+   :feedback_d: Incorrect. There is one correct answer.
+
+   What happens when an agent dies in this version of the simulation? 
+
+
+
 
