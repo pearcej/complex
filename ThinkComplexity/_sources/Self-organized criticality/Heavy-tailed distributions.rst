@@ -34,13 +34,7 @@ A large majority of drops have duration 1 and no toppled cells; if we filter the
     T = T[T>1]
     S = S[S>0]
 
-<<<<<<< HEAD
-The distributions of ``T`` and ``S`` have many small values and a few very large ones. I’ll use the ``Pmf`` class from thinkstats2 to make a PMF of the values, that is, a map from each value to its probability of occurring (see `Section 5.3 <>`_).
-
-.. _linear_scale:
-=======
 The distributions of ``T`` and ``S`` have many small values and a few very large ones. I’ll use the ``Pmf`` class from thinkstats2 to make a PMF of the values, that is, a map from each value to its probability of occurring (see :ref:`Section 5.4<5.4>`).
->>>>>>> 961d64d129fe8ad4bac657368baf72ac974f7856
 
 ::
 
