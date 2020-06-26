@@ -38,4 +38,13 @@ As an example, suppose ``N=3`` and
 
 In that case, the fitness of ``loc = [0, 1, 0]`` would be the mean of ``[0.4, 0.2, 0.9]``, which is ``0.5``.
 
+.. mchoice:: q_12.3
+   :answer_a: True
+   :answer_b: False
+   :correct: a
+   :feedback_a: Correct. In the book the author uses random fitness landscape. 
+   :feedback_b: Incorrect. Please refer to the section.
+
+   To induce evolution there needs to be a relationship between genotype and fitness, and it can be any relationship.
+
 
