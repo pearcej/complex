@@ -30,3 +30,11 @@ In this chapter I replicate the Watts and Strogatz experiment in the following s
 3. We’ll write a function to measure the degree of clustering and use a NetworkX function to compute path lengths.
 4. Then we’ll compute the degree of clustering and path length for a range of values of p.
 5. Finally, I’ll present Dijkstra’s algorithm, which computes shortest paths efficiently.
+
+.. dragndrop:: dnd-ex-1
+   :feedback: Feedback that is displayed if things are incorrectly matched.
+   :match_1: Path length|||is a measure of the average distance between two nodes, which corresponds to the degrees of separation in a social network. 
+   :match_2: Clustering |||is a measure of the “cliquishness” of the graph
+   :match_3: Clique|||is a subset of nodes that are all connected to each other
+   :match_4: Random Graphs|||nodes are connected at random 
+   :match_5: Regular graphs|||every node has the same number of neighbors
