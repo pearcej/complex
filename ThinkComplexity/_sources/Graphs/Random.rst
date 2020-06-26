@@ -20,7 +20,7 @@ One of the properties that displays this kind of transition is connectivity. An 
 
 In an ER graph, the probability that the graph is **connected** is very low when p is small and nearly 1 when p is large. Between these two regimes, there is a rapid transition at a particular value of p, denoted p*.
 
-Erdős and Rényi showed that this critical value is p* = (lnn) / n, where n is the number of nodes. A random graph, G(n, p), is unlikely to be connected if p < p* and very likely to be connected if p > p*.
+Erdős and Rényi showed that this critical value is ``p* = (lnn) / n``, where n is the number of nodes. A random graph, G(n, p), is unlikely to be connected if p < p* and very likely to be connected if p > p*.
 
 
 To test this claim, we’ll develop algorithms to generate random graphs and check whether they are connected.
