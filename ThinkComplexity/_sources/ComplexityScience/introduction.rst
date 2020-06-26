@@ -16,8 +16,7 @@ Let me contrast that with a different kind of explanation. Suppose you move to a
 
 Here is my description of the model, from :ref:`Chapter 10 <10.1>`:
 
-- The  Schelling  model  of  the  city  is  an  array  of  cells  where  each cell represents a house. The houses are occupied by two kinds of
-  2 Chapter 1    Complexity Science“agents”, labeled red and blue, in roughly equal numbers.  About 10% of the houses are empty.
+- The  Schelling  model  of  the  city  is  an  array  of  cells  where  each cell represents a house. The houses are occupied by two kinds of “agents”, labeled red and blue, in roughly equal numbers.  About 10% of the houses are empty.
 
 - At any point in time,  an agent might be happy or unhappy,  de-pending on the other agents in the neighborhood.  In one version of the model, agents are happy if they have at least two neighbors like themselves, and unhappy if they have one or zero.
 
