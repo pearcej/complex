@@ -1,6 +1,7 @@
 ..  Copyright (C)  Brad Miller, David Ranum, and Jan Pearce
     This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
 
+.. _2.1:
 
 Introduction
 ------------
@@ -13,7 +14,7 @@ Most people find this kind of explanation satisfying. It includes a mathematical
 
 Let me contrast that with a different kind of explanation. Suppose you move to a city like Detroit that is racially segregated, and you want to know why it’s like that. If you do some research, you might find a paper by Thomas Schelling called “Dynamic Models of Segregation”, which proposes a simple model of racial segregation:
 
-Here is my description of the model, from Chapter 9:
+Here is my description of the model, from :ref:`Chapter 10 <10.1>`:
 
 - The  Schelling  model  of  the  city  is  an  array  of  cells  where  each cell represents a house. The houses are occupied by two kinds of
   2 Chapter 1    Complexity Science“agents”, labeled red and blue, in roughly equal numbers.  About 10% of the houses are empty.

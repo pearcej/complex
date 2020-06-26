@@ -28,7 +28,9 @@ First, I make boolean arrays that indicate which cells are red, blue, and empty:
             blue = a==2
             empty = a==0
 
-Then I use ``correlate2d`` to count, for each location, the number of neighboring cells that are red, blue, and non-empty. We saw ``correlate2d`` in `Section 7.7`_.
+
+Then I use ``correlate2d`` to count, for each location, the number of neighboring cells that are red, blue, and non-empty. We saw ``correlate2d`` in :ref:`Section 7.7 <7.7>`.
+
 
 ::
 

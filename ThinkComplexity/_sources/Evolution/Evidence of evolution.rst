@@ -1,6 +1,8 @@
 Evidence of evolution
 ----------------------
 
+.. _12.7:
+
 The most inclusive definition of evolution is a change in the distribution of genotypes in a population. Evolution is an aggregate effect: in other words, individuals don’t evolve; populations do.
 
 In this simulation, genotypes are locations in a high-dimensional space, so it is hard to visualize changes in their distribution. However, if the genotypes change, we expect their fitness to change as well. So we will use *changes in the distribution of fitness* as evidence of evolution. In particular, we’ll look at the mean and standard deviation of fitness over time.
@@ -49,6 +51,7 @@ Now we can create and add a ``MeanFitness`` instrument, run the simulation, and 
 
 .. figure:: Figures/figure_12.1.png
     :align: center
+    :alt: "Figure 12.1: Mean fitness over time for 10 simulations with no differential survival or reproduction."
 
     Figure 12.1: Mean fitness over time for 10 simulations with no differential survival or reproduction.
    
