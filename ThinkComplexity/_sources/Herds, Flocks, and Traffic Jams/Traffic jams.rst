@@ -111,3 +111,11 @@ During the next time step (middle) there are two collisions, indicated by the tr
 During the next time step (right) two cars collide with the stopped cars, and we can see the initial formation of a traffic jam. Once a jam forms, it tends to persist, with additional cars approaching from behind and colliding, and with cars in the front accelerating away.
 
 Under some conditions, the jam itself propagates backwards, as you can see if you watch the animations in the notebook for this chapter.
+
+.. fillintheblank:: q_11.1
+   :casei:
+   
+   The drivers had control over one thing that eventually caused them to create the traffic jams, which was |blank|.
+
+   - :speed: Correct, they had control over speed!
+     :x: Incorrect, please refer to the chapter.
