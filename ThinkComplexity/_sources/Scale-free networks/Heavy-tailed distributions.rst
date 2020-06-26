@@ -1,6 +1,11 @@
+
+.. _fig_5.2:
+
 Heavy-tailed distributions
 --------------------------
 .. _fig_cpp_reference:
+
+.. _5.5:
 
 .. figure:: Figures/thinkcomplexity2011.png
    :align: center
@@ -10,7 +15,7 @@ Heavy-tailed distributions
 
 Heavy-tailed distributions are a common feature in many areas of complexity science and they will be a recurring theme of this book.
 
-We can get a clearer picture of a heavy-tailed distribution by plotting it on a log-log axis, as shown in Figure ??. This transformation emphasizes the tail of the distribution; that is, the probabilities of large values.
+We can get a clearer picture of a heavy-tailed distribution by plotting it on a log-log axis, as shown in :ref:`Figure 5.2 <fig_5.2>`. This transformation emphasizes the tail of the distribution; that is, the probabilities of large values.
 
 Under this transformation, the data fall approximately on a straight line, which suggests that there is a **power law** relationship between the largest values in the distribution and their probabilities. Mathematically, a distribution obeys a power law if
 PMF(k) ∼ k−α 

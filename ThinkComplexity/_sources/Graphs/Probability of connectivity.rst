@@ -1,3 +1,7 @@
+.. _fig_3.5:
+
+.. _fig_3.6: 
+
 Probability of Connectivity
 ---------------------------
 
@@ -54,8 +58,8 @@ The NumPy function ``logspace`` returns an array of 11 values from 10−2.5 to 1
 
 For each value of ``p`` in the array, we compute the probability that a graph with parameter ``p`` is connected and store the results in ``ys``.
 
-Figure 2.6 shows the results, with a vertical line at the computed critical value, p* = 0.23. As expected, the transition from 0 to 1 occurs near the critical value.
+:ref:`Figure 3.5 <fig_3.5>` shows the results, with a vertical line at the computed critical value, p* = 0.23. As expected, the transition from 0 to 1 occurs near the critical value.
 
-Figure ?? shows similar results for larger values of ``n``. As n increases, the critical value gets smaller and the transition gets more abrupt.
+:ref:`Figure 3.6 <fig_3.6>` shows similar results for larger values of ``n``. As n increases, the critical value gets smaller and the transition gets more abrupt.
 
 These experimental results are consistent with the analytic results Erdős and Rényi presented in their papers.

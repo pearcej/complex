@@ -1,3 +1,5 @@
+.. _fig_4.1:
+
 Ring lattice
 ------------
 
@@ -58,4 +60,4 @@ We can test ``make_ring_lattice`` like this:
 
     lattice = make_ring_lattice(10, 4)
 
-Figure ?? shows the result.
+:ref:`Figure 4.1 <fig_4.1>` shows the result.
