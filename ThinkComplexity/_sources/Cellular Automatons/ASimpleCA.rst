@@ -3,7 +3,7 @@
 A simple CA
 -------------
 
-Cellular automatons1 are governed by rules that determine how the state of the cells changes over time.
+Cellular automatons are governed by rules that determine how the state of the cells changes over time.
 
 As a trivial example, consider a cellular automaton (CA) with a single cell. The state of the cell during time step i is an integer, xi. As an initial condition, suppose x0 = 0.
 
