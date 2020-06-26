@@ -6,7 +6,7 @@ Cellular Automatons
 
     introduction.rst
     ASimpleCA.rst
-    Wolfram's experiment.rst
+    Wolfram'sExperiment.rst
     ClassifyingCAs.rst
     Randomness.rst
     Determinism.rst

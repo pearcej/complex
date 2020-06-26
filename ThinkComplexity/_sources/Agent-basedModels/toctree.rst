@@ -5,13 +5,13 @@ Agent-based models
     :maxdepth: 2
 
     Introduction.rst
-    Schelling’s Model.rst
-    Implementation of Schelling’s model.rst
+    Schelling’sModel.rst
+    ImplementationOfSchelling’sModel.rst
     Segregation.rst
     Sugarscape.rst
-    Wealth inequality.rst
-    Implementing Sugarscape.rst
-    Migration and Wave Behavior.rst
+    WealthInequality.rst
+    ImplementingSugarscape.rst
+    MigrationAndWaveBehavior.rst
     Emergence.rst
     Exercises.rst
     Glossary.rst

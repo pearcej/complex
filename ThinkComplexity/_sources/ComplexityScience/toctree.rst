@@ -1,13 +1,13 @@
-ComplexityScience
-:::::::::::::::::
+Complexity Science
+::::::::::::::::::::
 
 .. toctree::
     :maxdepth: 2
     
-    introduction.rst
-    changingcriteriainscience.rst
-    The axes of scientific models.rst
-    Different models for different purposes.rst
-    Complexity engineering.rst
-    Complexity thinking.rst
+    Introduction.rst
+    ChangingCriteriaInScience.rst
+    TheAxesOfScientificModels.rst
+    DifferentModelsForDifferentPurposes.rst
+    ComplexityEngineering.rst
+    ComplexityThinking.rst
     Glossary.rst

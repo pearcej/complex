@@ -5,11 +5,11 @@ Game of Life
     :maxdepth: 2
 
     Introduction.rst
-    Conway’s GoL.rst
-    Life patterns.rst
-    Conway’s conjecture.rst
+    Conway’sGoL.rst
+    LifePatterns.rst
+    Conway’sConjecture.rst
     Realism.rst
     Instrumentalism.rst
-    Implementing Life.rst
+    ImplementingLife.rst
     Exercises.rst 
     Glossary.rst
