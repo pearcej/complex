@@ -1,10 +1,6 @@
 The sound of sand
 -----------------
-<<<<<<< HEAD
-As my implementation of SandPile runs, it records the number of cells that topple during each time step, accumulating the results in a list called ``toppled_seq``. After running the model in `Section 8.4 <>`_, we can extract the resulting signal:
-=======
 As my implementation of SandPile runs, it records the number of cells that topple during each time step, accumulating the results in a list called ``toppled_seq``. After running the model in :ref:`Section 9.5 <9.5>`, we can extract the resulting signal:
->>>>>>> 961d64d129fe8ad4bac657368baf72ac974f7856
 
 ::
 

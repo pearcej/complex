@@ -1,13 +1,9 @@
 Fractals
 --------
-<<<<<<< HEAD
-Another property of critical systems is fractal geometry. The initial configuration in :ref:`Figure 9.1 <sand_pile>` (left) resembles a fractal, but you can’t always tell by looking. A more reliable way to identify a fractal is to estimate its fractal dimension, as we saw in `Section 8.5`_ and `Section 8.6`_.
-=======
 
 .. _9.6:
 
-Another property of critical systems is fractal geometry. The initial configuration in Figure ?? (left) resembles a fractal, but you can’t always tell by looking. A more reliable way to identify a fractal is to estimate its fractal dimension, as we saw in :ref:`Section 8.6<8.6>` and :ref:`Section 8.7<8.7>`.
->>>>>>> 961d64d129fe8ad4bac657368baf72ac974f7856
+Another property of critical systems is fractal geometry. The initial configuration in :ref:`Figure 9.1 <sand_pile>` (left) resembles a fractal, but you can’t always tell by looking. A more reliable way to identify a fractal is to estimate its fractal dimension, as we saw in :ref:`Section 8.6<8.6>` and :ref:`Section 8.7<8.7>`.
 
 I’ll start by making a bigger sand pile, with ``n=131`` and initial level ``22``.
 

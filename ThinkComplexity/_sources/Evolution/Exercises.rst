@@ -7,11 +7,7 @@ The code for this chapter is in the Jupyter notebook chap11.ipynb in the reposit
 
 As a Python challenge, can you write this class without copying code?
 
-<<<<<<< HEAD
-**Exercise 2:**  When we change the landscape as in `Section 12.10 <>`_ , the number of occupied locations and the mean distance usually increase, but the effect is not always big enough to be obvious. Try out some different random seeds to see how general the effect is.
-=======
 **Exercise 2:**  When we change the landscape as in :ref:`Section 12.10 <12.10>`, the number of occupied locations and the mean distance usually increase, but the effect is not always big enough to be obvious. Try out some different random seeds to see how general the effect is.
->>>>>>> 961d64d129fe8ad4bac657368baf72ac974f7856
 
 1
     This model is a variant of the NK model developed primarily by Stuart Kauffman (see http://thinkcomplex.com/nk).
