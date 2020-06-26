@@ -41,3 +41,16 @@ As an aside, the expression ``G[u]`` returns a dictionary that contains the neig
 This function does not consider the edges in the order specified by Watts and Strogatz, but that doesn’t seem to affect the results.
 
 :ref:`Figure 4.2 <fig_4.2>` shows WS graphs with n=20, k=4, and a range of values of p. When p=0, the graph is a ring lattice. When p=1, it is completely random. As we’ll see, the interesting things happen in between.
+
+.. mchoice:: question_4.5.1
+   :answer_a: The graph becomes more random
+   :answer_b: The graph becomes more consistent
+   :answer_c: No rewiring happens
+   :answer_d: The graph becomes more like a lattice
+   :correct: a
+   :feedback_a: Correct!
+   :feedback_b: Look again of what happens as p goes higher
+   :feedback_c: p is the probability that something is rewired
+   :feedback_d: Look again at the picture on the right where p is at its highest
+
+   As demonstrated in figure 4.2, what happens as p increases?

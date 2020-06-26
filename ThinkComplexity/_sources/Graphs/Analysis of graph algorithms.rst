@@ -50,3 +50,22 @@ If we know the relationship between n and m, we can simplify this expression. Fo
    It is possible for a node to be added to the stack multiple times depending on the amount of neighbors the node has
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
