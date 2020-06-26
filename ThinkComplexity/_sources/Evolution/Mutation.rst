@@ -38,6 +38,7 @@ Now that we have mutation, we don’t have to start with an agent at every locat
 
 .. figure:: Figures/figure_12.3.png
     :align: center
+    :alt: "Figure 12.3: Mean fitness over time for 10 simulations with mutation and differential survival and reproduction."
 
     Figure 12.3: Mean fitness over time for 10 simulations with mutation and differential survival and reproduction.
 
@@ -49,6 +50,7 @@ Now that we have mutation, we don’t have to start with an agent at every locat
 
 .. figure:: Figures/figure_12.4.png
     :align: center
+    :alt: "Figure 12.4: Number of occupied locations over time for 10 simulations with mutation and differential survival and reproduction."
 
     Figure 12.4: Number of occupied locations over time for 10 simulations with mutation and differential survival and reproduction.
 

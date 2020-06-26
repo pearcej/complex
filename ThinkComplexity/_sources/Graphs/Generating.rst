@@ -1,3 +1,5 @@
+.. _fig_3.3:
+
 Generating graphs
 -----------------
 
@@ -46,4 +48,4 @@ The following code makes a complete graph with 10 nodes and draws it:
                  node_size=1000,
                  with_labels=True)
 
-Figure ?? shows the result. Soon we will modify this code to generate ER graphs, but first we’ll develop functions to check whether a graph is connected.
+:ref:`Figure 3.3 <fig_3.3>` shows the result. Soon we will modify this code to generate ER graphs, but first we’ll develop functions to check whether a graph is connected.

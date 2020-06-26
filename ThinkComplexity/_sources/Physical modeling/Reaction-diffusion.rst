@@ -65,6 +65,8 @@ Now let’s look more closely at the update statements:
     self.array += ra * cA - reaction + f * (1-A)
     self.array2 += rb * cB + reaction - (f+k) * B
 
+.. _fig_reac-dif:
+
 The arrays ``cA`` and ``cB`` are the result of applying a diffusion kernel to ``A`` and ``B``. Multiplying by ``ra`` and ``rb`` yields the rate of diffusion into or out of each cell.
 
 The term ``A * B**2`` represents the rate that ``A`` and ``B`` react with each other. Assuming that the reaction consumes ``A`` and produces ``B``, we subtract this term in the first equation and add it in the second.
@@ -77,6 +79,7 @@ As long as the rate parameters are not too high, the values of ``A`` and ``B`` u
 
 .. figure:: Figures/figure_8.2.png
     :align: center
+    :alt: "Figure 9.1: Sand pile model initial state (left), after 200 steps (middle), and 400 steps (right)."
 
     Figure 8.2: Reaction-diffusion model with parameters f=0.035 and k=0.057 after 1000, 2000, and 4000 steps.
 
@@ -84,21 +87,27 @@ With different parameters, this model can produce patterns similar to the stripe
 
 For all simulations in this section, ``ra=0.5`` and ``rb=0.25``.
 
-Figure ?? shows results with ``f=0.035`` and ``k=0.057``, with the concentration of ``B`` shown in darker colors. With these parameters, the system evolves toward a stable configuration with light spots of ``A`` on a dark background of ``B``.
+:ref:`Figure 8.2 <fig_reac-dif>` shows results with ``f=0.035`` and ``k=0.057``, with the concentration of ``B`` shown in darker colors. With these parameters, the system evolves toward a stable configuration with light spots of ``A`` on a dark background of ``B``.
+
+.. _fig-8.3:
 
 .. figure:: Figures/figure_8.3.png
     :align: center
+    :alt: "Figure 9.1: Sand pile model initial state (left), after 200 steps (middle), and 400 steps (right)."
 
     Figure 8.3: Reaction-diffusion model with parameters f=0.055 and k=0.062 after 1000, 2000, and 4000 steps.
 
-Figure ?? shows results with ``f=0.055`` and ``k=0.062``, which yields a coral-like pattern of ``B`` on a background of ``A``.
+:ref:`Figure 8.3 <fig-8.3>` shows results with ``f=0.055`` and ``k=0.062``, which yields a coral-like pattern of ``B`` on a background of ``A``.
+
+.. _fig-8.4:
 
 .. figure:: Figures/figure_8.4.png
     :align: center
+    :alt: "Figure 9.1: Sand pile model initial state (left), after 200 steps (middle), and 400 steps (right)."
 
     Figure 8.4: A reaction-diffusion model with parameters f=0.039 and k=0.065 after 1000, 2000, and 4000 steps.
 
-Figure ?? shows results with ``f=0.039`` and ``k=0.065``. These parameters produce spots of ``B`` that grow and divide in a process that resembles mitosis, ending with a stable pattern of equally-spaced spots.
+:ref:`Figure 8.4 <fig-8.4>` shows results with ``f=0.039`` and ``k=0.065``. These parameters produce spots of ``B`` that grow and divide in a process that resembles mitosis, ending with a stable pattern of equally-spaced spots.
 
 Since 1952, observations and experiments have provided some support for Turing’s conjecture. At this point it seems likely, but not yet proven, that many animal patterns are actually formed by reaction-diffusion processes of some kind.
 

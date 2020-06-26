@@ -1,6 +1,8 @@
 CA tables
 ---------
 
+.. _6.12:
+
 The function we have so far works if the CA is “totalitic", which means that the rules only depend on the sum of the neighbors. But most rules also depend on which neighbors are on and off. For example, 100 and 001 have the same sum, but for many CAs, they would yield different results.
 
 We can make ``step2`` more general using a window with elements [4, 2, 1], which interprets the neighborhood as a binary number. For example, the neighborhood 100 yields 4; 010 yields 2, and 001 yields 1. Then we can take these results and look them up in the rule table.

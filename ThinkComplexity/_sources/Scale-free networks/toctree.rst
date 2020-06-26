@@ -14,4 +14,4 @@ Scale-free networks
     Cumulative distributions.rst
     Explanatory models.rst
     Exercises.rst
-    
+    Glossary.rst

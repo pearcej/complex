@@ -1,3 +1,5 @@
+.. _fig_4.3:
+
 The WS experiment
 -----------------
 
@@ -60,7 +62,7 @@ In order to plot ``L`` and ``C`` on the same axes, we standardize them by dividi
     L /= L[0]
     C /= C[0]
 
-Figure ?? shows the results. As ``p`` increases, the mean path length drops quickly, because even a small number of randomly rewired edges provide shortcuts between regions of the graph that are far apart in the lattice. On the other hand, removing local links decreases the clustering coefficient much more slowly.
+:ref:`Figure 4.3 <fig_4.3>` shows the results. As ``p`` increases, the mean path length drops quickly, because even a small number of randomly rewired edges provide shortcuts between regions of the graph that are far apart in the lattice. On the other hand, removing local links decreases the clustering coefficient much more slowly.
 
 As a result, there is a wide range of ``p`` where a WS graph has the properties of a small world graph, high clustering and low path lengths.
 

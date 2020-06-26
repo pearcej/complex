@@ -1,3 +1,5 @@
+.. _5.1:
+
 Introduction
 ------------
 In this chapter, we’ll work with data from an online social network, and use a Watts-Strogatz graph to model it. The WS model has characteristics of a small world network, like the data, but it has low variability in the number of neighbors from node to node, unlike the data.
@@ -6,4 +8,4 @@ This discrepancy is the motivation for a network model developed by Barabási an
 
 The chapter ends with a discussion of WS and BA graphs as explanatory models for small world networks.
 
-The code for this chapter is in chap04.ipynb in the respository for this book. More information about working with the code is in Section ??.
+The code for this chapter is in chap04.ipynb in the respository for this book. More information about working with the code is in :ref:`Section 1.4 <1.4>`.
