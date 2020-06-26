@@ -20,13 +20,9 @@ When an agent dies, from starvation or old age, it is replaced by a new agent wi
 
     Figure 10.4: Distribution of sugar (wealth) after 100, 200, 300, and 400 steps (gray lines) and 500 steps (dark line). Linear scale (left) and log-x scale (right).
 
-<<<<<<< HEAD
-Starting with 250 agents (which is close to carrying capacity) I run the model for 500 steps. After each 100 steps, I plot the cumulative distribution function (CDF) of sugar accumulated by the agents. We saw CDFs in :ref:`Section 5.8 <5.8>`. :ref:`Figure 10.4 <dis_of_sugar>` shows the results on a linear scale (left) and a log-x scale (right).
-=======
 
 Starting with 250 agents (which is close to carrying capacity) I run the model for 500 steps. After each 100 steps, I plot the cumulative distribution function (CDF) of sugar accumulated by the agents. We saw CDFs in :ref:`Section 5.8 <5.8>`. :ref:`Figure 10.4 <dis_of_sugar>` shows the results on a linear scale (left) and a log-x scale (right).
 
->>>>>>> ab20bded6cd1ea0cbf4af82e2fc22e01fea8f229
 
 After about 200 steps (which is twice the longest lifespan) the distribution doesn’t change much. And it is skewed to the right.
 
@@ -36,15 +32,4 @@ On a log scale the shape of the distribution resembles a Gaussian or normal dist
 
 It would be too much to claim that Sugarscape explains why wealth distributions are heavy-tailed, but the prevalence of inequality in variations of Sugarscape suggests that inequality is characteristic of many economies, even very simple ones. And experiments with rules that model taxation and other income transfers suggest that it is not easy to avoid or mitigate.
 
-.. mchoice:: q_10.5
-   :answer_a: Follows a log  normal distribution.
-   :answer_b: It is not a log normal distribution.
-   :answer_c: It follows a Log normal distribution which also makes it a heavy tailed distribution.
-   :answer_d: It does not resemble real word economies.
-   :correct: c
-   :feedback_a: Sorry look again at what log normal is.
-   :feedback_b: Sorry, try again as this is not true.
-   :feedback_c: Correct!
-   :feedback_d: Incorrect, Look again at the results and how they are distributed.
 
-   How does what the SugarScape model produced, resemble real world economies ?
