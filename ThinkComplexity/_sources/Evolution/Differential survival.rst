@@ -35,3 +35,16 @@ With ``N=8``, this simulation starts with 256 agents occupying all possible loca
 So this simulation starts to explain adaptation: increasing fitness means that the species is getting better at surviving in its environment. But the number of occupied locations decreases over time, so this model does not explain increasing diversity at all.
 
 In the notebook for this chapter, you will see the effect of differential reproduction. As you might expect, differential reproduction also increases mean fitness. But without mutation, we still don’t see increasing diversity.
+
+.. mchoice:: q_12.8
+   :answer_a: Adaptation.
+   :answer_b: The increasing diversity.
+   :answer_c: The decrease in mean fitness.
+   :answer_d: Increase of locations occupied over time.
+   :correct: a
+   :feedback_a: Correct! Increasing fitness means that the species is getting better at surviving in its environment.
+   :feedback_b: Incorrect, the number of occupied locations decreases over time, so this model does not explain increasing diversity at all.
+   :feedback_c: Incorrect, the decrease in mean fitness is not explained by simulation.
+   :feedback_d: Incorrect, the number of occupied locations decrease.
+
+   What does the simulation above explain?
