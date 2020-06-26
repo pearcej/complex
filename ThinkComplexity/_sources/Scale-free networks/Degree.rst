@@ -1,6 +1,11 @@
+
+.. _fig_5.1:
+
 Degree 
 -------
 .. _fig_cpp_reference:
+
+.. _5.4:
 
 .. figure:: Figures/thinkcomplexity2010.png
    :align: center
@@ -78,7 +83,7 @@ We can use the ``thinkplot`` module to plot the results:
     thinkplot.Pdf(pmf_fb, label='Facebook')
     thinkplot.Pdf(pmf_ws, label='WS graph')
 
-Figure ?? shows the two distributions. They are very different.
+:ref:`Figure 5.1<fig_5.1>` shows the two distributions. They are very different.
 
 In the WS model, most users have about 44 friends; the minimum is 38 and the maximum is 50. That’s not much variation. In the dataset, there are many users with only 1 or 2 friends, but one has more than 1000!
 

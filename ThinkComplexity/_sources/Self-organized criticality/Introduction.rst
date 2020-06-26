@@ -1,8 +1,14 @@
+.. _9.1:
+
 Introduction
 ------------
 In the previous chapter we saw an example of a system with a critical point and we explored one of the common properties of critical systems, fractal geometry.
 
+<<<<<<< HEAD
 In this chapter, we explore two other properties of critical systems: heavy-tailed distributions, which we saw in `Section 5.5`_ and pink noise, which I’ll explain in this chapter.
+=======
+In this chapter, we explore two other properties of critical systems: heavy-tailed distributions, which we saw in :ref:`Section 5.5 <5.5>` and pink noise, which I’ll explain in this chapter.
+>>>>>>> 961d64d129fe8ad4bac657368baf72ac974f7856
 
 These properties are interesting in part because they appear frequently in nature; that is, many natural systems produce fractal-like geometry, heavy-tailed distributions, and pink noise.
 
@@ -10,4 +16,8 @@ This observation raises a natural question: why do so many natural systems have 
 
 In this chapter I’ll present a **sand pile model** that was the first system shown to exhibit SOC.
 
+<<<<<<< HEAD
 The code for this chapter is in ``chap08.ipynb`` in the repository for this book. More information about working with the code is in `Section 1.4 <>`_.
+=======
+The code for this chapter is in ``chap08.ipynb`` in the repository for this book. More information about working with the code is in :ref:`Section 1.4 <1.4>`.
+>>>>>>> 961d64d129fe8ad4bac657368baf72ac974f7856

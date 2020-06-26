@@ -1,5 +1,7 @@
 Watts and Strogatz
 ------------------
+.. _4.3:
+
 In 1998 Duncan Watts and Steven Strogatz published a paper in *Nature*, “Collective dynamics of ‘small-world’ networks”, that proposed an explanation for the small world phenomenon. You can download it from http://thinkcomplex.com/watts.
 
 

@@ -1,6 +1,8 @@
 Speciation
 ---------------
 
+.. _12.10:
+
 The theory of evolution says that natural selection changes existing species and creates new ones. In our model, we have seen changes, but we have not seen a new species. It’s not even clear, in the model, what a new species would look like.
 
 Among species that reproduce sexually, two organisms are considered the same species if they can breed and produce fertile offspring. But the agents in the model don’t reproduce sexually, so this definition doesn’t apply.
@@ -21,6 +23,7 @@ Before we can model new species, we need the ability to identify clusters of age
 
 .. figure:: Figures/figure_12.5.png
     :align: center
+    :alt: "Figure 12.5: Mean distance between agents over time."
 
     Figure 12.5: Mean distance between agents over time.
 
@@ -43,6 +46,7 @@ We can model these scenarios by running a simulation until the population reache
 
 .. figure:: Figures/figure_12.6.png
     :align: center
+    :alt: " Figure 12.6: Mean fitness over time. After 500 time steps, we change the fitness landscape."
 
     Figure 12.6: Mean fitness over time. After 500 time steps, we change the fitness landscape.
 

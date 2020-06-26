@@ -1,6 +1,13 @@
 Fractals
 --------
+<<<<<<< HEAD
 Another property of critical systems is fractal geometry. The initial configuration in :ref:`Figure 9.1 <sand_pile>` (left) resembles a fractal, but you can’t always tell by looking. A more reliable way to identify a fractal is to estimate its fractal dimension, as we saw in `Section 8.5`_ and `Section 8.6`_.
+=======
+
+.. _9.6:
+
+Another property of critical systems is fractal geometry. The initial configuration in Figure ?? (left) resembles a fractal, but you can’t always tell by looking. A more reliable way to identify a fractal is to estimate its fractal dimension, as we saw in :ref:`Section 8.6<8.6>` and :ref:`Section 8.7<8.7>`.
+>>>>>>> 961d64d129fe8ad4bac657368baf72ac974f7856
 
 I’ll start by making a bigger sand pile, with ``n=131`` and initial level ``22``.
 
@@ -31,10 +38,15 @@ Inside the loop, it uses ``a==level`` to make a boolean array that’s ``True`` 
 
 .. figure:: Figures/figure_9.4.png
     :align: center
+    :alt: "Figure 9.4: Sand pile model in equilibrium, selecting cells with levels 0, 1, 2, and 3, left to right, top to bottom."
 
     Figure 9.4: Sand pile model in equilibrium, selecting cells with levels 0, 1, 2, and 3, left to right, top to bottom.
 
+<<<<<<< HEAD
 :ref:`Figure 9.4 <equil_sand>` shows the results for pile3. Visually, these patterns resemble fractals, but looks can be deceiving. To be more confident, we can estimate the fractal dimension for each pattern using **box-counting**, as we saw in `Section 8.6 <>`_.
+=======
+Figure ?? shows the results for pile3. Visually, these patterns resemble fractals, but looks can be deceiving. To be more confident, we can estimate the fractal dimension for each pattern using **box-counting**, as we saw in :ref:`Section 8.6<8.6>`.
+>>>>>>> 961d64d129fe8ad4bac657368baf72ac974f7856
 
 We’ll count the number of cells in a small box at the center of the pile, then see how the number of cells increases as the box gets bigger. Here’s my implementation:
 
@@ -82,6 +94,7 @@ The second line unpacks the rows and assigns them to ``steps``, ``steps2``, and 
 
 .. figure:: Figures/figure_9.5.png
     :align: center
+    :alt: "Figure 9.5: Box counts for cells with levels 0, 1, 2, and 3, compared to dashed lines with slopes 1 and 2."
 
     Figure 9.5: Box counts for cells with levels 0, 1, 2, and 3, compared to dashed lines with slopes 1 and 2.
 

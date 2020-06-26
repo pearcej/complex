@@ -1,6 +1,8 @@
 Universality
 ------------
 
+
+
 To understand universality, we have to understand computability theory, which is about models of computation and what they compute.
 
 One of the most general models of computation is the Turing machine, which is an abstract computer proposed by Alan Turing in 1936. A Turing machine is a 1-D CA, infinite in both directions, augmented with a read-write head. At any time, the head is positioned over a single cell. It can read the state of that cell (usually there are only two states) and it can write a new value into the cell.
