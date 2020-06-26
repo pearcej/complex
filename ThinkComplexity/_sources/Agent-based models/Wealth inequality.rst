@@ -36,4 +36,15 @@ On a log scale the shape of the distribution resembles a Gaussian or normal dist
 
 It would be too much to claim that Sugarscape explains why wealth distributions are heavy-tailed, but the prevalence of inequality in variations of Sugarscape suggests that inequality is characteristic of many economies, even very simple ones. And experiments with rules that model taxation and other income transfers suggest that it is not easy to avoid or mitigate.
 
+.. mchoice:: q_10.5
+   :answer_a: Follows a log  normal distribution.
+   :answer_b: It is not a log normal distribution.
+   :answer_c: It follows a Log normal distribution which also makes it a heavy tailed distribution.
+   :answer_d: It does not resemble real word economies.
+   :correct: c
+   :feedback_a: Sorry look again at what log normal is.
+   :feedback_b: Sorry, try again as this is not true.
+   :feedback_c: Correct!
+   :feedback_d: Incorrect, Look again at the results and how they are distributed.
 
+   How does what the SugarScape model produced, resemble real world economies ?
