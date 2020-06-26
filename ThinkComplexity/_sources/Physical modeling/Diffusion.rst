@@ -37,3 +37,26 @@ We’ll use a diffusion constant, ``r``, that relates the difference in concentr
     Figure 8.1: A simple diffusion model after 0, 5, and 10 steps.
 
 :ref:`Figure 8.1 <fig_simp_dif>` shows results for a CA with size ``n=9``, diffusion constant ``r=0.1``, and initial concentration 0 everywhere except for an “island” in the middle. The figure shows the starting configuration and the state of the CA after 5 and 10 steps. The chemical spreads from the center outward, continuing until the concentration is the same everywhere.
+
+.. dragndrop:: q_8.2
+   :match_1: The chemical flows from the neighbors to the center.|||If the concentration of the center cell is lower than the neighborhood average.
+   :match_2: The chemical flows from the center to the neighbors.|||If the concentration of the center cell exceeds the neighborhood average.
+
+   Using a 2-D CA we can model the diffusion processes. Drag and drop the outcomes of diffusion in a 2-D CA to the processes.
+
+
+.. fillintheblank:: q_8.2.2
+   :casei:
+
+   The usual range of concentration of the chemical in a 2-D CA model where the state of each cell is a continuous quantity is between |blank| and |blank|. *Please write the answer in numeral*.
+
+   - :0: Correct!
+     :zero: Please write your answer in numeral form.
+     :x: Incorrect. Please try again.
+   - :1: Correct.
+     :one: Please write your answer in numeral.
+     :x: Incorrect. Please refer back to section.
+   
+
+
+   
