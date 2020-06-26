@@ -34,3 +34,45 @@ There are many patterns of both types, but they are not easy to design or find. 
 
 If we believe Wolfram’s Principle of Computational Equivalence, we expect GoL to be in Class 4, and it is. The Game of Life was proved Turing complete in 1982 (and again, independently, in 1983). Since then, several people have constructed GoL patterns that implement a Turing machine or another machine known to be Turing complete.
 
+.. fillintheblank:: q_7.6
+   :casei:
+
+   Conway conjectured that there were no initial patterns that never stabilized. He described two kinds of patterns that would prove him wrong |blank| and |blank|.
+
+   - :gun: Correct, it is a stable pattern that periodically produces a spaceship.
+     :glider: No, sorry glider is proven to be a stable patern that settles. 
+     :toad: Sorry, but toad is proven to be a stable pattern that settles. 
+     :beehives: No, beehive is proven to be a stable pattern that settles.
+     :r-pentomino: Incorrect, r-pintomino is proven to be a stable pattern that settles.
+     :x: Incorrect, Please refer to Conway’s conjecture in the book.
+   - :puffer train: Correct, it is a translating pattern that leaves live cells in its wake.
+     :glider: No, sorry glider is proven to be a stable patern that settles.
+     :toad: Sorry, this pattern is proven to be a stable pattern that settles.
+     :beehives: No, beehive is proven to be a stable pattern that settles.
+     :r-pentomino: Incorrect, r-pintomino is proven to be a stable pattern that settles.
+     :x: Incorrect, Please refer to Conway’s conjecture in the book.
+
+.. mchoice:: q_7.7
+   :answer_a: It is a Methuselahs
+   :answer_b: It is a beehive 
+   :answer_c: It only has five cells
+   :answer_d: It was one of the two patterns that Conway said would never stabilize and prove him wrong
+   :answer_e: None of the above are true
+   :correct: a,c
+   :feedback_a: Correct! It has a simple starting condition and is long-lived.
+   :feedback_b: Sorry a beehive is a stable pattern with each cell having two to three neighbors , so they all survive, and none of the dead cells adjacent to the beehive has 3 neighbors, so no new cells are born.
+   :feedback_c: Correct!
+   :feedback_d: Sorry the two patterns that Conway said could prove him wrong were actually a “gun” and a “puffer train”.
+   :feedback_e: Sorry but two of the answers given above are correct. 
+
+   
+   Which of the following is true about r-pentomino? Select all that apply.
+
+.. mchoice:: q_7.8
+   :answer_a: True
+   :answer_b: False
+   :correct: a
+   :feedback_a: Correct, Gosper's gun is the same gun that Conway said would prove him wrong.
+   :feedback_b: Incorrect
+
+   There was a prediction of Gosper's gun, a stable pattern that periodically produces a spaceship. As the stream of spaceships move out from the source, the number of live cells grows indefinitely.
