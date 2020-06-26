@@ -28,8 +28,9 @@ The code for this chapter is in the Jupyter notebook ``chap05.ipynb`` in the rep
 
 Read http://thinkcomplex.com/false and answer the following questions.
 
-1. What is the demarcation problem?
-2. How, according to Popper, does falsifiability solve the demarcation problem?
-3. Give an example of two theories, one considered scientific and one considered unscientific, that are successfully distinguished by the criterion of falsifiability.
-4. Can you summarize one or more of the objections that philosophers and historians of science have raised to Popper’s claim?
-5. Do you get the sense that practicing philosophers think highly of Popper’s work?
+    1. What is the demarcation problem?
+    2. How, according to Popper, does falsifiability solve the demarcation problem?
+    3. Give an example of two theories, one considered scientific and one considered unscientific, that are successfully distinguished by the criterion of falsifiability.
+    4. Can you summarize one or more of the objections that philosophers and historians of science have raised to Popper’s claim?
+    5. Do you get the sense that practicing philosophers think highly of Popper’s work?
+

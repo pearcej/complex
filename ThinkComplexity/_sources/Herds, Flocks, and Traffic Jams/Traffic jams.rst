@@ -100,6 +100,7 @@ Since the cars start out equally spaced, we expect them all to accelerate until 
 
 .. figure:: Figures/figure_11.1.png
     :align: center
+    :alt: "Figure 11.1: Simulation of drivers on a circular highway at three points in time. Squares indicate the position of the drivers; triangles indicate places where one driver has to brake to avoid another."
 
     Figure 11.1: Simulation of drivers on a circular highway at three points in time. Squares indicate the position of the drivers; triangles indicate places where one driver has to brake to avoid another.
 

@@ -1,5 +1,8 @@
 Random Graphs
 --------------
+
+.. _3.4:
+
 A random graph is just what it sounds like: a graph with nodes and edges generated at random. Of course, there are many random processes that can generate graphs, so there are many kinds of random graphs.
 
 

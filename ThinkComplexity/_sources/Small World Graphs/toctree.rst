@@ -16,3 +16,4 @@ Small World Graphs
     Breadth-First Search.rst
     Dijkstra’s algorithm.rst
     Exercises.rst
+    Glossary.rst

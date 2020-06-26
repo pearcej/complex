@@ -1,3 +1,6 @@
+
+.. _3.7:
+
 Generating ER Graphs
 --------------------
 
@@ -51,4 +54,4 @@ Here’s an example with p=0.3:
 
     random_graph = make_random_graph(10, 0.3)
 
-Figure ?? shows the result. This graph turns out to be connected; in fact, most ER graphs with n=10 and p=0.3 are connected. In the next section, we’ll see how many.
+:ref:`Figure 3.4 <3.7>` shows the result. This graph turns out to be connected; in fact, most ER graphs with n=10 and p=0.3 are connected. In the next section, we’ll see how many.
