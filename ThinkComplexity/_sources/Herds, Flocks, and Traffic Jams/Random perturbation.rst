@@ -2,6 +2,7 @@ Random perturbation
 -----------------------
 .. figure:: Figures/figure_11.2.png
     :align: center
+    :alt: "Figure 11.2: Average speed as a function of the number of cars, for three magnitudes of added random noise."
 
     Figure 11.2: Average speed as a function of the number of cars, for three magnitudes of added random noise.
 

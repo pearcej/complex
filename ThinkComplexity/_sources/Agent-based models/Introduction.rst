@@ -1,3 +1,5 @@
+.. _10.1:
+
 Introduction
 -------------
 
@@ -13,5 +15,5 @@ Since the 1970s, agent-based modeling has become an important tool in economics,
 
 Agent-based models are useful for modeling the dynamics of systems that are not in equilibrium (although they are also used to study equilibrium). And they are particularly useful for understanding relationships between individual decisions and system behavior.
 
-The code for this chapter is in ``chap09.ipynb``, which is a Jupyter notebook in the repository for this book. For more information about working with this code, see Section ??.
+The code for this chapter is in ``chap09.ipynb``, which is a Jupyter notebook in the repository for this book. For more information about working with this code, see :ref:`Section 1.4 <1.4>`.
 

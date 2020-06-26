@@ -4,6 +4,7 @@ Cellular Automatons
 .. toctree::
     :maxdepth: 2
 
+    introduction.rst
     ASimpleCA.rst
     Wolfram's experiment.rst
     ClassifyingCAs.rst
@@ -17,5 +18,6 @@ Cellular Automatons
     Cross-correlation.rst
     CATables.rst
     Exercises.rst
+    Glossary.rst
     
     

@@ -19,4 +19,4 @@ Classical models lend themselves to a realist interpretation;  for example,  mos
 
 Reductionism is the view that the behavior of a system can be explained by understanding its components.  For example, the periodic table of the elements is a triumph of reductionism, because it explains the chemical behavior of elements with a model of electrons in atoms.  Holism is the view that some phenomena that appear at the system  level  do  not  exist  at  the  level  of  components,  and  cannot  be explained in component-level terms.
 
-We get back to explanatory models in Chapter 4, instrumentalism in Chapter 6, and holism in Chapter 8.
+We get back to explanatory models in :ref:`Chapter 5 <5.1>`, instrumentalism in :ref:`Chapter 7 <7.1>`, and holism in :ref:`Chapter 9 <9.1>`
