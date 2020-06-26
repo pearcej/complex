@@ -16,28 +16,8 @@ If we start with all agents in the lower-left corner, they quickly move toward t
 The ones with the longest vision cross the valley between the peaks and propagate toward the northeast in a pattern that resembles a wave front. Because they leave a stripe of empty cells behind them, other agents don’t follow until the sugar grows back.
 
 The result is a series of discrete waves of migration, where each wave resembles a coherent object, like the spaceships we saw in the Rule 110 CA and Game of Life (see :ref:`Section 6.6 <6.6>` and :ref:`Section 7.3 <7.3>`).
-<<<<<<< HEAD
-=======
-
->>>>>>> ab20bded6cd1ea0cbf4af82e2fc22e01fea8f229
 
 :ref:`Figure 10.5 <wavey_boi>`  shows the initial condition (left) and the state of the model after 6 steps (middle) and 12 steps (right). You can see the first two waves reaching and moving through the second peak, leaving a stripe of empty cells behind. You can see an animated version of this model, where the wave patterns are more clearly visible, in the notebook for this chapter.
 
 These waves move diagonally, which is surprising because the agents themselves only move north or east, never northeast. Outcomes like this — groups or “aggregates” with properties and behaviors that the agents don’t have — are common in agent-based models. We will see more examples in the next chapter.
 
-.. shortanswer:: q_10.6
-
-    Explain the wave behavior in Sugarscape. How does the pattern evolve and why does waves resemble a coherent object?
-
-.. mchoice:: q_10.7
-   :answer_a: Gun
-   :answer_b: Beehive
-   :answer_c: Spaceship
-   :answer_d: Toad
-   :correct: c
-   :feedback_a: Incorrect, a gun in a stable pattern that periodically produces a spaceship. 
-   :feedback_b: Incorrect, a beehive is a stable pattern that no new cells are ever born in. 
-   :feedback_c: Correct!
-   :feedback_d: Incorrect, a toad pattern oscillates between two states. 
-
-   The resulting series of migrating waves is compared to what pattern from GoL?
