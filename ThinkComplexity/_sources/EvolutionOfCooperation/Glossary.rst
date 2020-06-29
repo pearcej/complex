@@ -3,7 +3,7 @@ Glossary
 
 .. glossary::
 
-    Prisoner's Delemma
+    Prisoner's Dilemma
         Two members of a criminal gang are arrested and imprisoned. Each prisoner is in solitary confinement with no means of communicating with the other. The prosecutors lack sufficient evidence to convict the pair on the principal charge, but they have enough to convict both on a lesser charge. Simultaneously, the prosecutors offer each prisoner a bargain. Each prisoner is given the opportunity to either: (1) betray the other by testifying that the other committed the crime, or (2) cooperate with the other by remaining silent. The offer is:
 
         If A and B each betray the other, each of them serves 2 years in prison.
