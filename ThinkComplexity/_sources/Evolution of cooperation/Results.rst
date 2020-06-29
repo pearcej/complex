@@ -25,7 +25,7 @@ I start with 100 identical agents who always defect, and run the simulation for 
 
    
 
-:ref:`Figure 13.1 <fig_avg_fit>` shows mean fitness over time (using the MeanFitness instrument from :ref:`Section 12.7 <12.7>`). Initially mean fitness is 1, because when defectors face each other, they get only 1 point each per round.
+:ref:`Figure 13.1 <fig_avg_fit>` shows mean fitness over time (using the ``MeanFitness`` instrument from :ref:`Section 12.7 <12.7>`). Initially mean fitness is 1, because when defectors face each other, they get only 1 point each per round.
 
 After about 500 time steps, mean fitness increases to nearly 3, which is what cooperators get when they face each other. However, as we suspected, this situation in unstable. Over the next 500 steps, mean fitness drops below 2, climbs back toward 3, and continues to oscillate.
 
@@ -57,7 +57,7 @@ To get some insight into this level of fitness, let’s look at a few more instr
 
 :ref:`Figure 13.2 <fig_avg_nice>` (left) shows the results: starting from 0, average niceness increases quickly to 0.75, then oscillates between 0.4 and 0.85, with a long-term mean near 0.65. Again, that’s a lot of niceness!
 
-Looking specifically at the opening move, we can track the fraction of agents that cooperate in the first round. Here’s the instrument:
+Looking specifically at the opening move, we can track the fraction of agents that cooperate in the first round. Here’s the ``instrument``:
 
 ::
 
@@ -71,7 +71,7 @@ Looking specifically at the opening move, we can track the fraction of agents th
 
 :ref:`Figure 13.2 <fig_avg_nice>` (right) shows the results, which are highly variable. The fraction of agents who cooperate in the first round is often near 1, and occasionally near 0. The long-term average is close to 0.65, similar to overall niceness. These results are consistent with Axelrod’s tournaments; in general, nice strategies do well.
 
-The other characteristics Axelrod identifies in successful strategies are retaliation and forgiveness. To measure retaliation, I define this instrument:
+The other characteristics Axelrod identifies in successful strategies are retaliation and forgiveness. To measure retaliation, I define this ``instrument``:
 
 ::
 

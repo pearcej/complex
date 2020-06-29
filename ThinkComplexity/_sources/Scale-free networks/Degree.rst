@@ -30,7 +30,7 @@ What’s the problem? To get a better view, we have to look at the distribution 
 
 I’ll represent the distribution of degrees with a ``Pmf`` object, which is defined in the ``thinkstats2`` module. ``Pmf`` stands for “probability mass function”; if you are not familiar with this concept, you might want to read Chapter 3 of *Think Stats, 2nd edition* at http://thinkcomplex.com/ts2.
 
-Briefly, a ``Pmf`` maps from values to their probabilities. A ``Pmf`` of degrees is a mapping from each possible degree, d, to the fraction of nodes with degree d.
+Briefly, a ``Pmf`` maps from values to their probabilities. A ``Pmf`` of degrees is a mapping from each possible degree, ``d``, to the fraction of nodes with degree ``d``.
 
 As an example, I’ll construct a graph with nodes 1, 2, and 3 connected to a central node, 0:
 

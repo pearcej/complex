@@ -13,7 +13,7 @@ Here’s the ``__init__`` method:
             self.agents = np.asarray(agents)
             self.instruments = []
 
-A Simulation object contains a Tournament object, a sequence of agents, and a sequence of ``Instrument`` objects (as in :ref:`Section 12.7 <12.7>`).
+A ``Simulation`` object contains a ``Tournament`` object, a sequence of agents, and a sequence of ``Instrument`` objects (as in :ref:`Section 12.7 <12.7>`).
 
 Here’s the ``step`` method:
 
