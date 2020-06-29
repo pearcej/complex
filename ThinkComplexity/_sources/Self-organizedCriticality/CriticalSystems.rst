@@ -6,7 +6,7 @@ Many critical systems demonstrate common behaviors:
 
 - Heavy-tailed distributions of some physical quantities: For example, in freezing water the distribution of crystal sizes is characterized by a power law.
 
-- Variations in time that exhibit **pink noise**: Complex signals can be decomposed into their frequency components. In pink noise, low-frequency components have more power than high-frequency components. Specifically, the power at frequency *f* is proportional to 1/*f*.
+- Variations in time that exhibit **pink noise**: Complex signals can be decomposed into their frequency components. In pink noise, low-frequency components have more power than high-frequency components. Specifically, the power at frequency :math:`f` is proportional to :math:`1/f`.
 
 Critical systems are usually unstable. For example, to keep water in a partially frozen state requires active control of the temperature. If the system is near the critical temperature, a small deviation tends to move the system into one phase or the other.
 

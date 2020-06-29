@@ -62,11 +62,11 @@ We’ll count the number of cells in a small box at the center of the pile, then
 
     return np.transpose(res)
 
-The parameter, a, is a boolean array. The size of the box is initially 1. Each time through the loop, it increases by 2 until it reaches ``end``, which is the smaller of ``n`` and ``m``.
+The parameter, ``a``, is a boolean array. The size of the box is initially 1. Each time through the loop, it increases by 2 until it reaches ``end``, which is the smaller of ``n`` and ``m``.
 
 Each time through the loop, ``box`` is a set of cells with width and height ``i``, centered in the array. ``total`` is the number of “on” cells in the box.
 
-The result is a list of tuples, where each tuple contains ``i``,`` i**2``, and the number of cells in the box. 
+The result is a list of tuples, where each tuple contains ``i``, :math:`i^2`, and the number of cells in the box. 
 When we pass this result to ``transpose``, NumPy converts it to an array with three columns, and then transposes it; that is, it makes the columns into rows and the rows into columns. The result is an array with 3 rows: ``i``, ``i**2``, and ``total``.
 
 Here’s how we use ``count_cells``:
