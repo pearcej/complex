@@ -13,3 +13,4 @@ Physical modeling
     FractalsAndPercolationModels.rst
     Exercises.rst
     Glossary.rst
+    Matching.rst
