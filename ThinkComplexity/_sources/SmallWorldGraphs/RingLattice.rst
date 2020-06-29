@@ -3,8 +3,6 @@
 Ring lattice
 ------------
 
-.. _fig_cpp_reference:
-
 .. figure:: Figures/thinkcomplexity2007.png
    :align: center
    :alt: "Figure 4.1: A ring lattice with n=10 and k=4."
