@@ -34,7 +34,7 @@ You can read more about emergence at http://thinkcomplex.com/emerge.
    What is emergent property? Explain.
 
 .. mchoice:: q_10.9
-   :answer_a: ecause it is caused by all the moving of the agents.
+   :answer_a: Because it is caused by all the moving of the agents.
    :answer_b: Because it is not caused by racist agents.
    :answer_c: Because the agents were highly xenophobic.
    :answer_d: Because the agents were chosen at random.
