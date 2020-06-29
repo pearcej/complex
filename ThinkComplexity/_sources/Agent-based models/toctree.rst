@@ -15,6 +15,7 @@ Agent-based models
     Emergence.rst
     Exercises.rst
     Glossary.rst
+    Matching.rst
 
 
     
