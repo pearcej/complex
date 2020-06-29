@@ -13,7 +13,7 @@ The WS experiment
 
 
 
-Now we are ready to replicate the WS experiment, which shows that for a range of values of p, a WS graph has high clustering like a regular graph and short path lengths like a random graph.
+Now we are ready to replicate the WS experiment, which shows that for a range of values of :math:`p`, a WS graph has high clustering like a regular graph and short path lengths like a random graph.
 
 I’ll start with ``run_one_graph``, which takes ``n``, ``k``, and ``p``; it generates a WS graph with the given parameters and computes the mean path length, ``mpl``, and clustering coefficient, ``cc``:
 
@@ -27,7 +27,7 @@ I’ll start with ``run_one_graph``, which takes ``n``, ``k``, and ``p``; it gen
 
 Watts and Strogatz ran their experiment with ``n=1000`` and ``k=10``. With these parameters, ``run_one_graph`` takes a few seconds on my computer; most of that time is spent computing the mean path length.
 
-Now we need to compute these values for a range of p. I’ll use the NumPy function ``logspace`` again to compute ``ps``:
+Now we need to compute these values for a range of ``p``. I’ll use the NumPy function ``logspace`` again to compute ``ps``:
 
 ::
 
@@ -47,7 +47,7 @@ Here’s the function that runs the experiment:
 
 For each value of ``p``, we generate 20 random graphs and average the results. Since the return value from ``run_one_graph`` is a pair, ``t`` is a list of pairs. When we convert it to an array, we get one row for each iteration and columns for ``L`` and ``C``. Calling ``mean`` with the option ``axis=0`` computes the mean of each column; the result is an array with one row and two columns.
 
-When the loop exits, ``means`` is a list of pairs, which we convert to a NumPy array with one row for each value of p and columns for L and C.
+When the loop exits, ``means`` is a list of pairs, which we convert to a NumPy array with one row for each value of ``p`` and columns for :math:`L` and :math:`C`.
 
 We can extract the columns like this:
 

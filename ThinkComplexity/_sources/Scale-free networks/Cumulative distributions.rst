@@ -13,11 +13,11 @@ Cumulative distributions
 
    Figure 5.4: CDF of degree in the Facebook dataset along with the WS model (left) and the BA model (right), on a log-x scale.
 
-:ref:`Figure 5.4 <fig_5.4>` represents the degree distribution by plotting the probability mass function (PMF) on a log-log scale. That’s how Barabási and Albert present their results and it is the representation used most often in articles about power law distributions. But it is not the best way to look at data like this.
+:ref:`Figure 5.4 <fig_5.4>` represents the degree distribution by plotting the probability mass function (``PMF``) on a log-log scale. That’s how Barabási and Albert present their results and it is the representation used most often in articles about power law distributions. But it is not the best way to look at data like this.
 
-A better alternative is a **cumulative distribution function** (CDF), which maps from a value, x, to the fraction of values less than or equal to x.
+A better alternative is a **cumulative distribution function** (CDF), which maps from a value, ``x``, to the fraction of values less than or equal to ``x``.
 
-Given a ``Pmf``, the simplest way to compute a cumulative probability is to add up the probabilities for values up to and including x:
+Given a ``Pmf``, the simplest way to compute a cumulative probability is to add up the probabilities for values up to and including ``x``:
 
 ::
 
@@ -34,7 +34,7 @@ For example, given the degree distribution in the dataset, ``pmf_fb``, we can co
 
 The result is close to 0.5, which means that the median number of friends is about 25.
 
-CDFs are better for visualization because they are less noisy than PMFs. Once you get used to interpreting CDFs, they provide a clearer picture of the shape of a distribution than PMFs.
+CDFs are better for visualization because they are less noisy than ``PMFs``. Once you get used to interpreting CDFs, they provide a clearer picture of the shape of a distribution than ``PMFs``.
 
 The ``thinkstats`` module provides a class called Cdf that represents a cumulative distribution function. We can use it to compute the CDF of degree in the dataset.
 
@@ -66,20 +66,24 @@ In the tail of the distribution (values greater than 100) it looks like the BA m
 
 The **complementary CDF** (CCDF) is defined
 
-CCDF(x) ≡ 1 − CDF(x) 
+.. math::
+   CCDF(x) ≡ 1 − CDF(x) 
     
 This definition is useful because if the PMF follows a power law, the CCDF also follows a power law:
 
-EQUATION HERE PLZZ
-
+.. math::
+   CCDF(x) ∼ (x/x_m)^-\ ^α
+   
 where xm is the minimum possible value and α is a parameter that determines the shape of the distribution.
 
 Taking the log of both sides yields:
 
-logCCDF(x) ∼ −α (logx − logxm) 
+.. math::
+   logCCDF(x) ∼ −α (logx − logx_m) 
 
 So if the distribution obeys a power law, we expect the CCDF on a log-log scale to be a straight line with slope −α.
 
 :ref:`Figure 5.5 <fig_5.5>` shows the CCDF of degree for the Facebook data, along with the WS model (left) and the BA model (right), on a log-log scale.
 
 With this way of looking at the data, we can see that the BA model matches the tail of the distribution (values above 20) reasonably well. The WS model does not.
+

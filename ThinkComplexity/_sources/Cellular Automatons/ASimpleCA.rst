@@ -5,11 +5,11 @@ A simple CA
 
 Cellular automatons1 are governed by rules that determine how the state of the cells changes over time.
 
-As a trivial example, consider a cellular automaton (CA) with a single cell. The state of the cell during time step i is an integer, xi. As an initial condition, suppose x0 = 0.
+As a trivial example, consider a cellular automaton (CA) with a single cell. The state of the cell during time step :math:`i` is an integer, :math:`x_i`. As an initial condition, suppose :math:`x0 = 0`.
 
-Now all we need is a rule. Arbitrarily, I’ll pick xi+1 = xi + 1, which says that during each time step, the state of the CA gets incremented by 1. So this CA performs a simple calculation: it counts.
+Now all we need is a rule. Arbitrarily, I’ll pick :math:`x_i+1 = x_i + 1`, which says that during each time step, the state of the CA gets incremented by 1. So this CA performs a simple calculation: it counts.
 
-But this CA is atypical; normally the number of possible states is finite. As an example, suppose a cell can only have one of two states, 0 or 1. For a 2-state CA, we could write a rule like xi+1 = (xi + 1) % 2, where % is the remainder (or modulus) operator.
+But this CA is atypical; normally the number of possible states is finite. As an example, suppose a cell can only have one of two states, 0 or 1. For a 2-state CA, we could write a rule like :math:`x_i+1 = (x_i + 1) % 2`, where % is the remainder (or modulus) operator.
 
 The behavior of this CA is simple: it blinks. That is, the state of the cell switches between 0 and 1 during each time step.
 

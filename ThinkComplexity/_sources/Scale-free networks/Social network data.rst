@@ -1,7 +1,7 @@
 Social network data
 -------------------
 
-Watts-Strogatz graphs are intended to model networks in the natural and social sciences. In their original paper, Watts and Strogatz looked at the network of film actors (connected if they have appeared in a movie together); the electrical power grid in the western United States; and the network of neurons in the brain of the roundworm C. *elegans*. They found that all of these networks had the high connectivity and low path lengths characteristic of small world graphs.
+Watts-Strogatz graphs are intended to model networks in the natural and social sciences. In their original paper, Watts and Strogatz looked at the network of film actors (connected if they have appeared in a movie together); the electrical power grid in the western United States; and the network of neurons in the brain of the roundworm :math:`C`. *elegans*. They found that all of these networks had the high connectivity and low path lengths characteristic of small world graphs.
 
 In this section we’ll perform the same analysis with a different dataset, a set of Facebook users and their friends. If you are not familiar with Facebook, users who are connected to each other are called “friends”, regardless of the nature of their relationship in the real world.
 
@@ -35,7 +35,7 @@ Now we can check whether this dataset has the characteristics of a small world g
 
 In :ref:`Section 4.6 <4.6>` we wrote a function to compute the network average clustering coefficient. NetworkX provides a function called ``average_clustering``, which does the same thing a little faster.
 
-But for larger graphs, they are both too slow, taking time proportional to n k2, where n is the number of nodes and k is the number of neighbors each node is connected to.
+But for larger graphs, they are both too slow, taking time proportional to ``n k^2``, where ``n`` is the number of nodes and ``k`` is the number of neighbors each node is connected to.
 
 Fortunately, NetworkX provides a function that estimates the clustering coefficient by random sampling. You can invoke it like this:
 
@@ -58,7 +58,7 @@ The following function does something similar for path lengths.
                 for pair in pairs]
         return lengths
 
-G is a graph, ``nodes`` is the list of nodes to sample from, and ``trials`` is the number of random paths to sample. If ``nodes`` is None, we sample from the entire graph.
+``G`` is a graph, ``nodes`` is the list of nodes to sample from, and ``trials`` is the number of random paths to sample. If ``nodes`` is None, we sample from the entire graph.
 
 ``pairs`` is a NumPy array of randomly chosen nodes with one row for each trial and two columns.
 
@@ -71,12 +71,12 @@ The list comprehension enumerates the rows in the array and computes the shortes
     def estimate_path_length(G, nodes=None, trials=1000):
         return np.mean(sample_path_lengths(G, nodes, trials))
 
-I’ll use ``average_clustering`` to compute C:
+I’ll use ``average_clustering`` to compute ``C``:
 ::
 
     C = average_clustering(fb)
 
-And ``estimate_path_lengths`` to compute L:
+And ``estimate_path_lengths`` to compute ``L``:
 
 ::
 

@@ -30,7 +30,7 @@ Initially there are 400 agents placed at random locations. Each agent has three 
 
 During each time step, agents move one at a time in a random order. Each agent follows these rules:
 
-- The agent surveys k cells in each of the 4 compass directions, where k is the range of the agent’s vision.
+- The agent surveys ``k`` cells in each of the 4 compass directions, where ``k`` is the range of the agent’s vision.
 - It chooses the unoccupied cell with the most sugar. In case of a tie, it chooses the closer cell; among cells at the same distance, it chooses randomly.
 - The agent moves to the selected cell and harvests the sugar, adding the harvest to its accumulated wealth and leaving the cell empty.
 - The agent consumes some part of its wealth, depending on its metabolism. If the resulting total is negative, the agent “starves” and is removed.

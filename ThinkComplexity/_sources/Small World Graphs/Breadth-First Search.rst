@@ -16,7 +16,7 @@ In :ref:`Section 3.6 <3.6>` I presented ``reachable_nodes``, which finds all the
             stack.extend(G.neighbors(node))
     return seen
 
-I didn’t say so at the time, but ``reachable_nodes`` performs a depth-first search (DFS). Now we’ll modify it to perform breadth-first search (BFS).
+I didn’t say so at the time, but ``reachable_nodes`` performs a **depth-first search (DFS)**. Now we’ll modify it to perform **breadth-first search (BFS)**.
 
 To understand the difference, imagine you are exploring a castle. You start in a room with three doors marked A, B, and C. You open door C and discover another room, with doors marked D, E, and F.
 
@@ -32,7 +32,7 @@ If we want to perform a BFS instead, the simplest solution is to pop the first e
 
     node = stack.pop(0)
 
-That works, but it is slow. In Python, popping the last element of a list takes constant time, but popping the first element is linear in the length of the list. In the worst case, the length of the stack is O(n), which makes this implementation of BFS O(nm), which is much worse than what it should be, O(n + m).
+That works, but it is slow. In Python, popping the last element of a list takes constant time, but popping the first element is linear in the length of the list. In the worst case, the length of the stack is :math:`O(n)`, which makes this implementation of BFS :math:`O(nm)`, which is much worse than what it should be, :math:`O(n + m)`.
 
 We can solve this problem with a double-ended queue, also known as a **deque**. The important feature of a deque is that you can add and remove elements from the beginning or end in constant time. To see how it is implemented, see http://thinkcomplex.com/deque.
 
@@ -61,4 +61,4 @@ The differences are:
 - I replaced the list called ``stack``with a deque called ``queue``.
 - I replaced ``pop`` with ``popleft``, which removes and returns the leftmost element of the queue.
 
-This version is back to being O(n + m). Now we’re ready to find shortest paths.
+This version is back to being :math:`O(n + m)`. Now we’re ready to find shortest paths.
