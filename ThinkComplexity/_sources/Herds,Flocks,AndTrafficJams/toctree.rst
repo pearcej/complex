@@ -13,3 +13,4 @@ Herds, Flocks, and Traffic Jams
     EmergenceAndFreeWill.rst
     Exercises.rst
     Glossary.rst
+    Matching.rst
