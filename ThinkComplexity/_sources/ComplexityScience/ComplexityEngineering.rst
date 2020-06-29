@@ -9,7 +9,7 @@ I  have  been  talking  about  complex  systems  in  the  context  of  science, 
 
 **Centralized→decentralized**
 
-Centralized systems are conceptually simple and  easier  to  analyze,  but  decentralized  systems  can  be  more  robust.For example, in the World Wide Web clients send requests to centralized servers;  if the servers are down,  the service is unavailable.  In peer-to-peer networks, *every* node is both a client and a server.  To take down the service, you have to take down every node.
+Centralized systems are conceptually simple and  easier  to  analyze,  but  decentralized  systems  can  be  more  robust. For example, in the World Wide Web clients send requests to centralized servers;  if the servers are down,  the service is unavailable.  In peer-to-peer networks, *every* node is both a client and a server.  To take down the service, you have to take down every node.
 
 **One-to-many→many-to-many**
 
@@ -22,7 +22,7 @@ In social,  political and economic systems,  many activities  that  would  norma
 
 **Analysis→computation**
 
-In classical engineering, the space of feasible de-signs is limited by our capability for analysis.  For example,  designing the Eiffel Tower was possible because Gustave Eiffel developed novel analytic techniques,  in  particular  for dealing with wind  load.  Now  tools for computer-aided design and analysis make it possible to build almost anything  that  can  be  imagined.   Frank  Gehry’s  Guggenheim  MuseumBilbao is my favorite example.
+In classical engineering, the space of feasible de-signs is limited by our capability for analysis.  For example,  designing the Eiffel Tower was possible because Gustave Eiffel developed novel analytic techniques,  in  particular  for dealing with wind  load.  Now  tools for computer-aided design and analysis make it possible to build almost anything  that  can  be  imagined.   Frank  Gehry’s  Guggenheim  Museum Bilbao is my favorite example.
 
 
 **Isolation→interaction**

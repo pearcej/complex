@@ -1,7 +1,7 @@
 Glossary
 --------
 
-**Complexity Science:** Complexity science is concerned with complex systems and problems that are are dynamic, unpredictable and multi-dimensional, consisting of a collection of interconnected relationships and parts. Unlike traditional “cause and effect” or linear thinking, complexity science is characterized by non- linearity.
+**Complexity Science:** Complexity science is concerned with complex systems and problems that are dynamic, unpredictable and multi-dimensional, consisting of a collection of interconnected relationships and parts. Unlike traditional “cause and effect” or linear thinking, complexity science is characterized by non-linearity.
 
 **Spontaneous Synchronization:** Spontaneous synchronization is a remarkable collective effect observed in nature, whereby a population of oscillating units, which have diverse natural frequencies and are in weak interaction with one another, evolves to spontaneously exhibit collective oscillations at a common frequency
 
