@@ -3,7 +3,6 @@
 
 NetworkX
 ---------
-.. _fig_cpp_reference:
 
 .. figure:: Figures/thinkcomplexity2002.png
    :align: center

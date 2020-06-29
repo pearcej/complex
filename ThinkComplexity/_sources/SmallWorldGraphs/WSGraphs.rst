@@ -3,8 +3,6 @@
 WS graphs
 ---------
 
-.. _fig_cpp_reference:
-
 .. figure:: Figures/thinkcomplexity2008.png
    :align: center
    :alt: "Figure 4.2: WS graphs with n=20, k=4, and p=0 (left), p=0.2 (middle), and p=1 (right)."

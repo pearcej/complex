@@ -3,7 +3,6 @@
 
 Heavy-tailed distributions
 --------------------------
-.. _fig_cpp_reference:
 
 .. _5.5:
 

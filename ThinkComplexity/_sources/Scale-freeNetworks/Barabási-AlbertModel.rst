@@ -26,7 +26,6 @@ NetworkX provides a function that generates BA graphs. We will use it first; the
 
 The parameters are n, the number of nodes to generate, and k, the number of edges each node starts with when it is added to the graph. I chose k=22 because that is the average number of edges per node in the dataset.
 
-.. _fig_cpp_reference:
 
 .. figure:: Figures/thinkcomplexity2012.png
    :align: center
