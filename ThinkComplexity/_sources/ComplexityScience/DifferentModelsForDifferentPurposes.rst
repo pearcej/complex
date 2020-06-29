@@ -34,7 +34,7 @@ We get back to explanatory models in :ref:`Chapter 5 <5.1>`, instrumentalism in 
 .. fillintheblank:: 2.4_q_2
     :casei:
     
-    Complex bodels are better to |blank|
+    Complex Models are better to |blank|
 
     - :Explain: Good job
       :Predict: Incorrect
