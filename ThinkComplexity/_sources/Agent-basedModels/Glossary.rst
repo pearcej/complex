@@ -8,7 +8,7 @@ Glossary
         The agents are usually situated in space or in a network, and interact with each other locally. They usually have imperfect or incomplete information about the world.
         Often there are differences among agents, unlike previous models where all components are identical. And agent-based models often include randomness, either among the agents or in the world.
 
-    Agnet-Based Models
+    Agent-Based Models
         An agent-based model is a class of computational models for simulating the actions and interactions of autonomous agents with a view to assessing their effects on the system as a whole.
 
     Computationally Irreducible
