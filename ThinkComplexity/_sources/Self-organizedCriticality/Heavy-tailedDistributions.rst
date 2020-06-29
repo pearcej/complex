@@ -58,11 +58,7 @@ The distributions of ``T`` and ``S`` have many small values and a few very large
 
 :ref:`Figure 9.2 <linear_scale>` shows the results for values less than 50.
 
-<<<<<<< HEAD
-As we saw in `Section 5.5 <>`_, we can get a clearer picture of these distributions by plotting them on a log-log scale, as shown in :ref:`Figure 9.3 <log_log>`.
-=======
 As we saw in :ref:`Section 5.5 <5.5>`, we can get a clearer picture of these distributions by plotting them on a log-log scale, as shown in Figure ??.
->>>>>>> 961d64d129fe8ad4bac657368baf72ac974f7856
 
 For values between 1 and 100, the distributions are nearly straight on a log-log scale, which is characteristic of a heavy tail. The gray lines in the figure have slopes near -1, which suggests that these distributions follow a power law with parameters near :math:`α=1`.
 
