@@ -25,7 +25,7 @@ Here is the definition for a class that represents a fitness landscape:
 
 The genotype of an agent, which corresponds to its location in the fitness landscape, is represented by a NumPy array of zeros and ones called ``loc``. The fitness of a given genotype is the mean of ``N`` **fitness contributions**, one for each element of ``loc``.
 
-To compute the fitness of a genotype, FitnessLandscape uses two arrays: ``one_values``, which contains the fitness contributions of having a 1 in each element of ``loc``, and ``zero_values``, which contains the fitness contributions of having a 0.
+To compute the fitness of a genotype, ``FitnessLandscape`` uses two arrays: ``one_values``, which contains the fitness contributions of having a 1 in each element of ``loc``, and ``zero_values``, which contains the fitness contributions of having a 0.
 
 The ``fitness`` method uses ``np.where`` to select a value from ``one_values`` where ``loc`` has a 1, and a value from ``zero_values`` where ``loc`` has a 0.
 

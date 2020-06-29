@@ -17,10 +17,10 @@ Here’s the definition of ``Simulation``:
 
 The attributes of a Simulation are:
 
-- ``fit_land``: A reference to a FitnessLandscape object.
-- ``agents``: An array of Agent objects.
+- ``fit_land``: A reference to a ``FitnessLandscape`` object.
+- ``agents``: An array of ``Agent`` objects.
 
-The most important function in Simulation is step, which simulates one time step:
+The most important function in Simulation is ``step``, which simulates one time step:
 
 ::
 
@@ -38,7 +38,7 @@ The most important function in Simulation is step, which simulates one time step
             replacements = self.choose_replacements(num_dead, fits)
             self.agents[index_dead] = replacements
 
-step uses three other methods:
+``step`` uses three other methods:
 
 - ``get_fitnesses`` returns an array containing the fitness of each agent.
 - ``choose_dead`` decides which agents die during this time step, and returns an array that contains the indices of the dead agents.

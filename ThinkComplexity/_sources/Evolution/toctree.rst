@@ -17,3 +17,4 @@ Evolution
     Summary.rst
     Exercises.rst
     Glossary.rst
+    Matching.rst
