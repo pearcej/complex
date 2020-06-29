@@ -13,3 +13,4 @@ Game of Life
     ImplementingLife.rst
     Exercises.rst 
     Glossary.rst
+    Matching.rst
