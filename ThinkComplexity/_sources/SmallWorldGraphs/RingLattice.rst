@@ -11,7 +11,7 @@ Ring lattice
 
    Figure 4.1: A ring lattice with n=10 and k=4.
 
-A **regular** graph is a graph where each node has the same number of neighbors; the number of neighbors is also called the **degree** of the node.
+A **regular graph** is a graph where each node has the same number of neighbors; the number of neighbors is also called the **degree** of the node.
 
 A ring lattice is a kind of regular graph, which Watts and Strogatz use as the basis of their model. In a ring lattice with n nodes, the nodes can be arranged in a circle with each node connected to the k nearest neighbors.
 

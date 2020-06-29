@@ -55,7 +55,7 @@ We can extract the columns like this:
 
     L, C = np.transpose(res)
 
-In order to plot ``L`` and ``C`` on the same axes, we standardize them by dividing through by the first element:
+In order to plot ``L`` and ``C`` on the same axes, we standardize them by dividing by the first element:
 
 ::
 
