@@ -30,7 +30,7 @@ Before we can model new species, we need the ability to identify clusters of age
 
 The ``logical_xor`` function computes “exclusive OR", which is ``True`` for bits that differ, and ``False`` for the bits that are the same.
 
-To quantify the dispersion of a population, we can compute the mean of the distances between pairs of agents. In the notebook for this chapter, you’ll see the MeanDistance instrument, which computes this metric after each time step.
+To quantify the dispersion of a population, we can compute the mean of the distances between pairs of agents. In the notebook for this chapter, you’ll see the ``MeanDistance`` instrument, which computes this metric after each time step.
 
 :ref:`Figure 12.5 <mean_dis_over_time>` shows mean distance between agents over time. Because we start with identical mutants, the initial distances are 0. As mutations occur, mean distance increases, reaching a maximum while the population migrates across the landscape.
 
