@@ -34,7 +34,7 @@ To show how step works, I’ll start with a small pile that has two cells ready 
     pile.array[1, 1] = 4
     pile.array[1, 3] = 4
 
-Initially, pile.array looks like this:
+Initially, ``pile.array`` looks like this:
 
 ::
 
@@ -89,7 +89,7 @@ And here’s the result.
 
 So that’s how ``step`` works.
 
-With ``mode='same'``, correlate2d considers the boundary of the array to be fixed at zero, so any grains of sand that go over the edge disappear.
+With ``mode='same'``, ``correlate2d`` considers the boundary of the array to be fixed at zero, so any grains of sand that go over the edge disappear.
 
 ``SandPile`` also provides ``run``, which calls ``step`` until no more cells topple:
 
