@@ -58,7 +58,7 @@ Figure ?? shows the results for values less than 50.
 
 As we saw in :ref:`Section 5.5 <5.5>`, we can get a clearer picture of these distributions by plotting them on a log-log scale, as shown in Figure ??.
 
-For values between 1 and 100, the distributions are nearly straight on a log-log scale, which is characteristic of a heavy tail. The gray lines in the figure have slopes near -1, which suggests that these distributions follow a power law with parameters near α=1.
+For values between 1 and 100, the distributions are nearly straight on a log-log scale, which is characteristic of a heavy tail. The gray lines in the figure have slopes near -1, which suggests that these distributions follow a power law with parameters near :math:`α=1`.
 
 For values greater than 100, the distributions fall away more quickly than the power law model, which means there are fewer very large values than the model predicts. One possibility is that this effect is due to the finite size of the sand pile; if so, we might expect larger piles to fit the power law better.
 

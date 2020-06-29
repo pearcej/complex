@@ -32,7 +32,5 @@ The return values, ``freqs`` and ``powers``, are NumPy arrays containing the fre
 
 For frequencies between 10 and 1000 (in arbitrary units), the spectrum falls on a straight line, which is what we expect for pink or red noise.
 
-The gray line in the figure has slope −1.58, which indicates that
+The gray line in the figure has slope −1.58, which indicates that :math:`logP(f) ∼ −β logf` with parameter :math:`β=1.58`, which is the same parameter reported by Bak, Tang, and Wiesenfeld. This result confirms that the sand pile model generates pink noise.
 
-logP(f) ∼ −β logf 
-with parameter β=1.58, which is the same parameter reported by Bak, Tang, and Wiesenfeld. This result confirms that the sand pile model generates pink noise.
