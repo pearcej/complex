@@ -15,3 +15,4 @@ Evolution of cooperation
     Conclusions.rst
     Exercises.rst
     Glossary.rst
+    Matching.rst
