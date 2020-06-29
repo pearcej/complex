@@ -5,13 +5,13 @@ Evolution
     :maxdepth: 2
 
     Introduction.rst
-    Simulating evolution.rst
-    Fitness landscape.rst
+    SimulatingEvolution.rst
+    FitnessLandscape.rst
     Agents.rst
     Simulation.rst
-    No differentiation.rst
-    Evidence of evolution.rst
-    Differential survival.rst
+    NoDifferentiation.rst
+    EvidenceOfEvolution.rst
+    DifferentialSurvival.rst
     Mutation.rst
     Speciation.rst
     Summary.rst
