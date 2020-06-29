@@ -4,7 +4,7 @@ Preface
 .. toctree::
     :maxdepth: 2
 
-    Introduction.rst
+    introduction.rst
     who.rst
     ChangesFromTheFirstEdition.rst
     UsingTheCode.rst
