@@ -25,7 +25,7 @@ Here’s the class that represents the “highway”:
 
 ``n`` is the number of cars, ``length`` is the length of the highway, and ``eps`` is the amount of random noise we’ll add to the system.
 
-``locs`` contains the locations of the drivers; the NumPy function ``linspace`` creates an array of n locations equally spaced between ``0`` and ``length``.
+``locs`` contains the locations of the drivers; the NumPy function ``linspace`` creates an array of ``n`` locations equally spaced between ``0`` and ``length``.
 
 The ``drivers`` attribute is a list of ``Driver`` objects. The ``for`` loop links them so each ``Driver`` contains a reference to the next. The highway is circular, so the last ``Driver`` contains a reference to the first.
 
@@ -39,7 +39,7 @@ During each time step, the ``Highway`` moves each of the drivers:
             for driver in self.drivers:
                 self.move(driver)
 
-The move method lets the ``Driver`` choose its acceleration. Then ``move`` computes the updated speed and position. Here’s the implementation:
+The move method lets the ``Driver`` choose its acceleration. Then ``move`` computes the updated ``speed`` and position. Here’s the implementation:
 
 ::
 
@@ -72,10 +72,10 @@ The move method lets the ``Driver`` choose its acceleration. Then ``move`` compu
 ``dist`` is the distance between ``driver`` and the next driver ahead. This distance is passed to ``choose_acceleration``, which specifies the behavior of the driver. This is the only decision the driver gets to make; everything else is determined by the “physics” of the simulation.
 
 - ``acc`` is acceleration, which is bounded by ``min_acc`` and ``max_acc``. In my implementation, cars can accelerate with ``max_acc=1`` and brake with ``min_acc=-10``.
-- ``speed`` is the old speed plus the requested acceleration, but then we make some adjustments. First, we add random noise to ``speed``, because the world is not perfect. ``eps`` determines the magnitude of the relative error; for example, if ``eps`` is 0.02, speed is multiplied by a random factor between 0.98 and 1.02.
+- ``speed`` is the old speed plus the requested acceleration, but then we make some adjustments. First, we add random noise to ``speed``, because the world is not perfect. ``eps`` determines the magnitude of the relative error; for example, if ``eps`` is 0.02, ``speed`` is multiplied by a random factor between 0.98 and 1.02.
 - Speed is bounded between 0 and ``speed_limit``, which is 40 in my implementation, so cars are not allowed to go backward or speed.
 - If the requested speed would cause a collision with the next car, ``speed`` is set to 0.
-- Finally, we update the ``speed`` and ``loc`` attributes of driver.
+- Finally, we update the ``speed`` and ``loc`` attributes of ``driver``.
 
 Here’s the definition for the ``Driver`` class:
 
