@@ -4,7 +4,7 @@ Complexity Science
 .. toctree::
     :maxdepth: 2
     
-    Introduction.rst
+    introduction.rst
     ChangingCriteriaInScience.rst
     TheAxesOfScientificModels.rst
     DifferentModelsForDifferentPurposes.rst
