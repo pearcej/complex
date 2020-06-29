@@ -58,11 +58,11 @@ Figure ?? shows the result of running this simulation 10 times. The mean fitness
 
 In particular, this kind of evolution does not explain how biological species change over time, or how new species appear. The theory of evolution is powerful because it explains phenomena we see in the natural world that seem inexplicable:
 
-- Adaptation: Species interact with their environments in ways that seem too complex, too intricate, and too clever to happen by chance. Many features of natural systems seem as if they were designed.
+- **Adaptation**: Species interact with their environments in ways that seem too complex, too intricate, and too clever to happen by chance. Many features of natural systems seem as if they were designed.
 
-- Increasing diversity: Over time the number of species on earth has generally increased (despite several periods of mass extinction).
+- **Increasing diversity**: Over time the number of species on earth has generally increased (despite several periods of mass extinction).
 
-- Increasing complexity: The history of life on earth starts with relatively simple life forms, with more complex organisms appearing later in the geological record.
+- **Increasing complexity**: The history of life on earth starts with relatively simple life forms, with more complex organisms appearing later in the geological record.
 
 These are the phenomena we want to explain. So far, our model doesn’t do the job.
 

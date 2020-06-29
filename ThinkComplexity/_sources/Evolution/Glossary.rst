@@ -3,7 +3,7 @@ Glossary
 
 .. glossary:: 
 
-    Enviornment 
+    Environment 
         The surroundings or conditions in which a person, animal, or plant lives or operates.
 
     Fitness
@@ -27,5 +27,5 @@ Glossary
     Random Walk
         A stochastic process consisting of a sequence of changes each of whose characteristics (as magnitude or direction) is determined by chance.
     
-    Theory of Ecolution by Natural Selection
+    Theory of Evolution by Natural Selection
         Claims that new species are created and existing species change due to natural selection.
