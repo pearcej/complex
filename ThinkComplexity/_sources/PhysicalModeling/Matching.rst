@@ -8,7 +8,7 @@ Matching
     :match_4: Percolation|||A process in which a fluid flows through a semi-porous material.
     :match_5: Phase Change|||Rapid change in the behavior near the critical value.
     :match_6: Random Walk|||It is a process that consists of a series of changes that have random characteristics.
-      
+    :match_7: Diffusion|||The combining of substances by the natural movement of their particles.
 
    
 
