@@ -38,7 +38,7 @@ The result is a list of tuples where each tuple contains ``size``, ``size**2``, 
 
 :ref:`Figure 8.9 <fig-8.9>` shows the results for a range of sizes from 10 to 100. The dots show the number of cells in each percolating cluster. The slope of a line fitted to these dots is often near 1.85, which suggests that the percolating cluster is, in fact, fractal when ``q`` is near the critical value.
 
-When ``q`` is larger than the critical value, nearly every porous cell gets filled, so the number of wet cells is close to ``q * size^2``, which has dimension 2.
+When ``q`` is larger than the critical value, nearly every porous cell gets filled, so the number of wet cells is close to :math:`q * size^2`, which has dimension 2.
 
 When ``q`` is substantially smaller than the critical value, the number of wet cells is proportional to the linear size of the array, so it has dimension 1.
 
