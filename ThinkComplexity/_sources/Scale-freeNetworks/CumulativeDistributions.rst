@@ -73,7 +73,7 @@ This definition is useful because if the PMF follows a power law, the CCDF also 
 .. math::
    CCDF(x) ∼ (x/x_m)^-\ ^α
    
-where xm is the minimum possible value and α is a parameter that determines the shape of the distribution.
+where :math:`x_m` is the minimum possible value and :math:`α` is a parameter that determines the shape of the distribution.
 
 Taking the log of both sides yields:
 

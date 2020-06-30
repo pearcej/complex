@@ -32,10 +32,3 @@ Data files from the Barabási and Albert paper are available from http://thinkco
 Compute the number of actors in the graph and the average degree. Plot the PMF of degree on a log-log scale. Also plot the CDF of degree on a log-x scale, to see the general shape of the distribution, and on a log-log scale, to see whether the tail follows a power law.
 
 Note: The actor network is not connected, so you might want to use ``nx.connected_component_subgraphs`` to find connected subsets of the nodes.
-
-.. dragndrop:: q1_exercises
-    :match_1: WS Model|||Has characteristics of a small world network, like the data, but it has low variability in the number of neighbors from node to node, unlike the data.
-    :match_2: BA Model||| Has two essential features used in this model are growth and preferential attachment.
-    :match_3: Explanatory model|||is used for argument by analogy.
-
-    Match each model to the closest description. 
