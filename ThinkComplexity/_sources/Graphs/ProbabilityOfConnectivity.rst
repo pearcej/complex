@@ -41,7 +41,7 @@ The result, ``tf``, is a list of boolean values: ``True`` for each graph that’
     >>> prob_connected(10, 0.23, iters=10000)
     0.33
 
-I chose :math:`0.23` because it is close to the critical value where the probability of connectivity goes from near :math:`0` to near :math:`1`. According to Erdős and Rényi, :math:`p* = lnn / n = 0.23`.
+I chose 0.23 because it is close to the critical value where the probability of connectivity goes from near 0 to near 1. According to Erdős and Rényi, :math:`p* = lnn / n = 0.23`.
 
 We can get a clearer view of the transition by estimating the probability of connectivity for a range of values of :math:`p`:
 
@@ -51,13 +51,13 @@ We can get a clearer view of the transition by estimating the probability of con
     ps = np.logspace(-2.5, 0, 11)
     ys = [prob_connected(n, p) for p in ps]
 
-The NumPy function ``logspace`` returns an array of 11 values from :math:`10−2.5` to :math:`100 = 1`, equally spaced on a logarithmic scale.
+The NumPy function ``logspace`` returns an array of 11 values from :math:`10^{−2.5}` to :math:`10^0 = 1`, equally spaced on a logarithmic scale.
 
 
 For each value of ``p`` in the array, we compute the probability that a graph with parameter ``p`` is connected and store the results in ``ys``.
 
-:ref:`Figure 3.5 <fig_3.5>` shows the results, with a vertical line at the computed critical value, :math:`p* = 0.23`. As expected, the transition from :math:`0` to :math:`1` occurs near the critical value.
+:ref:`Figure 3.5 <fig_3.5>` shows the results, with a vertical line at the computed critical value, :math:`p* = 0.23`. As expected, the transition from 0 to 1 occurs near the critical value.
 
-:ref:`Figure 3.6 <fig_3.6>` shows similar results for larger values of ``n``. As n increases, the critical value gets smaller and the transition gets more abrupt.
+:ref:`Figure 3.6 <fig_3.6>` shows similar results for larger values of ``n``. As ``n`` increases, the critical value gets smaller and the transition gets more abrupt.
 
 These experimental results are consistent with the analytic results Erdős and Rényi presented in their papers.
