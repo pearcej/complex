@@ -39,3 +39,36 @@ So the total number of additions to ``stack`` is the total number of edges, m, d
 Therefore, the order of growth for this function is O(n + m), which is a convenient way to say that the run time grows in proportion to either n or m, whichever is bigger.
 
 If we know the relationship between n and m, we can simplify this expression. For example, in a complete graph the number of edges is n(n−1)/2, which is in O(n2). So for a complete graph, ``reachable_nodes`` is quadratic in n.
+
+.. mchoice:: question3_9
+   :answer_a: True
+   :answer_b: False
+   :correct: a   
+   :feedback_a: Correct! If a node has k neighbors, it is added to stack k times.
+   :feedback_b: Incorrect
+
+   It is possible for a node to be added to the stack multiple times depending on the amount of neighbors the node has
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -87,3 +87,16 @@ The clustering coefficient is about 0.61, which is high, as we expect if this ne
 And the average path is 3.7, which is quite short in a network of more than 4000 users. It’s a small world after all.
 
 Now let’s see if we can construct a WS graph that has the same characteristics as this network.
+
+.. mchoice:: mc-ex-1
+   :answer_a: Low clustering and high path length
+   :answer_b: High clustering and high path length
+   :answer_c: Low clustering and low path length
+   :answer_d: High clustering and low path length.
+   :correct: d
+   :feedback_a: Not quite. Try again. .
+   :feedback_b: No, this would not be ideal.
+   :feedback_c: No, keep trying.
+   :feedback_d: Correct! In a small world graph, things are very clustered and have little space between then, hence their low path length.
+    
+   What are the characteristics of a small world graph?

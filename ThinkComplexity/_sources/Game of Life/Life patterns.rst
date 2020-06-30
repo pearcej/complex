@@ -12,7 +12,7 @@ Life pattern
 
     Figure 7.1: A stable pattern called a beehive.
 
-.. _7.2:
+.. _fig7.2:
 
 .. figure:: Figures/figure_7.2.png
     :align: center
@@ -43,3 +43,22 @@ Depending on the starting orientation, gliders can move along any of the four di
 
 People have spent embarrassing amounts of time finding and naming these patterns. If you search the web, you will find many collections.
 
+.. dragndrop:: q_7.3
+   :match_1: Beehive|||This pattern changes over time but eventually returns to its starting configuration.
+   :match_2: Toad|||In this pattern, cells have 2 or 3 neighbors, so they all survive, and none of the dead cells adjacent to the pattern has 3 neighbors, so no new cells are born
+   :match_3: Glider|||This pattern oscillates and returns to the starting configuration, but shifts in space.
+
+   Match the GoL patterns to their properties:
+
+.. mchoice:: q_7.4
+   :answer_a: True
+   :answer_b: False
+   :correct: b
+   :feedback_a: Sorry but a number of stable patterns are likely to appear if you run a GoL from a random starting state
+   :feedback_b: Correct!
+
+   If you run a GoL from a random starting state, a number of unstable patterns are likely to appear.
+
+.. shortanswer:: q_7.5
+   
+   Why do you think that people are fascinated with this kind of program so much that they name the formations?

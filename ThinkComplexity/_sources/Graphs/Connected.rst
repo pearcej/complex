@@ -77,3 +77,7 @@ A complete graph is, not surprisingly, connected:
     True
 
 In the next section we will generate ER graphs and check whether they are connected.
+
+.. shortanswer:: short-3.6
+
+   The author says that “A complete graph is, not surprisingly, connected”, why is this?

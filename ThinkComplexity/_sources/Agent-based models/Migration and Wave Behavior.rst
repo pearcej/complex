@@ -1,3 +1,5 @@
+.. _wavey_boi:
+
 Migration and Wave Behavior
 ----------------------------
 
@@ -15,7 +17,7 @@ The ones with the longest vision cross the valley between the peaks and propagat
 
 The result is a series of discrete waves of migration, where each wave resembles a coherent object, like the spaceships we saw in the Rule 110 CA and Game of Life (see :ref:`Section 6.6 <6.6>` and :ref:`Section 7.3 <7.3>`).
 
-Figure ?? shows the initial condition (left) and the state of the model after 6 steps (middle) and 12 steps (right). You can see the first two waves reaching and moving through the second peak, leaving a stripe of empty cells behind. You can see an animated version of this model, where the wave patterns are more clearly visible, in the notebook for this chapter.
+:ref:`Figure 10.5 <wavey_boi>`  shows the initial condition (left) and the state of the model after 6 steps (middle) and 12 steps (right). You can see the first two waves reaching and moving through the second peak, leaving a stripe of empty cells behind. You can see an animated version of this model, where the wave patterns are more clearly visible, in the notebook for this chapter.
 
 These waves move diagonally, which is surprising because the agents themselves only move north or east, never northeast. Outcomes like this — groups or “aggregates” with properties and behaviors that the agents don’t have — are common in agent-based models. We will see more examples in the next chapter.
 

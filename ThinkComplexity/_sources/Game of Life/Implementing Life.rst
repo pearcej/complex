@@ -90,6 +90,17 @@ This version is faster and more concise than the others; the only drawback is th
 
 ``Life.py``, which is included in the repository for this book, provides a ``Life`` class that encapsulates this implementation of the rules. If you run ``Life.py``, you should see an animation of a “puffer train”, which is a spaceship that leaves a trail of detritus in its wake.
 
+.. fillintheblank:: q_7.12
+   :casei:
 
+   The author say the simplest method to compute the GoL rules is |blank|
 
+   - :for loops: Correct!
+     :while loops: Not quite, take a look at his code.
+     :for loop: Sorry there is more than one of those within the code above.
+     :x: Not quite.
+    
 
+.. shortanswer:: q_7.13
+
+   What does the author say about that version of implementation? *Refer back to the implementation method referred to in the previous question.*

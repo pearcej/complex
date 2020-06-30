@@ -39,6 +39,8 @@ Now we’re ready to run the simulation. To avoid the effect of random changes i
 
 Now we can create and add a ``MeanFitness`` instrument, run the simulation, and plot the results:
 
+.. _fig_mean_fit:
+
 ::
 
     instrument = MeanFitness()
@@ -54,7 +56,7 @@ Now we can create and add a ``MeanFitness`` instrument, run the simulation, and 
     Figure 12.1: Mean fitness over time for 10 simulations with no differential survival or reproduction.
    
 
-Figure ?? shows the result of running this simulation 10 times. The mean fitness of the population drifts up or down at random. Since the distribution of fitness changes over time, we infer that the distribution of phenotypes is also changing. By the most inclusive definition, this **random walk** is a kind of evolution. But it is not a particularly interesting kind.
+:ref:`Figure 12.1 <fig_mean_fit>` shows the result of running this simulation 10 times. The mean fitness of the population drifts up or down at random. Since the distribution of fitness changes over time, we infer that the distribution of phenotypes is also changing. By the most inclusive definition, this **random walk** is a kind of evolution. But it is not a particularly interesting kind.
 
 In particular, this kind of evolution does not explain how biological species change over time, or how new species appear. The theory of evolution is powerful because it explains phenomena we see in the natural world that seem inexplicable:
 
@@ -65,5 +67,27 @@ In particular, this kind of evolution does not explain how biological species ch
 - Increasing complexity: The history of life on earth starts with relatively simple life forms, with more complex organisms appearing later in the geological record.
 
 These are the phenomena we want to explain. So far, our model doesn’t do the job.
+
+.. mchoice:: q_12.7
+   :answer_a: True
+   :answer_b: False
+   :correct: b
+   :feedback_a: Incorrect. Please try again.
+   :feedback_b: Correct. It is a change in the distribution of genotypes in a population. Individuals don’t evolve, populations do.
+
+   Evolution is a change in the distribution of genotypes in individuals of a population.
+
+.. fillintheblank:: q_12.7.2
+   :casei:
+
+   The theory of evolution is powerful because it explains |blank|, |blank|, and |blank| which are phenomena seen in the natural world that seem inexplicable initially.
+
+   - :adaptation: Correct
+     :x: Incorrect, please refer back to the text.
+   - :increasing diversity: Correct
+     :x: Incorrect, please refer back to the text.
+   - :increasing complexity: Correct
+     :x: Incorrect, please refer back to the text.
+
 
 

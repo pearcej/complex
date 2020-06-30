@@ -12,6 +12,7 @@ To understand this point, it is useful to think about two kinds of models, reduc
 
 For example, to explain why the ideal gas law holds, we can model the molecules that make up a gas with point masses and model their interactions as elastic collisions. If you simulate or analyze this model, you find that it obeys the ideal gas law. This model is satisfactory to the degree that molecules in a gas behave like molecules in the model. The analogy is between the parts of the system and the parts of the model.
 
+.. _logic_sturct:
 
 .. figure:: Figures/figure_9.7.png
     :align: center
@@ -30,7 +31,7 @@ Holistic models are more focused on similarities between systems and less intere
 
 As another example of an evolutionary system, he proposes “memes”, which are thoughts or behaviors that are replicated by transmission from person to person2. As memes compete for the resource of human attention, they evolve in ways that are similar to genetic evolution.
 
-Critics of the meme model have pointed out that memes are a poor analogy for genes; they differ from genes in many obvious ways. Dawkins has argued that these differences are beside the point because memes are not *supposed* to be analogous to genes. Rather, memes and genes are examples of the same category: evolutionary systems. The differences between them emphasize the real point, which is that evolution is a general model that applies to many seemingly disparate systems. The logical structure of this argument is shown in Figure ??.
+Critics of the meme model have pointed out that memes are a poor analogy for genes; they differ from genes in many obvious ways. Dawkins has argued that these differences are beside the point because memes are not *supposed* to be analogous to genes. Rather, memes and genes are examples of the same category: evolutionary systems. The differences between them emphasize the real point, which is that evolution is a general model that applies to many seemingly disparate systems. The logical structure of this argument is shown in :ref:`Figure 9.8 <logic_sturct>`.
 
 Bak has made a similar argument that self-organized criticality is a general model for a broad category of systems:
 
@@ -41,3 +42,23 @@ Many natural systems demonstrate behaviors characteristic of critical systems. B
 The first approach, which I characterize as reductionist, can explain the behavior of a particular system. The second approach, which I am calling holistic, can explain the prevalence of criticality in natural systems. They are different models with different purposes.
 
 For reductionist models, realism is the primary virtue, and simplicity is secondary. For holistic models, it is the other way around.
+
+.. fillintheblank:: q_9.9
+   :casei:
+
+   What is compared to genes as a means of understanding the evolutionary system? 
+
+   |blank|
+
+   - :memes: Correct! 
+     :x: Incorrect, please go back and reread the section.
+
+.. mchoice:: q_9.9.2
+   :answer_a: Reductionist Model
+   :answer_b: Holistic Model
+   :correct: b
+   :feedback_a: sorry try again, this is a more abstract model than what a reductionist approach would use.
+   :feedback_b: Correct!
+
+   Given the explanation above, the sand pile model is  most accurately described as a? 
+   

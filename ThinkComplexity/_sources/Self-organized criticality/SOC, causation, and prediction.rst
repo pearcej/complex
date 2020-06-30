@@ -20,3 +20,16 @@ In the sand pile model, the **proximate** cause of an avalanche is a grain of sa
 
 
 Many social phenomena, including wars, revolutions, epidemics, inventions, and terrorist attacks, are characterized by heavy-tailed distributions. If these distributions are prevalent because social systems are SOC, major historical events may be fundamentally unpredictable and unexplainable.
+
+.. mchoice:: q_9.10
+   :answer_a: Highly predictable
+   :answer_b: Definite cause pointing to “the grain of sand”
+   :answer_c: If it is truly a SOC it is Unpredictable and unexplainable
+   :answer_d: Completely explainable
+   :correct: c
+   :feedback_a: Sorry This type of system is based on “the next grain of sand"
+   :feedback_b: Incorrect, the cause is the structure and dynamics of the systems as a whole
+   :feedback_c: Correct!
+   :feedback_d: sorry, It is not if it is truly a Soc
+
+   If  War is a SOC, what can be said about it given the discussion?

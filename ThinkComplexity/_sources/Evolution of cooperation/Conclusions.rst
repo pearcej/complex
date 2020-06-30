@@ -15,3 +15,12 @@ The simulations in this chapter suggest:
 Obviously, the agents in these simulations are simple, and the Prisoner’s Dilemma is a highly abstract model of a limited range of social interactions. Nevertheless, the results in this chapter provide some insight into human nature. Maybe our inclinations toward cooperation, retaliation, and forgiveness are innate, at least in part. These characteristics are a result of how our brains are wired, which is controlled by our genes, at least in part. And maybe our genes build our brains that way because over the history of human evolution, genes for less altruistic brains were less likely to propagate.
 
 Maybe that’s why selfish genes build altruistic brains.
+
+.. fillintheblank:: q_13.9
+    :casei:
+    
+    As a population how did the agents tend to lean as a strategy? |blank|
+
+    - :always cooperate: Correct!
+      :always defect: Incorrect, Look again at what the simulations went toward
+      :x: Incorrect, please look again at the passage above.
