@@ -7,11 +7,11 @@ As the subtitle suggests, Bak, Tang and Wiesenfeld were trying to explain why ma
 
 To understand pink noise, we have to take a detour to understand signals, power spectrums, and noise.
 
-**Signal**: A **signal** is any quantity that varies in time. One example is sound, which is variation in air density. In the sand pile model, the signals we’ll consider are avalanche durations and sizes as they vary over time.
+**Signal**: A signal is any quantity that varies in time. One example is sound, which is variation in air density. In the sand pile model, the signals we’ll consider are avalanche durations and sizes as they vary over time.
 
-**Power spectrum**: Any signal can be decomposed into a set of frequency components with different levels of **power**, which is related to amplitude or volume. The **power spectrum** of a signal is a function that shows the power of each frequency component.
+**Power spectrum**: Any signal can be decomposed into a set of frequency components with different levels of power, which is related to amplitude or volume. The power spectrum of a signal is a function that shows the power of each frequency component.
 
-**Noise**: In common use, **noise** is usually an unwanted sound, but in the context of signal processing, it is a signal that contains many frequency components.
+**Noise**: In common use, noise is usually an unwanted sound, but in the context of signal processing, it is a signal that contains many frequency components.
 
 There are many kinds of noise. For example, “white noise” is a signal that has components with equal power over a wide range of frequencies.
 
