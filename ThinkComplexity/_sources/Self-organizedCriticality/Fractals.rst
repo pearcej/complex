@@ -38,11 +38,7 @@ Inside the loop, it uses ``a==level`` to make a boolean array that’s ``True`` 
 
     Figure 9.4: Sand pile model in equilibrium, selecting cells with levels 0, 1, 2, and 3, left to right, top to bottom.
 
-<<<<<<< HEAD
-:ref:`Figure 9.4 <equil_sand>` shows the results for pile3. Visually, these patterns resemble fractals, but looks can be deceiving. To be more confident, we can estimate the fractal dimension for each pattern using **box-counting**, as we saw in `Section 8.6 <>`_.
-=======
-Figure ?? shows the results for pile3. Visually, these patterns resemble fractals, but looks can be deceiving. To be more confident, we can estimate the fractal dimension for each pattern using **box-counting**, as we saw in :ref:`Section 8.6<8.6>`.
->>>>>>> 961d64d129fe8ad4bac657368baf72ac974f7856
+:ref:`Figure 9.4 <equil_sand>` shows the results for pile3. Visually, these patterns resemble fractals, but looks can be deceiving. To be more confident, we can estimate the fractal dimension for each pattern using **box-counting**, as we saw in `Section 8.6 <8.6>`_.
 
 We’ll count the number of cells in a small box at the center of the pile, then see how the number of cells increases as the box gets bigger. Here’s my implementation:
 
@@ -62,11 +58,11 @@ We’ll count the number of cells in a small box at the center of the pile, then
 
     return np.transpose(res)
 
-The parameter, a, is a boolean array. The size of the box is initially 1. Each time through the loop, it increases by 2 until it reaches ``end``, which is the smaller of ``n`` and ``m``.
+The parameter, ``a``, is a boolean array. The size of the box is initially 1. Each time through the loop, it increases by 2 until it reaches ``end``, which is the smaller of ``n`` and ``m``.
 
 Each time through the loop, ``box`` is a set of cells with width and height ``i``, centered in the array. ``total`` is the number of “on” cells in the box.
 
-The result is a list of tuples, where each tuple contains ``i``,`` i**2``, and the number of cells in the box. 
+The result is a list of tuples, where each tuple contains ``i``, :math:`i^2`, and the number of cells in the box. 
 When we pass this result to ``transpose``, NumPy converts it to an array with three columns, and then transposes it; that is, it makes the columns into rows and the rows into columns. The result is an array with 3 rows: ``i``, ``i**2``, and ``total``.
 
 Here’s how we use ``count_cells``:

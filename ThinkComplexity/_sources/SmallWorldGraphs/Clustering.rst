@@ -5,9 +5,9 @@ Clustering
 
 The next step is to compute the clustering coefficient, which quantifies the tendency for the nodes to form cliques. A **clique** is a set of nodes that are completely connected; that is, there are edges between all pairs of nodes in the set.
 
-Suppose a particular node, u, has k neighbors. If all of the neighbors are connected to each other, there would be k(k−1)/2 edges among them. The fraction of those edges that actually exist is the local clustering coefficient for u, denoted Cu.
+Suppose a particular node, ``u``, has k neighbors. If all of the neighbors are connected to each other, there would be k(k−1)/2 edges among them. The fraction of those edges that actually exist is the local clustering coefficient for ``u``, denoted ``Cu``.
 
-If we compute the average of Cu over all nodes, we get the “network average clustering coefficient”, denoted C.
+If we compute the average of ``Cu`` over all nodes, we get the “network average clustering coefficient”, denoted ``C``.
 
 Here is a function that computes it.
 
@@ -40,7 +40,7 @@ We can test the function like this:
     >>> node_clustering(lattice, 1)
     0.5
 
-In a ring lattice with k=4, the clustering coefficient for each node is 0.5 (if you are not convinced, take another look at :ref:`Figure 4.1 <fig_4.1>`).
+In a ring lattice with ``k=4``, the clustering coefficient for each node is 0.5 (if you are not convinced, take another look at :ref:`Figure 4.1 <fig_4.1>`).
 
 Now we can compute the network average clustering coefficient like this:
 

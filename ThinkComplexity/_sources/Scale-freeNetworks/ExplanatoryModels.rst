@@ -4,7 +4,6 @@
 Explanatory models
 ------------------
 
-.. _fig_cpp_reference:
 
 .. _fig_5.6:
 

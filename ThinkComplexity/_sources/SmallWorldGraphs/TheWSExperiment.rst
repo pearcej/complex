@@ -3,8 +3,6 @@
 The WS experiment
 -----------------
 
-.. _fig_cpp_reference:
-
 .. figure:: Figures/thinkcomplexity2009.png
    :align: center
    :alt: "Figure 4.3: Clustering coefficient (C) and characteristic path length (L) for WS graphs with n=1000, k=10, and a range of p."
@@ -55,7 +53,7 @@ We can extract the columns like this:
 
     L, C = np.transpose(res)
 
-In order to plot ``L`` and ``C`` on the same axes, we standardize them by dividing through by the first element:
+In order to plot ``L`` and ``C`` on the same axes, we standardize them by dividing by the first element:
 
 ::
 

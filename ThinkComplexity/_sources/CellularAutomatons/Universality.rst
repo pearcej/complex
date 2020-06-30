@@ -21,7 +21,7 @@ This observation led to the Church-Turing Thesis, which is the claim that these 
 
 The Rule 110 CA is yet another model of computation, and remarkable for its simplicity. That it, too, turns out to be Turing complete lends support to the Church-Turing Thesis.
 
-*In A New Kind of Science*, Wolfram states a variation of this thesis, which he calls the “principle of computational equivalence” (see http://thinkcomplex.com/equiv):
+In *A New Kind of Science*, Wolfram states a variation of this thesis, which he calls the “principle of computational equivalence” (see http://thinkcomplex.com/equiv):
 
 Almost all processes that are not obviously simple can be viewed as computations of equivalent sophistication.
 More specifically, the principle of computational equivalence says that systems found in the natural world can perform computations up to a maximal (“universal”) level of computational power, and that most systems do in fact attain this maximal level of computational power. Consequently, most systems are computationally equivalent.

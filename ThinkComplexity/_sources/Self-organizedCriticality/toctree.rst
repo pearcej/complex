@@ -16,3 +16,4 @@ Self-organized criticality
     SOC,Causation,AndPrediction.rst
     Exercises.rst
     Glossary.rst
+    Matching.rst

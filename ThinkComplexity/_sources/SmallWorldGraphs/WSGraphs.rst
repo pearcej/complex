@@ -3,8 +3,6 @@
 WS graphs
 ---------
 
-.. _fig_cpp_reference:
-
 .. figure:: Figures/thinkcomplexity2008.png
    :align: center
    :alt: "Figure 4.2: WS graphs with n=20, k=4, and p=0 (left), p=0.2 (middle), and p=1 (right)."
@@ -27,7 +25,7 @@ Here is my implementation of this process.
             G.remove_edge(u, v)
             G.add_edge(u, new_v)
 
-The parameter p is the probability of rewiring an edge. The for loop enumerates the edges and uses ``flip`` (defined in :ref:`Section 3.7 <3.7>`) to choose which ones get rewired.
+The parameter p is the probability of rewiring an edge. The ``for`` loop enumerates the edges and uses ``flip`` (defined in :ref:`Section 3.7 <3.7>`) to choose which ones get rewired.
 
 If we are rewiring an edge from node ``u`` to node ``v``, we have to choose a replacement for ``v``, called ``new_v``.
 
@@ -36,7 +34,7 @@ If we are rewiring an edge from node ``u`` to node ``v``, we have to choose a re
 3. Then we remove the existing edge from ``u`` to ``v``, and
 4. Add a new edge from u to ``new_v``.
 
-As an aside, the expression ``G[u]`` returns a dictionary that contains the neighbors of u as keys. It is usually faster than using ``G.neighbors`` (see http://thinkcomplex.com/neigh).
+As an aside, the expression ``G[u]`` returns a dictionary that contains the neighbors of ``u`` as keys. It is usually faster than using ``G.neighbors`` (see http://thinkcomplex.com/neigh).
 
 This function does not consider the edges in the order specified by Watts and Strogatz, but that doesn’t seem to affect the results.
 

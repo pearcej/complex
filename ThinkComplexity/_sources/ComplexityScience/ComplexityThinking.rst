@@ -23,7 +23,7 @@ The Enlightenment,  and philosophic  modernism, are based on belief in objective
 
 Some  people  distinguish  between  laws, theories, and models.  Calling something a “law” implies that it is objectively  true  and  immutable;  “theory”  suggests  that  it  is  subject  to revision;  and “model” concedes that it is a subjective choice based on simplifications and approximations.
 
-I think they are all the same thing.  Some concepts that are called laws are really definitions;  others are,  in effect,  the assertion that a certainmodel  predicts  or  explains  the  behavior  of  a  system  particularly  well.We come back to the nature of physical laws in :ref:`Section 5.9 <5.9>`, :ref:`Section 6.9 <6.9>` and :ref:`Section 9.9 <9.9>`
+I think they are all the same thing.  Some concepts that are called laws are really definitions;  others are,  in effect,  the assertion that a certain model  predicts  or  explains  the  behavior  of  a  system  particularly  well.We come back to the nature of physical laws in :ref:`Section 5.9 <5.9>`, :ref:`Section 6.9 <6.9>` and :ref:`Section 9.9 <9.9>`
 
 **Determinism→indeterminism**
 

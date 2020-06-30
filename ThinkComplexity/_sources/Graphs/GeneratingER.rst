@@ -4,7 +4,6 @@
 Generating ER Graphs
 --------------------
 
-.. _fig_cpp_reference:
 
 .. figure:: Figures/thinkcomplexity2004.png
    :align: center
