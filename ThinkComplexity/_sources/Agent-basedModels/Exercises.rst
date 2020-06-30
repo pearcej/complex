@@ -10,7 +10,7 @@ The mechanism Bishop hypothesizes is not that people, like the agents in Schelli
 
 Modify your implementation of Schelling’s model to simulate this kind of behavior and see if it yields similar degrees of segregation.
 
-There are several ways you can model Bishop’s hypothesis. In my implementation, a random selection of agents moves during each step. Each agent considers k randomly-chosen empty locations and chooses the one with the highest fraction of similar neighbors. How does the degree of segregation depend on k?
+There are several ways you can model Bishop’s hypothesis. In my implementation, a random selection of agents moves during each step. Each agent considers ``k`` randomly-chosen empty locations and chooses the one with the highest fraction of similar neighbors. How does the degree of segregation depend on ``k``?
 
 **Exercise 2:**  In the first version of SugarScape, we never add agents, so once the population falls, it never recovers. In the second version, we only replace agents when they die, so the population is constant. Now let’s see what happens if we add some “population pressure”.
 

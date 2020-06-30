@@ -21,7 +21,7 @@ Here is a class definition that extends ``Agent`` and overrides ``copy``:
                 loc = self.mutate(direction)
             return Mutant(loc, self.fit_land)
 
-In this model of mutation, every time we call copy, there is a 5% chance of mutation. In case of mutation, we choose a random direction from the current location — that is, a random bit in the genotype — and flip it. Here’s mutate:
+In this model of mutation, every time we call copy, there is a 5% chance of mutation. In case of mutation, we choose a random direction from the current location — that is, a random bit in the genotype — and flip it. Here’s ``mutate``:
 
 ::
 
