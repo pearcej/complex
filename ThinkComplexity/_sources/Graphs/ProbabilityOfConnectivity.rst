@@ -5,8 +5,6 @@
 Probability of Connectivity
 ---------------------------
 
-.. _fig_cpp_reference:
-
 .. figure:: Figures/thinkcomplexity2005.png
    :align: center
    :alt: "Figure 3.5: Probability of connectivity with n=10 and a range of p. The vertical line shows the predicted critical valu"

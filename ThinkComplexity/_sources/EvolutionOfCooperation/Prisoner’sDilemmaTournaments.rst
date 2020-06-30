@@ -13,10 +13,10 @@ For more information about these tournaments, and an explanation of why TFT does
 
 Looking at the strategies that did well in these tournaments, Alexrod identified the characteristics they tended to share:
 
-- Nice: The strategies that do well cooperate during the first round, and generally cooperate as often as they defect in subsequent rounds.
-- Retaliating: Strategies that cooperate all the time did not do as well as strategies that retaliate if the opponent defects.
-- Forgiving: But strategies that were too vindictive tended to punish themselves as well as their opponents.
-- Non-envious: Some of the most successful strategies seldom outscore their opponents; they are successful because they do *well enough* against a wide variety of opponents.
+- **Nice**: The strategies that do well cooperate during the first round, and generally cooperate as often as they defect in subsequent rounds.
+- **Retaliating**: Strategies that cooperate all the time did not do as well as strategies that retaliate if the opponent defects.
+- **Forgiving**: But strategies that were too vindictive tended to punish themselves as well as their opponents.
+- **Non-envious**: Some of the most successful strategies seldom outscore their opponents; they are successful because they do *well enough* against a wide variety of opponents.
 
 TFT has all of these properties.
 

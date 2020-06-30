@@ -3,8 +3,6 @@
 What is a Graph?
 ----------------
 
-.. _fig_cpp_reference:
-
 .. _3.2:
 
 .. figure:: Figures/thinkcomplexity2001.png

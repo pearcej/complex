@@ -15,3 +15,4 @@ Scale-free networks
     ExplanatoryModels.rst
     Exercises.rst
     Glossary.rst
+    Matching.rst

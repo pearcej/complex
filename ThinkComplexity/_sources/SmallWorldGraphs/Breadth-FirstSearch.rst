@@ -24,9 +24,9 @@ Which door do you open next? If you are feeling adventurous, you might want to g
 
 But if you wanted to be more systematic, you might go back and explore A and B before D, E, and F. That would be a breadth-first search.
 
-In ``reachable_nodes``, we use the list method pop to choose the next node to “explore”. By default, pop returns the last element of the list, which is the last one we added. In the example, that would be door F.
+In ``reachable_nodes``, we use the list method ``pop`` to choose the next node to “explore”. By default, ``pop`` returns the last element of the list, which is the last one we added. In the example, that would be door F.
 
-If we want to perform a BFS instead, the simplest solution is to pop the first element of the list:
+If we want to perform a BFS instead, the simplest solution is to ``pop`` the first element of the list:
 
 ::
 

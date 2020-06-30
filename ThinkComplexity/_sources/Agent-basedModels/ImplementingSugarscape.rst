@@ -14,7 +14,7 @@ During each step, the agent moves, harvests sugar, and ages. Here is the ``Agent
             self.sugar += env.harvest(self.loc) - self.metabolism
             self.age += 1
 
-The parameter env is a reference to the environment, which is a ``Sugarscape`` object. It provides methods ``look_and_move`` and ``harvest``:
+The parameter ``env`` is a reference to the environment, which is a ``Sugarscape`` object. It provides methods ``look_and_move`` and ``harvest``:
 
 - ``look_and_move`` takes the location of the agent, which is a tuple of coordinates, and the range of the agent’s vision, which is an integer. It returns the agent’s new location, which is the visible cell with the most sugar.
 - ``harvest`` takes the (new) location of the agent, and removes and returns the sugar at that location.

@@ -8,7 +8,7 @@ import pkg_resources
 from runestone import get_master_url
 
 ######## CHANGE THIS ##########
-project_name = "cppds"
+project_name = "Complex"
 ###############################
 
 # if you want to override the master url do it here.  Otherwise setting it to None
@@ -20,7 +20,7 @@ if master_url is None:
     master_url = get_master_url()
 
 master_app = 'runestone'
-serving_dir = './build/cppds'
+serving_dir = './build/Complex'
 dynamic_pages = False
 if dynamic_pages:
     dest = './published'

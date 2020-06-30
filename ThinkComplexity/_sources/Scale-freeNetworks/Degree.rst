@@ -3,7 +3,6 @@
 
 Degree 
 -------
-.. _fig_cpp_reference:
 
 .. _5.4:
 

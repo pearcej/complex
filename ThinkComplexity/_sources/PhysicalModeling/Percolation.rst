@@ -6,7 +6,7 @@ Percolation models are often represented using random graphs like the ones we sa
 
 In this model:
 
-- Initially, each cell is either “porous” with probability ``q`` or “non-porous” with probability 1-``q``.
+- Initially, each cell is either “porous” with probability ``q`` or “non-porous” with probability ``1-q``.
 - When the simulation begins, all cells are considered “dry” except the top row, which is “wet”.
 - During each time step, if a porous cell has at least one wet neighbor, it becomes wet. Non-porous cells stay dry.
 - The simulation runs until it reaches a “fixed point” where no more cells change state.
@@ -27,7 +27,7 @@ I define a new class to represent a percolation model:
 
 ``n`` and ``m`` are the number of rows and columns in the CA.
 
-The state of the CA is stored in ``array``, which is initialized using ``np.random.choice`` to choose 1 (porous) with probability q, and 0 (non-porous) with probability 1-``q``.
+The state of the CA is stored in ``array``, which is initialized using ``np.random.choice`` to choose 1 (porous) with probability q, and 0 (non-porous) with probability ``1-q``.
 
 The state of the top row is set to 5, which represents a wet cell. Using 5, rather than the more obvious 2, makes it possible to use ``correlate2d`` to check whether any porous cell has a wet neighbor. Here is the kernel:
 

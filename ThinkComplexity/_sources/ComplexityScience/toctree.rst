@@ -11,3 +11,4 @@ Complexity Science
     ComplexityEngineering.rst
     ComplexityThinking.rst
     Glossary.rst
+    Matching.rst
