@@ -27,3 +27,12 @@ Almost all processes that are not obviously simple can be viewed as computations
 More specifically, the principle of computational equivalence says that systems found in the natural world can perform computations up to a maximal (“universal”) level of computational power, and that most systems do in fact attain this maximal level of computational power. Consequently, most systems are computationally equivalent.
 
 Applying these definitions to CAs, Classes 1 and 2 are “obviously simple”. It may be less obvious that Class 3 is simple, but in a way perfect randomness is as simple as perfect order; complexity happens in between. So Wolfram’s claim is that Class 4 behavior is common in the natural world, and that almost all systems that manifest it are computationally equivalent.
+
+.. mchoice:: q1_6.8
+    :answer_a: True
+    :answer_b:  False
+    :correct: a
+    :feedback_a: Correct!
+    :feedback_b: Incorrect.
+
+    The Turing machine is useful because it is possible to characterize the set of functions that can be computed by it. 

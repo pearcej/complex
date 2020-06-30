@@ -7,3 +7,16 @@ In this chapter, I present Stanley Milgram’s famous Small World Experiment, wh
 Along the way, we’ll see two new graph algorithms: breadth-first search (BFS) and Dijkstra’s algorithm for computing the shortest path between nodes in a graph.
 
 The code for this chapter is in chap03.ipynb in the repository for this book. More information about working with the code is in :ref:`Section 1.4<1.4>`.
+
+.. mchoice:: question_4.1.1
+    :answer_a: Breadth-first search (BFS)
+    :answer_b: Depth-first search (DFS)
+    :answer_c: Dijkstra’s algorithm
+    :answer_d: Bellman-Ford Algorithm
+    :correct: a,c
+    :feedback_a: Good Job!
+    :feedback_b: Incorrect, DFS is not used for computing the shortest path between  nodes. Please try again.
+    :feedback_c: Correct!
+    :feedback_d: Incorrect, Bellman-Ford is not used. Please try again
+
+    Which of the below graph algorithms are used for computing the shortest path between nodes. Select multiple choices.

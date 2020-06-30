@@ -13,3 +13,16 @@ Most of the time, dropping a single grain causes no cells to topple, so ``T=1`` 
 They conclude that the sand pile model exhibits “self-organized criticality”, which means that it evolves toward a critical state without the need for external control or what they call “fine tuning” of any parameters. And the model stays in a critical state as more grains are added.
 
 In the next few sections I replicate their experiments and interpret the results.
+
+.. fillintheblank:: q_9.3
+   :casei:
+
+   Bak, Tang and Wiesenfeld conclude that the sand pile model exhibits |blank|, which means that it evolves toward a |blank| without the need for |blank|.
+
+   - :self organized criticality: Correct!
+     :x: Incorrect, please reread the section.
+   - :critical state: Correct!
+     :x: Incorrect, please reread the section.    
+   - :external control: Correct!
+     :x: Incorrect, please reread the section.
+     

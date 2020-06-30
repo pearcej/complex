@@ -48,3 +48,7 @@ And so on. If you are familiar with proof by induction, you can see where this i
 But this argument only works if we process all nodes with distance 1 before we start processing nodes with distance 2, and so on. And that’s exactly what BFS does.
 
 In the exercises at the end of this chapter, you’ll write a version of Dijkstra’s algorithm using DFS, so you’ll have a chance to see what goes wrong.
+
+.. shortanswer:: q1_4.11
+
+    Summarize how the Dijkstra’s algorithm works.

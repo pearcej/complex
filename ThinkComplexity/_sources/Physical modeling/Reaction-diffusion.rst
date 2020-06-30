@@ -111,4 +111,39 @@ For all simulations in this section, ``ra=0.5`` and ``rb=0.25``.
 
 Since 1952, observations and experiments have provided some support for Turing’s conjecture. At this point it seems likely, but not yet proven, that many animal patterns are actually formed by reaction-diffusion processes of some kind.
 
+.. mchoice:: q_8.3
+   :answer_a: None of the below will yield a coral-like pattern
+   :answer_b: f=0.035 and k=0.057 
+   :answer_c: f=0.039 and k=0.065 
+   :answer_d: f=0.055 and k=0.062
+   :correct: d
+   :feedback_a: Sorry but one of the options below does produce a coral-like pattern.
+   :feedback_b: Sorry but these parameters make the system evolve in a stable configuration with light spots.
+   :feedback_c: Sorry but these parameters produce spots that grow and divide in a process resembling mitosis. 
+   :feedback_d: Correct! These parameters yield a coral-like pattern.
+
+   At what point did there appear to be a coral-like pattern?
+
+.. mchoice:: q_8.3.2
+   :answer_a: True
+   :answer_b: False
+   :correct: a
+   :feedback_a: Correct! When f=0.039 and k=0.065 the pattern that is produced looks like the patterns on animals. Though, this has not yet been proven.  
+   :feedback_b: Incorrect, please refer back to section.
+
+   Based on the patterns from the text, is there a possibility for animal patterns to be based on diffusion reactions? 
+
+ 
+.. mchoice:: q_8.3.3
+   :answer_a: True
+   :answer_b: False
+   :correct: a
+   :feedback_a: Correct. A*B**2 does set the rate of reaction.
+   :feedback_b: Incorrect. Please try again.
+
+   In the above code A*B**2 sets the rate of reaction.
+
+
+
+
 

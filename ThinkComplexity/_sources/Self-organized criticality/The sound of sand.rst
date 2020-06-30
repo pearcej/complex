@@ -21,7 +21,9 @@ The parameter ``nperseg`` specifies the number of time steps per segment. With l
 
 The parameter ``fs`` is the “sampling frequency”, which is the number of data points in the signal per unit of time. By setting ``fs=nperseg``, we get a range of frequencies from ``0`` to ``nperseg/2``. This range is convenient, but because the units of time in the model are arbitrary, it doesn’t mean much.
 
-The return values, ``freqs`` and ``powers``, are NumPy arrays containing the frequencies of the components and their corresponding powers, which we can plot. Figure ?? shows the result.
+The return values, ``freqs`` and ``powers``, are NumPy arrays containing the frequencies of the components and their corresponding powers, which we can plot. :ref:`Figure 9.6 <power_spec>` shows the result.
+
+.. _power_spec:
 
 .. figure:: Figures/figure_9.6.png
     :align: center

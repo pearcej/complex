@@ -25,5 +25,27 @@ Again, I find it useful to state philosophical positions in a range of strengths
 
 SR4 is so strong that it is probably untenable; by such a strict criterion, almost all current theories are known to be false. Most realists would accept something in the range between SR1 and SR3.
 
+.. mchoice:: q_7.9
+   :answer_a: True
+   :answer_b: False
+   :correct: a
+   :feedback_a: Correct!
+   :feedback_b: Please go back and see what the explanation for the term is within the section above.
 
+   Scientific realism is a positive epistemic attitude toward the content of our best theories and models, recommending belief in both observable and unobservable aspects of the world described by the sciences.
 
+.. fillintheblank:: q_7.10
+   :casei:
+   
+   Since SR4 is so defensible against attacks or objections most realists would accept something within the range of |blank| and |blank|. Pay attention to the order.
+
+   - :SR1: Correct, this is the start of the SRs that are accepted.
+     :SR2: It is within the range but not the answer we are looking for, please give the outter edges of the range.
+     :SR3: While this is a good candidate please try again.
+     :SR4: This SR is too powerful, please go back and look again at the section.
+     :x: Incorrect.
+   - :SR3: Correct, this is the end of the SRs that are accepted.
+     :SR1: While this is a good candidate please try again.
+     :SR2: It is within the range but not the answer we are looking for, please give the outter edges of the range.
+     :SR4: This SR is too powerful, please go back and look again at the section.
+     :x: Incorrect.

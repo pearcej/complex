@@ -57,3 +57,24 @@ The result is a list of values for ``q``. We can estimate the critical value, ``
 The rapid change in behavior near the critical value is called a **phase change** by analogy with phase changes in physical systems, like the way water changes from liquid to solid at its freezing point.
 
 A wide variety of systems display a common set of behaviors and characteristics when they are at or near a critical point. These behaviors are known collectively as **critical phenomena**. In the next section, we explore one of them: fractal geometry.
+
+.. mchoice:: q_8.5
+   :answer_a: Critical phenomena
+   :answer_b: Phase change
+   :answer_c: Random walk
+   :answer_d: None of the above
+   :correct: b
+   :feedback_a: Incorrect, critical phenomena are a common set of behaviors that a wide variety of systems display when they are at or near a critical point. 
+   :feedback_b: Correct!
+   :feedback_c: Incorrect. Random walk is used to estimate the the critical value more precisely 
+   :feedback_d: Incorrect. There is one right answer
+
+   What is the the rapid change in behavior near the critical value called?
+    
+.. fillintheblank:: q_8.5.2
+   :casei:
+   
+   If you wanted to estimate the critical value more precisely you would want to use a |blank|.
+
+   - :random walk: Correct
+     :x: Incorrect. Please try again.

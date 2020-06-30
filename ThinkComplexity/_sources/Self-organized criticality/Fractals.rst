@@ -3,7 +3,7 @@ Fractals
 
 .. _9.6:
 
-Another property of critical systems is fractal geometry. The initial configuration in Figure ?? (left) resembles a fractal, but you can’t always tell by looking. A more reliable way to identify a fractal is to estimate its fractal dimension, as we saw in :ref:`Section 8.6<8.6>` and :ref:`Section 8.7<8.7>`.
+Another property of critical systems is fractal geometry. The initial configuration in :ref:`Figure 9.1 <sand_pile>` (left) resembles a fractal, but you can’t always tell by looking. A more reliable way to identify a fractal is to estimate its fractal dimension, as we saw in :ref:`Section 8.6<8.6>` and :ref:`Section 8.7<8.7>`.
 
 I’ll start by making a bigger sand pile, with ``n=131`` and initial level ``22``.
 
@@ -30,13 +30,19 @@ To see the resulting pattern more clearly, I select cells with levels 0, 1, 2, a
 
 Inside the loop, it uses ``a==level`` to make a boolean array that’s ``True`` where the array is ``level`` and ``False`` otherwise. ``draw_array`` treats these booleans as 1s and 0s.
 
+.. _equil_sand:
+
 .. figure:: Figures/figure_9.4.png
     :align: center
     :alt: "Figure 9.4: Sand pile model in equilibrium, selecting cells with levels 0, 1, 2, and 3, left to right, top to bottom."
 
     Figure 9.4: Sand pile model in equilibrium, selecting cells with levels 0, 1, 2, and 3, left to right, top to bottom.
 
+<<<<<<< HEAD
+:ref:`Figure 9.4 <equil_sand>` shows the results for pile3. Visually, these patterns resemble fractals, but looks can be deceiving. To be more confident, we can estimate the fractal dimension for each pattern using **box-counting**, as we saw in `Section 8.6 <>`_.
+=======
 Figure ?? shows the results for pile3. Visually, these patterns resemble fractals, but looks can be deceiving. To be more confident, we can estimate the fractal dimension for each pattern using **box-counting**, as we saw in :ref:`Section 8.6<8.6>`.
+>>>>>>> 961d64d129fe8ad4bac657368baf72ac974f7856
 
 We’ll count the number of cells in a small box at the center of the pile, then see how the number of cells increases as the box gets bigger. Here’s my implementation:
 
@@ -74,6 +80,8 @@ The first line creates a boolean array that contains ``True`` where the array eq
 
 The second line unpacks the rows and assigns them to ``steps``, ``steps2``, and ``cells``, which we can plot like this:
 
+.. _box_count:
+
 ::
 
     thinkplot.plot(steps, steps2, linestyle='dashed')
@@ -86,7 +94,7 @@ The second line unpacks the rows and assigns them to ``steps``, ``steps2``, and 
 
     Figure 9.5: Box counts for cells with levels 0, 1, 2, and 3, compared to dashed lines with slopes 1 and 2.
 
-Figure ?? shows the results. On a log-log scale, the cell counts form nearly straight lines, which indicates that we are measuring fractal dimension over a valid range of box sizes.
+:ref:`Figure 9.5 <box_count>` shows the results. On a log-log scale, the cell counts form nearly straight lines, which indicates that we are measuring fractal dimension over a valid range of box sizes.
 
 To estimate the slopes of these lines, we can use the SciPy function ``linregress``, which fits a line to the data by linear regression (see http://thinkcomplex.com/regress).
 

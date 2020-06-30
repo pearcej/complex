@@ -96,16 +96,26 @@ This implementation of ``choose_acceleration`` is simple: it always accelerates 
 
 Since the cars start out equally spaced, we expect them all to accelerate until they reach the speed limit, or until their speed exceeds the space between them. At that point, at least one “collision” will occur, causing some cars to stop.
 
+.. _sim_of_drivers:
+
 .. figure:: Figures/figure_11.1.png
     :align: center
     :alt: "Figure 11.1: Simulation of drivers on a circular highway at three points in time. Squares indicate the position of the drivers; triangles indicate places where one driver has to brake to avoid another."
 
     Figure 11.1: Simulation of drivers on a circular highway at three points in time. Squares indicate the position of the drivers; triangles indicate places where one driver has to brake to avoid another.
 
-Figure ?? shows a few steps in this process, starting with 30 cars and ``eps=0.02``. On the left is the configuration after 16 time steps, with the highway mapped to a circle. Because of random noise, some cars are going faster than others, and the spacing has become uneven.
+:ref:`Figure 11.1 <sim_of_drivers>` shows a few steps in this process, starting with 30 cars and ``eps=0.02``. On the left is the configuration after 16 time steps, with the highway mapped to a circle. Because of random noise, some cars are going faster than others, and the spacing has become uneven.
 
 During the next time step (middle) there are two collisions, indicated by the triangles.
 
 During the next time step (right) two cars collide with the stopped cars, and we can see the initial formation of a traffic jam. Once a jam forms, it tends to persist, with additional cars approaching from behind and colliding, and with cars in the front accelerating away.
 
 Under some conditions, the jam itself propagates backwards, as you can see if you watch the animations in the notebook for this chapter.
+
+.. fillintheblank:: q_11.1
+   :casei:
+   
+   The drivers had control over one thing that eventually caused them to create the traffic jams, which was |blank|.
+
+   - :speed: Correct, they had control over speed!
+     :x: Incorrect, please refer to the chapter.
