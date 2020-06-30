@@ -16,19 +16,19 @@ Watts and Strogatz show that regular graphs have high clustering and high path l
 
 Their goal was to create a **generative model** of a social network. A generative model tries to explain a phenomenon by modeling the process that builds or leads to the phenomenon. Watts and Strogatz proposed this process for building small-world graphs:
 
-1. Start with a regular graph with n nodes and each node connected to k neighbors.
+1. Start with a regular graph with :math:`n` nodes and each node connected to :math:`k` neighbors.
 2. Choose a subset of the edges and “rewire” them by replacing them with random edges.
 
-The probability that an edge is rewired is a parameter, p, that controls how random the graph is. With p=0, the graph is regular; with p=1 it is completely random.
+The probability that an edge is rewired is a parameter, :math:`p`, that controls how random the graph is. With :math:`p=0`, the graph is regular; with :math:`p=1` it is completely random.
 
-Watts and Strogatz found that small values of p yield graphs with high clustering, like a regular graph, and low path lengths, like a random graph.
+Watts and Strogatz found that small values of :math:`p` yield graphs with high clustering, like a regular graph, and low path lengths, like a random graph.
 
 In this chapter I replicate the Watts and Strogatz experiment in the following steps:
 
 1. We’ll start by constructing a ring lattice, which is a kind of regular graph.
 2. Then we’ll rewire it as Watts and Strogatz did.
 3. We’ll write a function to measure the degree of clustering and use a NetworkX function to compute path lengths.
-4. Then we’ll compute the degree of clustering and path length for a range of values of p.
+4. Then we’ll compute the degree of clustering and path length for a range of values of :math:`p`.
 5. Finally, I’ll present Dijkstra’s algorithm, which computes shortest paths efficiently.
 
 .. dragndrop:: dnd-ex-1
@@ -38,3 +38,4 @@ In this chapter I replicate the Watts and Strogatz experiment in the following s
    :match_3: Clique|||is a subset of nodes that are all connected to each other
    :match_4: Random Graphs|||nodes are connected at random 
    :match_5: Regular graphs|||every node has the same number of neighbors
+

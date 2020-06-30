@@ -17,7 +17,7 @@ But many cellular automatons are **computationally irreducible**, which means th
 
 The same may be true of complex systems in general. For physical systems with more than a few components, there is usually no model that yields an analytic solution. Numerical methods provide a kind of computational shortcut, but there is still a qualitative difference.
 
-Analytic solutions often provide a constant-time algorithm for prediction; that is, the run time of the computation does not depend on ``t``, the time scale of prediction. But numerical methods, simulation, analog computation, and similar methods take time proportional to t. And for many systems, there is a bound on ``t`` beyond which we can’t compute reliable predictions at all.
+Analytic solutions often provide a constant-time algorithm for prediction; that is, the run time of the computation does not depend on ``t``, the time scale of prediction. But numerical methods, simulation, analog computation, and similar methods take time proportional to ``t``. And for many systems, there is a bound on ``t`` beyond which we can’t compute reliable predictions at all.
 
 These observations suggest that emergent properties are fundamentally unpredictable, and that for complex systems we should not expect to find natural laws in the form of computational shortcuts.
 

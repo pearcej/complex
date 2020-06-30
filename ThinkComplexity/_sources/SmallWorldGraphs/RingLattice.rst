@@ -7,13 +7,13 @@ Ring lattice
    :align: center
    :alt: "Figure 4.1: A ring lattice with n=10 and k=4."
 
-   Figure 4.1: A ring lattice with n=10 and k=4.
+   Figure 4.1: A ring lattice with :math:`n=10` and :math:`k=4`.
 
 A **regular graph** is a graph where each node has the same number of neighbors; the number of neighbors is also called the **degree** of the node.
 
-A ring lattice is a kind of regular graph, which Watts and Strogatz use as the basis of their model. In a ring lattice with n nodes, the nodes can be arranged in a circle with each node connected to the k nearest neighbors.
+A ring lattice is a kind of regular graph, which Watts and Strogatz use as the basis of their model. In a ring lattice with :math:`n` nodes, the nodes can be arranged in a circle with each node connected to the :math:`k` nearest neighbors.
 
-For example, a ring lattice with n=3 and k=2 would contain the following edges: (0, 1), (1, 2), and (2, 0). Notice that the edges “wrap around” from the highest-numbered node back to 0.
+For example, a ring lattice with :math:`n=3` and :math:`k=2` would contain the following edges: :math:`(0, 1)`, :math:`(1, 2)`, and :math:`(2, 0)`. Notice that the edges “wrap around” from the highest-numbered node back to :math:`0`.
 
 More generally, we can enumerate the edges like this:
 
@@ -26,7 +26,7 @@ More generally, we can enumerate the edges like this:
             v = nodes[j % n]
             yield u, v
 
-``adjacent_edges`` takes a list of nodes and a parameter, ``halfk``, which is half of k. It is a generator function that yields one edge at a time. It uses the modulus operator, %, to wrap around from the highest-numbered node to the lowest.
+``adjacent_edges`` takes a list of nodes and a parameter, ``halfk``, which is half of :math:`k`. It is a generator function that yields one edge at a time. It uses the modulus operator, :math:`%`, to wrap around from the highest-numbered node to the lowest.
 
 We can test it like this:
 
@@ -50,7 +50,7 @@ Now we can use ``adjacent_edges`` to make a ring lattice:
     G.add_edges_from(adjacent_edges(nodes, k//2))
     return G
 
-Notice that ``make_ring_lattice`` uses floor division to compute ``halfk``, so it is only correct if k is even. If k is odd, floor division rounds down, so the result is a ring lattice with degree k-1. As one of the exercises at the end of the chapter, you will generate regular graphs with odd values of k.
+Notice that ``make_ring_lattice`` uses floor division to compute ``halfk``, so it is only correct if ``k`` is even. If ``k`` is odd, floor division rounds down, so the result is a ring lattice with degree ``k-1``. As one of the exercises at the end of the chapter, you will generate regular graphs with odd values of ``k``.
 
 We can test ``make_ring_lattice`` like this:
 
