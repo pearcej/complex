@@ -5,14 +5,14 @@ Graphs
     :maxdepth: 2
     
     Introduction.rst
-    What is a graph.rst
+    WhatIsAGraph.rst
     NetworkX.rst
     Random.rst
     Generating.rst
     Connected.rst
-    Generating ER.rst
-    Probability of connectivity.rst
-    Analysis of graph algorithms.rst
+    GeneratingER.rst
+    ProbabilityOfConnectivity.rst
+    AnalysisOfGraphAlgorithms.rst
     Exercises.rst
     Glossary.rst
 

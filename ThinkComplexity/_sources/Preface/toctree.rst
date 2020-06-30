@@ -6,7 +6,7 @@ Preface
 
     introduction.rst
     who.rst
-    Changes from the first edition.rst
-    Using the code.rst
-    Contributor List.rst 
+    ChangesFromTheFirstEdition.rst
+    UsingTheCode.rst
+    ContributorList.rst 
     

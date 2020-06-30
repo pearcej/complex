@@ -8,8 +8,8 @@ Physical modeling
     Diffusion.rst
     Reaction-diffusion.rst
     Percolation.rst
-    Phase change.rst
+    PhaseChange.rst
     Fractals.rst
-    Fractals and Percolation Models.rst
+    FractalsAndPercolationModels.rst
     Exercises.rst
     Glossary.rst
