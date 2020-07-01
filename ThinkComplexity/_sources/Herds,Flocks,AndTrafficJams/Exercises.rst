@@ -17,4 +17,4 @@ Read the code to see how the parameters control Boid behaviors. Experiment with 
 
 To generate more bird-like behavior, Flake suggests adding a behavior to maintain a clear line of sight; in other words, if there is another bird directly ahead, the Boid should move away laterally. What effect do you expect this rule to have on the behavior of the flock? Implement it and see.
 
-**Exercise 3:**  Read more about free will at http://thinkcomplex.com/will. The view that free will is compatible with determinism is called **compatibilism**. One of the strongest challenges to compatibilism is the “consequence argument”. What is the consequence argument? What response can you give to the consequence argument based on what you have read in this book?
+**Exercise 3:**  Read more about free will at http://thinkcomplex.com/will. The view that free will is compatible with determinism is called compatibilism. One of the strongest challenges to compatibilism is the “consequence argument”. What is the consequence argument? What response can you give to the consequence argument based on what you have read in this book?
