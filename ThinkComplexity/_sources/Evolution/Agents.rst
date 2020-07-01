@@ -16,7 +16,7 @@ Next we need agents. Here’s the class definition:
             return Agent(self.loc, self.fit_land)
 
 
-The attributes of an Agent are:
+The attributes of an ``Agent`` are:
 
 - ``loc``: The location of the ``Agent`` in the fitness landscape.
 - ``fit_land``: A reference to a ``FitnessLandscape`` object.

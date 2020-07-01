@@ -56,7 +56,7 @@ Now we can create and add a ``MeanFitness`` instrument, run the simulation, and 
     Figure 12.1: Mean fitness over time for 10 simulations with no differential survival or reproduction.
    
 
-:ref:`Figure 12.1 <fig_mean_fit>` shows the result of running this simulation 10 times. The mean fitness of the population drifts up or down at random. Since the distribution of fitness changes over time, we infer that the distribution of phenotypes is also changing. By the most inclusive definition, this **random walk** is a kind of evolution. But it is not a particularly interesting kind.
+:ref:`Figure 12.1 <fig_mean_fit>` shows the result of running this simulation 10 times. The mean fitness of the population drifts up or down at random. Since the distribution of fitness changes over time, we infer that the distribution of phenotypes is also changing. By the most inclusive definition, this random walk is a kind of evolution. But it is not a particularly interesting kind.
 
 In particular, this kind of evolution does not explain how biological species change over time, or how new species appear. The theory of evolution is powerful because it explains phenomena we see in the natural world that seem inexplicable:
 
