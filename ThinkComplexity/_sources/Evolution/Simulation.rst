@@ -20,7 +20,7 @@ The attributes of a Simulation are:
 - ``fit_land``: A reference to a ``FitnessLandscape`` object.
 - ``agents``: An array of ``Agent`` objects.
 
-The most important function in Simulation is ``step``, which simulates one time step:
+The most important function in ``Simulation`` is ``step``, which simulates one time step:
 
 ::
 
