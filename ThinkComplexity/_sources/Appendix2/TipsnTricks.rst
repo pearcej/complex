@@ -1,5 +1,5 @@
 Tips and Tricks
---------------
+------------------
 
 Below are a few useful things that can help with the use of Google Colab.
 
@@ -23,4 +23,4 @@ Make a copy of the note book
 
 - Hit add a copy to my drive
 
-- Although Colab does allow multiple people to be on the same document and to edit it together, the document does not update in real time, so to make use of the software and be sure to practice good pair programming.
+- Although Colab does allow multiple people to be on the same document and to edit it together, the document does not update in real time, so to make use of the software and be sure to be sure to practice good pair programming.
