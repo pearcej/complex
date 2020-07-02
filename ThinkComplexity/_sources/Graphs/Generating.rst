@@ -13,7 +13,7 @@ Generating graphs
 
 
 
-I’ll start by generating a **complete** graph, which is a graph where every node is connected to every other.
+I’ll start by generating a **complete graph**, which is a graph where every node is connected to every other.
 
 Here’s a generator function that takes a list of nodes and enumerates all distinct pairs. If you are not familiar with generator functions, you can read about them at http://thinkcomplex.com/gen.
 
