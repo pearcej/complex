@@ -1,10 +1,14 @@
 Glossary
 --------
 
-**Cellular automaton (CA):** is a model of a world with very simple physics. “Cellular” means that the world is divided into discrete chunks, called cells. An “automaton” is a machine that performs computations — it could be a real machine, but more often the “machine” is a mathematical abstraction or a computer simulation.
+**Cellular Automaton (CA):** Is a model of a world with very simple physics. “Cellular” means that the world is divided into discrete chunks, called cells. An “automaton” is a machine that performs computations — it could be a real machine, but more often the “machine” is a mathematical abstraction or a computer simulation.
 
-**Pseudo-random number generators (PRNGs):** Programs that produce random-seeming numbers 
+**Cross-Correlation:** Selecting elements from an array and adding them up
 
-**Turing complete:** means that they can compute any computable function. Universality
+**Falsifiability:** A hypothesis is this if there is an experiment, at least in the realm of practicality, that would contradict the hypothesis if it were false.
 
-**Cross-correlation:** selecting elements from an array and adding them up
+**Pseudo-Random Number Generators (PRNGs):** Programs that produce random-seeming numbers. 
+
+**Turing Complete (Universality):** Means that they can compute any computable function. Universality
+
+**Unfalsifiable:** A hypothesis is this if there is no way to have an experiment, at least in the realm of practicality, that would contradict the hypothesis.
