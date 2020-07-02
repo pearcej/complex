@@ -11,7 +11,8 @@ Matching
    :match_8: Clustering coefficient|||The measure of the degree to which nodes tend to cluster together in a graph.
    :match_9: Dijkstra's algorithm|||In this algorithm we find the minimum distance from a given node to every other node in the graph
    :match_10: Queue|||Elements are removed in the same order they were entered. 
-
- 
+   :match_11: Breadth-first Search|||Starting from the root node this algorithm explore all of the neighbor nodes at the current level before moving on to the nodes at the next level. 
+   :match_12: Depth-First Search|||Starting from the root node this algorithm will explore all the way down a branch and then backtrack. 
+   :match_13: Ring Lattice|||A type of regualr graph that Watts and Strogatz used as the basis of their model. 
 
 
