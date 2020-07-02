@@ -9,7 +9,7 @@ Heavy-tailed distributions
 .. figure:: Figures/thinkcomplexity2011.png
    :align: center
    :alt: "Figure 5.2: PMF of degree in the Facebook dataset and in the WS model, on a log-log scale."
-:
+
    Figure 5.2: PMF of degree in the Facebook dataset and in the WS model, on a log-log scale.
 
 Heavy-tailed distributions are a common feature in many areas of complexity science and they will be a recurring theme of this book.
