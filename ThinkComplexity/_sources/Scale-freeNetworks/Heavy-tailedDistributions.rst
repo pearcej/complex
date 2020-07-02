@@ -16,15 +16,9 @@ Heavy-tailed distributions are a common feature in many areas of complexity scie
 
 We can get a clearer picture of a heavy-tailed distribution by plotting it on a log-log axis, as shown in :ref:`Figure 5.2 <fig_5.2>`. This transformation emphasizes the tail of the distribution; that is, the probabilities of large values.
 
-Under this transformation, the data fall approximately on a straight line, which suggests that there is a **power law** relationship between the largest values in the distribution and their probabilities. Mathematically, a distribution obeys a power law if
+Under this transformation, the data fall approximately on a straight line, which suggests that there is a **power law** relationship between the largest values in the distribution and their probabilities. Mathematically, a distribution obeys a power law if :math:`PMF(k) ∼ k−α` where ``PMF(k)`` is the fraction of nodes with degree ``k``, ``α`` is a parameter, and the symbol ∼ indicates that the ``PMF`` is asymptotic to ``k−α`` as ``k`` increases.
 
-.. math::
-   
-   PMF(k) ∼ k−α 
-
-where ``PMF(k)`` is the fraction of nodes with degree ``k``, ``α`` is a parameter, and the symbol ∼ indicates that the ``PMF`` is asymptotic to ``k−α`` as ``k`` increases.
-
-If we take the log of both sides, we get
+If we take the log of both sides, we get:
 
 .. math::
 

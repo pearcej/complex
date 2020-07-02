@@ -1,5 +1,5 @@
 Matching
------------
+--------
 
 .. dragndrop:: matching_1
    :match_1: Graph|||A representation of a system that contains discrete and interconnected elements. 
@@ -16,3 +16,5 @@ Matching
    :match_12: Connected graphs|||In this graph, there is a path from every node to every other node.
    :match_13: Stack|||Elements are added and removed from the top.
    :match_14: ER graphs|||In these graphs, a random graph is generated using two closely related models.
+   :match_15: Undirected Edge|||Comparable to a two way street, this edge is not constrained to a single direction and is symmetrical to each node it is connected to. 
+   :match_16: Directed Edge|||Comparable to a one way street, this edge is constrained to a single direction and is asymmetrical to each node it is connected to.

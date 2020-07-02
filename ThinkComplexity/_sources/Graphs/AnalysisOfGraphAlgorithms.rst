@@ -30,11 +30,11 @@ If the node is not already in ``seen``, we add it, which is constant time, and t
 
 To express the run time in terms of :math:`n` and :math:`m`, we can add up the total number of times each node is added to ``seen`` and ``stack``.
 
-Each node is only added to ``seen`` once, so the total number of additions is n.
+Each node is only added to ``seen`` once, so the total number of additions is :math:`n`.
 
-But nodes might be added to ``stack`` many times, depending on how many neighbors they have. If a node has k neighbors, it is added to ``stack`` :math:`k` times. Of course, if it has :math:`k` neighbors, that means it is connected to :math:`k` edges.
+But nodes might be added to ``stack`` many times, depending on how many neighbors they have. If a node has :math:`k` neighbors, it is added to ``stack`` :math:`k` times. Of course, if it has :math:`k` neighbors, that means it is connected to :math:`k` edges.
 
-So the total number of additions to ``stack`` is the total number of edges, m, doubled because we consider every edge twice.
+So the total number of additions to ``stack`` is the total number of edges, :math:`m`, doubled because we consider every edge twice.
 
 Therefore, the order of growth for this function is :math:`O(n + m)`, which is a convenient way to say that the run time grows in proportion to either n or m, whichever is bigger.
 

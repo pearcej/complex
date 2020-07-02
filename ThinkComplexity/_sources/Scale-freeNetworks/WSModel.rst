@@ -15,7 +15,7 @@ We can make a WS graph with ``n=4039`` and ``k=44``. When ``p=0``, we get a ring
 
 In this graph, clustering is high: ``C`` is 0.7, compared to 0.61 in the dataset. But ``L`` is 46, much higher than in the dataset!
 
-With p=1 we get a random graph:
+With ``p=1`` we get a random graph:
 
 ::
 
