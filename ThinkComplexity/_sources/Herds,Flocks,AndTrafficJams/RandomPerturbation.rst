@@ -13,7 +13,7 @@ As the number of cars increases, traffic jams become more severe. :ref:`Figure 1
 
 The top line shows results with ``eps=0``, that is, with no random variation in speed. With 25 or fewer cars, the spacing between cars is greater than 40, which allows cars to reach and maintain the maximum speed, which is 40. With more than 25 cars, traffic jams form and the average speed drops quickly.
 
-This effect is a direct result of the physics of the simulation, so it should not be surprising. If the length of the road is 1000, the spacing between n cars is 1000/n. And since cars can’t move faster than the space in front of them, the highest average speed we expect is 1000/n or 40, whichever is less.
+This effect is a direct result of the physics of the simulation, so it should not be surprising. If the length of the road is 1000, the spacing between ``n`` cars is 1000/``n``. And since cars can’t move faster than the space in front of them, the highest average speed we expect is 1000/``n`` or 40, whichever is less.
 
 But that’s the best case scenario. With just a small amount of randomness, things get much worse.
 
