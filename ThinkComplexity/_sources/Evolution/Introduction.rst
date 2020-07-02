@@ -1,7 +1,7 @@
 Introduction
 ------------------
 
-The most important idea in biology, and possibly all of science, is the **theory of evolution by natural selection**, which claims that *new species are created and existing species change due to natural selection*. Natural selection is a process in which inherited variations between individuals cause differences in survival and reproduction.
+The most important idea in biology, and possibly all of science, is the **theory of evolution by natural selection**, which claims that *new species are created and existing species change due to natural selection*. **Natural selection** is a process in which inherited variations between individuals cause differences in survival and reproduction.
 
 Among people who know something about biology, the theory of evolution is widely regarded as a fact, which is to say that it is consistent with all current observations; it is highly unlikely to be contradicted by future observations; and, if it is revised in the future, the changes will almost certainly leave the central ideas substantially intact.
 
