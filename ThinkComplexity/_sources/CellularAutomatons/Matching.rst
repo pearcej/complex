@@ -6,3 +6,5 @@ Matching
     :match_2: Pseudo-random number generators (PRNGs)|||Produces seemingly random numbers.
     :match_3: Turing complete|||Can compute any computable function.
     :match_4: Cross-correlation|||Adding selected elements from an array.
+    :match_5: Falsifiability|||A demarcation between scientific hypotheses and pseudoscience
+    :match_6: Unfalsifiability|||A hypothesis that cannot be proven true or false based on observation or physical experiment.
