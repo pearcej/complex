@@ -52,7 +52,7 @@ Here is the ``Sugarscape`` class and its ``step`` method:
             self.grow()
             return len(self.agents)
 
-During each step, the Sugarscape uses the NumPy function ``permutation`` so it loops through the agents in random order. It invokes step on each agent and then checks whether it is dead. After all agents have moved, some of the sugar grows back. The return value is the number of agents still alive.
+During each step, the ``Sugarscape`` uses the NumPy function ``permutation`` so it loops through the agents in random order. It invokes step on each agent and then checks whether it is dead. After all agents have moved, some of the sugar grows back. The return value is the number of agents still alive.
 
 I won’t show more details here; you can see them in the notebook for this chapter. If you want to learn more about NumPy, you might want to look at these functions in particular:
 
