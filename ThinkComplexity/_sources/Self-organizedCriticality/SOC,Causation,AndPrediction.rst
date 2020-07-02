@@ -16,7 +16,7 @@ These conclusions are not comforting. Among other things, they imply that large 
 In a sand pile model, what is the cause of a large avalanche? Philosophers sometimes distinguish the proximate cause, which is most immediately responsible, from the ultimate cause, which is considered some deeper kind of explanation (see http://thinkcomplex.com/cause).
 
 
-In the sand pile model, the **proximate** cause of an avalanche is a grain of sand, but the grain that causes a large avalanche is identical to every other grain, so it offers no special explanation. The **ultimate** cause of a large avalanche is the structure and dynamics of the systems as a whole: large avalanches occur because they are a property of the system.
+In the sand pile model, the **proximate cause** of an avalanche is a grain of sand, but the grain that causes a large avalanche is identical to every other grain, so it offers no special explanation. The **ultimate cause** of a large avalanche is the structure and dynamics of the systems as a whole: large avalanches occur because they are a property of the system.
 
 
 Many social phenomena, including wars, revolutions, epidemics, inventions, and terrorist attacks, are characterized by heavy-tailed distributions. If these distributions are prevalent because social systems are SOC, major historical events may be fundamentally unpredictable and unexplainable.

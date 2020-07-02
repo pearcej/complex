@@ -8,4 +8,6 @@ Matching
     :match_4: Emergent Property|||It is a characteristic of a system that is the result of interaction of its components of the system not its properties.
     :match_5: Schelling’s Model|||A grid where a cell represents a house and the houses are occupied by two kinds of agents in roughly equal numbers.
     :match_6: Sugarscape|||Model intended to support experiments related to economics and other social sciences based in an artificial society.
-
+    :match_7: Metabolism|||The ammount of suguar consumed per time step.
+    :match_8: Sugar|||Agents starts with an endowment of this chosen from a uniform distribution between 5 and 25 units.
+    :match_9: Vision|||Agents can "see" the amount of suguar in nearby cells. 

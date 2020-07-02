@@ -24,7 +24,7 @@ In ``choose_dead``, ``n`` is the number of agents and ``is_dead`` is a boolean a
             replacements = [agent.copy() for agent in agents]
             return replacements
 
-In ``choose_replacements``, ``n`` is the number of agents who reproduce during this time step. It uses ``np.random.choice`` to choose ``n`` agents with replacement. Then it invokes copy on each one and returns a list of new Agent objects.
+In ``choose_replacements``, ``n`` is the number of agents who reproduce during this time step. It uses ``np.random.choice`` to choose ``n`` agents with replacement. Then it invokes ``copy`` on each one and returns a list of new ``Agent`` objects.
 
 These methods don’t depend on fitness, so this simulation does not have differential survival or reproduction. As a result, we should not expect to see evolution. But how can we tell?
 

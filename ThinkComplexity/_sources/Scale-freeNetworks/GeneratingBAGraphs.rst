@@ -24,10 +24,10 @@ The parameters are ``n``, the number of nodes we want, and ``k``, the number of 
 
 We start with a graph that has ``k`` nodes and no edges. Then we initialize two variables:
 
-**targets:**
+``targets``:
 The list of ``k`` nodes that will be connected to the next node. Initially ``targets`` contains the original ``k`` nodes; later it will contain a random subset of nodes.
 
-**repeated_nodes:**
+``repeated_nodes``:
 A list of existing nodes where each node appears once for every edge it is connected to. When we select from ``repeated_nodes``, the probability of selecting any node is proportional to the number of edges it has.
 
 Each time through the loop, we add edges from the source to each node in ``targets``. Then we update ``repeated_nodes`` by adding each target once and the new node ``k`` times.

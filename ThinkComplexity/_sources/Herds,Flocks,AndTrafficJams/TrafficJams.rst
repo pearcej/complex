@@ -27,7 +27,7 @@ Here’s the class that represents the “highway”:
 
 ``locs`` contains the locations of the drivers; the NumPy function ``linspace`` creates an array of ``n`` locations equally spaced between ``0`` and ``length``.
 
-The ``drivers`` attribute is a list of ``Driver`` objects. The ``for`` loop links them so each ``Driver`` contains a reference to the next. The highway is circular, so the last ``Driver`` contains a reference to the first.
+The ``drivers`` attribute is a list of ``Driver`` objects. The for loop links them so each ``Driver`` contains a reference to the next. The highway is circular, so the last ``Driver`` contains a reference to the first.
 
 During each time step, the ``Highway`` moves each of the drivers:
 
