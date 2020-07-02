@@ -4,6 +4,8 @@ build_info
 __pycache__/
 published
 build
+.vs
+.vscode
 sphinx-enki-info.txt
 sphinx_settings.json
 pavement.py
