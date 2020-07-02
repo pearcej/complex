@@ -9,7 +9,7 @@ Among species that reproduce sexually, two organisms are considered the same spe
 
 Among organisms that reproduce asexually, like bacteria, the definition of species is not as clear-cut. Generally, a population is considered a species if their genotypes form a cluster, that is, if the genetic differences within the population are small compared to the differences between populations.
 
-Before we can model new species, we need the ability to identify clusters of agents in the landscape, which means we need a definition of **distance** between locations. Since locations are represented with arrays of bits, we’ll define distance as the number of bits that differ between locations. ``FitnessLandscape`` provides a distance method:
+Before we can model new species, we need the ability to identify clusters of agents in the landscape, which means we need a definition of ``distance`` between locations. Since locations are represented with arrays of bits, we’ll define distance as the number of bits that differ between locations. ``FitnessLandscape`` provides a distance method:
 
 .. _mean_dis_over_time:
 
