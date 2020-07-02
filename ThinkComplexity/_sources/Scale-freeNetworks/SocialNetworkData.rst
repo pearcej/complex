@@ -35,7 +35,7 @@ Now we can check whether this dataset has the characteristics of a small world g
 
 In :ref:`Section 4.6 <4.6>` we wrote a function to compute the network average clustering coefficient. NetworkX provides a function called ``average_clustering``, which does the same thing a little faster.
 
-But for larger graphs, they are both too slow, taking time proportional to ``n k^2``, where ``n`` is the number of nodes and ``k`` is the number of neighbors each node is connected to.
+But for larger graphs, they are both too slow, taking time proportional to :math:n k^2, where ``n`` is the number of nodes and ``k`` is the number of neighbors each node is connected to.
 
 Fortunately, NetworkX provides a function that estimates the clustering coefficient by random sampling. You can invoke it like this:
 

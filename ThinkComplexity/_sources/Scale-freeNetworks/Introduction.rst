@@ -8,4 +8,4 @@ This discrepancy is the motivation for a network model developed by Barabási an
 
 The chapter ends with a discussion of WS and BA graphs as explanatory models for small world networks.
 
-The code for this chapter is in chap04.ipynb in the respository for this book. More information about working with the code is in :ref:`Section 1.4 <1.4>`.
+The code for this chapter is in ``chap04.ipynb`` in the respository for this book. More information about working with the code is in :ref:`Section 1.4 <1.4>`.
