@@ -38,7 +38,7 @@ Inside the loop, it uses ``a==level`` to make a boolean array that’s ``True`` 
 
     Figure 9.4: Sand pile model in equilibrium, selecting cells with levels 0, 1, 2, and 3, left to right, top to bottom.
 
-:ref:`Figure 9.4 <equil_sand>` shows the results for pile3. Visually, these patterns resemble fractals, but looks can be deceiving. To be more confident, we can estimate the fractal dimension for each pattern using **box-counting**, as we saw in `Section 8.6 <8.6>`_.
+:ref:`Figure 9.4 <equil_sand>` shows the results for pile3. Visually, these patterns resemble fractals, but looks can be deceiving. To be more confident, we can estimate the fractal dimension for each pattern using box-counting, as we saw in `Section 8.6 <8.6>`_.
 
 We’ll count the number of cells in a small box at the center of the pile, then see how the number of cells increases as the box gets bigger. Here’s my implementation:
 
