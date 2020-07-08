@@ -53,7 +53,7 @@ Self Check
 
    Fill in the blank with the correct Game of Life pattern:
 
-   A |blank| is a pattern that oscillates but it alternates between two states.
+   A |blank| is a pattern that oscillates and alternates between two states.
 
    - :toad: Correct.
      :Glider: Incorrect, a glider is a pattern that is back in its starting position after four steps but shifted down and to the right.
