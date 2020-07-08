@@ -3,6 +3,12 @@
 Migration and Wave Behavior
 ----------------------------
 
+.. figure:: Figures/Sugarscape_Wave_Behavior.gif
+    :align: center
+    :alt: "Gif of wave behavior in Sugarscape."
+
+    Gif of wave behavior in Sugarscape.
+
 .. figure:: Figures/figure_10.5.png
     :align: center
     :alt: "Figure 10.5: Wave behavior in Sugarscape: initial configuration (left), after 6 steps (middle) and after 12 steps (right)."

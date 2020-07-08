@@ -61,5 +61,8 @@ I won’t show more details here; you can see them in the notebook for this chap
 - ``make_capacity``, which initializes the capacity of the cells using NumPy functions ``indices``, ``hypot``, ``minimum``, and ``digitize``.
 - ``look_and_move``, which uses ``argmax``.
 
+.. figure:: Figures/Sugarscape.gif
+    :align: center
+    :alt: "Gif of a Sugarscape running."
 
-
+    Gif of a Sugarscape running.
