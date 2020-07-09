@@ -3,12 +3,6 @@
 Migration and Wave Behavior
 ----------------------------
 
-.. figure:: Figures/Sugarscape_Wave_Behavior.gif
-    :align: center
-    :alt: "Gif of wave behavior in Sugarscape."
-
-    Gif of wave behavior in Sugarscape.
-
 .. figure:: Figures/figure_10.5.png
     :align: center
     :alt: "Figure 10.5: Wave behavior in Sugarscape: initial configuration (left), after 6 steps (middle) and after 12 steps (right)."
@@ -27,3 +21,9 @@ The result is a series of discrete waves of migration, where each wave resembles
 
 These waves move diagonally, which is surprising because the agents themselves only move north or east, never northeast. Outcomes like this — groups or “aggregates” with properties and behaviors that the agents don’t have — are common in agent-based models. We will see more examples in the next chapter.
 
+
+.. figure:: Figures/Sugarscape_Wave_Behavior_.gif
+    :align: center
+    :alt: "Gif 10.2: Wave behavior in a sugarscape."
+
+    Gif 10.2: Wave behavior in a sugarscape. 

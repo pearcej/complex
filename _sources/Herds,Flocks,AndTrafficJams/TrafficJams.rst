@@ -1,5 +1,13 @@
 Traffic jams
 ----------------
+
+.. figure:: Figures/Traffic_Jam.gif
+    :align: center
+    :alt: "Gif 11.1: Simulation of traffic jams. Squares indicate the position of the drivers; triangles indicate places where one driver has to brake to avoid another."
+
+    Gif 11.1: Simulation of traffic jams. Squares indicate the position of the drivers; triangles indicate places where one driver has to brake to avoid another.
+
+
 What causes traffic jams? Sometimes there is an obvious cause, like an accident, a speed trap, or something else that disturbs the flow of traffic. But other times traffic jams appear for no apparent reason.
 
 Agent-based models can help explain spontaneous traffic jams. As an example, I implement a highway simulation based on a model in Mitchell Resnick’s book, *Turtles, Termites and Traffic Jams.*
