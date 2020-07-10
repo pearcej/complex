@@ -32,5 +32,5 @@ To test this claim, we’ll develop algorithms to generate random graphs and che
    :feedback_a: Correct! The value of p is greater than p*
    :feedback_b: Not quite. Look at the two values and see how they compare
 
-   Given that a graph a has a p* = .6 and a p = .7 is it more likely to be connected.
+   Given that a graph a has a p* = .6 and a p = .7 it is more likely to be connected.
 
