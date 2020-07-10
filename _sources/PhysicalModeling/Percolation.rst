@@ -62,6 +62,11 @@ This function identifies porous cells, where ``a==1``, that have at least one we
 
 :ref:`Figure 8.5<fig_first_three>` shows the first few steps of a percolation model with ``n=10`` and ``p=0.7``. Non-porous cells are white, porous cells are lightly shaded, and wet cells are dark.
 
+.. Figure:: Figures/Percolation.gif
+   :align: center
+   :alt: "Gif of how liquid interacts with porous and non-porous cells."
+
+   Gif of how liquid interacts with porous and non-porous cells.
 
 .. dragndrop:: q_8.4  
    :match_2: 1|||Each cell is either “porous” with probability q or “non-porous” with probability 1-q 
