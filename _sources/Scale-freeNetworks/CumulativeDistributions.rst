@@ -1,7 +1,7 @@
 
 .. _fig_5.4:
 
-Cumulative distributions
+Cumulative Distributions
 ------------------------
 
 .. _5.8:
