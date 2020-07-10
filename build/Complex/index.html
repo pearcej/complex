@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" /><meta content="An interactive version of Problem Solving with Algorithms and Data Structures using C++." name="description" />
+<meta content="C++, cpp, python, data structures, computer science" name="keywords" />
+
+    <title>Thinking Complexity &#8212; Problem Solving with Algorithms and Data Structures using C++</title>
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/accessibility.css?v=DB047029" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/handsontable@7.2.2/dist/handsontable.full.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/CodeChat.css" />
+    <link rel="stylesheet" type="text/css" href="_static/matrixeq.css?v=58BC228F" />
+    <link rel="stylesheet" type="text/css" href="_static/webgldemo.css?v=B36B48D" />
+    <link rel="stylesheet" type="text/css" href="_static/webglinteractive.css?v=910DF1E1" />
+    <link rel="stylesheet" type="text/css" href="_static/bootstrap-3.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/presenter_mode.css" />
+    <link rel="stylesheet" type="text/css" href="_static/jquery-ui-1.10.3.custom.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="_static/user-highlights.css" />
+    <link rel="stylesheet" type="text/css" href="_static/runestone-custom-sphinx-bootstrap.css?v=5.0.2" />
+    <link rel="stylesheet" type="text/css" href="_static/theme-overrides.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/jquery.highlight.js?v=F1C496C8"></script>
+    <script src="_static/sql-wasm.js?v=44FE0709"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handsontable@7.2.2/dist/handsontable.full.js"></script>
+    <script src="_static/animationbase.js?v=A043C3A7"></script>
+    <script src="_static/pytutor-embed.bundle.js?v=268B5C04"></script>
+    <script src="_static/html4css1.css?v=4D8F3FB4"></script>
+    <script src="_static/matrixeq.js?v=D64CFA5A"></script>
+    <script src="_static/webglinteractive.js?v=2B768384"></script>
+    <script src="_static/FileSaver.min.js?v=8408C997"></script>
+    <script src="_static/Blob.js?v=AEC2447"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.5/jquery.i18n.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.5/jquery.i18n.emitter.bidi.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.5/jquery.i18n.emitter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.5/jquery.i18n.fallbacks.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.5/jquery.i18n.messagestore.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.5/jquery.i18n.parser.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.5/jquery.i18n.language.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@4.0.0-rc.2/build/vega.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@2.5.0/build/vega-lite.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@3.14.0/build/vega-embed.js"></script>
+    <script src="_static/runestone.js?v=5.0.2"></script>
+    <script src="_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+    <script src="_static/jquery-fix.js"></script>
+    <script src="_static/bootstrap-sphinx.js"></script>
+    <script src="_static/jquery.idle-timer.js"></script>
+    <script src="_static/presenter_mode.js?v=5.0.2"></script>
+    <script src="_static/theme.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="1. Preface" href="Preface/toctree.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  
+    eBookConfig.useRunestoneServices = true;
+    eBookConfig.host = 'http://127.0.0.1:8000' || 'http://127.0.0.1:8000';
+    eBookConfig.app = eBookConfig.host+'/runestone';
+    eBookConfig.course = 'Complex';
+    eBookConfig.basecourse = 'cppds';
+    eBookConfig.isLoggedIn = false;
+  
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.logLevel = 10;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "unknown";
+  eBookConfig.python3 = true;
+  eBookConfig.acDefaultLanguage = 'cpp' ? 'cpp' : 'python'
+  eBookConfig.runestone_version = '5.0.2';
+  eBookConfig.jobehost = '';
+  eBookConfig.proxyuri_runs = '';
+  eBookConfig.proxyuri_files = '';
+  eBookConfig.enable_chatcodes = false ? false : false;
+
+
+</script>
+
+
+<div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&status=0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
+  </head><body>
+
+
+<!-- Begin navbar -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="icon-bar" aria-label="navbar toggle" class="visuallyhidden">toggle navbar</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div>
+        
+          <a class="brand-logo" style='background: transparent url("_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
+        
+        <a class="navbar-brand" href="#" aria-label="index-page">
+          
+          Complex
+        </a>
+      </div>
+    </div>
+
+
+
+    <div class="navbar-collapse collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav navbar-right" >
+
+        <li class="divider-vertical"></li>
+
+
+        <!-- social media dropdown -->
+        
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-globe" style="opacity: 0.9"><span aria-label="Social" class="visuallyhidden">Social</span></i>
+          </a>
+          <ul class="dropdown-menu social-menu">
+              <li>
+                <div>
+                  <b>Runestone in social media:</b>
+                </div>
+                <a href="https://twitter.com/iRunestone" class="twitter-follow-button" data-show-count="true">Follow @iRunestone</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                <div class="fb-like" data-href="https://www.facebook.com/RunestoneInteractive" data-send="false" data-layout="button_count" data-width="300" data-show-faces="false" data-font="arial"></div>
+              </li>
+
+              <li class="divider"></li>
+              <li>
+                <div>
+                  <b>Help support us:</b>
+                </div>
+                <div>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIHNwYJKoZIhvcNAQcEoIIHKDCCByQCAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYAcrkqh1hn3lYqIpfXxNqe1T82EhXzCJGy1yMAmklpyZshyMkfDGe1Bhx+iwyGeoYRTTyphFmP+9M3NyO0+Q5XdHxgZPx/zYjjBxlZHgEV6jhE8bN2fHkkPf0VHfz0a0QQylQOPlKiOTZV7B37Jpk6yM47oVZ1tG/KNm0NkfmB76DELMAkGBSsOAwIaBQAwgbQGCSqGSIb3DQEHATAUBggqhkiG9w0DBwQIi0GmFfOlcjuAgZBbYOo9UO+CpMQa+PYqwsUmUnJvXIImeMeNI3KVTUx5Cfk9gNMo3WzPeiB5IqZo9nRAQ0mf1qL2ecLeB5tidM+lgBUhOxfj3/FecpnVFa0263gp4g+PLw8jzhvVRdUon1K3SeO1Rzh23fIRKwnrD6btt73uwtj0sl3tGd8qz+6GIcwPDdRk9VcUffiBJT/ZagKgggOHMIIDgzCCAuygAwIBAgIBADANBgkqhkiG9w0BAQUFADCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20wHhcNMDQwMjEzMTAxMzE1WhcNMzUwMjEzMTAxMzE1WjCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMFHTt38RMxLXJyO2SmS+Ndl72T7oKJ4u4uw+6awntALWh03PewmIJuzbALScsTS4sZoS1fKciBGoh11gIfHzylvkdNe/hJl66/RGqrj5rFb08sAABNTzDTiqqNpJeBsYs/c2aiGozptX2RlnBktH+SUNpAajW724Nv2Wvhif6sFAgMBAAGjge4wgeswHQYDVR0OBBYEFJaffLvGbxe9WT9S1wob7BDWZJRrMIG7BgNVHSMEgbMwgbCAFJaffLvGbxe9WT9S1wob7BDWZJRroYGUpIGRMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbYIBADAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBQUAA4GBAIFfOlaagFrl71+jq6OKidbWFSE+Q4FqROvdgIONth+8kSK//Y/4ihuE4Ymvzn5ceE3S/iBSQQMjyvb+s2TWbQYDwcp129OPIbD9epdr4tJOUNiSojw7BHwYRiPh58S1xGlFgHFXwrEBb3dgNbMUa+u4qectsMAXpVHnD9wIyfmHMYIBmjCCAZYCAQEwgZQwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tAgEAMAkGBSsOAwIaBQCgXTAYBgkqhkiG9w0BCQMxCwYJKoZIhvcNAQcBMBwGCSqGSIb3DQEJBTEPFw0xMzExMDMxMzQxMzFaMCMGCSqGSIb3DQEJBDEWBBRDJF8w+zsMr7FSk+pwinB5f5D4rzANBgkqhkiG9w0BAQEFAASBgHw1LMHpkpaqHIvDGdFE0eG+2mZlmMnUeDCBhQlbc7QMzFQYKTV94NfaebBO4PmNdADe1rq4WidSRZZbE7CzkX9IGENYnBTWY0hb2l0lGdGrJdGeWyV3ekg9WVaFMMumrekds96h3Cx7dGz2kWDzIai2iEXE/qoE+xpkyXAYZNV3-----END PKCS7-----
+                  ">
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                  </form>
+
+                </div>
+              </li>
+          </ul>
+        </li><!-- end social media dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- search dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-search" style='opacity:0.9;'><span aria-label="Search" class="visuallyhidden">Search</span></i>
+          </a>
+          <ul class='dropdown-menu'>
+            
+                <li><a href='#' aria-label="index-page">Table of Contents</a></li>
+            
+            <li><a href='genindex.html'>Book Index</a></li>
+            <li class="divider"></li>
+            <li style="width: 240px;">
+              <form class="navbar-search" style="margin:10px;" action="search.html" method="get">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="q" placeholder="Search this book" />
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" style="margin:0;" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </span>
+                </div><!-- /input-group -->
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+            </li>
+          </ul>
+        </li>
+        <!-- end search dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <!-- user account dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-user" style="opacity:0.9;"><span aria-label="User" class="visuallyhidden">User</span></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><span class='loggedinuser'></span></li>
+            <li class="divider"></li>
+            <li><a href='/runestone/assignments/chooseAssignment.html'>Assignments</a></li>
+            <li><a href='/runestone/assignments/practice'>Practice</a></li>
+            <li class="divider"></li>
+            
+            <li><a href='/runestone/default/courses'>Change Course</a></li>
+			      <li class="divider"></li>
+            <li id="ip_dropdown_link"><a href='/runestone/admin/index'>Instructor's Page</a></li>
+            
+            <li><a href='/runestone/dashboard/studentreport'>Progress Page</a></li>
+            <li class="divider"></li>
+            
+            <li><a href="/runestone/default/user/profile" id="profilelink">Edit Profile</a></li>
+            <li><a href="/runestone/default/user/change_password" id="passwordlink">Change Password</a></li>
+            <li><a href="/runestone/default/user/register" id="registerlink">Register</a></li>
+            
+            <li class='loginout'><a href='#'>Login</a></li> <!-- correct link populated by addNavbarLoginLink() -->
+			<!-- dark mode toggle -->
+             <li><label class="theme-switch" for="checkbox">
+					  <input type="checkbox" id="checkbox" onchange="switchTheme()" />
+							<div class="slider round"></div>
+					</label>Dark Mode</li>
+			 </ul>
+        </li>
+        <!-- end user account dropdown -->
+        
+        <li class="divider-vertical"></li>
+        <!-- <li id="scratch_ac_link"><a href="javascript:ACFactory.toggleScratchActivecode()">Scratch ActiveCode</a></li> -->
+
+        <!-- <li class="dropdown">             -->
+          <li id="scratch_ac_link" class="dropdown"><a href="javascript:ACFactory.toggleScratchActivecode()">
+              <i class="glyphicon glyphicon-pencil" style="opacity:0.9;"><span aria-label="Scratch Activecode" class="visuallyhidden">Scratch Activecode</span></i></a></li>
+        <!-- </li> -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <!-- help menu dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-question-sign" style="opacity:0.9;"><span aria-label="Help" class="visuallyhidden">Help</span></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><a href='http://runestoneinteractive.org/pages/faq.html'>FAQ</a></li>
+            <li><a href='https://runestone.academy/runestone/static/instructorguide/index.html'>Instructors Guide</a></li>
+            <li class="divider"></li>
+            <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
+            <li><a href='/runestone/default/reportabug?course=Complex&page=index'>Report A Problem</a></li>
+          </ul>
+        </li>
+        <!-- end help menu dropdown -->
+
+        <li class="divider-vertical"></li>
+      
+      </ul>
+
+      <ul class="nav navbar-nav">
+        <li class="divider-vertical"></li>
+        
+          
+          <li class="divider-vertical"></li>
+        
+        <!-- 
+          
+  <li id="relations-next" title='Next Chapter - <span class="section-number">1. </span>Preface' data-toggle="tooltip" >              
+    <a href="Preface/toctree.html" >
+        <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  <li class="divider-vertical"></li>
+
+<script type="text/javascript">
+  opts = {'placement':'bottom',
+          'selector': '',
+          'delay': { show: 100, hide: 50}
+         };
+
+  $('#relations-prev').tooltip(opts);
+  $('#relations-next').tooltip(opts);
+</script>
+        -->
+        
+          <li></li>
+        
+      </ul>
+
+      </div> <!-- navbar -->
+
+
+
+
+
+
+
+    </div> <!-- container -->
+  </div>
+</div>
+
+
+<div class="container" id="continue-reading"></div>
+
+<div class="container" id="main-content" role="main">
+  
+  <div class="section" id="thinking-complexity">
+<h1>Thinking Complexity<a class="headerlink" href="#thinking-complexity" title="Permalink to this headline">¶</a></h1>
+<p>By Allen B. Downey,
+and Jan Pearce, Berea College</p>
+<ul>
+<li><a href="/runestone/assignments/chooseAssignment.html">Assignments</a></li>
+</ul><div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Preface/toctree.html">1. Preface</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Preface/introduction.html">1.1. Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Preface/who.html">1.2. Who is this book for?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Preface/ChangesFromTheFirstEdition.html">1.3. Changes from the first edition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Preface/UsingTheCode.html">1.4. Using the code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Preface/ContributorList.html">1.5. Contributor List</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ComplexityScience/toctree.html">2. Complexity Science</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ComplexityScience/introduction.html">2.1. Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ComplexityScience/ChangingCriteriaInScience.html">2.2. The Changing Criteria of Science</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ComplexityScience/TheAxesOfScientificModels.html">2.3. The Axes of Scientific Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ComplexityScience/DifferentModelsForDifferentPurposes.html">2.4. Different Models for Different Purposes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ComplexityScience/ComplexityEngineering.html">2.5. Complexity Engineering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ComplexityScience/ComplexityThinking.html">2.6. Complexity Thinking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ComplexityScience/Glossary.html">2.7. Glossary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ComplexityScience/Matching.html">2.8. Matching</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Graphs/toctree.html">3. Graphs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Graphs/Introduction.html">3.1. Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Graphs/WhatIsAGraph.html">3.2. What is a Graph?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Graphs/NetworkX.html">3.3. NetworkX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Graphs/Random.html">3.4. Random Graphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Graphs/Generating.html">3.5. Generating Graphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Graphs/Connected.html">3.6. Connected Graphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Graphs/GeneratingER.html">3.7. Generating ER Graphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Graphs/ProbabilityOfConnectivity.html">3.8. Probability of Connectivity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Graphs/AnalysisOfGraphAlgorithms.html">3.9. Analysis of Graph Algorithms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Graphs/Exercises.html">3.10. Exercises</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Graphs/Glossary.html">3.11. Glossary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Graphs/Matching.html">3.12. Matching</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="SmallWorldGraphs/toctree.html">4. Small World Graphs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="SmallWorldGraphs/Introduction.html">4.1. Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SmallWorldGraphs/StanleyMilgram.html">4.2. Stanley Milgram</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SmallWorldGraphs/WattsAndStrogatz.html">4.3. Watts and Strogatz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SmallWorldGraphs/RingLattice.html">4.4. Ring lattice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SmallWorldGraphs/WSGraphs.html">4.5. WS Graphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SmallWorldGraphs/Clustering.html">4.6. Clustering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SmallWorldGraphs/ShortestPathLengths.html">4.7. Shortest Path Lengths</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SmallWorldGraphs/TheWSExperiment.html">4.8. The WS Experiment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SmallWorldGraphs/WhatKindOfExplanationIsThat.html">4.9. What Kind of Explanation is that?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SmallWorldGraphs/Breadth-FirstSearch.html">4.10. Breadth-First Search</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SmallWorldGraphs/Dijkstra’sAlgorithm.html">4.11. Dijkstra’s Algorithm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SmallWorldGraphs/Exercises.html">4.12. Exercises</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SmallWorldGraphs/Glossary.html">4.13. Glossary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SmallWorldGraphs/Matching.html">4.14. Matching</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Scale-freeNetworks/toctree.html">5. Scale-Free Networks</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Scale-freeNetworks/Introduction.html">5.1. Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Scale-freeNetworks/SocialNetworkData.html">5.2. Social Network Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Scale-freeNetworks/WSModel.html">5.3. WS Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Scale-freeNetworks/Degree.html">5.4. Degree</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Scale-freeNetworks/Heavy-tailedDistributions.html">5.5. Heavy-tailed Distributions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Scale-freeNetworks/Barabási-AlbertModel.html">5.6. Barabási-Albert Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Scale-freeNetworks/GeneratingBAGraphs.html">5.7. Generating BA Graphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Scale-freeNetworks/CumulativeDistributions.html">5.8. Cumulative distributions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Scale-freeNetworks/ExplanatoryModels.html">5.9. Explanatory Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Scale-freeNetworks/Exercises.html">5.10. Exercises</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Scale-freeNetworks/Glossary.html">5.11. Glossary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Scale-freeNetworks/Matching.html">5.12. Matching</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="CellularAutomatons/toctree.html">6. Cellular Automatons</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="CellularAutomatons/introduction.html">6.1. Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CellularAutomatons/ASimpleCA.html">6.2. A Simple CA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CellularAutomatons/Wolfram'sExperiment.html">6.3. Wolfram’s Experiment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CellularAutomatons/ClassifyingCAs.html">6.4. Classifying CAs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CellularAutomatons/Randomness.html">6.5. Randomness</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CellularAutomatons/Determinism.html">6.6. Determinism</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CellularAutomatons/Spaceships.html">6.7. Spaceships</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CellularAutomatons/Universality.html">6.8. Universality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CellularAutomatons/Falsifiability.html">6.9. Falsifiability</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CellularAutomatons/WhatIsThisAModelOf.html">6.10. What is this a Model of?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CellularAutomatons/ImplementingCAs.html">6.11. Implementing CAs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CellularAutomatons/Cross-correlation.html">6.12. Cross-Correlation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CellularAutomatons/CATables.html">6.13. CA Tables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CellularAutomatons/Exercises.html">6.14. Exercises</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CellularAutomatons/Glossary.html">6.15. Glossary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CellularAutomatons/Matching.html">6.16. Matching</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="GameOfLife/toctree.html">7. Game of Life</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="GameOfLife/Introduction.html">7.1. Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GameOfLife/Conway’sGoL.html">7.2. Conway’s GoL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GameOfLife/LifePatterns.html">7.3. Life Pattern</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GameOfLife/Conway’sConjecture.html">7.4. Conway’s Conjecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GameOfLife/Realism.html">7.5. Realism</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GameOfLife/Instrumentalism.html">7.6. Instrumentalism</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GameOfLife/ImplementingLife.html">7.7. Implementing Life</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GameOfLife/Exercises.html">7.8. Exercises</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GameOfLife/Glossary.html">7.9. Glossary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GameOfLife/Matching.html">7.10. Matching</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="PhysicalModeling/toctree.html">8. Physical Modeling</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="PhysicalModeling/Introduction.html">8.1. Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PhysicalModeling/Diffusion.html">8.2. Diffusion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PhysicalModeling/Reaction-diffusion.html">8.3. Reaction-Diffusion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PhysicalModeling/Percolation.html">8.4. Percolation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PhysicalModeling/PhaseChange.html">8.5. Phase Change</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PhysicalModeling/Fractals.html">8.6. Fractals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PhysicalModeling/FractalsAndPercolationModels.html">8.7. Fractals and Percolation Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PhysicalModeling/Exercises.html">8.8. Exercises</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PhysicalModeling/Glossary.html">8.9. Glossary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PhysicalModeling/Matching.html">8.10. Matching</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Self-organizedCriticality/toctree.html">9. Self-Organized Criticality</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Self-organizedCriticality/Introduction.html">9.1. Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Self-organizedCriticality/CriticalSystems.html">9.2. Critical Systems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Self-organizedCriticality/SandPiles.html">9.3. Sand Piles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Self-organizedCriticality/ImplementingTheSandPile.html">9.4. Implementing the Sand Pile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Self-organizedCriticality/Heavy-tailedDistributions.html">9.5. Heavy-Tailed Distributions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Self-organizedCriticality/Fractals.html">9.6. Fractals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Self-organizedCriticality/PinkNoise.html">9.7. Pink Noise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Self-organizedCriticality/TheSoundOfSand.html">9.8. The Sound of Sand</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Self-organizedCriticality/ReductionismAndHolism.html">9.9. Reductionism and Holism</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Self-organizedCriticality/SOC,Causation,AndPrediction.html">9.10. SOC, Causation, and Prediction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Self-organizedCriticality/Exercises.html">9.11. Exercises</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Self-organizedCriticality/Glossary.html">9.12. Glossary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Self-organizedCriticality/Matching.html">9.13. Matching</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Agent-basedModels/toctree.html">10. Agent-based Models</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Agent-basedModels/Introduction.html">10.1. Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Agent-basedModels/Schelling’sModel.html">10.2. Schelling’s Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Agent-basedModels/ImplementationOfSchelling’sModel.html">10.3. Implementation of Schelling’s Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Agent-basedModels/Segregation.html">10.4. Segregation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Agent-basedModels/Sugarscape.html">10.5. Sugarscape</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Agent-basedModels/WealthInequality.html">10.6. Wealth Inequality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Agent-basedModels/ImplementingSugarscape.html">10.7. Implementing Sugarscape</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Agent-basedModels/MigrationAndWaveBehavior.html">10.8. Migration and Wave Behavior</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Agent-basedModels/Emergence.html">10.9. Emergence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Agent-basedModels/Exercises.html">10.10. Exercises</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Agent-basedModels/Glossary.html">10.11. Glossary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Agent-basedModels/Matching.html">10.12. Matching</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Herds,Flocks,AndTrafficJams/toctree.html">11. Herds, Flocks, and Traffic Jams</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Herds,Flocks,AndTrafficJams/Introduction.html">11.1. Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Herds,Flocks,AndTrafficJams/TrafficJams.html">11.2. Traffic Jams</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Herds,Flocks,AndTrafficJams/RandomPerturbation.html">11.3. Random Perturbation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Herds,Flocks,AndTrafficJams/Boids.html">11.4. Boids</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Herds,Flocks,AndTrafficJams/TheBoidAlgorithm.html">11.5. The Boid Algorithm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Herds,Flocks,AndTrafficJams/Arbitration.html">11.6. Arbitration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Herds,Flocks,AndTrafficJams/EmergenceAndFreeWill.html">11.7. Emergence and Free Will</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Herds,Flocks,AndTrafficJams/Exercises.html">11.8. Exercises</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Herds,Flocks,AndTrafficJams/Glossary.html">11.9. Glossary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Herds,Flocks,AndTrafficJams/Matching.html">11.10. Matching</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Evolution/toctree.html">12. Evolution</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Evolution/Introduction.html">12.1. Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Evolution/SimulatingEvolution.html">12.2. Simulating Evolution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Evolution/FitnessLandscape.html">12.3. Fitness Landscape</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Evolution/Agents.html">12.4. Agents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Evolution/Simulation.html">12.5. Simulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Evolution/NoDifferentiation.html">12.6. No Differentiation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Evolution/EvidenceOfEvolution.html">12.7. Evidence of Evolution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Evolution/DifferentialSurvival.html">12.8. Differential Survival</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Evolution/Mutation.html">12.9. Mutation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Evolution/Speciation.html">12.10. Speciation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Evolution/Summary.html">12.11. Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Evolution/Exercises.html">12.12. Exercises</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Evolution/Glossary.html">12.13. Glossary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Evolution/Matching.html">12.14. Matching</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="EvolutionOfCooperation/toctree.html">13. Evolution of Cooperation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="EvolutionOfCooperation/Introduction.html">13.1. Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="EvolutionOfCooperation/Prisoner’sDilemma.html">13.2. Prisoner’s Dilemma</a></li>
+<li class="toctree-l2"><a class="reference internal" href="EvolutionOfCooperation/TheProblemOfNice.html">13.3. The Problem of Nice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="EvolutionOfCooperation/Prisoner’sDilemmaTournaments.html">13.4. Prisoner’s Dilemma Tournaments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="EvolutionOfCooperation/SimulatingEvolutionOfCooperation.html">13.5. Simulating Evolution of Cooperation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="EvolutionOfCooperation/TheTournament.html">13.6. The Tournament</a></li>
+<li class="toctree-l2"><a class="reference internal" href="EvolutionOfCooperation/TheSimulation.html">13.7. The Simulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="EvolutionOfCooperation/Results.html">13.8. Results</a></li>
+<li class="toctree-l2"><a class="reference internal" href="EvolutionOfCooperation/Conclusions.html">13.9. Conclusions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="EvolutionOfCooperation/Exercises.html">13.10. Exercises</a></li>
+<li class="toctree-l2"><a class="reference internal" href="EvolutionOfCooperation/Glossary.html">13.11. Glossary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="EvolutionOfCooperation/Matching.html">13.12. Matching</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Appendix1/toctree.html">14. Appendix 1</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Appendix1/InstallingJupyter.html">14.1. Installing Jupyter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Appendix1/InstallingAnaconda.html">14.2. Installing Andaconda</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Appendix2/toctree.html">15. Appendix 2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Appendix2/GettingStartedWithColab.html">15.1. Getting Started With Google Colab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Appendix2/TipsnTricks.html">15.2. Tips and Tricks</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="acknowledgements">
+<h2>Acknowledgements<a class="headerlink" href="#acknowledgements" title="Permalink to this headline">¶</a></h2>
+<p>We are very grateful to Franklin Beedle Publishers for allowing us to
+make the original Python version of this interactive textbook freely available.
+The original online version was dedicated to the memory of our first editor, Jim Leisy,
+who wanted us to “change the world.”</p>
+</div>
+<div class="section" id="indices-and-tables">
+<h2>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+<div style="width: 500px; margin-left: auto; margin-right: auto;">
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+<img alt="Creative Commons License" style="border-width:0; display:block; margin-left:
+auto; margin-right:auto;" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+<br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource"
+property="dct:title" rel="dct:type">Problem Solving with Algorithms and Data Structures using C++</span> by
+<span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">
+Bradley N. Miller, David L. Ranum, and Janice L. Pearce</span> is licensed under a
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</div></div>
+</div>
+
+
+  <div id=scprogresscontainer>
+    You have attempted <span id=scprogresstotal></span> of <span id=scprogressposs></span> activities on this page <div id="subchapterprogress"></div>
+  </div>
+  
+      
+<ul>
+  <li id="relations-next" style="opacity:0.4" onmouseover="mouseOverNext()" onmouseout="mouseOutNext()" class="navLink" title='Next Section - 1. Preface' data-toggle="tooltip" >
+    <a href="Preface/toctree.html" aria-label="1. Preface">
+      <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
+          <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
+      </div>
+    </a>
+  </li>
+</ul>
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+
+</script>
+
+<script>
+	function mouseOverPrev() {
+		document.getElementById("relations-prev").style.opacity=1;
+	}
+
+	function mouseOutPrev() {
+		document.getElementById("relations-prev").style.opacity=0.4;
+	}
+	function mouseOverNext() {
+		document.getElementById("relations-next").style.opacity=1;
+	}
+
+	function mouseOutNext() {
+		document.getElementById("relations-next").style.opacity=0.4;
+	}
+</script>
+  
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      
+      
+      <span id='numuserspan'></span><span class='loggedinuser'></span>
+      
+      
+      | <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2018 Brad Miller, David Ranum, Jan Pearce.
+      Created using <a href="http://runestoneinteractive.org/">Runestone</a> 5.0.2.
+    </p>
+  </div>
+</footer>
+
+
+
+
+<script> getSwitch(); </script>
+
+
+  </body>
+</html>
