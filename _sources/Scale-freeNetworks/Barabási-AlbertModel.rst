@@ -1,4 +1,4 @@
-Barabási-Albert model
+Barabási-Albert Model
 ---------------------
 In 1999 Barabási and Albert published a paper, “Emergence of Scaling in Random Networks”, that characterizes the structure of several real-world networks, including graphs that represent the interconnectivity of movie actors, web pages, and elements in the electrical power grid in the western United States. You can download the paper from http://thinkcomplex.com/barabasi.
 

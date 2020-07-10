@@ -1,4 +1,4 @@
-Agent-based models
+Agent-based Models
 :::::::::::::::::::
 
 .. toctree::

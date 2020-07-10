@@ -1,7 +1,7 @@
 
 .. _5.9:
 
-Explanatory models
+Explanatory Models
 ------------------
 
 

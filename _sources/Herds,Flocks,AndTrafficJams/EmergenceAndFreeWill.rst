@@ -1,4 +1,4 @@
-Emergence and free will
+Emergence and Free Will
 ---------------------------
 
 .. _11.7:

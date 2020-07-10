@@ -29,13 +29,13 @@ Holistic models are more focused on similarities between systems and less intere
 - Identify the elements of the model that are necessary and sufficient to produce the behavior.
 - For example, in *The Selfish Gene*, Richard Dawkins suggests that genetic evolution is just one example of an evolutionary system. He identifies the essential elements of the category — discrete replicators, variability, and differential reproduction — and proposes that any system with these elements will show evidence of evolution.
 
-As another example of an evolutionary system, he proposes “memes”, which are thoughts or behaviors that are replicated by transmission from person to person2. As memes compete for the resource of human attention, they evolve in ways that are similar to genetic evolution.
+As another example of an evolutionary system, he proposes “memes”, which are thoughts or behaviors that are replicated by transmission from person to person. As memes compete for the resource of human attention, they evolve in ways that are similar to genetic evolution.
 
 Critics of the meme model have pointed out that memes are a poor analogy for genes; they differ from genes in many obvious ways. Dawkins has argued that these differences are beside the point because memes are not *supposed* to be analogous to genes. Rather, memes and genes are examples of the same category: evolutionary systems. The differences between them emphasize the real point, which is that evolution is a general model that applies to many seemingly disparate systems. The logical structure of this argument is shown in :ref:`Figure 9.8 <logic_sturct>`.
 
 Bak has made a similar argument that self-organized criticality is a general model for a broad category of systems:
 
-    Since these phenomena appear everywhere, they cannot depend on any specific detail whatsoever... If the physics of a large class of problems is the same, this gives [the theorist] the option of selecting the *simplest* possible [model] belonging to that class for detailed study.3
+    Since these phenomena appear everywhere, they cannot depend on any specific detail whatsoever... If the physics of a large class of problems is the same, this gives [the theorist] the option of selecting the *simplest* possible [model] belonging to that class for detailed study.
 
 Many natural systems demonstrate behaviors characteristic of critical systems. Bak’s explanation for this prevalence is that these systems are examples of the broad category of self-organized criticality. There are two ways to support this argument. One is to build a realistic model of a particular system and show that the model exhibits SOC. The second is to show that SOC is a feature of many diverse models, and to identify the essential characteristics those models have in common.
 

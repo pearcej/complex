@@ -1,4 +1,4 @@
-Differential survival
+Differential Survival
 ----------------------
 
 .. _12.8:

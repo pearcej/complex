@@ -1,7 +1,7 @@
 
 .. _7.1:
 
-Life pattern
+Life Pattern
 -------------
 
 

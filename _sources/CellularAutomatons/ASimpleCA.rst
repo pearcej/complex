@@ -1,6 +1,6 @@
 .. _6.1:
 
-A simple CA
+A Simple CA
 -------------
 
 Cellular automatons are governed by rules that determine how the state of the cells changes over time.

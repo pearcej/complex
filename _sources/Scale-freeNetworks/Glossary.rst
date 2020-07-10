@@ -9,9 +9,13 @@ Glossary
 
 **Explanatory Model:** Is a model that gives a useful description of why and how a phenomenon is the way it is.
 
+**Growth:** Instead of starting with a fixed number of vertices, the BA model starts with a small graph and adds vertices one at a time.
+
 **Heavy-tailed Distributions:** In probability theory, heavy-tailed distributions are probability distributions whose tails are not exponentially bounded.
 
 **Preferential Attachment:** Is any of a class of processes in which some quantity is distributed among a number of individuals according to what they already have.
+
+**Probability Mass Function (PmF):** a function that maps from each value to it's probabilities.
 
 **Power Law:** A distribution follows this law if :math:`PMF(k) ∼ k−α` where ``PMF(k)`` is the fraction of nodes with degree ``k``, ``α`` is a parameter, and the symbol ∼ indicates that the ``PMF`` is asymptotic to ``k−α`` as ``k`` increases.
 

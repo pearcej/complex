@@ -3,7 +3,7 @@ Clustering
 
 .. _4.6:
 
-The next step is to compute the clustering coefficient, which quantifies the tendency for the nodes to form cliques. A clique is a set of nodes that are completely connected; that is, there are edges between all pairs of nodes in the set.
+The next step is to compute the **clustering coefficient**, which quantifies the tendency for the nodes to form cliques. A clique is a set of nodes that are completely connected; that is, there are edges between all pairs of nodes in the set.
 
 Suppose a particular node, ``u``, has k neighbors. If all of the neighbors are connected to each other, there would be :math:`k(k−1)/2` edges among them. The fraction of those edges that actually exist is the local clustering coefficient for :math:`u`, denoted :math:`C_u`.
 

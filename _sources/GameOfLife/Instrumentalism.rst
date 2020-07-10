@@ -1,6 +1,6 @@
 Instrumentalism
 ----------------
-But SR1 is so weak that it verges on **instrumentalism**, which is the view that theories are instruments that we use for our purposes: a theory is useful, or not, to the degree that it is fit for its purpose, but we can’t say whether it is true or false.
+SR1 is so weak that it verges on **instrumentalism**, which is the view that theories are instruments that we use for our purposes: a theory is useful, or not, to the degree that it is fit for its purpose, but we can’t say whether it is true or false.
 
 To see whether you are comfortable with instrumentalism, I made up the following test. Read the following statements and give yourself a point for each one you agree with. If you score 4 or more, you might be an instrumentalist!
 

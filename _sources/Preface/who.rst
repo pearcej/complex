@@ -2,7 +2,7 @@
     This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
 
 
-Who is this book for?
+Who is this Book for?
 ---------------------
 
 The examples and supporting code for this book are in Python. You should know core Python and be familiar with its object-oriented features, specifically using and defining classes.
