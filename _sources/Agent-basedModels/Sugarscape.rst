@@ -49,6 +49,12 @@ When sugar grows back at 1 unit per time step, there is not enough sugar to sust
 
 :ref:`Figure 10.3 <rep_sugar>` (right) shows the state of the model after 100 time steps, with about 250 agents. The agents who survive tend to be the lucky ones, born with high vision and/or low metabolism. Having survived to this point, they are likely to survive forever, accumulating unbounded stockpiles of sugar.
 
+.. figure:: Figures/Initial_Sugarscape.gif
+    :align: center
+    :alt: "Gif 10.1: Initial Sugarscape for 100 steps."
+
+    Gif 10.1: Initial Sugarscape for 100 steps.
+
 .. mchoice:: q_10.4
    :answer_a: They are a model of a simple economy.
    :answer_b: Agents move around a 3-D grid.
