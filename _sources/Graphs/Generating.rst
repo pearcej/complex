@@ -1,6 +1,6 @@
 .. _fig_3.3:
 
-Generating graphs
+Generating Graphs
 -----------------
 
 .. _fig_cpp_reference:

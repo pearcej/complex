@@ -9,6 +9,7 @@ Matching
     :match_5: Phase Change|||Rapid change in the behavior near the critical value.
     :match_6: Random Walk|||It is a process that consists of a series of changes that have random characteristics.
     :match_7: Diffusion|||The combining of substances by the natural movement of their particles.
+    :match_8: Percolation Model|||A model used to represent percolation that can be abstracted to be use for epidemic modeling, networks of electrical resistors, and other systems that are not directly percolation.
 
    
 

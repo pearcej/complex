@@ -1,4 +1,4 @@
-Wolfram's experiment
+Wolfram's Experiment
 --------------------
 
 .. _6.2:

@@ -1,4 +1,4 @@
-The changing criteria of science
+The Changing Criteria of Science
 --------------------------------
 
 Complexity science is not just a different set of models; it is also a gradual shift in the criteria models are judged by, and in the kinds of models that are considered acceptable.
@@ -20,15 +20,15 @@ A central thesis of this book is that the criteria this consensus is based on ch
 .. _Chapter 10.2: http://localhost:8000/Agent-based%20models/Schelling%E2%80%99s%20Model.html
 
 .. mchoice:: unique_id
-   :answer_a: Law-based, expressed in the form of equations, and solved by mathematical derivation. 
+   :answer_c: Law-based, expressed in the form of equations, and solved by mathematical derivation. 
    :answer_b: Law-based, expressed as computations, and derived from mathematical derivations.
-   :answer_c: Rule-based, expressed as computations, and derived from mathematical derivations.
+   :answer_a: Rule-based, expressed as computations, and derived from mathematical derivations.
    :answer_d: Rule-based, expressed in the form of equations, and expressed as computations.
-   :correct: a   
-   :feedback_a: Correct!
+   :correct: c   
+   :feedback_c: Correct!
    :feedback_b: Not quite. Classical models are not expressed as computations.
-   :feedback_c: No, they usually define the correct procedure or behavior for classical models.
-   :feedback_d: No, classical models are not expressed in the form of equations
+   :feedback_a: No, they usually define the correct procedure or behavior for classical models.
+   :feedback_d: No, classical models are not Rule-based
 
 
    Classical models tend to be what?

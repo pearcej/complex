@@ -27,7 +27,7 @@ However, the standard deviation of degree in the model is 1.5, which is not clos
 
 What’s the problem? To get a better view, we have to look at the distribution of degrees, not just the mean and standard deviation.
 
-I’ll represent the distribution of degrees with a ``Pmf`` object, which is defined in the ``thinkstats2`` module. ``Pmf`` stands for “probability mass function”; if you are not familiar with this concept, you might want to read Chapter 3 of *Think Stats, 2nd edition* at http://thinkcomplex.com/ts2.
+I’ll represent the distribution of degrees with a ``Pmf`` object, which is defined in the thinkstats2 module. ``Pmf`` stands for “probability mass function”; if you are not familiar with this concept, you might want to read `Chapter 3 <http://greenteapress.com/thinkstats2/html/thinkstats2004.html#sec31>`_ of *Think Stats, 2nd edition* at http://thinkcomplex.com/ts2.
 
 Briefly, a ``Pmf`` maps from values to their probabilities. A ``Pmf`` of degrees is a mapping from each possible degree, ``d``, to the fraction of nodes with degree ``d``.
 
@@ -48,7 +48,7 @@ Here’s the list of degrees in this graph:
     >>> degrees(G)
     [3, 1, 1, 1]
 
-Node 0 has degree 3, the others have degree 1. Now I can make a ``Pmf`` that represents this degree **distribution**:
+Node 0 has degree 3, the others have degree 1. Now I can make a ``Pmf`` that represents this degree distribution:
 
 ::
 
@@ -86,6 +86,6 @@ We can use the ``thinkplot`` module to plot the results:
 
 In the WS model, most users have about 44 friends; the minimum is 38 and the maximum is 50. That’s not much variation. In the dataset, there are many users with only 1 or 2 friends, but one has more than 1000!
 
-Distributions like this, with many small values and a few very large values, are called **heavy-tailed**.
+Distributions like this, with many small values and a few very large values, are called heavy-tailed.
 
 

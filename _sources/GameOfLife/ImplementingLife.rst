@@ -11,7 +11,7 @@ To represent the state of the cells, I use a NumPy array of 8-bit unsigned integ
 
     a = np.random.randint(2, size=(10, 10), dtype=np.uint8)
 
-There are a few ways we can compute the GoL rules. The simplest is to use ``for`` loops to iterate through the rows and columns of the array:
+There are a few ways we can compute the GoL rules. The simplest is to use for loops to iterate through the rows and columns of the array:
 
 ::
 

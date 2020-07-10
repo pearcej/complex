@@ -1,4 +1,4 @@
-Social network data
+Social Network Data
 -------------------
 
 Watts-Strogatz graphs are intended to model networks in the natural and social sciences. In their original paper, Watts and Strogatz looked at the network of film actors (connected if they have appeared in a movie together); the electrical power grid in the western United States; and the network of neurons in the brain of the roundworm :math:`C`. *elegans*. They found that all of these networks had the high connectivity and low path lengths characteristic of small world graphs.
@@ -35,7 +35,7 @@ Now we can check whether this dataset has the characteristics of a small world g
 
 In :ref:`Section 4.6 <4.6>` we wrote a function to compute the network average clustering coefficient. NetworkX provides a function called ``average_clustering``, which does the same thing a little faster.
 
-But for larger graphs, they are both too slow, taking time proportional to :math:n k^2, where ``n`` is the number of nodes and ``k`` is the number of neighbors each node is connected to.
+But for larger graphs, they are both too slow, taking time proportional to :math:`n k^2`, where ``n`` is the number of nodes and ``k`` is the number of neighbors each node is connected to.
 
 Fortunately, NetworkX provides a function that estimates the clustering coefficient by random sampling. You can invoke it like this:
 

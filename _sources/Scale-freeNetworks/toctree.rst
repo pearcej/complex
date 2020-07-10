@@ -1,4 +1,4 @@
-Scale-free networks
+Scale-Free Networks
 :::::::::::::::::::
 
 .. toctree::

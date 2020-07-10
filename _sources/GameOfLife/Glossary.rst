@@ -7,7 +7,7 @@ Glossary
 
 **Gosper's Gun:** Is a stable pattern that periodically produces a spaceship — as the stream of spaceships moves out from the source, the number of live cells grows indefinitely.
 
-**Instrumentalism:** Instrumentalism is the view that theories are instruments that we use for our purposes
+**Instrumentalism:** Instrumentalism is the view that theories are instruments that we use for our purposes.
 
 **Methuselahs:** Long-lived patterns that yield a surprising number of live cells.
 

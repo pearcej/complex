@@ -1,4 +1,4 @@
-Evidence of evolution
+Evidence of Evolution
 ----------------------
 
 .. _12.7:

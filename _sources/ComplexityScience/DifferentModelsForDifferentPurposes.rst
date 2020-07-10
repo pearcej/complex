@@ -2,7 +2,7 @@
     This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
 
 
-Different models for different purposes
+Different Models for Different Purposes
 ---------------------------------------
 
 Complex models are often appropriate for different purposes and interpretations:
@@ -13,7 +13,7 @@ Schelling’s model of segregation might shed light on a complex social phenomen
 
 **Realism→instrumentalism**
 
-Classical models lend themselves to a realist interpretation;  for example,  most people accept that electrons are real things that exist.  Instrumentalism is the view that models can be useful even if the entities they postulate don’t exist.  George Box wrote what might be the motto of instrumentalism: “All models are wrong, but someare useful.”
+Classical models lend themselves to a realist interpretation;  for example,  most people accept that electrons are real things that exist.  Instrumentalism is the view that models can be useful even if the entities they postulate don’t exist.  George Box wrote what might be the motto of instrumentalism: “All models are wrong, but some are useful.”
 
 **Reductionism→holism**
 
