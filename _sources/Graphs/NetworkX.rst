@@ -63,6 +63,15 @@ NetworkX provides several functions for drawing graphs; ``draw_circular`` arrang
                  node_size=2000,
                  with_labels=True)
 
+.. dragndrop:: Q1_3.3
+     :match_1: G|||this variable is a DiGraph object that contains no nodes and no edges
+     :match_2: add_node|||this method adds nodes 
+     :match_3: nodes|||this method gets a list of nodes
+     :match_4: Nodeview|||this be used in a for loop or it can make a list
+     :match_5: Edges|||his method gets a list of edges
+     :match_6: Draw_circular|||this method arranges the nodes in a circle and connects them with edges
+
+
 That’s the code I use to generate :ref:`Figure 3.1 <fig_3.1>`. The option ``with_labels`` causes the nodes to be labeled; in the next example we’ll see how to label the edges.
 
 
@@ -124,3 +133,13 @@ To add the edge labels, we use ``draw_networkx_edge_labels``:
 The ``edge_labels`` parameter expects a dictionary that maps from each pair of nodes to a label; in this case, the labels are driving times between cities. And that’s how I generated :ref:`Figure 3.2 <fig_3.2>`.
 
 In both of these examples, the nodes are strings, but in general they can be any hashable type.
+
+
+.. dragndrop:: Q2_3.3
+     :match_1: Positions|||A dictionary that maps from each city name to its approximate longitude and latitude.
+     :match_2: Add_nodes_from|||This is a method that iterates through the keys of positions and adds them as nodes.
+     :match_3: Drive_times|||A dictionary that maps from each edge to the corresponding driving time.
+     :match_4: Add_edges_from|||This method iterates the keys of drive_times and adds them as edges.
+     :match_5: Draw|||Takes the position dictionary as the second parameter, and uses positions to determine the locations of the nodes.
+     :match_6: Draw_networkx_edge_labels|||This method adds edge labels.
+     :match_7: edge_labels|||This parameter expects a dictionary that maps from each pair of nodes to a label; in this case, the labels are driving times between cities.

@@ -78,6 +78,16 @@ A complete graph is, not surprisingly, connected:
 
 In the next section we will generate ER graphs and check whether they are connected.
 
-.. shortanswer:: short-3.6
+.. dragndrop:: Q1_3.6
+    :match_1: 1|||Remove one node from the stack.
+    :match_2: 2|||If the node is already in seen, we go back to Step 1.
+    :match_3: 3|||Otherwised, we add the node to seen and add its neighbors to the stack. 
 
-   The author says that “A complete graph is, not surprisingly, connected”, why is this?
+.. mchoice:: Q2_3.6
+   :answer_a: True
+   :answer_b: Fales
+   :correct: a
+   :feedback_a: Correct, is_connected chooses a starting node by making a node iterator and choosing the first element. Then it uses reachable to get the set of nodes that can be reached from start. If the size of this set is the same as the size of the graph, that means we can reach all nodes, which means the graph is connected.
+   :feedback_b: Incorrect.
+
+    ``is_connected`` checks to see if the set of nodes that can be reached from start is the same as the size of the graph?
