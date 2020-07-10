@@ -1,7 +1,7 @@
 Exercises
 ---------
 
-The code for this chapter is in the Jupyter notebook ``chap05.ipynb`` in the repository for this book. Open this notebook, read the code, and run the cells. You can use this notebook to work on the exercises in this chapter. My solutions are in ``chap05soln.ipynb``.
+The code for this chapter is in the Jupyter notebook ``chap06.ipynb`` in the repository for this book. Open this notebook, read the code, and run the cells. You can use this notebook to work on the exercises in this chapter. My solutions are in ``chap06soln.ipynb``.
 
 **Exercise 1:**  Write a version of ``correlate`` that returns the same result as ``np.correlate`` with ``mode='same'``. Hint: use the NumPy function pad.
 

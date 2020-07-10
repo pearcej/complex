@@ -1,7 +1,7 @@
 Exercises
 ---------
 
-The code for this chapter is in the Jupyter notebook ``chap06.ipynb`` in the repository for this book. Open this notebook, read the code, and run the cells. You can use this notebook to work on the following exercises. My solutions are in ``chap06soln.ipynb``.
+The code for this chapter is in the Jupyter notebook ``chap07.ipynb`` in the repository for this book. Open this notebook, read the code, and run the cells. You can use this notebook to work on the following exercises. My solutions are in ``chap07soln.ipynb``.
 
 **Exercise 1:** Start GoL in a random state and run it until it stabilizes. What stable patterns can you identify?
 
