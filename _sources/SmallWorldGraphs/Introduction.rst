@@ -6,7 +6,7 @@ In this chapter, I present Stanley Milgram’s famous Small World Experiment, wh
 
 Along the way, we’ll see two new graph algorithms: breadth-first search (BFS) and Dijkstra’s algorithm for computing the shortest path between nodes in a graph.
 
-The code for this chapter is in ``chap03.ipynb`` in the repository for this book. More information about working with the code is in :ref:`Section 1.4<1.4>`.
+The code for this chapter is in ``chap04.ipynb`` in the repository for this book. More information about working with the code is in :ref:`Section 1.4<1.4>`.
 
 .. mchoice:: question_4.1.1
     :answer_a: Breadth-first search (BFS)

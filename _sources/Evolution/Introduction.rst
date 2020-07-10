@@ -24,7 +24,7 @@ There’s probably not much I can do about the first group, but I think I can he
 
 To help people make this transition from confusion to clarity, the most powerful tool I have found is computation. Ideas that are hard to understand in theory can be easy to understand when we see them happening in simulation. That is the goal of this chapter.
 
-The code for this chapter is in ``chap11.ipynb``, which is a Jupyter notebook in the repository for this book. For more information about working with this code, see :ref:`Section 1.4 <1.4>`.
+The code for this chapter is in ``chap12.ipynb``, which is a Jupyter notebook in the repository for this book. For more information about working with this code, see :ref:`Section 1.4 <1.4>`.
 
 
 .. mchoice:: q_12.1

@@ -1,7 +1,7 @@
 Exercises
 ----------
 
-The code for this chapter is in the Jupyter notebook ``chap09.ipynb`` in the repository for this book. Open this notebook, read the code, and run the cells. You can use this notebook to work on the following exercises. My solutions are in ``chap09soln.ipynb``.
+The code for this chapter is in the Jupyter notebook ``chap10.ipynb`` in the repository for this book. Open this notebook, read the code, and run the cells. You can use this notebook to work on the following exercises. My solutions are in ``chap10soln.ipynb``.
 
 
 **Exercise 1:**  Bill Bishop, author of *The Big Sort*, argues that American society is increasingly segregated by political opinion, as people choose to live among like-minded neighbors.
