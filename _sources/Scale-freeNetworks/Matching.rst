@@ -12,3 +12,5 @@ Matching
     :match_8: Complementary CDF|||:math:`CCDF(x) ≡ 1 - CDF(x)`
     :match_9: Explanatory Models|||A model that gives a useful description of why and how a phenomenon is the way it is.
     :match_10: WS Model|||Has characteristics of a small world network, like the data, but it has low variability in the number of neighbors from node to node, unlike the data.
+    :match_11: Probability Mass Function (PmF)|||a function that maps from each value to it's probabilities.
+    :match_12: Growth|||Instead of starting with a fixed number of vertices, the BA model starts with a small graph and adds vertices one at a time.

@@ -1,6 +1,6 @@
 .. _fig_4.3:
 
-The WS experiment
+The WS Experiment
 -----------------
 
 .. figure:: Figures/thinkcomplexity2009.png

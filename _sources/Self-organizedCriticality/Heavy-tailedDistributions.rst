@@ -1,4 +1,4 @@
-Heavy-tailed distributions
+Heavy-Tailed Distributions
 --------------------------
 
 .. _9.5:
@@ -12,7 +12,7 @@ I’ll make a larger sand pile, with ``n=50`` and an initial level of ``30``, an
     pile2 = SandPile(n=50, level=30)
     pile2.run()
 
-Next, I’ll run 100,000 random drops
+Next, I’ll run 100,000 random drops:
 
 ::
 

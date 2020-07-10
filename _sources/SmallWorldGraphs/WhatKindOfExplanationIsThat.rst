@@ -1,4 +1,4 @@
-What kind of explanation is that?
+What Kind of Explanation is that?
 ------------------------------------
 If you ask me why planetary orbits are elliptical, I might start by modeling a planet and a star as point masses; I would look up the law of universal gravitation at http://thinkcomplex.com/grav and use it to write a differential equation for the motion of the planet. Then I would either derive the orbit equation or, more likely, look it up at http://thinkcomplex.com/orbit. With a little algebra, I could derive the conditions that yield an elliptical orbit. Then I would argue that the objects we consider planets satisfy these conditions.
 

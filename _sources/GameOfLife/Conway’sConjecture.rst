@@ -1,6 +1,6 @@
 .. _7.4:
 
-Conway’s conjecture
+Conway’s Conjecture
 --------------------
 
 From most initial conditions, GoL quickly reaches a stable state where the number of live cells is nearly constant (possibly with some oscillation).

@@ -79,7 +79,7 @@ This array contains the change for each cell, which we use to update the origina
         
     pile.array += c
 
-And here’s the result.
+And here’s the result:
 
 ::
 

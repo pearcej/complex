@@ -1,4 +1,4 @@
-Random perturbation
+Random Perturbation
 -----------------------
 
 .. _avg_speed:

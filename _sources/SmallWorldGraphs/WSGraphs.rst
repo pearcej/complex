@@ -1,6 +1,6 @@
 .. _fig_4.2:
 
-WS graphs
+WS Graphs
 ---------
 
 .. figure:: Figures/thinkcomplexity2008.png
@@ -10,7 +10,7 @@ WS graphs
    Figure 4.2: WS graphs with :math:`n=20`, :math:`k=4`, and :math:`p=0` (left), :math:`p=0.2` (middle), and :math:`p=1` (right).
 
 
-To make a Watts-Strogatz (WS) graph, we start with a ring lattice and “rewire” some of the edges. In their paper, Watts and Strogatz consider the edges in a particular order and rewire each one with probability :math:`p`. If an edge is rewired, they leave the first node unchanged and choose the second node at random. They don’t allow self loops or multiple edges; that is, you can’t have a edge from a node to itself, and you can’t have more than one edge between the same two nodes.
+To make a **Watts-Strogatz** (**WS**) **graph**, we start with a ring lattice and “rewire” some of the edges. In their paper, Watts and Strogatz consider the edges in a particular order and rewire each one with probability :math:`p`. If an edge is rewired, they leave the first node unchanged and choose the second node at random. They don’t allow self loops or multiple edges; that is, you can’t have a edge from a node to itself, and you can’t have more than one edge between the same two nodes.
 
 Here is my implementation of this process.
 

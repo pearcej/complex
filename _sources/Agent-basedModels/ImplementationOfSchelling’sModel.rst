@@ -1,4 +1,4 @@
-Implementation of Schelling’s model
+Implementation of Schelling’s Model
 -------------------------------------
 
 To implement Schelling’s model, I wrote yet another class that inherits from ``Cell2D``:
