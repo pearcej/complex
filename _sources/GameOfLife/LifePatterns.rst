@@ -20,6 +20,12 @@ Life Pattern
 
     Figure 7.2: An oscillator called a toad.
 
+.. figure:: Figures/GoL_Toad.gif
+    :align: center 
+    :alt: "Gif of An oscillator called a toad."
+
+    Gif of An oscillator called a toad.
+
 .. _7.3:
 
 .. figure:: Figures/figure_7.3.png

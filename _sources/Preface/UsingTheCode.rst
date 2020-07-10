@@ -8,6 +8,7 @@ Using the code
 .. _1.4:
 
 To get a better understanding of the tools needed to interact with and run the given code please examine the two appendices that are at the end of the book. please refer to the hyperlinks below for links to the appendix:
+
 - :ref:`Apendix 1<Ap_1>` Used for Anaconda
 
 - :ref:`Apendix 2<Ap_1>` Used for Google Colab

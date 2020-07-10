@@ -17,7 +17,7 @@ The Graph class provides a method called neighbors that returns a list of neighb
     >>> complete.neighbors(0)
     [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-Suppose we start at node``s``. We can mark ``s`` as “seen” and mark its neighbors. Then we mark the neighbor’s neighbors, and their neighbors, and so on, until we can’t reach any more nodes. If all nodes are seen, the graph is connected.
+Suppose we start at node ``s`` . We can mark ``s`` as “seen” and mark its neighbors. Then we mark the neighbor’s neighbors, and their neighbors, and so on, until we can’t reach any more nodes. If all nodes are seen, the graph is connected.
 
 Here’s what that looks like in Python:
 
