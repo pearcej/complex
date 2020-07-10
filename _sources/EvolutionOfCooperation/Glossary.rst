@@ -3,11 +3,11 @@ Glossary
 
 **Altruism:** The tendency of many animals to help other animals, even to their own detriment.
 
-**Forgiving:** the trait that made sure strategies  were too vindictive.
+**Forgiving:** The trait that made sure strategies  were too vindictive.
 
 **Nice:** The strategies that do well cooperate during the first round, and generally cooperate as often as they defect in subsequent rounds.
 
-**Non-envious:** Some of the most successful strategies seldom outscore their opponents; they are successful because they do well enough against a wide variety of opponents.
+**Non-Envious:** Some of the most successful strategies seldom outscore their opponents; they are successful because they do well enough against a wide variety of opponents.
 
 **Prisoner's Dilemma:** Two members of a criminal gang are arrested and imprisoned. Each prisoner is in solitary confinement with no means of communicating with the other. The prosecutors lack sufficient evidence to convict the pair on the principal charge, but they have enough to convict both on a lesser charge. Simultaneously, the prosecutors offer each prisoner a bargain. Each prisoner is given the opportunity to either: (1) betray the other by testifying that the other committed the crime, or (2) cooperate with the other by remaining silent. The offer is:
 

@@ -1,4 +1,4 @@
-Phase change
+Phase Change
 ------------
 Now let’s test whether a random array contains a percolating cluster:
 

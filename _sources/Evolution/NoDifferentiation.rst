@@ -1,4 +1,4 @@
-No differentiation
+No Differentiation
 -------------------
 
 Before we run the simulation, we have to specify the behavior of ``choose_dead`` and ``choose_replacements``. We’ll start with simple versions of these functions that don’t depend on fitness:

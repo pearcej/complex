@@ -3,6 +3,8 @@ Glossary
 
 **Cellular Automaton (CA):** Is a model of a world with very simple physics. “Cellular” means that the world is divided into discrete chunks, called cells. An “automaton” is a machine that performs computations — it could be a real machine, but more often the “machine” is a mathematical abstraction or a computer simulation.
 
+**Church-Turing Thesis:** The claim that these definitions of computability capture something essential that is independent of any particular model of computation
+
 **Cross-Correlation:** Selecting elements from an array and adding them up
 
 **Falsifiability:** A hypothesis is this if there is an experiment, at least in the realm of practicality, that would contradict the hypothesis if it were false.

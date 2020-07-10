@@ -17,7 +17,7 @@ To say that a Turing machine can compute any Turing-computable function is a tau
 
 It turns out that just about every reasonable model of computation anyone has come up with is “Turing complete"; that is, it can compute exactly the same set of functions as the Turing machine. Some of these models, like lamdba calculus, are very different from a Turing machine, so their equivalence is surprising.
 
-This observation led to the Church-Turing Thesis, which is the claim that these definitions of computability capture something essential that is independent of any particular model of computation.
+This observation led to the **Church-Turing Thesis**, which is the claim that these definitions of computability capture something essential that is independent of any particular model of computation.
 
 The Rule 110 CA is yet another model of computation, and remarkable for its simplicity. That it, too, turns out to be Turing complete lends support to the Church-Turing Thesis.
 

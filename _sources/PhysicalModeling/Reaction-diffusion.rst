@@ -1,4 +1,4 @@
-Reaction-diffusion
+Reaction-Diffusion
 ------------------
 Now let’s add a second chemical. I’ll define a new object, ``ReactionDiffusion``, that contains two arrays, one for each chemical:
 
@@ -73,9 +73,9 @@ The arrays ``cA`` and ``cB`` are the result of applying a diffusion kernel to ``
 
 The term ``A * B**2`` represents the rate that ``A`` and ``B`` react with each other. Assuming that the reaction consumes ``A`` and produces ``B``, we subtract this term in the first equation and add it in the second.
 
-The term ``f * (1-A)`` determines the rate that ``A`` is added to the system. Where ``A`` is near 0, the maximum feed rate is ``f``. Where ``A`` approaches 1, the feed rate drops off to zero.
+The term ``f * (1-A)`` determines the rate that ``A`` is added to the system. Where ``A`` is near 0, the maximum feed rate is ``f``. Where ``A`` approaches 1, the feed rate drops off to 0.
 
-Finally, the term ``(f+k) * B`` determines the rate that ``B`` is removed from the system. As ``B`` approaches 0, this rate goes to zero.
+Finally, the term ``(f+k) * B`` determines the rate that ``B`` is removed from the system. As ``B`` approaches 0, this rate goes to 0.
 
 As long as the rate parameters are not too high, the values of ``A`` and ``B`` usually stay between 0 and 1.
 

@@ -2,7 +2,7 @@
     This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
 
 
-The axes of Scientific Models
+The Axes of Scientific Models
 -----------------------------
 
 I have described classical models as based on physical laws, expressed in the form of equations, and solved by mathematical analysis; conversely, models of complex systems are often based on simple rules and implemented as computations. We can think of this trend as a shift over time along two axes:
@@ -23,7 +23,7 @@ Classical models are often linear, or use linear approximations  to  nonlinear  
 
 **Deterministic→stochastic**
 
-Classical models are usually deterministic, which may  reflect  underlying  philosophical  determinism,  discussed  in  :ref:`Chapter 6.1 <6.1>`; complex models often include randomness.
+Classical models are usually deterministic, which may  reflect  underlying  philosophical  determinism,  discussed  in  :ref:`Chapter 6 <6.1>`; complex models often include randomness.
 
 **Abstract→detailed**
 

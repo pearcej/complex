@@ -1,4 +1,4 @@
-Traffic jams
+Traffic Jams
 ----------------
 What causes traffic jams? Sometimes there is an obvious cause, like an accident, a speed trap, or something else that disturbs the flow of traffic. But other times traffic jams appear for no apparent reason.
 
@@ -29,7 +29,7 @@ Here’s the class that represents the “highway”:
 
 The ``drivers`` attribute is a list of ``Driver`` objects. The for loop links them so each ``Driver`` contains a reference to the next. The highway is circular, so the last ``Driver`` contains a reference to the first.
 
-During each time step, the ``Highway`` moves each of the drivers:
+During each time step, the ``Highway`` moves each of the ``drivers``:
 
 ::
 

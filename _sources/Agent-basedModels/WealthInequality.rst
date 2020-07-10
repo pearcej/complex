@@ -1,4 +1,4 @@
-Wealth inequality
+Wealth Inequality
 -----------------
 
 .. _dis_of_sugar:

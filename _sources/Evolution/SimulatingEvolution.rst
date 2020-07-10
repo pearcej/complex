@@ -1,4 +1,4 @@
-Simulating evolution
+Simulating Evolution
 ---------------------------
 
 I start with a simple model that demonstrates a basic form of evolution. According to the theory, the following features are sufficient to produce evolution:
@@ -7,7 +7,7 @@ I start with a simple model that demonstrates a basic form of evolution. Accordi
 - **Variation**: We need variability in the population, that is, differences between individuals.
 - **Differential survival** or **reproduction**: The differences between individuals have to affect their ability to survive or reproduce.
 
-To simulate these features, we’ll define a population of agents that represent individual organisms. Each agent has genetic information, called its **genotype**, which is the information that gets copied when the agent replicates. In our model1, a genotype is represented by a sequence of ``N`` binary digits (zeros and ones), where ``N`` is a parameter we choose.
+To simulate these features, we’ll define a population of agents that represent individual organisms. Each agent has genetic information, called its **genotype**, which is the information that gets copied when the agent replicates. In our model, a genotype is represented by a sequence of ``N`` binary digits (zeros and ones), where ``N`` is a parameter we choose.
 
 To generate variation, we create a population with a variety of genotypes; later we will explore mechanisms that create or increase variation.
 
