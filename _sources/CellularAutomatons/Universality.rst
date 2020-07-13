@@ -32,7 +32,7 @@ Applying these definitions to CAs, Classes 1 and 2 are “obviously simple”. I
     :answer_a: True
     :answer_b:  False
     :correct: a
-    :feedback_a: Correct!
-    :feedback_b: Incorrect.
+    :feedback_a: Correct, it helps abstract what can be computed in general.
+    :feedback_b: Incorrect, the Turning machine can help show what can and cannot be computed.
 
     The Turing machine is useful because it is possible to characterize the set of functions that can be computed by it. 
