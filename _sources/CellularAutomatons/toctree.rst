@@ -20,5 +20,5 @@ Cellular Automatons
     Exercises.rst
     Glossary.rst
     Matching.rst
-    
+    SelfCheck.rst
     
