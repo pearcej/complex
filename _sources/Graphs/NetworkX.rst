@@ -63,14 +63,6 @@ NetworkX provides several functions for drawing graphs; ``draw_circular`` arrang
                  node_size=2000,
                  with_labels=True)
 
-.. dragndrop:: Q1_3.3
-     :match_1: G|||this variable is a DiGraph object that contains no nodes and no edges
-     :match_2: add_node|||this method adds nodes 
-     :match_3: nodes|||this method gets a list of nodes
-     :match_4: Nodeview|||this be used in a for loop or it can make a list
-     :match_5: Edges|||his method gets a list of edges
-     :match_6: Draw_circular|||this method arranges the nodes in a circle and connects them with edges
-
 
 That’s the code I use to generate :ref:`Figure 3.1 <fig_3.1>`. The option ``with_labels`` causes the nodes to be labeled; in the next example we’ll see how to label the edges.
 
