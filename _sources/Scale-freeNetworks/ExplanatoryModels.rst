@@ -37,33 +37,5 @@ The BA model suggests that social networks are small because they include nodes 
 
 As is often the case in young areas of science, the problem is not that we have no explanations, but too many.
 
-.. fillintheblank:: q_5.6
-   :casei:
-
-   According to this model,  if two things are similar in some ways, they are likely to be similar in other ways. Keeping this in mind fill in the blanks.
-   
-   **Word Bank:**
-
-   +----------+---------+------+--------+
-   |Observable|Behavior | Model| System |
-   +----------+---------+------+--------+
-   
-   In a system, S, we see something |blank| , that warrants explanation.
-   We construct a model, that is analogous to |blank|
-   By simulation or mathematical derivation, we show that the model exhibits a |blank|
-   We conclude that System exhibits Observable because System is similar to Model, Model exhibits Behavior, and |blank| is similar to |blank|
-
-   - :observable: Correct
-     :x: Incorrect
-   - :system: Correct
-     :x: Incorrect
-   - :behavior: Correct
-     :x: Incorrect
-   - :Behavior: Correct
-     :x: Incorrect 
-   - :Observable: Correct
-     :x: Incorrect 
-
-
 
    

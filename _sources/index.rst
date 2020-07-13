@@ -30,7 +30,7 @@ and Jan Pearce, Berea College
    ComplexityScience/toctree.rst
    Graphs/toctree.rst
    SmallWorldGraphs/toctree.rst
-   Scale-freeNetworks/toctree.rst
+   Scale-FreeNetworks/toctree.rst
    CellularAutomatons/toctree.rst
    GameOfLife/toctree.rst
    PhysicalModeling/toctree.rst

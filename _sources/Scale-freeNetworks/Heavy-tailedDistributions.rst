@@ -30,11 +30,4 @@ All power law distributions are heavy-tailed, but there are other heavy-tailed d
 
 But first, we have a problem: the WS model has the high clustering and low path length we see in the data, but the degree distribution doesn’t resemble the data at all. This discrepancy is the motivation for our next topic, the Barabási-Albert model.
 
-.. mchoice:: q_5.5
-   :answer_a: True
-   :answer_b: False
-   :correct: b
-   :feedback_a: Incorrect. 
-   :feedback_b: Correct.
 
-   All heavy-tailed distributions follow the power law.
