@@ -39,3 +39,7 @@ So if we plot :math:`P(f)` versus *f* on a log-log scale, we expect a straight l
 
 What does this have to do with the sand pile model? Suppose that every time a cell topples, it makes a sound. If we record a sand pile model while its running, what would it sound like? In the next section, we’ll simulate the sound of the sand pile model and see if it is pink noise.
 
+.. dragndrop:: q_9.7.1
+   :match_1: Noise|||In common use, this is usually an unwanted sound, but in the context of signal processing, it is a signal that contains many frequency components.
+   :match_2: Power spectrum|||Any signal can be decomposed into a set of frequency components with different levels of power, which is related to amplitude or volume. The power spectrum of a signal is a function that shows the power of each frequency component.
+   :match_3: Signal|||Any quantity that varies in time. One example is sound, which is variation in air density. In the sand pile model, the signals we’ll consider are avalanche durations and sizes as they vary over time.
