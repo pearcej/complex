@@ -103,3 +103,9 @@ Finally, ``love`` computes a vector that points in the direction of the carrot.
             return limit_vector(toward)
 
 The results from ``center``, ``avoid``, ``align``, and ``love`` are what Reynolds calls “acceleration requests", where each request is intended to achieve a different goal.
+
+.. dragndrop:: q_11.5.1
+    :match_1: Center|||Finds other Boids within range and computes a vector toward their centroid.
+    :match_2: Avoid|||Finds objects, including other Boids, within a given range, and computes a vector that points away from their centroid.
+    :match_3: Align|||Finds other Boids within range and computes the average of their headings.
+    :match_4: Love|||Computes a vector that points toward the carrot.

@@ -14,3 +14,4 @@ Herds, Flocks, and Traffic Jams
     Exercises.rst
     Glossary.rst
     Matching.rst
+    SelfCheck.rst

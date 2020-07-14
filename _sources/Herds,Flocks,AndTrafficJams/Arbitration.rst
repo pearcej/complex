@@ -35,3 +35,15 @@ To update position, we multiply velocity by the time step, ``dt``, to get the ch
 Many parameters influence flock behavior, including the radius, angle and weight for each behavior, as well as maneuverability, ``mu``. These parameters determine the ability of the Boids to form and maintain a flock, and the patterns of motion and organization within the flock. For some settings, the Boids resemble a flock of birds; other settings resemble a school of fish or a cloud of flying insects.
 
 As one of the exercises at the end of this chapter, you can modify these parameters and see how they affect Boid behavior.
+
+.. fillintheblank:: CH11.6_Q1
+    :casei:
+
+    After computing a goal for each Boid, we update their |blank| and |blank|.
+
+    - :velocity: Correct!
+      :position: Nice try, but look at the ordering that it comes in the text
+      :x: Incorrect, please try again.
+    - :position: Correct!
+      :velocity:  Nice try, but look at the ordering that it comes in the text 
+      :x: Incorrect, please try again.
