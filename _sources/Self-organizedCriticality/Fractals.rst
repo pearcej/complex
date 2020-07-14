@@ -115,3 +115,10 @@ The fractal dimension for levels 0, 1, and 2 seems to be clearly non-integer, wh
 The estimate for level 3 is indistinguishable from 2, but given the results for the other values, the apparent curvature of the line, and the appearance of the pattern, it seems likely that it is also fractal.
 
 One of the exercises in the notebook for this chapter asks you to run this analysis again with different values of ``n`` and the initial ``level`` to see if the estimated dimensions are consistent.
+
+.. dragndrop::q_9.6.1
+    :match_1: draw_four|||Uses a viewer and levels to create an image.
+    :match_2: viewer|||A SandPileViewer object.
+    :match_3: levels|||List of levels we want to plot.
+    :match_4: draw_array|||Uses an array of 1s and 0s to create a picture.
+    :match_5: a|||An array.

@@ -17,3 +17,4 @@ Self-organized criticality
     Exercises.rst
     Glossary.rst
     Matching.rst
+    SelfCheck.rst

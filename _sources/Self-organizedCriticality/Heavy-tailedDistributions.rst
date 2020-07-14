@@ -67,3 +67,7 @@ For values between 1 and 100, the distributions are nearly straight on a log-log
 For values greater than 100, the distributions fall away more quickly than the power law model, which means there are fewer very large values than the model predicts. One possibility is that this effect is due to the finite size of the sand pile; if so, we might expect larger piles to fit the power law better.
 
 Another possibility, which you can explore in one of the exercises at the end of this chapter, is that these distributions do not strictly obey a power law. But even if they are not power-law distributions, they might still be heavy-tailed.
+
+.. dragndrop:: q_9.5.1
+    :match_1: For values between 1 and 100|||The distributions are nearly straight on a log-log scale, which is characteristic of a heavy tail.
+    :match_2: For values greater than 100|||The distributions fall away more quickly than the power law model, which means there are fewer very large values than the model predicts.
