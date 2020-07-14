@@ -79,6 +79,15 @@ Finally, the term ``(f+k) * B`` determines the rate that ``B`` is removed from t
 
 As long as the rate parameters are not too high, the values of ``A`` and ``B`` usually stay between 0 and 1.
 
+.. mchoice:: q_8.3.3
+   :answer_a: True
+   :answer_b: False
+   :correct: a
+   :feedback_a: Correct. A*B**2 does set the rate of reaction.
+   :feedback_b: Incorrect. Please try again.
+
+   In the above code A*B**2 sets the rate of reaction.
+
 .. figure:: Figures/figure_8.2.png
     :align: center
     :alt: "Figure 9.1: Sand pile model initial state (left), after 200 steps (middle), and 400 steps (right)."
@@ -126,24 +135,8 @@ Since 1952, observations and experiments have provided some support for Turingâ€
 
    At what point did there appear to be a coral-like pattern?
 
-.. mchoice:: q_8.3.2
-   :answer_a: True
-   :answer_b: False
-   :correct: a
-   :feedback_a: Correct! When f=0.039 and k=0.065 the pattern that is produced looks like the patterns on animals. Though, this has not yet been proven.  
-   :feedback_b: Incorrect, please refer back to section.
-
-   Based on the patterns from the text, is there a possibility for animal patterns to be based on diffusion reactions? 
-
  
-.. mchoice:: q_8.3.3
-   :answer_a: True
-   :answer_b: False
-   :correct: a
-   :feedback_a: Correct. A*B**2 does set the rate of reaction.
-   :feedback_b: Incorrect. Please try again.
 
-   In the above code A*B**2 sets the rate of reaction.
 
 
 
