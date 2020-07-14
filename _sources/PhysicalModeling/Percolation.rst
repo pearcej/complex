@@ -14,6 +14,16 @@ In this model:
 
 Two questions of interest regarding percolation are (1) the probability that a random array contains a percolating cluster, and (2) how that probability depends on ``q``. These questions might remind you of :ref:`Section 3.4<3.4>` where we considered the probability that a random Erdős-Rényi graph is connected. We will see several connections between that model and this one.
 
+.. fillintheblank:: q_8.4.4
+   :casei:
+
+   |blank| is the probability that a cell is porus initially
+
+   - :q: Correct!
+     :1-q: Nice Try, but this represents something else.
+     :x: Incorrect, please try again. 
+
+
 I define a new class to represent a percolation model:
 
 ::
@@ -63,15 +73,6 @@ This function identifies porous cells, where ``a==1``, that have at least one we
 :ref:`Figure 8.5<fig_first_three>` shows the first few steps of a percolation model with ``n=10`` and ``p=0.7``. Non-porous cells are white, porous cells are lightly shaded, and wet cells are dark.
 
 
-.. dragndrop:: q_8.4  
-   :match_1: 1|||Percolation models can be represented using cellular automatons. Below is an out of order representation of the processes of a 2-D CA that simulates percolation. Place them in the correct order  
-   :match_2: 2|||Each cell is either “porous” with probability q or “non-porous” with probability 1-q 
-   :match_3: 3|||When the simulation begins, all cells are considered “dry” except the top row, which is “wet”
-   :match_4: 4|||During each time step, if a porous cell has at least one wet neighbor, it becomes wet. Non-porous cells stay dry
-   :match_5: 5|||The simulation runs until it reaches a “fixed point” where no more cells change state
-   :match_6: 6|||If there is a path of wet cells from the top to the bottom row, we say that the CA has a “percolating cluster”
-    
-   Percolation models can be represented using cellular automatons. Below is an out of order representation of the processes of a 2-D CA that simulates percolation. Place them in the correct order.
 
 .. mchoice:: q_8.4.2
    :answer_a: The way it moves can be in any direction 
@@ -85,26 +86,7 @@ This function identifies porous cells, where ``a==1``, that have at least one we
    :feedback_d: Incorrect. Please refer back to section.
 
    How does the different type of “neighborhood” affect the movement path of the “wet” cells?
-
-.. mchoice:: q_8.4.3
-    :answer_a: True
-    :answer_b: False
-    :correct: b
-    :feedback_a: Incorrect. Sorry but while it does identify porous cells that is not all that it does. 
-    :feedback_b:  Correct! While it does identify porous cells but that is not all it does. It also looks for porous cells that have at least one wet neighbor and then changes those cells state to indicate they are wet.
-
-    The following function will identify porous cells.  
-    :: 
-
-     def step(self):
-     a = self.array
-     c = correlate2d(a, self.kernel, mode='same')
-     self.array[(a==1) & (c>=5)] = 5
     
-
-.. shortanswer:: q_8.4.4
-
-   What is the probability that a cell is porus initially?
 
 .. mchoice:: q_8.4.5
    :answer_a: True
