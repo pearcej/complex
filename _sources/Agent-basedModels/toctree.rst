@@ -16,6 +16,7 @@ Agent-based models
     Exercises.rst
     Glossary.rst
     Matching.rst
+    SelfCheck.rst
 
 
     

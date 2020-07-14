@@ -62,4 +62,8 @@ I won’t show more details here; you can see them in the notebook for this chap
 - ``look_and_move``, which uses ``argmax``.
 
 
-
+.. dragndrop:: CH10.7_Q1
+    :match_1: look_and_move|||Takes the location of the agent, which is a tuple of coordinates, and the range of the agent’s vision, which is an integer. It returns the agent’s new location, which is the visible cell with the most sugar.
+    :match_2: harvest|||Takes the (new) location of the agent, and removes and returns the sugar at that location.
+    :match_3: make_visible_locs|||Builds the array of locations an agent can see, depending on its vision. The locations are sorted by distance, with locations at the same distance appearing in random order. This function uses np.random.shuffle and np.vstack.
+    :match_4: make_capacity|||Initializes the capacity of the cells using NumPy functions indices, hypot, minimum, and digitize.
