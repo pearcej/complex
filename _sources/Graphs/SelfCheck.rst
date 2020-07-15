@@ -58,8 +58,10 @@ Self Check
 
    - :the number of vertices: Correct!
      :the number of edges: Close, but this refers to something else.
+     :number of vertices: Close, add the to the beginning of your statement 
      :x: Sorry you are incorrect, try again and checkout section 3.9.
 
    - :the number of edges: Correct!
      :the number of vertices: Close, but this refers to something else. 
+     :number of edges: Close, add the to the beginning of your statement 
      :x: Sorry you are incorrect, Try again and checkout section 3.9.
