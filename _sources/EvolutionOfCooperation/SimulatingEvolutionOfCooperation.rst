@@ -51,3 +51,16 @@ Mutation works by choosing a random value in the genotype and flipping from 'C' 
         return values
 
 Now that we have agents, we need a tournament.
+
+.. mchoice:: q_13.5.1
+    :answer_a: CCCCCCC 
+    :answer_b: DDDDDDD
+    :answer_c: CCDCDCD
+    :answer_d: CDCDCDC
+    :correct: d
+    :feedback_a: Sorry, This if it all ways cooperates.
+    :feedback_b: Sorry, this is always defect.
+    :feedback_c: Sorry, this is TFT.
+    :feedback_d: Correct!
+
+    What would be the genotype for a strategy that always does the opposite of the round before?
