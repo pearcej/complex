@@ -77,7 +77,7 @@ The move method lets the ``Driver`` choose its acceleration. Then ``move`` compu
             driver.speed = speed
             driver.loc += speed
 
-``dist`` is the distance between ``driver`` and the next driver ahead. This distance is passed to ``choose_acceleration``, which specifies the behavior of the driver. This is the only decision the driver gets to make; everything else is determined by the “physics” of the simulation.
+``dist`` is the distance between ``driver`` and the next ``driver`` ahead. This distance is passed to ``choose_acceleration``, which specifies the behavior of the driver. This is the only decision the driver gets to make; everything else is determined by the “physics” of the simulation.
 
 - ``acc`` is acceleration, which is bounded by ``min_acc`` and ``max_acc``. In my implementation, cars can accelerate with ``max_acc=1`` and brake with ``min_acc=-10``.
 - ``speed`` is the old speed plus the requested acceleration, but then we make some adjustments. First, we add random noise to ``speed``, because the world is not perfect. ``eps`` determines the magnitude of the relative error; for example, if ``eps`` is 0.02, ``speed`` is multiplied by a random factor between 0.98 and 1.02.
@@ -120,10 +120,15 @@ During the next time step (right) two cars collide with the stopped cars, and we
 
 Under some conditions, the jam itself propagates backwards, as you can see if you watch the animations in the notebook for this chapter.
 
-.. fillintheblank:: q_11.1
-   :casei:
-   
-   The drivers had control over one thing that eventually caused them to create the traffic jams, which was |blank|.
 
-   - :speed: Correct, they had control over speed!
-     :x: Incorrect, please refer to the chapter.
+.. dragndrop:: Q_11.2.1
+    :match_1: Highway|||The class that represents the “highway”.
+    :match_2: Driver|||The class that allows drivers to know their location, speed, and choose their acceleration rate. 
+    :match_3: drivers||| a list of Driver objects.
+    :match_4: acc||| The acceleration of the highway and its drivers.
+    :match_5: speed|||The old speed plus the requested acceleration with some adjustments. Random noise is added to speed and eps determines the magnitude of the relative error. 
+    :match_6: choose_acceleration|||Specifies the behavior of the driver. this is the only decision the driver gets to make; everythig else is determined by the "physics" of the simulation.
+    :match_7: length|||The lenght of the highway.
+    :match_8: locs|||Contains the locations of the drivers.
+    :match_9: dist|||The distance between driver and the next driver ahead. 
+
