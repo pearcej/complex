@@ -104,5 +104,15 @@ In order to move an agent, we copy its value (1 or 2) from ``source`` to ``dest`
 Finally, we replace the entry in ``empty_locs`` with ``source``, so the cell that just became empty can be chosen by the next agent.
 
 
+.. fillintheblank:: Q10.3.1
+    :casei:
+
+    The way Happiness is computed is base on if self.p is |blank| than frac_same. please use a word to describe the relationship
+
+    - :greater: Correct!
+      :less: Look again at the relationship of the two numbers.
+      :\<: please use a word to describe the relationship
+      :\>: please use a word to describe the relationship
+      :x: Incorrect please try again.
 
 
