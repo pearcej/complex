@@ -77,17 +77,6 @@ These are the phenomena we want to explain. So far, our model doesn’t do the j
 
    Evolution is a change in the distribution of genotypes in individuals of a population.
 
-.. fillintheblank:: q_12.7.2
-   :casei:
-
-   The theory of evolution is powerful because it explains |blank|, |blank|, and |blank| which are phenomena seen in the natural world that seem inexplicable initially.
-
-   - :adaptation: Correct
-     :x: Incorrect, please refer back to the text.
-   - :increasing diversity: Correct
-     :x: Incorrect, please refer back to the text.
-   - :increasing complexity: Correct
-     :x: Incorrect, please refer back to the text.
 
 
 

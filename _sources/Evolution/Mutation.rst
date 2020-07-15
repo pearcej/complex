@@ -63,3 +63,12 @@ At that point, the system reaches an equilibrium where mutation occupies new loc
 The number of occupied locations in equilibrium depends on the mutation rate and the degree of differential survival. In these simulations the number of unique occupied locations at any point is typically 5–15.
 
 It is important to remember that the agents in this model don’t move, just as the genotype of an organism doesn’t change. When an agent dies, it can leave a location unoccupied. And when a mutation occurs, it can occupy a new location. As agents disappear from some locations and appear in others, the population migrates across the landscape, like a glider in Game of Life. But organisms don’t evolve; populations do.
+
+.. mchoice:: CH12.9_Q1
+    :answer_a: True
+    :answer_b: False
+    :correct: b
+    :feedback_a: Incorrect, the agents actually need to be in the same location once mutation is implemented. 
+    :feedback_b: Correct, agents will all start in the same location when we have mutation.
+
+    All the agents start in the same location until we add in mutation then they start at every location across the landscape to increase the diversity of agents.
