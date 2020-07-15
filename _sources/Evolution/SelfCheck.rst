@@ -16,7 +16,7 @@ Self Check
 .. fillintheblank:: SC12_2
    :casei:
 
-   To quantify the dispersion of a population, we can compute the mean of the distances between |blank|  of |blank| (agents).
+   To quantify the dispersion of a population, we can compute the mean of the distances between |blank|  of |blank|.
 
    - :pairs: Correct.
      :x: Incorrect.

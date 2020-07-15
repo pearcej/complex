@@ -6,8 +6,8 @@ Self Check
    
    The drivers had control over one thing that eventually caused them to create the traffic jams, which was |blank|.
 
-   - :accelerations: Correct, they had control over speed!
-     :x: Incorrect, please refer to the chapter.
+   - :acceleration: Correct, they had control over speed!
+     :x: Incorrect, please refer to the section 11.2.
 
 .. dragndrop:: SC11_Q2
    :match_1: Flock centering|||Move toward the center of the flock.

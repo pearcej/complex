@@ -11,4 +11,4 @@ To get a better understanding of the tools needed to interact with and run the g
 
 - :ref:`Apendix 1<Ap_1>` Used for Anaconda
 
-- :ref:`Apendix 2<Ap_1>` Used for Google Colab
+- :ref:`Apendix 2<Ap_2>` Used for Google Colab

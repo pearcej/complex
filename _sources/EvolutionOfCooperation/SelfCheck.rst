@@ -41,7 +41,7 @@ Self Check
 
         return agent1.score, agent2.score
 
-.. parsonprob:: SC13_Q3
+.. parsonsprob:: SC13_Q3
     :language: python
 
     Please put the step function in order.
