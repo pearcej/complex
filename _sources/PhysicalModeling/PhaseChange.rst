@@ -58,19 +58,7 @@ The rapid change in behavior near the critical value is called a **phase change*
 
 A wide variety of systems display a common set of behaviors and characteristics when they are at or near a critical point. These behaviors are known collectively as **critical phenomena**. In the next section, we explore one of them: fractal geometry.
 
-.. mchoice:: q_8.5
-   :answer_a: Critical phenomena
-   :answer_b: Phase change
-   :answer_c: Random walk
-   :answer_d: None of the above
-   :correct: b
-   :feedback_a: Incorrect, critical phenomena are a common set of behaviors that a wide variety of systems display when they are at or near a critical point. 
-   :feedback_b: Correct!
-   :feedback_c: Incorrect. Random walk is used to estimate the the critical value more precisely 
-   :feedback_d: Incorrect. There is one right answer
 
-   What is the the rapid change in behavior near the critical value called?
-    
 .. fillintheblank:: q_8.5.2
    :casei:
    
