@@ -143,3 +143,14 @@ With an initial level of 10, this sand pile takes 332 time steps to reach equili
 :ref:`Figure 9.1 <sand_pile>` (middle) shows the configuration of the sand pile after dropping 200 grains onto random cells, each time running until the pile reaches equilibrium. The symmetry of the initial configuration has been broken; the configuration looks random.
 
 Finally :ref:`Figure 9.1<sand_pile>` (right) shows the configuration after 400 drops. It looks similar to the configuration after 200 drops. In fact, the pile is now in a steady state where its statistical properties don’t change over time. I’ll explain some of those statistical properties in the next section.
+
+
+.. fillintheblank:: q_9.4.1
+    :casei:
+
+    The sand pile above reached an equilibrium after |blank| steps.
+
+    - :332: Correct!
+      :200: Sorry, This is pile is not yet at equalibrium.
+      :400: Sorry, This pile has not change for a while.
+      :x: Incorrect, try again.
