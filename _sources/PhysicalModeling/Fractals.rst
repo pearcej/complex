@@ -61,3 +61,22 @@ Finally, for Rule 18 (right), the estimated slope is about 1.57, which is clearl
 
 This way of estimating a fractal dimension is called **box-counting**. For more about it, see http://thinkcomplex.com/box.
 
+.. fillintheblank:: q_8.6.1
+    :casei:
+    
+    The estimated slope of rule 20 is |Blank|, the estimated slope of rule 50 is |Blank|, and the estimated slope of rule 18 is |Blank|.
+
+    - :1.01: Correct!
+      :1.97: Look again at what rule's slope you are looking.
+      :1.57: Close, but this is not the slope for this rule.
+      :x: Incorrect, please try again.
+
+    - :1.97: Correct!
+      :1.57: Close, but this is not the slope for this rule.
+      :1.01: This is incorrect sorry, please pay attention to what rule the blank is for. 
+      :x: Incorrect, please try again.
+
+    - :1.57: Correct!
+      :1.01: This is incorrect sorry, please pay attention to what rule the blank is for. 
+      :1.97: Look again at what rule's slope you are looking.
+      :x: Incorrect, please try again.
