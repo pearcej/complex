@@ -62,14 +62,18 @@ This function identifies porous cells, where ``a==1``, that have at least one we
 
 :ref:`Figure 8.5<fig_first_three>` shows the first few steps of a percolation model with ``n=10`` and ``p=0.7``. Non-porous cells are white, porous cells are lightly shaded, and wet cells are dark.
 
+.. figure:: Figures/Percolation.gif
+   :align: center
+   :alt: "Gif of how liquid interacts with porous and non-porous cells."
+
+   Gif of how liquid interacts with porous and non-porous cells.
 
 .. dragndrop:: q_8.4  
-   :match_1: 1|||Percolation models can be represented using cellular automatons. Below is an out of order representation of the processes of a 2-D CA that simulates percolation. Place them in the correct order  
-   :match_2: 2|||Each cell is either “porous” with probability q or “non-porous” with probability 1-q 
-   :match_3: 3|||When the simulation begins, all cells are considered “dry” except the top row, which is “wet”
-   :match_4: 4|||During each time step, if a porous cell has at least one wet neighbor, it becomes wet. Non-porous cells stay dry
-   :match_5: 5|||The simulation runs until it reaches a “fixed point” where no more cells change state
-   :match_6: 6|||If there is a path of wet cells from the top to the bottom row, we say that the CA has a “percolating cluster”
+   :match_2: 1|||Each cell is either “porous” with probability q or “non-porous” with probability 1-q 
+   :match_3: 2|||When the simulation begins, all cells are considered “dry” except the top row, which is “wet”
+   :match_4: 3|||During each time step, if a porous cell has at least one wet neighbor, it becomes wet. Non-porous cells stay dry
+   :match_5: 4|||The simulation runs until it reaches a “fixed point” where no more cells change state
+   :match_6: 5|||If there is a path of wet cells from the top to the bottom row, we say that the CA has a “percolating cluster”
     
    Percolation models can be represented using cellular automatons. Below is an out of order representation of the processes of a 2-D CA that simulates percolation. Place them in the correct order.
 

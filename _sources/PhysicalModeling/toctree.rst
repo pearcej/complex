@@ -1,4 +1,4 @@
-Physical modeling
+Physical Modeling
 :::::::::::::::::
 
 .. toctree::

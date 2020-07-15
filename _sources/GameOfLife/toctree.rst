@@ -14,3 +14,4 @@ Game of Life
     Exercises.rst 
     Glossary.rst
     Matching.rst
+    SelfCheck.rst

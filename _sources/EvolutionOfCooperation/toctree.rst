@@ -1,4 +1,4 @@
-Evolution of cooperation
+Evolution of Cooperation
 ::::::::::::::::::::::::
 
 .. toctree::

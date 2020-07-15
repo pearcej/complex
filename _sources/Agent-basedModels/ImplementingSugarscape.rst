@@ -1,7 +1,7 @@
 Implementing Sugarscape
 ------------------------
 
-Sugarscape is more complicated than the previous models, so I won’t present the entire implementation here. I will outline the structure of the code and you can see the details in the Jupyter notebook for this chapter, ``chap09.ipynb``, which is in the repository for this book. If you are not interested in the details, you can skip this section.
+Sugarscape is more complicated than the previous models, so I won’t present the entire implementation here. I will outline the structure of the code and you can see the details in the Jupyter notebook for this chapter, ``chap10.ipynb``, which is in the repository for this book. If you are not interested in the details, you can skip this section.
 
 During each step, the agent moves, harvests sugar, and ages. Here is the ``Agent`` class and its ``step`` method:
 
@@ -60,6 +60,3 @@ I won’t show more details here; you can see them in the notebook for this chap
 
 - ``make_capacity``, which initializes the capacity of the cells using NumPy functions ``indices``, ``hypot``, ``minimum``, and ``digitize``.
 - ``look_and_move``, which uses ``argmax``.
-
-
-

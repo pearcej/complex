@@ -11,17 +11,17 @@ Find a simple model that demonstrates that behavior.
     
 Identify the elements of the model that are necessary and sufficient to produce the behavior.
 
-**Noise** In common use, noise is usually an unwanted sound, but in the context of signal processing, it is a signal that contains many frequency components.
+**Noise:** In common use, noise is usually an unwanted sound, but in the context of signal processing, it is a signal that contains many frequency components.
 
-**Pink Noise** Complex signals can be decomposed into their frequency components. In pink noise, low-frequency components have more power than high-frequency components. Specifically, the power at frequency f is proportional to 1/f.
+**Pink Noise:** Complex signals can be decomposed into their frequency components. In pink noise, low-frequency components have more power than high-frequency components. Specifically, the power at frequency :math:`f` is proportional to :math:`1/f`.
 
-**Power Spectrum** The power spectrum of a signal is a function that shows the power of each frequency component.
+**Power Spectrum:** The power spectrum of a signal is a function that shows the power of each frequency component.
 
-**Proximate Cause** It is the cause most immediately responsible for a large avalanche.
+**Proximate Cause:** It is the cause most immediately responsible for a large avalanche.
 
-**Reductionist Model** A reductionist model describes a system by describing its parts and their interactions.
+**Reductionist Model:** A reductionist model describes a system by describing its parts and their interactions.
 
-**Sand Pile Model** Proposed by Bak, Tang and Wiesenfeld in 1987. The sand pile model is a 2-D cellular automaton where the state of each cell represents the slope of a part of a sand pile.
+**Sand Pile Model:** Proposed by Bak, Tang and Wiesenfeld in 1987. The sand pile model is a 2-D cellular automaton where the state of each cell represents the slope of a part of a sand pile.
 
 **Self-Organized Critically (SOC):** It is the tendency of some systems to evolve toward, and stay in, a critical state.
 

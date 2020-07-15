@@ -1,7 +1,7 @@
 
 .. _7.1:
 
-Life pattern
+Life Pattern
 -------------
 
 
@@ -19,6 +19,12 @@ Life pattern
     :alt: "Figure 7.2: An oscillator called a toad."
 
     Figure 7.2: An oscillator called a toad.
+
+.. figure:: Figures/GoL_Toad.gif
+    :align: center 
+    :alt: "Gif of An oscillator called a toad."
+
+    Gif of An oscillator called a toad.
 
 .. _7.3:
 

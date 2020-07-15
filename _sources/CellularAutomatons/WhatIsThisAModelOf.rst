@@ -3,7 +3,7 @@
 
 .. _6.9:
 
-What is this a model of?
+What is this a Model of?
 ------------------------
 
 

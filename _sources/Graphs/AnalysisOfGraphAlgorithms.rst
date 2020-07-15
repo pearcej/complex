@@ -8,7 +8,7 @@ If you are not already familiar with analysis of algorithms, you might want to r
 
 The order of growth for graph algorithms is usually expressed as a function of :math:`n`, the number of vertices (nodes), and :math:`m`, the number of edges.
 
-As an example, let’s analyze reachable_nodes from :ref:`Section 3.6 <3.6>`
+As an example, let’s analyze ``reachable_nodes`` from :ref:`Section 3.6 <3.6>`
 
 ::
     
