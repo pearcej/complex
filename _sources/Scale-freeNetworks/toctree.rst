@@ -1,5 +1,5 @@
-Scale-Free Networks
-:::::::::::::::::::
+Scalle-Free Networks
+:::::::::::::::::::::
 
 .. toctree::
     :maxdepth: 2
@@ -16,3 +16,4 @@ Scale-Free Networks
     Exercises.rst
     Glossary.rst
     Matching.rst
+    SelfCheck.rst
