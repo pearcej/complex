@@ -1,4 +1,4 @@
-CA tables
+CA Tables
 ---------
 
 .. _6.12:

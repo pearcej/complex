@@ -1,4 +1,4 @@
-Self-organized criticality
+Self-Organized Criticality
 ::::::::::::::::::::::::::
 
 .. toctree::

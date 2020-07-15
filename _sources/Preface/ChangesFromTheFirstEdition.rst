@@ -2,7 +2,7 @@
     This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
 
 
-Changes from the first edition
+Changes from the First Edition
 -------------------------------
 
 For the second edition, I added two chapters, one on evolution, the other on the evolution of cooperation.

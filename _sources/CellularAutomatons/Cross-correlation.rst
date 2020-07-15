@@ -1,4 +1,4 @@
-Cross-correlation
+Cross-Correlation
 -----------------
 
 .. _6.11:

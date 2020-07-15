@@ -2,7 +2,7 @@
     This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
 
 
-Complexity engineering
+Complexity Engineering
 ----------------------
 
 I  have  been  talking  about  complex  systems  in  the  context  of  science,  but complexity is also a cause, and effect, of changes in engineering and the design of social systems:

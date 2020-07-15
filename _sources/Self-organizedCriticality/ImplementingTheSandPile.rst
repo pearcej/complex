@@ -79,7 +79,7 @@ This array contains the change for each cell, which we use to update the origina
         
     pile.array += c
 
-And here’s the result.
+And here’s the result:
 
 ::
 
@@ -126,6 +126,12 @@ Let’s look at a bigger example, with ``n=20``:
     pile = SandPile(n=20, level=10)
     pile.run()
 
+.. figure:: Figures/Sand_pile_3.gif
+    :align: center
+    :alt: "Gif of a sand pile running for 100 steps."
+
+    Gif of a sand pile running for 100 steps.
+ 
 .. figure:: Figures/figure_9.1.png
     :align: center 
     :alt: "Figure 9.1: Sand pile model initial state (left), after 200 steps (middle), and 400 steps (right)."

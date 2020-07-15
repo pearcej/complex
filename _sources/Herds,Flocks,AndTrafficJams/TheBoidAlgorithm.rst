@@ -1,4 +1,4 @@
-The Boid algorithm
+The Boid Algorithm
 ----------------------
 ``Boids7.py`` defines two classes: ``Boid``, which implements the Boid behaviors, and ``World``, which contains a list of Boids and a “carrot” the Boids are attracted to.
 

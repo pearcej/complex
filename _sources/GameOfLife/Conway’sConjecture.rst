@@ -1,6 +1,6 @@
 .. _7.4:
 
-Conway’s conjecture
+Conway’s Conjecture
 --------------------
 
 From most initial conditions, GoL quickly reaches a stable state where the number of live cells is nearly constant (possibly with some oscillation).
@@ -10,6 +10,12 @@ From most initial conditions, GoL quickly reaches a stable state where the numbe
     :alt: "Figure 7.4: Starting and final configurations of the r-pentomino."
 
     Figure 7.4: Starting and final configurations of the r-pentomino.
+   
+.. figure:: Figures/GoL_R_Pentomino.gif
+    :align: center 
+    :alt: "Gif of  Starting and final configurations of the r-pentomino."
+
+    Gif of  Starting and final configurations of the r-pentomino.
 
 .. _7.5:
 
@@ -24,6 +30,12 @@ This configuration is “final” in the sense that all remaining patterns are e
     :alt: "Figure 7.5: Gosper’s glider gun, which produces a stream of gliders."
 
     Figure 7.5: Gosper’s glider gun, which produces a stream of gliders.
+
+.. figure:: Figures/GoL_Glider_Gun.gif
+    :align: center 
+    :alt: "Gif of Gosper’s glider gun, which produces a stream of gliders."
+
+    Gif of Gosper’s glider gun, which produces a stream of gliders.
 
 
 The existence of long-lived patterns prompted Conway to wonder if there are initial patterns that never stabilize. He conjectured that there were not, but he described two kinds of pattern that would prove him wrong, a “gun” and a “puffer train”. A gun is a stable pattern that periodically produces a spaceship — as the stream of spaceships moves out from the source, the number of live cells grows indefinitely. A puffer train is a translating pattern that leaves live cells in its wake.

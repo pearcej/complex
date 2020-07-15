@@ -26,7 +26,7 @@ More generally, we can enumerate the edges like this:
             v = nodes[j % n]
             yield u, v
 
-``adjacent_edges`` takes a list of nodes and a parameter, ``halfk``, which is half of :math:`k`. It is a generator function that yields one edge at a time. It uses the modulus operator, :math:`%`, to wrap around from the highest-numbered node to the lowest.
+``adjacent_edges`` takes a list of nodes and a parameter, ``halfk``, which is half of :math:`k`. It is a generator function that yields one edge at a time. It uses the modulus operator, :math:`\%`, to wrap around from the highest-numbered node to the lowest.
 
 We can test it like this:
 

@@ -1,9 +1,11 @@
-Installing Andaconda
----------------------
+.. _Ap_1:
+
+Installing Juypter Notebooks through Anaconda
+---------------------------------------------
 
 If you don't already have Jupyter, I highly recommend installing Anaconda, which is a Python distribution that contains everything you need for the workshop. It is easy to install on Windows, Mac, and Linux, and because it does a user-level install, it will not interfere with other Python installations.
 
-Information about installing Anaconda is here.
+Information about installing Anaconda is here: https://www.anaconda.com/products/individual
 
 The code for the tutorial works in Python 2 and Python 3, but I recommend Python 3.
 

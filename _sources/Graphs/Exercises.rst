@@ -1,8 +1,8 @@
 Exercises
 ---------
-The code for this chapter is in chap02.ipynb, which is a Jupyter notebook in the repository for this book. For more information about working with this code, see :ref:`Section 1.4 <1.4>`.
+The code for this chapter is in chap03.ipynb, which is a Jupyter notebook in the repository for this book. For more information about working with this code, see :ref:`Section 1.4 <1.4>`.
 
-**Exercise 1:**   Launch chap02.ipynb and run the code. There are a few short exercises embedded in the notebook that you might want to try.
+**Exercise 1:**   Launch chap03.ipynb and run the code. There are a few short exercises embedded in the notebook that you might want to try.
 
 **Exercise 2:**   In :ref:`Section 3.9 <3.9>` we analyzed the performance of reachable_nodes and classified it in :math:`O(n + m)`, where n is the number of nodes and :math:`m` is the number of edges. Continuing the analysis, what is the order of growth for ``is_connected``?
 

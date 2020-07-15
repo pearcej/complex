@@ -8,3 +8,4 @@ Matching
     :match_4: Cross-correlation|||Adding selected elements from an array.
     :match_5: Falsifiability|||A demarcation between scientific hypotheses and pseudoscience
     :match_6: Unfalsifiability|||A hypothesis that cannot be proven true or false based on observation or physical experiment.
+    :match_7: Church-Turing Thesis|||The claim that these definitions of computability capture something essential that is independent of any particular model of computation
