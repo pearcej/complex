@@ -91,3 +91,16 @@ The other characteristics Axelrod identifies in successful strategies are retali
 This result provides weak support for the claim that successful strategies retaliate. But maybe it’s not necessary for all agents, or even many, to be retaliatory; if there is at least some tendency toward retaliation in the population as a whole, that might be enough to prevent high-defection strategies from gaining ground.
 
 To measure forgiveness, I define one more ``instrument`` to see whether agents might be more likely to cooperate after D-C in the previous two rounds, compared to C-D. In my simulations, there is no evidence for this particular kind of forgiveness. On the other hand, the strategies in these simulations are necessarily forgiving because they consider only the previous two rounds of history. In this context, forgetting is a kind of forgiving.
+
+.. mchoice:: Ch13.8_Q1
+    :answer_a: 4 rounds
+    :answer_b: 1 round
+    :answer_c: 2 rounds
+    :answer_d: It takes all of the rounds into consideration. 
+    :correct_: c
+    :feedback_a: Incorrect, please look at the amount of rounds again.
+    :feedback_b: Incorrect, please look at the amount of rounds again.
+    :feedback_c: Correct, they only base their decisions based on the previous two rounds.
+    :feedback_d: Incorrect, there is a number of rounds after which the strategies "forget" about what happened.
+
+    How many rounds do the strategies in these simulations take into consideration when choosing weather to cooperate or defect?
