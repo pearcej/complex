@@ -59,14 +59,3 @@ We can test ``make_ring_lattice`` like this:
     lattice = make_ring_lattice(10, 4)
 
 :ref:`Figure 4.1 <fig_4.1>` shows the result.
-
-.. fillintheblank:: question_4.4.1
-        :casei:
-
-        |blank| is a graph with n nodes, the nodes can be arranged in a circle with each node connected to the k nearest neighbors.
- 
-        - :ring lattice: Correct.
-          :WS graphs: Incorrect. WS graphs in the book refer to the Watts-Strogatz model that is based on a random graph generation model which produces graphs with small-world properties.
-          :Regular graph: Incorrect. A regular graph is a graph where each node has the same number of neighbors. This graph is a kind of regular graph. Please try again.
-          :x: Try again.
-
