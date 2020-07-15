@@ -59,6 +59,11 @@ In this version of the simulation, the number of new agents during each time ste
 
    What happens when an agent dies in this version of the simulation? 
 
-
+.. dragndrop:: CH12.5_Q2
+    :match_1: fit_land|||A reference to a FitnessLandscape object.
+    :match_2: agents||| An array of Agent objects.
+    :match_3: git_fitnesses|||Returns an array containing the fitness of each agent.
+    :match_4: choose_dead|||Decides which agents die during this time step, and returns an array that contains the indices of the dead agents.
+    :match_5: choose_replacements|||Decides which agents reproduce during this time step, invokes copy on each one, and returns an array of new Agent objects.
 
 
