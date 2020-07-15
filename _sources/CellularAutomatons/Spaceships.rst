@@ -33,11 +33,3 @@ After about 100 steps the background settles into a simple repeating pattern, bu
 Collisions between spaceships yield different results depending on the types of the spaceships and the phase they are in when they collide. Some collisions annihilate both ships; others leave one ship unchanged; still others yield one or more ships of different types.
 
 These collisions are the basis of computation in a Rule 110 CA. If you think of spaceships as signals that propagate through space, and collisions as gates that compute logical operations like AND and OR, you can see what it means for a CA to perform a computation.
-
-.. fillintheblank:: q1_6.7
-   :casei:
-
-   Several CAs are Turing complete, this means they can compute any computable function. What is this property called? |blank|
-
-   - :universality: Correct!
-     :x: Incorrect. Please take a closer look to the properties of CAs.
