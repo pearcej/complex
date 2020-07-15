@@ -30,7 +30,7 @@ To test this claim, we’ll develop algorithms to generate random graphs and che
    :answer_b: False
    :correct: a   
    :feedback_a: Correct! The value of p is greater than p*
-   :feedback_b: Not quite. Look at the two values and see how they compare
+   :feedback_b: Not quite. In an ER graph when p is higher than p* this leads to a greater possiblity of the graph being connected.
 
-   Given that a graph a has a p* = .6 and a p = .7 is it more likely to be connected.
+   Given that an Erdős-Rényi graph (ER graph) a has a :math:`p* = .6` and a :math:`p = .7` it is more likely to be connected.
 
