@@ -18,11 +18,17 @@ Racism is a complex human problem; it is hard to imagine that such a simple mode
 
 Of course, we have to keep in mind the limitations of this argument: Schelling’s model demonstrates a possible cause of segregation, but says nothing about actual causes.
 
-.. mchoice:: q_10
-    :answer_a: True
-    :answer_b: False
-    :correct: b
-    :feedback_a: Incorrect as it only gives the possible causes.
-    :feedback_b: Correct!
 
-    Schelling model gives the actual causes for racism.
+
+.. fillintheblank:: CH10.2_Q1
+    :casei:
+
+    Schelling's model demonstrates a |blank| cause of segregation, but says nothing about |blank| causes. 
+
+    - :possible: Correct!
+      :actual: Incorrect, look again at what is demonstrated through the model.
+      :x: Incorrect, please try again.
+    
+    - :actual: Correct!
+      :possible: Look again at what the sections say about the model demonstrating. 
+      :x: Incorrect, please try again.
