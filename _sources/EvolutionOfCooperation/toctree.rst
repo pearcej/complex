@@ -16,3 +16,4 @@ Evolution of Cooperation
     Exercises.rst
     Glossary.rst
     Matching.rst
+    SelfCheck.rst

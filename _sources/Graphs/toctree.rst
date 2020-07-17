@@ -16,6 +16,7 @@ Graphs
     Exercises.rst
     Glossary.rst
     Matching.rst
+    SelfCheck.rst
 
 
     

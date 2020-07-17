@@ -21,9 +21,3 @@ Over the course of the book I will offer my answers to these questions, but they
 .. shortanswer:: q1_4.9_
 
     Considering the passage above, what is the difference between a Watts and Strogatz model and the like, and a conventional mathematical model?
-
-.. dragndrop:: q2_4.9
-    :match_1: Simulation based, abstract and less formal|||Watts and Strogatz model, and the like
-    :match_2: Mathematical models|||Very formal, not abstract, analytic 
-
-    Match the following to the correct model based on the passage above.

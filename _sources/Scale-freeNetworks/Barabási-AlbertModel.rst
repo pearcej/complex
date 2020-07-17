@@ -57,4 +57,17 @@ In the exercises at the end of this chapter, you can explore other models intend
 
    Table 5.1: Characteristics of the Facebook dataset compared to two models.
 
+.. fillintheblank:: fitb_5.6
+   :casei:
+
+   The 3 features that distinguish a BA model from a WS model are |blank|, |blank|, and a degree distribution that obeys a |blank|.
+
+   - :growth: Correct, a BA model will start with a small graph and add vertices one at a time instead of starting with a fixed number of vertices.
+     :preferential attachment: Please move this answer to the second blank. 
+     :x: Incorrect.
+   - :preferential attachment: Correct, when a new edge is created, it is more likely to connect to a vertex that already has a large number of edges.
+     :growth: Please move this answer to the first blank. 
+     :x: Incorrect.
+   - :power law: Corect.
+     :x: Incorrect.
 

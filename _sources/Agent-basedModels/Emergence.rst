@@ -29,19 +29,10 @@ The examples in this book and the principle of computational equivalence give go
 
 You can read more about emergence at http://thinkcomplex.com/emerge.
 
-.. shortanswer:: q_10.8
+.. fillintheblank:: q_10.8
+   :casei:
 
-   What is emergent property? Explain.
+   Many cellular automatons are |blank|, which means that ther are no shortcuts.
 
-.. mchoice:: q_10.9
-   :answer_a: Because it is caused by all the moving of the agents.
-   :answer_b: Because it is not caused by racist agents.
-   :answer_c: Because the agents were highly xenophobic.
-   :answer_d: Because the agents were chosen at random.
-   :correct: b
-   :feedback_a: Incorrect, the movement of the agents does not matter.
-   :feedback_b: Correct!
-   :feedback_c: Incorrect, the agents in the Schelling model were mildly xenophobic.
-   :feedback_d: Incorrect, randomness does not affect the emergent property.
-
-   Why does the author say that the segregation seen in Schelling’s model is an emergent property?
+   - :computationally irreducible: Correct, just like other complex systesm cellular automatons are computationally irreducible. 
+     :x: Incorrect
