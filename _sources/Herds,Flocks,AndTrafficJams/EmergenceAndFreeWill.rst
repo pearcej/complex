@@ -24,11 +24,3 @@ These arguments reconcile the conflict in opposite ways, but they agree that the
 
 The complex systems in this book suggest the alternative that free will, at the level of options and decisions, is compatible with determinism at the level of neurons (or some lower level). In the same way that a traffic jam moves backward while the cars move forward, a person can have free will even though neurons don’t.
 
-.. dragndrop:: q_11.7.3
-    :match_1: The Rule 30 cellular automaton|||Is deterministic, and the rules that govern its evolution are completely known.
-    :match_2: Schelling's model|||Are not racist, but the outcome of their interactions is a high degree of segregation
-    :match_3: Sugarscape|||Agents in this model form waves that move diagonally even though they cannot do so on their own.
-    :match_4: Traffic jams|||Move backward even though the cars in them are moving forward.
-    :match_5: Flocks and heards|||They behave as if they are centrally organized even though the animals in them are making individual decisions based on local information.
-
-    Many complex systems have properties as a whole that their components do not. Drag and drop the properties of single agents and the behaviors of the complex system to the correct model.

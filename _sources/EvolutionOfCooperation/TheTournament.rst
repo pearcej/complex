@@ -64,3 +64,8 @@ After the given number of rounds, ``play`` returns the total score for each agen
 ``i_row`` and ``j_row`` contain the indices of the pairings. totals contains the total score of each agent.
 
 Inside the loop, we select two agents, invoke ``play``, and update ``totals``. At the end, we compute the average number of points each agent got, per round and per opponent, and store the results in the ``fitness`` attribute of each agent.
+
+.. dragndrop:: Ch13.6_Q1
+    :match_1: reset|||Initializes the agents before the first round, resetting their scores and the history of their responses.
+    :match_2: respond|||Asks each agent for their response, given the opponent’s previous responses.
+    :match_3: append|||Updates each agent by storing the choices and adding up the scores from successive rounds.

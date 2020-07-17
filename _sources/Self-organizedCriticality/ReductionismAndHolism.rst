@@ -57,8 +57,8 @@ For reductionist models, realism is the primary virtue, and simplicity is second
    :answer_a: Reductionist Model
    :answer_b: Holistic Model
    :correct: b
-   :feedback_a: sorry try again, this is a more abstract model than what a reductionist approach would use.
-   :feedback_b: Correct!
+   :feedback_a: Incorrect, the sand pile model is a more abstract model than what a reductionist approach would use.
+   :feedback_b: Correct, the sand pile model is holistic because it is an abstracted model oh physical systems and it follows the three steps of holistic models. 
 
-   Given the explanation above, the sand pile model is  most accurately described as a? 
+   Given the explanation above, the sand pile model is most accurately described as a? 
    

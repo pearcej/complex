@@ -44,8 +44,8 @@ If we know the relationship between :math:`n` and :math:`m`, we can simplify thi
    :answer_a: True
    :answer_b: False
    :correct: a   
-   :feedback_a: Correct! If a node has k neighbors, it is added to stack k times.
-   :feedback_b: Incorrect
+   :feedback_a: Correct, if a node has k neighbors, it is added to stack k times.
+   :feedback_b: Incorrect, it depends on the amount of neighbors the node has.
 
    It is possible for a node to be added to the stack multiple times depending on the amount of neighbors the node has
 

@@ -5,7 +5,7 @@ Watts-Strogatz graphs are intended to model networks in the natural and social s
 
 In this section we’ll perform the same analysis with a different dataset, a set of Facebook users and their friends. If you are not familiar with Facebook, users who are connected to each other are called “friends”, regardless of the nature of their relationship in the real world.
 
-I’ll use data from the Stanford Network Analysis Project (SNAP), which shares large datasets from online social networks and other sources. Specifically, I’ll use their Facebook data1, which includes 4039 users and 88,234 friend relationships among them. This dataset is in the repository for this book, but it is also available from the SNAP website at http://thinkcomplex.com/snap.
+I’ll use data from the Stanford Network Analysis Project (SNAP), which shares large datasets from online social networks and other sources. Specifically, I’ll use their Facebook data, which includes 4039 users and 88,234 friend relationships among them. This dataset is in the repository for this book, but it is also available from the SNAP website at http://thinkcomplex.com/snap.
 
 The data file contains one line per edge, with users identified by integers from 0 to 4038. Here’s the code that reads the file:
 
@@ -88,15 +88,15 @@ And the average path is 3.7, which is quite short in a network of more than 4000
 
 Now let’s see if we can construct a WS graph that has the same characteristics as this network.
 
-.. mchoice:: mc-ex-1
-   :answer_a: Low clustering and high path length
-   :answer_b: High clustering and high path length
-   :answer_c: Low clustering and low path length
-   :answer_d: High clustering and low path length.
-   :correct: d
-   :feedback_a: Not quite. Try again. .
-   :feedback_b: No, this would not be ideal.
-   :feedback_c: No, keep trying.
-   :feedback_d: Correct! In a small world graph, things are very clustered and have little space between then, hence their low path length.
-    
-   What are the characteristics of a small world graph?
+.. dragndrop:: Q1_5.2
+    :match_1: loadtext|||A function that reads the given file and returns the contents as a NumPy array.
+    :match_2: average_clustering|||Function provided by networkx that computes the network average clustering coefficient.
+    :match_3: n|||The number of nodes.
+    :match_4: K|||The number of neighbors each node is connected to.
+    :match_5: G|||A graph.
+    :match_6: nodes|||The list of nodes to sample from and if this is None, we sample from the entire graph.
+    :match_7: Trails|||Is the number of random paths to sample.
+    :match_8: pairs|||A NumPy array of randomly chosen nodes with one row for each trial and two columns.
+    :match_9: estimate_path_length|||Function that  generates a list of random path lengths and returns their mean.
+    :match_10: L|||Is computed using estimate_path_lengths.
+    :match_11: C|||Is computed using average_clustering.
