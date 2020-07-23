@@ -105,7 +105,7 @@ With ``mode='same'``, ``correlate2d`` considers the boundary of the array to be 
 
 The return value is a tuple that contains the number of time steps and the total number of cells that toppled.
 
-If you are not familiar with ``itertools.count``, it is an infinite generator that counts up from the given initial value, so the for loop runs until step returns 0. You can read about the ``itertools`` module at http://thinkcomplex.com/iter.
+If you are not familiar with ``itertools.count``, it is an infinite generator that counts up from the given initial value, so the for loop runs until step returns 0.
 
 Finally, the drop method chooses a random cell and adds a grain of sand:
 

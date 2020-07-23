@@ -27,7 +27,7 @@ However, the standard deviation of degree in the model is 1.5, which is not clos
 
 What’s the problem? To get a better view, we have to look at the distribution of degrees, not just the mean and standard deviation.
 
-I’ll represent the distribution of degrees with a ``Pmf`` object, which is defined in the thinkstats2 module. ``Pmf`` stands for “probability mass function”; if you are not familiar with this concept, you might want to read `Chapter 3 <http://greenteapress.com/thinkstats2/html/thinkstats2004.html#sec31>`_ of *Think Stats, 2nd edition* at http://thinkcomplex.com/ts2.
+I’ll represent the distribution of degrees with a ``Pmf`` object, which is defined in the thinkstats2 module. ``Pmf`` stands for “probability mass function”.
 
 Briefly, a ``Pmf`` maps from values to their probabilities. A ``Pmf`` of degrees is a mapping from each possible degree, ``d``, to the fraction of nodes with degree ``d``.
 

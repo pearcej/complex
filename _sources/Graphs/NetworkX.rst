@@ -11,7 +11,7 @@ NetworkX
    Figure 3.2: An undirected graph that represents driving time between cities.
 
 
-To represent graphs, we’ll use a package called NetworkX, which is the most commonly used network library in Python. You can read more about it at http://thinkcomplex.com/netx, but I’ll explain it as we go along.
+To represent graphs, we’ll use a package called NetworkX, which is the most commonly used network library in Python. 
 
 
 We can create a directed graph by importing NetworkX (usually imported as ``nx``) and instantiating ``nx.DiGraph``:

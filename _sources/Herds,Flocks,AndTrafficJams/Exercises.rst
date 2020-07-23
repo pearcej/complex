@@ -1,6 +1,6 @@
 Exercises
 -------------
-The code for the traffic jam simulation is in the Jupyter notebook ``chap11.ipynb`` in the repository for this book. Open this notebook, read the code, and run the cells. You can use this notebook to work on the following exercise. My solutions are in ``chap11soln.ipynb``.
+The code for the traffic jam simulation is in the Jupyter notebook chap11.ipynb_ in the repository for this book. Open this notebook, read the code, and run the cells. You can use this notebook to work on the following exercise.
 
 **Exercise 1:**  In the traffic jam simulation, define a class, ``BetterDriver``, that inherits from ``Driver`` and ``overrides`` ``choose_acceleration``. See if you can define driving rules that do better than the basic implementation in ``Driver``. You might try to achieve higher average speed, or a lower number of collisions.
 
@@ -17,4 +17,6 @@ Read the code to see how the parameters control Boid behaviors. Experiment with 
 
 To generate more bird-like behavior, Flake suggests adding a behavior to maintain a clear line of sight; in other words, if there is another bird directly ahead, the Boid should move away laterally. What effect do you expect this rule to have on the behavior of the flock? Implement it and see.
 
-**Exercise 3:**  Read more about free will at http://thinkcomplex.com/will. The view that free will is compatible with determinism is called compatibilism. One of the strongest challenges to compatibilism is the “consequence argument”. What is the consequence argument? What response can you give to the consequence argument based on what you have read in this book?
+**Exercise 3:** The view that free will is compatible with determinism is called compatibilism. One of the strongest challenges to compatibilism is the “consequence argument”. What is the consequence argument? What response can you give to the consequence argument based on what you have read in this book?
+
+.. _chap11.ipynb: https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap11.ipynb

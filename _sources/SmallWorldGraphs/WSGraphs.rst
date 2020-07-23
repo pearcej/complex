@@ -34,7 +34,7 @@ If we are rewiring an edge from node ``u`` to node ``v``, we have to choose a re
 3. Then we remove the existing edge from ``u`` to ``v``, and
 4. Add a new edge from ``u`` to ``new_v``.
 
-As an aside, the expression ``G[u]`` returns a dictionary that contains the neighbors of ``u`` as keys. It is usually faster than using ``G.neighbors`` (see http://thinkcomplex.com/neigh).
+As an aside, the expression ``G[u]`` returns a dictionary that contains the neighbors of ``u`` as keys. It is usually faster than using ``G.neighbors``.
 
 This function does not consider the edges in the order specified by Watts and Strogatz, but that doesn’t seem to affect the results.
 

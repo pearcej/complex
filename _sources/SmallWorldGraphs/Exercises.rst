@@ -8,7 +8,7 @@ All ring lattices are regular, but not all regular graphs are ring lattices. In 
 Write a function called make_regular_graph that takes n and k and returns a regular graph that contains n nodes, where every node has k neighbors. If it’s not possible to make a regular graph with the given values of n and k, the function should raise a ValueError.
 
 **Exercise 2:**  
-My implementation of ``reachable_nodes_bfs`` is efficient in the sense that it is in O(n + m), but it incurs a lot of overhead adding nodes to the queue and removing them. NetworkX provides a simple, fast implementation of BFS, available from the NetworkX repository on GitHub at http://thinkcomplex.com/connx.
+My implementation of ``reachable_nodes_bfs`` is efficient in the sense that it is in O(n + m), but it incurs a lot of overhead adding nodes to the queue and removing them. NetworkX provides a simple, fast implementation of BFS, available from the NetworkX repository on GitHub.
 
 Here is a version I modified to return a set of nodes:
 
@@ -61,6 +61,6 @@ Dijkstra’s algorithm solves the “single source shortest path” problem, but
 
 Of course, one option is to run Dijkstra’s algorithm n times, once for each starting node. And for some applications, that’s probably good enough. But there are are more efficient alternatives.
 
-Find an algorithm for the all-pairs shortest path problem and implement it. See http://thinkcomplex.com/short.
+Find an algorithm for the all-pairs shortest path problem and implement it.
 
 Compare the run time of your implementation with running Dijkstra’s algorithm n times. Which algorithm is better in theory? Which is better in practice? Which one does NetworkX use?

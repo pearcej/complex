@@ -1,6 +1,6 @@
 Stanley Milgram
 ---------------
-Stanley Milgram was an American social psychologist who conducted two of the most famous experiments in social science, the Milgram experiment, which studied people’s obedience to authority (http://thinkcomplex.com/milgram) and the Small World Experiment, which studied the structure of social networks (http://thinkcomplex.com/small).
+Stanley Milgram was an American social psychologist who conducted two of the most famous experiments in social science, the Milgram experiment, which studied people’s obedience to authority and the Small World Experiment, which studied the structure of social networks.
 
 In the Small World Experiment, Milgram sent a package to several randomly-chosen people in Wichita, Kansas, with instructions asking them to forward an enclosed letter to a target person, identified by name and occupation, in Sharon, Massachusetts (which happens to be the town near Boston where I grew up). The subjects were told that they could mail the letter directly to the target person only if they knew him personally; otherwise they were instructed to send it, and the same instructions, to a relative or friend they thought would be more likely to know the target person.
 

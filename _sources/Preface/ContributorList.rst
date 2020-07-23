@@ -5,7 +5,6 @@
 Contributor List
 -----------------
 
-If you have a suggestion or correction, please send email to downey@allendowney.com.
 If I make a change based on your feedback, I will add you to the contributor list (unless you ask to be omitted).
 
 Let me know what version of the book you are working with, and what format.

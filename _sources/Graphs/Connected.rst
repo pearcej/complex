@@ -4,7 +4,7 @@
 Connected Graphs
 ----------------
 
-A graph is connected if there is a path from every node to every other node (see http://thinkcomplex.com/conn).
+A graph is connected if there is a path from every node to every other node.
 
 For many applications involving graphs, it is useful to check whether a graph is connected. Fortunately, there is a simple algorithm that does it.
 

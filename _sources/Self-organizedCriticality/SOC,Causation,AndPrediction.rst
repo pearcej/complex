@@ -13,7 +13,7 @@ Similarly, Charles Perrow has suggested that failures in large engineered system
 
 These conclusions are not comforting. Among other things, they imply that large earthquakes and some kinds of accidents are fundamentally unpredictable. It is impossible to look at the state of a critical system and say whether a large avalanche is “due”. If the system is in a critical state, then a large avalanche is always possible. It just depends on the next grain of sand.
 
-In a sand pile model, what is the cause of a large avalanche? Philosophers sometimes distinguish the proximate cause, which is most immediately responsible, from the ultimate cause, which is considered some deeper kind of explanation (see http://thinkcomplex.com/cause).
+In a sand pile model, what is the cause of a large avalanche? Philosophers sometimes distinguish the proximate cause, which is most immediately responsible, from the ultimate cause, which is considered some deeper kind of explanation.
 
 
 In the sand pile model, the **proximate cause** of an avalanche is a grain of sand, but the grain that causes a large avalanche is identical to every other grain, so it offers no special explanation. The **ultimate cause** of a large avalanche is the structure and dynamics of the systems as a whole: large avalanches occur because they are a property of the system.
