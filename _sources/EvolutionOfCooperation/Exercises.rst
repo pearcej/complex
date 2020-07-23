@@ -1,6 +1,6 @@
 Exercises
 ---------------
-The code for this chapter is in the Jupyter notebook ``chap13.ipynb`` in the repository for this book. Open the notebook, read the code, and run the cells. You can use this notebook to work on the following exercises. My solutions are in ``chap13soln.ipynb``.
+The code for this chapter is in the Jupyter notebook chap13.ipynb_ in the repository for this book. Open the notebook, read the code, and run the cells. You can use this notebook to work on the following exercises.
 
 **Exercise 1:**  The simulations in this chapter depend on conditions and parameters I chose arbitrarily. As an exercise, I encourage you to explore other conditions to see what effect they have on the results. Here are some suggestions:
 
@@ -17,9 +17,4 @@ To distinguish between these explanations, try lowering the mutation rate to see
 
 **Exercise 3:**  The agents in my experiment are “reactive” in the sense that their choice during each round depends only on what the opponent did during previous rounds. Explore strategies that also take into account the agent’s past choices. These strategies can distinguish an opponent who retaliates from an opponent who defects without provocation.
 
-1
-Here’s a recent report with references to previous experiments: Barreda-Tarrazona, Jaramillo-Gutiérrez, Pavan, and Sabater-Grande, “Individual Characteristics vs. Experience: An Experimental Study on Cooperation in Prisoner’s Dilemma", Frontiers in Psychology, 2017; 8: 596. http://thinkcomplex.com/pdexp.
-2
-For an excellent video summarizing what we have discussed so far, see http://thinkcomplex.com/pdvid1.
-3
-And that introduces a whole new topic in game theory, the free-rider problem (see http://thinkcomplex.com/rider)
+.. _chap13.ipynb: https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap13.ipynb

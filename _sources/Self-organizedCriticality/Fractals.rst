@@ -92,7 +92,7 @@ The second line unpacks the rows and assigns them to ``steps``, ``steps2``, and 
 
 :ref:`Figure 9.5 <box_count>` shows the results. On a log-log scale, the cell counts form nearly straight lines, which indicates that we are measuring fractal dimension over a valid range of box sizes.
 
-To estimate the slopes of these lines, we can use the SciPy function ``linregress``, which fits a line to the data by linear regression (see http://thinkcomplex.com/regress).
+To estimate the slopes of these lines, we can use the SciPy function ``linregress``, which fits a line to the data by linear regression.
 
 ::
 

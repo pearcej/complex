@@ -9,8 +9,6 @@ He invited participants to submit strategies in the form of computer programs, t
 In Axelrod’s tournaments, a simple strategy that did surprisingly well was called “tit for tat", or TFT. TFT always cooperates during the first round of an iterated match; after that, it copies whatever the opponent did during the previous round. If the opponent keeps cooperating, TFT keeps cooperating. If the opponent defects at any point, TFT defects in the next round. But if the opponent goes back to cooperating, so does TFT.
 
 
-For more information about these tournaments, and an explanation of why TFT does so well, see this video: http://thinkcomplex.com/pdvid2.
-
 Looking at the strategies that did well in these tournaments, Alexrod identified the characteristics they tended to share:
 
 - **Nice**: The strategies that do well cooperate during the first round, and generally cooperate as often as they defect in subsequent rounds.

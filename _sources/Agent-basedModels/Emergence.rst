@@ -27,7 +27,6 @@ The status of emergent properties is a topic of debate, so it is appropriate to 
 
 The examples in this book and the principle of computational equivalence give good reasons to believe that at least some emergent properties can never be “explained” by a classical reductionist model.
 
-You can read more about emergence at http://thinkcomplex.com/emerge.
 
 .. fillintheblank:: q_10.8
    :casei:

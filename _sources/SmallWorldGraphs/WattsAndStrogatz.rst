@@ -2,7 +2,7 @@ Watts and Strogatz
 ------------------
 .. _4.3:
 
-In 1998 Duncan Watts and Steven Strogatz published a paper in *Nature*, “Collective dynamics of ‘small-world’ networks”, that proposed an explanation for the small world phenomenon. You can download it from http://thinkcomplex.com/watts.
+In 1998 Duncan Watts and Steven Strogatz published a paper in *Nature*, “Collective dynamics of ‘small-world’ networks”, that proposed an explanation for the small world phenomenon.
 
 
 Watts and Strogatz start with two kinds of graphs that were well understood: random graphs and regular graphs. In a random graph, nodes are connected at random. In a **regular graph**, every node has the same number of neighbors. They consider two properties of these graphs, clustering and path length:

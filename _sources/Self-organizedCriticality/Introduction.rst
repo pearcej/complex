@@ -12,4 +12,6 @@ This observation raises a natural question: why do so many natural systems have 
 
 In this chapter I’ll present a **sand pile model** that was the first system shown to exhibit SOC.
 
-The code for this chapter is in ``chap09.ipynb`` in the repository for this book. More information about working with the code is in :ref:`Section 1.4 <1.4>`.
+The code for this chapter is in chap09.ipynb_ in the repository for this book. More information about working with the code is in :ref:`Section 1.4 <1.4>`.
+
+.. _chap09.ipynb: https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap09.ipynb

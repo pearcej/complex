@@ -18,7 +18,6 @@ To see whether you are comfortable with instrumentalism, I made up the following
 
 If you are more comfortable with some of these statements than others, ask yourself why. What are the differences in these scenarios that influence your reaction? Can you make a principled distinction between them?
 
-For more on instrumentalism, see http://thinkcomplex.com/instr.
 
 .. mchoice:: q_7.11
    :answer_a: True

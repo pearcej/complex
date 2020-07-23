@@ -2,7 +2,7 @@
 Schelling’s Model
 ------------------
 
-In 1969 Thomas Schelling published “Models of Segregation”, which proposed a simple model of racial segregation. You can read it at http://thinkcomplex.com/schell.
+In 1969 Thomas Schelling published “Models of Segregation”, which proposed a simple model of racial segregation.
 
 The Schelling model of the world is a grid where each cell represents a house. The houses are occupied by two kinds of agents, labeled red and blue, in roughly equal numbers. About 10% of the houses are empty.
 

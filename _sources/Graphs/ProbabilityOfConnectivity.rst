@@ -30,8 +30,6 @@ For given values of :math:`n` and :math:`p`, we would like to know the probabili
 
 The parameters ``n`` and ``p`` are passed along to ``make_random_graph``; ``iters`` is the number of random graphs we generate.
 
-This function uses a list comprehension; if you are not familiar with this feature, you can read about it at http://thinkcomplex.com/comp.
-
 The result, ``tf``, is a list of boolean values: ``True`` for each graph that’s connected and ``False`` for each one that’s not.
 
 ``np.mean`` is a NumPy function that computes the mean of this list, treating ``True`` as 1 and ``False`` as 0. The result is the fraction of random graphs that are connected.
