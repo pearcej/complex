@@ -160,6 +160,15 @@ If we processed one possibility every second, it would take us
 77,146,816,596 years to go through the entire array. This is probably not
 going to be a good solution.
 
+Brute Force on TSP
+^^^^^^^^^^^^^^^^^^^^
+
+The Brute Force solution to the Traveling Salesperson problem is terrible. The problem says that a salesperson needs to travel  to each country in the EU and take the shortest path all together. Using brute force to solve this problem yields 27 factorial ways for the salesperson to travel to each city. This means that there are 10,888,869,450,418,352,160,768,000,000
+possible paths for the salesperson to travel when you use the brute force solution. The fastest processor available currently is around 5GHz, and 1GHz represents 1 billion cycles per second. If you could do a single computation in a cycle, then a computation would take 2/5,000,000,000 which equals 0.0000000004 seconds. We can call this computation rate. Note that processors typically take more than one cycle to complete an instruction, but for the last decade or so most processors are multicore…. So, this is a rough estimate. Next you should take, computation rate times number of paths to give the amount of time in seconds, then divide that by the number of seconds in a year :math:`((24*60)*60)*365`. It would take 345,283,785,211,134,961,972.60273972602739726027 years for the Brute Force Solution to find the shortest path.
+
+
+
+
 Solution 4: Count and Compare
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -250,15 +259,14 @@ problem.
 
        .. code-block:: cpp
 
-         int main(){
-             int test = 0;
-             for (int i = 0; i < n; i++){
-                 for (int j = 0; j < n; j++){
-                     test = test + i * j;
-                 }
-             }
-             return 0;
-         }
+         int main():
+            test = 0;
+            for i in n:
+                for j in n:
+                    test = test + i * j;
+                 
+             
+            return 0;
 
    .. mchoice:: analysis_2
        :answer_a: O(n)
@@ -275,16 +283,13 @@ problem.
 
        .. code-block:: cpp
 
-         int main(){
-             int test = 0;
-             for (int i = 0; i < n; i++){
-                 test = test + 1;
-             }
-             for (int j = 0; j < n; j++){
-                 test = test - 1;
-             }
-             return 0;
-         }
+         int main():
+            test = 0;
+            for i in n:
+                test = test + 1;
+            for j in n:
+                test = test - 1;
+            return 0;
 
    .. mchoice:: analysis_3
        :answer_a: O(n)
@@ -301,15 +306,14 @@ problem.
 
        .. code-block:: cpp
 
-         int main(){
-             int i = n;
-             int count = 0;
-             while (i > 0){
-                 count = count + 1;
-                 i = i // 2;
-             }
-             return 0;
-         }
+         int main():
+            i = n;
+            count = 0;
+            while i > 0:
+                count = count + 1;
+                i = i // 2;
+            
+            return 0;
 
    .. fillintheblank:: fill1512
 
