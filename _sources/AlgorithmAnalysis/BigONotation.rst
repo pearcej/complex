@@ -221,7 +221,7 @@ to see that :math:`T(n)` then follows the quadratic function as
 
 .. admonition:: Self Check
 
-   Write two C++ functions to find the minimum number in an array.  The first function should compare each number to every other number on the array. :math:`O(n^2)`.  The second function should be linear :math:`O(n)`.
+   Write two Python functions to find the minimum number in an list.  The first function should compare each number to every other number on the list. :math:`O(n^2)`.  The second function should be linear :math:`O(n)`.
     
 
 .. fillintheblank:: bigOquestion
