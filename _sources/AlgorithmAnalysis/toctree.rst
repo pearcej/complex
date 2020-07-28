@@ -8,7 +8,5 @@ Analysis
     WhatIsAlgorithmAnalysis.rst
     BigONotation.rst
     AnAnagramDetectionExample.rst
-    StringAnalysis.rst
-    HashTableAnalysis.rst
     Glossary.rst
     Matching.rst
