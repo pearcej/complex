@@ -13,7 +13,7 @@ the other?
 
 In order to answer this question, we need to remember that there is an
 important difference between a program and the underlying algorithm that
-the program is representing. As we stated in Chapter 1, an **algorithm** is
+the program is representing. An **algorithm** is
 a generic, step-by-step list of instructions for solving a problem. It
 is a method for solving any instance of the problem such that given a
 particular input, the algorithm produces the desired result. A program,
@@ -32,31 +32,6 @@ iterates through the *n* integers, adding each to the accumulator.
 **Listing 1**
 
 .. tabbed:: ec1
-
-  .. tab:: C++
-
-    .. activecode:: ec1_cpp
-        :caption: C++
-        :language: cpp
-
-        #include <iostream>
-        using namespace std;
-
-         //adds the sum of (n + n-1 + n-2 ...)
-        int sumOfN(int n){
-            int theSum = 0;
-            for (int i = 0; i < n+1; i++){
-                theSum = theSum + i;
-            }
-            return theSum;
-        }
-
-        int main(){
-        
-            // n is 10 (10 + 9 + 8 ...)
-            cout << sumOfN(10); 
-            return 0;
-        }
 
   .. tab:: Python
 
@@ -89,32 +64,6 @@ during the accumulation step that was not really necessary.
 
 .. tabbed:: ec2
 
-    .. tab:: C++
-
-        .. activecode:: ec2_cpp
-            :caption: Another Summation of the First n Integers in C++
-            :language: cpp
-
-            #include <iostream>
-            using namespace std;
-
-            //Performs same function as listing 1, but is less descriptive 
-            //This is not good practice 
-
-            int foo(int tom){
-                int fred = 0;
-                for (int bill = 0; bill < tom+1; bill++){
-                    int barney = bill;
-                    fred = fred + barney;
-                }
-                return fred;
-            }
-
-            int main(){
-                cout << foo(10);
-                return 0;
-            }
-
     .. tab:: Python
 
         .. activecode:: ec2_py
@@ -138,11 +87,8 @@ during the accumulation step that was not really necessary.
 The question we raised earlier asked whether one function is better than
 another. The answer depends on your criteria. The function ``sumOfN`` is
 certainly better than the function ``foo`` if you are concerned with
-readability. In fact, you have probably seen many examples of this in
-your introductory programming course since one of the goals there is to
-help you write programs that are easy to read and easy to understand. In
-this course, however, we are also interested in characterizing the
-algorithm itself. (We certainly hope that you will continue to strive to
+readability. In this course, however, we are also interested in characterizing
+the algorithm itself. (We certainly hope that you will continue to strive to
 write readable, understandable code.)
 
 Algorithm analysis is concerned with comparing algorithms based upon the
@@ -168,52 +114,17 @@ measure is sometimes referred to as the “execution time” or “running
 time” of the algorithm. One way we can measure the execution time for
 the function ``sumOfN`` is to do a benchmark analysis. This means that
 we will track the actual time required for the program to compute its
-result. In C++, we can benchmark a function by noting the starting
-time and ending time with respect to the system we are using. In the
-``ctime`` library there is a function called ``clock`` that will return the
-current system clock time in seconds since some arbitrary starting
-point. By calling this function twice, at the beginning and at the end,
-and then computing the difference, we can get an exact number of seconds
-(fractions in most cases) for execution.
+result. In the ``ctime`` library there is a function called ``clock`` 
+that will return the current system clock time in seconds since some 
+arbitrary starting point. By calling this function twice, at the beginning 
+and at the end, and then computing the difference, we can get an exact
+number of seconds (fractions in most cases) for execution.
 
 .. _lst_sum11:
 
 **Listing 3**
 
 .. tabbed:: cpp
-
-  .. tab:: C++
-
-    .. activecode:: ec2cpp
-       :caption: C++
-       :language: cpp
-
-        #include <iostream>
-        #include <ctime>
-        using namespace std;
-
-        //Performs same function as listing one, and also list the time it takes to perform 
-        //the function 
-
-        int sumofN2(int n) {
-            clock_t begin = clock();
-            int theSum = 0;
-            for(int i = 0; i < n+1; i++){
-                theSum = theSum + i;
-            }
-            clock_t end = clock();
-            double elapsed_secs = double(end - begin) /CLOCKS_PER_SEC;
-            cout << fixed << endl;
-            cout << "Sum is " << theSum << " required "<<elapsed_secs << " seconds" << endl;
-            return theSum;
-       }
-
-       int main(){
-           for (int i = 0; i < 6; i++){
-                sumofN2(10000);
-           }
-           return 0;
-       }
 
   .. tab:: Python
 
@@ -249,19 +160,9 @@ and then computing the difference, we can get an exact number of seconds
 calls embedded before and after the summation. The function returns the amount of time (in seconds)
 required for the calculation.
 
-Consider the following code block:
-
-::
-
-    int n = 1000;
-    int theSum = 0;
-    for (int i=0; i<n+1; i++){
-      theSum = theSum + 1; //how many times?
-    }
-
 .. fillintheblank:: bigo1
 
-   How many times is the `theSum = theSum + 1` line executed?
+   In :ref:`Listing 3 <lst_sum11>` above, how many times is the `theSum = theSum + 1` line executed?
 
    - :1001: Right! Good job!
      :1000: No. Look carefully at the loop condition i<n+1.
@@ -329,57 +230,14 @@ Hence, when we have a variable `n`, we have learned that we can just use the
 closed equation :math:`\sum_{i=1}^{n} i = \frac {(n)(n+1)}{2}` to
 compute the sum of the first ``n`` integers without iterating.
 
-Consider the following function:
 
-::
-
-    int sumOfN3(int n){
-      int sum_n = (n*(n+1))/2; // how many times?
-      return sum_n;
-    }
-
-.. fillintheblank:: bigo2
-
-   If `SumOfN3` is called once with a parameter of `n=10`, how many times is the `int sum_n = (n*(n+1))/2;` line executed?
-
-   - :1: Right! Good job!
-     :10: No, consider that the function is called only once, and n is the parameter.
-     :default: Incorrect. Please try again.
-
-
-
-
-We see this in :ref:`ActiveCode 4 <active3cpp>`,
+We see this in :ref:`ActiveCode 4 <lst_sum3>`,
 which shows ``sumOfN3``
 taking advantage of the formula we just developed.
 
 .. _lst_sum3:
 
 .. tabbed:: change_this
-
-  .. tab:: C++
-
-    .. activecode:: active3cpp
-        :caption: Summation Without Iteration C++
-        :language: cpp
-
-        //Performs same function as listing one, and also list the time it takes to perfrom 
-        //the function, and it performs better with larger inputs or (n)
-
-        #include <iostream>
-        using namespace std;
-        #include <ctime>
-
-        int sumOfN3(int n){
-            int sum_n = (n*(n+1))/2;
-            return sum_n;
-        }
-
-        int main(){
-            cout << sumOfN3(10);
-            return 0;
-        }
-
 
   .. tab:: Python
 

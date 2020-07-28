@@ -21,9 +21,7 @@ Solution 1: Checking Off
 Our first solution to the anagram problem will check the lengths of the
 strings and then to see that each character in the first string actually
 occurs in the second. If it is possible to “checkoff” each character, then
-the two strings must be anagrams. Checking off a character will be
-accomplished by replacing it with the special C++ character ``\0``.
-The first step in the
+the two strings must be anagrams. The first step in the
 process will be to convert the second string to a local second string
 for checking off.
 Each character
@@ -33,57 +31,6 @@ and if found, checked off by replacement. :ref:`ActiveCode 1 <lst_anagramSolutio
 .. _lst_anagramSolution:
 
 .. tabbed:: ec5
-
-  .. tab:: C++
-
-    .. activecode:: active0cpp
-        :caption: Checking Off C++
-        :language: cpp
-
-        #include <iostream>
-        #include <string>
-        using namespace std;
-
-        //checks to see if the anagrams have the same number of characters
-
-        bool anagramsolution1(string s1, string s2){
-            bool stillOK = true;
-            if (s1.length() != s2.length()) {
-                stillOK = false;
-                return stillOK;
-            }
-            string locals2 = s2;
-            int n = s1.length();
-            unsigned int pos1 = 0;
-
-            // checks to see if all of the letters are the same in both inputs 
-
-            while (pos1 < s1.length() && stillOK){
-                int pos2 = 0;
-                bool found = false;
-                while (pos2 < n && !found){
-                    if (s1[pos1] == locals2[pos2]){
-                        found = true;
-                    } else{
-                        pos2 = pos2 + 1;
-                    }
-                }
-                if (found){
-                    locals2[pos2] = '\0';
-                }
-                else{
-                    stillOK = false;
-                }
-                pos1 = pos1 + 1;
-            }
-            return stillOK;
-        }
-
-        int main(){
-            bool value = anagramsolution1("abcd", "dcab");
-            cout << value << endl;
-            return 0;
-        }
 
   .. tab:: Python
 
@@ -129,7 +76,7 @@ characters in ``s1`` will cause an iteration through up to *n*
 characters in the array from ``s2``. Each of the *n* positions in the
 array will be visited once to match a character from ``s1``. The number
 of visits then becomes the sum of the integers from 1 to *n*. We stated
-earlier that this can be written as
+earlier that this can be written as:
 
 .. math::
 
@@ -153,41 +100,6 @@ this solution.
 .. _lst_ana2:
 
 .. tabbed:: ec6
-
-  .. tab:: C++
-
-    .. activecode:: active6cpp
-        :caption: Sort and Compare C++
-        :language: cpp
-
-        #include <iostream>
-        #include <string>
-        #include <algorithm>
-        using namespace std;
-
-        // sorts anagrams in order from a-z, and then compares them 
-        bool anagramsolution2(string s1, string s2){
-            sort(s1.begin(), s1.end());
-            sort(s2.begin(), s2.end());
-
-            unsigned int pos = 0;
-            bool matches = true;
-
-            while (pos < s1.length() && matches){
-                if (s1[pos] == s2[pos]){
-                    pos = pos + 1;
-                } else{
-                    matches = false;
-                }
-            }
-            return matches;
-        }
-
-        int main(){
-            bool value = anagramsolution2("abcde", "edcba");
-            cout << value << endl;
-            return 0;
-        }
 
   .. tab:: Python
 
@@ -221,12 +133,10 @@ At first glance you may be tempted to think that this algorithm is
 :math:`O(n)`, since there are three consecutive simple iterations:
 the first two to convert strings to char arrays and the last
 to compare the *n*
-characters after the sorting process. However, the two calls to the
-C++ ``sort`` function are not without their own cost. As we will see in
-a later chapter, sorting is typically either :math:`O(n^{2})` or
-:math:`O(n\log n)`, so the sorting operations dominate the iteration.
-In the end, this algorithm will have the same order of magnitude as that
-of the sorting process.
+characters after the sorting process. Sorting is typically either 
+:math:`O(n^{2})` or :math:`O(n\log n)`, so the sorting operations
+dominate the iteration. In the end, this algorithm will have the 
+same order of magnitude as that of the sorting process.
 
 Solution 3: Brute Force
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -250,6 +160,15 @@ If we processed one possibility every second, it would take us
 77,146,816,596 years to go through the entire array. This is probably not
 going to be a good solution.
 
+Brute Force on TSP
+^^^^^^^^^^^^^^^^^^^^
+
+The Brute Force solution to the Traveling Salesperson problem is terrible. The problem says that a salesperson needs to travel  to each country in the EU and take the shortest path all together. Using brute force to solve this problem yields 27 factorial ways for the salesperson to travel to each city. This means that there are 10,888,869,450,418,352,160,768,000,000
+possible paths for the salesperson to travel when you use the brute force solution. The fastest processor available currently is around 5GHz, and 1GHz represents 1 billion cycles per second. If you could do a single computation in a cycle, then a computation would take 2/5,000,000,000 which equals 0.0000000004 seconds. We can call this computation rate. Note that processors typically take more than one cycle to complete an instruction, but for the last decade or so most processors are multicore…. So, this is a rough estimate. Next you should take, computation rate times number of paths to give the amount of time in seconds, then divide that by the number of seconds in a year :math:`((24*60)*60)*365`. It would take 345,283,785,211,134,961,972.60273972602739726027 years for the Brute Force Solution to find the shortest path.
+
+
+
+
 Solution 4: Count and Compare
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -266,57 +185,6 @@ anagrams. :ref:`ActiveCode 3 <lst_ana4>` shows this solution.
 .. _lst_ana4:
 
 .. tabbed:: Count_and_Compare
-
-  .. tab:: C++
-
-    .. activecode:: active7cpp
-        :caption: Count and Compare C++
-        :language: cpp
-
-        #include <iostream>
-        #include <string>
-        using namespace std;
-
-        // uses an array to count the number of a ocurrences of the two inputs 
-        // if the number of occurrences is the same then the input is an anagram
-
-        bool anagramSolution4(string s1, string s2){
-            int c1[26] = {0};
-            int c2[26] = {0};
-
-            int x;
-            int a = 'a';
-            for (unsigned int i = 0; i < s1.length(); i++){
-                x = s1[i] - a;
-                int pos = x;
-                c1[pos] = c1[pos] + 1;
-            }
-
-            int y;
-            int b = 'a';
-            for (unsigned int i = 0; i < s2.length(); i++){
-                y = s2[i] - b;
-                int pos = y;
-                c2[pos] = c2[pos] + 1;
-            }
-
-            int j = 0;
-            bool stillOK = true;
-            while (j < 26 && stillOK){
-                if (c1[j] == c2[j]){
-                    j = j + 1;
-                } else{
-                    stillOK = false;
-                }
-            }
-            return stillOK;
-        }
-
-        int main(){
-            bool value = anagramSolution4("apple", "pleap");
-            cout << value << endl;
-            return 0;
-        }
 
   .. tab:: Python
 
@@ -391,15 +259,14 @@ problem.
 
        .. code-block:: cpp
 
-         int main(){
-             int test = 0;
-             for (int i = 0; i < n; i++){
-                 for (int j = 0; j < n; j++){
-                     test = test + i * j;
-                 }
-             }
-             return 0;
-         }
+         int main():
+            test = 0;
+            for i in n:
+                for j in n:
+                    test = test + i * j;
+                 
+             
+            return 0;
 
    .. mchoice:: analysis_2
        :answer_a: O(n)
@@ -416,16 +283,13 @@ problem.
 
        .. code-block:: cpp
 
-         int main(){
-             int test = 0;
-             for (int i = 0; i < n; i++){
-                 test = test + 1;
-             }
-             for (int j = 0; j < n; j++){
-                 test = test - 1;
-             }
-             return 0;
-         }
+         int main():
+            test = 0;
+            for i in n:
+                test = test + 1;
+            for j in n:
+                test = test - 1;
+            return 0;
 
    .. mchoice:: analysis_3
        :answer_a: O(n)
@@ -442,15 +306,14 @@ problem.
 
        .. code-block:: cpp
 
-         int main(){
-             int i = n;
-             int count = 0;
-             while (i > 0){
-                 count = count + 1;
-                 i = i // 2;
-             }
-             return 0;
-         }
+         int main():
+            i = n;
+            count = 0;
+            while i > 0:
+                count = count + 1;
+                i = i // 2;
+            
+            return 0;
 
    .. fillintheblank:: fill1512
 

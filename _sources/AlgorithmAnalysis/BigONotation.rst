@@ -68,21 +68,21 @@ would say then that the function :math:`T(n)` has an order of
 magnitude :math:`f(n)=n^{2}`, or simply that it is :math:`O(n^{2})`.
 
 
-    .. mchoice:: bigo3
-        :answer_a: O(2n)
-        :answer_b: O(n)
-        :answer_c: O(3n<sup>2</sup>)
-        :answer_d: O(n<sup>2</sup>)
-        :answer_e: More than one of the above
-        :correct: d
-        :feedback_a: No, 3n<sup>2</sup> dominates 2n. Try again.
-        :feedback_b: No, n<sup>2</sup> dominates n. Try again.
-        :feedback_c: No, the 3 should be omitted because n<sup>2</sup> dominates.
-        :feedback_d: Right!
-        :feedback_e: No, only one of them is correct. Try again.
+.. mchoice:: bigo3
+    :answer_a: O(2n)
+    :answer_b: O(n)
+    :answer_c: O(3n<sup>2</sup>)
+    :answer_d: O(n<sup>2</sup>)
+    :answer_e: More than one of the above
+    :correct: d
+    :feedback_a: No, 3n<sup>2</sup> dominates 2n. Try again.
+    :feedback_b: No, n<sup>2</sup> dominates n. Try again.
+    :feedback_c: No, the 3 should be omitted because n<sup>2</sup> dominates.
+    :feedback_d: Right!
+    :feedback_e: No, only one of them is correct. Try again.
 
 
-        If the exact number of steps is :math:`T(n)=2n+3n^{2}-1` what is the Big O?
+    If the exact number of steps is :math:`T(n)=2n+3n^{2}-1` what is the Big O?
 
 
 Although we do not see this in the summation example, sometimes the
@@ -156,34 +156,6 @@ analyze performance.
 
 **Listing 2**
 
-**C++ Implementation**
-
-::
-
-    #include <iostream>
-    using namespace std;
-
-    int main(){
-        int a=5;
-        int b=6;
-        int c=10;
-        for (int i=0; i<n; i++){
-            for (int j=0; j<n; j++){
-                int x = i * i;
-                int y = j * j;
-                int z = i * j;
-            }
-        }
-
-        for (int k = 0; k < n; k++){
-            int w = a*k + 45;
-            int v = b*b;
-        }
-        int d = 33;
-        return 0;
-    }
-
-**Python Implementation**
 
 ::
 
@@ -232,73 +204,73 @@ to see that :math:`T(n)` then follows the quadratic function as
 :math:`n` continues to grow.
 
 .. mchoice:: crossoverefficiency
-        :answer_a: Algorithm 1 will require a greater number of steps to complete than Algorithm 2
-        :answer_b: Algorithm 2 will require a greater number of steps to complete than Algorithm 1
-        :answer_c: Algorithm 1 will require a greater number of steps to complete than Algorithm 2 until they reach the crossover point
-        :answer_d: Algorithm 1 and 2 will always require the same number of steps to complete
-        :correct: c
-        :feedback_a: This could be true depending on the input, but consider the broader picture
-        :feedback_b: This could be true depending on the input, but consider the broader picture
-        :feedback_c: Correct!
-        :feedback_d: No, the efficiency of both will depend on the input
+    :answer_a: Algorithm 1 will require a greater number of steps to complete than Algorithm 2
+    :answer_b: Algorithm 2 will require a greater number of steps to complete than Algorithm 1
+    :answer_c: Algorithm 1 will require a greater number of steps to complete than Algorithm 2 until they reach the crossover point
+    :answer_d: Algorithm 1 and 2 will always require the same number of steps to complete
+    :correct: c
+    :feedback_a: This could be true depending on the input, but consider the broader picture
+    :feedback_b: This could be true depending on the input, but consider the broader picture
+    :feedback_c: Correct!
+    :feedback_d: No, the efficiency of both will depend on the input
 
-        Which of the following statements is true about the two algorithms?
-        Algorithm 1: 100n + 1
-        Algorithm 2: n^2 + n + 1
+    Which of the following statements is true about the two algorithms?
+    Algorithm 1: 100n + 1
+    Algorithm 2: n^2 + n + 1
 
 
 .. admonition:: Self Check
 
-   Write two C++ functions to find the minimum number in an array.  The first function should compare each number to every other number on the array. :math:`O(n^2)`.  The second function should be linear :math:`O(n)`.
+   Write two Python functions to find the minimum number in an list.  The first function should compare each number to every other number on the list. :math:`O(n^2)`.  The second function should be linear :math:`O(n)`.
     
 
-    .. fillintheblank:: bigOquestion
-        :casei:
+.. fillintheblank:: bigOquestion
+    :casei:
 
-        The Big O of a particular algorithm is :math:`O(n^{2})`. Given that it takes 2 seconds to complete the algorithm with 1 million inputs;
+    The Big O of a particular algorithm is :math:`O(n^{2})`. Given that it takes 2 seconds to complete the algorithm with 1 million inputs;
 
-        how long would it take with 2 million inputs? ``|blank|`` seconds. 
+    how long would it take with 2 million inputs? ``|blank|`` seconds. 
+    
+    10 million? ``|blank|``
+
+    -   :8: Correct!
+        :2: Incorrect. Remember, think about what it means for the n to be squared.
+    -   :200: Correct! 
+        :x: Incorrect. Remember, think about what it means for the n to be squared.
+
+.. fillintheblank:: bigologn
+    :casei:
+
+    The Big O of a particular algorithm is :math:`O(log_{2}n)`. Given that it takes 2 seconds to complete the algorithm with 3 million inputs;
+    how long would it take with 4 million inputs? You may use a calculator on this one.
+    ``|blank|`` seconds.
         
-        10 million? ``|blank|``
+    10 million? 
+    ``|blank|`` seconds.
 
-        -   :8: Correct!
-            :2: Incorrect. Remember, think about what it means for the n to be squared.
-        -   :200: Correct! 
-            :x: Incorrect. Remember, think about what it means for the n to be squared.
+    -   :.74: Correct!
+        :.2 .53: Try higher.
+        :2.26 3: Try lower.
+        :.*: Incorrect. try again.
+    -   :3.44: Correct! 
+        :.43 3: Incorrect. Try higher. Think about what happens to the time as more operations occur.
+        :6.45 3: Incorrect. Try lower. Think about what happens to the time as more operations occur.
+        :.*: Incorrect. try again.
+.. fillintheblank:: bigon3
+    :casei:
 
-    .. fillintheblank:: bigologn
-        :casei:
+    The Big O of a particular algorithm is :math:`O(n^{3})`. Given that it takes 2 seconds to complete the algorithm with 1000 inputs;
+    how long would it take with 2000 inputs? 
+    ``|blank|`` seconds.
 
-        The Big O of a particular algorithm is :math:`O(log_{2}n)`. Given that it takes 2 seconds to complete the algorithm with 3 million inputs;
-        how long would it take with 4 million inputs? You may use a calculator on this one.
-        ``|blank|`` seconds.
-         
-        10 million? 
-        ``|blank|`` seconds.
+    10,000? 
+    ``|blank|`` seconds. 
 
-        -   :.74: Correct!
-            :.2 .53: Try higher.
-            :2.26 3: Try lower.
-            :.*: Incorrect. try again.
-        -   :3.44: Correct! 
-            :.43 3: Incorrect. Try higher. Think about what happens to the time as more operations occur.
-            :6.45 3: Incorrect. Try lower. Think about what happens to the time as more operations occur.
-            :.*: Incorrect. try again.
-    .. fillintheblank:: bigon3
-        :casei:
-
-        The Big O of a particular algorithm is :math:`O(n^{3})`. Given that it takes 2 seconds to complete the algorithm with 1000 inputs;
-        how long would it take with 2000 inputs? 
-        ``|blank|`` seconds.
-
-        10,000? 
-        ``|blank|`` seconds. 
-
-        -   :16: Correct!
-            :6 9: Incorrect. Try higher. Think about what happens to the time as more operations occur.
-            :23 6: Incorrect. Try lower. Think about what happens to the time as more operations occur.
-        -   :2000: Correct!
-            :1500 499: Incorrect. Try higher. Think about what happens to the time as more operations occur. 
-            :2500 499: Incorrect. Try lower. Think about what happens to the time as more operations occur. 
-            :.*: Incorrect. 
-        
+    -   :16: Correct!
+        :6 9: Incorrect. Try higher. Think about what happens to the time as more operations occur.
+        :23 6: Incorrect. Try lower. Think about what happens to the time as more operations occur.
+    -   :2000: Correct!
+        :1500 499: Incorrect. Try higher. Think about what happens to the time as more operations occur. 
+        :2500 499: Incorrect. Try lower. Think about what happens to the time as more operations occur. 
+        :.*: Incorrect. 
+    
