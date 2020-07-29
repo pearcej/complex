@@ -5,15 +5,15 @@ On Complexity
 We are very grateful to Allen B. Downey for his work in writing
 <a href="https://greenteapress.com/wp/think-complexity-2e/">Think Complexity</a>
 and for releasing it under the
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)>
-Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0))</a>
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)</a>
 which forms the core of this interactive book.
 
 The chapter on Algorithm Analysis was ported from one by Jan Pearce, Brad Miller, and David Ranum
 for the <a href="https://runestone.academy/runestone/static/cppds/index.html">Problem Solving with Algorithms and Data Structures using C++</a>
 which was also released under the
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)>
-Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0))</a>
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)</a>
 </div>
 
 Getting Started
