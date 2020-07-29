@@ -2,17 +2,17 @@ On Complexity
 =============
 
 We are very grateful to Allen B. Downey for his work in writing
-`Think Complexity<https://greenteapress.com/wp/think-complexity-2e/>`_
+`Think Complexity <https://greenteapress.com/wp/think-complexity-2e>`_
 and for releasing it under the
-`Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)<href="http://creativecommons.org/licenses/by-nc-sa/4.0/>_
+`Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0) <href="http://creativecommons.org/licenses/by-nc-sa/4.0>`_
 which forms the core of this interactive book.
 
 
 The chapter on Algorithm Analysis was ported from one by Jan Pearce, Brad Miller, and David Ranum
 for the
-`Problem Solving with Algorithms and Data Structures using C++<https://runestone.academy/runestone/static/cppds/index.html>`_
+`Problem Solving with Algorithms and Data Structures using C++ <https://runestone.academy/runestone/static/cppds/index.html>`_
 which was also released under the
-`Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)<href="http://creativecommons.org/licenses/by-nc-sa/4.0/>`_
+`Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0) <href="http://creativecommons.org/licenses/by-nc-sa/4.0>`_
 
 
 We are extremely grateful to Berea College's work program and the superb Berea College students who converted this
