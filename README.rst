@@ -1,13 +1,25 @@
-Thinking Complexity
-=============================================================
+On Complexity
+=============
 
-This book began as the paper book, *Problem Solving with Algorithms and Data Structures Using Python*, first published by Franklin Beedle & Associates written by Brad Miller and David Ranum back in 2005.  It was translated to C++ by Jan Pearce and a team of excellent Berea
-College students in the summer of 2018. We are all grateful for the vision of Jim Leisy who gave permission to take the original Python version of this text and freely publish it online as an interactive textbook.
+<div style="width: 500px; margin-left: auto; margin-right: auto;">
+We are very grateful to Allen B. Downey for his work in writing
+<a href="https://greenteapress.com/wp/think-complexity-2e/")Think Complexity</a>
+and for releasing it under the
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)>
+Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0))</a>
+which forms the core of this interactive book.
+
+The chapter on Algorithm Analysis was ported from one by Jan Pearce, Brad Miller, and David Ranum
+for the <a href="https://runestone.academy/runestone/static/cppds/index.html">Problem Solving with Algorithms and Data Structures using C++</a>
+which was also released under the
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)>
+Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0))</a>
+</div>
 
 Getting Started
 ===============
 
-We have tried to make it as easy as possible for you to build and use this book.  
+We have tried to make it as easy as possible for you to build and use this book.
 
 1. You can see and read this book online at `interactivepython.org <http://interactivepython.org/runestone/static/cppds/index.html>`_
 
