@@ -20,8 +20,8 @@ if master_url is None:
     master_url = get_master_url()
 
 master_app = 'runestone'
-serving_dir = './build/Complex'
-dynamic_pages = False
+serving_dir = './build/complex'
+dynamic_pages = True
 if dynamic_pages:
     dest = './published'
 else:
