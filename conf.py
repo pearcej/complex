@@ -43,7 +43,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'Problem Solving with Algorithms and Data Structures'
+project = 'On Complexity'
 copyright = '2020 Jan Pearce'
 
 # The version info for the project you're documenting, acts as replacement for
