@@ -1,11 +1,12 @@
 .. On Complexity documentation master file, ported from a
    sphinx-quickstart file made on Thu Oct 27 08:17:45 2011.
+
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
 .. meta::
-   :description: On Complexity is began from e2 of Think Complexity by Allen B. Downey
-   :keywords: Complexity Science,
+   :description: On Complexity is began from Edition 2 of Think Complexity by Allen B. Downey
+   :keywords: Complexity Science, Game of Life
 
 .. toc_version: 2
 
@@ -47,16 +48,21 @@ By Jan Pearce, Berea College
 Acknowledgements
 ::::::::::::::::
 
-We are very grateful to Allen B. Downey for his work in writing
-[Think Complexity](https://greenteapress.com/wp/think-complexity-2e/)
-and for releasing it under the
-[Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)](Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0))
-which forms the core of this interactive book.
+.. raw:: html
 
-The chapter on Algorithm Analysis was ported from one by Jan Pearce, Brad Miller, and David Ranum
-for the [Problem Solving with Algorithms and Data Structures using C++ ](https://runestone.academy/runestone/static/cppds/index.html)
-which was also released under the
-[Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)](Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)). 
+   We are very grateful to Allen B. Downey for his work in writing
+   [Think Complexity](https://greenteapress.com/wp/think-complexity-2e/)
+   and for releasing it under the
+   <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)>
+   Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0))</a>
+   which forms the core of this interactive book.
+
+   The chapter on Algorithm Analysis was ported from one by Jan Pearce, Brad Miller, and David Ranum
+   for the <a href="https://runestone.academy/runestone/static/cppds/index.html">Problem Solving with Algorithms and Data Structures using C++</a>
+   which was also released under the
+   <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)>
+   Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0))</a>
+
 
 Indices and tables
 ::::::::::::::::::
