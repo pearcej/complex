@@ -50,6 +50,7 @@ Acknowledgements
 
 .. raw:: html
 
+   <div style="width: 500px; margin-left: auto; margin-right: auto;">
    We are very grateful to Allen B. Downey for his work in writing
    [Think Complexity](https://greenteapress.com/wp/think-complexity-2e/)
    and for releasing it under the
@@ -62,6 +63,7 @@ Acknowledgements
    which was also released under the
    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)>
    Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0))</a>
+   </div>
 
 
 Indices and tables
