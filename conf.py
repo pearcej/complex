@@ -1,6 +1,6 @@
 ﻿# -*- coding: utf-8 -*-
 #
-# Problem Solving with Algorithms and Data Structures documentation build configuration file, created by
+# On Complexity documentation build configuration file, created by
 # sphinx-quickstart on Thu Oct 27 08:17:45 2011.
 #
 # This file is execfile()d with the current directory set to its containing dir.
@@ -44,7 +44,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'Problem Solving with Algorithms and Data Structures'
-copyright = '2018 Brad Miller, David Ranum, Jan Pearce'
+copyright = '2020 Jan Pearce'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
