@@ -52,7 +52,7 @@ Acknowledgements
 
    <div style="width: 500px; margin-left: auto; margin-right: auto;">
    We are very grateful to Allen B. Downey for his work in writing
-   <a href="https://greenteapress.com/wp/think-complexity-2e/")Think Complexity</a>
+   <a href="https://greenteapress.com/wp/think-complexity-2e/">Think Complexity</a>
    and for releasing it under the
    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)>
    Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0))</a>
