@@ -1,6 +1,8 @@
 On Complexity
 =============
 
+.. raw:: html
+
 <div style="width: 500px; margin-left: auto; margin-right: auto;">
 We are very grateful to Allen B. Downey for his work in writing
 <a href="https://greenteapress.com/wp/think-complexity-2e/">Think Complexity</a>
@@ -14,6 +16,9 @@ for the <a href="https://runestone.academy/runestone/static/cppds/index.html">Pr
 which was also released under the
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
 Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)</a>
+
+We are extremely grateful to Berea College's work program and the superb Berea College students who converted this
+book to Runestone in Spring and Summer 2020.
 </div>
 
 Getting Started
@@ -21,13 +26,13 @@ Getting Started
 
 We have tried to make it as easy as possible for you to build and use this book.
 
-1. You can see and read this book online at `interactivepython.org <http://interactivepython.org/runestone/static/cppds/index.html>`_
+1. You can see and read this book online at `Runestone Interactive <https://runestone.academy/runestone/books/published/httlads/index.html>`_
 
 2.  You can build it and host it yourself in just a few simple steps:
 
     1.  ``pip install git+git://github.com/RunestoneInteractive/RunestoneComponents.git``  -- Should install everything you need
-    2.  ``runestone build`` -- will build the html and put it in ``./build/cppds``
-    3.  ``runestone serve``   -- will start a webserver and serve the pages locally from ``./build/cppds``
+    2.  ``runestone build`` -- will build the html and put it in ``./build/complex``
+    3.  ``runestone serve``   -- will start a webserver and serve the pages locally from ``./build/complex``
 
 Licensing
 =========
