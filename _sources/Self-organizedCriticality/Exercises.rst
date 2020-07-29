@@ -1,6 +1,6 @@
 Exercises
 ---------
-The code for this chapter is in the Jupyter notebook ``chap09.ipynb`` in the repository for this book. Open this notebook, read the code, and run the cells. You can use this notebook to work on the following exercises. My solutions are in ``chap09soln.ipynb``.
+The code for this chapter is in the Jupyter notebook chap09.ipynb_ in the repository for this book. Open this notebook, read the code, and run the cells. You can use this notebook to work on the following exercises. 
 
 **Exercise 1:** To test whether the distributions of ``T`` and ``S`` are heavy-tailed, we plotted their PMFs on a log-log scale, which is what Bak, Tang and Wiesenfeld show in their paper. But as we saw in :ref:`Section 5.8 <5.8>`, this visualization can obscure the shape of the distribution. Using the same data, make a plot that shows the cumulative distributions (CDFs) of ``S`` and ``T``. What can you say about their shape? Do they follow a power law? Are they heavy-tailed?
 
@@ -12,9 +12,9 @@ Starting with the example in :ref:`Section 9.6<9.6>`, run the sand pile model fo
 
 **Exercise 3:** Another version of the sand pile model, called the “single source” model, starts from a different initial condition: instead of all cells at the same level, all cells are set to 0 except the center cell, which is set to a large value. Write a function that creates a SandPile object, sets up the single source initial condition, and runs until the pile reaches equilibrium. Does the result appear to be fractal?
 
-You can read more about this version of the sand pile model at http://thinkcomplex.com/sand.
 
-**Exercise 4:** In their 1989 paper, Bak, Chen and Creutz suggest that the Game of Life is a self-organized critical system (see http://thinkcomplex.com/bak89).
+
+**Exercise 4:** In their 1989 paper, Bak, Chen and Creutz suggest that the Game of Life is a self-organized critical system.
 
 To replicate their tests, start with a random configuration and run the GoL CA until it stabilizes. Then choose a random cell and flip it. Run the CA until it stabilizes again, keeping track of ``T``, the number of time steps it takes, and ``S``, the number of cells affected. Repeat for a large number of trials and plot the distributions of ``T`` and ``S``. Also, estimate the power spectrums of ``T`` and ``S`` as signals in time, and see if they are consistent with pink noise.
 
@@ -27,4 +27,6 @@ To support this argument, Mandelbrot points out:
 
 What do you think of this argument? Would you characterize it as reductionist or holist?
 
-**Exercise 6:** Read about the “Great Man” theory of history at http://thinkcomplex.com/great. What implication does self-organized criticality have for this theory?
+**Exercise 6:** Read about the “Great Man” theory of history. What implication does self-organized criticality have for this theory?
+
+.. _chap09.ipynb: https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap09.ipynb

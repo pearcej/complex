@@ -31,7 +31,7 @@ Remember that all models leave out, or “abstract away”, details that we thin
 
 The small world phenomenon is an example: the Watts-Strogatz (WS) model and the Barabási-Albert (BA) model both exhibit elements of small world behavior, but they offer different explanations:
 
-The WS model suggests that social networks are “small” because they include both strongly-connected clusters and “weak ties” that connect clusters (see http://thinkcomplex.com/weak).
+The WS model suggests that social networks are “small” because they include both strongly-connected clusters and “weak ties” that connect clusters.
 
 The BA model suggests that social networks are small because they include nodes with high degree that act as hubs, and that hubs grow, over time, due to preferential attachment.
 

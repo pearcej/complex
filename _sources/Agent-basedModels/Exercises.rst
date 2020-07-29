@@ -1,7 +1,7 @@
 Exercises
 ----------
 
-The code for this chapter is in the Jupyter notebook ``chap10.ipynb`` in the repository for this book. Open this notebook, read the code, and run the cells. You can use this notebook to work on the following exercises. My solutions are in ``chap10soln.ipynb``.
+The code for this chapter is in the Jupyter notebook chap10.ipynb_ in the repository for this book. Open this notebook, read the code, and run the cells. You can use this notebook to work on the following exercises.
 
 
 **Exercise 1:**  Bill Bishop, author of *The Big Sort*, argues that American society is increasingly segregated by political opinion, as people choose to live among like-minded neighbors.
@@ -22,10 +22,11 @@ You should be able to implement this model by inheriting from ``SugarScape`` and
 
 
 
-John Searle presented a thought experiment called “The Chinese Room”, intended to show that Strong AI is false. You can read about it at http://thinkcomplex.com/searle.
+John Searle presented a thought experiment called “The Chinese Room”, intended to show that Strong AI is false.
 
 
 What is the **system reply** to the Chinese Room argument? How does what you have learned about emergence influence your reaction to the system response?
 
 
 
+.. _chap10.ipynb: https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap10.ipynb

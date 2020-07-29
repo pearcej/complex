@@ -1,6 +1,6 @@
 Pink Noise
 ----------
-The title of the original paper that presented the sand pile model is “Self-Organized Criticality: An Explanation of :math:`1/f` Noise”. You can read it at http://thinkcomplex.com/bak.
+The title of the original paper that presented the sand pile model is “Self-Organized Criticality: An Explanation of :math:`1/f` Noise”.
 
 As the subtitle suggests, Bak, Tang and Wiesenfeld were trying to explain why many natural and engineered systems exhibit :math:`1/f` noise, which is also known as “flicker noise” and “pink noise”.
 

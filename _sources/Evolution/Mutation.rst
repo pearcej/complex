@@ -3,7 +3,7 @@ Mutation
 
 In the simulations so far, we start with the maximum possible diversity — one agent at every location in the landscape — and end with the minimum possible diversity, all agents at one location.
 
-That’s almost the opposite of what happened in the natural world, which apparently began with a single species that branched, over time, into the millions, or possibly billions, of species on Earth today (see http://thinkcomplex.com/bio).
+That’s almost the opposite of what happened in the natural world, which apparently began with a single species that branched, over time, into the millions, or possibly billions, of species on Earth today.
 
 With perfect copying in our model, we never see increasing diversity. But if we add mutation, along with differential survival and reproduction, we get a step closer to understanding evolution in nature.
 
@@ -32,7 +32,7 @@ In this model of mutation, every time we call ``copy``, there is a 5% chance of 
 
 .. _mean_fig_over_time:
 
-The operator ^= computes “exclusive OR"; with the operand 1, it has the effect of flipping a bit (see http://thinkcomplex.com/xor).
+The operator ^= computes “exclusive OR"; with the operand 1, it has the effect of flipping a bit.
 
 Now that we have mutation, we don’t have to start with an agent at every location. Instead, we can start with the minimum variability: all agents at the same location.
 
