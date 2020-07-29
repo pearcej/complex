@@ -10,7 +10,7 @@ Nevertheless, many people do not believe in evolution. In a survey run by the Pe
 1. Humans and other living things have evolved over time.
 2. Humans and other living things have existed in their present form since the beginning of time.
 
-About 34% of Americans chose the second (see http://thinkcomplex.com/arda).
+About 34% of Americans chose the second.
 
 Even among the ones who believe that living things have evolved, barely more than half believe that the cause of evolution is natural selection. In other words, only a third of Americans believe that the theory of evolution is true.
 
@@ -24,8 +24,9 @@ There’s probably not much I can do about the first group, but I think I can he
 
 To help people make this transition from confusion to clarity, the most powerful tool I have found is computation. Ideas that are hard to understand in theory can be easy to understand when we see them happening in simulation. That is the goal of this chapter.
 
-The code for this chapter is in ``chap12.ipynb``, which is a Jupyter notebook in the repository for this book. For more information about working with this code, see :ref:`Section 1.4 <1.4>`.
+The code for this chapter is in chap12.ipynb_, which is a Jupyter notebook in the repository for this book. For more information about working with this code, see :ref:`Section 1.4 <1.4>`.
 
+.. _chap12.ipynb: https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap12.ipynb
 
 .. mchoice:: q_12.1
    :answer_a: True

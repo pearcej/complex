@@ -1,7 +1,7 @@
 Fitness Landscape
 -----------------------
 
-The function that maps from genotype to fitness is called a **fitness landscape**. In the landscape metaphor, each genotype corresponds to a location in an ``N``-dimensional space, and fitness corresponds to the “height" of the landscape at that location. For visualizations that might clarify this metaphor, see http://thinkcomplex.com/fit.
+The function that maps from genotype to fitness is called a **fitness landscape**. In the landscape metaphor, each genotype corresponds to a location in an ``N``-dimensional space, and fitness corresponds to the “height" of the landscape at that location. 
 
 In biological terms, the fitness landscape represents information about how the genotype of an organism is related to its physical form and capabilities, called its **phenotype**, and how the phenotype interacts with its **environment**.
 

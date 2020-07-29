@@ -34,7 +34,7 @@ If we want to perform a BFS instead, the simplest solution is to ``pop`` the fir
 
 That works, but it is slow. In Python, popping the last element of a list takes constant time, but popping the first element is linear in the length of the list. In the worst case, the length of the stack is :math:`O(n)`, which makes this implementation of BFS :math:`O(nm)`, which is much worse than what it should be, :math:`O(n + m)`.
 
-We can solve this problem with a double-ended queue, also known as a **deque**. The important feature of a deque is that you can add and remove elements from the beginning or end in constant time. To see how it is implemented, see http://thinkcomplex.com/deque.
+We can solve this problem with a double-ended queue, also known as a **deque**. The important feature of a deque is that you can add and remove elements from the beginning or end in constant time.
 
 Python provides a ``deque`` in the ``collections`` module, so we can import it like this:
 

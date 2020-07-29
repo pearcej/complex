@@ -15,7 +15,7 @@ To compute the power spectrum of this signal we can use the SciPy function ``wel
     nperseg = 2048
     freqs, spectrum = welch(signal, nperseg=nperseg, fs=nperseg)
 
-This function uses Welch’s method, which splits the signal into segments and computes the power spectrum of each segment. The result is typically noisy, so Welch’s method averages across segments to estimate the average power at each frequency. For more about Welch’s method, see http://thinkcomplex.com/welch.
+This function uses Welch’s method, which splits the signal into segments and computes the power spectrum of each segment. The result is typically noisy, so Welch’s method averages across segments to estimate the average power at each frequency.
 
 The parameter ``nperseg`` specifies the number of time steps per segment. With longer segments, we can estimate the power for more frequencies. With shorter segments, we get better estimates for each frequency. The value I chose, 2048, balances these tradeoffs.
 

@@ -39,6 +39,7 @@ and Jan Pearce, Berea College
    Herds,Flocks,AndTrafficJams/toctree.rst
    Evolution/toctree.rst
    EvolutionOfCooperation/toctree.rst
+   AlgorithmAnalysis/toctree.rst
    Appendix1/toctree.rst
    Appendix2/toctree.rst
 

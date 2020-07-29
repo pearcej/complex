@@ -3,7 +3,7 @@ Wolfram's Experiment
 
 .. _6.2:
 
-In the early 1980s Stephen Wolfram published a series of papers presenting a systematic study of 1-D CAs. He identified four categories of behavior, each more interesting than the last. You can read one of these papers, “*Statistical mechanics of cellular automata*," at http://thinkcomplex.com/ca.
+In the early 1980s Stephen Wolfram published a series of papers presenting a systematic study of 1-D CAs. He identified four categories of behavior, each more interesting than the last.
 
 In Wolfram’s experiments, the cells are arranged in a lattice which you might remember from :ref:`Section 4.3<4.3>` where each cell is connected to two neighbors. The lattice can be finite, infinite, or arranged in a ring.
 

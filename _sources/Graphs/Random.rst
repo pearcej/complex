@@ -9,8 +9,7 @@ A **random graph** is just what it sounds like: a graph with nodes and edges gen
 One of the more interesting kinds is the Erdős-Rényi model, studied by Paul Erdős and Alfréd Rényi in the 1960s.
 
 
-An **Erdős-Rényi graph** (**ER graph**) is characterized by two parameters: ``n`` is the number of nodes and ``p`` is the probability that there is an edge between any two nodes. See http://thinkcomplex.com/er.
-
+An **Erdős-Rényi graph** (**ER graph**) is characterized by two parameters: ``n`` is the number of nodes and ``p`` is the probability that there is an edge between any two nodes.
 
 Erdős and Rényi studied the properties of these random graphs; one of their surprising results is the existence of abrupt changes in the properties of random graphs as random edges are added.
 

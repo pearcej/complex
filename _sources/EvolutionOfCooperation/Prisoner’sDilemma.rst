@@ -1,6 +1,6 @@
 Prisoner’s Dilemma
 ------------------------
-The **Prisoner’s Dilemma** is a topic in game theory, but it’s not the fun kind of game. Instead, it is the kind of game that sheds light on human motivation and behavior. Here is the presentation of the dilemma from Wikipedia (http://thinkcomplex.com/pd):
+The **Prisoner’s Dilemma** is a topic in game theory, but it’s not the fun kind of game. Instead, it is the kind of game that sheds light on human motivation and behavior.
 
 Two members of a criminal gang are arrested and imprisoned. Each prisoner is in solitary confinement with no means of communicating with the other. The prosecutors lack sufficient evidence to convict the pair on the principal charge, but they have enough to convict both on a lesser charge. Simultaneously, the prosecutors offer each prisoner a bargain. Each prisoner is given the opportunity to either: (1) betray the other by testifying that the other committed the crime, or (2) cooperate with the other by remaining silent. The offer is:
 

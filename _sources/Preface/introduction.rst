@@ -9,7 +9,6 @@ Complexity science is an interdisciplinary field — at the intersection of math
 
 One of the core tools of complexity science is discrete models, including networks and graphs, cellular automatons, and agent-based simulations. These tools are useful in the natural and social sciences, and sometimes in arts and humanities.
 
-For an overview of complexity science, see http://thinkcomplex.com/complex.
 Why should you learn about complexity science? Here are a few reasons:
 
 -  Complexity science is useful, especially for explaining why natural and social systems behave the way they do. Since Newton, math-based physics has focused on systems with small numbers of components and simple interactions. These models are effective for some applications, like celestial mechanics, and less useful for others, like economics. Complexity science provides a diverse and adaptable modeling toolkit.

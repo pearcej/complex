@@ -1,7 +1,7 @@
 Determinism
 -----------
 
-The existence of Class 3 CAs is surprising. To explain how surprising, let me start with philosophical **determinism** (see http://thinkcomplex.com/deter). Many philosophical stances are hard to define precisely because they come in a variety of flavors. I often find it useful to define them with a list of statements ordered from weak to strong:
+The existence of Class 3 CAs is surprising. To explain how surprising, let me start with philosophical **determinism**. Many philosophical stances are hard to define precisely because they come in a variety of flavors. I often find it useful to define them with a list of statements ordered from weak to strong:
 
 **D1:**  Deterministic models can make accurate predictions for some physical systems.
 
@@ -16,7 +16,7 @@ My goal in constructing this range is to make D1 so weak that virtually everyone
 The center of mass of world opinion swings along this range in response to historical developments and scientific discoveries. Prior to the scientific revolution, many people regarded the working of the universe as fundamentally unpredictable or controlled by supernatural forces. After the triumphs of Newtonian mechanics, some optimists came to believe something like D4; for example, in 1814 Pierre-Simon Laplace wrote:
 
 We may regard the present state of the universe as the effect of its past and the cause of its future. An intellect which at a certain moment would know all forces that set nature in motion, and all positions of all items of which nature is composed, if this intellect were also vast enough to submit these data to analysis, it would embrace in a single formula the movements of the greatest bodies of the universe and those of the tiniest atom; for such an intellect nothing would be uncertain and the future just like the past would be present before its eyes.
-This “intellect” is now called “Laplace’s Demon”. See http://thinkcomplex.com/demon. The word “demon” in this context has the sense of “spirit”, with no implication of evil.
+This “intellect” is now called “Laplace’s Demon”. The word “demon” in this context has the sense of “spirit”, with no implication of evil.
 
 Discoveries in the 19th and 20th centuries gradually dismantled Laplace’s hope. Thermodynamics, radioactivity, and quantum mechanics posed successive challenges to strong forms of determinism.
 

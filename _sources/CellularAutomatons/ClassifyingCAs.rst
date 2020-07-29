@@ -18,8 +18,6 @@ Examining the results visually, he proposed that the behavior of CAs can be grou
 
 Rule 50 is an example of Class 2. It generates a simple pattern with nested structure, that is, a pattern that contains many smaller versions of itself. Rule 18 makes the nested structure even clearer; :ref:`Figure 6.2<fig_6.2>` shows what it looks like after 64 steps.
 
-This pattern resembles the Sierpiński triangle, which you can read about at http://thinkcomplex.com/sier.
-
 Some Class 2 CAs generate patterns that are intricate and pretty, but compared to Classes 3 and 4, they are relatively simple.
 
 .. fillintheblank:: q1_6.3
