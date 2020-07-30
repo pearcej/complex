@@ -1,20 +1,20 @@
-.. Problem Solving with Algorithms and Data Structures using C++ documentation master file, originally created by
-   sphinx-quickstart on Thu Oct 27 08:17:45 2011.
+.. On Complexity documentation master file, ported from a
+   sphinx-quickstart file made on Thu Oct 27 08:17:45 2011.
+
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
 .. meta::
-   :description: An interactive version of Problem Solving with Algorithms and Data Structures using C++.
-   :keywords: C++, cpp, python, data structures, computer science
+   :description: On Complexity is began from Edition 2 of Think Complexity by Allen B. Downey
+   :keywords: Complexity Science, Game of Life
 
 .. toc_version: 2
 
-=============================================================
-Thinking Complexity
-=============================================================
+=============
+On Complexity
+=============
 
-By Allen B. Downey,
-and Jan Pearce, Berea College
+By Jan Pearce, Berea College
 
 .. raw:: html
 
@@ -28,6 +28,7 @@ and Jan Pearce, Berea College
 
    Preface/toctree.rst
    ComplexityScience/toctree.rst
+   AlgorithmAnalysis/toctree.rst
    Graphs/toctree.rst
    SmallWorldGraphs/toctree.rst
    Scale-freeNetworks/toctree.rst
@@ -39,20 +40,32 @@ and Jan Pearce, Berea College
    Herds,Flocks,AndTrafficJams/toctree.rst
    Evolution/toctree.rst
    EvolutionOfCooperation/toctree.rst
-   AlgorithmAnalysis/toctree.rst
    Appendix1/toctree.rst
    Appendix2/toctree.rst
-
 
 
 
 Acknowledgements
 ::::::::::::::::
 
-We are very grateful to Franklin Beedle Publishers for allowing us to
-make the original Python version of this interactive textbook freely available.
-The original online version was dedicated to the memory of our first editor, Jim Leisy,
-who wanted us to "change the world."
+.. raw:: html
+
+   <div style="width: 500px; margin-left: auto; margin-right: auto;">
+   We are very grateful to Allen B. Downey for his work in writing
+   <a href="https://greenteapress.com/wp/think-complexity-2e/">Think Complexity</a>
+   and for releasing it under the
+   <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+   Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)</a>
+   which forms the core of this interactive book.
+
+   The chapter on Algorithm Analysis was ported from one by Jan Pearce, Brad Miller, and David Ranum
+   for the <a href="https://runestone.academy/runestone/static/cppds/index.html">
+   Problem Solving with Algorithms and Data Structures using C++</a>
+   which was also released under the
+   <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+   Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)</a>
+   </div>
+
 
 Indices and tables
 ::::::::::::::::::
@@ -69,8 +82,8 @@ Indices and tables
    <img alt="Creative Commons License" style="border-width:0; display:block; margin-left:
    auto; margin-right:auto;" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
    <br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource"
-   property="dct:title" rel="dct:type">Problem Solving with Algorithms and Data Structures using C++</span> by
+   property="dct:title" rel="dct:type">On Complexity</span> by
    <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">
-   Bradley N. Miller, David L. Ranum, and Janice L. Pearce</span> is licensed under a
+   Janice L. Pearce</span> is licensed under a
    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
    Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</div>
