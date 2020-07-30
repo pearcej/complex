@@ -6,7 +6,7 @@ Physical Modeling
 
     Introduction.rst
     Diffusion.rst
-    Reaction-diffusion.rst
+    ReactionDiffusion.rst
     Percolation.rst
     PhaseChange.rst
     Fractals.rst

@@ -9,6 +9,6 @@ Complex behavior in GoL raises issues in the philosophy of science, particularly
 
 At the end of the chapter, I demonstrate ways to implement GoL efficiently in Python.
 
-The code for this chapter is in chap07.ipynb_ in the repository for this book. More information about working with the code is in :ref:`Section 1.4 <1.4>`.
+The code for this chapter is in chap08.ipynb_ in the repository for this book. More information about working with the code is in :ref:`Section 1.4 <1.4>`.
 
-.. _chap07.ipynb: https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap07.ipynb
+.. _chap08.ipynb: https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap08.ipynb

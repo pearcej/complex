@@ -8,8 +8,8 @@ Scalle-Free Networks
     SocialNetworkData.rst
     WSModel.rst
     Degree.rst
-    Heavy-tailedDistributions.rst
-    Barabási-AlbertModel.rst
+    HeavyTailedDistributions.rst
+    BarabásiAlbertModel.rst
     GeneratingBAGraphs.rst
     CumulativeDistributions.rst
     ExplanatoryModels.rst

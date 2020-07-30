@@ -5,8 +5,8 @@ Agent-based Models
     :maxdepth: 2
 
     Introduction.rst
-    Schelling’sModel.rst
-    ImplementationOfSchelling’sModel.rst
+    SchellingsModel.rst
+    ImplementationOfSchellingsModel.rst
     Segregation.rst
     Sugarscape.rst
     WealthInequality.rst

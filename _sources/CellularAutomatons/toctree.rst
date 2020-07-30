@@ -6,7 +6,7 @@ Cellular Automatons
 
     introduction.rst
     ASimpleCA.rst
-    Wolfram'sExperiment.rst
+    WolframsExperiment.rst
     ClassifyingCAs.rst
     Randomness.rst
     Determinism.rst
@@ -15,7 +15,7 @@ Cellular Automatons
     Falsifiability.rst
     WhatIsThisAModelOf.rst
     ImplementingCAs.rst
-    Cross-correlation.rst
+    CrossCorrelation.rst
     CATables.rst
     Exercises.rst
     Glossary.rst

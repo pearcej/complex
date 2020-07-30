@@ -1,7 +1,7 @@
 Exercises
 ----------
 
-The code for this chapter is in the Jupyter notebook chap10.ipynb_ in the repository for this book. Open this notebook, read the code, and run the cells. You can use this notebook to work on the following exercises.
+The code for this chapter is in the Jupyter notebook chap11.ipynb_ in the repository for this book. Open this notebook, read the code, and run the cells. You can use this notebook to work on the following exercises.
 
 
 **Exercise 1:**  Bill Bishop, author of *The Big Sort*, argues that American society is increasingly segregated by political opinion, as people choose to live among like-minded neighbors.
@@ -29,4 +29,4 @@ What is the **system reply** to the Chinese Room argument? How does what you hav
 
 
 
-.. _chap10.ipynb: https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap10.ipynb
+.. _chap11.ipynb: https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap11.ipynb
