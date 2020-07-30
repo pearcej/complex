@@ -7,6 +7,6 @@ In this final chapter, I take on two questions, one from biology and one from ph
 
 The tools I use to address these questions are agent-based simulation (again) and game theory, which is a set of abstract models meant to describe ways agents interact. Specifically, the game we will consider is the Prisoner’s Dilemma.
 
-The code for this chapter is in chap13.ipynb_, which is a Jupyter notebook in the repository for this book. For more information about working with this code, see  :ref:`Section 1.4 <1.4>`.
+The code for this chapter is in chap14.ipynb_, which is a Jupyter notebook in the repository for this book. For more information about working with this code, see  :ref:`Section 1.4 <1.4>`.
 
-.. _chap13.ipynb: https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap13.ipynb
+.. _chap14.ipynb: https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap14.ipynb

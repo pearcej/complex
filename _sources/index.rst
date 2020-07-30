@@ -31,13 +31,13 @@ By Jan Pearce, Berea College
    AlgorithmAnalysis/toctree.rst
    Graphs/toctree.rst
    SmallWorldGraphs/toctree.rst
-   Scale-freeNetworks/toctree.rst
+   ScaleFreeNetworks/toctree.rst
    CellularAutomatons/toctree.rst
    GameOfLife/toctree.rst
    PhysicalModeling/toctree.rst
-   Self-organizedCriticality/toctree.rst
-   Agent-basedModels/toctree.rst
-   Herds,Flocks,AndTrafficJams/toctree.rst
+   SelfOrganizedCriticality/toctree.rst
+   AgentBasedModels/toctree.rst
+   HerdsFlocksAndTrafficJams/toctree.rst
    Evolution/toctree.rst
    EvolutionOfCooperation/toctree.rst
    Appendix1/toctree.rst

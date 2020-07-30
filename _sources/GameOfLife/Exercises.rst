@@ -1,7 +1,7 @@
 Exercises
 ---------
 
-The code for this chapter is in the Jupyter notebook chap07.ipynb_ in the repository for this book. Open this notebook, read the code, and run the cells. You can use this notebook to work on the following exercises.
+The code for this chapter is in the Jupyter notebook chap08.ipynb_ in the repository for this book. Open this notebook, read the code, and run the cells. You can use this notebook to work on the following exercises.
 
 **Exercise 1:** Start GoL in a random state and run it until it stabilizes. What stable patterns can you identify?
 
@@ -27,4 +27,4 @@ Given a simple world, a simple set of rules, and only one moving part, you might
 
 Write an implementation of Langton’s Ant.
 
-.. _chap07.ipynb: https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap07.ipynb
+.. _chap08.ipynb: https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap08.ipynb

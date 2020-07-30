@@ -8,12 +8,12 @@ Self-Organized Criticality
     CriticalSystems.rst
     SandPiles.rst
     ImplementingTheSandPile.rst
-    Heavy-tailedDistributions.rst
+    HeavyTailedDistributions.rst
     Fractals.rst
     PinkNoise.rst
     TheSoundOfSand.rst
     ReductionismAndHolism.rst
-    SOC,Causation,AndPrediction.rst
+    SOCCausationAndPrediction.rst
     Exercises.rst
     Glossary.rst
     Matching.rst
