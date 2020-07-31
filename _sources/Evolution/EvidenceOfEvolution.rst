@@ -1,7 +1,7 @@
 Evidence of Evolution
 ----------------------
 
-.. _12.7:
+.. _EVO_7:
 
 The most inclusive definition of evolution is a change in the distribution of genotypes in a population. Evolution is an aggregate effect: in other words, individuals don’t evolve; populations do.
 
@@ -39,7 +39,7 @@ Now we’re ready to run the simulation. To avoid the effect of random changes i
 
 Now we can create and add a ``MeanFitness`` instrument, run the simulation, and plot the results:
 
-.. _fig_mean_fit:
+.. _EVO_FIG_1:
 
 ::
 
@@ -51,12 +51,12 @@ Now we can create and add a ``MeanFitness`` instrument, run the simulation, and 
 
 .. figure:: Figures/figure_12.1.png
     :align: center
-    :alt: "Figure 12.1: Mean fitness over time for 10 simulations with no differential survival or reproduction."
+    :alt: "Figure 13.1: Mean fitness over time for 10 simulations with no differential survival or reproduction."
 
-    Figure 12.1: Mean fitness over time for 10 simulations with no differential survival or reproduction.
+    Figure 13.1: Mean fitness over time for 10 simulations with no differential survival or reproduction.
    
 
-:ref:`Figure 12.1 <fig_mean_fit>` shows the result of running this simulation 10 times. The mean fitness of the population drifts up or down at random. Since the distribution of fitness changes over time, we infer that the distribution of phenotypes is also changing. By the most inclusive definition, this random walk is a kind of evolution. But it is not a particularly interesting kind.
+:ref:`Figure 13.1 <EVO_FIG_1>` shows the result of running this simulation 10 times. The mean fitness of the population drifts up or down at random. Since the distribution of fitness changes over time, we infer that the distribution of phenotypes is also changing. By the most inclusive definition, this random walk is a kind of evolution. But it is not a particularly interesting kind.
 
 In particular, this kind of evolution does not explain how biological species change over time, or how new species appear. The theory of evolution is powerful because it explains phenomena we see in the natural world that seem inexplicable:
 
@@ -68,7 +68,7 @@ In particular, this kind of evolution does not explain how biological species ch
 
 These are the phenomena we want to explain. So far, our model doesn’t do the job.
 
-.. mchoice:: q_12.7
+.. mchoice:: q_13.7
    :answer_a: True
    :answer_b: False
    :correct: b

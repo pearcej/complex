@@ -1,12 +1,14 @@
+.. _CA_4:
+
 Classifying CAs
 ---------------
 
-.. _fig_6.2:
+.. _CA_FIG_2:
 .. figure:: Figures/thinkcomplexity2017.png
    :align: center
-   :alt: "Figure 6.2: Rule 18 after 64 steps."
+   :alt: "Figure 7.2: Rule 18 after 64 steps."
 
-   Figure 6.2: Rule 18 after 64 steps.
+   Figure 7.2: Rule 18 after 64 steps.
 
 How many of these CAs are there?
 
@@ -16,7 +18,7 @@ One of Wolfram’s first experiments with CAs was to test all 256 possibilities 
 
 Examining the results visually, he proposed that the behavior of CAs can be grouped into four classes. Class 1 contains the simplest (and least interesting) CAs, the ones that evolve from almost any starting condition to the same uniform pattern. As a trivial example, Rule 0 always generates an empty pattern after one time step.
 
-Rule 50 is an example of Class 2. It generates a simple pattern with nested structure, that is, a pattern that contains many smaller versions of itself. Rule 18 makes the nested structure even clearer; :ref:`Figure 6.2<fig_6.2>` shows what it looks like after 64 steps.
+Rule 50 is an example of Class 2. It generates a simple pattern with nested structure, that is, a pattern that contains many smaller versions of itself. Rule 18 makes the nested structure even clearer; :ref:`Figure 7.2<CA_FIG_2>` shows what it looks like after 64 steps.
 
 Some Class 2 CAs generate patterns that are intricate and pretty, but compared to Classes 3 and 4, they are relatively simple.
 

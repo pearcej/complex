@@ -1,4 +1,4 @@
-.. _fig_3.3:
+.. _G_FIG_3:
 
 Generating Graphs
 -----------------
@@ -7,9 +7,9 @@ Generating Graphs
 
 .. figure:: Figures/thinkcomplexity2003.png
    :align: center
-   :alt: "Figure 3.3: A complete graph with 10 nodes."
+   :alt: "Figure 4.3: A complete graph with 10 nodes."
 
-   Figure 3.3: A complete graph with 10 nodes.
+   Figure 4.3: A complete graph with 10 nodes.
 
 
 
@@ -48,6 +48,6 @@ The following code makes a complete graph with 10 nodes and draws it:
                  node_size=1000,
                  with_labels=True)
 
-:ref:`Figure 3.3 <fig_3.3>` shows the result. Soon we will modify this code to generate ER graphs, but first we’ll develop functions to check whether a graph is connected.
+:ref:`Figure 4.3 <G_FIG_3>` shows the result. Soon we will modify this code to generate ER graphs, but first we’ll develop functions to check whether a graph is connected.
 
 

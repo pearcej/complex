@@ -13,8 +13,8 @@ Small World Graphs
     ShortestPathLengths.rst
     TheWSExperiment.rst
     WhatKindOfExplanationIsThat.rst
-    Breadth-FirstSearch.rst
-    Dijkstra’sAlgorithm.rst
+    BreadthFirstSearch.rst
+    DijkstrasAlgorithm.rst
     Exercises.rst
     Glossary.rst
     Matching.rst

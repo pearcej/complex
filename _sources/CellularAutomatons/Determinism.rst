@@ -1,3 +1,5 @@
+.. _CA_6:
+
 Determinism
 -----------
 
@@ -24,4 +26,4 @@ In the 1960s chaos theory showed that in some deterministic systems prediction i
 
 Most of these systems are continuous in space (if not time) and nonlinear, so the complexity of their behavior is not entirely surprising. Wolfram’s demonstration of complex behavior in simple cellular automatons is more surprising — and disturbing, at least to a deterministic world view.
 
-So far I have focused on scientific challenges to determinism, but the longest-standing objection is the apparent conflict between determinism and human free will. Complexity science provides a possible resolution of this conflict; I’ll come back to this topic in :ref:`Section 11.7 <11.7>`.
+So far I have focused on scientific challenges to determinism, but the longest-standing objection is the apparent conflict between determinism and human free will. Complexity science provides a possible resolution of this conflict; I’ll come back to this topic in :ref:`Section 12.7 <HFT_7>`.

@@ -1,3 +1,5 @@
+.. _GOL_8:
+
 Instrumentalism
 ----------------
 SR1 is so weak that it verges on **instrumentalism**, which is the view that theories are instruments that we use for our purposes: a theory is useful, or not, to the degree that it is fit for its purpose, but we can’t say whether it is true or false.
