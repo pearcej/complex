@@ -1,3 +1,5 @@
+.. _SOC_7:
+
 Pink Noise
 ----------
 The title of the original paper that presented the sand pile model is “Self-Organized Criticality: An Explanation of :math:`1/f` Noise”.

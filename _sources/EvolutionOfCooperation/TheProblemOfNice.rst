@@ -1,3 +1,5 @@
+.. _EOC_3:
+
 The Problem of Nice
 --------------------------
 Since the Prisoner’s Dilemma was first discussed in the 1950s, it has been a popular topic of study in social psychology. Based on the analysis in the previous section, we can say what a perfectly rational agent *should* do; it is harder to predict what real people actually do. Fortunately, the experiment has been done.

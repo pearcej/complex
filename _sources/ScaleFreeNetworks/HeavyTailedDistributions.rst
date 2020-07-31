@@ -1,20 +1,20 @@
 
-.. _fig_5.2:
+.. _SFN_FIG_2:
 
 Heavy-tailed Distributions
 --------------------------
 
-.. _5.5:
+.. _SFN_5:
 
 .. figure:: Figures/thinkcomplexity2011.png
    :align: center
-   :alt: "Figure 5.2: PMF of degree in the Facebook dataset and in the WS model, on a log-log scale."
+   :alt: "Figure 6.2: PMF of degree in the Facebook dataset and in the WS model, on a log-log scale."
 
-   Figure 5.2: PMF of degree in the Facebook dataset and in the WS model, on a log-log scale.
+   Figure 6.2: PMF of degree in the Facebook dataset and in the WS model, on a log-log scale.
 
 **Heavy-tailed distributions** are a common feature in many areas of complexity science and they will be a recurring theme of this book.
 
-We can get a clearer picture of a heavy-tailed distribution by plotting it on a log-log axis, as shown in :ref:`Figure 5.2 <fig_5.2>`. This transformation emphasizes the tail of the distribution; that is, the probabilities of large values.
+We can get a clearer picture of a heavy-tailed distribution by plotting it on a log-log axis, as shown in :ref:`Figure 6.2 <SFN_FIG_2>`. This transformation emphasizes the tail of the distribution; that is, the probabilities of large values.
 
 Under this transformation, the data fall approximately on a straight line, which suggests that there is a **power law** relationship between the largest values in the distribution and their probabilities. Mathematically, a distribution obeys a power law if :math:`PMF(k) ∼ k−α` where ``PMF(k)`` is the fraction of nodes with degree ``k``, ``α`` is a parameter, and the symbol ∼ indicates that the ``PMF`` is asymptotic to ``k−α`` as ``k`` increases.
 

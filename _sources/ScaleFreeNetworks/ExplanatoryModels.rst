@@ -1,22 +1,22 @@
 
-.. _5.9:
+.. _SFN_9:
 
 Explanatory Models
 ------------------
 
 
-.. _fig_5.6:
+.. _SFN_FIG_6:
 
 .. figure:: Figures/thinkcomplexity2015.png
    :align: center
-   :alt: "Figure 5.6: The logical structure of an explanatory model."
+   :alt: "Figure 6.6: The logical structure of an explanatory model."
 
-   Figure 5.6: The logical structure of an explanatory model.
+   Figure 6.6: The logical structure of an explanatory model.
 
 
 We started the discussion of networks with Milgram’s Small World Experiment, which shows that path lengths in social networks are surprisingly small; hence, “six degrees of separation”.
 
-When we see something surprising, it is natural to ask “Why?” but sometimes it’s not clear what kind of answer we are looking for. One kind of answer is an **explanatory model** (see :ref:`Figure 5.6 <fig_5.6>`). The logical structure of an explanatory model is:
+When we see something surprising, it is natural to ask “Why?” but sometimes it’s not clear what kind of answer we are looking for. One kind of answer is an **explanatory model** (see :ref:`Figure 6.6 <SFN_FIG_6>`). The logical structure of an explanatory model is:
 
 1. In a system, S, we see something observable, O, that warrants explanation.
 2. We construct a model, M, that is analogous to the system; that is, there is a correspondence between the elements of the model and the elements of the system.

@@ -1,3 +1,5 @@
+.. _ABM_7:
+
 Implementing Sugarscape
 ------------------------
 

@@ -1,3 +1,5 @@
+.. _HFT_6:
+
 Arbitration
 ----------------
 To arbitrate among these possibly conflicting goals, we compute a weighted sum of the four requests:

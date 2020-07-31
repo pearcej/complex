@@ -45,7 +45,7 @@ The following implementation of BFS contains two performance errors. What are th
                      if c not in visited and c not in queue)
     return visited
 
-**Exercise 4:**   In :ref:`Section 4.11 <4.11>`, I claimed that Dijkstra’s algorithm does not work unless it uses BFS. Write a version of ``shortest_path_dijkstra`` that uses DFS and test it on a few examples to see what goes wrong.
+**Exercise 4:**   In :ref:`Section 5.11 <SWG_11>`, I claimed that Dijkstra’s algorithm does not work unless it uses BFS. Write a version of ``shortest_path_dijkstra`` that uses DFS and test it on a few examples to see what goes wrong.
 **Exercise 5:**  
 A natural question about the Watts and Strogatz paper is whether the small world phenomenon is specific to their generative model or whether other similar models yield the same qualitative result (high clustering and low path lengths).
 

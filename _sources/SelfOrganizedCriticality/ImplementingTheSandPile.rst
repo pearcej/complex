@@ -1,3 +1,5 @@
+.. _SOC_4:
+
 Implementing the Sand Pile
 --------------------------
 To implement the sand pile model, I define a class called ``SandPile`` that inherits from ``Cell2D``, which is defined in ``Cell2D.py`` in the repository for this book.
@@ -134,15 +136,15 @@ Let’s look at a bigger example, with ``n=20``:
  
 .. figure:: Figures/figure_9.1.png
     :align: center 
-    :alt: "Figure 9.1: Sand pile model initial state (left), after 200 steps (middle), and 400 steps (right)."
+    :alt: "Figure 10.1: Sand pile model initial state (left), after 200 steps (middle), and 400 steps (right)."
 
-    Figure 9.1: Sand pile model initial state (left), after 200 steps (middle), and 400 steps (right).
+    Figure 10.1: Sand pile model initial state (left), after 200 steps (middle), and 400 steps (right).
 
-With an initial level of 10, this sand pile takes 332 time steps to reach equilibrium, with a total of 53,336 topplings. :ref:`Figure 9.1<sand_pile>` (left) shows the configuration after this initial run. Notice that it has the repeating elements that are characteristic of fractals. We’ll come back to that soon.
+With an initial level of 10, this sand pile takes 332 time steps to reach equilibrium, with a total of 53,336 topplings. :ref:`Figure 10.1<sand_pile>` (left) shows the configuration after this initial run. Notice that it has the repeating elements that are characteristic of fractals. We’ll come back to that soon.
 
-:ref:`Figure 9.1 <sand_pile>` (middle) shows the configuration of the sand pile after dropping 200 grains onto random cells, each time running until the pile reaches equilibrium. The symmetry of the initial configuration has been broken; the configuration looks random.
+:ref:`Figure 10.1 <sand_pile>` (middle) shows the configuration of the sand pile after dropping 200 grains onto random cells, each time running until the pile reaches equilibrium. The symmetry of the initial configuration has been broken; the configuration looks random.
 
-Finally :ref:`Figure 9.1<sand_pile>` (right) shows the configuration after 400 drops. It looks similar to the configuration after 200 drops. In fact, the pile is now in a steady state where its statistical properties don’t change over time. I’ll explain some of those statistical properties in the next section.
+Finally :ref:`Figure 10.1<sand_pile>` (right) shows the configuration after 400 drops. It looks similar to the configuration after 200 drops. In fact, the pile is now in a steady state where its statistical properties don’t change over time. I’ll explain some of those statistical properties in the next section.
 
 
 .. fillintheblank:: q_9.4.1

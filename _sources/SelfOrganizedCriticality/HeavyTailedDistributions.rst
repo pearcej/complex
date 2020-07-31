@@ -1,7 +1,7 @@
 Heavy-Tailed Distributions
 --------------------------
 
-.. _9.5:
+.. _SOC_5:
 
 If the sand pile model is in a critical state, we expect to find heavy-tailed distributions for quantities like the duration and size of avalanches. So let’s take a look.
 
@@ -34,7 +34,7 @@ A large majority of drops have duration 1 and no toppled cells; if we filter the
     T = T[T>1]
     S = S[S>0]
 
-The distributions of ``T`` and ``S`` have many small values and a few very large ones. I’ll use the ``Pmf`` class from thinkstats2 to make a PMF of the values, that is, a map from each value to its probability of occurring (see :ref:`Section 5.4<5.4>`).
+The distributions of ``T`` and ``S`` have many small values and a few very large ones. I’ll use the ``Pmf`` class from thinkstats2 to make a PMF of the values, that is, a map from each value to its probability of occurring (see :ref:`Section 6.4<SFN_4>`).
 
 .. _linear_scale:
 
@@ -47,20 +47,20 @@ The distributions of ``T`` and ``S`` have many small values and a few very large
 
 .. figure:: Figures/figure_9.2.png
     :align: center
-    :alt: "Figure 9.2: Distribution of avalanche duration (left) and size (right), linear scale."
+    :alt: "Figure 10.2: Distribution of avalanche duration (left) and size (right), linear scale."
 
-    Figure 9.2: Distribution of avalanche duration (left) and size (right), linear scale.
+    Figure 10.2: Distribution of avalanche duration (left) and size (right), linear scale.
 
 .. figure:: Figures/figure_9.3.png
     :align: center
-    :alt: "Figure 9.3: Distribution of avalanche duration (left) and size (right), log-log scale."
+    :alt: "Figure 10.3: Distribution of avalanche duration (left) and size (right), log-log scale."
 
-    Figure 9.3: Distribution of avalanche duration (left) and size (right), log-log scale.
+    Figure 10.3: Distribution of avalanche duration (left) and size (right), log-log scale.
 
 
-:ref:`Figure 9.2 <linear_scale>` shows the results for values less than 50.
+:ref:`Figure 10.2 <linear_scale>` shows the results for values less than 50.
 
-As we saw in :ref:`Section 5.5 <5.5>`, we can get a clearer picture of these distributions by plotting them on a log-log scale, as shown in :ref:`Figure 9.3 <log_log>`.
+As we saw in :ref:`Section 6.5 <SFN_5>`, we can get a clearer picture of these distributions by plotting them on a log-log scale, as shown in :ref:`Figure 10.3 <log_log>`.
 
 For values between 1 and 100, the distributions are nearly straight on a log-log scale, which is characteristic of a heavy tail. The gray lines in the figure have slopes near -1, which suggests that these distributions follow a power law with parameters near :math:`α=1`.
 

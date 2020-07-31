@@ -1,3 +1,5 @@
+.. _CA_12:
+
 Cross-Correlation
 -----------------
 
