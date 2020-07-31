@@ -1,4 +1,4 @@
-.. _3.9:
+.. _G_9:
 
 Analysis of Graph Algorithms
 ----------------------------
@@ -6,7 +6,7 @@ Earlier in this chapter I presented an algorithm for checking whether a graph is
 
 The order of growth for graph algorithms is usually expressed as a function of :math:`n`, the number of vertices (nodes), and :math:`m`, the number of edges.
 
-As an example, let’s analyze ``reachable_nodes`` from :ref:`Section 3.6 <3.6>`
+As an example, let’s analyze ``reachable_nodes`` from :ref:`Section 4.6 <G_6>`
 
 ::
     

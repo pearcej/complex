@@ -5,9 +5,9 @@ Evolution of Cooperation
     :maxdepth: 2
 
     Introduction.rst
-    Prisoner’sDilemma.rst
+    PrisonersDilemma.rst
     TheProblemOfNice.rst
-    Prisoner’sDilemmaTournaments.rst
+    PrisonersDilemmaTournaments.rst
     SimulatingEvolutionOfCooperation.rst
     TheTournament.rst
     TheSimulation.rst

@@ -1,7 +1,7 @@
 Implementing Life
 ------------------
 
-.. _7.7:
+.. _GOL_7:
 
 The exercises at the end of this chapter ask you to experiment with and modify the Game of Life, and implement other 2-D cellular automatons. This section explains my implementation of GoL, which you can use as a starting place for your experiments.
 
@@ -31,7 +31,7 @@ There are a few ways we can compute the GoL rules. The simplest is to use for lo
 
 Initially, ``b`` is an array of zeros with the same size as ``a``. Each time through the loop, ``state`` is the condition of the center cell and ``neighbors`` is the 3x3 neighborhood. ``k`` is the number of live neighbors (not including the center cell). The nested ``if`` statements evaluate the GoL rules and turn on cells in ``b`` accordingly.
 
-This implementation is a straightforward translation of the rules, but it is verbose and slow. We can do better using cross-correlation, as we saw in :ref:`Section 6.11 <6.11>`. There, we used ``np.correlate`` to compute a 1-D correlation. Now, to perform 2-D correlation, we’ll use ``correlate2d`` from ``scipy.signal``, a SciPy module that provides functions related to signal processing:
+This implementation is a straightforward translation of the rules, but it is verbose and slow. We can do better using cross-correlation, as we saw in :ref:`Section 7.11 <CA_11>`. There, we used ``np.correlate`` to compute a 1-D correlation. Now, to perform 2-D correlation, we’ll use ``correlate2d`` from ``scipy.signal``, a SciPy module that provides functions related to signal processing:
 
 
 
@@ -74,7 +74,7 @@ This version is faster, and probably good enough, but we can simplify it slightl
 
 This version of the kernel includes the center cell and gives it a weight of 10. If the center cell is 0, the result is between 0 and 8; if the center cell is 1, the result is between 10 and 18. Using this kernel, we can simplify the logical operations, selecting only cells with the values 3, 12, and 13.
 
-That might not seem like a big improvement, but it allows one more simplification: with this kernel, we can use a table to look up cell values, as we did in :ref:`Section 6.12 <6.12>`.
+That might not seem like a big improvement, but it allows one more simplification: with this kernel, we can use a table to look up cell values, as we did in :ref:`Section 7.12 <CA_12>`.
 
 ::
 

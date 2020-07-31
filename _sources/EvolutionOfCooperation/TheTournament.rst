@@ -1,3 +1,5 @@
+.. _EOC_6:
+
 The Tournament
 --------------------
 The ``Tournament`` class encapsulates the details of the PD competition:
