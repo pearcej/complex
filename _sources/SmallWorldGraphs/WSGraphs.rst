@@ -26,7 +26,7 @@ Here is my implementation of this process.
             G.remove_edge(u, v)
             G.add_edge(u, new_v)
 
-The parameter ``p`` is the probability of rewiring an edge. The for loop enumerates the edges and uses ``flip`` (defined in :ref:`Section 4.7 <SWG_7>`) to choose which ones get rewired.
+The parameter ``p`` is the probability of rewiring an edge. The for loop enumerates the edges and uses ``flip`` (defined in :ref:`Section 5.7 <SWG_7>`) to choose which ones get rewired.
 
 If we are rewiring an edge from node ``u`` to node ``v``, we have to choose a replacement for ``v``, called ``new_v``.
 
