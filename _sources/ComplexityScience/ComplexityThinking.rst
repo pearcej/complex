@@ -23,22 +23,13 @@ The Enlightenment,  and philosophic  modernism, are based on belief in objective
 
 Some  people  distinguish  between  laws, theories, and models.  Calling something a “law” implies that it is objectively  true  and  immutable;  “theory”  suggests  that  it  is  subject  to revision;  and “model” concedes that it is a subjective choice based on simplifications and approximations.
 
-I think they are all the same thing.  Some concepts that are called laws are really definitions;  others are,  in effect,  the assertion that a certain model  predicts  or  explains  the  behavior  of  a  system  particularly  well. We come back to the nature of physical laws in :ref:`Section 5.9 <5.9>`, :ref:`Section 6.9 <6.9>`, and :ref:`Section 9.9 <9.9>`
+I think they are all the same thing.  Some concepts that are called laws are really definitions;  others are,  in effect,  the assertion that a certain model  predicts  or  explains  the  behavior  of  a  system  particularly  well. We come back to the nature of physical laws in :ref:`Section 6.9 <SFN_9>`, :ref:`Section 7.9 <CA_9>`, and :ref:`Section 10.9 <SOC_9>`
 
 **Determinism→indeterminism**
 
-Determinism  is  the  view  that  all  events are caused, inevitably, by prior events.  Forms of indeterminism include randomness, probabilistic causation, and fundamental uncertainty.  We will come back to this topic in :ref:`Section 6.6 <6.6>` and :ref:`Section 11.7 <11.7>`
+Determinism  is  the  view  that  all  events are caused, inevitably, by prior events.  Forms of indeterminism include randomness, probabilistic causation, and fundamental uncertainty.  We will come back to this topic in :ref:`Section 7.6 <CA_6>` and :ref:`Section 12.7 <HFT_7>`
 
 This chapter is an overview of the themes coming up in the book, but not all of it will make sense before you see the examples.  When you get to the end of the book, you might find it helpful to read this chapter again.
 
-.. _Chapter 5.9: http://localhost:8000/Scale-free%20networks/Explanatory%20models.html
-
-.. _Chapter 6.9: http://localhost:8000/Cellular%20Automatons/WhatIsThisAModelOf.html
-
-.. _Chapter 9.9: http://localhost:8000/Self-organized%20criticality/Reductionism%20and%20Holism.html
-
-.. _Chapter 6.5: http://localhost:8000/Cellular%20Automatons/Determinism.html
-
-.. _Chapter 11.7: http://localhost:8000/Herds,%20Flocks,%20and%20Traffic%20Jams/Emergence%20and%20free%20will.html
 
 

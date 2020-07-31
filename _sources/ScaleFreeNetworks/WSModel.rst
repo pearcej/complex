@@ -1,3 +1,5 @@
+.. _SFN_3:
+
 WS Models
 ---------
 In the Facebook dataset, the average number of edges per node is about 22. Since each edge is connected to two nodes, the average degree is twice the number of edges per node:

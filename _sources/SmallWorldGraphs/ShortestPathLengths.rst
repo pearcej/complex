@@ -1,5 +1,8 @@
+.. _SWG_7:
+
 Shortest Path Lengths
----------------------
+----------------------
+
 The next step is to compute the characteristic path length, :math:`L`, which is the average length of the shortest path between each pair of nodes. To compute it, I’ll start with a function provided by NetworkX, shortest_path_length. I’ll use it to replicate the Watts and Strogatz experiment, then I’ll explain how it works.
 
 Here’s a function that takes a graph and returns a list of shortest path lengths, one for each pair of nodes.

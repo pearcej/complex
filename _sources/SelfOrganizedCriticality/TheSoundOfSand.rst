@@ -1,6 +1,8 @@
+.. _SOC_8:
+
 The Sound of Sand
 -----------------
-As my implementation of SandPile runs, it records the number of cells that topple during each time step, accumulating the results in a list called ``toppled_seq``. After running the model in :ref:`Section 9.5 <9.5>`, we can extract the resulting signal:
+As my implementation of SandPile runs, it records the number of cells that topple during each time step, accumulating the results in a list called ``toppled_seq``. After running the model in :ref:`Section 10.5 <SOC_5>`, we can extract the resulting signal:
 
 ::
 
@@ -21,15 +23,15 @@ The parameter ``nperseg`` specifies the number of time steps per segment. With l
 
 The parameter ``fs`` is the “sampling frequency”, which is the number of data points in the signal per unit of time. By setting ``fs=nperseg``, we get a range of frequencies from ``0`` to ``nperseg/2``. This range is convenient, but because the units of time in the model are arbitrary, it doesn’t mean much.
 
-The return values, ``freqs`` and ``powers``, are NumPy arrays containing the frequencies of the components and their corresponding powers, which we can plot. :ref:`Figure 9.6 <power_spec>` shows the result.
+The return values, ``freqs`` and ``powers``, are NumPy arrays containing the frequencies of the components and their corresponding powers, which we can plot. :ref:`Figure 10.6 <SOC_FIG_6>` shows the result.
 
-.. _power_spec:
+.. _SOC_FIG_6:
 
 .. figure:: Figures/figure_9.6.png
     :align: center
-    :alt: "Figure Figure 9.6: Power spectrum of the number of toppled cells over time, log-log scale."
+    :alt: "Figure Figure 10.6: Power spectrum of the number of toppled cells over time, log-log scale."
 
-    Figure 9.6: Power spectrum of the number of toppled cells over time, log-log scale.
+    Figure 10.6: Power spectrum of the number of toppled cells over time, log-log scale.
 
 
 For frequencies between 10 and 1000 (in arbitrary units), the spectrum falls on a straight line, which is what we expect for pink or red noise.

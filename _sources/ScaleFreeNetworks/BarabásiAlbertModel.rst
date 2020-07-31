@@ -1,3 +1,5 @@
+.. _SFN_6:
+
 Barabási-Albert Model
 ---------------------
 In 1999 Barabási and Albert published a paper, “Emergence of Scaling in Random Networks”, that characterizes the structure of several real-world networks, including graphs that represent the interconnectivity of movie actors, web pages, and elements in the electrical power grid in the western United States. 
@@ -18,7 +20,7 @@ Graphs with this property are sometimes called **scale-free networks**, for reas
 
 NetworkX provides a function that generates BA graphs. We will use it first; then I’ll show you how it works.
 
-.. _fig_5.3:
+.. _SFN_FIG_3:
 
 ::
 
@@ -29,15 +31,15 @@ The parameters are ``n``, the number of nodes to generate, and ``k``, the number
 
 .. figure:: Figures/thinkcomplexity2012.png
    :align: center
-   :alt: "Figure 5.3: PMF of degree in the Facebook dataset and in the BA model, on a log-log scale."
+   :alt: "Figure 6.3: PMF of degree in the Facebook dataset and in the BA model, on a log-log scale."
 
-   Figure 5.3: PMF of degree in the Facebook dataset and in the BA model, on a log-log scale.
+   Figure 6.3: PMF of degree in the Facebook dataset and in the BA model, on a log-log scale.
 
 The resulting graph has 4039 nodes and 21.9 edges per node. Since every edge is connected to two nodes, the average degree is 43.8, very close to the average degree in the dataset, 43.7.
 
 And the standard deviation of degree is 40.9, which is a bit less than in the dataset, 52.4, but it is much better than what we got from the WS graph, 1.5.
 
-:ref:`Figure 5.3 <fig_5.3>` shows the degree distributions for the Facebook dataset and the BA model on a log-log scale. The model is not perfect; in particular, it deviates from the data when ``k`` is less than 10. But the tail looks like a straight line, which suggests that this process generates degree distributions that follow a power law.
+:ref:`Figure 6.3 <SFN_FIG_3>` shows the degree distributions for the Facebook dataset and the BA model on a log-log scale. The model is not perfect; in particular, it deviates from the data when ``k`` is less than 10. But the tail looks like a straight line, which suggests that this process generates degree distributions that follow a power law.
 
 So the BA model is better than the WS model at reproducing the degree distribution. But does it have the small world property?
 
@@ -45,17 +47,17 @@ In this example, the average path length, ``L``, is 2.5, which is even more “s
 
 On the other hand, the clustering coefficient, ``C``, is 0.037, not even close to the value in the dataset, 0.61. So that’s a problem.
 
-:ref:`Table 5.1 <fig_tbl_5.1>` summarizes these results. The WS model captures the small world characteristics, but not the degree distribution. The BA model captures the degree distribution, at least approximately, and the average path length, but not the clustering coefficient.
+:ref:`Table 6.1 <SFN_FIG_TBL_1>` summarizes these results. The WS model captures the small world characteristics, but not the degree distribution. The BA model captures the degree distribution, at least approximately, and the average path length, but not the clustering coefficient.
 
 In the exercises at the end of this chapter, you can explore other models intended to capture all of these characteristics.
 
-.. _fig_tbl_5.1:
+.. _SFN_FIG_TBL_1:
 
 .. figure:: Figures/table1.PNG
    :align: center
-   :alt: "Table 5.1: Characteristics of the Facebook dataset compared to two models."
+   :alt: "Table 6.1: Characteristics of the Facebook dataset compared to two models."
 
-   Table 5.1: Characteristics of the Facebook dataset compared to two models.
+   Table 6.1: Characteristics of the Facebook dataset compared to two models.
 
 .. fillintheblank:: fitb_5.6
    :casei:

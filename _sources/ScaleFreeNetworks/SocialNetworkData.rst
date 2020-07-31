@@ -1,3 +1,5 @@
+.. _SFN_2:
+
 Social Network Data
 -------------------
 
@@ -33,7 +35,7 @@ The node and edge counts are consistent with the documentation of the dataset.
 
 Now we can check whether this dataset has the characteristics of a small world graph: high clustering and low path lengths.
 
-In :ref:`Section 4.6 <4.6>` we wrote a function to compute the network average clustering coefficient. NetworkX provides a function called ``average_clustering``, which does the same thing a little faster.
+In :ref:`Section 5.6 <SWG_6>` we wrote a function to compute the network average clustering coefficient. NetworkX provides a function called ``average_clustering``, which does the same thing a little faster.
 
 But for larger graphs, they are both too slow, taking time proportional to :math:`n k^2`, where ``n`` is the number of nodes and ``k`` is the number of neighbors each node is connected to.
 

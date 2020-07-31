@@ -1,4 +1,4 @@
-.. _9.9:
+.. _SOC_9:
 
 Reductionism and Holism
 -----------------------
@@ -16,9 +16,9 @@ For example, to explain why the ideal gas law holds, we can model the molecules 
 
 .. figure:: Figures/figure_9.7.png
     :align: center
-    :alt: "Figure 9.7: The logical structure of a holistic model."
+    :alt: "Figure 10.7: The logical structure of a holistic model."
 
-    Figure 9.7: The logical structure of a holistic model.
+    Figure 10.7: The logical structure of a holistic model.
 
 
 
@@ -31,7 +31,7 @@ Holistic models are more focused on similarities between systems and less intere
 
 As another example of an evolutionary system, he proposes “memes”, which are thoughts or behaviors that are replicated by transmission from person to person. As memes compete for the resource of human attention, they evolve in ways that are similar to genetic evolution.
 
-Critics of the meme model have pointed out that memes are a poor analogy for genes; they differ from genes in many obvious ways. Dawkins has argued that these differences are beside the point because memes are not *supposed* to be analogous to genes. Rather, memes and genes are examples of the same category: evolutionary systems. The differences between them emphasize the real point, which is that evolution is a general model that applies to many seemingly disparate systems. The logical structure of this argument is shown in :ref:`Figure 9.8 <logic_sturct>`.
+Critics of the meme model have pointed out that memes are a poor analogy for genes; they differ from genes in many obvious ways. Dawkins has argued that these differences are beside the point because memes are not *supposed* to be analogous to genes. Rather, memes and genes are examples of the same category: evolutionary systems. The differences between them emphasize the real point, which is that evolution is a general model that applies to many seemingly disparate systems. The logical structure of this argument is shown in :ref:`Figure 10.7 <logic_sturct>`.
 
 Bak has made a similar argument that self-organized criticality is a general model for a broad category of systems:
 

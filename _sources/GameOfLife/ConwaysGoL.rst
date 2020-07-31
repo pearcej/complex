@@ -1,6 +1,6 @@
 Conway’s GoL
 ------------
-.. _7.2:
+.. _GOL_2:
 
 One of the first cellular automatons to be studied, and probably the most popular of all time, is a 2-D CA called “The Game of Life”, or GoL for short. It was developed by John H. Conway and popularized in 1970 in Martin Gardner’s column in *Scientific American*. 
 

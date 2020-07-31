@@ -1,3 +1,5 @@
+.. _HFT_4:
+
 Boids
 --------
 In 1987 Craig Reynolds published “Flocks, herds and schools: A distributed behavioral model”, which describes an agent-based model of herd behavior.

@@ -1,5 +1,8 @@
+.. _SWG_9:
+
 What Kind of Explanation is that?
 ------------------------------------
+
 If you ask me why planetary orbits are elliptical, I might start by modeling a planet and a star as point masses; I would look up the law of universal gravitation and use it to write a differential equation for the motion of the planet. Then I would either derive the orbit equation or, more likely, look it up. With a little algebra, I could derive the conditions that yield an elliptical orbit. Then I would argue that the objects we consider planets satisfy these conditions.
 
 People, or at least scientists, are generally satisfied with this kind of explanation. One of the reasons for its appeal is that the assumptions and approximations in the model seem reasonable. Planets and stars are not really point masses, but the distances between them are so big that their actual sizes are negligible. Planets in the same solar system can affect each other’s orbits, but the effect is usually small. And we ignore relativistic effects, again on the assumption that they are small.

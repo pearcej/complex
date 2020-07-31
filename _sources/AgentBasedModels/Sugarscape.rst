@@ -1,7 +1,10 @@
+
 Sugarscape
 -----------
 
-.. _rep_sugar:
+.. _ABM_5:
+
+.. _ABM_FIG_3:
 
 In 1996 Joshua Epstein and Robert Axtell proposed Sugarscape, an agent-based model of an “artificial society” intended to support experiments related to economics and other social sciences.
 
@@ -16,11 +19,11 @@ In the Sugarscape grid, each cell has a capacity, which is the maximum amount of
 
 .. figure:: Figures/figure_10.3.png
     :align: center
-    :alt: "Figure 10.3: Replication of the original Sugarscape model: initial configuration (left), after 2 steps (middle) and after 100 steps (right)."
+    :alt: "Figure 11.3: Replication of the original Sugarscape model: initial configuration (left), after 2 steps (middle) and after 100 steps (right)."
 
-    Figure 10.3: Replication of the original Sugarscape model: initial configuration (left), after 2 steps (middle) and after 100 steps (right).
+    Figure 11.3: Replication of the original Sugarscape model: initial configuration (left), after 2 steps (middle) and after 100 steps (right).
 
-:ref:`Figure 10.3 <rep_sugar>` (left) shows the initial configuration, with the darker areas indicating cells with higher capacity, and small dots representing the agents.
+:ref:`Figure 11.3 <ABM_FIG_3>` (left) shows the initial configuration, with the darker areas indicating cells with higher capacity, and small dots representing the agents.
 
 Initially there are 400 agents placed at random locations. Each agent has three randomly-chosen attributes:
 
@@ -39,7 +42,7 @@ During each time step, agents move one at a time in a random order. Each agent f
 
 After all agents have executed these steps, the cells grow back some sugar, typically 1 unit, but the total sugar in each cell is bounded by its capacity.
 
-:ref:`Figure 10.3 <rep_sugar>` (middle) shows the state of the model after two steps. Most agents are moving toward the areas with the most sugar. Agents with high vision move the fastest; agents with low vision tend to get stuck on the plateaus, wandering randomly until they get close enough to see the next level.
+:ref:`Figure 11.3 <ABM_FIG_3>` (middle) shows the state of the model after two steps. Most agents are moving toward the areas with the most sugar. Agents with high vision move the fastest; agents with low vision tend to get stuck on the plateaus, wandering randomly until they get close enough to see the next level.
 
 Agents born in the areas with the least sugar are likely to starve unless they have a high initial endowment and high vision.
 
@@ -47,13 +50,13 @@ Within the high-sugar areas, agents compete with each other to find and harvest 
 
 When sugar grows back at 1 unit per time step, there is not enough sugar to sustain the 400 agents we started with. The population drops quickly at first, then more slowly, and levels off around 250.
 
-:ref:`Figure 10.3 <rep_sugar>` (right) shows the state of the model after 100 time steps, with about 250 agents. The agents who survive tend to be the lucky ones, born with high vision and/or low metabolism. Having survived to this point, they are likely to survive forever, accumulating unbounded stockpiles of sugar.
+:ref:`Figure 11.3 <ABM_FIG_3>` (right) shows the state of the model after 100 time steps, with about 250 agents. The agents who survive tend to be the lucky ones, born with high vision and/or low metabolism. Having survived to this point, they are likely to survive forever, accumulating unbounded stockpiles of sugar.
 
 .. figure:: Figures/Initial_Sugarscape.gif
     :align: center
-    :alt: "Gif 10.1: Initial Sugarscape for 100 steps."
+    :alt: "Gif 11.1: Initial Sugarscape for 100 steps."
 
-    Gif 10.1: Initial Sugarscape for 100 steps.
+    Gif 11.1: Initial Sugarscape for 100 steps.
 
 .. mchoice:: q_10.4
    :answer_a: They are a model of a simple economy.

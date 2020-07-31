@@ -1,16 +1,16 @@
 
-.. _fig_5.1:
+.. _SFN_FIG_1:
 
 Degree 
 -------
 
-.. _5.4:
+.. _SFN_4:
 
 .. figure:: Figures/thinkcomplexity2010.png
    :align: center
-   :alt: "Figure 5.1: PMF of degree in the Facebook dataset and in the WS model."
+   :alt: "Figure 6.1: PMF of degree in the Facebook dataset and in the WS model."
     
-   Figure 5.1: PMF of degree in the Facebook dataset and in the WS model.
+   Figure 6.1: PMF of degree in the Facebook dataset and in the WS model.
 
 If the WS graph is a good model for the Facebook network, it should have the same average degree across nodes, and ideally the same variance in degree.
 
@@ -82,7 +82,7 @@ We can use the ``thinkplot`` module to plot the results:
     thinkplot.Pdf(pmf_fb, label='Facebook')
     thinkplot.Pdf(pmf_ws, label='WS graph')
 
-:ref:`Figure 5.1<fig_5.1>` shows the two distributions. They are very different.
+:ref:`Figure 6.1<SFN_FIG_1>` shows the two distributions. They are very different.
 
 In the WS model, most users have about 44 friends; the minimum is 38 and the maximum is 50. That’s not much variation. In the dataset, there are many users with only 1 or 2 friends, but one has more than 1000!
 

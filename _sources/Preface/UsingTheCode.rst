@@ -5,7 +5,7 @@
 Using the code
 ----------------
 
-.. _1.4:
+.. _PF_4:
 
 To get a better understanding of the tools needed to interact with and run the given code please examine the two appendices that are at the end of the book. please refer to the hyperlinks below for links to the appendix:
 

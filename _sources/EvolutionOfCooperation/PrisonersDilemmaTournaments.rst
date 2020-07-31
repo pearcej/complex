@@ -1,3 +1,5 @@
+.. _EOC_4:
+
 Prisoner’s Dilemma Tournaments
 ------------------------------------
 

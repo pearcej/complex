@@ -1,3 +1,5 @@
+.. _SOC_10:
+
 SOC, Causation, and Prediction
 ------------------------------
 If a stock market index drops by a fraction of a percent in a day, there is no need for an explanation. But if it drops 10%, people want to know why. Pundits on television are willing to offer explanations, but the real answer may be that there is no explanation.

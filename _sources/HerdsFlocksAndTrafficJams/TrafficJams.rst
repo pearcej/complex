@@ -1,11 +1,13 @@
+.. _HFT_2:
+
 Traffic Jams
 ----------------
 
 .. figure:: Figures/Traffic_Jam.gif
     :align: center
-    :alt: "Gif 11.1: Simulation of traffic jams. Squares indicate the position of the drivers; triangles indicate places where one driver has to brake to avoid another."
+    :alt: "Gif 12.1: Simulation of traffic jams. Squares indicate the position of the drivers; triangles indicate places where one driver has to brake to avoid another."
 
-    Gif 11.1: Simulation of traffic jams. Squares indicate the position of the drivers; triangles indicate places where one driver has to brake to avoid another.
+    Gif 12.1: Simulation of traffic jams. Squares indicate the position of the drivers; triangles indicate places where one driver has to brake to avoid another.
 
 
 What causes traffic jams? Sometimes there is an obvious cause, like an accident, a speed trap, or something else that disturbs the flow of traffic. But other times traffic jams appear for no apparent reason.
@@ -104,15 +106,15 @@ This implementation of ``choose_acceleration`` is simple: it always accelerates 
 
 Since the cars start out equally spaced, we expect them all to accelerate until they reach the speed limit, or until their speed exceeds the space between them. At that point, at least one “collision” will occur, causing some cars to stop.
 
-.. _sim_of_drivers:
+.. _HFT_FIG_1:
 
 .. figure:: Figures/figure_11.1.png
     :align: center
-    :alt: "Figure 11.1: Simulation of drivers on a circular highway at three points in time. Squares indicate the position of the drivers; triangles indicate places where one driver has to brake to avoid another."
+    :alt: "Figure 12.1: Simulation of drivers on a circular highway at three points in time. Squares indicate the position of the drivers; triangles indicate places where one driver has to brake to avoid another."
 
-    Figure 11.1: Simulation of drivers on a circular highway at three points in time. Squares indicate the position of the drivers; triangles indicate places where one driver has to brake to avoid another.
+    Figure 12.1: Simulation of drivers on a circular highway at three points in time. Squares indicate the position of the drivers; triangles indicate places where one driver has to brake to avoid another.
 
-:ref:`Figure 11.1 <sim_of_drivers>` shows a few steps in this process, starting with 30 cars and ``eps=0.02``. On the left is the configuration after 16 time steps, with the highway mapped to a circle. Because of random noise, some cars are going faster than others, and the spacing has become uneven.
+:ref:`Figure 12.1 <HFT_FIG_1>` shows a few steps in this process, starting with 30 cars and ``eps=0.02``. On the left is the configuration after 16 time steps, with the highway mapped to a circle. Because of random noise, some cars are going faster than others, and the spacing has become uneven.
 
 During the next time step (middle) there are two collisions, indicated by the triangles.
 

@@ -1,3 +1,5 @@
+.. _SOC_3:
+
 Sand Piles
 ----------
 The sand pile model was proposed by Bak, Tang and Wiesenfeld in 1987. It is not meant to be a realistic model of a sand pile, but rather an abstraction that models physical systems with a large number of elements that interact with their neighbors.

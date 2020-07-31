@@ -1,7 +1,9 @@
+.. _ABM_6:
+
 Wealth Inequality
 -----------------
 
-.. _dis_of_sugar:
+.. _ABM_FIG_4:
 
 In its current form, Sugarscape models a simple ecology, and could be used to explore the relationship between the parameters of the model, like the growth rate and the attributes of the agents, and the carrying capacity of the system (the number of agents that survive in steady state). And it models a form of natural selection, where agents with higher “fitness” are more likely to survive.
 
@@ -16,12 +18,12 @@ When an agent dies, from starvation or old age, it is replaced by a new agent wi
 
 .. figure:: Figures/figure_10.4.png
     :align: center
-    :alt: "Figure 10.4: Distribution of sugar (wealth) after 100, 200, 300, and 400 steps (gray lines) and 500 steps (dark line). Linear scale (left) and log-x scale (right)."
+    :alt: "Figure 11.4: Distribution of sugar (wealth) after 100, 200, 300, and 400 steps (gray lines) and 500 steps (dark line). Linear scale (left) and log-x scale (right)."
 
-    Figure 10.4: Distribution of sugar (wealth) after 100, 200, 300, and 400 steps (gray lines) and 500 steps (dark line). Linear scale (left) and log-x scale (right).
+    Figure 11.4: Distribution of sugar (wealth) after 100, 200, 300, and 400 steps (gray lines) and 500 steps (dark line). Linear scale (left) and log-x scale (right).
 
 
-Starting with 250 agents (which is close to carrying capacity) I run the model for 500 steps. After each 100 steps, I plot the cumulative distribution function (CDF) of sugar accumulated by the agents. We saw CDFs in :ref:`Section 5.8 <5.8>`. :ref:`Figure 10.4 <dis_of_sugar>` shows the results on a linear scale (left) and a log-x scale (right).
+Starting with 250 agents (which is close to carrying capacity) I run the model for 500 steps. After each 100 steps, I plot the cumulative distribution function (CDF) of sugar accumulated by the agents. We saw CDFs in :ref:`Section 6.8 <SFN_8>`. :ref:`Figure 11.4 <ABM_FIG_4>` shows the results on a linear scale (left) and a log-x scale (right).
 
 
 After about 200 steps (which is twice the longest lifespan) the distribution doesn’t change much. And it is skewed to the right.

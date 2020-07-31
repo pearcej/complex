@@ -1,3 +1,5 @@
+.. _SOC_2:
+
 Critical Systems
 ----------------
 Many critical systems demonstrate common behaviors:

@@ -1,4 +1,4 @@
-.. _5.1:
+.. _SFN_1:
 
 Introduction
 ------------
@@ -8,6 +8,6 @@ This discrepancy is the motivation for a network model developed by Barabási an
 
 The chapter ends with a discussion of WS and BA graphs as explanatory models for small world networks.
 
-The code for this chapter is in chap06.ipynb_ in the respository for this book. More information about working with the code is in :ref:`Section 1.4 <1.4>`.
+The code for this chapter is in chap06.ipynb_ in the respository for this book. More information about working with the code is in :ref:`Section 1.4 <PF_4>`.
 
 .. _chap06.ipynb: https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap06.ipynb

@@ -1,3 +1,5 @@
+.. _EOC_5:
+
 Simulating Evolution of Cooperation
 -----------------------------------------
 *Evolution of Cooperation* is the title of the first book where Axelrod presented results from Prisoner’s Dilemma tournaments and discussed the implications for the problem of altruism. Since then, he and other researchers have explored the evolutionary dynamics of PD tournaments, that is, how the distribution of strategies changes over time in a population of PD contestants. In the rest of this chapter, I run a version of those experiments and present the results.

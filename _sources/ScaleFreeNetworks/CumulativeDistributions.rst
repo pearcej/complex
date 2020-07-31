@@ -1,18 +1,18 @@
 
-.. _fig_5.4:
+.. _SFN_FIG_4:
 
 Cumulative Distributions
 ------------------------
 
-.. _5.8:
+.. _SFN_8:
 
 .. figure:: Figures/thinkcomplexity2013.png
    :align: center
-   :alt: "Figure 5.4: CDF of degree in the Facebook dataset along with the WS model (left) and the BA model (right), on a log-x scale."
+   :alt: "Figure 6.4: CDF of degree in the Facebook dataset along with the WS model (left) and the BA model (right), on a log-x scale."
 
-   Figure 5.4: CDF of degree in the Facebook dataset along with the WS model (left) and the BA model (right), on a log-x scale.
+   Figure 6.4: CDF of degree in the Facebook dataset along with the WS model (left) and the BA model (right), on a log-x scale.
 
-:ref:`Figure 5.4 <fig_5.4>` represents the degree distribution by plotting the probability mass function (``PMF``) on a log-log scale. That’s how Barabási and Albert present their results and it is the representation used most often in articles about power law distributions. But it is not the best way to look at data like this.
+:ref:`Figure 6.4 <SFN_FIG_4>` represents the degree distribution by plotting the probability mass function (``PMF``) on a log-log scale. That’s how Barabási and Albert present their results and it is the representation used most often in articles about power law distributions. But it is not the best way to look at data like this.
 
 A better alternative is a **cumulative distribution function** (``CDF``), which maps from a value, ``x``, to the fraction of values less than or equal to ``x``.
 
@@ -44,20 +44,20 @@ The ``thinkstats`` module provides a class called ``Cdf`` that represents a cumu
 
 And ``thinkplot`` provides a function called ``Cdf`` that plots cumulative distribution functions.
 
-.. _fig_5.5:
+.. _SFN_FIG_5:
 
 ::
 
     
     thinkplot.Cdf(cdf_fb)
 
-:ref:`Figure 5.4 <fig_5.4>` shows the degree CDF for the Facebook dataset along with the WS model (left) and the BA model (right). The x-axis is on a log scale.
+:ref:`Figure 6.4 <SFN_FIG_4>` shows the degree CDF for the Facebook dataset along with the WS model (left) and the BA model (right). The x-axis is on a log scale.
 
 .. figure:: Figures/thinkcomplexity2014.png
    :align: center
-   :alt: "Figure 5.5: Complementary CDF of degree in the Facebook dataset along with the WS model (left) and the BA model (right), on a log-log scale."
+   :alt: "Figure 6.5: Complementary CDF of degree in the Facebook dataset along with the WS model (left) and the BA model (right), on a log-log scale."
 
-   Figure 5.5: Complementary CDF of degree in the Facebook dataset along with the WS model (left) and the BA model (right), on a log-log scale.
+   Figure 6.5: Complementary CDF of degree in the Facebook dataset along with the WS model (left) and the BA model (right), on a log-log scale.
 
 Clearly the ``CDF`` for the WS model is very different from the ``CDF`` from the data. The BA model is better, but still not very good, especially for small values.
 
@@ -82,7 +82,7 @@ Taking the log of both sides yields:
 
 So if the distribution obeys a power law, we expect the CCDF on a log-log scale to be a straight line with slope −α.
 
-:ref:`Figure 5.5 <fig_5.5>` shows the CCDF of degree for the Facebook data, along with the WS model (left) and the BA model (right), on a log-log scale.
+:ref:`Figure 6.5 <SFN_FIG_5>` shows the CCDF of degree for the Facebook data, along with the WS model (left) and the BA model (right), on a log-log scale.
 
 With this way of looking at the data, we can see that the BA model matches the tail of the distribution (values above 20) reasonably well. The WS model does not.
 

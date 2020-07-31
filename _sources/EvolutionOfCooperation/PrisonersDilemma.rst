@@ -1,3 +1,5 @@
+.. _EOC_2:
+
 Prisoner’s Dilemma
 ------------------------
 The **Prisoner’s Dilemma** is a topic in game theory, but it’s not the fun kind of game. Instead, it is the kind of game that sheds light on human motivation and behavior.
