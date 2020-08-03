@@ -14,7 +14,7 @@ For example, to explain why the ideal gas law holds, we can model the molecules 
 
 .. _logic_sturct:
 
-.. figure:: Figures/figure_9.7.png
+.. figure:: Figures/LOGIC_STRUCT_HOLISTIC_MODEL.png
     :align: center
     :alt: "Figure 10.7: The logical structure of a holistic model."
 

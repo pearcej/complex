@@ -6,7 +6,7 @@ Life Pattern
 
 
 
-.. figure:: Figures/figure_7.1.png
+.. figure:: Figures/BEEHIVE.png
     :align: center
     :alt: "Figure 8.1: A stable pattern called a beehive."
 
@@ -14,7 +14,7 @@ Life Pattern
 
 .. _GOL_FIG_2:
 
-.. figure:: Figures/figure_7.2.png
+.. figure:: Figures/TOAD.png
     :align: center
     :alt: "Figure 8.2: An oscillator called a toad."
 
@@ -28,7 +28,7 @@ Life Pattern
 
 .. _GOL_FIG_3:
 
-.. figure:: Figures/figure_7.3.png
+.. figure:: Figures/GLIDER.png
     :align: center
     :alt: "Figure 7.3: A spaceship called a glider."
 

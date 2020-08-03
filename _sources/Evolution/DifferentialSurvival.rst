@@ -21,7 +21,7 @@ Now the probability of survival depends on fitness; in fact, in this version, th
 
 Since agents with low fitness are more likely to die, agents with high fitness are more likely to survive long enough to reproduce. Over time we expect the number of low-fitness agents to decrease, and the number of high-fitness agents to increase.
 
-.. figure:: Figures/figure_12.2.png
+.. figure:: Figures/DIF_SURVIVE_FIT.png
     :align: center
     :alt: "Figure 13.2: Mean fitness over time for 10 simulations with differential survival."
 
