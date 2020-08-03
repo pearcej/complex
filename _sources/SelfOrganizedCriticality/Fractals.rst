@@ -32,7 +32,7 @@ Inside the loop, it uses ``a==level`` to make a boolean array that’s ``True`` 
 
 .. _SOC_FIG_4:
 
-.. figure:: Figures/figure_9.4.png
+.. figure:: Figures/SP_EQUILIBRIUM.png
     :align: center
     :alt: "Figure 10.4: Sand pile model in equilibrium, selecting cells with levels 0, 1, 2, and 3, left to right, top to bottom."
 
@@ -84,7 +84,7 @@ The second line unpacks the rows and assigns them to ``steps``, ``steps2``, and 
     thinkplot.plot(steps, cells)
     thinkplot.plot(steps, steps, linestyle='dashed')
 
-.. figure:: Figures/figure_9.5.png
+.. figure:: Figures/BOX_COUNTS.png
     :align: center
     :alt: "Figure 10.5: Box counts for cells with levels 0, 1, 2, and 3, compared to dashed lines with slopes 1 and 2."
 

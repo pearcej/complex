@@ -27,7 +27,7 @@ The return values, ``freqs`` and ``powers``, are NumPy arrays containing the fre
 
 .. _SOC_FIG_6:
 
-.. figure:: Figures/figure_9.6.png
+.. figure:: Figures/POWER_SPECT.png
     :align: center
     :alt: "Figure Figure 10.6: Power spectrum of the number of toppled cells over time, log-log scale."
 

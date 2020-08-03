@@ -45,13 +45,13 @@ The distributions of ``T`` and ``S`` have many small values and a few very large
 
 .. _log_log:
 
-.. figure:: Figures/figure_9.2.png
+.. figure:: Figures/LINEAR_DIST_AVA.png
     :align: center
     :alt: "Figure 10.2: Distribution of avalanche duration (left) and size (right), linear scale."
 
     Figure 10.2: Distribution of avalanche duration (left) and size (right), linear scale.
 
-.. figure:: Figures/figure_9.3.png
+.. figure:: Figures/LOGLOG_DIST_AVA.png
     :align: center
     :alt: "Figure 10.3: Distribution of avalanche duration (left) and size (right), log-log scale."
 

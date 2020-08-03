@@ -16,7 +16,7 @@ In this version of the model, agents have an age that gets incremented each time
 When an agent dies, from starvation or old age, it is replaced by a new agent with random attributes, so the number of agents is constant.
 
 
-.. figure:: Figures/figure_10.4.png
+.. figure:: Figures/DIST_OF_SUGAR.png
     :align: center
     :alt: "Figure 11.4: Distribution of sugar (wealth) after 100, 200, 300, and 400 steps (gray lines) and 500 steps (dark line). Linear scale (left) and log-x scale (right)."
 

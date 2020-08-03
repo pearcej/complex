@@ -5,7 +5,7 @@ Random Perturbation
 
 .. _HFT_FIG_2:
 
-.. figure:: Figures/figure_11.2.png
+.. figure:: Figures/AVG_SPEED.png
     :align: center
     :alt: "Figure 12.2: Average speed as a function of the number of cars, for three magnitudes of added random noise."
 

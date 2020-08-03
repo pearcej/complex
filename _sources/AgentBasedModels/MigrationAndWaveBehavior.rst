@@ -4,7 +4,7 @@
 Migration and Wave Behavior
 ----------------------------
 
-.. figure:: Figures/figure_10.5.png
+.. figure:: Figures/WAVE_BEHAVE.png
     :align: center
     :alt: "Figure 11.5: Wave behavior in Sugarscape: initial configuration (left), after 6 steps (middle) and after 12 steps (right)."
 

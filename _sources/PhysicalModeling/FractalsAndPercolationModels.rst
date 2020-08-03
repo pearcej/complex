@@ -6,7 +6,7 @@ Fractals and Percolation Models
 .. _PM_7:
 
 
-.. figure:: Figures/figure_8.8.png
+.. figure:: Figures/PERC_MODEL.png
     :align: center
 
     Figure 9.8: Percolation models with ``q=0.6`` and ``n=100``, ``200``, and ``300``.
@@ -30,7 +30,7 @@ The following loop runs the simulations:
 
 The result is a list of tuples where each tuple contains ``size``, ``size**2``, and the number of cells in the percolating cluster (not including the initial wet cells in the top row).
 
-.. figure:: Figures/figure_8.9.png
+.. figure:: Figures/NUM_CELL_IN_PERC_CLUSTER.png
     :align: center
     :alt: "Figure 9.9: Number of cells in the percolating cluster versus CA size."
 
