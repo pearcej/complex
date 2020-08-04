@@ -35,17 +35,17 @@ The parameters are ``n``, the number of nodes to generate, and ``k``, the number
 
    Figure 6.3: PMF of degree in the Facebook dataset and in the BA model, on a log-log scale.
 
-The resulting graph has 4039 nodes and 21.9 edges per node. Since every edge is connected to two nodes, the average degree is 43.8, very close to the average degree in the dataset, 43.7.
+The resulting graph has :math:`4039` nodes and :math:`21.9` edges per node. Since every edge is connected to two nodes, the average degree is :math:`43.8`, very close to the average degree in the dataset, :math:`43.7`.
 
-And the standard deviation of degree is 40.9, which is a bit less than in the dataset, 52.4, but it is much better than what we got from the WS graph, 1.5.
+And the standard deviation of degree is :math:`40.9`, which is a bit less than in the dataset, :math:`52.4`, but it is much better than what we got from the WS graph, :math:`1.5`.
 
-:ref:`Figure 6.3 <SFN_FIG_3>` shows the degree distributions for the Facebook dataset and the BA model on a log-log scale. The model is not perfect; in particular, it deviates from the data when ``k`` is less than 10. But the tail looks like a straight line, which suggests that this process generates degree distributions that follow a power law.
+:ref:`Figure 6.3 <SFN_FIG_3>` shows the degree distributions for the Facebook dataset and the BA model on a log-log scale. The model is not perfect; in particular, it deviates from the data when ``k`` is less than :math:`10`. But the tail looks like a straight line, which suggests that this process generates degree distributions that follow a power law.
 
 So the BA model is better than the WS model at reproducing the degree distribution. But does it have the small world property?
 
-In this example, the average path length, ``L``, is 2.5, which is even more “small world” than the actual network, which has ``L=3.69``. So that’s good, although maybe too good.
+In this example, the average path length, ``L``, is :math:`2.5`, which is even more “small world” than the actual network, which has ``L=3.69``. So that’s good, although maybe too good.
 
-On the other hand, the clustering coefficient, ``C``, is 0.037, not even close to the value in the dataset, 0.61. So that’s a problem.
+On the other hand, the clustering coefficient, ``C``, is :math:`0.037`, not even close to the value in the dataset, :math:`0.61`. So that’s a problem.
 
 :ref:`Table 6.1 <SFN_FIG_TBL_1>` summarizes these results. The WS model captures the small world characteristics, but not the degree distribution. The BA model captures the degree distribution, at least approximately, and the average path length, but not the clustering coefficient.
 

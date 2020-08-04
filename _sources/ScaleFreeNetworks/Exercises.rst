@@ -31,6 +31,6 @@ Data files from the Barabási and Albert paper are available from here_. Their a
                     break
         return G
 
-Compute the number of actors in the graph and the average degree. Plot the PMF of degree on a log-log scale. Also plot the CDF of degree on a log-x scale, to see the general shape of the distribution, and on a log-log scale, to see whether the tail follows a power law.
+Compute the number of actors in the graph and the average degree. Plot the PMF of degree on a :math:`log-log` scale. Also plot the CDF of degree on a :math:`log-x` scale, to see the general shape of the distribution, and on a :math:`log-log` scale, to see whether the tail follows a power law.
 
 Note: The actor network is not connected, so you might want to use ``nx.connected_component_subgraphs`` to find connected subsets of the nodes.

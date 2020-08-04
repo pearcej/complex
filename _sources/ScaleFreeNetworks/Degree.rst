@@ -21,9 +21,9 @@ This function returns a list of degrees in a graph, one for each node:
     def degrees(G):
         return [G.degree(u) for u in G]
 
-The mean degree in model is 44, which is close to the mean degree in the dataset, 43.7.
+The mean degree in model is :math:`44`, which is close to the mean degree in the dataset, :math:`43.7`.
 
-However, the standard deviation of degree in the model is 1.5, which is not close to the standard deviation in the dataset, 52.4. Oops.
+However, the standard deviation of degree in the model is :math:`1.5`, which is not close to the standard deviation in the dataset, :math:`52.4`. Oops.
 
 What’s the problem? To get a better view, we have to look at the distribution of degrees, not just the mean and standard deviation.
 
@@ -31,7 +31,7 @@ I’ll represent the distribution of degrees with a ``Pmf`` object, which is def
 
 Briefly, a ``Pmf`` maps from values to their probabilities. A ``Pmf`` of degrees is a mapping from each possible degree, ``d``, to the fraction of nodes with degree ``d``.
 
-As an example, I’ll construct a graph with nodes 1, 2, and 3 connected to a central node, 0:
+As an example, I’ll construct a graph with nodes :math:`1`, :math:`2`, and :math:`3` connected to a central node, :math:`0`:
 
 ::
 
@@ -48,7 +48,7 @@ Here’s the list of degrees in this graph:
     >>> degrees(G)
     [3, 1, 1, 1]
 
-Node 0 has degree 3, the others have degree 1. Now I can make a ``Pmf`` that represents this degree distribution:
+Node :math:`0` has degree :math:`3`, the others have degree :math:`1`. Now I can make a ``Pmf`` that represents this degree distribution:
 
 ::
 
@@ -56,7 +56,7 @@ Node 0 has degree 3, the others have degree 1. Now I can make a ``Pmf`` that rep
     >>> Pmf(degrees(G))
     Pmf({1: 0.75, 3: 0.25})
 
-The result is a ``Pmf`` object that maps from each degree to a fraction or probability. In this example, 75% of the nodes have degree 1 and 25% have degree 3.
+The result is a ``Pmf`` object that maps from each degree to a fraction or probability. In this example, :math:`75%` of the nodes have degree :math:`1` and :math:`25%` have degree :math:`3`.
 
 Now we can make a ``Pmf`` that contains node degrees from the dataset, and compute the mean and standard deviation:
 
@@ -84,7 +84,7 @@ We can use the ``thinkplot`` module to plot the results:
 
 :ref:`Figure 6.1<SFN_FIG_1>` shows the two distributions. They are very different.
 
-In the WS model, most users have about 44 friends; the minimum is 38 and the maximum is 50. That’s not much variation. In the dataset, there are many users with only 1 or 2 friends, but one has more than 1000!
+In the WS model, most users have about :math:`44` friends; the minimum is :math:`38` and the maximum is :math:`50`. That’s not much variation. In the dataset, there are many users with only :math:`1` or :math:`2` friends, but one has more than :math:`1000`!
 
 Distributions like this, with many small values and a few very large values, are called heavy-tailed.
 
