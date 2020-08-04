@@ -1,6 +1,8 @@
+.. _EOC_7:
+
 The Simulation
 --------------------
-The ``Simulation`` class for this chapter is based on the one in :ref:`Section 12.5 <12.5>`; the only differences are in ``__init__`` and ``step``.
+The ``Simulation`` class for this chapter is based on the one in :ref:`Section 13.5 <EVO_5>`; the only differences are in ``__init__`` and ``step``.
 
 Here’s the ``__init__`` method:
 
@@ -13,7 +15,7 @@ Here’s the ``__init__`` method:
             self.agents = np.asarray(agents)
             self.instruments = []
 
-A ``Simulation`` object contains a ``Tournament`` object, a sequence of ``agents``, and a sequence of ``Instrument`` objects (as in :ref:`Section 12.7 <12.7>`).
+A ``Simulation`` object contains a ``Tournament`` object, a sequence of ``agents``, and a sequence of ``Instrument`` objects (as in :ref:`Section 13.7 <Evo_7>`).
 
 Here’s the ``step`` method:
 
@@ -46,4 +48,4 @@ This version of ``step`` USES ``Tournament.melee``, which sets the ``fitness`` a
 
 ``Simulation.step`` collects the agents’ fitnesses in an array; then it calls ``choose_dead`` to decide which agents die, and ``choose_replacements`` to decide which agents reproduce.
 
-My simulation includes differential survival, as in :ref:`Section 12.8 <12.8>`, but not differential reproduction. You can see the details in the notebook for this chapter. As one of the exercises, you will have a chance to explore the effect of differential reproduction.
+My simulation includes differential survival, as in :ref:`Section 13.8 <EVO_8>`, but not differential reproduction. You can see the details in the notebook for this chapter. As one of the exercises, you will have a chance to explore the effect of differential reproduction.

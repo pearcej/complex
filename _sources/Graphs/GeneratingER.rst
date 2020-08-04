@@ -1,5 +1,5 @@
 
-.. _3.7:
+.. _G_7:
 
 Generating ER Graphs
 --------------------
@@ -7,9 +7,9 @@ Generating ER Graphs
 
 .. figure:: Figures/thinkcomplexity2004.png
    :align: center
-   :alt: "Figure 3.4: An ER graph with n=10 and p=0.3."
+   :alt: "Figure 4.4: An ER graph with n=10 and p=0.3."
 
-   Figure 3.4: An ER graph with n=10 and p=0.3.
+   Figure 4.4: An ER graph with n=10 and p=0.3.
 
 The ER graph :math:`G(n, p)` contains :math:`n` nodes, and each pair of nodes is connected by an edge with probability :math:`p`. Generating an ER graph is similar to generating a complete graph.
 
@@ -53,4 +53,4 @@ Here’s an example with :math:`p=0.3`:
 
     random_graph = make_random_graph(10, 0.3)
 
-:ref:`Figure 3.4 <3.7>` shows the result. This graph turns out to be connected; in fact, most ER graphs with :math:`n=10` and :math:`p=0.3` are connected. In the next section, we’ll see how many.
+:ref:`Figure 4.4 <G_7>` shows the result. This graph turns out to be connected; in fact, most ER graphs with :math:`n=10` and :math:`p=0.3` are connected. In the next section, we’ll see how many.

@@ -1,22 +1,22 @@
-.. _fig_3.5:
-
-.. _fig_3.6: 
+.. _G_FIG_5:
+.. _G_8:
+.. _G_FIG_6: 
 
 Probability of Connectivity
 ---------------------------
 
 .. figure:: Figures/thinkcomplexity2005.png
    :align: center
-   :alt: "Figure 3.5: Probability of connectivity with n=10 and a range of p. The vertical line shows the predicted critical valu"
+   :alt: "Figure 4.5: Probability of connectivity with n=10 and a range of p. The vertical line shows the predicted critical value"
 
-   Figure 3.5: Probability of connectivity with n=10 and a range of p. The vertical line shows the predicted critical value.
+   Figure 4.5: Probability of connectivity with n=10 and a range of p. The vertical line shows the predicted critical value.
 
 
 .. figure:: Figures/thinkcomplexity2006.png
    :align: center
-   :alt: "Figure 3.6: Probability of connectivity for several values of n and a range of p."
+   :alt: "Figure 4.6: Probability of connectivity for several values of n and a range of p."
 
-   Figure 3.6: Probability of connectivity for several values of n and a range of p.
+   Figure 4.6: Probability of connectivity for several values of n and a range of p.
 
 
 For given values of :math:`n` and :math:`p`, we would like to know the probability that :math:`G(n, p)` is connected. We can estimate it by generating a large number of random graphs and counting how many are connected. Here’s how:
@@ -54,8 +54,8 @@ The NumPy function ``logspace`` returns an array of 11 values from :math:`10^{�
 
 For each value of ``p`` in the array, we compute the probability that a graph with parameter ``p`` is connected and store the results in ``ys``.
 
-:ref:`Figure 3.5 <fig_3.5>` shows the results, with a vertical line at the computed critical value, :math:`p* = 0.23`. As expected, the transition from 0 to 1 occurs near the critical value.
+:ref:`Figure 4.5 <G_FIG_5>` shows the results, with a vertical line at the computed critical value, :math:`p* = 0.23`. As expected, the transition from 0 to 1 occurs near the critical value.
 
-:ref:`Figure 3.6 <fig_3.6>` shows similar results for larger values of ``n``. As ``n`` increases, the critical value gets smaller and the transition gets more abrupt.
+:ref:`Figure 4.6 <G_FIG_6>` shows similar results for larger values of ``n``. As ``n`` increases, the critical value gets smaller and the transition gets more abrupt.
 
 These experimental results are consistent with the analytic results Erdős and Rényi presented in their papers.

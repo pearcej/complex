@@ -1,13 +1,14 @@
-.. _fig_4.1:
+.. _SWG_FIG_1:
+.. _SWG_4:
 
 Ring lattice
 ------------
 
 .. figure:: Figures/thinkcomplexity2007.png
    :align: center
-   :alt: "Figure 4.1: A ring lattice with n=10 and k=4."
+   :alt: "Figure 5.1: A ring lattice with n=10 and k=4."
 
-   Figure 4.1: A ring lattice with :math:`n=10` and :math:`k=4`.
+   Figure 5.1: A ring lattice with :math:`n=10` and :math:`k=4`.
 
 A regular graph is a graph where each node has the same number of neighbors; the number of neighbors is also called the **degree** of the node.
 
@@ -58,4 +59,4 @@ We can test ``make_ring_lattice`` like this:
 
     lattice = make_ring_lattice(10, 4)
 
-:ref:`Figure 4.1 <fig_4.1>` shows the result.
+:ref:`Figure 5.1 <SWG_FIG_1>` shows the result.

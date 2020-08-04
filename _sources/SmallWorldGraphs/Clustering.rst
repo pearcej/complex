@@ -1,7 +1,8 @@
-Clustering
-----------
 
-.. _4.6:
+Clustering
+-----------
+.. _SWG_6:
+
 
 The next step is to compute the **clustering coefficient**, which quantifies the tendency for the nodes to form cliques. A clique is a set of nodes that are completely connected; that is, there are edges between all pairs of nodes in the set.
 
@@ -40,7 +41,7 @@ We can test the function like this:
     >>> node_clustering(lattice, 1)
     0.5
 
-In a ring lattice with :math:`k=4`, the clustering coefficient for each node is :math:`0.5` (if you are not convinced, take another look at :ref:`Figure 4.1 <fig_4.1>`).
+In a ring lattice with :math:`k=4`, the clustering coefficient for each node is :math:`0.5` (if you are not convinced, take another look at :ref:`Figure 5.1 <SWG_FIG_1>`).
 
 Now we can compute the network average clustering coefficient like this:
 
