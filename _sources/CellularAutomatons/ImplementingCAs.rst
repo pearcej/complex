@@ -41,7 +41,7 @@ I import ``pyplot`` with the abbreviated name ``plt``, which is conventional. Th
 
 ``imshow`` displays the array as an “image”; that is, it draws a colored square for each element of the array. Setting ``interpolation`` to ``none`` indicates that ``imshow`` should not interpolate between on and off cells.
 
-To compute the state of the CA during time step i, we have to add up consecutive elements of array and compute the parity of the sum. We can do that using a slice operator to select the elements and the modulus operator to compute parity:
+To compute the state of the CA during time step ``i``, we have to add up consecutive elements of array and compute the parity of the sum. We can do that using a slice operator to select the elements and the modulus operator to compute parity:
 
 :: 
 
