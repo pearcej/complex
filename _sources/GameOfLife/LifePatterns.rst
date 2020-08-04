@@ -30,9 +30,9 @@ Life Pattern
 
 .. figure:: Figures/GLIDER.png
     :align: center
-    :alt: "Figure 7.3: A spaceship called a glider."
+    :alt: "Figure 8.3: A spaceship called a glider."
 
-    Figure 7.3: A spaceship called a glider.
+    Figure 8.3: A spaceship called a glider.
 
 
 If you run GoL from a random starting state, a number of stable patterns are likely to appear. Over time, people have identified these patterns and given them names.
