@@ -1,5 +1,8 @@
+.. _PM_2:
+
 Diffusion
 ---------
+
 In 1952 Alan Turing published a paper called “The chemical basis of morphogenesis”, which describes the behavior of systems involving two chemicals that diffuse in space and react with each other. He showed that these systems produce a wide range of patterns, depending on the diffusion and reaction rates, and conjectured that systems like this might be an important mechanism in biological growth processes, particularly the development of animal coloration patterns.
 
 Turing’s model is based on differential equations, but it can be implemented using a cellular automaton.
@@ -18,7 +21,7 @@ The following kernel computes the difference between each cell and the average o
 
 Using ``np.correlate2d``, we can apply this kernel to each cell in an array:
 
-.. _fig_simp_dif:
+.. _PM_FIG_1:
 
 ::
 
@@ -32,11 +35,11 @@ We’ll use a diffusion constant, ``r``, that relates the difference in concentr
 
 .. figure:: Figures/figure_8.1.png
     :align: center
-    :alt: "Figure 8.1: A simple diffusion model after 0, 5, and 10 steps."
+    :alt: "Figure 9.1: A simple diffusion model after 0, 5, and 10 steps."
 
-    Figure 8.1: A simple diffusion model after 0, 5, and 10 steps.
+    Figure 9.1: A simple diffusion model after 0, 5, and 10 steps.
 
-:ref:`Figure 8.1 <fig_simp_dif>` shows results for a CA with size ``n=9``, diffusion constant ``r=0.1``, and initial concentration 0 everywhere except for an “island” in the middle. The figure shows the starting configuration and the state of the CA after 5 and 10 steps. The chemical spreads from the center outward, continuing until the concentration is the same everywhere.
+:ref:`Figure 9.1 <PM_FIG_1>` shows results for a CA with size ``n=9``, diffusion constant ``r=0.1``, and initial concentration 0 everywhere except for an “island” in the middle. The figure shows the starting configuration and the state of the CA after 5 and 10 steps. The chemical spreads from the center outward, continuing until the concentration is the same everywhere.
 
 .. dragndrop:: q_8.2
    :match_1: The chemical flows from the neighbors to the center.|||If the concentration of the center cell is lower than the neighborhood average.

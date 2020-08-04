@@ -1,9 +1,9 @@
 Fractals
 --------
 
-.. _8.6:
+.. _PM_6:
 
-.. _fig-8.6:
+.. _PM_FIG_6:
 
 To understand fractals, we have to start with dimensions.
 
@@ -16,16 +16,16 @@ As an example, I’ll estimate the dimension of a 1-D cellular automaton by meas
 
 .. figure:: Figures/figure_8.6.png
     :align: center
-    :alt: "Figure 8.6: One-dimensional CAs with rules 20, 50, and 18, after 32 time steps."
+    :alt: "Figure 9.6: One-dimensional CAs with rules 20, 50, and 18, after 32 time steps."
 
-    Figure 8.6: One-dimensional CAs with rules 20, 50, and 18, after 32 time steps.
+    Figure 9.6: One-dimensional CAs with rules 20, 50, and 18, after 32 time steps.
 
-:ref:`Figure 8.6<fig-8.6>` shows three 1-D CAs like the ones we saw in :ref:`Section 6.2<6.2>`. Rule 20 (left) generates a set of cells that seems like a line, so we expect it to be one-dimensional. Rule 50 (center) produces something like a triangle, so we expect it to be 2-D. Rule 18 (right) also produces something like a triangle, but the density is not uniform, so its scaling behavior is not obvious.
+:ref:`Figure 9.6<PM_FIG_6>` shows three 1-D CAs like the ones we saw in :ref:`Section 7.2<CA_2>`. Rule 20 (left) generates a set of cells that seems like a line, so we expect it to be one-dimensional. Rule 50 (center) produces something like a triangle, so we expect it to be 2-D. Rule 18 (right) also produces something like a triangle, but the density is not uniform, so its scaling behavior is not obvious.
 
 I’ll estimate the dimension of these CAs with the following function, which counts the number of on cells after each time step. It returns a list of tuples, where each tuple contains ``i``, :math:`i^2`, and the total number of cells.
 
 
-.. _fig_8.7:
+.. _PM_FIG_7:
 
 ::
 
@@ -43,11 +43,11 @@ I’ll estimate the dimension of these CAs with the following function, which co
 
 .. figure:: Figures/figure_8.7.png
     :align: center
-    :alt: "Figure 8.7: Number of “on” cells versus number of time steps for rules 20, 50, and 18."
+    :alt: "Figure 9.7: Number of “on” cells versus number of time steps for rules 20, 50, and 18."
 
-    Figure 8.7: Number of “on” cells versus number of time steps for rules 20, 50, and 18.
+    Figure 9.7: Number of “on” cells versus number of time steps for rules 20, 50, and 18.
 
-:ref:`Figure 8.7<fig_8.7>` shows the results plotted on a log-log scale.
+:ref:`Figure 9.7<PM_FIG_7>` shows the results plotted on a log-log scale.
 
 In each figure, the top dashed line shows :math:`y = i^2`. Taking the log of both sides, we have :math:`log y = 2 log i`. Since the figure is on a log-log scale, the slope of this line is 2.
 

@@ -1,7 +1,7 @@
 Exercises
 ---------
 
-The code for this chapter is in the Jupyter notebook chap06.ipynb_ in the repository for this book. Open this notebook, read the code, and run the cells. You can use this notebook to work on the exercises in this chapter.
+The code for this chapter is in the Jupyter notebook chap07.ipynb_ in the repository for this book. Open this notebook, read the code, and run the cells. You can use this notebook to work on the exercises in this chapter.
 
 **Exercise 1:**  Write a version of ``correlate`` that returns the same result as ``np.correlate`` with ``mode='same'``. Hint: use the NumPy function pad.
 
@@ -18,4 +18,4 @@ The code for this chapter is in the Jupyter notebook chap06.ipynb_ in the reposi
 2. Write a class called ``Turing`` that implements a Turing machine. For the action table, use the rules for a 3-state busy beaver.
 3. Write a class named ``TuringViewer`` that generates an image that represents the state of the tape and the position and state of the head. For one example of what that might look like.
 
-.. _chap06.ipynb: https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap06.ipynb
+.. _chap07.ipynb: https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap07.ipynb

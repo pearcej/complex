@@ -1,6 +1,6 @@
 Exercises
 ---------------
-The code for this chapter is in the Jupyter notebook chap13.ipynb_ in the repository for this book. Open the notebook, read the code, and run the cells. You can use this notebook to work on the following exercises.
+The code for this chapter is in the Jupyter notebook chap14.ipynb_ in the repository for this book. Open the notebook, read the code, and run the cells. You can use this notebook to work on the following exercises.
 
 **Exercise 1:**  The simulations in this chapter depend on conditions and parameters I chose arbitrarily. As an exercise, I encourage you to explore other conditions to see what effect they have on the results. Here are some suggestions:
 
@@ -17,4 +17,4 @@ To distinguish between these explanations, try lowering the mutation rate to see
 
 **Exercise 3:**  The agents in my experiment are “reactive” in the sense that their choice during each round depends only on what the opponent did during previous rounds. Explore strategies that also take into account the agent’s past choices. These strategies can distinguish an opponent who retaliates from an opponent who defects without provocation.
 
-.. _chap13.ipynb: https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap13.ipynb
+.. _chap14.ipynb: https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap14.ipynb

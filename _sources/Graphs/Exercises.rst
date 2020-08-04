@@ -1,10 +1,10 @@
 Exercises
 ---------
-The code for this chapter is in chap03.ipynb_ , which is a Jupyter notebook in the repository for this book. For more information about working with this code, see :ref:`Section 1.4 <1.4>`.
+The code for this chapter is in chap04.ipynb_ , which is a Jupyter notebook in the repository for this book. For more information about working with this code, see :ref:`Section 1.4 <PF_4>`.
 
-**Exercise 1:**   Launch chap03.ipynb_ and run the code. There are a few short exercises embedded in the notebook that you might want to try.
+**Exercise 1:**   Launch chap04.ipynb_ and run the code. There are a few short exercises embedded in the notebook that you might want to try.
 
-**Exercise 2:**   In :ref:`Section 3.9 <3.9>` we analyzed the performance of reachable_nodes and classified it in :math:`O(n + m)`, where n is the number of nodes and :math:`m` is the number of edges. Continuing the analysis, what is the order of growth for ``is_connected``?
+**Exercise 2:**   In :ref:`Section 4.9 <G_9>` we analyzed the performance of reachable_nodes and classified it in :math:`O(n + m)`, where n is the number of nodes and :math:`m` is the number of edges. Continuing the analysis, what is the order of growth for ``is_connected``?
 
 ::
 
@@ -32,4 +32,4 @@ Repeat the experiments we did in this chapter using this alternative definition.
 
 How do the results of this experiment compare to the results using the first type of ER graph?
 
-.. _chap03.ipynb: https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap03.ipynb
+.. _chap04.ipynb: https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap04.ipynb

@@ -1,3 +1,5 @@
+.. _EOC_9:
+
 Conclusions
 -----------
 Axelrod’s tournaments suggest a possible resolution to the problem of altruism: maybe being nice, but not *too* nice, is adaptive. But the strategies in the original tournaments were designed by people, not evolution, and the distribution of strategies did not change over the course of the tournaments.

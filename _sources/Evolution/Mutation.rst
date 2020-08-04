@@ -1,3 +1,5 @@
+.. _EVO_9:
+
 Mutation
 --------------
 
@@ -30,7 +32,7 @@ In this model of mutation, every time we call ``copy``, there is a 5% chance of 
         new_loc[direction] ^= 1
         return new_loc
 
-.. _mean_fig_over_time:
+.. _EVO_FIG_3:
 
 The operator ^= computes “exclusive OR"; with the operand 1, it has the effect of flipping a bit.
 
@@ -38,23 +40,23 @@ Now that we have mutation, we don’t have to start with an agent at every locat
 
 .. figure:: Figures/figure_12.3.png
     :align: center
-    :alt: "Figure 12.3: Mean fitness over time for 10 simulations with mutation and differential survival and reproduction."
+    :alt: "Figure 13.3: Mean fitness over time for 10 simulations with mutation and differential survival and reproduction."
 
-    Figure 12.3: Mean fitness over time for 10 simulations with mutation and differential survival and reproduction.
+    Figure 13.3: Mean fitness over time for 10 simulations with mutation and differential survival and reproduction.
 
    
 
-:ref:`Figure 12.3 <mean_fig_over_time>` shows the results of 10 simulations with mutation and differential survival and reproduction. In every case, the population evolves toward the location with maximum fitness.
+:ref:`Figure 13.3 <EVO_FIG_3>` shows the results of 10 simulations with mutation and differential survival and reproduction. In every case, the population evolves toward the location with maximum fitness.
 
-.. _num_oc:
+.. _EVO_FIG_4:
 
 .. figure:: Figures/figure_12.4.png
     :align: center
-    :alt: "Figure 12.4: Number of occupied locations over time for 10 simulations with mutation and differential survival and reproduction."
+    :alt: "Figure 13.4: Number of occupied locations over time for 10 simulations with mutation and differential survival and reproduction."
 
-    Figure 12.4: Number of occupied locations over time for 10 simulations with mutation and differential survival and reproduction.
+    Figure 13.4: Number of occupied locations over time for 10 simulations with mutation and differential survival and reproduction.
 
-To measure diversity in the population, we can plot the number of occupied locations after each time step. :ref:`Figure 12.4 <num_oc>` shows the results. We start with 100 agents at the same location. As mutations occur, the number of occupied locations increases quickly.
+To measure diversity in the population, we can plot the number of occupied locations after each time step. :ref:`Figure 13.4 <EVO_FIG_4>` shows the results. We start with 100 agents at the same location. As mutations occur, the number of occupied locations increases quickly.
 
 When an agent discovers a high-fitness location, it is more likely to survive and reproduce. Agents at lower-fitness locations eventually die out. Over time, the population migrates through the landscape until most agents are at the location with the highest fitness.
 
