@@ -13,7 +13,7 @@ What criteria does Kuhn propose for choosing among competing models? Do these cr
 NetworkX provides a function called ``powerlaw_cluster_graph`` that implements the "Holme and Kim algorithm for growing graphs with powerlaw degree distribution and approximate average clustering". Read the documentation of this function and see if you can use it to generate a graph that has the same number of nodes as the Facebook dataset, the same average degree, and the same clustering coefficient. How does the degree distribution in the model compare to the actual distribution?
 
 **Exercise 3:**  
-Data files from the Barabási and Albert paper are available from here_. Their actor collaboration data is included in the repository for this book in a file named actor.dat.gz. The following function reads the file and builds the graph.
+Data files from the Barabási and Albert paper are available from here_. Their actor collaboration data is included in the repository for this book in a file named ``actor.dat.gz``. The following function reads the file and builds the graph.
 
 .. _here: https://github.com/pearcej/complex-colab/tree/master/data
 
