@@ -5,8 +5,6 @@ Preface
     :maxdepth: 2
 
     introduction.rst
-    who.rst
-    ChangesFromTheFirstEdition.rst
+    prerequisites.rst
+    changes.rst
     UsingTheCode.rst
-    ContributorList.rst 
-    
