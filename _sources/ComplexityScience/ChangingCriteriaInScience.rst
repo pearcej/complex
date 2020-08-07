@@ -1,3 +1,6 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 The Changing Criteria of Science
 --------------------------------
 
@@ -7,22 +10,23 @@ For example, classical models tend to be law-based, expressed in the form of equ
 
 Not everyone finds these models satisfactory. For example, in Sync, Steven Strogatz writes about his model of spontaneous synchronization in some species of fireflies. He presents a simulation that demonstrates the phenomenon, but then writes:
 I repeated the simulation dozens of times, for other random initial conditions and for other numbers of oscillators. Sync every time. [...] The challenge now was to prove it. Only an ironclad proof would demonstrate, in a way that no computer ever could, that sync was inevitable; and the best kind of proof would clarify why it was inevitable.
-Strogatz is a mathematician, so his enthusiasm for proofs is understandable, but his proof doesn’t address what is, to me, the most interesting part of the phenomenon. In order to prove that “sync was inevitable”, Strogatz makes several simplifying assumptions, in particular that each firefly can see all the others.
+Strogatz is a mathematician, so his enthusiasm for proofs is understandable, but his proof doesn’t address what is, perhaps, the most interesting part of the phenomenon. In order to prove that “sync was inevitable”, Strogatz makes several simplifying assumptions, in particular that each firefly can see all the others.
 
-In my opinion, it is more interesting to explain how an entire valley of fireflies can synchronize *despite the fact that they cannot all see each other*. How this kind of global behavior emerges from local interactions is the subject of :ref:`Chapter 11 <ABM_1>`. Explanations of these phenomena often use agent-based models, which explore (in ways that would be difficult or impossible with mathematical analysis) the conditions that allow or prevent synchronization.
+Some may find it more interesting to ponder how an entire valley of fireflies can synchronize *despite the fact that they cannot all see each other*. How this kind of global behavior emerges from local interactions is the subject of :ref:`Chapter 11 <ABM_1>`. Explanations of these phenomena often use agent-based models, which explore (in ways that would be difficult or impossible with mathematical analysis) the conditions that allow or prevent synchronization.
 
-I am a computer scientist, so my enthusiasm for computational models is probably no surprise. I don’t mean to say that Strogatz is wrong, but rather that people have different opinions about what questions to ask and what tools to use to answer them. These opinions are based on value judgments, so there is no reason to expect agreement.
+As computer scientists, enthusiasm for computational models is probably no surprise.
+Strogatz is not wrong, but people have different opinions about what questions to ask and what tools to use to answer them. These opinions are based on value judgments, so there is no reason to expect agreement.
 
 Nevertheless, there is rough consensus among scientists about which models are considered good science, and which others are fringe science, pseudoscience, or not science at all.
 
 A central thesis of this book is that the criteria this consensus is based on change over time, and that the emergence of complexity science reflects a gradual shift in these criteria.
 
 .. mchoice:: unique_id
-   :answer_c: Law-based, expressed in the form of equations, and solved by mathematical derivation. 
+   :answer_c: Law-based, expressed in the form of equations, and solved by mathematical derivation.
    :answer_b: Law-based, expressed as computations, and derived from mathematical derivations.
    :answer_a: Rule-based, expressed as computations, and derived from mathematical derivations.
    :answer_d: Rule-based, expressed in the form of equations, and expressed as computations.
-   :correct: c   
+   :correct: c
    :feedback_c: Correct!
    :feedback_b: Not quite. Classical models are not expressed as computations.
    :feedback_a: No, they usually define the correct procedure or behavior for classical models.
