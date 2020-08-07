@@ -1,4 +1,4 @@
-..  Copyright (C)  Brad Miller, David Ranum, and Jan Pearce
+..  Copyright (C)  Jan Pearce
     This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
 
 .. _CS_1:
@@ -8,13 +8,13 @@ Introduction
 
 Complexity science is relatively new; it became recognizable as a field, and was given a name, in the 1980s. But its newness is not because it applies the tools of science to a new subject, but because it uses different tools, allows different kinds of work, and ultimately changes what we mean by “science”.
 
-To demonstrate the difference, I’ll start with an example of classical science: suppose someone asks you why planetary orbits are elliptical. You might invoke Newton’s law of universal gravitation and use it to write a differential equation that describes planetary motion. Then you can solve the differential equation and show that the solution is an ellipse. QED!
+To demonstrate the difference, we'll start with an example of classical science: suppose someone asks you why planetary orbits are elliptical. You might invoke Newton’s Law of Universal Gravitation and use it to write a differential equation that describes planetary motion. Then you can solve the differential equation and show that the solution is an ellipse. QED!
 
 Most people find this kind of explanation satisfying. It includes a mathematical derivation — so it has some of the rigor of a proof — and it explains a specific observation, elliptical orbits, by appealing to a general principle, gravitation.
 
-Let me contrast that with a different kind of explanation. Suppose you move to a city like Detroit that is racially segregated, and you want to know why it’s like that. If you do some research, you might find a paper by Thomas Schelling called “Dynamic Models of Segregation”, which proposes a simple model of racial segregation:
+Let's contrast that with a different kind of explanation. Suppose you move to a city like Detroit that is racially segregated, and you want to know why it’s like that. If you do some research, you might find a paper by Thomas Schelling called “Dynamic Models of Segregation”, which proposes a simple model of racial segregation:
 
-Here is my description of the model, from :ref:`Chapter 11 <ABM_1>`:
+Here is the description of the model, from :ref:`Chapter 11 <ABM_1>`:
 
 - The  Schelling  model  of  the  city  is  an  array  of  cells  where  each cell represents a house. The houses are occupied by two kinds of “agents”, labeled red and blue, in roughly equal numbers.  About 10% of the houses are empty.
 
@@ -30,10 +30,8 @@ Is this explanation satisfying in the same way as the explanation of planetary m
 
 Most obviously, the Schelling model is highly abstract, which is to say not realistic. So you might be tempted to say that people are more complicated than planets. But that can’t be right. After all, some planets have people on them, so they have to be more complicated than people.
 
-Both systems are complicated, and both models are based on simplifications. For example, in the model of planetary motion we include forces between the planet and its sun, and ignore interactions between planets. In Schelling’s model, we include individual decisions based on local information, and ignore every other aspect of human behavior.
+Both systems are complicated, and both models are based on simplifications. For example, in the model of planetary motion, we include forces between the planet and its sun, and ignore interactions between planets. In Schelling’s model, we include individual decisions based on local information, and ignore every other aspect of human behavior.
 
 But there are differences of degree. For planetary motion, we can defend the model by showing that the forces we ignore are smaller than the ones we include. And we can extend the model to include other interactions and show that the effect is small. For Schelling’s model it is harder to justify the simplifications.
 
-Another difference is that Schelling’s model doesn’t appeal to any physical laws, and it uses only simple computation, not mathematical derivation. Models like Schelling’s don’t look like classical science, and many people find them less compelling, at least at first. But as I will try to demonstrate, these models do useful work, including prediction, explanation, and design. One of the goals of this book is to explain how.
-
-
+Another difference is that Schelling’s model doesn’t appeal to any physical laws, and it uses only simple computation, not mathematical derivation. Models like Schelling’s don’t look like classical science, and many people find them less compelling, at least at first. But as we will try to demonstrate, these models do useful work, including prediction, explanation, and design. One of the goals of this book is to explain how.

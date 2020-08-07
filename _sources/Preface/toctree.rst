@@ -7,4 +7,4 @@ Preface
     introduction.rst
     prerequisites.rst
     changes.rst
-    UsingTheCode.rst
+    notebooks.rst
