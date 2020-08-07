@@ -6,7 +6,7 @@ Segregation
 
 
 .. _ABM_FIG_1:
-.. figure:: Figures/figure_10.1.png
+.. figure:: Figures/SEG_MODEL.png
     :align: center
     :alt: "Figure 11.1: Schelling’s segregation model with n=100, initial condition (left), after 2 steps (middle), and after 10 steps (right)."
 
@@ -36,7 +36,7 @@ Remember that when ``p=0.3`` the agents would be happy if 3 of 8 neighbors were 
 
 .. _ABM_FIG_2:
 
-.. figure:: Figures/figure_10.2.png
+.. figure:: Figures/DEG_SEG.png
     :align: center
     :alt: "Figure 11.2: Degree of segregation in Schelling’s model, over time, for a range of p."
 

@@ -9,7 +9,4 @@ As a Python challenge, can you write this class without copying code?
 
 **Exercise 2:**  When we change the landscape as in :ref:`Section 13.10 <EVO_10>`, the number of occupied locations and the mean distance usually increase, but the effect is not always big enough to be obvious. Try out some different random seeds to see how general the effect is.
 
-1
-    This model is a variant of the NK model developed primarily by Stuart Kauffman.
-
 .. _chap13.ipynb: https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap13.ipynb

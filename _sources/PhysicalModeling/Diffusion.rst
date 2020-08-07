@@ -33,7 +33,7 @@ We’ll use a diffusion constant, ``r``, that relates the difference in concentr
 
     array += r * c
 
-.. figure:: Figures/figure_8.1.png
+.. figure:: Figures/SIMPLE_DIF.png
     :align: center
     :alt: "Figure 9.1: A simple diffusion model after 0, 5, and 10 steps."
 

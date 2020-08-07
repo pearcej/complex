@@ -66,7 +66,7 @@ We can use this logic to write a simple, fast ``step`` function:
 
 This function identifies porous cells, where ``a==1``, that have at least one wet neighbor, where ``c>=5``, and sets their state to 5, which indicates that they are wet.
 
-.. figure:: Figures/figure_8.5.png
+.. figure:: Figures/3STEP_PERC.png
     :align: center
     :alt: "Figure 9.1: Sand pile model initial state (left), after 200 steps (middle), and 400 steps (right)."
 

@@ -134,7 +134,7 @@ Let’s look at a bigger example, with ``n=20``:
 
     Gif of a sand pile running for 100 steps.
  
-.. figure:: Figures/figure_9.1.png
+.. figure:: Figures/SP_MODEL.png
     :align: center 
     :alt: "Figure 10.1: Sand pile model initial state (left), after 200 steps (middle), and 400 steps (right)."
 

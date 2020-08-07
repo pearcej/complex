@@ -39,7 +39,7 @@ As an aside, the expression ``G[u]`` returns a dictionary that contains the neig
 
 This function does not consider the edges in the order specified by Watts and Strogatz, but that doesn’t seem to affect the results.
 
-:ref:`Figure 5.2 <SWG_FIG_2>` shows WS graphs with :math:`n=20`,:math:`k=4`, and a range of values of p. When :math:`p=0`, the graph is a ring lattice. When :math:`p=1`, it is completely random. As we’ll see, the interesting things happen in between.
+:ref:`Figure 5.2 <SWG_FIG_2>` shows WS graphs with :math:`n=20`, :math:`k=4`, and a range of values of p. When :math:`p=0`, the graph is a ring lattice. When :math:`p=1`, it is completely random. As we’ll see, the interesting things happen in between.
 
 .. mchoice:: question_4.5.1
    :answer_a: The graph becomes more like a lattice.

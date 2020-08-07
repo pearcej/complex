@@ -90,7 +90,7 @@ As long as the rate parameters are not too high, the values of ``A`` and ``B`` u
 
    In the above code A*B**2 sets the rate of reaction.
 
-.. figure:: Figures/figure_8.2.png
+.. figure:: Figures/LIGHT_SPT_DARK_BACK.png
     :align: center
     :alt: "Figure 9.1: Sand pile model initial state (left), after 200 steps (middle), and 400 steps (right)."
 
@@ -104,7 +104,7 @@ For all simulations in this section, ``ra=0.5`` and ``rb=0.25``.
 
 .. _PM_FIG_3:
 
-.. figure:: Figures/figure_8.3.png
+.. figure:: Figures/CORAL.png
     :align: center
     :alt: "Figure 9.1: Sand pile model initial state (left), after 200 steps (middle), and 400 steps (right)."
 
@@ -114,7 +114,7 @@ For all simulations in this section, ``ra=0.5`` and ``rb=0.25``.
 
 .. _PM_FIG_4:
 
-.. figure:: Figures/figure_8.4.png
+.. figure:: Figures/ANIMAL_SPOT.png
     :align: center
     :alt: "Figure 9.1: Sand pile model initial state (left), after 200 steps (middle), and 400 steps (right)."
 
