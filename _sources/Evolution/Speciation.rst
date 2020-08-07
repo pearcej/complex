@@ -21,7 +21,7 @@ Before we can model new species, we need the ability to identify clusters of age
             return np.sum(np.logical_xor(loc1, loc2))
 
 
-.. figure:: Figures/figure_12.5.png
+.. figure:: Figures/DIST_OVER_TIME.png
     :align: center
     :alt: "Figure 13.5: Mean distance between agents over time."
 
@@ -44,7 +44,7 @@ We can model these scenarios by running a simulation until the population reache
 
 .. _EVO_FIG_6:
 
-.. figure:: Figures/figure_12.6.png
+.. figure:: Figures/500ST_MEAN_FIT.png
     :align: center
     :alt: " Figure 12.6: Mean fitness over time. After 500 time steps, we change the fitness landscape."
 

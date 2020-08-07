@@ -38,7 +38,7 @@ The operator ^= computes “exclusive OR"; with the operand 1, it has the effect
 
 Now that we have mutation, we don’t have to start with an agent at every location. Instead, we can start with the minimum variability: all agents at the same location.
 
-.. figure:: Figures/figure_12.3.png
+.. figure:: Figures/FIT_DIF_SURVIVE_REP.png
     :align: center
     :alt: "Figure 13.3: Mean fitness over time for 10 simulations with mutation and differential survival and reproduction."
 
@@ -50,7 +50,7 @@ Now that we have mutation, we don’t have to start with an agent at every locat
 
 .. _EVO_FIG_4:
 
-.. figure:: Figures/figure_12.4.png
+.. figure:: Figures/OCCUPIED_LOC.png
     :align: center
     :alt: "Figure 13.4: Number of occupied locations over time for 10 simulations with mutation and differential survival and reproduction."
 

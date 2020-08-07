@@ -14,7 +14,7 @@ More generally, we can estimate the dimension of an object by measuring some kin
 
 As an example, I’ll estimate the dimension of a 1-D cellular automaton by measuring its area (total number of “on” cells) as a function of the number of rows.
 
-.. figure:: Figures/figure_8.6.png
+.. figure:: Figures/1D_CA.png
     :align: center
     :alt: "Figure 9.6: One-dimensional CAs with rules 20, 50, and 18, after 32 time steps."
 
@@ -41,7 +41,7 @@ I’ll estimate the dimension of these CAs with the following function, which co
 
         return res
 
-.. figure:: Figures/figure_8.7.png
+.. figure:: Figures/NUM_ON_CELL.png
     :align: center
     :alt: "Figure 9.7: Number of “on” cells versus number of time steps for rules 20, 50, and 18."
 

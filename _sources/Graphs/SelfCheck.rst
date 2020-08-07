@@ -1,7 +1,7 @@
 Self Check
 -----------
 
-.. figure:: Figures/3.2_graph_question.png
+.. figure:: Figures/SELF_CHECK_FIG.png
    :align: center
    :alt: "Graph of Friend Network"
 

@@ -49,7 +49,7 @@ We can get a clearer view of the transition by estimating the probability of con
     ps = np.logspace(-2.5, 0, 11)
     ys = [prob_connected(n, p) for p in ps]
 
-The NumPy function ``logspace`` returns an array of 11 values from :math:`10^{−2.5}` to :math:`10^0 = 1`, equally spaced on a logarithmic scale.
+The NumPy function ``logspace`` returns an array of :math:`11` values from :math:`10^{−2.5}` to :math:`10^0 = 1`, equally spaced on a logarithmic scale.
 
 
 For each value of ``p`` in the array, we compute the probability that a graph with parameter ``p`` is connected and store the results in ``ys``.

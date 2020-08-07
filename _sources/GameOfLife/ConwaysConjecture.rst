@@ -7,7 +7,7 @@ Conway’s Conjecture
 
 From most initial conditions, GoL quickly reaches a stable state where the number of live cells is nearly constant (possibly with some oscillation).
 
-.. figure:: Figures/figure_7.4.png
+.. figure:: Figures/PENTO.png
     :align: center
     :alt: "Figure 8.4: Starting and final configurations of the r-pentomino."
 
@@ -27,7 +27,7 @@ One of the simplest Methuselahs is the r-pentomino, which has only five cells, r
 
 This configuration is “final” in the sense that all remaining patterns are either stable, oscillators, or gliders that will never collide with another pattern. In total, the r-pentomino yields 6 gliders, 8 blocks, 4 blinkers, 4 beehives, 1 boat, 1 ship, and 1 loaf.
 
-.. figure:: Figures/figure_7.5.png
+.. figure:: Figures/GLIDER_GUN.png
     :align: center
     :alt: "Figure 8.5: Gosper’s glider gun, which produces a stream of gliders."
 

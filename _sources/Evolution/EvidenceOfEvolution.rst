@@ -49,7 +49,7 @@ Now we can create and add a ``MeanFitness`` instrument, run the simulation, and 
 
 ``Simulation`` keeps a list of ``Instrument`` objects. After each time step it invokes ``update`` on each ``Instrument`` in the list.
 
-.. figure:: Figures/figure_12.1.png
+.. figure:: Figures/MEAN_FIT.png
     :align: center
     :alt: "Figure 13.1: Mean fitness over time for 10 simulations with no differential survival or reproduction."
 

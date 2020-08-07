@@ -19,7 +19,7 @@ I start with 100 identical agents who always defect, and run the simulation for 
     sim = PDSimulation(tour, agents)
 
 
-.. figure:: Figures/figure_13.1.png
+.. figure:: Figures/AVG_FIT.png
     :align: center
     :alt: "Figure 14.1: Average fitness (points scored per round of Prisoner’s Dilemma)"
 
@@ -51,7 +51,7 @@ To get some insight into this level of fitness, let’s look at a few more ``ins
 
 ``responses`` is an array with one row for each agent and one column for each element of the genome. ``metric`` is the fraction of elements that are 'C', averaged across agents.
 
-.. figure:: Figures/figure_13.2.png
+.. figure:: Figures/AVG_NICE.png
     :align: center
     :alt: "Figure 14.2: Average niceness across all genomes in the population (left), and fraction of population that cooperates in the first round (right)."
 

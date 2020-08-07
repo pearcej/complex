@@ -3,9 +3,9 @@ Glossary
 
 **Barabási-Albert Model:** The Barabási–Albert (BA) model is an algorithm for generating random scale-free networks using a preferential attachment mechanism.
 
-**Complementary CDF:** CCDF(x) ≡ 1 − CDF(x)
+**Complementary CDF:** :math:`CCDF(x) ≡ 1 − CDF(x)`
 
-**Cumulative Distribution Function (CDF)** A function which maps from a value, x, to the fraction of values less than or equal to x.
+**Cumulative Distribution Function (CDF)** A function which maps from a value, :math:`x`, to the fraction of values less than or equal to :math:`x`.
 
 **Explanatory Model:** Is a model that gives a useful description of why and how a phenomenon is the way it is.
 
@@ -15,7 +15,7 @@ Glossary
 
 **Preferential Attachment:** Is any of a class of processes in which some quantity is distributed among a number of individuals according to what they already have.
 
-**Probability Mass Function (PmF):** a function that maps from each value to it's probabilities.
+**Probability Mass Function (PmF):** A function that maps from each value to it's probabilities.
 
 **Power Law:** A distribution follows this law if :math:`PMF(k) ∼ k−α` where ``PMF(k)`` is the fraction of nodes with degree ``k``, ``α`` is a parameter, and the symbol ∼ indicates that the ``PMF`` is asymptotic to ``k−α`` as ``k`` increases.
 
