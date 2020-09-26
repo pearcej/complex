@@ -1,7 +1,11 @@
+
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 .. _ABM_2:
 
 Schelling’s Model
-------------------
+-----------------
 
 In 1969 Thomas Schelling published “Models of Segregation”, which proposed a simple model of racial segregation.
 
@@ -24,12 +28,12 @@ Of course, we have to keep in mind the limitations of this argument: Schelling�
 .. fillintheblank:: CH10.2_Q1
     :casei:
 
-    Schelling's model demonstrates a |blank| cause of segregation, but says nothing about |blank| causes. 
+    Schelling's model demonstrates a |blank| cause of segregation, but says nothing about |blank| causes.
 
     - :possible: Correct!
       :actual: Incorrect, look again at what is demonstrated through the model.
       :x: Incorrect, please try again.
-    
+
     - :actual: Correct!
-      :possible: Look again at what the sections say about the model demonstrating. 
+      :possible: Look again at what the sections say about the model demonstrating.
       :x: Incorrect, please try again.

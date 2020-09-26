@@ -1,3 +1,6 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 .. _CA_12:
 
 Cross-Correlation
@@ -16,7 +19,7 @@ The NumPy ``correlate`` function takes an array, ``a``, and a “window", ``w``,
 We can write this operation in Python like this:
 
 ::
-    
+
     def c_k(a, w, k):
         N = len(w)
         return sum(a[k:k+N] * w)
@@ -52,7 +55,7 @@ With this window, each element, ``c_k``, is the sum of consecutive elements from
 We can use ``c_k`` to write ``correlate``, which computes the elements of ``c`` for all values of ``k`` where the window and the array overlap.
 
 ::
- 
+
     def correlate(row, window):
         cols = len(row)
         N = len(window)

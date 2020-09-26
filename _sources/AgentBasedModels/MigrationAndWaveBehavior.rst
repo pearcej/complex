@@ -1,8 +1,11 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 .. _ABM_FIG_5:
 .. _ABM_8:
 
 Migration and Wave Behavior
-----------------------------
+---------------------------
 
 .. figure:: Figures/WAVE_BEHAVE.png
     :align: center
@@ -25,6 +28,6 @@ These waves move diagonally, which is surprising because the agents themselves o
 
 .. figure:: Figures/Sugarscape_Wave_Behavior_.gif
     :align: center
-    :alt: "Gif 11.2: Wave behavior in a sugarscape."
+    :alt: "Gis 11.2: Wave behavior in a sugarscape."
 
-    Gif 11.2: Wave behavior in a sugarscape. 
+    Gif 11.2: Wave behavior in a Sugarscape.

@@ -1,5 +1,8 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 Matching
-------------
+--------
 
 .. dragndrop:: Ch2_matching
    :match_1: Complexity Science|||Concerned With dynamic, unpredictable, and multi-dimensional complex systems consisting of a collection of interconnected relationships and parts characterized by its non-linearity.
@@ -8,4 +11,4 @@ Matching
    :match_4: Pseudoscience|||Claims that are presented as scientific and factual but are incompatible with the scientific method.
    :match_5: Classical Models|||Law-based models proven by mathematical derivation.
    :match_6: Determinism|||According to this view, all events are inevitable and are caused by prior events.
-   :match_7: Stochastic|||It may be analyzed statistically but may not be predicted precisely due to a random pattern or probability distribution. 
+   :match_7: Stochastic|||It may be analyzed statistically but may not be predicted precisely due to a random pattern or probability distribution.

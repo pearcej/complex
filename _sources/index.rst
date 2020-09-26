@@ -1,3 +1,6 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 .. On Complexity documentation master file, ported from a
    sphinx-quickstart file made on Thu Oct 27 08:17:45 2011.
 
@@ -5,7 +8,7 @@
    contain the root `toctree` directive.
 
 .. meta::
-   :description: On Complexity is began from Edition 2 of Think Complexity by Allen B. Downey
+   :description: On Complexity began from Edition 2 of Think Complexity by Allen B. Downey
    :keywords: Complexity Science, Game of Life
 
 .. toc_version: 2

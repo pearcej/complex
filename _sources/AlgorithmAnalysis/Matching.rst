@@ -1,4 +1,7 @@
-Matching 
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
+Matching
 --------
 
 .. dragndrop:: matching_algorithmana
@@ -15,6 +18,6 @@ Matching
     :match_10: Exponential|||Function represented as a number being raised to a power that increases.
     :match_11: Linear|||Function that grows in a one to one relationship with its input.
     :match_12: Logarithmic|||Functions that are the inverse of exponential functions.
-    :match_13: Order of Magnitude|||a function describing an algorithm's steps as the size of the problem increases. 
+    :match_13: Order of Magnitude|||a function describing an algorithm's steps as the size of the problem increases.
 
     Drag the word on the left to its corresponding definition

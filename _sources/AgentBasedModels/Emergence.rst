@@ -1,3 +1,6 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 .. _ABM_9:
 
 Emergence
@@ -35,5 +38,5 @@ The examples in this book and the principle of computational equivalence give go
 
    Many cellular automatons are |blank|, which means that ther are no shortcuts.
 
-   - :computationally irreducible: Correct, just like other complex systesm cellular automatons are computationally irreducible. 
+   - :computationally irreducible: Correct, just like other complex systesm cellular automatons are computationally irreducible.
      :x: Incorrect

@@ -1,9 +1,12 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 .. _EVO_3:
 
 Fitness Landscape
------------------------
+-----------------
 
-The function that maps from genotype to fitness is called a **fitness landscape**. In the landscape metaphor, each genotype corresponds to a location in an ``N``-dimensional space, and fitness corresponds to the “height" of the landscape at that location. 
+The function that maps from genotype to fitness is called a **fitness landscape**. In the landscape metaphor, each genotype corresponds to a location in an ``N``-dimensional space, and fitness corresponds to the “height" of the landscape at that location.
 
 In biological terms, the fitness landscape represents information about how the genotype of an organism is related to its physical form and capabilities, called its **phenotype**, and how the phenotype interacts with its **environment**.
 
@@ -44,9 +47,7 @@ In that case, the fitness of ``loc = [0, 1, 0]`` would be the mean of ``[0.4, 0.
    :answer_a: True
    :answer_b: False
    :correct: a
-   :feedback_a: Correct. In the book the author uses random fitness landscape. 
+   :feedback_a: Correct. In the book the author uses random fitness landscape.
    :feedback_b: Incorrect. Please refer to the section.
 
    To induce evolution there needs to be a relationship between genotype and fitness, and it can be any relationship.
-
-

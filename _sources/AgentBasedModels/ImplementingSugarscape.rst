@@ -1,12 +1,15 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
+
 .. _ABM_7:
 
 Implementing Sugarscape
 ------------------------
 
-Sugarscape is more complicated than the previous models, so I won’t present the entire implementation here. I will outline the structure of the code and you can see the details in the Jupyter notebook for this chapter, chap11.ipynb_, which is in the repository for this book. If you are not interested in the details, you can skip this section.
+Sugarscape is more complicated than the previous models, so we won’t present the entire implementation here. we will outline the structure of the code and you can see the details in the Jupyter notebook for this chapter, chap11.ipynb_, which is in the repository for this book. If you are not interested in the details, you can skip this section.
 
 During each step, the agent moves, harvests sugar, and ages. Here is the ``Agent`` class and its ``step`` method:
-
 
 .. _chap11.ipynb: https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap11.ipynb
 

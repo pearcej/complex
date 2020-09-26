@@ -1,6 +1,5 @@
-﻿..  Copyright (C)  Brad Miller, David Ranum, and Jan Pearce
+..  Copyright (C)  Jan Pearce
     This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
-
 
 Big-O Notation
 --------------
@@ -222,20 +221,20 @@ to see that :math:`T(n)` then follows the quadratic function as
 .. admonition:: Self Check
 
    Write two Python functions to find the minimum number in an list.  The first function should compare each number to every other number on the list. :math:`O(n^2)`.  The second function should be linear :math:`O(n)`.
-    
+
 
 .. fillintheblank:: bigOquestion
     :casei:
 
     The Big O of a particular algorithm is :math:`O(n^{2})`. Given that it takes 2 seconds to complete the algorithm with 1 million inputs;
 
-    how long would it take with 2 million inputs? ``|blank|`` seconds. 
-    
+    how long would it take with 2 million inputs? ``|blank|`` seconds.
+
     10 million? ``|blank|``
 
     -   :8: Correct!
         :2: Incorrect. Remember, think about what it means for the n to be squared.
-    -   :200: Correct! 
+    -   :200: Correct!
         :x: Incorrect. Remember, think about what it means for the n to be squared.
 
 .. fillintheblank:: bigologn
@@ -244,15 +243,15 @@ to see that :math:`T(n)` then follows the quadratic function as
     The Big O of a particular algorithm is :math:`O(log_{2}n)`. Given that it takes 2 seconds to complete the algorithm with 3 million inputs;
     how long would it take with 4 million inputs? You may use a calculator on this one.
     ``|blank|`` seconds.
-        
-    10 million? 
+
+    10 million?
     ``|blank|`` seconds.
 
     -   :.74: Correct!
         :.2 .53: Try higher.
         :2.26 3: Try lower.
         :.*: Incorrect. try again.
-    -   :3.44: Correct! 
+    -   :3.44: Correct!
         :.43 3: Incorrect. Try higher. Think about what happens to the time as more operations occur.
         :6.45 3: Incorrect. Try lower. Think about what happens to the time as more operations occur.
         :.*: Incorrect. try again.
@@ -260,17 +259,16 @@ to see that :math:`T(n)` then follows the quadratic function as
     :casei:
 
     The Big O of a particular algorithm is :math:`O(n^{3})`. Given that it takes 2 seconds to complete the algorithm with 1000 inputs;
-    how long would it take with 2000 inputs? 
+    how long would it take with 2000 inputs?
     ``|blank|`` seconds.
 
-    10,000? 
-    ``|blank|`` seconds. 
+    10,000?
+    ``|blank|`` seconds.
 
     -   :16: Correct!
         :6 9: Incorrect. Try higher. Think about what happens to the time as more operations occur.
         :23 6: Incorrect. Try lower. Think about what happens to the time as more operations occur.
     -   :2000: Correct!
-        :1500 499: Incorrect. Try higher. Think about what happens to the time as more operations occur. 
-        :2500 499: Incorrect. Try lower. Think about what happens to the time as more operations occur. 
-        :.*: Incorrect. 
-    
+        :1500 499: Incorrect. Try higher. Think about what happens to the time as more operations occur.
+        :2500 499: Incorrect. Try lower. Think about what happens to the time as more operations occur.
+        :.*: Incorrect.

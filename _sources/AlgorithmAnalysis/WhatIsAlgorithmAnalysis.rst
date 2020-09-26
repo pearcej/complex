@@ -1,4 +1,4 @@
-..  Copyright (C)  Brad Miller, David Ranum, and Jan Pearce
+..  Copyright (C)  Jan Pearce
     This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
 
 What Is Algorithm Analysis?
@@ -69,8 +69,8 @@ during the accumulation step that was not really necessary.
         .. activecode:: ec2_py
             :caption: Another Summation of the First n Integers in python
 
-            #Performs same function as listing 1, but is less descriptive 
-            #This is not good practice 
+            #Performs same function as listing 1, but is less descriptive
+            #This is not good practice
 
             def foo(tom):
                 fred = 0
@@ -114,9 +114,9 @@ measure is sometimes referred to as the “execution time” or “running
 time” of the algorithm. One way we can measure the execution time for
 the function ``sumOfN`` is to do a benchmark analysis. This means that
 we will track the actual time required for the program to compute its
-result. In the ``ctime`` library there is a function called ``clock`` 
-that will return the current system clock time in seconds since some 
-arbitrary starting point. By calling this function twice, at the beginning 
+result. In the ``ctime`` library there is a function called ``clock``
+that will return the current system clock time in seconds since some
+arbitrary starting point. By calling this function twice, at the beginning
 and at the end, and then computing the difference, we can get an exact
 number of seconds (fractions in most cases) for execution.
 
@@ -133,7 +133,7 @@ number of seconds (fractions in most cases) for execution.
 
         import time
 
-        """ Performs same function as listing one, and also list the time it takes to perform 
+        """ Performs same function as listing one, and also list the time it takes to perform
         the function """
 
         def sumOfN2(n):
@@ -244,7 +244,7 @@ taking advantage of the formula we just developed.
     .. activecode:: active3_py
         :caption: Summation Without Iteration Python
 
-        """ Performs same function as listing one, and also list the time it takes to perform 
+        """ Performs same function as listing one, and also list the time it takes to perform
         the function, and it performs better with larger inputs or (n) """
 
         def sumOfN3(n):

@@ -1,5 +1,8 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 Evidence of Evolution
-----------------------
+---------------------
 
 .. _EVO_7:
 
@@ -54,7 +57,7 @@ Now we can create and add a ``MeanFitness`` instrument, run the simulation, and 
     :alt: "Figure 13.1: Mean fitness over time for 10 simulations with no differential survival or reproduction."
 
     Figure 13.1: Mean fitness over time for 10 simulations with no differential survival or reproduction.
-   
+
 
 :ref:`Figure 13.1 <EVO_FIG_1>` shows the result of running this simulation 10 times. The mean fitness of the population drifts up or down at random. Since the distribution of fitness changes over time, we infer that the distribution of phenotypes is also changing. By the most inclusive definition, this random walk is a kind of evolution. But it is not a particularly interesting kind.
 
@@ -76,7 +79,3 @@ These are the phenomena we want to explain. So far, our model doesn’t do the j
    :feedback_b: Correct. It is a change in the distribution of genotypes in a population. Individuals don’t evolve, populations do.
 
    Evolution is a change in the distribution of genotypes in individuals of a population.
-
-
-
-

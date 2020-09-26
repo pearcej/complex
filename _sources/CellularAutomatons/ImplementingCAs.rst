@@ -1,3 +1,6 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 .. _CA_11:
 
 Implementing CAs
@@ -43,9 +46,9 @@ I import ``pyplot`` with the abbreviated name ``plt``, which is conventional. Th
 
 To compute the state of the CA during time step ``i``, we have to add up consecutive elements of array and compute the parity of the sum. We can do that using a slice operator to select the elements and the modulus operator to compute parity:
 
-:: 
+::
 
-    
+
     def step(array, i):
         rows, cols = array.shape
         row = array[i-1]

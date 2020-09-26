@@ -1,5 +1,8 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 Simulation
----------------
+----------
 
 .. _EVO_5:
 
@@ -48,16 +51,16 @@ In this version of the simulation, the number of new agents during each time ste
 
 .. mchoice:: q_12.5
    :answer_a: If an agent dies then a new agent will be made in the next time step so the amount of agents is always changing.
-   :answer_b: If an agent dies no new agent will take its place leading to all the agents being dead eventually. 
-   :answer_c: If an agent dies then a new agent is made within that same time step so that the number of live agents is constant.  
+   :answer_b: If an agent dies no new agent will take its place leading to all the agents being dead eventually.
+   :answer_c: If an agent dies then a new agent is made within that same time step so that the number of live agents is constant.
    :answer_d: None of the above.
    :correct: c
-   :feedback_a: Sorry but when one agent dies another is made within that same time step so the amount of agents is constant.  
-   :feedback_b: Sorry but a new agent will be made to replace an agent if it dies. 
+   :feedback_a: Sorry but when one agent dies another is made within that same time step so the amount of agents is constant.
+   :feedback_b: Sorry but a new agent will be made to replace an agent if it dies.
    :feedback_c: Correct!
    :feedback_d: Incorrect. There is one correct answer.
 
-   What happens when an agent dies in this version of the simulation? 
+   What happens when an agent dies in this version of the simulation?
 
 .. dragndrop:: CH12.5_Q2
     :match_1: fit_land|||A reference to a FitnessLandscape object.
@@ -65,5 +68,3 @@ In this version of the simulation, the number of new agents during each time ste
     :match_3: git_fitnesses|||Returns an array containing the fitness of each agent.
     :match_4: choose_dead|||Decides which agents die during this time step, and returns an array that contains the indices of the dead agents.
     :match_5: choose_replacements|||Decides which agents reproduce during this time step, invokes copy on each one, and returns an array of new Agent objects.
-
-

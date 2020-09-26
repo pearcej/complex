@@ -1,7 +1,10 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 .. _EVO_1:
 
 Introduction
-------------------
+------------
 
 The most important idea in biology, and possibly all of science, is the **theory of evolution by natural selection**, which claims that *new species are created and existing species change due to natural selection*. **Natural selection** is a process in which inherited variations between individuals cause differences in survival and reproduction.
 
@@ -35,13 +38,10 @@ The code for this chapter is in chap13.ipynb_, which is a Jupyter notebook in th
    :answer_b: False
    :correct: a
    :feedback_a: Correct.
-   :feedback_b: Incorrect, please refer back to the reading. 
+   :feedback_b: Incorrect, please refer back to the reading.
 
-   According to the author, only a third of Americans believe that the theory of evolution is true due to the following reasons: 
-   
-   Some reject evolution for conflicts with their religious beliefs. 
+   According to the author, only a third of Americans believe that the theory of evolution is true due to the following reasons:
+
+   Some reject evolution for conflicts with their religious beliefs.
    Some were actively misinformed.
-   Many people don't know anything about evolution. 
-
-
-
+   Many people don't know anything about evolution.
