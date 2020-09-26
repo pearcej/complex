@@ -1,7 +1,10 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 .. _EVO_9:
 
 Mutation
---------------
+--------
 
 In the simulations so far, we start with the maximum possible diversity — one agent at every location in the landscape — and end with the minimum possible diversity, all agents at one location.
 
@@ -44,7 +47,7 @@ Now that we have mutation, we don’t have to start with an agent at every locat
 
     Figure 13.3: Mean fitness over time for 10 simulations with mutation and differential survival and reproduction.
 
-   
+
 
 :ref:`Figure 13.3 <EVO_FIG_3>` shows the results of 10 simulations with mutation and differential survival and reproduction. In every case, the population evolves toward the location with maximum fitness.
 
@@ -70,7 +73,7 @@ It is important to remember that the agents in this model don’t move, just as 
     :answer_a: True
     :answer_b: False
     :correct: b
-    :feedback_a: Incorrect, the agents actually need to be in the same location once mutation is implemented. 
+    :feedback_a: Incorrect, the agents actually need to be in the same location once mutation is implemented.
     :feedback_b: Correct, agents will all start in the same location when we have mutation.
 
     All the agents start in the same location until we add in mutation then they start at every location across the landscape to increase the diversity of agents.

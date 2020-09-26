@@ -1,9 +1,12 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 .. _EVO_2:
 
 Simulating Evolution
----------------------------
+--------------------
 
-I start with a simple model that demonstrates a basic form of evolution. According to the theory, the following features are sufficient to produce evolution:
+We start with a simple model that demonstrates a basic form of evolution. According to the theory, the following features are sufficient to produce evolution:
 
 - **Replicators**: We need a population of agents that can reproduce in some way. We’ll start with replicators that make perfect copies of themselves. Later we’ll add imperfect copying, that is, mutation.
 - **Variation**: We need variability in the population, that is, differences between individuals.
@@ -20,7 +23,7 @@ Finally, to generate differential survival and reproduction, we define a functio
    :answer_b: Variations
    :answer_c: Fitness
    :answer_d: Differential survival or reproduction
-   :answer_e: Genotype 
+   :answer_e: Genotype
    :correct: a,b,d
    :feedback_a: Correct, they needed a population of agents that could reproduce in some way, and they used replicators that make perfect copies of themselves.
    :feedback_b: Correct, we need variability in the population, that is, differences between individuals.
@@ -28,4 +31,4 @@ Finally, to generate differential survival and reproduction, we define a functio
    :feedback_d: Correct, the differences between individuals have to affect their ability to survive or reproduce.
    :feedback_e: This is what is needed to produce one of the three.
 
-   Evolution needs three things to be present, what are those three things? 
+   Evolution needs three things to be present, what are those three things?

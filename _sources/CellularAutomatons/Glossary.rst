@@ -1,3 +1,6 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 Glossary
 --------
 
@@ -9,7 +12,7 @@ Glossary
 
 **Falsifiability:** A hypothesis is this if there is an experiment, at least in the realm of practicality, that would contradict the hypothesis if it were false.
 
-**Pseudo-Random Number Generators (PRNGs):** Programs that produce random-seeming numbers. 
+**Pseudo-Random Number Generators (PRNGs):** Programs that produce random-seeming numbers.
 
 **Turing Complete (Universality):** Means that they can compute any computable function. Universality
 

@@ -1,5 +1,8 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 Differential Survival
-----------------------
+---------------------
 
 .. _EVO_8:
 
@@ -26,7 +29,7 @@ Since agents with low fitness are more likely to die, agents with high fitness a
     :alt: "Figure 13.2: Mean fitness over time for 10 simulations with differential survival."
 
     Figure 13.2: Mean fitness over time for 10 simulations with differential survival.
-   
+
 
 :ref:`Figure 13.2 <EVO_FIG_2>` shows mean fitness over time for 10 simulations with differential survival. Mean fitness increases quickly at first, but then levels off.
 

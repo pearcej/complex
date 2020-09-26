@@ -22,6 +22,6 @@ Features of this book include:
 
 **Technical details** Most books about complexity science are written for a popular audience. They leave out technical details, which is frustrating for people who can handle them. This book presents the code, the math, and the explanations you need to understand how the models work.
 
-**Google Colabortory** For each chapter, a Google Colaboratory notebooks is provided that includes the code from the chapter, additional examples, and animations that let you see the models in action.
+**Google Colaboratory** For each chapter, a Google Colaboratory notebooks is provided that includes the code from the chapter, additional examples, and animations that let you see the models in action.
 
 **Exercises** Suggested exercises you might want to work on are provided at the end of each chapter.

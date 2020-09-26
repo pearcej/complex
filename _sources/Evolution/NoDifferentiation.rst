@@ -1,7 +1,10 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 .. _EVO_6:
 
 No Differentiation
--------------------
+------------------
 
 Before we run the simulation, we have to specify the behavior of ``choose_dead`` and ``choose_replacements``. We’ll start with simple versions of these functions that don’t depend on fitness:
 
@@ -29,5 +32,3 @@ In ``choose_dead``, ``n`` is the number of agents and ``is_dead`` is a boolean a
 In ``choose_replacements``, ``n`` is the number of agents who reproduce during this time step. It uses ``np.random.choice`` to choose ``n`` agents with replacement. Then it invokes ``copy`` on each one and returns a list of new ``Agent`` objects.
 
 These methods don’t depend on fitness, so this simulation does not have differential survival or reproduction. As a result, we should not expect to see evolution. But how can we tell?
-
-

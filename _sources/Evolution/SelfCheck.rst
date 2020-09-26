@@ -1,5 +1,8 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 Self Check
---------------
+----------
 
 
 .. fillintheblank:: SC12_Q1
@@ -27,7 +30,7 @@ Self Check
    :casei:
 
    To induce evolution, we need |blank| relationship between genotype and fitness, but it turns out that it can be |blank| relationship.
-  
+
    - :some: Correct.
      :any: Sorry this is incorrect, to induce evolution it has another characteristic.
      :x: Incorrect.

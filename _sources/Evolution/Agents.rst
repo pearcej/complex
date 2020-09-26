@@ -1,7 +1,10 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 .. _EVO_4:
 
 Agents
------------
+------
 
 Next we need agents. Here’s the class definition:
 
@@ -25,4 +28,3 @@ The attributes of an ``Agent`` are:
 - ``fitness``: The fitness of this ``Agent`` in the ``FitnessLandscape``, represented as a number between 0 and 1.
 
 ``Agent`` provides ``copy``, which copies the genotype exactly. Later, we will see a version that copies with mutation, but mutation is not necessary for evolution.
-

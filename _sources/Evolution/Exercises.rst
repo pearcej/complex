@@ -1,7 +1,10 @@
-Exercises
-----------
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
 
-The code for this chapter is in the Jupyter notebook chap13.ipynb_ in the repository for this book. Open the notebook, read the code, and run the cells. You can use the notebook to work on the following exercises. 
+Exercises
+---------
+
+The code for this chapter is in the Jupyter notebook chap13.ipynb_ in the repository for this book. Open the notebook, read the code, and run the cells. You can use the notebook to work on the following exercises.
 
 **Exercise 1:**  The notebook shows the effects of differential reproductions and survival separately. What if you have both? Write a class called ``SimWithBoth`` that uses the version of ``choose_dead`` from ``SimWithDiffSurvival`` and the version of ``choose_replacements`` from ``SimWithDiffReproduction``. Does mean fitness increase more quickly?
 

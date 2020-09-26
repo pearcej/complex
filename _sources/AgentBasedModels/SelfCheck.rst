@@ -1,5 +1,8 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 Self Check
------------
+----------
 
 .. dragndrop:: SC10_Q1
     :match_1: Sugar|||Each agent starts with an endowment of this chosen from a uniform distribution between 5 and 25 units.
@@ -28,6 +31,6 @@ Self Check
     :feedback_a: Agents are able to see.
     :feedback_b: To stay alive they have to get sugar to eat.
     :feedback_c: Correct!
-    :feedback_d: To stay alive agents have to migrate to find more surgar. 
+    :feedback_d: To stay alive agents have to migrate to find more surgar.
 
     What behaviour does the aggergates show that the agents don't have?

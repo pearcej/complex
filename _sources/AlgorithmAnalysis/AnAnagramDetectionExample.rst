@@ -1,6 +1,5 @@
-..  Copyright (C)  Brad Miller, David Ranum, and Jan Pearce
+..  Copyright (C)  Jan Pearce
     This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
-
 
 An Anagram Detection Example
 ----------------------------
@@ -48,7 +47,7 @@ and if found, checked off by replacement. :ref:`ActiveCode 1 <lst_anagramSolutio
             lists2 = list(s2)
             pos1 = 0
 
-            # checks to see if all of the letters are the same in both inputs 
+            # checks to see if all of the letters are the same in both inputs
             while pos1 < len(s1) and stillOK:
                 pos2 = 0
                 found = False
@@ -133,9 +132,9 @@ At first glance you may be tempted to think that this algorithm is
 :math:`O(n)`, since there are three consecutive simple iterations:
 the first two to convert strings to char arrays and the last
 to compare the *n*
-characters after the sorting process. Sorting is typically either 
+characters after the sorting process. Sorting is typically either
 :math:`O(n^{2})` or :math:`O(n\log n)`, so the sorting operations
-dominate the iteration. In the end, this algorithm will have the 
+dominate the iteration. In the end, this algorithm will have the
 same order of magnitude as that of the sorting process.
 
 Solution 3: Brute Force
@@ -191,9 +190,9 @@ anagrams. :ref:`ActiveCode 3 <lst_ana4>` shows this solution.
     .. activecode:: active7py
         :caption: Count and Compare Python
 
-        """ uses an array to count the number of a ocurrences of the two inputs 
-        if the number of occurrences is the same then the input is an anagram """ 
-        
+        """ uses an array to count the number of a ocurrences of the two inputs
+        if the number of occurrences is the same then the input is an anagram """
+
         def anagramSolution4(s1,s2):
             c1 = [0]*26
             c2 = [0]*26
@@ -264,8 +263,8 @@ problem.
             for i in n:
                 for j in n:
                     test = test + i * j;
-                 
-             
+
+
             return 0;
 
    .. mchoice:: analysis_2
@@ -312,7 +311,7 @@ problem.
             while i > 0:
                 count = count + 1;
                 i = i // 2;
-            
+
             return 0;
 
    .. fillintheblank:: fill1512
@@ -323,4 +322,3 @@ problem.
          :16: That would be 2n, which would be simplified as n.
          :8: That would be n.
          :.*: Wrong, Try again!
-

@@ -1,8 +1,11 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
+
 Exercises
 ----------
 
 The code for this chapter is in the Jupyter notebook chap11.ipynb_ in the repository for this book. Open this notebook, read the code, and run the cells. You can use this notebook to work on the following exercises.
-
 
 **Exercise 1:**  Bill Bishop, author of *The Big Sort*, argues that American society is increasingly segregated by political opinion, as people choose to live among like-minded neighbors.
 
@@ -20,13 +23,8 @@ You should be able to implement this model by inheriting from ``SugarScape`` and
 
 **Exercise 3:**  Among people who study philosophy of mind, “Strong AI" is the theory that an appropriately-programmed computer could have a mind in the same sense that humans have minds.
 
-
-
 John Searle presented a thought experiment called “The Chinese Room”, intended to show that Strong AI is false.
 
-
 What is the **system reply** to the Chinese Room argument? How does what you have learned about emergence influence your reaction to the system response?
-
-
 
 .. _chap11.ipynb: https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap11.ipynb

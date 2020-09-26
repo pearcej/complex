@@ -1,3 +1,6 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 .. _CA_3:
 
 Wolfram's Experiment
@@ -15,7 +18,7 @@ In these experiments, the cells have two states, denoted as 0 and 1 or “off" a
 
 .. figure:: Figures/Table.png
    :align: center
-    
+
 .. _CA_FIG_1:
 
 The first row shows the eight states a neighborhood can be in. The second row shows the state of the center cell during the next time step. As a concise encoding of this table, Wolfram suggested reading the bottom row as a binary number; because 00110010 in binary is 50 in decimal, Wolfram calls this CA “Rule 50”.

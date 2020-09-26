@@ -1,5 +1,8 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 Speciation
----------------
+----------
 
 .. _EVO_10:
 
@@ -59,4 +62,3 @@ After the change, mean fitness increases again as the population migrates across
 Once the population reaches steady state, it forms a new cluster, with mean distance between agents near 1 again.
 
 Now if we compute the distance between the agents’ locations before and after the change, they differ by more than 6, on average. The distances between clusters are much bigger than the distances between agents in each cluster, so we can interpret these clusters as distinct species.
-

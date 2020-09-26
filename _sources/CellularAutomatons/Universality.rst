@@ -1,3 +1,6 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 .. _CA_8:
 
 Universality
@@ -37,4 +40,4 @@ Applying these definitions to CAs, Classes 1 and 2 are “obviously simple”. I
     :feedback_a: Correct, it helps abstract what can be computed in general.
     :feedback_b: Incorrect, the Turning machine can help show what can and cannot be computed.
 
-    The Turing machine is useful because it is possible to characterize the set of functions that can be computed by it. 
+    The Turing machine is useful because it is possible to characterize the set of functions that can be computed by it.

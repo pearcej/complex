@@ -1,7 +1,10 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 .. _ABM_1:
 
 Introduction
--------------
+------------
 
 The models we have seen so far might be characterized as “rule-based” in the sense that they involve systems governed by simple rules. In this and the following chapters, we explore agent-based models.
 

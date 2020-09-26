@@ -1,9 +1,12 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 .. _ABM_3:
 
 Implementation of Schelling’s Model
--------------------------------------
+-----------------------------------
 
-To implement Schelling’s model, I wrote yet another class that inherits from ``Cell2D``:
+To implement Schelling’s model, we have yet another class that inherits from ``Cell2D``:
 
 ::
 
@@ -116,5 +119,3 @@ Finally, we replace the entry in ``empty_locs`` with ``source``, so the cell tha
       :\<: please use a word to describe the relationship
       :\>: please use a word to describe the relationship
       :x: Incorrect please try again.
-
-

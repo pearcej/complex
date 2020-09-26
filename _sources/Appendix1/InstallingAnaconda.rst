@@ -1,21 +1,26 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 .. _Ap_1:
 
 Installing Juypter Notebooks through Anaconda
 ---------------------------------------------
 
-If you don't already have Jupyter, I highly recommend installing Anaconda, which is a Python distribution that contains everything you need for the workshop. It is easy to install on Windows, Mac, and Linux, and because it does a user-level install, it will not interfere with other Python installations.
+If you don't already have Jupyter, it is a Python distribution that contains everything you need for the companion code for this book.
+It is easy to install on Windows, Mac, and Linux, and because it does a user-level install, it will not interfere with other
+Python installations.
 
 Information about installing Anaconda is here: https://www.anaconda.com/products/individual
 
-The code for the tutorial works in Python 2 and Python 3, but I recommend Python 3.
+The code for this book works in Python 3.
 
 When you install Anaconda, you should get Jupyter by default, but if not, run
 
-:: 
+::
 
     conda install jupyter
 
-Once you have Jupyter, you can get my code from this Git repository on Github. If you have a Git client installed, you should be able to download it by running:
+Once you have Jupyter, you can get Allen Downey's code from this Git repository on Github. If you have a Git client installed, you should be able to download it by running:
 
 ::
 
@@ -29,7 +34,7 @@ Then cd into the new directory:
 
     cd ThinkComplexity2
 
-To make sure you have the packages you need, you can use environment.yml to create a Conda environment named complexity
+To make sure you have the packages you need, you can use environment.yml to create a Conda environment named complexity.
 
 ::
 
@@ -48,7 +53,7 @@ To start Jupyter, run:
     cd code
     jupyter notebook
 
-Jupyter should launch your default browser or open a tab in an existing browser window. If not, the Jupyter server should print a URL you can use. For example, when I launch Jupyter, I get
+Jupyter should launch your default browser or open a tab in an existing browser window. If not, the Jupyter server should print a URL you can use. For example, you will likely get something like:
 
 ::
 
@@ -67,4 +72,4 @@ Select the cell with the import statements and press "Shift-Enter" to run the co
 
 If you get error messages about missing packages, you can install the packages you need using your package manager, or install Anaconda.
 
-If you have trouble with the animations, you might have to install ffmpeg. The animations are not necessary for the tutorial.    
+If you have trouble with the animations, you might have to install ffmpeg. The animations are not necessary for the text.
