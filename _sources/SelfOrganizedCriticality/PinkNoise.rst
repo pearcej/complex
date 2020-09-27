@@ -1,11 +1,14 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 .. _SOC_7:
 
 Pink Noise
 ----------
+
 The title of the original paper that presented the sand pile model is “Self-Organized Criticality: An Explanation of :math:`1/f` Noise”.
 
 As the subtitle suggests, Bak, Tang and Wiesenfeld were trying to explain why many natural and engineered systems exhibit :math:`1/f` noise, which is also known as “flicker noise” and “pink noise”.
-
 
 To understand pink noise, we have to take a detour to understand signals, power spectrums, and noise.
 
@@ -21,7 +24,7 @@ Other kinds of noise have different relationships between frequency and power. I
 
 .. math::
 
-   P(f) = 1/f^2 
+   P(f) = 1/f^2
 
 We can generalize this equation by replacing the exponent 2 with a parameter :math:`β`:
 

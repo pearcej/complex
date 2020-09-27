@@ -1,8 +1,12 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 .. _SFN_6:
 
 Barabási-Albert Model
 ---------------------
-In 1999 Barabási and Albert published a paper, “Emergence of Scaling in Random Networks”, that characterizes the structure of several real-world networks, including graphs that represent the interconnectivity of movie actors, web pages, and elements in the electrical power grid in the western United States. 
+
+In 1999 Barabási and Albert published a paper, “Emergence of Scaling in Random Networks”, that characterizes the structure of several real-world networks, including graphs that represent the interconnectivity of movie actors, web pages, and elements in the electrical power grid in the western United States.
 
 They measure the degree of each node and compute ``PMF(k)``, the probability that a vertex has degree ``k``. Then they plot ``PMF(k)`` versus ``k`` on a log-log scale. The plots fit a straight line, at least for large values of ``k``, so Barabási and Albert conclude that these distributions are heavy-tailed.
 
@@ -65,11 +69,10 @@ In the exercises at the end of this chapter, you can explore other models intend
    The 3 features that distinguish a BA model from a WS model are |blank|, |blank|, and a degree distribution that obeys a |blank|.
 
    - :growth: Correct, a BA model will start with a small graph and add vertices one at a time instead of starting with a fixed number of vertices.
-     :preferential attachment: Please move this answer to the second blank. 
+     :preferential attachment: Please move this answer to the second blank.
      :x: Incorrect.
    - :preferential attachment: Correct, when a new edge is created, it is more likely to connect to a vertex that already has a large number of edges.
-     :growth: Please move this answer to the first blank. 
+     :growth: Please move this answer to the first blank.
      :x: Incorrect.
    - :power law: Corect.
      :x: Incorrect.
-

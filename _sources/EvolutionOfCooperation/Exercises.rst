@@ -1,5 +1,8 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 Exercises
----------------
+---------
 The code for this chapter is in the Jupyter notebook chap14.ipynb_ in the repository for this book. Open the notebook, read the code, and run the cells. You can use this notebook to work on the following exercises.
 
 **Exercise 1:**  The simulations in this chapter depend on conditions and parameters I chose arbitrarily. As an exercise, I encourage you to explore other conditions to see what effect they have on the results. Here are some suggestions:

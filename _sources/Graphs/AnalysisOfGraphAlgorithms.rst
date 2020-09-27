@@ -1,15 +1,19 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 .. _G_9:
 
 Analysis of Graph Algorithms
 ----------------------------
-Earlier in this chapter I presented an algorithm for checking whether a graph is connected; in the next few chapters, we will see other graph algorithms. Along the way, we will analyze the performance of those algorithms, figuring out how their run times grow as the size of the graphs increases.
+
+Earlier in this chapter we presented an algorithm for checking whether a graph is connected; in the next few chapters, we will see other graph algorithms. Along the way, we will analyze the performance of those algorithms, figuring out how their run times grow as the size of the graphs increases.
 
 The order of growth for graph algorithms is usually expressed as a function of :math:`n`, the number of vertices (nodes), and :math:`m`, the number of edges.
 
 As an example, let’s analyze ``reachable_nodes`` from :ref:`Section 4.6 <G_6>`
 
 ::
-    
+
     def reachable_nodes(G, start):
     seen = set()
     stack = [start]
@@ -41,33 +45,8 @@ If we know the relationship between :math:`n` and :math:`m`, we can simplify thi
 .. mchoice:: question3_9
    :answer_a: True
    :answer_b: False
-   :correct: a   
+   :correct: a
    :feedback_a: Correct, if a node has k neighbors, it is added to stack k times.
    :feedback_b: Incorrect, it depends on the amount of neighbors the node has.
 
    It is possible for a node to be added to the stack multiple times depending on the amount of neighbors the node has
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

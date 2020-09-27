@@ -1,7 +1,11 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 .. _SOC_9:
 
 Reductionism and Holism
 -----------------------
+
 The original paper by Bak, Tang and Wiesenfeld is one of the most frequently-cited papers in the last few decades. Some subsequent papers have reported other systems that are apparently self-organized critical (SOC). Others have studied the sand pile model in more detail.
 
 As it turns out, the sand pile model is not a good model of a sand pile. Sand is dense and not very sticky, so momentum has a non-negligible effect on the behavior of avalanches. As a result, there are fewer very large and very small avalanches than the model predicts, and the distribution might not be heavy-tailed.
@@ -46,11 +50,11 @@ For reductionist models, realism is the primary virtue, and simplicity is second
 .. fillintheblank:: q_9.9
    :casei:
 
-   What is compared to genes as a means of understanding the evolutionary system? 
+   What is compared to genes as a means of understanding the evolutionary system?
 
    |blank|
 
-   - :memes: Correct! 
+   - :memes: Correct!
      :x: Incorrect, please go back and reread the section.
 
 .. mchoice:: q_9.9.2
@@ -58,7 +62,6 @@ For reductionist models, realism is the primary virtue, and simplicity is second
    :answer_b: Holistic Model
    :correct: b
    :feedback_a: Incorrect, the sand pile model is a more abstract model than what a reductionist approach would use.
-   :feedback_b: Correct, the sand pile model is holistic because it is an abstracted model oh physical systems and it follows the three steps of holistic models. 
+   :feedback_b: Correct, the sand pile model is holistic because it is an abstracted model oh physical systems and it follows the three steps of holistic models.
 
-   Given the explanation above, the sand pile model is most accurately described as a? 
-   
+   Given the explanation above, the sand pile model is most accurately described as a?

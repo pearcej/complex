@@ -1,10 +1,11 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 .. _GOL_3:
 .. _GOL_FIG_1:
 
 Life Pattern
--------------
-
-
+------------
 
 .. figure:: Figures/BEEHIVE.png
     :align: center
@@ -21,7 +22,7 @@ Life Pattern
     Figure 8.2: An oscillator called a toad.
 
 .. figure:: Figures/GoL_Toad.gif
-    :align: center 
+    :align: center
     :alt: "Gif of An oscillator called a toad."
 
     Gif of An oscillator called a toad.
@@ -66,5 +67,5 @@ People have spent embarrassing amounts of time finding and naming these patterns
    If you run a GoL from a random starting state, a number of unstable patterns are likely to appear.
 
 .. shortanswer:: q_7.5
-   
+
    Why do you think that people are fascinated with this kind of program so much that they name the formations?

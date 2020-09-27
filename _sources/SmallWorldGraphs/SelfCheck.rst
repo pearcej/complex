@@ -1,11 +1,14 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 Self Check
-------------
+----------
 
 .. fillintheblank:: SC4_Q1
         :casei:
 
         |blank| is a graph with n nodes, the nodes can be arranged in a circle with each node connected to the k nearest neighbors.
- 
+
         - :ring lattice: Correct.
           :WS graphs: Incorrect. WS graphs in the book refer to the Watts-Strogatz model that is based on a random graph generation model which produces graphs with small-world properties.
           :Regular graph: Incorrect. A regular graph is a graph where each node has the same number of neighbors. This graph is a kind of regular graph. Please try again.
@@ -28,6 +31,6 @@ Self Check
     :match_1: 1|||Rewire some of the edges of the ring lattice.
     :match_2: 2|||Quantify the tendency for the nodes to form cliques.
     :match_3: 3|||Compute the average length of the shortest path between each pair of nodes.
-    :match_4: 4|||You are ready to replicate the WS experiment. 
+    :match_4: 4|||You are ready to replicate the WS experiment.
 
-    Match the following to the order that they need to be in to build a Watts-Strogatz (WS) graph. 
+    Match the following to the order that they need to be in to build a Watts-Strogatz (WS) graph.

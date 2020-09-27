@@ -1,14 +1,17 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 Glossary
----------
+--------
 
 **Avalanche:** When a single grain causes the cells to topple which then affects a substantial friction of the grid.
 
 **Holistic Model:** Holistic models are more focused on similarities between systems and less interested in analogous parts. A holistic approach to modeling consists of these steps:
-    
+
 Observe a behavior that appears in a variety of systems.
-    
+
 Find a simple model that demonstrates that behavior.
-    
+
 Identify the elements of the model that are necessary and sufficient to produce the behavior.
 
 **Noise:** In common use, noise is usually an unwanted sound, but in the context of signal processing, it is a signal that contains many frequency components.
@@ -28,4 +31,3 @@ Identify the elements of the model that are necessary and sufficient to produce 
 **Signal:** A signal is any quantity that varies in time. One example is sound, which is variation in air density. In the sand pile model, the signals we’ll consider are avalanche durations and sizes as they vary over time.
 
 **Ultimate Cause:** It is the cause that is considered some deeper kind of explanation for a large avalanche.
-

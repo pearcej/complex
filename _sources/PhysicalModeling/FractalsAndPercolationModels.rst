@@ -1,3 +1,5 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
 
 .. _PM_FIG_8:
 
@@ -20,7 +22,7 @@ The following loop runs the simulations:
 .. _PM_FIG_9:
 
 ::
-    
+
     res = []
     for size in sizes:
         perc = Percolation(size, q)
@@ -45,13 +47,12 @@ When ``q`` is substantially smaller than the critical value, the number of wet c
 .. mchoice:: q_8.7
    :answer_a: When the value q is larger than the critical value
    :answer_b: When the value  q is smaller than the critical value
-   :answer_c: When the value  q is the same as the critical value 
+   :answer_c: When the value  q is the same as the critical value
    :answer_d: When the value q is near the critical value.
    :correct: a
    :feedback_a: Correct!
-   :feedback_b: No, this would mean that the number of wet cells is proportional to the linear size of the array, so it has dimension 1.  
-   :feedback_c: Not quite, this would not typically happen. 
-   :feedback_d: No, this suggests that the percolating cluster is, in fact, fractal. 
+   :feedback_b: No, this would mean that the number of wet cells is proportional to the linear size of the array, so it has dimension 1.
+   :feedback_c: Not quite, this would not typically happen.
+   :feedback_d: No, this suggests that the percolating cluster is, in fact, fractal.
 
    When is a graph dimension 2?
-

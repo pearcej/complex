@@ -1,3 +1,6 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 .. _GOL_5:
 
 Realism
@@ -38,7 +41,7 @@ SR4 is so strong that it is probably untenable; by such a strict criterion, almo
 
 .. fillintheblank:: q_7.10
    :casei:
-   
+
    Since SR4 is so defensible against attacks or objections most realists would accept something within the range of |blank| and |blank|. Pay attention to the order.
 
    - :SR1: Correct, this is the start of the SRs that are accepted.

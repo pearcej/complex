@@ -1,3 +1,5 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
 
 .. _SFN_FIG_4:
 
@@ -48,7 +50,7 @@ And ``thinkplot`` provides a function called ``Cdf`` that plots cumulative distr
 
 ::
 
-    
+
     thinkplot.Cdf(cdf_fb)
 
 :ref:`Figure 6.4 <SFN_FIG_4>` shows the degree CDF for the Facebook dataset along with the WS model (left) and the BA model (right). The x-axis is on a log scale.
@@ -66,23 +68,22 @@ In the tail of the distribution (values greater than 100) it looks like the BA m
 The **complementary CDF** (CCDF) is defined
 
 .. math::
-   CCDF(x) ≡ 1 − CDF(x) 
-    
+   CCDF(x) ≡ 1 − CDF(x)
+
 This definition is useful because if the PMF follows a power law, the CCDF also follows a power law:
 
 .. math::
    CCDF(x) ∼ (x/x_m)^-\ ^α
-   
+
 where :math:`x_m` is the minimum possible value and :math:`α` is a parameter that determines the shape of the distribution.
 
 Taking the log of both sides yields:
 
 .. math::
-   logCCDF(x) ∼ −α (logx − logx_m) 
+   logCCDF(x) ∼ −α (logx − logx_m)
 
 So if the distribution obeys a power law, we expect the CCDF on a log-log scale to be a straight line with slope −α.
 
 :ref:`Figure 6.5 <SFN_FIG_5>` shows the CCDF of degree for the Facebook data, along with the WS model (left) and the BA model (right), on a log-log scale.
 
 With this way of looking at the data, we can see that the BA model matches the tail of the distribution (values above 20) reasonably well. The WS model does not.
-

@@ -1,3 +1,6 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 Matching
 --------
 .. dragndrop:: matching_ch4
@@ -10,9 +13,7 @@ Matching
    :match_7: Degree|||The number of neighbors.
    :match_8: Clustering Coefficient|||The measure of the degree to which nodes tend to cluster together in a graph.
    :match_9: Dijkstra's Slgorithm|||In this algorithm we find the minimum distance from a given node to every other node in the graph.
-   :match_10: Queue|||Elements are removed in the same order they were entered. 
-   :match_11: Breadth-First Search|||Starting from the root node this algorithm explore all of the neighbor nodes at the current level before moving on to the nodes at the next level. 
-   :match_12: Depth-First Search|||Starting from the root node this algorithm will explore all the way down a branch and then backtrack. 
-   :match_13: Ring Lattice|||A type of regualr graph that Watts and Strogatz used as the basis of their model. 
-
-
+   :match_10: Queue|||Elements are removed in the same order they were entered.
+   :match_11: Breadth-First Search|||Starting from the root node this algorithm explore all of the neighbor nodes at the current level before moving on to the nodes at the next level.
+   :match_12: Depth-First Search|||Starting from the root node this algorithm will explore all the way down a branch and then backtrack.
+   :match_13: Ring Lattice|||A type of regualr graph that Watts and Strogatz used as the basis of their model.

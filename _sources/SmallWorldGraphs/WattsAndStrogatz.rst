@@ -1,3 +1,6 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 Watts and Strogatz
 ------------------
 .. _SWG_3:
@@ -33,9 +36,8 @@ In this chapter I replicate the Watts and Strogatz experiment in the following s
 
 .. dragndrop:: dnd-ex-1
    :feedback: Feedback that is displayed if things are incorrectly matched.
-   :match_1: Path length|||is a measure of the average distance between two nodes, which corresponds to the degrees of separation in a social network. 
+   :match_1: Path length|||is a measure of the average distance between two nodes, which corresponds to the degrees of separation in a social network.
    :match_2: Clustering |||is a measure of the “cliquishness” of the graph
    :match_3: Clique|||is a subset of nodes that are all connected to each other
-   :match_4: Random Graphs|||nodes are connected at random 
+   :match_4: Random Graphs|||nodes are connected at random
    :match_5: Regular graphs|||every node has the same number of neighbors
-

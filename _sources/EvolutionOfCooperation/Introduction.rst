@@ -1,7 +1,10 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 .. _EOC_1:
 
 Introduction
-------------------
+------------
 In this final chapter, I take on two questions, one from biology and one from philosophy:
 
 - In biology, the “**problem of altruism**" is the apparent conflict between natural selection, which suggests that animals live in a state of constant competition, and **altruism**, which is the tendency of many animals to help other animals, even to their own detriment.

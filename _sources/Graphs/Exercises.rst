@@ -1,5 +1,9 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 Exercises
 ---------
+
 The code for this chapter is in chap04.ipynb_ , which is a Jupyter notebook in the repository for this book. For more information about working with this code, see :ref:`Section 1.4 <PF_4>`.
 
 **Exercise 1:**   Launch chap04.ipynb_ and run the code. There are a few short exercises embedded in the notebook that you might want to try.
@@ -15,7 +19,7 @@ The code for this chapter is in chap04.ipynb_ , which is a Jupyter notebook in t
 
 **Exercise 3:**   In my implementation of ``reachable_nodes``, you might be bothered by the apparent inefficiency of adding all neighbors to the stack without checking whether they are already in ``seen``. Write a version of this function that checks the neighbors before adding them to the stack. Does this “optimization” change the order of growth? Does it make the function faster?
 
-**Exercise 4:**  
+**Exercise 4:**
 There are actually two kinds of ER graphs. The one we generated in this chapter, :math:`G(n, p)`, is characterized by two parameters, the number of nodes and the probability of an edge between nodes.
 
 An alternative definition, denoted :math:`G(n, m)`, is also characterized by two parameters: the number of nodes, :math:`n`, and the number of edges, :math:`m`. Under this definition, the number of edges is fixed, but their location is random.

@@ -1,3 +1,6 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 .. _SWG_8:
 .. _SWG_FIG_3:
 
@@ -77,7 +80,6 @@ And that’s why Watts and Strogatz propose WS graphs as a model for real-world 
     :feedback_a: Correct!
     :feedback_b: Try looking at how a rewiring could connect different regions of the graph.
     :feedback_c: Look again at what is created during the rewiring process.
-    :feedback_d: Incorrect! Only one of the above is correct. 
+    :feedback_d: Incorrect! Only one of the above is correct.
 
     Given that a node returns np.nan, what can you say about the number of edges that node has?
-

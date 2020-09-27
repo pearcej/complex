@@ -1,7 +1,11 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 .. _PM_4:
 
 Percolation
 -----------
+
 **Percolation** is a process in which a fluid flows through a semi-porous material. Examples include oil in rock formations, water in paper, and hydrogen gas in micropores. Percolation models are also used to study systems that are not literally percolation, including epidemics and networks of electrical resistors.
 
 Percolation models are often represented using random graphs like the ones we saw in :ref:`Section 4.2<G_2>`, but they can also be represented using cellular automatons. In the next few sections we’ll explore a 2-D CA that simulates percolation.
@@ -23,7 +27,7 @@ Two questions of interest regarding percolation are (1) the probability that a r
 
    - :q: Correct!
      :1-q: Nice Try, but this represents something else.
-     :x: Incorrect, please try again. 
+     :x: Incorrect, please try again.
 
 
 I define a new class to represent a percolation model:
@@ -82,18 +86,18 @@ This function identifies porous cells, where ``a==1``, that have at least one we
 
 
 .. mchoice:: q_8.4.2
-   :answer_a: The way it moves can be in any direction 
+   :answer_a: The way it moves can be in any direction
    :answer_b: It can move up and down but not diagonal
    :answer_c: It can move diagonal.
    :answer_d: It can only move into non-porous cells.
    :correct: b
-   :feedback_a: There are limitations to their movement please look again. 
+   :feedback_a: There are limitations to their movement please look again.
    :feedback_b: Correct.
    :feedback_c: Sorry try again, this is not the limitation set on the movement
    :feedback_d: Incorrect. Please refer back to section.
 
    How does the different type of “neighborhood” affect the movement path of the “wet” cells?
-    
+
 
 .. mchoice:: q_8.4.5
    :answer_a: True
@@ -103,7 +107,3 @@ This function identifies porous cells, where ``a==1``, that have at least one we
    :feedback_b: Correct. Only the porous cell becomes wet, the non-porous cell stays dry.
 
    If a porous cell and a non-porous cell has at least one wet neighbor they both become wet.
-
-
-   
-

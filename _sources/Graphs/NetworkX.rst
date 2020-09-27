@@ -1,8 +1,11 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 .. _G_3:
 .. _G_FIG_2:
 
 NetworkX
----------
+--------
 
 .. figure:: Figures/thinkcomplexity2002.png
    :align: center
@@ -11,7 +14,7 @@ NetworkX
    Figure 4.2: An undirected graph that represents driving time between cities.
 
 
-To represent graphs, we’ll use a package called NetworkX, which is the most commonly used network library in Python. 
+To represent graphs, we’ll use a package called NetworkX, which is the most commonly used network library in Python.
 
 
 We can create a directed graph by importing NetworkX (usually imported as ``nx``) and instantiating ``nx.DiGraph``:
@@ -39,8 +42,8 @@ Now we can use the ``nodes`` method to get a list of nodes:
 The ``nodes`` method returns a ``NodeView``, which can be used in a for loop or, as in this example, used to make a list.
 
 Adding edges works pretty much the same way:
-:: 
-    
+::
+
     G.add_edge('Alice', 'Bob')
     G.add_edge('Alice', 'Chuck')
     G.add_edge('Bob', 'Alice')
@@ -49,7 +52,7 @@ Adding edges works pretty much the same way:
 And we can use ``edges`` to get the list of edges:
 
 ::
-    
+
     (G.edges())
     [('Alice', 'Bob'), ('Alice', 'Chuck'),
     ('Bob', 'Alice'), ('Bob', 'Chuck')]
@@ -105,7 +108,7 @@ Now I can use ``add_edges_from``, which iterates the keys of ``drive_times`` and
 
 Instead of ``draw_circular``, which arranges the nodes in a circle, I’ll use ``draw``, which takes the position dictionary as the second parameter:
 
-::  
+::
 
      nx.draw(G, positions,
         node_color=COLORS[1],

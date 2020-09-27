@@ -1,7 +1,11 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 .. _EOC_5:
 
 Simulating Evolution of Cooperation
------------------------------------------
+-----------------------------------
+
 *Evolution of Cooperation* is the title of the first book where Axelrod presented results from Prisoner’s Dilemma tournaments and discussed the implications for the problem of altruism. Since then, he and other researchers have explored the evolutionary dynamics of PD tournaments, that is, how the distribution of strategies changes over time in a population of PD contestants. In the rest of this chapter, I run a version of those experiments and present the results.
 
 First, we’ll need a way to encode a PD strategy as a genotype. For this experiment, I consider strategies where the agent’s choice in each round depends only on the opponent’s choice in the previous two rounds. I represent a strategy using a dictionary that maps from the opponent’s previous two choices to the agent’s next choice.
@@ -55,7 +59,7 @@ Mutation works by choosing a random value in the genotype and flipping from 'C' 
 Now that we have agents, we need a tournament.
 
 .. mchoice:: q_13.5.1
-    :answer_a: CCCCCCC 
+    :answer_a: CCCCCCC
     :answer_b: DDDDDDD
     :answer_c: CCDCDCD
     :answer_d: CDCDCDC

@@ -1,29 +1,27 @@
 ..  Copyright (C)  Jan Pearce
     This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
 
-
-Changes from the Second Edition of *Think Complexity*
------------------------------------------------------
+Changes from the Second Edition of **Think Complexity**
+-------------------------------------------------------
 
 by Jan Pearce
 
 I have been teaching from Allen Downey's excellent
 `Think Complexity <http://greenteapress.com/complexity/>`_
 for a number of years now. I was motivated to create a Runestone edition of this book,
-so it could be interactive. I also plan to add some additional material on computational
-complexity in addition to the material on complexity science.
+so it could be interactive. I also plan to add some additional material on computational complexity in addition to the material on complexity science.
 
-Thus far, I have added a chapter on Big O based on a chapter in
+Thus far, I have added a chapter on algorithm analysis based on a chapter in
 `Problem Solving with Algorithms and Data Structures using C++ <https://runestone.academy/runestone/static/cppds/index.html>`_
 by Brad Miller, David Ranum, and Jan Pearce. To facilitate online work,
-the possibility of using Google Colaboratory Notebooks has been added in
-addition to the Jupyter Noteooks.
+the possibility of using Google Colaboratory notebooks has been added in
+addition to the original Jupyter Noteooks written by Allen Downey.
 
-In future editions, I hope to add more material on the travelling salesman problem and
-the use of heuristics as well as complexity classes. And, the important P vs NP problem.
+In future editions, I plan to add more material on the travelling salesman problem and
+the use of heuristics as well as complexity classes as well as the important P vs NP problem.
 
-Changes from the First Edition of *Think Complexity*
-----------------------------------------------------
+Changes from the First Edition of **Think Complexity**
+------------------------------------------------------
 
 by Allen Downey
 

@@ -1,7 +1,10 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 .. _HFT_2:
 
 Traffic Jams
-----------------
+------------
 
 .. figure:: Figures/Traffic_Jam.gif
     :align: center
@@ -125,12 +128,11 @@ Under some conditions, the jam itself propagates backwards, as you can see if yo
 
 .. dragndrop:: Q_11.2.1
     :match_1: Highway|||The class that represents the “highway”.
-    :match_2: Driver|||The class that allows drivers to know their location, speed, and choose their acceleration rate. 
+    :match_2: Driver|||The class that allows drivers to know their location, speed, and choose their acceleration rate.
     :match_3: drivers||| a list of Driver objects.
     :match_4: acc||| The acceleration of the highway and its drivers.
-    :match_5: speed|||The old speed plus the requested acceleration with some adjustments. Random noise is added to speed and eps determines the magnitude of the relative error. 
+    :match_5: speed|||The old speed plus the requested acceleration with some adjustments. Random noise is added to speed and eps determines the magnitude of the relative error.
     :match_6: choose_acceleration|||Specifies the behavior of the driver. this is the only decision the driver gets to make; everythig else is determined by the "physics" of the simulation.
     :match_7: length|||The lenght of the highway.
     :match_8: locs|||Contains the locations of the drivers.
-    :match_9: dist|||The distance between driver and the next driver ahead. 
-
+    :match_9: dist|||The distance between driver and the next driver ahead.

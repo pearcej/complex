@@ -1,5 +1,8 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 Self Check
-----------------
+----------
 
 .. fillintheblank:: SC13_Q1
     :casei:
@@ -8,14 +11,14 @@ Self Check
 
     - :altruism: Correct!
       :x: Incorrect, please try again.
-    
+
     - :natural selection: Correct!
       :x: Incorrect, please try again.
 
 .. parsonsprob:: SC13_Q2
     :language: python
 
-    Please complete the play function. 
+    Please complete the play function.
     -----
     def play(self, agent1, agent2):
     =====
@@ -60,4 +63,3 @@ Self Check
     =====
         # update any instruments
         self.update_instruments()
-

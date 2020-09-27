@@ -1,9 +1,10 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
 
 .. _SFN_9:
 
 Explanatory Models
 ------------------
-
 
 .. _SFN_FIG_6:
 
@@ -36,6 +37,3 @@ The WS model suggests that social networks are “small” because they include 
 The BA model suggests that social networks are small because they include nodes with high degree that act as hubs, and that hubs grow, over time, due to preferential attachment.
 
 As is often the case in young areas of science, the problem is not that we have no explanations, but too many.
-
-
-   

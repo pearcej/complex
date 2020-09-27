@@ -1,5 +1,8 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 Self Check
------------
+----------
 
 .. figure:: Figures/SELF_CHECK_FIG.png
    :align: center
@@ -25,11 +28,11 @@ Self Check
 .. dragndrop:: sc_match
    :match_1: G|||This variable is a DiGraph object that contains no nodes and no edges.
    :match_2: add_node|||This method adds nodes.
-   :match_3: nodes|||This method gets a list of nodes. 
-   :match_4: Nodeview|||This class can be used in a for loop or it can make a list. 
+   :match_3: nodes|||This method gets a list of nodes.
+   :match_4: Nodeview|||This class can be used in a for loop or it can make a list.
    :match_5: Edges|||This method gets a list of edges.
    :match_6: Draw_circular|||This method arranges the nodes in a circle and connects them with edges.
-   
+
    Match the correct NetworkX code piece to the correct  description.
 
 
@@ -41,13 +44,13 @@ Self Check
    def make_complete_graph(n):
    =====
        G = nx.Graph()
-       =====    
+       =====
        nodes = range(n)
-       =====    
+       =====
        G.add_nodes_from(nodes)
-       =====    
+       =====
        G.add_edges_from(all_pairs(nodes))
-       =====    
+       =====
        return G
 
 
@@ -58,10 +61,10 @@ Self Check
 
    - :the number of vertices: Correct!
      :the number of edges: Close, but this refers to something else.
-     :number of vertices: Close, add the to the beginning of your statement 
+     :number of vertices: Close, add the to the beginning of your statement
      :x: Sorry you are incorrect, try again and checkout section 3.9.
 
    - :the number of edges: Correct!
-     :the number of vertices: Close, but this refers to something else. 
-     :number of edges: Close, add the to the beginning of your statement 
+     :the number of vertices: Close, but this refers to something else.
+     :number of edges: Close, add the to the beginning of your statement
      :x: Sorry you are incorrect, Try again and checkout section 3.9.

@@ -1,7 +1,11 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 .. _SFN_3:
 
 WS Models
 ---------
+
 In the Facebook dataset, the average number of edges per node is about 22. Since each edge is connected to two nodes, the average degree is twice the number of edges per node:
 ::
 
@@ -34,7 +38,3 @@ By trial and error, we find that when ``p=0.05`` we get a WS graph with high clu
 In this graph ``C`` is 0.63, a bit higher than in the dataset, and ``L`` is 3.2, a bit lower than in the dataset. So this graph models the small world characteristics of the dataset well.
 
 So far, so good.
-
-
-
-

@@ -1,3 +1,6 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 .. _GOL_FIG_4:
 
 Conway’s Conjecture
@@ -12,9 +15,9 @@ From most initial conditions, GoL quickly reaches a stable state where the numbe
     :alt: "Figure 8.4: Starting and final configurations of the r-pentomino."
 
     Figure 8.4: Starting and final configurations of the r-pentomino.
-   
+
 .. figure:: Figures/GoL_R_Pentomino.gif
-    :align: center 
+    :align: center
     :alt: "Gif of  Starting and final configurations of the r-pentomino."
 
     Gif of  Starting and final configurations of the r-pentomino.
@@ -34,7 +37,7 @@ This configuration is “final” in the sense that all remaining patterns are e
     Figure 8.5: Gosper’s glider gun, which produces a stream of gliders.
 
 .. figure:: Figures/GoL_Glider_Gun.gif
-    :align: center 
+    :align: center
     :alt: "Gif of Gosper’s glider gun, which produces a stream of gliders."
 
     Gif of Gosper’s glider gun, which produces a stream of gliders.
@@ -54,8 +57,8 @@ If we believe Wolfram’s Principle of Computational Equivalence, we expect GoL 
    Conway conjectured that there were no initial patterns that never stabilized. He described two kinds of patterns that would prove him wrong |blank| and |blank|.
 
    - :gun: Correct, it is a stable pattern that periodically produces a spaceship.
-     :glider: No, sorry glider is proven to be a stable patern that settles. 
-     :toad: Sorry, but toad is proven to be a stable pattern that settles. 
+     :glider: No, sorry glider is proven to be a stable patern that settles.
+     :toad: Sorry, but toad is proven to be a stable pattern that settles.
      :beehives: No, beehive is proven to be a stable pattern that settles.
      :r-pentomino: Incorrect, r-pintomino is proven to be a stable pattern that settles.
      :x: Incorrect, Please refer to Conway’s conjecture in the book.
@@ -68,7 +71,7 @@ If we believe Wolfram’s Principle of Computational Equivalence, we expect GoL 
 
 .. mchoice:: q_7.7
    :answer_a: It is a Methuselahs
-   :answer_b: It is a beehive 
+   :answer_b: It is a beehive
    :answer_c: It only has five cells
    :answer_d: It was one of the two patterns that Conway said would never stabilize and prove him wrong
    :answer_e: None of the above are true
@@ -77,9 +80,9 @@ If we believe Wolfram’s Principle of Computational Equivalence, we expect GoL 
    :feedback_b: Sorry a beehive is a stable pattern with each cell having two to three neighbors , so they all survive, and none of the dead cells adjacent to the beehive has 3 neighbors, so no new cells are born.
    :feedback_c: Correct!
    :feedback_d: Sorry the two patterns that Conway said could prove him wrong were actually a “gun” and a “puffer train”.
-   :feedback_e: Sorry but two of the answers given above are correct. 
+   :feedback_e: Sorry but two of the answers given above are correct.
 
-   
+
    Which of the following is true about r-pentomino? Select all that apply.
 
 .. mchoice:: q_7.8

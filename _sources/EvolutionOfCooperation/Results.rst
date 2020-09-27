@@ -1,7 +1,11 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 .. _EOC_8:
 
 Results
--------------
+-------
+
 Suppose we start with a population of three agents: one always cooperates, one always defects, and one plays the TFT strategy. If we run ``Tournament.melee`` with this population, the cooperator gets 1.5 points per round, the TFT agent gets 1.9, and the defector gets 3.33. This result suggests that “always defect" should quickly become the dominant strategy.
 
 But “always defect" contains the seeds of its own destruction. If nicer strategies are driven to extinction, the defectors have no one to take advantage of. Their fitness drops, and they become vulnerable to invasion by cooperators.
@@ -25,7 +29,7 @@ I start with 100 identical agents who always defect, and run the simulation for 
 
     Figure 14.1: Average fitness (points scored per round of Prisoner’s Dilemma)
 
-   
+
 
 :ref:`Figure 14.1 <EOC_fig_1>` shows mean fitness over time (using the ``MeanFitness`` instrument from :ref:`Section 13.7 <EVO_7>`). Initially mean fitness is 1, because when defectors face each other, they get only 1 point each per round.
 
@@ -98,7 +102,7 @@ To measure forgiveness, I define one more ``instrument`` to see whether agents m
     :answer_a: 4 rounds
     :answer_b: 1 round
     :answer_c: 2 rounds
-    :answer_d: It takes all of the rounds into consideration. 
+    :answer_d: It takes all of the rounds into consideration.
     :correct_: c
     :feedback_a: Incorrect, please look at the amount of rounds again.
     :feedback_b: Incorrect, please look at the amount of rounds again.

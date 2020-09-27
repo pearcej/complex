@@ -1,5 +1,9 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 Exercises
--------------
+---------
+
 The code for the traffic jam simulation is in the Jupyter notebook chap12.ipynb_ in the repository for this book. Open this notebook, read the code, and run the cells. You can use this notebook to work on the following exercise.
 
 **Exercise 1:**  In the traffic jam simulation, define a class, ``BetterDriver``, that inherits from ``Driver`` and ``overrides`` ``choose_acceleration``. See if you can define driving rules that do better than the basic implementation in ``Driver``. You might try to achieve higher average speed, or a lower number of collisions.

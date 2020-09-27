@@ -1,3 +1,6 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 .. _G_FIG_3:
 
 Generating Graphs
@@ -28,7 +31,7 @@ Here’s a generator function that takes a list of nodes and enumerates all dist
 We can use ``all_pairs`` to construct a complete graph:
 
 ::
-    
+
     def make_complete_graph(n):
         G = nx.Graph()
         nodes = range(n)
@@ -41,7 +44,7 @@ We can use ``all_pairs`` to construct a complete graph:
 The following code makes a complete graph with 10 nodes and draws it:
 
 ::
-    
+
     complete = make_complete_graph(10)
     nx.draw_circular(complete,
                  node_color=COLORS[2],
@@ -49,5 +52,3 @@ The following code makes a complete graph with 10 nodes and draws it:
                  with_labels=True)
 
 :ref:`Figure 4.3 <G_FIG_3>` shows the result. Soon we will modify this code to generate ER graphs, but first we’ll develop functions to check whether a graph is connected.
-
-

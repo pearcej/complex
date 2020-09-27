@@ -1,7 +1,11 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 .. _PM_5:
 
 Phase Change
 ------------
+
 Now let’s test whether a random array contains a percolating cluster:
 
 ::
@@ -63,7 +67,7 @@ A wide variety of systems display a common set of behaviors and characteristics 
 
 .. fillintheblank:: q_8.5.2
    :casei:
-   
+
    If you wanted to estimate the critical value more precisely you would want to use a |blank|.
 
    - :random walk: Correct

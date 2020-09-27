@@ -1,9 +1,12 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 Self Check
------------
+----------
 
 .. fillintheblank:: SC11_Q1
    :casei:
-   
+
    The drivers had control over one thing that eventually caused them to create the traffic jams, which was |blank|.
 
    - :acceleration: Correct, they had control over speed!

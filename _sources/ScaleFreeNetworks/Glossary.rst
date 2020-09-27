@@ -1,5 +1,8 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 Glossary
--------------
+--------
 
 **Barabási-Albert Model:** The Barabási–Albert (BA) model is an algorithm for generating random scale-free networks using a preferential attachment mechanism.
 
@@ -24,5 +27,3 @@ Glossary
 **Standard Deviation:** A quantity calculated to indicate the extent of deviation for a group as a whole.
 
 **WS Model:** A model that has characteristics of a small world network, like the data, but it has low variability in the number of neighbors from node to node, unlike the data.
- 
-

@@ -1,7 +1,11 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 .. _EOC_6:
 
 The Tournament
---------------------
+--------------
+
 The ``Tournament`` class encapsulates the details of the PD competition:
 
 ::

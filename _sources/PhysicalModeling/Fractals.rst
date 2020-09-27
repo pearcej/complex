@@ -1,3 +1,6 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 Fractals
 --------
 
@@ -63,7 +66,7 @@ This way of estimating a fractal dimension is called **box-counting**.
 
 .. fillintheblank:: q_8.6.1
     :casei:
-    
+
     The estimated slope of rule 20 is |Blank|, the estimated slope of rule 50 is |Blank|, and the estimated slope of rule 18 is |Blank|.
 
     - :1.01: Correct!
@@ -73,10 +76,10 @@ This way of estimating a fractal dimension is called **box-counting**.
 
     - :1.97: Correct!
       :1.57: Close, but this is not the slope for this rule.
-      :1.01: This is incorrect sorry, please pay attention to what rule the blank is for. 
+      :1.01: This is incorrect sorry, please pay attention to what rule the blank is for.
       :x: Incorrect, please try again.
 
     - :1.57: Correct!
-      :1.01: This is incorrect sorry, please pay attention to what rule the blank is for. 
+      :1.01: This is incorrect sorry, please pay attention to what rule the blank is for.
       :1.97: Look again at what rule's slope you are looking.
       :x: Incorrect, please try again.

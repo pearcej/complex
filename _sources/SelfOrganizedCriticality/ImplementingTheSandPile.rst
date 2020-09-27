@@ -1,8 +1,12 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 .. _SOC_4:
 
 Implementing the Sand Pile
 --------------------------
-To implement the sand pile model, I define a class called ``SandPile`` that inherits from ``Cell2D``, which is defined in ``Cell2D.py`` in the repository for this book.
+
+To implement the sand pile model, We define a class called ``SandPile`` that inherits from ``Cell2D``, which is defined in ``Cell2D.py`` in the repository for this book.
 
 ::
 
@@ -72,13 +76,13 @@ And here’s the result:
     [[ 0  1  0  1  0]
      [ 1 -4  2 -4  1]
      [ 0  1  0  1  0]]
-    
+
 Notice that where the copies of the kernel overlap, they add up.
 
 This array contains the change for each cell, which we use to update the original array:
 
 ::
-        
+
     pile.array += c
 
 And here’s the result:
@@ -133,9 +137,9 @@ Let’s look at a bigger example, with ``n=20``:
     :alt: "Gif of a sand pile running for 100 steps."
 
     Gif of a sand pile running for 100 steps.
- 
+
 .. figure:: Figures/SP_MODEL.png
-    :align: center 
+    :align: center
     :alt: "Figure 10.1: Sand pile model initial state (left), after 200 steps (middle), and 400 steps (right)."
 
     Figure 10.1: Sand pile model initial state (left), after 200 steps (middle), and 400 steps (right).
