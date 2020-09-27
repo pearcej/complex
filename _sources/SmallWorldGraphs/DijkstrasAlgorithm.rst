@@ -1,3 +1,6 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 
 .. _SWG_11:
 
@@ -8,7 +11,7 @@ Dijkstra is famous (and notorious) as the author of a series of essays on comput
 
 **Dijkstra’s algorithm** solves the “single source shortest path problem”, which means that it finds the minimum distance from a given “source” node to every other node in the graph (or at least every connected node).
 
-I’ll present a simplified version of the algorithm that considers all edges the same length. The more general version works with any non-negative edge lengths.
+We’ll present a simplified version of the algorithm that considers all edges the same length. The more general version works with any non-negative edge lengths.
 
 The simplified version is similar to the breadth-first search in the previous section except that we replace the set called ``seen`` with a dictionary called ``dist``, which maps from each node to its distance from the source:
 

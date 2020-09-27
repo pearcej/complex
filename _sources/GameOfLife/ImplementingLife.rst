@@ -1,7 +1,10 @@
-Implementing Life
-------------------
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
 
 .. _GOL_7:
+
+Implementing Life
+-----------------
 
 The exercises at the end of this chapter ask you to experiment with and modify the Game of Life, and implement other 2-D cellular automatons. This section explains my implementation of GoL, which you can use as a starting place for your experiments.
 
@@ -99,7 +102,7 @@ This version is faster and more concise than the others; the only drawback is th
      :while loops: Not quite, take a look at his code.
      :for loop: Sorry there is more than one of those within the code above.
      :x: Not quite.
-    
+
 
 .. shortanswer:: q_7.13
 

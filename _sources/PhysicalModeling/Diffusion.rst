@@ -1,3 +1,6 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 .. _PM_2:
 
 Diffusion
@@ -59,7 +62,3 @@ We’ll use a diffusion constant, ``r``, that relates the difference in concentr
    - :1: Correct.
      :one: Please write your answer in numeral.
      :x: Incorrect. Please refer back to section.
-   
-
-
-   

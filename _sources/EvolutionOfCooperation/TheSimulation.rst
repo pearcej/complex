@@ -1,7 +1,11 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 .. _EOC_7:
 
 The Simulation
---------------------
+--------------
+
 The ``Simulation`` class for this chapter is based on the one in :ref:`Section 13.5 <EVO_5>`; the only differences are in ``__init__`` and ``step``.
 
 Here’s the ``__init__`` method:

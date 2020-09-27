@@ -1,7 +1,11 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 .. _SOC_3:
 
 Sand Piles
 ----------
+
 The sand pile model was proposed by Bak, Tang and Wiesenfeld in 1987. It is not meant to be a realistic model of a sand pile, but rather an abstraction that models physical systems with a large number of elements that interact with their neighbors.
 
 The sand pile model is a 2-D cellular automaton where the state of each cell represents the slope of a part of a sand pile. During each time step, each cell is checked to see whether it exceeds a critical value, *K*, which is usually 3. If so, it “topples” and transfers sand to four neighboring cells; that is, the slope of the cell is decreased by 4, and each of the neighbors is increased by 1. At the perimeter of the grid, all cells are kept at slope 0, so the excess spills over the edge.
@@ -24,7 +28,6 @@ In the next few sections I replicate their experiments and interpret the results
    - :self organized criticality: Correct!
      :x: Incorrect, please reread the section.
    - :critical state: Correct!
-     :x: Incorrect, please reread the section.    
+     :x: Incorrect, please reread the section.
    - :external control: Correct!
      :x: Incorrect, please reread the section.
-     

@@ -1,5 +1,9 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 Exercises
 ---------
+
 **Exercise 1:** In :ref:`Section 9.7<PM_7>` we showed that the Rule 18 CA produces a fractal. Can you find other 1-D CAs that produce fractals?
 
 Note: the ``Cell1D`` object does not wrap around from the left edge to the right, which creates artifacts at the boundaries for some rules. You might want to use ``Wrap1D``, which is a child class of ``Cell1D`` that wraps around. It is defined in ``Cell1D.py`` in the repository for this book.

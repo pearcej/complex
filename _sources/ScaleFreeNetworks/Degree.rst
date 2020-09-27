@@ -1,15 +1,17 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
 
 .. _SFN_FIG_1:
 
-Degree 
--------
+Degree
+------
 
 .. _SFN_4:
 
 .. figure:: Figures/thinkcomplexity2010.png
    :align: center
    :alt: "Figure 6.1: PMF of degree in the Facebook dataset and in the WS model."
-    
+
    Figure 6.1: PMF of degree in the Facebook dataset and in the WS model.
 
 If the WS graph is a good model for the Facebook network, it should have the same average degree across nodes, and ideally the same variance in degree.
@@ -87,5 +89,3 @@ We can use the ``thinkplot`` module to plot the results:
 In the WS model, most users have about :math:`44` friends; the minimum is :math:`38` and the maximum is :math:`50`. That’s not much variation. In the dataset, there are many users with only :math:`1` or :math:`2` friends, but one has more than :math:`1000`!
 
 Distributions like this, with many small values and a few very large values, are called heavy-tailed.
-
-

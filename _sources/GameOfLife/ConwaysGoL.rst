@@ -1,8 +1,12 @@
-Conway’s GoL
-------------
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 .. _GOL_2:
 
-One of the first cellular automatons to be studied, and probably the most popular of all time, is a 2-D CA called “The Game of Life”, or GoL for short. It was developed by John H. Conway and popularized in 1970 in Martin Gardner’s column in *Scientific American*. 
+Conway’s GoL
+------------
+
+One of the first cellular automatons to be studied, and probably the most popular of all time, is a 2-D CA called “The Game of Life”, or GoL for short. It was developed by John H. Conway and popularized in 1970 in Martin Gardner’s column in *Scientific American*.
 
 The cells in GoL are arranged in a 2-D **grid**, that is, an array of rows and columns. Usually the grid is considered to be infinite, but in practice it is often “wrapped”; that is, the right edge is connected to the left, and the top edge to the bottom.
 
@@ -29,23 +33,20 @@ GoL is popular because:
    :casei:
 
    In the Game of life, cells are arranged in a 2-D grid and each cell in the grid has two states — live and dead. Keeping that in mind, fill in the blanks, please give the numeral not the spelling.
-   
+
    In GoL (Game of life), If a cell is alive, it stays alive if it has |blank| or |blank| neighbors, and dies otherwise. If a cell is dead, it stays dead unless it has exactly |blank| neighbors.
-   
+
    - :2: Correct, with 2 neighboring cells the cell would stay alive.
      :two: **Please give the numeral not the spelling.**
-     :x: Incorrect. 
+     :x: Incorrect.
    - :3: Correct, with 2 or 3 neighboring cells the cell would stay alive.
-     :three: **Please give the numeral not the spelling.** 
+     :three: **Please give the numeral not the spelling.**
      :x: Incorrect, try again.
-   - :3: Correct, a cell needs 3 neighbors to stay alive. 
-     :three: **Please give the numeral not the spelling.** 
+   - :3: Correct, a cell needs 3 neighbors to stay alive.
+     :three: **Please give the numeral not the spelling.**
      :x: Incorrect. Please refer back to the book and explore how GoL evolves over time according to rules.
 
 
 .. shortanswer:: q7.2
 
    What are two of the reasons the author says GoL is popular?
-   
-
-    

@@ -1,3 +1,6 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 Heavy-Tailed Distributions
 --------------------------
 
@@ -5,10 +8,10 @@ Heavy-Tailed Distributions
 
 If the sand pile model is in a critical state, we expect to find heavy-tailed distributions for quantities like the duration and size of avalanches. So let’s take a look.
 
-I’ll make a larger sand pile, with ``n=50`` and an initial level of ``30``, and run until equilibrium:
+We’ll make a larger sand pile, with ``n=50`` and an initial level of ``30``, and run until equilibrium:
 
 ::
-        
+
     pile2 = SandPile(n=50, level=30)
     pile2.run()
 

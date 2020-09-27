@@ -1,7 +1,11 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 .. _HFT_6:
 
 Arbitration
-----------------
+-----------
+
 To arbitrate among these possibly conflicting goals, we compute a weighted sum of the four requests:
 
 ::
@@ -47,5 +51,5 @@ As one of the exercises at the end of this chapter, you can modify these paramet
       :position: Nice try, but look at the ordering that it comes in the text
       :x: Incorrect, please try again.
     - :position: Correct!
-      :velocity:  Nice try, but look at the ordering that it comes in the text 
+      :velocity:  Nice try, but look at the ordering that it comes in the text
       :x: Incorrect, please try again.

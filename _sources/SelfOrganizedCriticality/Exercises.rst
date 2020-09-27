@@ -1,6 +1,10 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 Exercises
 ---------
-The code for this chapter is in the Jupyter notebook chap10.ipynb_ in the repository for this book. Open this notebook, read the code, and run the cells. You can use this notebook to work on the following exercises. 
+
+The code for this chapter is in the Jupyter notebook chap10.ipynb_ in the repository for this book. Open this notebook, read the code, and run the cells. You can use this notebook to work on the following exercises.
 
 **Exercise 1:** To test whether the distributions of ``T`` and ``S`` are heavy-tailed, we plotted their PMFs on a log-log scale, which is what Bak, Tang and Wiesenfeld show in their paper. But as we saw in :ref:`Section 6.8 <SFN_8>`, this visualization can obscure the shape of the distribution. Using the same data, make a plot that shows the cumulative distributions (CDFs) of ``S`` and ``T``. What can you say about their shape? Do they follow a power law? Are they heavy-tailed?
 

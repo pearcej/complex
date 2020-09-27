@@ -1,3 +1,6 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 Glossary
 --------
 
@@ -14,11 +17,5 @@ Glossary
 **Percolation Model:** A model used to represent percolation that can be abstracted to be use for epidemic modeling, networks of electrical resistors, and other systems that are not directly percolation.
 
 **Phase Change:** The rapid change in behavior near the critical value.
-    
+
 **Random Walk:** A stochastic process consisting of a sequence of changes each of whose characteristics (as magnitude or direction) is determined by chance.
-
-
-
-
-
-

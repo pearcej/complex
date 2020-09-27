@@ -1,3 +1,6 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 .. _EOC_9:
 
 Conclusions
@@ -19,7 +22,7 @@ Obviously, the agents in these simulations are simple, and the Prisoner’s Dile
 Maybe that’s why selfish genes build altruistic brains.
 
 .. mchoice:: q_13.9
-    :answer_b: always cooperate 
+    :answer_b: always cooperate
     :answer_a: always defect
     :answer_c: TFT
     :answer_d: Oppisite of what was done the done the prior round.
@@ -28,5 +31,5 @@ Maybe that’s why selfish genes build altruistic brains.
     :feedback_a: Incorrect, look again at what the simulations went toward.
     :feedback_c: Incorrect, this was discribed as not optimal.
     :feedback_d: Incorrect, this would not work as the society tends to be nice.
-    
+
     As a population how did the agents tend to lean as a strategy?

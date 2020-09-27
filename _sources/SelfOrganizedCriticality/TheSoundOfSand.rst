@@ -1,8 +1,12 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 .. _SOC_8:
 
 The Sound of Sand
 -----------------
-As my implementation of SandPile runs, it records the number of cells that topple during each time step, accumulating the results in a list called ``toppled_seq``. After running the model in :ref:`Section 10.5 <SOC_5>`, we can extract the resulting signal:
+
+As the implementation of SandPile runs, it records the number of cells that topple during each time step, accumulating the results in a list called ``toppled_seq``. After running the model in :ref:`Section 10.5 <SOC_5>`, we can extract the resulting signal:
 
 ::
 
@@ -11,7 +15,7 @@ As my implementation of SandPile runs, it records the number of cells that toppl
 To compute the power spectrum of this signal we can use the SciPy function ``welch``:
 
 ::
-        
+
     from scipy.signal import welch
 
     nperseg = 2048
@@ -37,4 +41,3 @@ The return values, ``freqs`` and ``powers``, are NumPy arrays containing the fre
 For frequencies between 10 and 1000 (in arbitrary units), the spectrum falls on a straight line, which is what we expect for pink or red noise.
 
 The gray line in the figure has slope −1.58, which indicates that :math:`logP(f) ∼ −β logf` with parameter :math:`β=1.58`, which is the same parameter reported by Bak, Tang, and Wiesenfeld. This result confirms that the sand pile model generates pink noise.
-

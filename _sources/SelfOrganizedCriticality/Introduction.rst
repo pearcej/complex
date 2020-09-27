@@ -1,7 +1,11 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 .. _SOC_1:
 
 Introduction
 ------------
+
 In the previous chapter we saw an example of a system with a critical point and we explored one of the common properties of critical systems, fractal geometry.
 
 In this chapter, we explore two other properties of critical systems: heavy-tailed distributions, which we saw in :ref:`Section 6.5 <SFN_5>` and pink noise, which I’ll explain in this chapter.

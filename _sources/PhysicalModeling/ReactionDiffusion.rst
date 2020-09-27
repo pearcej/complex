@@ -1,8 +1,12 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 .. _PM_3:
 
 Reaction-Diffusion
 ------------------
-Now let’s add a second chemical. I’ll define a new object, ``ReactionDiffusion``, that contains two arrays, one for each chemical:
+
+Now let’s add a second chemical. We will define a new object, ``ReactionDiffusion``, that contains two arrays, one for each chemical:
 
 ::
 
@@ -126,21 +130,13 @@ Since 1952, observations and experiments have provided some support for Turing�
 
 .. mchoice:: q_8.3
    :answer_a: None of the below will yield a coral-like pattern
-   :answer_b: f=0.035 and k=0.057 
-   :answer_c: f=0.039 and k=0.065 
+   :answer_b: f=0.035 and k=0.057
+   :answer_c: f=0.039 and k=0.065
    :answer_d: f=0.055 and k=0.062
    :correct: d
    :feedback_a: Sorry but one of the options below does produce a coral-like pattern.
    :feedback_b: Sorry but these parameters make the system evolve in a stable configuration with light spots.
-   :feedback_c: Sorry but these parameters produce spots that grow and divide in a process resembling mitosis. 
+   :feedback_c: Sorry but these parameters produce spots that grow and divide in a process resembling mitosis.
    :feedback_d: Correct! These parameters yield a coral-like pattern.
 
    At what point did there appear to be a coral-like pattern?
-
- 
-
-
-
-
-
-

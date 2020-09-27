@@ -1,3 +1,5 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
 
 Clustering
 -----------
@@ -56,7 +58,7 @@ The NumPy function ``nanmean`` computes the mean of the local clustering coeffic
 We can test ``clustering_coefficient`` like this:
 
 ::
-    
+
     >>> clustering_coefficient(lattice)
     0.5
 
@@ -73,4 +75,3 @@ In this graph, the local clustering coefficient for all nodes is :math:`0.5`, so
           :x: Try again
         - :not a number: Correct!
           :x: Try again
-

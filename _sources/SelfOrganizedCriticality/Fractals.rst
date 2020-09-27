@@ -1,3 +1,6 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 Fractals
 --------
 
@@ -5,7 +8,7 @@ Fractals
 
 Another property of critical systems is fractal geometry. The initial configuration in :ref:`Figure 10.1 <sand_pile>` (left) resembles a fractal, but you can’t always tell by looking. A more reliable way to identify a fractal is to estimate its fractal dimension, as we saw in :ref:`Section 9.6<PM_6>` and :ref:`Section 9.7<PM_7>`.
 
-I’ll start by making a bigger sand pile, with ``n=131`` and initial level ``22``.
+We’ll start by making a bigger sand pile, with ``n=131`` and initial level ``22``.
 
 ::
 
@@ -62,7 +65,7 @@ The parameter, ``a``, is a boolean array. The size of the box is initially 1. Ea
 
 Each time through the loop, ``box`` is a set of cells with width and height ``i``, centered in the array. ``total`` is the number of “on” cells in the box.
 
-The result is a list of tuples, where each tuple contains ``i``, :math:`i^2`, and the number of cells in the box. 
+The result is a list of tuples, where each tuple contains ``i``, :math:`i^2`, and the number of cells in the box.
 When we pass this result to ``transpose``, NumPy converts it to an array with three columns, and then transposes it; that is, it makes the columns into rows and the rows into columns. The result is an array with 3 rows: ``i``, ``i**2``, and ``total``.
 
 Here’s how we use ``count_cells``:
@@ -104,7 +107,7 @@ To estimate the slopes of these lines, we can use the SciPy function ``linregres
 The estimated fractal dimensions are:
 
 ::
-        
+
     0  1.871
     1  3.502
     2  1.781

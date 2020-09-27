@@ -1,3 +1,5 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
 
 .. _SFN_FIG_2:
 
@@ -22,12 +24,10 @@ If we take the log of both sides, we get:
 
 .. math::
 
-   logPMF(k) ∼ −α logk 
+   logPMF(k) ∼ −α logk
 
 So if a distribution follows a power law and we plot ``PMF(k)`` versus ``k`` on a log-log scale, we expect a straight line with slope ``−α``, at least for large values of ``k``.
 
 All power law distributions are heavy-tailed, but there are other heavy-tailed distributions that don’t follow a power law. We will see more examples soon.
 
 But first, we have a problem: the WS model has the high clustering and low path length we see in the data, but the degree distribution doesn’t resemble the data at all. This discrepancy is the motivation for our next topic, the Barabási-Albert model.
-
-

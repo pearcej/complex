@@ -1,8 +1,11 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 Matching
----------
+--------
 
 .. dragndrop:: matching_ch8
-    :match_1: Box-Counting|||Generally in a metric space it is a way of determining the fractal dimension. 
+    :match_1: Box-Counting|||Generally in a metric space it is a way of determining the fractal dimension.
     :match_2: Critical Phenomena|||When at or near a critical point, a wide variety of systems display a common set of behaviors and characteristics.
     :match_3: Fractal Geometry|||Patterns formed by fractals.
     :match_4: Percolation|||A process in which a fluid flows through a semi-porous material.
@@ -10,6 +13,3 @@ Matching
     :match_6: Random Walk|||It is a process that consists of a series of changes that have random characteristics.
     :match_7: Diffusion|||The combining of substances by the natural movement of their particles.
     :match_8: Percolation Model|||A model used to represent percolation that can be abstracted to be use for epidemic modeling, networks of electrical resistors, and other systems that are not directly percolation.
-
-   
-

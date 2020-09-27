@@ -1,5 +1,8 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 Random Graphs
---------------
+-------------
 
 .. _G_4:
 
@@ -27,9 +30,8 @@ To test this claim, we’ll develop algorithms to generate random graphs and che
 .. mchoice:: question3_1
    :answer_a: True
    :answer_b: False
-   :correct: a   
+   :correct: a
    :feedback_a: Correct! The value of p is greater than p*
    :feedback_b: Not quite. In an ER graph when p is higher than p* this leads to a greater possiblity of the graph being connected.
 
    Given that an Erdős-Rényi graph (ER graph) a has a :math:`p* = .6` and a :math:`p = .7` it is more likely to be connected.
-

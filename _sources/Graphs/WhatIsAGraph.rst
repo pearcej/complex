@@ -1,3 +1,6 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 .. _G_FIG_1:
 
 What is a Graph?
@@ -11,7 +14,7 @@ What is a Graph?
 
    Figure 4.1: A directed graph that represents a social network.
 
-   
+
 To most people a “graph" is a visual representation of data, like a bar chart or a plot of stock prices over time. That’s not what this chapter is about.
 
 In this chapter, a **graph** is a representation of a system that contains discrete, interconnected elements. The elements are represented by **nodes** — also called **vertices** – and the interconnections are represented by **edges**.
@@ -29,6 +32,3 @@ Graphs are also useful, because there are many real world problems that can be s
 Graphs are usually drawn with squares or circles for nodes and lines for edges. For example, the **directed graph** in :ref:`Figure 4.1 <G_FIG_1>` might represent three people who follow each other on Twitter. The arrow indicates the direction of the relationship. In this example, Alice and Bob follow each other, both follow Chuck, and Chuck follows no one.
 
 The **undirected graph** in :ref:`Figure 4.2 <G_FIG_2>` shows four cities in the northeast United States; the labels on the edges indicate driving time in hours. In this example the placement of the nodes corresponds roughly to the geography of the cities, but in general the layout of a graph is arbitrary.
-
-
-

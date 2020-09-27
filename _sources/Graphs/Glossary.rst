@@ -1,5 +1,8 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 Glossary
----------
+--------
 
 **Complete Graph:**  A complete graph is a graph where every node is connected to every other.
 
@@ -32,9 +35,3 @@ Glossary
 **Undirected Edge:** This kind of edge is not constrained to a single direction and is symmetrical to each node it is connected to. Also is comparable to a two way street.
 
 **Undirected Graph:**  An undirected graph is a graph, i.e., a set of objects (called vertices or nodes) that are connected together, where all the edges are bidirectional.
-
-
-
-
-
-

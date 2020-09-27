@@ -1,10 +1,12 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
 
 .. _G_6:
 
 Connected Graphs
 ----------------
 
-A graph is connected if there is a path from every node to every other node.
+A graph is `connected` if there is a path from every node to every other node.
 
 For many applications involving graphs, it is useful to check whether a graph is connected. Fortunately, there is a simple algorithm that does it.
 
@@ -72,7 +74,7 @@ We can use ``reachable_nodes`` to write ``is_connected``:
 A complete graph is, not surprisingly, connected:
 
 ::
-    
+
     >>> is_connected(complete)
     True
 
@@ -81,7 +83,7 @@ In the next section we will generate ER graphs and check whether they are connec
 .. dragndrop:: Q1_3.6
     :match_1: 1|||Remove one node from the stack.
     :match_2: 2|||If the node is already in seen, we go back to Step 1.
-    :match_3: 3|||Otherwised, we add the node to seen and add its neighbors to the stack. 
+    :match_3: 3|||Otherwised, we add the node to seen and add its neighbors to the stack.
 
 .. mchoice:: Q2_3.6
    :answer_a: True

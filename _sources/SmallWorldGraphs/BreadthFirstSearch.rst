@@ -1,3 +1,6 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 .. _SWG_10:
 
 Breadth-First Search
@@ -75,7 +78,6 @@ This version is back to being :math:`O(n + m)`. Now we’re ready to find shorte
     :feedback_d: Correct!
     :feedback_b: Swap your definitions and you will be good!
     :feedback_c: The BFS definition is a basic outline for dijkstra’s algorithm, which only works with a BFS, and the DFS definition is actually the definition of BFS.
-    :feedback_a: The BFS definition is a basic outline for dijkstra’s algorithm, which only works with a BFS,  and the DFS definition is correct. 
+    :feedback_a: The BFS definition is a basic outline for dijkstra’s algorithm, which only works with a BFS,  and the DFS definition is correct.
 
     Which of the following is an accurate statement when talking about BFS and DFS?
-

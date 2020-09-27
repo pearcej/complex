@@ -1,5 +1,8 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 Glossary
-----------
+--------
 
 **Altruism:** The tendency of many animals to help other animals, even to their own detriment.
 
@@ -21,4 +24,4 @@ If A and B both remain silent, both of them will only serve 1 year in prison (on
 
 **Retaliating:** Strategies that cooperate all the time did not do as well as strategies that retaliate if the opponent defects.
 
-**Tit for Tat:** Rober Axelrod's Prisoner's Dilemma strategy, that will always cooperate in the first round of a match but will then copy whatever the opponent did in the previous round. 
+**Tit for Tat:** Rober Axelrod's Prisoner's Dilemma strategy, that will always cooperate in the first round of a match but will then copy whatever the opponent did in the previous round.

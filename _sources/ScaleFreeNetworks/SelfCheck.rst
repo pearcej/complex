@@ -1,5 +1,8 @@
+..  Copyright (C)  Jan Pearce
+    This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
 Self Check
-------------
+----------
 
 .. mchoice:: SC5_Q1
    :answer_a: Low clustering and high path length.
@@ -11,7 +14,7 @@ Self Check
    :feedback_b: No, this would not be ideal.
    :feedback_c: No, keep trying.
    :feedback_d: Correct! In a small world graph, things are very clustered and have little space between then, hence their low path length.
-    
+
    What are the characteristics of a small world graph?
 
 .. mchoice:: SC5_Q2
@@ -27,13 +30,13 @@ Self Check
    :casei:
 
    According to this model,  if two things are similar in some ways, they are likely to be similar in other ways. Keeping this in mind fill in the blanks.
-   
+
    **Word Bank:**
 
    +----------+---------+------+--------+
    |Observable|Behavior | Model| System |
    +----------+---------+------+--------+
-   
+
    In a system, S, we see something |blank| , that warrants explanation.
    We construct a model, that is analogous to |blank|
    By simulation or mathematical derivation, we show that the model exhibits a |blank|
@@ -46,7 +49,6 @@ Self Check
    - :behavior: Correct
      :x: Incorrect
    - :Behavior: Correct
-     :x: Incorrect 
+     :x: Incorrect
    - :Observable: Correct
-     :x: Incorrect 
-
+     :x: Incorrect
