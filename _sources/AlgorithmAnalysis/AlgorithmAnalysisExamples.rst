@@ -19,7 +19,7 @@ lowercase alphabetic characters. Our goal is to write a Boolean function
 that will take two strings and return whether they are anagrams.
 
 Solution 1: Checking Off
-^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 Our first solution to the anagram problem will check the lengths of the
 strings and then to see that each character in the first string actually
@@ -91,7 +91,7 @@ As :math:`n` gets large, the :math:`n^{2}` term will dominate the
 Therefore, this solution is :math:`O(n^{2})`.
 
 Solution 2: Sort and Compare
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Another solution to the anagram problem will make use of the fact that
 even though ``s1`` and ``s2`` are different, they are anagrams only if
@@ -142,7 +142,7 @@ dominate the iteration. In the end, this algorithm will have the
 same order of magnitude as that of the sorting process.
 
 Solution 3: Brute Force
-^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~
 
 A **brute force** technique for solving a problem typically tries to
 exhaust all possibilities. For the anagram detection problem, we can
@@ -163,9 +163,8 @@ If we processed one possibility every second, it would take us
 77,146,816,596 years to go through the entire array. This is probably not
 going to be a good solution.
 
-
 Solution 4: Count and Compare
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Our final solution to the anagram problem takes advantage of the fact
 that any two anagrams will have the same number of a’s, the same number
@@ -266,6 +265,15 @@ Applying the Brute Force solution to the Traveling Salesperson problem is a real
 an algorithm is said to scale well or be scalable if it is suitably efficient
 and practical when applied to an input with a large n, and brute force does not scale
 at all well because n = 28 is quite a small number.
+
+
+As we know a **brute force** technique for solving a problem typically tries to exhaust all possibilities for our salesperson, that means trying every set of routes and checking the path distance.
+Like the anagram detection example, the total number of paths that a salesperson could try is
+:math:`n*(n-1)*(n-2)*...*3*2*1`, which is :math:`n!` because they have to choose
+a first city from the :math:`n` choices,
+then there are only :math:`n-1` choices for the next city.
+Then :math:`n-2` choices for the third etc. That is :math:`O(n!)`.
+
 Using brute force to solve this problem requires we check the 27 factorial ways
 for the salesperson to consider traveling to each country.
 This means that there are 10,888,869,450,418,352,160,768,000,000
@@ -286,8 +294,8 @@ Brute Force Solution to find the shortest path for our salesperson.
 If you have 6 or 12 cores, you can just multiply by three or six, but that is
 clearly not going to help us a lot.
 
-What if we use a super computer?
-Summit is the fastest supercomputer in the world that can deliver 200 petaflops at peak.
+What if we use a super computer? Summit is the fastest supercomputer in the world
+and can deliver as much as 200 petaflops at peak.
 This is equivalent to 200 quadrillion floating-point operations per second.
 Since a quadrillion is a million billion, Summit is 40 million times faster than the
 fastest regular processors. However, 8,632,094,630,278.3 years is clearly still
@@ -296,11 +304,12 @@ far too many to wait.
 And this was just to visit the 28 European Union Countries. How long would it
 take to find the shortest path to visit all of the 48 states in the continental
 United States?  Using brute force on problems with numbers even as small as
-28 is clearly unworkable.
-
+28 is clearly unworkable. And, unfortunately for our salesperson, there is no
+known tractable solution for finding the best route for TSP, so solutions are
+used that are not *best* but are *good enough*. These are called heuristics.
 
 The moral of the story here is that algorithms matter and algorithm analysis can help
-you decide not to choose a particular algorithm to use.
+you decide not to choose a particular algorithm to use or not to use.
 
 .. admonition:: Self Check
 
