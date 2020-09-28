@@ -21,7 +21,7 @@ In social,  political and economic systems,  many activities  that  would  norma
 
 **Analysis → computation**
 
-In classical engineering, the space of feasible de-signs is limited by our capability for analysis.  For example,  designing the Eiffel Tower was possible because Gustave Eiffel developed novel analytic techniques,  in  particular  for dealing with wind  load.  Now  tools for computer-aided design and analysis make it possible to build almost anything  that  can  be  imagined.   Frank  Gehry’s  Guggenheim  Museum Bilbao is my favorite example.
+In classical engineering, the space of feasible de-signs is limited by our capability for analysis.  For example,  designing the Eiffel Tower was possible because Gustave Eiffel developed novel analytic techniques,  in  particular  for dealing with wind  load.  Now  tools for computer-aided design and analysis make it possible to build almost anything  that  can  be  imagined.   Frank  Gehry’s  Guggenheim  Museum Bilbao is a great example.
 
 
 **Isolation → interaction**

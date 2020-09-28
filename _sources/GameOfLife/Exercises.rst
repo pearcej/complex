@@ -4,13 +4,13 @@
 Exercises
 ---------
 
-The code for this chapter is in the Jupyter notebook chap08.ipynb_ in the repository for this book. Open this notebook, read the code, and run the cells. You can use this notebook to work on the following exercises.
+The code for this chapter is in the notebook chap08.ipynb_ in the repository for this book. Open this notebook, read the code, and run the cells. You can use this notebook to work on the following exercises.
 
 **Exercise 1:** Start GoL in a random state and run it until it stabilizes. What stable patterns can you identify?
 
 **Exercise 2:** Many named patterns are available in portable file formats. Modify ``Life.py`` to parse one of these formats and initialize the grid.
 
-**Exercise 3:** In my implementation, the ``Life`` class is based on a parent class called ``Cell2D``, and the ``LifeViewer`` class is based on ``Cell2DViewer``. You can use these base classes to implement other 2-D cellular automatons.
+**Exercise 3:** In the given implementation, the ``Life`` class is based on a parent class called ``Cell2D``, and the ``LifeViewer`` class is based on ``Cell2DViewer``. You can use these base classes to implement other 2-D cellular automatons.
 
 For example, one variation of GoL, called “Highlife”, has the same rules as GoL, plus one additional rule: a dead cell with 6 neighbors comes to life.
 
