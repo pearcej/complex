@@ -6,7 +6,7 @@ Simulation
 
 .. _EVO_5:
 
-Now that we have agents and a fitness landscape, I’ll define a class called ``Simulation`` that simulates the creation, reproduction, and death of the agents. To avoid getting bogged down, I’ll present a simplified version of the code here; you can see the details in the notebook for this chapter.
+Now that we have agents and a fitness landscape, we will define a class called ``Simulation`` that simulates the creation, reproduction, and death of the agents. To avoid getting bogged down, we will see a simplified version of the code here; you can see the details in the notebook for this chapter.
 
 Here’s the definition of ``Simulation``:
 

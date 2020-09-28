@@ -8,7 +8,7 @@ Sugarscape
 
 In 1996 Joshua Epstein and Robert Axtell proposed Sugarscape, an agent-based model of an “artificial society” intended to support experiments related to economics and other social sciences.
 
-Sugarscape is a versatile model that has been adapted for a wide variety of topics. As examples, I will replicate the first few experiments from Epstein and Axtell’s book, *Growing Artificial Societies*.
+Sugarscape is a versatile model that has been adapted for a wide variety of topics. As examples, we will replicate the first few experiments from Epstein and Axtell’s book, *Growing Artificial Societies*.
 
 In its simplest form, Sugarscape is a model of a simple economy where agents move around on a 2-D grid, harvesting and accumulating “sugar”, which represents economic wealth. Some parts of the grid produce more sugar than others, and some agents are better at finding it than others.
 
@@ -72,5 +72,3 @@ When sugar grows back at 1 unit per time step, there is not enough sugar to sust
    :feedback_e: Sorry two of the answers given above are correct.
 
    Which of the following are true about Sugarscapes:
-
-

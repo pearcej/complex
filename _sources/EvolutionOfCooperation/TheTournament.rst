@@ -40,7 +40,7 @@ The ``play`` method runs several rounds of the PD game. It uses the following me
 - ``respond``: Asks each agent for their response, given the opponent’s previous responses.
 - ``append``: Updates each agent by storing the choices and adding up the scores from successive rounds.
 
-After the given number of rounds, ``play`` returns the total score for each agent. I chose ``num_rounds=6`` so that each element of the genotype is accessed with roughly the same frequency. The first element is only accessed during the first round, or one sixth of the time. The next two elements are only accessed during the second round, or one twelfth each. The last four elements are accessed four of six times, or one sixth each, on average.
+After the given number of rounds, ``play`` returns the total score for each agent. We chose ``num_rounds=6`` so that each element of the genotype is accessed with roughly the same frequency. The first element is only accessed during the first round, or one sixth of the time. The next two elements are only accessed during the second round, or one twelfth each. The last four elements are accessed four of six times, or one sixth each, on average.
 
 ``Tournament`` provides a second method, ``melee``, that determines which agents compete against each other:
 

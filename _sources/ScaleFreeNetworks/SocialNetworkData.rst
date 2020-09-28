@@ -10,7 +10,7 @@ Watts-Strogatz graphs are intended to model networks in the natural and social s
 
 In this section we’ll perform the same analysis with a different dataset, a set of Facebook users and their friends. If you are not familiar with Facebook, users who are connected to each other are called “friends”, regardless of the nature of their relationship in the real world.
 
-I’ll use data from the Stanford Network Analysis Project (SNAP), which shares large datasets from online social networks and other sources. Specifically, I’ll use their Facebook data, which includes 4039 users and 88,234 friend relationships among them. This dataset is in the repository for this book, but it is also available from the SNAP website.
+We will use data from the Stanford Network Analysis Project (SNAP), which shares large datasets from online social networks and other sources. Specifically, we will use their Facebook data, which includes 4039 users and 88,234 friend relationships among them. This dataset is in the repository for this book, but it is also available from the SNAP website.
 
 The data file contains one line per edge, with users identified by integers from 0 to 4038. Here’s the code that reads the file:
 
@@ -76,7 +76,7 @@ The list comprehension enumerates the rows in the array and computes the shortes
     def estimate_path_length(G, nodes=None, trials=1000):
         return np.mean(sample_path_lengths(G, nodes, trials))
 
-I’ll use ``average_clustering`` to compute ``C``:
+We will use ``average_clustering`` to compute ``C``:
 ::
 
     C = average_clustering(fb)

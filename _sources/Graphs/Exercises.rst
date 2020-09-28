@@ -17,7 +17,7 @@ The code for this chapter is in chap04.ipynb_ , which is a Jupyter notebook in t
         reachable = reachable_nodes(G, start)
         return len(reachable) == len(G)
 
-**Exercise 3:**   In my implementation of ``reachable_nodes``, you might be bothered by the apparent inefficiency of adding all neighbors to the stack without checking whether they are already in ``seen``. Write a version of this function that checks the neighbors before adding them to the stack. Does this “optimization” change the order of growth? Does it make the function faster?
+**Exercise 3:**   In our implementation of ``reachable_nodes``, you might be bothered by the apparent inefficiency of adding all neighbors to the stack without checking whether they are already in ``seen``. Write a version of this function that checks the neighbors before adding them to the stack. Does this “optimization” change the order of growth? Does it make the function faster?
 
 **Exercise 4:**
 There are actually two kinds of ER graphs. The one we generated in this chapter, :math:`G(n, p)`, is characterized by two parameters, the number of nodes and the probability of an edge between nodes.

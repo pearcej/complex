@@ -52,4 +52,4 @@ This version of ``step`` USES ``Tournament.melee``, which sets the ``fitness`` a
 
 ``Simulation.step`` collects the agents’ fitnesses in an array; then it calls ``choose_dead`` to decide which agents die, and ``choose_replacements`` to decide which agents reproduce.
 
-My simulation includes differential survival, as in :ref:`Section 13.8 <EVO_8>`, but not differential reproduction. You can see the details in the notebook for this chapter. As one of the exercises, you will have a chance to explore the effect of differential reproduction.
+The provided simulation includes differential survival, as in :ref:`Section 13.8 <EVO_8>`, but not differential reproduction. You can see the details in the notebook for this chapter. As one of the exercises, you will have a chance to explore the effect of differential reproduction.

@@ -6,9 +6,9 @@
 Simulating Evolution of Cooperation
 -----------------------------------
 
-*Evolution of Cooperation* is the title of the first book where Axelrod presented results from Prisoner’s Dilemma tournaments and discussed the implications for the problem of altruism. Since then, he and other researchers have explored the evolutionary dynamics of PD tournaments, that is, how the distribution of strategies changes over time in a population of PD contestants. In the rest of this chapter, I run a version of those experiments and present the results.
+*Evolution of Cooperation* is the title of the first book where Axelrod presented results from Prisoner’s Dilemma tournaments and discussed the implications for the problem of altruism. Since then, he and other researchers have explored the evolutionary dynamics of PD tournaments, that is, how the distribution of strategies changes over time in a population of PD contestants. In the rest of this chapter, we will run a version of those experiments and explore the results.
 
-First, we’ll need a way to encode a PD strategy as a genotype. For this experiment, I consider strategies where the agent’s choice in each round depends only on the opponent’s choice in the previous two rounds. I represent a strategy using a dictionary that maps from the opponent’s previous two choices to the agent’s next choice.
+First, we’ll need a way to encode a PD strategy as a genotype. For this experiment, we consider strategies where the agent’s choice in each round depends only on the opponent’s choice in the previous two rounds. We represent a strategy using a dictionary that maps from the opponent’s previous two choices to the agent’s next choice.
 
 Here is the class definition for these agents:
 

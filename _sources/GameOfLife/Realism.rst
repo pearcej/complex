@@ -18,7 +18,7 @@ This is not a new observation — about 2500 years ago Heraclitus pointed out th
 
 But are these entities real? That is, do they exist in the world independent of us and our theories?
 
-Again, I find it useful to state philosophical positions in a range of strengths; here are four statements of scientific realism with increasing strength:
+Again, it might prove useful to state philosophical positions in a range of strengths; here are four statements of scientific realism with increasing strength:
 
 **SR1:** Scientific theories are true or false to the degree that they approximate reality, but no theory is exactly true. Some postulated entities may be real, but there is no principled way to say which ones.
 
@@ -45,12 +45,12 @@ SR4 is so strong that it is probably untenable; by such a strict criterion, almo
    Since SR4 is so defensible against attacks or objections most realists would accept something within the range of |blank| and |blank|. Pay attention to the order.
 
    - :SR1: Correct, this is the start of the SRs that are accepted.
-     :SR2: It is within the range but not the answer we are looking for, please give the outter edges of the range.
+     :SR2: It is within the range but not the answer we are looking for, please give the outer edges of the range.
      :SR3: While this is a good candidate please try again.
      :SR4: This SR is too powerful, please go back and look again at the section.
      :x: Incorrect.
    - :SR3: Correct, this is the end of the SRs that are accepted.
      :SR1: While this is a good candidate please try again.
-     :SR2: It is within the range but not the answer we are looking for, please give the outter edges of the range.
+     :SR2: It is within the range but not the answer we are looking for, please give the outer edges of the range.
      :SR4: This SR is too powerful, please go back and look again at the section.
      :x: Incorrect.

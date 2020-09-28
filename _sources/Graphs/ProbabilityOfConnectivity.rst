@@ -42,7 +42,7 @@ The result, ``tf``, is a list of boolean values: ``True`` for each graph that’
     >>> prob_connected(10, 0.23, iters=10000)
     0.33
 
-I chose 0.23 because it is close to the critical value where the probability of connectivity goes from near 0 to near 1. According to Erdős and Rényi, :math:`p* = lnn / n = 0.23`.
+We chose 0.23 because it is close to the critical value where the probability of connectivity goes from near 0 to near 1. According to Erdős and Rényi, :math:`p* = lnn / n = 0.23`.
 
 We can get a clearer view of the transition by estimating the probability of connectivity for a range of values of :math:`p`:
 

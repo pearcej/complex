@@ -18,7 +18,7 @@ Now let’s add a second chemical. We will define a new object, ``ReactionDiffus
         self.array2 = noise * np.random.random((n, m))
         add_island(self.array2)
 
-``n`` and ``m`` are the number of rows and columns in the array. ``params`` is a tuple of parameters, which I explain below.
+``n`` and ``m`` are the number of rows and columns in the array. ``params`` is a tuple of parameters, which is explained below.
 
 ``array`` represents the concentration of the first chemical, ``A``; the NumPy function ``ones`` initializes it to 1 everywhere. The data type ``float`` indicates that the elements of ``A`` are floating-point values.
 

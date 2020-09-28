@@ -31,7 +31,7 @@ The following generator function enumerates all possible edges and chooses which
     def flip(p):
     return np.random.random() < p
 
-This is the first example we’re seen that uses NumPy. Following convention, I import ``numpy`` as ``np``. NumPy provides a module named ``random``, which provides a method named ``random``, which returns a number between 0 and 1, uniformly distributed.
+This is the first example we’ve seen that uses NumPy. Following convention, we will import ``numpy`` as ``np``. NumPy provides a module named ``random``, which provides a method named ``random``, which returns a number between 0 and 1, uniformly distributed.
 
 So ``flip`` returns ``True`` with the given probability, ``p``, and ``False`` with the complementary probability, ``1-p``.
 

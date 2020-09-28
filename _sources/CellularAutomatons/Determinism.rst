@@ -6,7 +6,7 @@
 Determinism
 -----------
 
-The existence of Class 3 CAs is surprising. To explain how surprising, let me start with philosophical **determinism**. Many philosophical stances are hard to define precisely because they come in a variety of flavors. I often find it useful to define them with a list of statements ordered from weak to strong:
+The existence of Class 3 CAs is surprising. To explain how surprising, let's start with philosophical **determinism**. Many philosophical stances are hard to define precisely because they come in a variety of flavors. It might be useful to define them with a list of statements ordered from weak to strong:
 
 **D1:**  Deterministic models can make accurate predictions for some physical systems.
 
@@ -16,7 +16,7 @@ The existence of Class 3 CAs is surprising. To explain how surprising, let me st
 
 **D4:**  All events are caused by prior events, and can (at least in principle) be predicted.
 
-My goal in constructing this range is to make D1 so weak that virtually everyone would accept it, D4 so strong that almost no one would accept it, with intermediate statements that some people accept.
+Our goal in constructing this range is to make D1 so weak that virtually everyone would accept it, D4 so strong that almost no one would accept it, with intermediate statements that some people accept.
 
 The center of mass of world opinion swings along this range in response to historical developments and scientific discoveries. Prior to the scientific revolution, many people regarded the working of the universe as fundamentally unpredictable or controlled by supernatural forces. After the triumphs of Newtonian mechanics, some optimists came to believe something like D4; for example, in 1814 Pierre-Simon Laplace wrote:
 
@@ -29,4 +29,4 @@ In the 1960s chaos theory showed that in some deterministic systems prediction i
 
 Most of these systems are continuous in space (if not time) and nonlinear, so the complexity of their behavior is not entirely surprising. Wolfram’s demonstration of complex behavior in simple cellular automatons is more surprising — and disturbing, at least to a deterministic world view.
 
-So far I have focused on scientific challenges to determinism, but the longest-standing objection is the apparent conflict between determinism and human free will. Complexity science provides a possible resolution of this conflict; I’ll come back to this topic in :ref:`Section 12.7 <HFT_7>`.
+So far we have focused on scientific challenges to determinism, but the longest-standing objection is the apparent conflict between determinism and human free will. Complexity science provides a possible resolution of this conflict; We’ll come back to this topic in :ref:`Section 12.7 <HFT_7>`.

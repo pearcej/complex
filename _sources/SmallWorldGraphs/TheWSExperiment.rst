@@ -17,7 +17,7 @@ The WS Experiment
 
 Now we are ready to replicate the WS experiment, which shows that for a range of values of :math:`p`, a WS graph has high clustering like a regular graph and short path lengths like a random graph.
 
-I’ll start with ``run_one_graph``, which takes ``n``, ``k``, and ``p``; it generates a WS graph with the given parameters and computes the mean path length, ``mpl``, and clustering coefficient, ``cc``:
+We will start with ``run_one_graph``, which takes ``n``, ``k``, and ``p``; it generates a WS graph with the given parameters and computes the mean path length, ``mpl``, and clustering coefficient, ``cc``:
 
 ::
 
@@ -27,9 +27,9 @@ I’ll start with ``run_one_graph``, which takes ``n``, ``k``, and ``p``; it gen
         cc = clustering_coefficient(ws)
         return mpl, cc
 
-Watts and Strogatz ran their experiment with ``n=1000`` and ``k=10``. With these parameters, ``run_one_graph`` takes a few seconds on my computer; most of that time is spent computing the mean path length.
+Watts and Strogatz ran their experiment with ``n=1000`` and ``k=10``. With these parameters, ``run_one_graph`` takes a few seconds on a typical computer; most of that time is spent computing the mean path length.
 
-Now we need to compute these values for a range of ``p``. I’ll use the NumPy function ``logspace`` again to compute ``ps``:
+Now we need to compute these values for a range of ``p``, using the NumPy function ``logspace`` again to compute ``ps``:
 
 ::
 

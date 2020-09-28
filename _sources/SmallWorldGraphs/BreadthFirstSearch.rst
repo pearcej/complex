@@ -6,9 +6,9 @@
 Breadth-First Search
 ---------------------
 
-When we computed shortest paths, we used a function provided by NetworkX, but I have not explained how it works. To do that, I’ll start with breadth-first search, which is the basis of Dijkstra’s algorithm for computing shortest paths.
+When we computed shortest paths, we used a function provided by NetworkX, but we have not explained how it works. To do that, we’ll start with breadth-first search, which is the basis of Dijkstra’s algorithm for computing shortest paths.
 
-In :ref:`Section 4.6 <G_6>` I presented ``reachable_nodes``, which finds all the nodes that can be reached from a given starting node:
+In :ref:`Section 4.6 <G_6>` we presented ``reachable_nodes``, which finds all the nodes that can be reached from a given starting node:
 
 ::
 
@@ -22,7 +22,7 @@ In :ref:`Section 4.6 <G_6>` I presented ``reachable_nodes``, which finds all the
             stack.extend(G.neighbors(node))
     return seen
 
-I didn’t say so at the time, but ``reachable_nodes`` performs a **depth-first search (DFS)**. Now we’ll modify it to perform **breadth-first search (BFS)**.
+We didn’t mention it at the time, but ``reachable_nodes`` performs a **depth-first search (DFS)**. Now we’ll modify it to perform **breadth-first search (BFS)**.
 
 To understand the difference, imagine you are exploring a castle. You start in a room with three doors marked A, B, and C. You open door C and discover another room, with doors marked D, E, and F.
 
@@ -64,8 +64,8 @@ And we can use it to write an efficient BFS:
 
 The differences are:
 
-- I replaced the list called ``stack``with a deque called ``queue``.
-- I replaced ``pop`` with ``popleft``, which removes and returns the leftmost element of the queue.
+- We replaced the list called ``stack``with a deque called ``queue``.
+- We replaced ``pop`` with ``popleft``, which removes and returns the leftmost element of the queue.
 
 This version is back to being :math:`O(n + m)`. Now we’re ready to find shortest paths.
 

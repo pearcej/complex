@@ -6,7 +6,7 @@
 Generating BA Graphs
 --------------------
 
-In the previous sections we used a NetworkX function to generate BA graphs; now let’s see how it works. Here is a version of ``barabasi_albert_graph``, with some changes I made to make it easier to read:
+In the previous sections we used a NetworkX function to generate BA graphs; now let’s see how it works. Here is a version of ``barabasi_albert_graph``, with some changes that were made to make it easier to read:
 
 ::
 

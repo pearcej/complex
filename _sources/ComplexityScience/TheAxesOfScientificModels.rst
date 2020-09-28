@@ -36,7 +36,7 @@ Classical models are often limited to small numbers of components.  For example,
 
 In classical models, the components and interactions  tend  to  be  identical;  complex  models  more  often  include heterogeneity.
 
-These are generalizations, so we should not take them too seriously. And I don’t mean to deprecate classical science. A more complicated model is not necessarily better; in fact, it is usually worse.
+These are generalizations, so we should not take them too seriously. And we are not intending to deprecate classical science. A more complicated model is not necessarily better; in fact, it is often worse.
 
 And we don’t mean to suggest that these changes are abrupt or complete. Rather, there is a gradual migration in the frontier of what is considered acceptable, respectable work. Some tools that used to be regarded with suspicion are now common, and some models that were widely accepted are now regarded with scrutiny.
 

@@ -15,7 +15,7 @@ Traffic Jams
 
 What causes traffic jams? Sometimes there is an obvious cause, like an accident, a speed trap, or something else that disturbs the flow of traffic. But other times traffic jams appear for no apparent reason.
 
-Agent-based models can help explain spontaneous traffic jams. As an example, I implement a highway simulation based on a model in Mitchell Resnick’s book, *Turtles, Termites and Traffic Jams.*
+Agent-based models can help explain spontaneous traffic jams. As an example, we implement a highway simulation based on a model in Mitchell Resnick’s book, *Turtles, Termites and Traffic Jams.*
 
 Here’s the class that represents the “highway”:
 
@@ -84,9 +84,9 @@ The move method lets the ``Driver`` choose its acceleration. Then ``move`` compu
 
 ``dist`` is the distance between ``driver`` and the next ``driver`` ahead. This distance is passed to ``choose_acceleration``, which specifies the behavior of the driver. This is the only decision the driver gets to make; everything else is determined by the “physics” of the simulation.
 
-- ``acc`` is acceleration, which is bounded by ``min_acc`` and ``max_acc``. In my implementation, cars can accelerate with ``max_acc=1`` and brake with ``min_acc=-10``.
+- ``acc`` is acceleration, which is bounded by ``min_acc`` and ``max_acc``. In the given implementation, cars can accelerate with ``max_acc=1`` and brake with ``min_acc=-10``.
 - ``speed`` is the old speed plus the requested acceleration, but then we make some adjustments. First, we add random noise to ``speed``, because the world is not perfect. ``eps`` determines the magnitude of the relative error; for example, if ``eps`` is 0.02, ``speed`` is multiplied by a random factor between 0.98 and 1.02.
-- Speed is bounded between 0 and ``speed_limit``, which is 40 in my implementation, so cars are not allowed to go backward or speed.
+- Speed is bounded between 0 and ``speed_limit``, which is 40 in the given implementation, so cars are not allowed to go backward or speed.
 - If the requested speed would cause a collision with the next car, ``speed`` is set to 0.
 - Finally, we update the ``speed`` and ``loc`` attributes of ``driver``.
 

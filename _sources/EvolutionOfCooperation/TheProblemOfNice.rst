@@ -21,6 +21,6 @@ Based on experimental results, it seems that at least part of the explanation is
 
 This apparent contradiction is the “problem of altruism": *why haven’t the genes for altruism died out*?
 
-Among biologists, there are many possible explanations, including reciprocal altruism, sexual selection, kin selection, and group selection. Among non-scientists, there are even more explanations. I leave it to you to explore the alternatives; for now I want to focus on just one explanation, arguably the simplest one: maybe altruism is adaptive. In other words, maybe genes for altruism make people more likely to survive and reproduce.
+Among biologists, there are many possible explanations, including reciprocal altruism, sexual selection, kin selection, and group selection. Among non-scientists, there are even more explanations. We leave it to you to explore the alternatives; for now we will to focus on just one explanation, arguably the simplest one: maybe altruism is adaptive. In other words, maybe genes for altruism make people more likely to survive and reproduce.
 
 It turns out that the Prisoner’s Dilemma, which raises the problem of altruism, might also help resolve it.

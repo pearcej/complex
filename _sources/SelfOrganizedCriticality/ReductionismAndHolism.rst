@@ -43,7 +43,7 @@ Bak has made a similar argument that self-organized criticality is a general mod
 
 Many natural systems demonstrate behaviors characteristic of critical systems. Bak’s explanation for this prevalence is that these systems are examples of the broad category of self-organized criticality. There are two ways to support this argument. One is to build a realistic model of a particular system and show that the model exhibits SOC. The second is to show that SOC is a feature of many diverse models, and to identify the essential characteristics those models have in common.
 
-The first approach, which I characterize as reductionist, can explain the behavior of a particular system. The second approach, which I am calling holistic, can explain the prevalence of criticality in natural systems. They are different models with different purposes.
+The first approach, which can be characterized as reductionist, can explain the behavior of a particular system. The second approach, which can be called holistic, can explain the prevalence of criticality in natural systems. They are different models with different purposes.
 
 For reductionist models, realism is the primary virtue, and simplicity is secondary. For holistic models, it is the other way around.
 
