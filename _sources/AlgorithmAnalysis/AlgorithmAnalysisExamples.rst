@@ -1,11 +1,15 @@
 ..  Copyright (C)  Jan Pearce
     This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
 
-An Anagram Detection Example
+Algorithm Analysis Examples
 ----------------------------
 
+An Anagram Detection Example
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 A good example problem for showing algorithms with different orders of
-magnitude is the classic anagram detection problem for strings. One
+magnitude is the classic anagram detection problem for strings sometimes
+called the anagram detection problem. One
 string is an anagram of another if the second is simply a rearrangement
 of the first. For example, ``"heart"`` and ``"earth"`` are anagrams. The
 strings ``"python"`` and ``"typhon"`` are anagrams as well. For the sake
@@ -159,14 +163,6 @@ If we processed one possibility every second, it would take us
 77,146,816,596 years to go through the entire array. This is probably not
 going to be a good solution.
 
-Brute Force on TSP
-^^^^^^^^^^^^^^^^^^^^
-
-The Brute Force solution to the Traveling Salesperson problem is terrible. The problem says that a salesperson needs to travel  to each country in the EU and take the shortest path all together. Using brute force to solve this problem yields 27 factorial ways for the salesperson to travel to each city. This means that there are 10,888,869,450,418,352,160,768,000,000
-possible paths for the salesperson to travel when you use the brute force solution. The fastest processor available currently is around 5GHz, and 1GHz represents 1 billion cycles per second. If you could do a single computation in a cycle, then a computation would take 2/5,000,000,000 which equals 0.0000000004 seconds. We can call this computation rate. Note that processors typically take more than one cycle to complete an instruction, but for the last decade or so most processors are multicore…. So, this is a rough estimate. Next you should take, computation rate times number of paths to give the amount of time in seconds, then divide that by the number of seconds in a year :math:`((24*60)*60)*365`. It would take 345,283,785,211,134,961,972.60273972602739726027 years for the Brute Force Solution to find the shortest path.
-
-
-
 
 Solution 4: Count and Compare
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -240,6 +236,71 @@ millions of characters, there would be more concern. As a computer
 scientist, when given a choice of algorithms, it will be up to you to
 determine the best use of computing resources given a particular
 problem.
+
+The Traveling Salesperson Problem
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Let's consider a famous problem in computer science for a bit and let's
+return to the brute force method. Imagine that a salesperson needs to travel to
+a set of places and find the shortest path to do so.
+
+The Traveling Salesperson problem (TSP) has numerous direct applications
+in a number of fields, including transportation and logistics.
+The example of arranging school bus routes to pick up the children in a
+school district is of important historical significance since it provided
+motivation for Merrill Flood to do pioneering of TSP research in the 1940s.
+More current applications involve the scheduling of service calls or the
+delivery of packages or meals.
+
+Although transportation applications are clearly a natural setting for TSP,
+there are applications in other areas such as the scheduling of a machine to drill
+holes in a circuit board. If the time it takes to move the head of the drill
+is a significant portion of the overall manufacturing process, then the TSP is
+important in reducing costs.
+
+To be concrete, let's imagine that a salesperson needs to travel to each country in the European Union
+and find the shortest path to do so. At the time of this writing, there were
+28 European countries are members of the EU. Without the UK, there will be 27.
+
+Applying the Brute Force solution to the Traveling Salesperson problem is a really terrible idea.
+an algorithm is said to scale well or be scalable if it is suitably efficient
+and practical when applied to an input with a large n, and brute force does not scale
+at all well because n = 28 is quite a small number.
+Using brute force to solve this problem requires we check the 27 factorial ways
+for the salesperson to consider traveling to each country.
+This means that there are 10,888,869,450,418,352,160,768,000,000
+possible paths for the salesperson to check to travel when using the brute force solution.
+
+Some of the fastest readily available processors currently are around 5GHz, where 1GHz represents
+1 billion cycles per second.
+If you could do two computations in a cycle,
+then a computation would take 2/5,000,000,000 seconds which equals 0.0000000004 seconds.
+We can call this computation rate.
+Note that processors typically take more than one cycle to complete an instruction,
+but for the last decade or so most processors have been multicore…
+So, this is a rough estimate. Next you should take, computation rate times
+number of paths to give the amount of time in seconds,
+then divide that by the number of seconds in a year :math:`((24*60)*60)*365`.
+It would take 345,283,785,211,134,961,972.6 years for the
+Brute Force Solution to find the shortest path for our salesperson.
+If you have 6 or 12 cores, you can just multiply by three or six, but that is
+clearly not going to help us a lot.
+
+What if we use a super computer?
+Summit is the fastest supercomputer in the world that can deliver 200 petaflops at peak.
+This is equivalent to 200 quadrillion floating-point operations per second.
+Since a quadrillion is a million billion, Summit is 40 million times faster than the
+fastest regular processors. However, 8,632,094,630,278.3 years is clearly still
+far too many to wait.
+
+And this was just to visit the 28 European Union Countries. How long would it
+take to find the shortest path to visit all of the 48 states in the continental
+United States?  Using brute force on problems with numbers even as small as
+28 is clearly unworkable.
+
+
+The moral of the story here is that algorithms matter and algorithm analysis can help
+you decide not to choose a particular algorithm to use.
 
 .. admonition:: Self Check
 
