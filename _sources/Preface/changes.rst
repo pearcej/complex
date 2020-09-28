@@ -1,8 +1,8 @@
 ..  Copyright (C)  Jan Pearce
     This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
 
-Changes from the Second Edition of **Think Complexity**
--------------------------------------------------------
+Changes from the Second Edition of *Think Complexity*
+-----------------------------------------------------
 
 by Jan Pearce
 
@@ -17,11 +17,11 @@ by Brad Miller, David Ranum, and Jan Pearce. To facilitate online work,
 the possibility of using Google Colaboratory notebooks has been added in
 addition to the original Jupyter Noteooks written by Allen Downey.
 
-In future editions, I plan to add more material on the travelling salesman problem and
+In future editions, I plan to add more material on the traveling salesman problem and
 the use of heuristics as well as complexity classes as well as the important P vs NP problem.
 
-Changes from the First Edition of **Think Complexity**
-------------------------------------------------------
+Changes from the First Edition of *Think Complexity*
+----------------------------------------------------
 
 by Allen Downey
 
