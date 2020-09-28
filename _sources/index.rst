@@ -17,8 +17,6 @@
 On Complexity
 =============
 
-By Jan Pearce, Berea College
-
 .. raw:: html
 
    <ul>
