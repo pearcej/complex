@@ -29,11 +29,11 @@ However, the standard deviation of degree in the model is :math:`1.5`, which is 
 
 What’s the problem? To get a better view, we have to look at the distribution of degrees, not just the mean and standard deviation.
 
-I’ll represent the distribution of degrees with a ``Pmf`` object, which is defined in the thinkstats2 module. ``Pmf`` stands for “probability mass function”.
+We will represent the distribution of degrees with a ``Pmf`` object, which is defined in the thinkstats2 module. ``Pmf`` stands for “probability mass function”.
 
 Briefly, a ``Pmf`` maps from values to their probabilities. A ``Pmf`` of degrees is a mapping from each possible degree, ``d``, to the fraction of nodes with degree ``d``.
 
-As an example, I’ll construct a graph with nodes :math:`1`, :math:`2`, and :math:`3` connected to a central node, :math:`0`:
+As an example, we construct a graph with nodes :math:`1`, :math:`2`, and :math:`3` connected to a central node, :math:`0`:
 
 ::
 
@@ -50,7 +50,7 @@ Here’s the list of degrees in this graph:
     >>> degrees(G)
     [3, 1, 1, 1]
 
-Node :math:`0` has degree :math:`3`, the others have degree :math:`1`. Now I can make a ``Pmf`` that represents this degree distribution:
+Node :math:`0` has degree :math:`3`, the others have degree :math:`1`. Now we can make a ``Pmf`` that represents this degree distribution:
 
 ::
 

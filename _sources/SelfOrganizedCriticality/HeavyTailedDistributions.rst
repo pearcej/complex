@@ -15,7 +15,7 @@ We’ll make a larger sand pile, with ``n=50`` and an initial level of ``30``, a
     pile2 = SandPile(n=50, level=30)
     pile2.run()
 
-Next, I’ll run 100,000 random drops:
+Next, let's run 100,000 random drops:
 
 ::
 
@@ -37,7 +37,7 @@ A large majority of drops have duration 1 and no toppled cells; if we filter the
     T = T[T>1]
     S = S[S>0]
 
-The distributions of ``T`` and ``S`` have many small values and a few very large ones. I’ll use the ``Pmf`` class from thinkstats2 to make a PMF of the values, that is, a map from each value to its probability of occurring (see :ref:`Section 6.4<SFN_4>`).
+The distributions of ``T`` and ``S`` have many small values and a few very large ones. We will use the ``Pmf`` class to make a PMF of the values, that is, a map from each value to its probability of occurring (see :ref:`Section 6.4<SFN_4>`).
 
 .. _linear_scale:
 

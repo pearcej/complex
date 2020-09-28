@@ -32,7 +32,7 @@ Here’s the step method that finds all cells above ``K`` and topples them:
         self.array += c
         return num_toppled
 
-To show how step works, I’ll start with a small pile that has two cells ready to topple:
+To show how step works, we will start with a small pile that has two cells ready to topple:
 
 ::
 
@@ -148,7 +148,7 @@ With an initial level of 10, this sand pile takes 332 time steps to reach equili
 
 :ref:`Figure 10.1 <sand_pile>` (middle) shows the configuration of the sand pile after dropping 200 grains onto random cells, each time running until the pile reaches equilibrium. The symmetry of the initial configuration has been broken; the configuration looks random.
 
-Finally :ref:`Figure 10.1<sand_pile>` (right) shows the configuration after 400 drops. It looks similar to the configuration after 200 drops. In fact, the pile is now in a steady state where its statistical properties don’t change over time. I’ll explain some of those statistical properties in the next section.
+Finally :ref:`Figure 10.1<sand_pile>` (right) shows the configuration after 400 drops. It looks similar to the configuration after 200 drops. In fact, the pile is now in a steady state where its statistical properties don’t change over time. We will learn about some of those statistical properties in the next section.
 
 
 .. fillintheblank:: q_9.4.1

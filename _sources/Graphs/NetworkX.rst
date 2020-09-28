@@ -91,7 +91,7 @@ Then I can use ``add_nodes_from`` to iterate the keys of ``positions`` and add t
 
      G.add_nodes_from(positions)
 
-Next I’ll make a dictionary that maps from each edge to the corresponding driving time:
+Next we will make a dictionary that maps from each edge to the corresponding driving time:
 
 ::
 
@@ -106,7 +106,7 @@ Now I can use ``add_edges_from``, which iterates the keys of ``drive_times`` and
 
      G.add_edges_from(drive_times)
 
-Instead of ``draw_circular``, which arranges the nodes in a circle, I’ll use ``draw``, which takes the position dictionary as the second parameter:
+Instead of ``draw_circular``, which arranges the nodes in a circle, we will use ``draw``, which takes the position dictionary as the second parameter:
 
 ::
 

@@ -6,9 +6,9 @@
 Implementing Life
 -----------------
 
-The exercises at the end of this chapter ask you to experiment with and modify the Game of Life, and implement other 2-D cellular automatons. This section explains my implementation of GoL, which you can use as a starting place for your experiments.
+The exercises at the end of this chapter ask you to experiment with and modify the Game of Life, and implement other 2-D cellular automatons. This section explains an implementation of GoL That you can use as a starting place for your experiments.
 
-To represent the state of the cells, I use a NumPy array of 8-bit unsigned integers. As an example, the following line creates a 10 by 10 array initialized with random values of 0 and 1.
+To represent the state of the cells, we use a NumPy array of 8-bit unsigned integers. As an example, the following line creates a 10 by 10 array initialized with random values of 0 and 1.
 
 ::
 
@@ -35,8 +35,6 @@ There are a few ways we can compute the GoL rules. The simplest is to use for lo
 Initially, ``b`` is an array of zeros with the same size as ``a``. Each time through the loop, ``state`` is the condition of the center cell and ``neighbors`` is the 3x3 neighborhood. ``k`` is the number of live neighbors (not including the center cell). The nested ``if`` statements evaluate the GoL rules and turn on cells in ``b`` accordingly.
 
 This implementation is a straightforward translation of the rules, but it is verbose and slow. We can do better using cross-correlation, as we saw in :ref:`Section 7.11 <CA_11>`. There, we used ``np.correlate`` to compute a 1-D correlation. Now, to perform 2-D correlation, we’ll use ``correlate2d`` from ``scipy.signal``, a SciPy module that provides functions related to signal processing:
-
-
 
 
 ::
@@ -96,11 +94,11 @@ This version is faster and more concise than the others; the only drawback is th
 .. fillintheblank:: q_7.12
    :casei:
 
-   The author say the simplest method to compute the GoL rules is |blank|
+   The text says the simplest method to compute the GoL rules is to use |blank|
 
    - :for loops: Correct!
-     :while loops: Not quite, take a look at his code.
-     :for loop: Sorry there is more than one of those within the code above.
+     :while loops: Not quite, take a look at the code.
+     :recursion: Sorry, there is no recursion. Look again at the code.
      :x: Not quite.
 
 

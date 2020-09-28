@@ -14,7 +14,7 @@ Segregation
 
     Figure 11.1: Schelling’s segregation model with n=100, initial condition (left), after 2 steps (middle), and after 10 steps (right).
 
-Now let’s see what happens when we run the model. I’ll start with ``n=100`` and ``p=0.3``, and run for 10 steps.
+Now let’s see what happens when we run the model, starting with ``n=100`` and ``p=0.3``, and run for 10 steps.
 
 ::
 

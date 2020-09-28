@@ -10,7 +10,7 @@ Cellular automatons are governed by rules that determine how the state of the ce
 
 As a trivial example, consider a cellular automaton (CA) with a single cell. The state of the cell during time step :math:`i` is an integer, :math:`x_i`. As an initial condition, suppose :math:`x0 = 0`.
 
-Now all we need is a rule. Arbitrarily, I’ll pick :math:`x_{i+1} = x_i + 1`, which says that during each time step, the state of the CA gets incremented by 1. So this CA performs a simple calculation: it counts.
+Now all we need is a rule. Arbitrarily, we will pick :math:`x_{i+1} = x_i + 1`, which says that during each time step, the state of the CA gets incremented by 1. So this CA performs a simple calculation: it counts.
 
 But this CA is atypical; normally the number of possible states is finite. As an example, suppose a cell can only have one of two states, 0 or 1. For a 2-state CA, we could write a rule like :math:`x_{i+1} = (x_i + 1) \% 2`, where % is the remainder (or modulus) operator.
 

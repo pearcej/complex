@@ -24,6 +24,6 @@ But that’s the best case scenario. With just a small amount of randomness, thi
 
 :ref:`Figure 12.2 <HFT_FIG_2>` also shows results with ``eps=0.001`` and ``eps=0.01``, which correspond to errors in speed of 0.1% and 1%.
 
-With 0.1% errors, the capacity of the highway drops from 25 to 20 (by “capacity” I mean the maximum number of cars that can reach and sustain the speed limit). And with 1% errors, the capacity drops to 10. Ugh.
+With 0.1% errors, the capacity of the highway drops from 25 to 20 (“capacity” means the maximum number of cars that can reach and sustain the speed limit). And with 1% errors, the capacity drops to 10. Ugh.
 
 As one of the exercises at the end of this chapter, you’ll have a chance to design a better driver; that is, you will experiment with different strategies in ``choose_acceleration`` and see if you can find driver behaviors that improve average speed.

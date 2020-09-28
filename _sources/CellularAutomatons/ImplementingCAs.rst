@@ -6,13 +6,13 @@
 Implementing CAs
 ----------------
 
-To generate the figures in this chapter, I wrote a Python class called ``Cell1D`` that represents a 1-D cellular automaton, and a class called ``Cell1DViewer`` that plots the results. Both are defined in ``Cell1D.py`` in the repository for this book.
+To generate the figures in this chapter, we will use a Python class called ``Cell1D`` that represents a 1-D cellular automaton, and a class called ``Cell1DViewer`` that plots the results. Both are defined in ``Cell1D.py`` in the repository for this book.
 
-To store the state of the CA, I use a NumPy array with one column for each cell and one row for each time step.
+To store the state of the CA, we will use a NumPy array with one column for each cell and one row for each time step.
 
-To explain how my implementation works, I’ll start with a CA that computes the parity of the cells in each neighborhood. The “parity” of a number is 0 if the number is even and 1 if it is odd.
+To explain how this implementation works, we’ll start with a CA that computes the parity of the cells in each neighborhood. The “parity” of a number is 0 if the number is even and 1 if it is odd.
 
-I use the NumPy function ``zeros`` to create an array of zeros, then put a 1 in the middle of the first row.
+We use the NumPy function ``zeros`` to create an array of zeros, then put a 1 in the middle of the first row.
 
 ::
 
@@ -40,7 +40,7 @@ The data type ``uint8`` indicates that the elements of ``array`` are unsigned 8-
         cmap = plt.get_cmap('Blues')
         plt.imshow(array, cmap=cmap, interpolation='none')
 
-I import ``pyplot`` with the abbreviated name ``plt``, which is conventional. The function ``get_cmap`` returns a colormap, which maps from the values in the array to colors. The colormap ``'Blues'`` draws the “on" cells in dark blue and the “off" cells in light blue.
+We import ``pyplot`` with the abbreviated name ``plt``, which is conventional. The function ``get_cmap`` returns a colormap, which maps from the values in the array to colors. The colormap ``'Blues'`` draws the “on" cells in dark blue and the “off" cells in light blue.
 
 ``imshow`` displays the array as an “image”; that is, it draws a colored square for each element of the array. Setting ``interpolation`` to ``none`` indicates that ``imshow`` should not interpolate between on and off cells.
 
@@ -60,4 +60,4 @@ To compute the state of the CA during time step ``i``, we have to add up consecu
 
 Each time through the loop, we select three elements from ``row``, add them up, compute the parity, and store the result in row ``i``.
 
-In this example, the lattice is finite, so the first and last cells have only one neighbor. To handle this special case, I don’t update the first and last column; they are always 0.
+In this example, the lattice is finite, so the first and last cells have only one neighbor. To handle this special case, we don’t update the first and last column; they are always 0.

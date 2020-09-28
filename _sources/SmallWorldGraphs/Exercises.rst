@@ -11,9 +11,9 @@ All ring lattices are regular, but not all regular graphs are ring lattices. In 
 Write a function called make_regular_graph that takes n and k and returns a regular graph that contains n nodes, where every node has k neighbors. If it’s not possible to make a regular graph with the given values of n and k, the function should raise a ValueError.
 
 **Exercise 2:**
-My implementation of ``reachable_nodes_bfs`` is efficient in the sense that it is in O(n + m), but it incurs a lot of overhead adding nodes to the queue and removing them. NetworkX provides a simple, fast implementation of BFS, available from the NetworkX repository on GitHub.
+Our implementation of ``reachable_nodes_bfs`` is efficient in the sense that it is in O(n + m), but it incurs a lot of overhead adding nodes to the queue and removing them. NetworkX provides a simple, fast implementation of BFS, available from the NetworkX repository on GitHub.
 
-Here is a version I modified to return a set of nodes:
+Here is a version that is modified to return a set of nodes:
 
 ::
 
@@ -48,7 +48,7 @@ The following implementation of BFS contains two performance errors. What are th
                      if c not in visited and c not in queue)
     return visited
 
-**Exercise 4:**   In :ref:`Section 5.11 <SWG_11>`, I claimed that Dijkstra’s algorithm does not work unless it uses BFS. Write a version of ``shortest_path_dijkstra`` that uses DFS and test it on a few examples to see what goes wrong.
+**Exercise 4:**   In :ref:`Section 5.11 <SWG_11>`, we claimed that Dijkstra’s algorithm does not work unless it uses BFS. Write a version of ``shortest_path_dijkstra`` that uses DFS and test it on a few examples to see what goes wrong.
 **Exercise 5:**
 A natural question about the Watts and Strogatz paper is whether the small world phenomenon is specific to their generative model or whether other similar models yield the same qualitative result (high clustering and low path lengths).
 

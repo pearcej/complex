@@ -26,13 +26,13 @@ The probability that an edge is rewired is a parameter, :math:`p`, that controls
 
 Watts and Strogatz found that small values of :math:`p` yield graphs with high clustering, like a regular graph, and low path lengths, like a random graph.
 
-In this chapter I replicate the Watts and Strogatz experiment in the following steps:
+In this chapter we will replicate the Watts and Strogatz experiment in the following steps:
 
 1. We’ll start by constructing a ring lattice, which is a kind of regular graph.
 2. Then we’ll rewire it as Watts and Strogatz did.
 3. We’ll write a function to measure the degree of clustering and use a NetworkX function to compute path lengths.
 4. Then we’ll compute the degree of clustering and path length for a range of values of :math:`p`.
-5. Finally, I’ll present Dijkstra’s algorithm, which computes shortest paths efficiently.
+5. Finally, we will explore Dijkstra’s algorithm, which computes shortest paths efficiently.
 
 .. dragndrop:: dnd-ex-1
    :feedback: Feedback that is displayed if things are incorrectly matched.

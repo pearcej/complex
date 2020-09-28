@@ -24,7 +24,7 @@ To implement Schelling’s model, we have yet another class that inherits from `
 
 The ``step`` function for Schelling’s model is substantially more complicated than previous examples. If you are not interested in the details, you can skip to the next section. But if you stick around, you might pick up some NumPy tips.
 
-First, I make boolean arrays that indicate which cells are red, blue, and empty:
+First, let's make boolean arrays that indicate which cells are red, blue, and empty:
 
 ::
 
@@ -33,7 +33,7 @@ First, I make boolean arrays that indicate which cells are red, blue, and empty:
             blue = a==2
             empty = a==0
 
-Then I use ``correlate2d`` to count, for each location, the number of neighboring cells that are red, blue, and non-empty. We saw ``correlate2d`` in :ref:`Section 8.7 <GOL_7>`.
+Then we can use ``correlate2d`` to count, for each location, the number of neighboring cells that are red, blue, and non-empty. We saw ``correlate2d`` in :ref:`Section 8.7 <GOL_7>`.
 
 ::
 
@@ -58,7 +58,7 @@ After computing ``num_red`` and ``num_blue``, we can compute the fraction of nei
     frac_red = num_red / num_neighbors
     frac_blue = num_blue / num_neighbors
 
-Then, we can compute the fraction of neighbors, for each agent, that are the same color as the agent. I use ``np.where``, which is like an element-wise if expression. The first parameter is a condition that selects elements from the second or third parameter.
+Then, we can compute the fraction of neighbors, for each agent, that are the same color as the agent, using ``np.where``, which is like an element-wise if expression. The first parameter is a condition that selects elements from the second or third parameter.
 
 ::
 

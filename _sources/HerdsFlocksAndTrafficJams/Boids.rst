@@ -20,15 +20,15 @@ Each agent simulates three behaviors:
 
 Boids make decisions based on local information only; each Boid only sees (or pays attention to) other Boids in its field of vision.
 
-In the repository for this book, you will find ``Boids7.py``, which contains my implementation of Boids, based in part on the description in Gary William Flake’s book, *The Computational Beauty of Nature.*
+In the repository for this book, you will find ``Boids7.py``, which contains an implementation of Boids, based in part on the description in Gary William Flake’s book, *The Computational Beauty of Nature.*
 
-My implementation uses VPython, which is a library that provides 3-D graphics. VPython provides a Vector object, which I use to represent the position and velocity of Boids in three dimensions.
+The given implementation uses VPython, which is a library that provides 3-D graphics. VPython provides a vector object, which can be used to represent the position and velocity of Boids in three dimensions.
 
 .. mchoice:: q_11.4.2
    :answer_a: True
    :answer_b: False
    :correct: b
-   :feedback_a: Sorry but boids only make decisions based on local information because they only pay attention to local boids.
+   :feedback_a: Sorry but Boids only make decisions based on local information because they only pay attention to local Boids.
    :feedback_b: Correct!
 
    Boids make decisions based off of local information most of the time but they occasionally make decisions by looking at non local information.

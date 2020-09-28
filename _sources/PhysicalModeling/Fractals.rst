@@ -15,7 +15,7 @@ For simple geometric objects, dimension is defined in terms of scaling behavior.
 
 More generally, we can estimate the dimension of an object by measuring some kind of size (like area or volume) as a function of some kind of linear measure (like the length of a side).
 
-As an example, I’ll estimate the dimension of a 1-D cellular automaton by measuring its area (total number of “on” cells) as a function of the number of rows.
+As an example, We’ll estimate the dimension of a 1-D cellular automaton by measuring its area (total number of “on” cells) as a function of the number of rows.
 
 .. figure:: Figures/1D_CA.png
     :align: center
@@ -25,7 +25,7 @@ As an example, I’ll estimate the dimension of a 1-D cellular automaton by meas
 
 :ref:`Figure 9.6<PM_FIG_6>` shows three 1-D CAs like the ones we saw in :ref:`Section 7.2<CA_2>`. Rule 20 (left) generates a set of cells that seems like a line, so we expect it to be one-dimensional. Rule 50 (center) produces something like a triangle, so we expect it to be 2-D. Rule 18 (right) also produces something like a triangle, but the density is not uniform, so its scaling behavior is not obvious.
 
-I’ll estimate the dimension of these CAs with the following function, which counts the number of on cells after each time step. It returns a list of tuples, where each tuple contains ``i``, :math:`i^2`, and the total number of cells.
+We’ll estimate the dimension of these CAs with the following function, which counts the number of on cells after each time step. It returns a list of tuples, where each tuple contains ``i``, :math:`i^2`, and the total number of cells.
 
 
 .. _PM_FIG_7:

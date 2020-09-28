@@ -77,7 +77,7 @@ Looking specifically at the opening move, we can track the fraction of agents th
 
 :ref:`Figure 14.2 <EOC_fig_2>` (right) shows the results, which are highly variable. The fraction of agents who cooperate in the first round is often near 1, and occasionally near 0. The long-term average is close to 0.65, similar to overall niceness. These results are consistent with Axelrod’s tournaments; in general, nice strategies do well.
 
-The other characteristics Axelrod identifies in successful strategies are retaliation and forgiveness. To measure retaliation, I define this ``instrument``:
+The other characteristics Axelrod identifies in successful strategies are retaliation and forgiveness. To measure retaliation, we define this ``instrument``:
 
 ::
 
@@ -96,7 +96,7 @@ The other characteristics Axelrod identifies in successful strategies are retali
 
 This result provides weak support for the claim that successful strategies retaliate. But maybe it’s not necessary for all agents, or even many, to be retaliatory; if there is at least some tendency toward retaliation in the population as a whole, that might be enough to prevent high-defection strategies from gaining ground.
 
-To measure forgiveness, I define one more ``instrument`` to see whether agents might be more likely to cooperate after D-C in the previous two rounds, compared to C-D. In my simulations, there is no evidence for this particular kind of forgiveness. On the other hand, the strategies in these simulations are necessarily forgiving because they consider only the previous two rounds of history. In this context, forgetting is a kind of forgiving.
+To measure forgiveness, we define one more ``instrument`` to see whether agents might be more likely to cooperate after D-C in the previous two rounds, compared to C-D. In the simulations, there is no evidence for this particular kind of forgiveness. On the other hand, the strategies in these simulations are necessarily forgiving because they consider only the previous two rounds of history. In this context, forgetting is a kind of forgiving.
 
 .. mchoice:: Ch13.8_Q1
     :answer_a: 4 rounds

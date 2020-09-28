@@ -17,7 +17,7 @@ We’ll start by making a bigger sand pile, with ``n=131`` and initial level ``2
 
 It takes 28,379 steps for this pile to reach equilibrium, with more than 200 million cells toppled.
 
-To see the resulting pattern more clearly, I select cells with levels 0, 1, 2, and 3, and plot them separately:
+To see the resulting pattern more clearly, we can select cells with levels 0, 1, 2, and 3, and plot them separately:
 
 ::
 
@@ -43,7 +43,7 @@ Inside the loop, it uses ``a==level`` to make a boolean array that’s ``True`` 
 
 :ref:`Figure 10.4 <SOC_FIG_4>` shows the results for ``pile3``. Visually, these patterns resemble fractals, but looks can be deceiving. To be more confident, we can estimate the fractal dimension for each pattern using box-counting, as we saw in :ref:`Section 9.6 <PM_6>`.
 
-We’ll count the number of cells in a small box at the center of the pile, then see how the number of cells increases as the box gets bigger. Here’s my implementation:
+We’ll count the number of cells in a small box at the center of the pile, then see how the number of cells increases as the box gets bigger. Here’s an implementation:
 
 ::
 

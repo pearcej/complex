@@ -5,7 +5,6 @@ Analysis
 ::::::::
 
 .. toctree::
-    :caption: Analysis
     :maxdepth: 2
 
     WhatIsAlgorithmAnalysis.rst
