@@ -1,4 +1,4 @@
-﻿# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 #
 # On Complexity documentation build configuration file, created by
 # sphinx-quickstart on Thu Oct 27 08:17:45 2011.
@@ -171,10 +171,10 @@ html_theme_path = [pkg_resources.resource_filename('runestone', 'common/project_
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-html_title = 'Problem Solving with Algorithms and Data Structures using C++'
+html_title = 'On Complexity'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
-html_short_title ='Problem Solving with Algorithms and Data Structures'
+html_short_title ='On Complexity'
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
