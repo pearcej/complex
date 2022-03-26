@@ -44,6 +44,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'On Complexity'
+key_words = 'complexity, python, algorithms'
+course_description = 'This text introduces the field of complexity science which uses computation to explore the physical and social sciences. It employs graphs, cellular automata, and agent-based models to study interdiciplinary applications in physics, biology, and economics.'
 copyright = '2020 Jan Pearce'
 
 # The version info for the project you're documenting, acts as replacement for
