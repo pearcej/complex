@@ -17,19 +17,12 @@ which was also released under the
 We are extremely grateful to Berea College's work program and the superb Berea College students who converted this
 book to Runestone in Spring and Summer 2020 in spite of COVID-19.
 
+How to use this book
+====================
 
-Getting Started
-===============
-
-We have tried to make it as easy as possible for you to build and use this book.
-
-1. You can see and read this book online at `Runestone Interactive <https://runestone.academy/runestone/books/published/httlads/index.html>`_
-
-2.  You can build it and host it yourself in just a few simple steps:
-
-    1.  ``pip install git+git://github.com/RunestoneInteractive/RunestoneComponents.git``  -- Should install everything you need
-    2.  ``runestone build`` -- will build the html and put it in ``./build/complex``
-    3.  ``runestone serve``   -- will start a webserver and serve the pages locally from ``./build/complex``
+- The generic version of this book is located at `https://runestone.academy/ns/books/published/complex/index.html <https://runestone.academy/ns/books/published/complex/index.html>`_ 
+- Instructors who wish to use this book go to `https://runestone.academy/ <https://runestone.academy/>`_ and make an account using *complex* as the base book.
+- Those wishing to report bugs or suggest improvements can do so at `https://github.com/pearcej/complex/issues <https://github.com/pearcej/complex/issues>`_.
 
 Licensing
 =========
