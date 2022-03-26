@@ -326,12 +326,16 @@ you decide not to choose a particular algorithm to use or not to use.
 
        Given the following code fragment, what is its Big-O running time?
 
-        .. code-block:: python
+       .. code-block:: cpp
 
-          test = 0
-          for i in range(n):
-             for j in range(n):
-                test = test + i * j
+         int main():
+            test = 0;
+            for i in n:
+                for j in n:
+                    test = test + i * j;
+
+
+            return 0;
 
    .. mchoice:: analysis_2
        :answer_a: O(n)
@@ -346,14 +350,15 @@ you decide not to choose a particular algorithm to use or not to use.
 
        Given the following code fragment what is its Big-O running time?
 
-        .. code-block:: python
+       .. code-block:: cpp
 
-          test = 0
-          for i in range(n):
-             test = test + 1
-
-          for j in range(n):
-             test = test - 1
+         int main():
+            test = 0;
+            for i in n:
+                test = test + 1;
+            for j in n:
+                test = test - 1;
+            return 0;
 
    .. mchoice:: analysis_3
        :answer_a: O(n)
@@ -368,12 +373,16 @@ you decide not to choose a particular algorithm to use or not to use.
 
        Given the following code fragment what is its Big-O running time?
 
-        .. code-block:: python
+       .. code-block:: cpp
 
-          i = n
-          while i > 0:
-             k = 2 + 2
-             i = i // 2
+         int main():
+            i = n;
+            count = 0;
+            while i > 0:
+                count = count + 1;
+                i = i // 2;
+
+            return 0;
 
    .. fillintheblank:: fill1512
 
