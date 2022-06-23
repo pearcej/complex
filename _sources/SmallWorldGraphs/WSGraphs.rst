@@ -35,7 +35,9 @@ The parameter ``p`` is the probability of rewiring an edge. The for loop enumera
     def flip(p): 
         return np.random.random() < p
 
-Flip uses a module from NumPy (which is imported as np in this example) named ``random``. This module has a method also named ``random``, which returns a number between 0 and 1.
+``flip`` uses a module from NumPy (which is imported as np in this example) named ``random``. This module has a method also named ``random``, which returns a number between 0 and 1.
+
+``flip`` returns ``True`` when the random number is less than the given probability ``p``, it returns false when the random number is greater than or equal to ``p``.
 
 If we are rewiring an edge from node ``u`` to node ``v``, we have to choose a replacement for ``v``, called ``new_v``.
 
