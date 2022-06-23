@@ -28,7 +28,14 @@ Here is an implementation of this process.
             G.remove_edge(u, v)
             G.add_edge(u, new_v)
 
-The parameter ``p`` is the probability of rewiring an edge. The for loop enumerates the edges and uses ``flip`` (defined :ref:`Section 5.7 <SWG_7>`) to choose which ones get rewired.
+The parameter ``p`` is the probability of rewiring an edge. The for loop enumerates the edges and uses ``flip`` (defined below) to choose which ones get rewired.
+
+::
+
+    def flip(p): 
+        return np.random.random() < p
+
+Flip uses a module from NumPy (which is imported as np in this example) named ``random``. This module has a method also named ``random``, which returns a number between 0 and 1.
 
 If we are rewiring an edge from node ``u`` to node ``v``, we have to choose a replacement for ``v``, called ``new_v``.
 
