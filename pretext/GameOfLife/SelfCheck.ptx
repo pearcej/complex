@@ -1,0 +1,162 @@
+<?xml version="1.0"?>
+<section xml:id="game-of-life_self-check">
+  <title>Self Check</title>
+  <figure align="center">
+    <image source="GameOfLife/Figures/GoL_Glider_.gif" width="50%"/>
+  </figure>
+  <exercise label="SC_1">
+    <statement>
+      <p>Q-1: What Game of Life pattern is presented in the gif above?</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>Glider Gun</p>
+        </statement>
+        <feedback>
+          <p>Incorrect, a glider gun is a pattern that will periodically produce a spaceship.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>Glider</p>
+        </statement>
+        <feedback>
+          <p>Correct, a glider is a pattern that is back in its starting position after four steps but shifted down and to the right.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Toad</p>
+        </statement>
+        <feedback>
+          <p>Incorrect, a toad is a pattern that will alternate between two states.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Gospers Gun</p>
+        </statement>
+        <feedback>
+          <p>Incorrect, gospers gun is a pattern that will peridically produce a spaceship.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <figure align="center">
+    <image source="GameOfLife/Figures/GoL_Glider_Gun.gif" width="50%"/>
+  </figure>
+  <exercise label="SC_2">
+    <statement>
+      <p>Q-2: The Game of Life pattern that is presented in the gif above is one of the patterns that Conway said would disprove his conjecture.</p>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement>
+          <p>True</p>
+        </statement>
+        <feedback>
+          <p>Correct, the glider gun, or as it is called today Gosper's gun, is one of the two patterns Conway said would dispfrove his conjecture.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>False</p>
+        </statement>
+        <feedback>
+          <p>Incorrect,</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <figure align="center">
+    <image source="GameOfLife/Figures/GoL_R_Pentomino.gif" width="50%"/>
+  </figure>
+  <exercise label="SC_3">
+    <statement>
+      <p>Q-3: What Game of Life pattern is presented in the gif above?</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>Toad</p>
+        </statement>
+        <feedback>
+          <p>Incorrect, a toad is a pattern that will alternate between two states.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Glider</p>
+        </statement>
+        <feedback>
+          <p>Incorrect, a glider is a pattern that is back in its starting position after four steps but shifted down and to the right.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>R-Pentomino</p>
+        </statement>
+        <feedback>
+          <p>Correct, a r-pentomino is one of the simplest patterns that fall under the methuselahs classification of patterns. Methuselahs are patterns that are long lived and have simple starting positions.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Puffer Train</p>
+        </statement>
+        <feedback>
+          <p>Incorrect, a puffer train is a translating pattern that leaves live cells in its wake.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <figure align="center">
+    <image source="GameOfLife/Figures/GoL_Toad.gif" width="50%"/>
+  </figure>
+  <exercise>
+    <statement>
+      <p>Q-4: Fill in the blank with the correct Game of Life pattern: <var/>  </p>
+    </statement>
+    <setup>
+      <var>
+        <p>A <BlankNode/> is a pattern that oscillates and alternates between two states.</p>
+        <condition string="^\s*toad\s*$">
+          <feedback>
+            <p>Correct.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*Glider\s*$">
+          <feedback>
+            <p>Incorrect, a glider is a pattern that is back in its starting position after four steps but shifted down and to the right.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*R-Pentomino\s*$">
+          <feedback>
+            <p>Incorrect,  a r-pentomino is one of the simplest patterns that fall under the methuselahs classification of patterns. Methuselahs are patterns that are long lived and have simple starting positions.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*Puffer\s+Train\s*$">
+          <feedback>
+            <p>Incorrect, a puffer train is a translating pattern that leaves live cells in its wake.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*Gospers\s+Gun\s*$">
+          <feedback>
+            <p>Incorrect, gospers gun is a pattern that will peridically produce a spaceship.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*Spaceship\s*$">
+          <feedback>
+            <p>Incorrect, a spaceship is a pattern that will oscillate and it will return to its starting position but shifted in space.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*Beehive\s*$">
+          <feedback>
+            <p>Incorrect, a beehive is a stable pattern that has two or three neighbors.</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+</section>

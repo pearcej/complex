@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<section xml:id="scale-free-networks_generating-ba-graphs">
+  <title>Generating BA Graphs</title>
+  <p>In the previous sections we used a NetworkX function to generate BA graphs; now let's see how it works. Here is a version of <c>barabasi_albert_graph</c>, with some changes that were made to make it easier to read:</p>
+  <pre>def barabasi_albert_graph(n, k):
+
+G = nx.empty_graph(k)
+targets = list(range(k))
+repeated_nodes = []
+
+for source in range(k, n):
+    G.add_edges_from(zip([source]*k, targets))
+
+    repeated_nodes.extend(targets)
+    repeated_nodes.extend([source] * k)
+
+    targets = _random_subset(repeated_nodes, k)
+
+return G</pre>
+  <p>The parameters are <c>n</c>, the number of nodes we want, and <c>k</c>, the number of edges each new node gets (which will turn out to be the average number of edges per node).</p>
+  <p>We start with a graph that has <c>k</c> nodes and no edges. Then we initialize two variables:</p>
+  <p>
+    <ul>
+      <li>
+        <p><c>targets</c>: The list of <c>k</c> nodes that will be connected to the next node. Initially <c>targets</c> contains the original <c>k</c> nodes; later it will contain a random subset of nodes.</p>
+      </li>
+      <li>
+        <p><c>repeated_nodes</c>: A list of existing nodes where each node appears once for every edge it is connected to. When we select from <c>repeated_nodes</c>, the probability of selecting any node is proportional to the number of edges it has.</p>
+      </li>
+    </ul>
+  </p>
+  <p>Each time through the loop, we add edges from the source to each node in <c>targets</c>. Then we update <c>repeated_nodes</c> by adding each target once and the new node <c>k</c> times.</p>
+  <p>Finally, we choose a subset of the nodes to be targets for the next iteration. Here's the definition of <c>_random_subset</c>:</p>
+  <pre>def _random_subset(repeated_nodes, k):
+targets = set()
+while len(targets) &lt; k:
+    x = random.choice(repeated_nodes)
+    targets.add(x)
+return targets</pre>
+  <p>Each time through the loop, <c>_random_subset</c> chooses from <c>repeated_nodes</c> and adds the chosen node to <c>targets</c>. Because <c>targets</c> is a set, it automatically discards duplicates, so the loop only exits when we have selected <c>k</c> different nodes.</p>
+</section>

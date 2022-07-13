@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<section xml:id="evolution-of-cooperation_introduction">
+  <title>Introduction</title>
+  <p>In this final chapter, we engage with two questions, one from biology and one from philosophy:</p>
+  <p>
+    <ul>
+      <li>
+        <p>In biology, the <q><term>problem of altruism</term></q> is the apparent conflict between natural selection, which suggests that animals live in a state of constant competition, and <term>altruism</term>, which is the tendency of many animals to help other animals, even to their own detriment.</p>
+      </li>
+      <li>
+        <p>In moral philosophy, the question of human nature asks whether humans are fundamentally good, or evil, or blank states shaped by their environment.</p>
+      </li>
+    </ul>
+  </p>
+  <p>The tools we will use to address these questions are agent-based simulation (again) and game theory, which is a set of abstract models meant to describe ways agents interact. Specifically, the game we will consider is the Prisoner's Dilemma.</p>
+  <p>The code for this chapter is in <url href="https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap14.ipynb" visual="https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap14.ipynb">chap14.ipynb</url>, which is a notebook in the repository for this book. For more information about working with this code, see  <xref ref="preface_notebooks"/>.</p>
+</section>

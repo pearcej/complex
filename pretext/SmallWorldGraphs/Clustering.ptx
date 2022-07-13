@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<section xml:id="small-world-graphs_clustering">
+  <title>Clustering</title>
+  <p xml:id="small-world-graphs_swg-6" names="swg_6">The next step is to compute the <term>clustering coefficient</term>, which quantifies the tendency for the nodes to form cliques. A clique is a set of nodes that are completely connected; that is, there are edges between all pairs of nodes in the set.</p>
+  <p>Suppose a particular node, <c>u</c>, has k neighbors. If all of the neighbors are connected to each other, there would be <math>k(k&#x2212;1)/2</math> edges among them. The fraction of those edges that actually exist is the local clustering coefficient for <math>u</math>, denoted <math>C_u</math>.</p>
+  <p>If we compute the average of <math>C_u</math> over all nodes, we get the <q>network average clustering coefficient</q>, denoted <math>C</math>.</p>
+  <p>Here is a function that computes it.</p>
+  <pre>def node_clustering(G, u):
+neighbors = G[u]
+k = len(neighbors)
+if k &lt; 2:
+    return np.nan
+
+possible = k * (k-1) / 2
+exist = 0
+for v, w in all_pairs(neighbors):
+    if G.has_edge(v, w):
+        exist +=1
+return exist / possible</pre>
+  <p>Again I use <c>G[u]</c>, which returns a dictionary with the neighbors of <c>u</c> as keys.</p>
+  <p>If a node has fewer than 2 neighbors, the clustering coefficient is undefined, so we return <c>np.nan</c>, which is a special value that indicates <q>Not a Number</q>.</p>
+  <p>Otherwise we compute the number of possible edges among the neighbors, count the number of those edges that actually exist, and return the fraction that exist.</p>
+  <p>We can test the function like this:</p>
+  <pre>&gt;&gt;&gt; lattice = make_ring_lattice(10, 4)
+&gt;&gt;&gt; node_clustering(lattice, 1)
+0.5</pre>
+  <p>In a ring lattice with <math>k=4</math>, the clustering coefficient for each node is <math>0.5</math> (if you are not convinced, take another look at <xref ref="small-world-graphs_ring-lattice"/>).</p>
+  <p>Now we can compute the network average clustering coefficient like this:</p>
+  <pre>def clustering_coefficient(G):
+cu = [node_clustering(G, node) for node in G]
+return np.nanmean(cu)</pre>
+  <p>The NumPy function <c>nanmean</c> computes the mean of the local clustering coefficients, ignoring any values that are <c>NaN</c>.</p>
+  <p>We can test <c>clustering_coefficient</c> like this:</p>
+  <pre>&gt;&gt;&gt; clustering_coefficient(lattice)
+0.5</pre>
+  <p>In this graph, the local clustering coefficient for all nodes is <math>0.5</math>, so the average across nodes is <math>0.5</math>. Of course, we expect this value to be different for WS graphs.</p>
+  <exercise>
+    <statement>
+      <p>Q-1: If a node has fewer than <c>|blank|</c> neighbors, the clustering coefficient is <c>|blank|</c>, so we return np.nan, which is a special value that indicates <c>|blank|</c>. <var/>  <var/>  <var/>  </p>
+    </statement>
+    <setup>
+      <var>
+        <condition number="[2, 2]">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Try again</p>
+          </feedback>
+        </condition>
+      </var>
+      <var>
+        <condition string="^\s*undefined\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Try again</p>
+          </feedback>
+        </condition>
+      </var>
+      <var>
+        <condition string="^\s*not\s+a\s+number\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Try again</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+</section>
