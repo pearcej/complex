@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+<section xml:id="herds-flocks-and-traffic-jams_traffic-jams">
+  <title>Traffic Jams</title>
+  <figure align="center" xml:id="id1">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Gif 12.1: Simulation of traffic jams. Squares indicate the position of the drivers; triangles indicate places where one driver has to brake to avoid another.</caption>
+    <image source="HerdsFlocksAndTrafficJams/Figures/Traffic_Jam.gif" width="50%" alt="&quot;Gif 12.1: Simulation of traffic jams. Squares indicate the position of the drivers; triangles indicate places where one driver has to brake to avoid another.&quot;"/>
+  </figure>
+  <p>What causes traffic jams? Sometimes there is an obvious cause, like an accident, a speed trap, or something else that disturbs the flow of traffic. But other times traffic jams appear for no apparent reason.</p>
+  <p>Agent-based models can help explain spontaneous traffic jams. As an example, we implement a highway simulation based on a model in Mitchell Resnick's book, <em>Turtles, Termites and Traffic Jams.</em></p>
+  <p>Here's the class that represents the <q>highway</q>:</p>
+  <pre>class Highway:
+
+    def __init__(self, n=10, length=1000, eps=0):
+        self.length = length
+        self.eps = eps
+
+        # create the drivers
+        locs = np.linspace(0, length, n, endpoint=False)
+        self.drivers = [Driver(loc) for loc in locs]
+
+        # and link them up
+        for i in range(n):
+            j = (i+1) % n
+            self.drivers[i].next = self.drivers[j]</pre>
+  <p><c>n</c> is the number of cars, <c>length</c> is the length of the highway, and <c>eps</c> is the amount of random noise we'll add to the system.</p>
+  <p><c>locs</c> contains the locations of the drivers; the NumPy function <c>linspace</c> creates an array of <c>n</c> locations equally spaced between <c>0</c> and <c>length</c>.</p>
+  <p>The <c>drivers</c> attribute is a list of <c>Driver</c> objects. The for loop links them so each <c>Driver</c> contains a reference to the next. The highway is circular, so the last <c>Driver</c> contains a reference to the first.</p>
+  <p>During each time step, the <c>Highway</c> moves each of the <c>drivers</c>:</p>
+  <pre># Highway
+
+    def step(self):
+        for driver in self.drivers:
+            self.move(driver)</pre>
+  <p>The move method lets the <c>Driver</c> choose its acceleration. Then <c>move</c> computes the updated <c>speed</c> and position. Here's the implementation:</p>
+  <pre># Highway
+
+    def move(self, driver):
+        dist = self.distance(driver)
+
+        # let the driver choose acceleration
+        acc = driver.choose_acceleration(dist)
+        acc = min(acc, self.max_acc)
+        acc = max(acc, self.min_acc)
+        speed = driver.speed + acc
+
+        # add random noise to speed
+        speed *= np.random.uniform(1-self.eps, 1+self.eps)
+
+        # keep it nonnegative and under the speed limit
+        speed = max(speed, 0)
+        speed = min(speed, self.speed_limit)
+
+        # if current speed would collide, stop
+        if speed &gt; dist:
+            speed = 0
+
+        # update speed and loc
+        driver.speed = speed
+        driver.loc += speed</pre>
+  <p><c>dist</c> is the distance between <c>driver</c> and the next <c>driver</c> ahead. This distance is passed to <c>choose_acceleration</c>, which specifies the behavior of the driver. This is the only decision the driver gets to make; everything else is determined by the <q>physics</q> of the simulation.</p>
+  <p>
+    <ul>
+      <li>
+        <p><c>acc</c> is acceleration, which is bounded by <c>min_acc</c> and <c>max_acc</c>. In the given implementation, cars can accelerate with <c>max_acc=1</c> and brake with <c>min_acc=-10</c>.</p>
+      </li>
+      <li>
+        <p><c>speed</c> is the old speed plus the requested acceleration, but then we make some adjustments. First, we add random noise to <c>speed</c>, because the world is not perfect. <c>eps</c> determines the magnitude of the relative error; for example, if <c>eps</c> is 0.02, <c>speed</c> is multiplied by a random factor between 0.98 and 1.02.</p>
+      </li>
+      <li>
+        <p>Speed is bounded between 0 and <c>speed_limit</c>, which is 40 in the given implementation, so cars are not allowed to go backward or speed.</p>
+      </li>
+      <li>
+        <p>If the requested speed would cause a collision with the next car, <c>speed</c> is set to 0.</p>
+      </li>
+      <li>
+        <p>Finally, we update the <c>speed</c> and <c>loc</c> attributes of <c>driver</c>.</p>
+      </li>
+    </ul>
+  </p>
+  <p>Here's the definition for the <c>Driver</c> class:</p>
+  <pre>class Driver:
+
+    def __init__(self, loc, speed=0):
+        self.loc = loc
+        self.speed = speed
+
+    def choose_acceleration(self, dist):
+        return 1</pre>
+  <p>The attributes <c>loc</c> and <c>speed</c> are the location and speed of the driver.</p>
+  <p>This implementation of <c>choose_acceleration</c> is simple: it always accelerates at the maximum rate.</p>
+  <p>Since the cars start out equally spaced, we expect them all to accelerate until they reach the speed limit, or until their speed exceeds the space between them. At that point, at least one <q>collision</q> will occur, causing some cars to stop.</p>
+  <figure align="center" xml:id="hft-fig-1">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 12.1: Simulation of drivers on a circular highway at three points in time. Squares indicate the position of the drivers; triangles indicate places where one driver has to brake to avoid another.</caption>
+    <image source="HerdsFlocksAndTrafficJams/Figures/DRIVER_SIM.png" width="50%" alt="&quot;Figure 12.1: Simulation of drivers on a circular highway at three points in time. Squares indicate the position of the drivers; triangles indicate places where one driver has to brake to avoid another.&quot;"/>
+  </figure>
+  <p><xref ref="hft-fig-1"/> shows a few steps in this process, starting with 30 cars and <c>eps=0.02</c>. On the left is the configuration after 16 time steps, with the highway mapped to a circle. Because of random noise, some cars are going faster than others, and the spacing has become uneven.</p>
+  <p>During the next time step (middle) there are two collisions, indicated by the triangles.</p>
+  <p>During the next time step (right) two cars collide with the stopped cars, and we can see the initial formation of a traffic jam. Once a jam forms, it tends to persist, with additional cars approaching from behind and colliding, and with cars in the front accelerating away.</p>
+  <p>Under some conditions, the jam itself propagates backwards, as you can see if you watch the animations in the notebook for this chapter.</p>
+  <exercise label="Q_11.2.1">
+    <statement>
+      <p>
+</p>
+    </statement>
+    <matches>
+      <match order="1">
+        <premise>Highway</premise>
+        <response>The class that represents the <q>highway</q>.</response>
+      </match>
+      <match order="2">
+        <premise>Driver</premise>
+        <response>The class that allows drivers to know their location, speed, and choose their acceleration rate.</response>
+      </match>
+      <match order="3">
+        <premise>drivers</premise>
+        <response> a list of Driver objects.</response>
+      </match>
+      <match order="4">
+        <premise>acc</premise>
+        <response> The acceleration of the highway and its drivers.</response>
+      </match>
+      <match order="5">
+        <premise>speed</premise>
+        <response>The old speed plus the requested acceleration with some adjustments. Random noise is added to speed and eps determines the magnitude of the relative error.</response>
+      </match>
+      <match order="6">
+        <premise>choose_acceleration</premise>
+        <response>Specifies the behavior of the driver. this is the only decision the driver gets to make; everythig else is determined by the "physics" of the simulation.</response>
+      </match>
+      <match order="7">
+        <premise>length</premise>
+        <response>The lenght of the highway.</response>
+      </match>
+      <match order="8">
+        <premise>locs</premise>
+        <response>Contains the locations of the drivers.</response>
+      </match>
+      <match order="9">
+        <premise>dist</premise>
+        <response>The distance between driver and the next driver ahead.</response>
+      </match>
+    </matches>
+  </exercise>
+</section>

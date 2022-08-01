@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+        <title>Preface</title>
+        <xi:include href='./introduction.ptx' />
+        <xi:include href='./prerequisites.ptx' />
+        <xi:include href='./changes.ptx' />
+        <xi:include href='./notebooks.ptx' />
+    </chapter>

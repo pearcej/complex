@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<section xml:id="self-organized-criticality_fractals">
+  <title>Fractals</title>
+  <p xml:id="self-organized-criticality_soc-6" names="soc_6">Another property of critical systems is fractal geometry. The initial configuration in <xref ref="self-organized-criticality_implementing-the-sand-pile"/> (left) resembles a fractal, but you can't always tell by looking. A more reliable way to identify a fractal is to estimate its fractal dimension, as we saw in <xref ref="physical-modeling_fractals"/> and <xref ref="physical-modeling_fractals-and-percolation-models"/>.</p>
+  <p>We'll start by making a bigger sand pile, with <c>n=131</c> and initial level <c>22</c>.</p>
+  <pre>pile3 = SandPile(n=131, level=22)
+pile3.run()</pre>
+  <p>It takes 28,379 steps for this pile to reach equilibrium, with more than 200 million cells toppled.</p>
+  <p>To see the resulting pattern more clearly, we can select cells with levels 0, 1, 2, and 3, and plot them separately:</p>
+  <pre>def draw_four(viewer, levels=range(4)):
+    thinkplot.preplot(rows=2, cols=2)
+    a = viewer.viewee.array
+
+    for i, level in enumerate(levels):
+        thinkplot.subplot(i+1)
+        viewer.draw_array(a==level, vmax=1)</pre>
+  <p><c>draw_four</c> takes a <c>SandPileViewer</c> object, which is defined in <c>Sand.py</c> in the repository for this book. The parameter <c>levels</c> is the list of levels we want to plot; the default is the range 0 through 3. If the sand pile has run until equilibrium, these are the only levels that should exist.</p>
+  <p>Inside the loop, it uses <c>a==level</c> to make a boolean array that's <c>True</c> where the array is <c>level</c> and <c>False</c> otherwise. <c>draw_array</c> treats these booleans as 1s and 0s.</p>
+  <figure align="center" xml:id="soc-fig-4">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 10.4: Sand pile model in equilibrium, selecting cells with levels 0, 1, 2, and 3, left to right, top to bottom.</caption>
+    <image source="SelfOrganizedCriticality/Figures/SP_EQUILIBRIUM.png" width="50%" alt="&quot;Figure 10.4: Sand pile model in equilibrium, selecting cells with levels 0, 1, 2, and 3, left to right, top to bottom.&quot;"/>
+  </figure>
+  <p><xref ref="soc-fig-4"/> shows the results for <c>pile3</c>. Visually, these patterns resemble fractals, but looks can be deceiving. To be more confident, we can estimate the fractal dimension for each pattern using box-counting, as we saw in <xref ref="physical-modeling_fractals"/>.</p>
+  <p>We'll count the number of cells in a small box at the center of the pile, then see how the number of cells increases as the box gets bigger. Here's an implementation:</p>
+  <pre>def count_cells(a):
+n, m = a.shape
+end = min(n, m)
+
+res = []
+for i in range(1, end, 2):
+    top = (n-i) // 2
+    left = (m-i) // 2
+    box = a[top:top+i, left:left+i]
+    total = np.sum(box)
+    res.append((i, i**2, total))
+
+return np.transpose(res)</pre>
+  <p>The parameter, <c>a</c>, is a boolean array. The size of the box is initially 1. Each time through the loop, it increases by 2 until it reaches <c>end</c>, which is the smaller of <c>n</c> and <c>m</c>.</p>
+  <p>Each time through the loop, <c>box</c> is a set of cells with width and height <c>i</c>, centered in the array. <c>total</c> is the number of <q>on</q> cells in the box.</p>
+  <p>The result is a list of tuples, where each tuple contains <c>i</c>, <math>i^2</math>, and the number of cells in the box.
+            When we pass this result to <c>transpose</c>, NumPy converts it to an array with three columns, and then transposes it; that is, it makes the columns into rows and the rows into columns. The result is an array with 3 rows: <c>i</c>, <c>i**2</c>, and <c>total</c>.</p>
+  <p>Here's how we use <c>count_cells</c>:</p>
+  <pre>res = count_cells(pile.array==level)
+steps, steps2, cells = res</pre>
+  <p>The first line creates a boolean array that contains <c>True</c> where the array equals <c>level</c>, calls <c>count_cells</c>, and gets an array with three rows.</p>
+  <p>The second line unpacks the rows and assigns them to <c>steps</c>, <c>steps2</c>, and <c>cells</c>, which we can plot like this:</p>
+  <pre>thinkplot.plot(steps, steps2, linestyle='dashed')
+thinkplot.plot(steps, cells)
+thinkplot.plot(steps, steps, linestyle='dashed')</pre>
+  <figure align="center" xml:id="id2">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 10.5: Box counts for cells with levels 0, 1, 2, and 3, compared to dashed lines with slopes 1 and 2.</caption>
+    <image source="SelfOrganizedCriticality/Figures/BOX_COUNTS.png" width="50%" alt="&quot;Figure 10.5: Box counts for cells with levels 0, 1, 2, and 3, compared to dashed lines with slopes 1 and 2.&quot;"/>
+  </figure>
+  <p><xref ref="soc-fig-5"/> shows the results. On a log-log scale, the cell counts form nearly straight lines, which indicates that we are measuring fractal dimension over a valid range of box sizes.</p>
+  <p>To estimate the slopes of these lines, we can use the SciPy function <c>linregress</c>, which fits a line to the data by linear regression.</p>
+  <pre>from scipy.stats import linregress
+
+params = linregress(np.log(steps), np.log(cells))
+slope = params[0]</pre>
+  <p>The estimated fractal dimensions are:</p>
+  <pre>0  1.871
+1  3.502
+2  1.781
+3  2.084</pre>
+  <p>The fractal dimension for levels 0, 1, and 2 seems to be clearly non-integer, which indicates that the image is fractal.</p>
+  <p>The estimate for level 3 is indistinguishable from 2, but given the results for the other values, the apparent curvature of the line, and the appearance of the pattern, it seems likely that it is also fractal.</p>
+  <p>One of the exercises in the notebook for this chapter asks you to run this analysis again with different values of <c>n</c> and the initial <c>level</c> to see if the estimated dimensions are consistent.</p>
+  <!--dragndrop::q_9.6.1
+:match_1: draw_four|||Uses a viewer and levels to create an image.
+:match_2: viewer|||A SandPileViewer object.
+:match_3: levels|||List of levels we want to plot.
+:match_4: draw_array|||Uses an array of 1s and 0s to create a picture.
+:match_5: a|||An array.-->
+</section>
