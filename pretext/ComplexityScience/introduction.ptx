@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<section xml:id="complexity-science_introduction">
+  <title>Introduction</title>
+  <p>Complexity science is relatively new; it became recognizable as a field, and was given a name, in the 1980s. But its newness is not because it applies the tools of science to a new subject, but because it uses different tools, allows different kinds of work, and ultimately changes what we mean by <q>science</q>.</p>
+  <p>To demonstrate the difference, we'll start with an example of classical science: suppose someone asks you why planetary orbits are elliptical. You might invoke Newton's Law of Universal Gravitation and use it to write a differential equation that describes planetary motion. Then you can solve the differential equation and show that the solution is an ellipse. QED!</p>
+  <p>Most people find this kind of explanation satisfying. It includes a mathematical derivation &#x2014; so it has some of the rigor of a proof &#x2014; and it explains a specific observation, elliptical orbits, by appealing to a general principle, gravitation.</p>
+  <p>Let's contrast that with a different kind of explanation. Suppose you move to a city like Detroit that is racially segregated, and you want to know why it's like that. If you do some research, you might find a paper by Thomas Schelling called <q>Dynamic Models of Segregation</q>, which proposes a simple model of racial segregation:</p>
+  <p>Here is the description of the model, from <xref ref="agent-based-models_introduction"/>:</p>
+  <p>
+    <ul>
+      <li>
+        <p>The  Schelling  model  of  the  city  is  an  array  of  cells  where  each cell represents a house. The houses are occupied by two kinds of <q>agents</q>, labeled red and blue, in roughly equal numbers.  About 10% of the houses are empty.</p>
+      </li>
+      <li>
+        <p>At any point in time,  an agent might be happy or unhappy,  de-pending on the other agents in the neighborhood.  In one version of the model, agents are happy if they have at least two neighbors like themselves, and unhappy if they have one or zero.</p>
+      </li>
+      <li>
+        <p>The  simulation  proceeds  by  choosing  an  agent  at  random  and checking  to  see  whether  it  is  happy.   If  so,  nothing  happens;  if not, the agent chooses one of the unoccupied cells at random and moves.</p>
+      </li>
+    </ul>
+  </p>
+  <p>If you start with a simulated city that is entirely unsegregated and run the model for a short time, clusters of similar agents appear. As time passes, the clusters grow and coalesce until there are a small number of large clusters and most agents live in homogeneous neighborhoods.</p>
+  <p>The degree of segregation in the model is surprising, and it suggests an explanation of segregation in real cities. Maybe Detroit is segregated because people prefer not to be greatly outnumbered and will move if the composition of their neighborhoods makes them unhappy.</p>
+  <p>Is this explanation satisfying in the same way as the explanation of planetary motion? Many people would say not, but why?</p>
+  <p>Most obviously, the Schelling model is highly abstract, which is to say not realistic. So you might be tempted to say that people are more complicated than planets. But that can't be right. After all, some planets have people on them, so they have to be more complicated than people.</p>
+  <p>Both systems are complicated, and both models are based on simplifications. For example, in the model of planetary motion, we include forces between the planet and its sun, and ignore interactions between planets. In Schelling's model, we include individual decisions based on local information, and ignore every other aspect of human behavior.</p>
+  <p>But there are differences of degree. For planetary motion, we can defend the model by showing that the forces we ignore are smaller than the ones we include. And we can extend the model to include other interactions and show that the effect is small. For Schelling's model it is harder to justify the simplifications.</p>
+  <p>Another difference is that Schelling's model doesn't appeal to any physical laws, and it uses only simple computation, not mathematical derivation. Models like Schelling's don't look like classical science, and many people find them less compelling, at least at first. But as we will try to demonstrate, these models do useful work, including prediction, explanation, and design. One of the goals of this book is to explain how.</p>
+</section>

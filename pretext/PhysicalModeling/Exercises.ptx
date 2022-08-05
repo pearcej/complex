@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<exercises xml:id="physical-modeling_exercises">
+  <title>Exercises</title>
+  <p><term>Exercise 1:</term> In <xref ref="physical-modeling_fractals-and-percolation-models"/> we showed that the Rule 18 CA produces a fractal. Can you find other 1-D CAs that produce fractals?</p>
+  <p>Note: the <c>Cell1D</c> object does not wrap around from the left edge to the right, which creates artifacts at the boundaries for some rules. You might want to use <c>Wrap1D</c>, which is a child class of <c>Cell1D</c> that wraps around. It is defined in <c>Cell1D.py</c> in the repository for this book.</p>
+  <p><term>Exercise 2:</term> In 1990 Bak, Chen and Tang proposed a cellular automaton that is an abstract model of a forest fire. Each cell is in one of three states: empty, occupied by a tree, or on fire.</p>
+  <p>The rules of the CA are:</p>
+  <p>
+    <ol label="1">
+      <li>
+        <p>An empty cell becomes occupied with probability p.</p>
+      </li>
+      <li>
+        <p>A cell with a tree burns if any of its neighbors is on fire.</p>
+      </li>
+      <li>
+        <p>A cell with a tree spontaneously burns, with probability f, even if none of its neighbors is on fire.</p>
+      </li>
+      <li>
+        <p>A cell with a burning tree becomes an empty cell in the next time step.</p>
+      </li>
+    </ol>
+  </p>
+  <p>Write a program that implements this model. You might want to inherit from <c>Cell2D</c>. Typical values for the parameters are <c>p=0.01</c> and <c>f=0.001</c>, but you might want to experiment with other values.</p>
+  <p>Starting from a random initial condition, run the model until it reaches a steady state where the number of trees no longer increases or decreases consistently.</p>
+  <p>In steady state, is the geometry of the forest fractal? What is its fractal dimension?</p>
+</exercises>

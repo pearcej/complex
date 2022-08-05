@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<section xml:id="evolution-of-cooperation_matching">
+  <title>Matching</title>
+  <exercise label="matching_Ch13">
+    <statement>
+      <p>
+</p>
+    </statement>
+    <matches>
+      <match order="1">
+        <premise>Prisoner's Dilemma</premise>
+        <response>A paradox in decision analysis wherein two people act in their self-interest.</response>
+      </match>
+      <match order="2">
+        <premise>Problem of Altruism</premise>
+        <response>The tendency of many animals to help other animals even when it is not to their advantage. It is in conflict with natural selection.</response>
+      </match>
+      <match order="3">
+        <premise>Tit for Tat</premise>
+        <response>The Prisoner's Dilemma strategy where you always cooperate in the first round and copy what the opponent did in the precious round.</response>
+      </match>
+      <match order="4">
+        <premise>Altruism</premise>
+        <response>Even if it is to their own detriment many animials have the tendency to help other animals.</response>
+      </match>
+      <match order="5">
+        <premise>Nice</premise>
+        <response>The PD strategy trait that has them cooperate as often as they defect in subsequent rounds after cooperating in the first round.</response>
+      </match>
+      <match order="6">
+        <premise>Retaliating</premise>
+        <response>Fighting back against an opponent that defected a round before.</response>
+      </match>
+      <match order="7">
+        <premise>Forgiving</premise>
+        <response>The trait that made sure a PD strategy was not to vindictive.</response>
+      </match>
+      <match order="8">
+        <premise>Non-envious</premise>
+        <response>The trait that says that a high score is not the highest priority, rather a good score against a variety of opponents.</response>
+      </match>
+    </matches>
+  </exercise>
+</section>

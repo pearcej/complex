@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<section xml:id="physical-modeling_phase-change">
+  <title>Phase Change</title>
+  <p>Now let's test whether a random array contains a percolating cluster:</p>
+  <pre>def test_perc(perc):
+    num_wet = perc.num_wet()
+
+    while True:
+        perc.step()
+
+        if perc.bottom_row_wet():
+            return True
+
+        new_num_wet = perc.num_wet()
+        if new_num_wet == num_wet:
+            return False
+
+        num_wet = new_num_wet</pre>
+  <p><c>test_perc</c> takes a <c>Percolation</c> object as a parameter. Each time through the loop, it advances the CA one time step. It checks the bottom row to see if any cells are wet; if so, it returns <c>True</c>, to indicate that there is a percolating cluster.</p>
+  <p>During each time step, it also computes the number of wet cells and checks whether the number increased since the last step. If not, we have reached a fixed point without finding a percolating cluster, so <c>test_perc</c> returns <c>False</c>.</p>
+  <p>To estimate the probability of a percolating cluster, we generate many random arrays and test them:</p>
+  <pre>def estimate_prob_percolating(n=100, q=0.5, iters=100):
+    t = [test_perc(Percolation(n, q)) for i in range(iters)]
+    return np.mean(t)</pre>
+  <p><c>estimate_prob_percolating</c> makes 100 Percolation objects with the given values of <c>n</c> and <c>q</c> and calls <c>test_perc</c> to see how many of them have a percolating cluster. The return value is the fraction of those that have a percolating cluster.</p>
+  <p>When <c>p=0.55</c>, the probability of a percolating cluster is near 0. At <c>p=0.60</c>, it is about 70%, and at <c>p=0.65</c> it is near 1. This rapid transition suggests that there is a critical value of <c>p</c> near 0.6.</p>
+  <p>We can estimate the critical value more precisely using a <term>random walk</term>. Starting from an initial value of <c>q</c>, we construct a Percolation object and check whether it has a percolating cluster. If so, <c>q</c> is probably too high, so we decrease it. If not, <c>q</c> is probably too low, so we increase it.</p>
+  <p>Here's the code:</p>
+  <pre>def find_critical(n=100, q=0.6, iters=100):
+    qs = [q]
+    for i in range(iters):
+        perc = Percolation(n, q)
+        if test_perc(perc):
+            q -= 0.005
+        else:
+            q += 0.005
+        qs.append(q)
+    return qs</pre>
+  <p>The result is a list of values for <c>q</c>. We can estimate the critical value, <c>q_crit</c>, by computing the mean of this list. With <c>n=100</c> the mean of <c>qs</c> is about <c>0.59</c>; this value does not seem to depend on <c>n</c>.</p>
+  <p>The rapid change in behavior near the critical value is called a <term>phase change</term> by analogy with phase changes in physical systems, like the way water changes from liquid to solid at its freezing point.</p>
+  <p>A wide variety of systems display a common set of behaviors and characteristics when they are at or near a critical point. These behaviors are known collectively as <term>critical phenomena</term>. In the next section, we explore one of them: fractal geometry.</p>
+  <exercise>
+    <statement>
+      <p>Q-1: If you wanted to estimate the critical value more precisely you would want to use a <BlankNode/>. <var/>  </p>
+    </statement>
+    <setup>
+      <var>
+        <condition string="^\s*random\s+walk\s*$">
+          <feedback>
+            <p>Correct</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Incorrect. Please try again.</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+</section>

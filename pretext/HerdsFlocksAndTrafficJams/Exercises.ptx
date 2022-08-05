@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<exercises xml:id="herds-flocks-and-traffic-jams_exercises">
+  <title>Exercises</title>
+  <p>The code for the traffic jam simulation is in the Jupyter notebook <url href="https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap12.ipynb" visual="https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap12.ipynb">chap12.ipynb</url> in the repository for this book. Open this notebook, read the code, and run the cells. You can use this notebook to work on the following exercise.</p>
+  <p><term>Exercise 1:</term>  In the traffic jam simulation, define a class, <c>BetterDriver</c>, that inherits from <c>Driver</c> and <c>overrides</c> <c>choose_acceleration</c>. See if you can define driving rules that do better than the basic implementation in <c>Driver</c>. You might try to achieve higher average speed, or a lower number of collisions.</p>
+  <p><term>Exercise 2:</term>  The code for the Boid implementation is in <c>Boids7.py</c> in the repository for this book. To run it, you will need VPython, a library for 3-D graphics and animation. If you use Anaconda, you can run the following in a terminal or Command Window:</p>
+  <pre>conda install -c vpython vpython</pre>
+  <p>Then run <c>Boids7.py</c>. It should either launch a browser or create a window in a running browser, and create an animated display showing Boids, as white cones, circling a red sphere, which is the carrot. If you click and move the mouse, you can move the carrot and see how the Boids react.</p>
+  <p>Read the code to see how the parameters control Boid behaviors. Experiment with different parameters. What happens if you <q>turn off</q> one of the behaviors by setting its weight to 0?</p>
+  <p>To generate more bird-like behavior, Flake suggests adding a behavior to maintain a clear line of sight; in other words, if there is another bird directly ahead, the Boid should move away laterally. What effect do you expect this rule to have on the behavior of the flock? Implement it and see.</p>
+  <p><term>Exercise 3:</term> The view that free will is compatible with determinism is called compatibilism. One of the strongest challenges to compatibilism is the <q>consequence argument</q>. What is the consequence argument? What response can you give to the consequence argument based on what you have read in this book?</p>
+</exercises>

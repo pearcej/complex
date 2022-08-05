@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<section xml:id="herds-flocks-and-traffic-jams_boids">
+  <title>Boids</title>
+  <p>In 1987 Craig Reynolds published <q>Flocks, herds and schools: A distributed behavioral model</q>, which describes an agent-based model of herd behavior.</p>
+  <p>Agents in this model are called <q>Boids</q>, which is both a contraction of <q>bird-oid</q> and an accented pronunciation of <q>bird</q> (although Boids are also used to model fish and herding land animals).</p>
+  <p>Each agent simulates three behaviors:</p>
+  <p><term>Flock centering:</term>  Move toward the center of the flock.</p>
+  <p><term>Collision avoidance:</term>  Avoid obstacles, including other Boids.</p>
+  <p><term>Velocity matching:</term>  Align velocity (speed and direction) with neighboring Boids.</p>
+  <p>Boids make decisions based on local information only; each Boid only sees (or pays attention to) other Boids in its field of vision.</p>
+  <p>In the repository for this book, you will find <c>Boids7.py</c>, which contains an implementation of Boids, based in part on the description in Gary William Flake's book, <em>The Computational Beauty of Nature.</em></p>
+  <p>The given implementation uses VPython, which is a library that provides 3-D graphics. VPython provides a vector object, which can be used to represent the position and velocity of Boids in three dimensions.</p>
+  <exercise label="q_11.4.2">
+    <statement>
+      <p>Q-1: Boids make decisions based off of local information most of the time but they occasionally make decisions by looking at non local information.</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>True</p>
+        </statement>
+        <feedback>
+          <p>Sorry but Boids only make decisions based on local information because they only pay attention to local Boids.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>False</p>
+        </statement>
+        <feedback>
+          <p>Correct!</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</section>

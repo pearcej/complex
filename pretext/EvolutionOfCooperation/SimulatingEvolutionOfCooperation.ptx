@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<section xml:id="evolution-of-cooperation_simulating-evolution-of-cooperation">
+  <title>Simulating Evolution of Cooperation</title>
+  <p><em>Evolution of Cooperation</em> is the title of the first book where Axelrod presented results from Prisoner's Dilemma tournaments and discussed the implications for the problem of altruism. Since then, he and other researchers have explored the evolutionary dynamics of PD tournaments, that is, how the distribution of strategies changes over time in a population of PD contestants. In the rest of this chapter, we will run a version of those experiments and explore the results.</p>
+  <p>First, we'll need a way to encode a PD strategy as a genotype. For this experiment, we consider strategies where the agent's choice in each round depends only on the opponent's choice in the previous two rounds. We represent a strategy using a dictionary that maps from the opponent's previous two choices to the agent's next choice.</p>
+  <p>Here is the class definition for these agents:</p>
+  <pre>class Agent:
+
+    keys = [(None, None),
+            (None, 'C'),
+            (None, 'D'),
+            ('C', 'C'),
+            ('C', 'D'),
+            ('D', 'C'),
+            ('D', 'D')]
+
+    def __init__(self, values, fitness=np.nan):
+        self.values = values
+        self.responses = dict(zip(self.keys, values))
+        self.fitness = fitness</pre>
+  <p><c>keys</c> is the sequence of keys in each agent's dictionary, where the tuple (&#x2018;C', &#x2018;C') means that the opponent cooperated in the previous two rounds; (None, &#x2018;C') means that only one round has been played and the opponent cooperated; and (None, None) means that no rounds have been played.</p>
+  <p>In the <c>__init__</c> method, <c>values</c> is a sequence of choices, either &#x2018;C' or &#x2018;D', that correspond to <c>keys</c>. So if the first element of values is &#x2018;C', that means that this agent will cooperate in the first round. If the last element of <c>values</c> is &#x2018;D', this agent will defect if the opponent defected in the previous two rounds.</p>
+  <p>In this implementation, the genotype of an agent who always defects is &#x2018;DDDDDDD'; the genotype of an agent who always cooperates is &#x2018;CCCCCCC', and the genotype for TFT is &#x2018;CCDCDCD'.</p>
+  <p>The <c>Agent</c> class provides <c>copy</c>, which makes another agent with the same genotype, but with some probability of mutation:</p>
+  <pre>def copy(self, prob_mutate=0.05):
+    if np.random.random() &gt; prob_mutate:
+        values = self.values
+    else:
+        values = self.mutate()
+    return Agent(values, self.fitness)</pre>
+  <p>Mutation works by choosing a random value in the genotype and flipping from &#x2018;C' to &#x2018;D', or vice versa:</p>
+  <pre>def mutate(self):
+    values = list(self.values)
+    index = np.random.choice(len(values))
+    values[index] = 'C' if values[index] == 'D' else 'D'
+    return values</pre>
+  <p>Now that we have agents, we need a tournament.</p>
+  <exercise label="q_13.5.1">
+    <statement>
+      <p>Q-1: What would be the genotype for a strategy that always does the opposite of the round before?</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>CCCCCCC</p>
+        </statement>
+        <feedback>
+          <p>Sorry, This if it all ways cooperates.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>DDDDDDD</p>
+        </statement>
+        <feedback>
+          <p>Sorry, this is always defect.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>CCDCDCD</p>
+        </statement>
+        <feedback>
+          <p>Sorry, this is TFT.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>CDCDCDC</p>
+        </statement>
+        <feedback>
+          <p>Correct!</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</section>

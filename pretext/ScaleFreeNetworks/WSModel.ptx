@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<section xml:id="scale-free-networks_ws-models">
+  <title>WS Models</title>
+  <p>In the Facebook dataset, the average number of edges per node is about 22. Since each edge is connected to two nodes, the average degree is twice the number of edges per node:</p>
+  <pre>&gt;&gt;&gt; k = int(round(2*m/n))
+&gt;&gt;&gt; k
+44</pre>
+  <p>We can make a WS graph with <c>n=4039</c> and <c>k=44</c>. When <c>p=0</c>, we get a ring lattice.</p>
+  <pre>lattice = nx.watts_strogatz_graph(n, k, 0)</pre>
+  <p>In this graph, clustering is high: <c>C</c> is 0.7, compared to 0.61 in the dataset. But <c>L</c> is 46, much higher than in the dataset!</p>
+  <p>With <c>p=1</c> we get a random graph:</p>
+  <pre>random_graph = nx.watts_strogatz_graph(n, k, 1)</pre>
+  <p>In the random graph, <c>L</c> is 2.6, even shorter than in the dataset (3.7), but <c>C</c> is only 0.011, so that's no good.</p>
+  <p>By trial and error, we find that when <c>p=0.05</c> we get a WS graph with high clustering and low path length:</p>
+  <pre>ws = nx.watts_strogatz_graph(n, k, 0.05, seed=15)</pre>
+  <p>In this graph <c>C</c> is 0.63, a bit higher than in the dataset, and <c>L</c> is 3.2, a bit lower than in the dataset. So this graph models the small world characteristics of the dataset well.</p>
+  <p>So far, so good.</p>
+</section>

@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<section xml:id="self-organized-criticality_reductionism-and-holism">
+  <title>Reductionism and Holism</title>
+  <p>The original paper by Bak, Tang and Wiesenfeld is one of the most frequently-cited papers in the last few decades. Some subsequent papers have reported other systems that are apparently self-organized critical (SOC). Others have studied the sand pile model in more detail.</p>
+  <p>As it turns out, the sand pile model is not a good model of a sand pile. Sand is dense and not very sticky, so momentum has a non-negligible effect on the behavior of avalanches. As a result, there are fewer very large and very small avalanches than the model predicts, and the distribution might not be heavy-tailed.</p>
+  <p>Bak has suggested that this observation misses the point. The sand pile model is not meant to be a realistic model of a sand pile; it is meant to be a simple example of a broad category of models.</p>
+  <p>To understand this point, it is useful to think about two kinds of models, reductionist and holistic. A reductionist model describes a system by describing its parts and their interactions. When a reductionist model is used as an explanation, it depends on an analogy between the components of the model and the components of the system.</p>
+  <p>For example, to explain why the ideal gas law holds, we can model the molecules that make up a gas with point masses and model their interactions as elastic collisions. If you simulate or analyze this model, you find that it obeys the ideal gas law. This model is satisfactory to the degree that molecules in a gas behave like molecules in the model. The analogy is between the parts of the system and the parts of the model.</p>
+  <figure align="center" xml:id="self-organized-criticality_logic-sturct">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 10.7: The logical structure of a holistic model.</caption>
+    <image source="SelfOrganizedCriticality/Figures/LOGIC_STRUCT_HOLISTIC_MODEL.png" width="50%" alt="&quot;Figure 10.7: The logical structure of a holistic model.&quot;"/>
+  </figure>
+  <p>Holistic models are more focused on similarities between systems and less interested in analogous parts. A holistic approach to modeling consists of these steps:</p>
+  <p>
+    <ul>
+      <li>
+        <p>Observe a behavior that appears in a variety of systems.</p>
+      </li>
+      <li>
+        <p>Find a simple model that demonstrates that behavior.</p>
+      </li>
+      <li>
+        <p>Identify the elements of the model that are necessary and sufficient to produce the behavior.</p>
+      </li>
+      <li>
+        <p>For example, in <em>The Selfish Gene</em>, Richard Dawkins suggests that genetic evolution is just one example of an evolutionary system. He identifies the essential elements of the category &#x2014; discrete replicators, variability, and differential reproduction &#x2014; and proposes that any system with these elements will show evidence of evolution.</p>
+      </li>
+    </ul>
+  </p>
+  <p>As another example of an evolutionary system, he proposes <q>memes</q>, which are thoughts or behaviors that are replicated by transmission from person to person. As memes compete for the resource of human attention, they evolve in ways that are similar to genetic evolution.</p>
+  <p>Critics of the meme model have pointed out that memes are a poor analogy for genes; they differ from genes in many obvious ways. Dawkins has argued that these differences are beside the point because memes are not <em>supposed</em> to be analogous to genes. Rather, memes and genes are examples of the same category: evolutionary systems. The differences between them emphasize the real point, which is that evolution is a general model that applies to many seemingly disparate systems. The logical structure of this argument is shown in <xref ref="self-organized-criticality_logic-sturct"/>.</p>
+  <p>Bak has made a similar argument that self-organized criticality is a general model for a broad category of systems:</p>
+  <blockquote>
+    <p>Since these phenomena appear everywhere, they cannot depend on any specific detail whatsoever&#x2026; If the physics of a large class of problems is the same, this gives [the theorist] the option of selecting the <em>simplest</em> possible [model] belonging to that class for detailed study.</p>
+  </blockquote>
+  <p>Many natural systems demonstrate behaviors characteristic of critical systems. Bak's explanation for this prevalence is that these systems are examples of the broad category of self-organized criticality. There are two ways to support this argument. One is to build a realistic model of a particular system and show that the model exhibits SOC. The second is to show that SOC is a feature of many diverse models, and to identify the essential characteristics those models have in common.</p>
+  <p>The first approach, which can be characterized as reductionist, can explain the behavior of a particular system. The second approach, which can be called holistic, can explain the prevalence of criticality in natural systems. They are different models with different purposes.</p>
+  <p>For reductionist models, realism is the primary virtue, and simplicity is secondary. For holistic models, it is the other way around.</p>
+  <exercise>
+    <statement>
+      <p>Q-1: What is compared to genes as a means of understanding the evolutionary system? <var/>  </p>
+    </statement>
+    <setup>
+      <var>
+        <p>
+          <BlankNode/>
+        </p>
+        <condition string="^\s*memes\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise label="q_9.9.2">
+    <statement>
+      <p>Q-2: Given the explanation above, the sand pile model is most accurately described as a?</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>Reductionist Model</p>
+        </statement>
+        <feedback>
+          <p>Incorrect, the sand pile model is a more abstract model than what a reductionist approach would use.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>Holistic Model</p>
+        </statement>
+        <feedback>
+          <p>Correct, the sand pile model is holistic because it is an abstracted model oh physical systems and it follows the three steps of holistic models.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</section>

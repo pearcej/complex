@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<section xml:id="self-organized-criticality_pink-noise">
+  <title>Pink Noise</title>
+  <p>The title of the original paper that presented the sand pile model is <q>Self-Organized Criticality: An Explanation of <math>1/f</math> Noise</q>.</p>
+  <p>As the subtitle suggests, Bak, Tang and Wiesenfeld were trying to explain why many natural and engineered systems exhibit <math>1/f</math> noise, which is also known as <q>flicker noise</q> and <q>pink noise</q>.</p>
+  <p>To understand pink noise, we have to take a detour to understand signals, power spectrums, and noise.</p>
+  <p><term>Signal</term>: A signal is any quantity that varies in time. One example is sound, which is variation in air density. In the sand pile model, the signals we'll consider are avalanche durations and sizes as they vary over time.</p>
+  <p><term>Power spectrum</term>: Any signal can be decomposed into a set of frequency components with different levels of power, which is related to amplitude or volume. The power spectrum of a signal is a function that shows the power of each frequency component.</p>
+  <p><term>Noise</term>: In common use, noise is usually an unwanted sound, but in the context of signal processing, it is a signal that contains many frequency components.</p>
+  <p>There are many kinds of noise. For example, <q>white noise</q> is a signal that has components with equal power over a wide range of frequencies.</p>
+  <p>Other kinds of noise have different relationships between frequency and power. In <q>red noise</q>, the power at frequency <math>f</math> is <math>1/f^2</math>, which we can write like this:</p>
+  <math_block docname="SelfOrganizedCriticality/PinkNoise" label="True" nowrap="False" number="True" xml:space="preserve">P(f) = 1/f^2</math_block>
+  <p>We can generalize this equation by replacing the exponent 2 with a parameter <math>&#x3B2;</math>:</p>
+  <math_block docname="SelfOrganizedCriticality/PinkNoise" label="True" nowrap="False" number="True" xml:space="preserve">P(f) = 1/f^&#x3B2;</math_block>
+  <p>When <math>&#x3B2;=0</math>, this equation describes white noise; when <math>&#x3B2;=2</math> it describes red noise. When the parameter is near 1, the result is called <math>1/f</math> noise. More generally, noise with any value between 0 and 2 is called <q>pink</q>, because it's between white and red.</p>
+  <p>We can use this relationship to derive a test for pink noise. Taking the log of both sides yields</p>
+  <math_block docname="SelfOrganizedCriticality/PinkNoise" label="True" nowrap="False" number="True" xml:space="preserve">logP(f) = &#x2212;&#x3B2; logf</math_block>
+  <p>So if we plot <math>P(f)</math> versus <em>f</em> on a log-log scale, we expect a straight line with slope <math>&#x2212;&#x3B2;</math>.</p>
+  <p>What does this have to do with the sand pile model? Suppose that every time a cell topples, it makes a sound. If we record a sand pile model while its running, what would it sound like? In the next section, we'll simulate the sound of the sand pile model and see if it is pink noise.</p>
+  <exercise label="q_9.7.1">
+    <statement>
+      <p>
+</p>
+    </statement>
+    <matches>
+      <match order="1">
+        <premise>Noise</premise>
+        <response>In common use, this is usually an unwanted sound, but in the context of signal processing, it is a signal that contains many frequency components.</response>
+      </match>
+      <match order="2">
+        <premise>Power spectrum</premise>
+        <response>Any signal can be decomposed into a set of frequency components with different levels of power, which is related to amplitude or volume. The power spectrum of a signal is a function that shows the power of each frequency component.</response>
+      </match>
+      <match order="3">
+        <premise>Signal</premise>
+        <response>Any quantity that varies in time. One example is sound, which is variation in air density. In the sand pile model, the signals we'll consider are avalanche durations and sizes as they vary over time.</response>
+      </match>
+    </matches>
+  </exercise>
+</section>

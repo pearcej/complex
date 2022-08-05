@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<exercises xml:id="graphs_exercises">
+  <title>Exercises</title>
+  <p>The code for this chapter is in <url href="https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap04.ipynb" visual="https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap04.ipynb">chap04.ipynb</url> , which is a Jupyter notebook in the repository for this book. For more information about working with this code, see <xref ref="preface_notebooks"/>.</p>
+  <p><term>Exercise 1:</term>   Launch <url href="https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap04.ipynb" visual="https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap04.ipynb">chap04.ipynb</url> and run the code. There are a few short exercises embedded in the notebook that you might want to try.</p>
+  <p><term>Exercise 2:</term>   In <xref ref="graphs_analysis-of-graph-algorithms"/> we analyzed the performance of reachable_nodes and classified it in <math>O(n + m)</math>, where n is the number of nodes and <math>m</math> is the number of edges. Continuing the analysis, what is the order of growth for <c>is_connected</c>?</p>
+  <pre>def is_connected(G):
+    start = list(G)[0]
+    reachable = reachable_nodes(G, start)
+    return len(reachable) == len(G)</pre>
+  <p><term>Exercise 3:</term>   In our implementation of <c>reachable_nodes</c>, you might be bothered by the apparent inefficiency of adding all neighbors to the stack without checking whether they are already in <c>seen</c>. Write a version of this function that checks the neighbors before adding them to the stack. Does this <q>optimization</q> change the order of growth? Does it make the function faster?</p>
+  <p><term>Exercise 4:</term>
+            There are actually two kinds of ER graphs. The one we generated in this chapter, <math>G(n, p)</math>, is characterized by two parameters, the number of nodes and the probability of an edge between nodes.</p>
+  <p>An alternative definition, denoted <math>G(n, m)</math>, is also characterized by two parameters: the number of nodes, <math>n</math>, and the number of edges, <math>m</math>. Under this definition, the number of edges is fixed, but their location is random.</p>
+  <p>Repeat the experiments we did in this chapter using this alternative definition. Here are a few suggestions for how to proceed:</p>
+  <p>
+    <ol label="1">
+      <li>
+        <p>Write a function called <c>m_pairs</c> that takes a list of nodes and the number of edges, <math>m</math>, and returns a random selection of <math>m</math> edges. A simple way to do that is to generate a list of all possible edges and use random.sample.</p>
+      </li>
+      <li>
+        <p>Write a function called <c>make_m_graph</c> that takes <math>n</math> and <math>m</math> and returns a random graph with <math>n</math> nodes and <math>m</math> edges.</p>
+      </li>
+      <li>
+        <p>Make a version of <c>prob_connected</c> that uses <c>make_m_graph</c> instead of <c>make_random_graph</c>.</p>
+      </li>
+      <li>
+        <p>Compute the probability of connectivity for a range of values of <math>m</math>.</p>
+      </li>
+    </ol>
+  </p>
+  <p>How do the results of this experiment compare to the results using the first type of ER graph?</p>
+</exercises>

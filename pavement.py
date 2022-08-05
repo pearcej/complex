@@ -67,3 +67,22 @@ if 'DBHOST' in environ and  'DBPASS' in environ and 'DBUSER' in environ and 'DBN
     options.build.template_args['dburl'] = 'postgresql://{DBUSER}:{DBPASS}@{DBHOST}/{DBNAME}'.format(**environ)
 
 from runestone import build  # build is called implicitly by the paver driver.
+template_args = {
+            'course_id':project_name,
+            'login_required':'false',
+            'appname':master_app,
+            'dynamic_pages': True,
+            'loglevel':10,
+            'default_ac_lang': 'cpp',
+            'course_url':master_url,
+            'use_services': 'true',
+            'python3': 'true',
+            'dburl': 'postgresql://bmiller@localhost/runestone',
+            'basecourse': 'complex',
+            'downloads_enabled': 'false',
+            'enable_chatcodes': 'false',
+            'allow_pairs': 'false'
+#            'jobe_server': 'http://jobe2.cosc.canterbury.ac.nz',
+#            'proxy_uri_runs': '/jobe/index.php/restapi/runs/',
+#            'proxy_uri_files': '/jobe/index.php/restapi/files/'
+        }

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+        <title>Scale-Free Networks</title>
+        <xi:include href='./Introduction.ptx' />
+        <xi:include href='./SocialNetworkData.ptx' />
+        <xi:include href='./WSModel.ptx' />
+        <xi:include href='./Degree.ptx' />
+        <xi:include href='./HeavyTailedDistributions.ptx' /> 
+        <xi:include href='./BarabasiAlbertModel.ptx' /> 
+        <xi:include href='./GeneratingBAGraphs.ptx' /> 
+        <xi:include href='./CumulativeDistributions.ptx' />
+        <xi:include href='./ExplanatoryModels.ptx' />
+        <xi:include href='./Exercises.ptx' />
+        <xi:include href='./Glossary.ptx' />
+        <xi:include href='./Matching.ptx' />
+        <xi:include href='./SelfCheck.ptx' />
+    </chapter>

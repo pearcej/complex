@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<section xml:id="complexity-science_different-models-for-different-purposes">
+  <title>Different Models for Different Purposes</title>
+  <p>Complex models are often appropriate for different purposes and interpretations:</p>
+  <p>
+    <term>Predictive &#x2192; explanatory</term>
+  </p>
+  <p>Schelling's model of segregation might shed light on a complex social phenomenon, but it is not useful for prediction.  On the other hand, a simple model of celestial mechanics can predict solar eclipses, down to the second, years in the future.</p>
+  <p>
+    <term>Realism &#x2192; instrumentalism</term>
+  </p>
+  <p>Classical models lend themselves to a realist interpretation;  for example,  most people accept that electrons are real things that exist.  Instrumentalism is the view that models can be useful even if the entities they postulate don't exist.  George Box wrote what might be the motto of instrumentalism: <q>All models are wrong, but some are useful.</q></p>
+  <p>
+    <term>Reductionism &#x2192; holism</term>
+  </p>
+  <p>Reductionism is the view that the behavior of a system can be explained by understanding its components.  For example, the periodic table of the elements is a triumph of reductionism, because it explains the chemical behavior of elements with a model of electrons in atoms.  Holism is the view that some phenomena that appear at the system  level  do  not  exist  at  the  level  of  components,  and  cannot  be explained in component-level terms.</p>
+  <p>We get back to explanatory models in <xref ref="scale-free-networks_introduction"/>, instrumentalism in <xref ref="game-of-life_introduction"/>, and holism in <xref ref="self-organized-criticality_introduction"/></p>
+  <exercise>
+    <statement>
+      <p>Q-1: Classical models are better to <BlankNode/> <var/>  </p>
+    </statement>
+    <setup>
+      <var>
+        <condition string="^\s*Predict\s*$">
+          <feedback>
+            <p>Good job</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*Explain\s*$">
+          <feedback>
+            <p>Incorrect</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Incorrect</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>Q-2: Complex Models are better to <BlankNode/> <var/>  </p>
+    </statement>
+    <setup>
+      <var>
+        <condition string="^\s*Explain\s*$">
+          <feedback>
+            <p>Good job</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*Predict\s*$">
+          <feedback>
+            <p>Incorrect</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Incorrect</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+</section>
