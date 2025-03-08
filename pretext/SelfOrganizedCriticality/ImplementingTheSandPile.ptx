@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<section xml:id="ImplementingTheSandPile">
+  <title>Implementing the Sand Pile</title>
+  <p>To implement the sand pile model, We define a class called <c>SandPile</c> that inherits from <c>Cell2D</c>, which is defined in <c>Cell2D.py</c> in the repository for this book.</p>
+  <pre>class SandPile(Cell2D):
+
+    def __init__(self, n, m, level=9):
+        self.array = np.ones((n, m)) * level</pre>
+  <p>All values in the array are initialized to <c>level</c>, which is generally greater than the toppling threshold, <c>K</c>.</p>
+  <p>Here's the step method that finds all cells above <c>K</c> and topples them:</p>
+  <pre>kernel = np.array([[0, 1, 0],
+                   [1,-4, 1],
+                   [0, 1, 0]])
+
+def step(self, K=3):
+    toppling = self.array &gt; K
+    num_toppled = np.sum(toppling)
+    c = correlate2d(toppling, self.kernel, mode='same')
+    self.array += c
+    return num_toppled</pre>
+  <p>To show how step works, we will start with a small pile that has two cells ready to topple:</p>
+  <pre>pile = SandPile(n=3, m=5, level=0)
+pile.array[1, 1] = 4
+pile.array[1, 3] = 4</pre>
+  <p>Initially, <c>pile.array</c> looks like this:</p>
+  <pre>[[0 0 0 0 0]
+ [0 4 0 4 0]
+ [0 0 0 0 0]]</pre>
+  <p>Now we can select the cells that are above the toppling threshold:</p>
+  <pre>toppling = pile.array &gt; K</pre>
+  <p>The result is a boolean array, but we can use it as if it were an array of integers like this:</p>
+  <pre>[[0 0 0 0 0]
+ [0 1 0 1 0]
+ [0 0 0 0 0]]</pre>
+  <p>If we correlate this array with the kernel, it makes copies of the kernel at each location where <c>toppling</c> is 1.</p>
+  <pre>c = correlate2d(toppling, kernel, mode='same')</pre>
+  <p>And here's the result:</p>
+  <pre>[[ 0  1  0  1  0]
+ [ 1 -4  2 -4  1]
+ [ 0  1  0  1  0]]</pre>
+  <p>Notice that where the copies of the kernel overlap, they add up.</p>
+  <p>This array contains the change for each cell, which we use to update the original array:</p>
+  <pre>pile.array += c</pre>
+  <p>And here's the result:</p>
+  <pre>[[0 1 0 1 0]
+ [1 0 2 0 1]
+ [0 1 0 1 0]]</pre>
+  <p>So that's how <c>step</c> works.</p>
+  <p>With <c>mode='same'</c>, <c>correlate2d</c> considers the boundary of the array to be fixed at zero, so any grains of sand that go over the edge disappear.</p>
+  <p><c>SandPile</c> also provides <c>run</c>, which calls <c>step</c> until no more cells topple:</p>
+  <pre>def run(self):
+    total = 0
+    for i in itertools.count(1):
+        num_toppled = self.step()
+        total += num_toppled
+        if num_toppled == 0:
+            return i, total</pre>
+  <p>The return value is a tuple that contains the number of time steps and the total number of cells that toppled.</p>
+  <p>If you are not familiar with <c>itertools.count</c>, it is an infinite generator that counts up from the given initial value, so the for loop runs until step returns 0.</p>
+  <p>Finally, the drop method chooses a random cell and adds a grain of sand:</p>
+  <pre>def drop(self):
+   a = self.array
+   n, m = a.shape
+   index = np.random.randint(n), np.random.randint(m)
+   a[index] += 1</pre>
+  <p xml:id="self-organized-criticality_self-organized-criticality_self-organized-criticality_self-organized-criticality_self-organized-criticality_self-organized-criticality_self-organized-criticality_self-organized-criticality_self-organized-criticality_self-organized-criticality_self-organized-criticality_self-organized-criticality_self-organized-criticality_sand-pile" names="sand_pile">Let's look at a bigger example, with <c>n=20</c>:</p>
+  <pre>pile = SandPile(n=20, level=10)
+pile.run()</pre>
+  <figure align="center" xml:id="id1-25">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Gif of a sand pile running for 100 steps.</caption>
+    <image source="SelfOrganizedCriticality/Figures/Sand_pile_3.gif" width="50%" alt="&quot;Gif of a sand pile running for 100 steps.&quot;"/>
+  </figure>
+  <figure align="center" xml:id="id2-12">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 10.1: Sand pile model initial state (left), after 200 steps (middle), and 400 steps (right).</caption>
+    <image source="SelfOrganizedCriticality/Figures/SP_MODEL.png" width="50%" alt="&quot;Figure 10.1: Sand pile model initial state (left), after 200 steps (middle), and 400 steps (right).&quot;"/>
+  </figure>
+  <p>With an initial level of 10, this sand pile takes 332 time steps to reach equilibrium, with a total of 53,336 topplings. <xref ref="self-organized-criticality_self-organized-criticality_self-organized-criticality_self-organized-criticality_self-organized-criticality_self-organized-criticality_self-organized-criticality_self-organized-criticality_self-organized-criticality_self-organized-criticality_self-organized-criticality_self-organized-criticality_sand-pile"/> (left) shows the configuration after this initial run. Notice that it has the repeating elements that are characteristic of fractals. We'll come back to that soon.</p>
+  <p><xref ref="self-organized-criticality_self-organized-criticality_self-organized-criticality_self-organized-criticality_self-organized-criticality_self-organized-criticality_self-organized-criticality_self-organized-criticality_self-organized-criticality_self-organized-criticality_self-organized-criticality_self-organized-criticality_sand-pile"/> (middle) shows the configuration of the sand pile after dropping 200 grains onto random cells, each time running until the pile reaches equilibrium. The symmetry of the initial configuration has been broken; the configuration looks random.</p>
+  <p>Finally <xref ref="self-organized-criticality_self-organized-criticality_self-organized-criticality_self-organized-criticality_self-organized-criticality_self-organized-criticality_self-organized-criticality_self-organized-criticality_self-organized-criticality_self-organized-criticality_self-organized-criticality_self-organized-criticality_sand-pile"/> (right) shows the configuration after 400 drops. It looks similar to the configuration after 200 drops. In fact, the pile is now in a steady state where its statistical properties don't change over time. We will learn about some of those statistical properties in the next section.</p>
+  <exercise label="q_9.4.1">
+    <statement>
+      <p> The sand pile above reached an equilibrium after <BlankNode input_name="x"/> steps. <var/>  </p>
+    </statement>
+    <setup>
+      <var>
+        <condition number="[332, 332]">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition number="[200, 200]">
+          <feedback>
+            <p>Sorry, This is pile is not yet at equalibrium.</p>
+          </feedback>
+        </condition>
+        <condition number="[400, 400]">
+          <feedback>
+            <p>Sorry, This pile has not change for a while.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Incorrect, try again.</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+</section>

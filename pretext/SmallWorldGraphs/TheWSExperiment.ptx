@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<section xml:id="TheWSExperiment">
+  <title>The WS Experiment</title>
+  <figure align="center" xml:id="id1-13">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 5.3: Clustering coefficient (C) and characteristic path length (L) for WS graphs with n=1000, k=10, and a range of p.</caption>
+    <image source="SmallWorldGraphs/Figures/thinkcomplexity2009.png" width="50%" alt="&quot;Figure 5.3: Clustering coefficient (C) and characteristic path length (L) for WS graphs with n=1000, k=10, and a range of p.&quot;"/>
+  </figure>
+  <p>Now we are ready to replicate the WS experiment, which shows that for a range of values of <math>p</math>, a WS graph has high clustering like a regular graph and short path lengths like a random graph.</p>
+  <p>We will start with <c>run_one_graph</c>, which takes <c>n</c>, <c>k</c>, and <c>p</c>; it generates a WS graph with the given parameters and computes the mean path length, <c>mpl</c>, and clustering coefficient, <c>cc</c>:</p>
+  <pre>def run_one_graph(n, k, p):
+    ws = make_ws_graph(n, k, p)
+    mpl = characteristic_path_length(ws)
+    cc = clustering_coefficient(ws)
+    return mpl, cc</pre>
+  <p>Watts and Strogatz ran their experiment with <c>n=1000</c> and <c>k=10</c>. With these parameters, <c>run_one_graph</c> takes a few seconds on a typical computer; most of that time is spent computing the mean path length.</p>
+  <p>Now we need to compute these values for a range of <c>p</c>, using the NumPy function <c>logspace</c> again to compute <c>ps</c>:</p>
+  <pre>ps = np.logspace(-4, 0, 9)</pre>
+  <p>Here's the function that runs the experiment:</p>
+  <pre>def run_experiment(ps, n=1000, k=10, iters=20):
+    res = []
+    for p in ps:
+            t = [run_one_graph(n, k, p) for _ in range(iters)]
+            means = np.array(t).mean(axis=0)
+            res.append(means)
+    return np.array(res)</pre>
+  <p>For each value of <c>p</c>, we generate 20 random graphs and average the results. Since the return value from <c>run_one_graph</c> is a pair, <c>t</c> is a list of pairs. When we convert it to an array, we get one row for each iteration and columns for <c>L</c> and <c>C</c>. Calling <c>mean</c> with the option <c>axis=0</c> computes the mean of each column; the result is an array with one row and two columns.</p>
+  <p>When the loop exits, <c>means</c> is a list of pairs, which we convert to a NumPy array with one row for each value of <c>p</c> and columns for <math>L</math> and <math>C</math>.</p>
+  <p>We can extract the columns like this:</p>
+  <pre>L, C = np.transpose(res)</pre>
+  <p>In order to plot <c>L</c> and <c>C</c> on the same axes, we standardize them by dividing by the first element:</p>
+  <pre>L /= L[0]
+C /= C[0]</pre>
+  <p><xref ref="swg-fig-3"/> shows the results. As <c>p</c> increases, the mean path length drops quickly, because even a small number of randomly rewired edges provide shortcuts between regions of the graph that are far apart in the lattice. On the other hand, removing local links decreases the clustering coefficient much more slowly.</p>
+  <p>As a result, there is a wide range of <c>p</c> where a WS graph has the properties of a small world graph, high clustering and low path lengths.</p>
+  <p>And that's why Watts and Strogatz propose WS graphs as a model for real-world networks that exhibit the small world phenomenon.</p>
+  <exercise label="q_4.8">
+    <statement>
+      <p> Given that a node returns np.nan, what can you say about the number of edges that node has?</p>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement>
+          <p>Shortcuts are created during the rewiring process.</p>
+        </statement>
+        <feedback>
+          <p>Correct!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>The path does not actual get shorter, It grows</p>
+        </statement>
+        <feedback>
+          <p>Try looking at how a rewiring could connect different regions of the graph.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>The edges shrink</p>
+        </statement>
+        <feedback>
+          <p>Look again at what is created during the rewiring process.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>All of the above</p>
+        </statement>
+        <feedback>
+          <p>Incorrect! Only one of the above is correct.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</section>

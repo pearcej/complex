@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<section xml:id="SelfCheck-4">
+  <title>Self Check</title>
+  <exercise label="SC5_Q1">
+    <statement>
+      <p> What are the characteristics of a small world graph?</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>Low clustering and high path length.</p>
+        </statement>
+        <feedback>
+          <p>Not quite. Try again.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>High clustering and high path length.</p>
+        </statement>
+        <feedback>
+          <p>No, this would not be ideal.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Low clustering and low path length.</p>
+        </statement>
+        <feedback>
+          <p>No, keep trying.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>High clustering and low path length.</p>
+        </statement>
+        <feedback>
+          <p>Correct! In a small world graph, things are very clustered and have little space between then, hence their low path length.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="SC5_Q2">
+    <statement>
+      <p> All heavy-tailed distributions follow the power law.</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>True</p>
+        </statement>
+        <feedback>
+          <p>Incorrect, a WS model can be heavy-tailed but they can never follow power law.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>False</p>
+        </statement>
+        <feedback>
+          <p>Correct, just because some do that does not mean all do.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="SC5_Q3">
+    <statement>
+      <p> According to this model,  if two things are similar in some ways, they are likely to be similar in other ways. Keeping this in mind fill in the blanks. <var/>  <var/>  <var/>  <var/>  <var/>  </p>
+    </statement>
+    <setup>
+      <var>
+        <p>
+          <term>Word Bank:</term>
+        </p>
+        <table>
+          <tabular>
+            <row>
+              <cell>Observable</cell>
+              <cell>Behavior</cell>
+              <cell>Model</cell>
+              <cell>System</cell>
+            </row>
+          </tabular>
+        </table>
+      </var>
+      <var>
+        <p>In a system, S, we see something <BlankNode input_name="x"/> , that warrants explanation.
+We construct a model, that is analogous to <BlankNode input_name="x"/>
+By simulation or mathematical derivation, we show that the model exhibits a <BlankNode input_name="x"/>
+We conclude that System exhibits Observable because System is similar to Model, Model exhibits Behavior, and <BlankNode input_name="x"/> is similar to <BlankNode input_name="x"/></p>
+        <condition string="^\s*observable\s*$">
+          <feedback>
+            <p>Correct</p>
+          </feedback>
+        </condition>
+      </var>
+      <var>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Incorrect</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*system\s*$">
+          <feedback>
+            <p>Correct</p>
+          </feedback>
+        </condition>
+      </var>
+      <var>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Incorrect</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*behavior\s*$">
+          <feedback>
+            <p>Correct</p>
+          </feedback>
+        </condition>
+      </var>
+      <var>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Incorrect</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*Behavior\s*$">
+          <feedback>
+            <p>Correct</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+</section>

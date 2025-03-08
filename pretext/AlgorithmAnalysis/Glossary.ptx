@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<section xml:id="Glossary-12">
+  <title>Glossary</title>
+  <p><term>Algorithm:</term> A generic, step-by-step list of instructions for solving a problem.</p>
+  <p><term>Average Case:</term> Refers to when an algorithm performs between its worst and best case given a certain data set or circumstance.</p>
+  <p><term>Best Case:</term> Refers to when an algorithm performs especially good given a certain data set or circumstance.</p>
+  <p><term>Big-O Notation:</term> Another term for order of magnitude; written as <math>O(f(n))</math>.</p>
+  <p><term>Brute Force:</term> Technique that tries to exhaust all possibilities of a problem.</p>
+  <p><term>Contiguous:</term> Adjacent or next to.</p>
+  <p><term>Dynamic Size:</term> Able to change size automatically.</p>
+  <p><term>Exponential:</term> Function represented as a number being raised to a power that increases like <math>f(n)= 2^{n}</math>.</p>
+  <p><term>Linear:</term> Function that grows in a one to one relationship with its input like <math>f(n) = n</math>.</p>
+  <p><term>Logarithmic:</term> Functions that are the inverse of exponential functions usually presented as <math>f(n) = logn</math>.</p>
+  <p><term>Order of Magnitude:</term> Function describing the part <math>T(n)</math> that increases the fastest as the value of n increases  (a function describing an algorithm's steps as the size of the problem increases).</p>
+  <p><term>Quadratic:</term> Function describing a relationship who's highest order is a number squared:</p>
+  <p><em>Simplified</em>: <math>f(n) = x^{2}</math></p>
+  <p><em>Complex</em>: <math>ax^{2} + bx + c</math></p>
+  <p><term>Worst Case:</term> Refers to when an algorithm performs especially poorly given a certain data set or circumstance.</p>
+</section>

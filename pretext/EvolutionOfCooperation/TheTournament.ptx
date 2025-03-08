@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<section xml:id="TheTournament">
+  <title>The Tournament</title>
+  <p>The <c>Tournament</c> class encapsulates the details of the PD competition:</p>
+  <pre>payoffs = {('C', 'C'): (3, 3),
+           ('C', 'D'): (0, 5),
+           ('D', 'C'): (5, 0),
+           ('D', 'D'): (1, 1)}
+
+num_rounds = 6
+
+def play(self, agent1, agent2):
+    agent1.reset()
+    agent2.reset()
+
+    for i in range(self.num_rounds):
+        resp1 = agent1.respond(agent2)
+        resp2 = agent2.respond(agent1)
+
+        pay1, pay2 = self.payoffs[resp1, resp2]
+
+        agent1.append(resp1, pay1)
+        agent2.append(resp2, pay2)
+
+    return agent1.score, agent2.score</pre>
+  <p><c>payoffs</c> is a dictionary that maps from the agents' choices to their rewards. For example, if both agents cooperate, they each get 3 points. If one defects and the other cooperates, the defector gets 5 and the cooperator gets 0. If they both defect, each gets 1. These are the payoffs Axelrod used in his tournaments.</p>
+  <p>The <c>play</c> method runs several rounds of the PD game. It uses the following methods from the <c>Agent</c> class:</p>
+  <p>
+    <ul>
+      <li>
+        <p><c>reset</c>: Initializes the agents before the first round, resetting their scores and the history of their responses.</p>
+      </li>
+      <li>
+        <p><c>respond</c>: Asks each agent for their response, given the opponent's previous responses.</p>
+      </li>
+      <li>
+        <p><c>append</c>: Updates each agent by storing the choices and adding up the scores from successive rounds.</p>
+      </li>
+    </ul>
+  </p>
+  <p>After the given number of rounds, <c>play</c> returns the total score for each agent. We chose <c>num_rounds=6</c> so that each element of the genotype is accessed with roughly the same frequency. The first element is only accessed during the first round, or one sixth of the time. The next two elements are only accessed during the second round, or one twelfth each. The last four elements are accessed four of six times, or one sixth each, on average.</p>
+  <p><c>Tournament</c> provides a second method, <c>melee</c>, that determines which agents compete against each other:</p>
+  <pre>def melee(self, agents, randomize=True):
+    if randomize:
+        agents = np.random.permutation(agents)
+
+    n = len(agents)
+    i_row = np.arange(n)
+    j_row = (i_row + 1) % n
+
+    totals = np.zeros(n)
+
+    for i, j in zip(i_row, j_row):
+        agent1, agent2 = agents[i], agents[j]
+        score1, score2 = self.play(agent1, agent2)
+        totals[i] += score1
+        totals[j] += score2
+
+    for i in i_row:
+        agents[i].fitness = totals[i] / self.num_rounds / 2</pre>
+  <p><c>melee</c> takes a list of agents and a boolean, <c>randomize</c>, that determines whether each agent fights the same neighbors every time, or whether the pairings are randomized.</p>
+  <p><c>i_row</c> and <c>j_row</c> contain the indices of the pairings. totals contains the total score of each agent.</p>
+  <p>Inside the loop, we select two agents, invoke <c>play</c>, and update <c>totals</c>. At the end, we compute the average number of points each agent got, per round and per opponent, and store the results in the <c>fitness</c> attribute of each agent.</p>
+  <exercise label="Ch13.6_Q1">
+    <statement>
+      <p>
+</p>
+    </statement>
+    <matches>
+      <match order="1">
+        <premise>reset</premise>
+        <response>Initializes the agents before the first round, resetting their scores and the history of their responses.</response>
+      </match>
+      <match order="2">
+        <premise>respond</premise>
+        <response>Asks each agent for their response, given the opponent's previous responses.</response>
+      </match>
+      <match order="3">
+        <premise>append</premise>
+        <response>Updates each agent by storing the choices and adding up the scores from successive rounds.</response>
+      </match>
+    </matches>
+  </exercise>
+</section>

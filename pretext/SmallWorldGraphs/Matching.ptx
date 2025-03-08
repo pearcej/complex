@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<section xml:id="Matching-7">
+  <title>Matching</title>
+  <exercise label="matching_ch4">
+    <statement>
+      <p>
+</p>
+    </statement>
+    <matches>
+      <match order="1">
+        <premise>Watts-Strogatz Graphs</premise>
+        <response>It is a model that produces graphs with small-world properties.</response>
+      </match>
+      <match order="10">
+        <premise>Queue</premise>
+        <response>Elements are removed in the same order they were entered.</response>
+      </match>
+      <match order="11">
+        <premise>Breadth-First Search</premise>
+        <response>Starting from the root node this algorithm explore all of the neighbor nodes at the current level before moving on to the nodes at the next level.</response>
+      </match>
+      <match order="12">
+        <premise>Depth-First Search</premise>
+        <response>Starting from the root node this algorithm will explore all the way down a branch and then backtrack.</response>
+      </match>
+      <match order="13">
+        <premise>Ring Lattice</premise>
+        <response>A type of regular graph that Watts and Strogatz used as the basis of their model.</response>
+      </match>
+      <match order="2">
+        <premise>Regular Graphs</premise>
+        <response>This graph has the same number of neighbors.</response>
+      </match>
+      <match order="3">
+        <premise>Clustering</premise>
+        <response>Measure of cliquishness of the graph.</response>
+      </match>
+      <match order="4">
+        <premise>Path Length</premise>
+        <response>Measure of the average distance between two nodes.</response>
+      </match>
+      <match order="5">
+        <premise>Clique</premise>
+        <response>A set of nodes that are completely connected.</response>
+      </match>
+      <match order="6">
+        <premise>Generative Model</premise>
+        <response>Modeling the process that builds or leads to the phenomenon to try and explain a phenomenon.</response>
+      </match>
+      <match order="7">
+        <premise>Degree</premise>
+        <response>The number of neighbors.</response>
+      </match>
+      <match order="8">
+        <premise>Clustering Coefficient</premise>
+        <response>The measure of the degree to which nodes tend to cluster together in a graph.</response>
+      </match>
+      <match order="9">
+        <premise>Dijkstra's Algorithm</premise>
+        <response>In this algorithm we find the minimum distance from a given node to every other node in the graph.</response>
+      </match>
+    </matches>
+  </exercise>
+</section>

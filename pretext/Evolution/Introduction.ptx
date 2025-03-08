@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<section xml:id="Introduction-4">
+  <title>Introduction</title>
+  <p>One of the most important ideas in biology, and possibly all of science, is the <term>theory of evolution by natural selection</term>, which claims that <em>new species are created and existing species change due to natural selection</em>. <term>Natural selection</term> is a process in which inherited variations between individuals cause differences in survival and reproduction.</p>
+  <p>Among people who know something about biology, the theory of evolution is widely regarded as a fact, which is to say that it is consistent with all current observations; it is highly unlikely to be contradicted by future observations; and, if it is revised in the future, the changes will almost certainly leave the central ideas substantially intact.</p>
+  <p>Nevertheless, many people do not believe in evolution. In a survey run by the Pew Research Center, survey respondents were asked which of the following claims is closer to their view:</p>
+  <p>
+    <ol label="1">
+      <li>
+        <p>Humans and other living things have evolved over time.</p>
+      </li>
+      <li>
+        <p>Humans and other living things have existed in their present form since the beginning of time.</p>
+      </li>
+    </ol>
+  </p>
+  <p>About 34% of Americans chose the second.</p>
+  <p>Even among the ones who believe that living things have evolved, barely more than half believe that the cause of evolution is natural selection. In other words, only a third of Americans believe that the theory of evolution is true.</p>
+  <p>How is this possible? Contributing factors include:</p>
+  <p>
+    <ul>
+      <li>
+        <p>Some people think that there is a conflict between evolution and their religious beliefs. Feeling like they have to reject one, they reject evolution.</p>
+      </li>
+      <li>
+        <p>Others have been actively misinformed, often by members of the first group, so that much of what they know about evolution is misleading or false. For example, many people think that evolution means humans evolved from monkeys. It doesn't, and we didn't.</p>
+      </li>
+      <li>
+        <p>And many people simply don't know anything about evolution.</p>
+      </li>
+    </ul>
+  </p>
+  <p>There's probably not much we can do about the first group, but we might be able to help the others. Empirically, the theory of evolution is hard for people to understand. At the same time, it is profoundly simple: for many people, once they understand it, it seems both obvious and irrefutable.</p>
+  <p>To help people make this transition from confusion to clarity, the most powerful tool might surprisingly be computation. Ideas that are hard to understand in theory can be easy to understand when we see them happening in simulation. That is the goal of this chapter.</p>
+  <p>The code for this chapter is in <url href="https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap13.ipynb" visual="https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap13.ipynb">chap13.ipynb</url>, which is a  notebook in the repository for this book. For more information about working with this code, see <xref ref="evolution_evolution_evolution_preface_notebooks"/>.</p>
+  <exercise label="q_12.1">
+    <statement>
+      <p> According to the author, only a third of Americans believe that the theory of evolution is true due to the following reasons:</p>
+      <p>Some reject evolution for conflicts with their religious beliefs.
+            Some were actively misinformed.
+            Many people don't know anything about evolution.</p>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement>
+          <p>True</p>
+        </statement>
+        <feedback>
+          <p>Correct.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>False</p>
+        </statement>
+        <feedback>
+          <p>Incorrect, please refer back to the reading.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</section>

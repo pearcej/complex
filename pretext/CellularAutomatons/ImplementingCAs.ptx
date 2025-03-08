@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<section xml:id="ImplementingCAs">
+  <title>Implementing CAs</title>
+  <p>To generate the figures in this chapter, we will use a Python class called <c>Cell1D</c> that represents a 1-D cellular automaton, and a class called <c>Cell1DViewer</c> that plots the results. Both are defined in <c>Cell1D.py</c> in the repository for this book.</p>
+  <p>To store the state of the CA, we will use a NumPy array with one column for each cell and one row for each time step.</p>
+  <p>To explain how this implementation works, we'll start with a CA that computes the parity of the cells in each neighborhood. The <q>parity</q> of a number is 0 if the number is even and 1 if it is odd.</p>
+  <p>We use the NumPy function <c>zeros</c> to create an array of zeros, then put a 1 in the middle of the first row.</p>
+  <pre>rows = 5
+cols = 11
+array = np.zeros((rows, cols), dtype=np.uint8)
+array[0, 5] = 1
+print(array)
+
+[[ 0.  0.  0.  0.  0.  1.  0.  0.  0.  0.  0.]
+[ 0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+[ 0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+[ 0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+[ 0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.]]</pre>
+  <p>The data type <c>uint8</c> indicates that the elements of <c>array</c> are unsigned 8-bit integers.</p>
+  <p><c>plot_ca</c> displays the elements of an <c>array</c> graphically:</p>
+  <pre>import matplotlib.pyplot as plt
+
+def plot_ca(array, rows, cols):
+    cmap = plt.get_cmap('Blues')
+    plt.imshow(array, cmap=cmap, interpolation='none')</pre>
+  <p>We import <c>pyplot</c> with the abbreviated name <c>plt</c>, which is conventional. The function <c>get_cmap</c> returns a colormap, which maps from the values in the array to colors. The colormap <c>'Blues'</c> draws the <q>on</q> cells in dark blue and the <q>off</q> cells in light blue.</p>
+  <p><c>imshow</c> displays the array as an <q>image</q>; that is, it draws a colored square for each element of the array. Setting <c>interpolation</c> to <c>none</c> indicates that <c>imshow</c> should not interpolate between on and off cells.</p>
+  <p>To compute the state of the CA during time step <c>i</c>, we have to add up consecutive elements of array and compute the parity of the sum. We can do that using a slice operator to select the elements and the modulus operator to compute parity:</p>
+  <pre>def step(array, i):
+    rows, cols = array.shape
+    row = array[i-1]
+    for j in range(1, cols):
+        elts = row[j-1:j+2]
+        array[i, j] = sum(elts) % 2</pre>
+  <p><c>rows</c> and <c>cols</c> are the dimensions of the array. <c>row</c> is the previous row of the array.</p>
+  <p>Each time through the loop, we select three elements from <c>row</c>, add them up, compute the parity, and store the result in row <c>i</c>.</p>
+  <p>In this example, the lattice is finite, so the first and last cells have only one neighbor. To handle this special case, we don't update the first and last column; they are always 0.</p>
+</section>

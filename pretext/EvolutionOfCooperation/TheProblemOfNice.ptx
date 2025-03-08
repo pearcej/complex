@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<section xml:id="TheProblemOfNice">
+  <title>The Problem of Nice</title>
+  <p>Since the Prisoner's Dilemma was first discussed in the 1950s, it has been a popular topic of study in social psychology. Based on the analysis in the previous section, we can say what a perfectly rational agent <em>should</em> do; it is harder to predict what real people actually do. Fortunately, the experiment has been done.</p>
+  <p>If we assume that people are smart enough to do the analysis (or understand it when explained), and that they generally act in their own interest, we would expect them to defect pretty much all the time. But they don't. In most experiments, subjects cooperate much more than the rational agent model predicts.</p>
+  <p>The most obvious explanation of this result is that people are not rational agents, which should not be a surprise to anyone. But why not? Is it because they are not smart enough to understand the scenario or because they are knowingly acting contrary to their own interest?</p>
+  <p>Based on experimental results, it seems that at least part of the explanation is plain altruism: many people are willing to incur a cost to themselves in order to benefit another person. Now, before you nominate that conclusion for publication in the <em>Journal of Obvious Results</em>, let's keep asking why:</p>
+  <p>
+    <ul>
+      <li>
+        <p>Why do people help other people, even at a cost to themselves? At least part of the reason is that they want to; it makes them feel good about themselves and the world.</p>
+      </li>
+      <li>
+        <p>And why does being nice make people feel good? It might be tempting to say that they were raised right, or more generally trained by society to want to do good things. But there is little doubt that some part of altruism is innate; a proclivity for altruism is the result of normal brain development.</p>
+      </li>
+      <li>
+        <p>Well, why is that? The innate parts of brain development, and the personal characteristics that follow, are the result of genetic information. Of course, the relationship between genes and altruism is complicated; there are probably many genes that interact with each other and with environmental factors to cause people to be more or less altruistic in different circumstances. Nevertheless, there are almost certainly genes that tend to make people altruistic.</p>
+      </li>
+      <li>
+        <p>Finally, why is that? If, under natural selection, animals are in constant competition with each other to survive and reproduce, it seems obvious that altruism would be counterproductive. In a population where some people help others, even to their own detriment, and others are purely selfish, it seems like the selfish ones would benefit, the altruistic ones would suffer, and the genes for altruism would be driven to extinction.</p>
+      </li>
+    </ul>
+  </p>
+  <p>This apparent contradiction is the <q>problem of altruism</q>: <em>why haven't the genes for altruism died out</em>?</p>
+  <p>Among biologists, there are many possible explanations, including reciprocal altruism, sexual selection, kin selection, and group selection. Among non-scientists, there are even more explanations. We leave it to you to explore the alternatives; for now we will to focus on just one explanation, arguably the simplest one: maybe altruism is adaptive. In other words, maybe genes for altruism make people more likely to survive and reproduce.</p>
+  <p>It turns out that the Prisoner's Dilemma, which raises the problem of altruism, might also help resolve it.</p>
+</section>

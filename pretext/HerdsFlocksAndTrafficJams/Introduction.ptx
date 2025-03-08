@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<section xml:id="Introduction-7">
+  <title>Introduction</title>
+  <p>The agent-based models in the previous chapter are based on grids: the agents occupy discrete locations in two-dimensional space. In this chapter we consider agents that move is continuous space, including simulated cars on a one-dimensional highway and simulated birds in three-dimensional space.</p>
+  <p>The code for this chapter is in <url href="https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap12.ipynb" visual="https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap12.ipynb">chap12.ipynb</url>, which is a Jupyter notebook in the repository for this book. For more information about working with this code, see <xref ref="herds-flocks-and-traffic-jams_herds-flocks-and-traffic-jams_herds-flocks-and-traffic-jams_preface_notebooks"/></p>
+</section>

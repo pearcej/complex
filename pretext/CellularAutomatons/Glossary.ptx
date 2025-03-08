@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<section xml:id="Glossary-3">
+  <title>Glossary</title>
+  <p><term>Cellular Automaton (CA):</term> Is a model of a world with very simple physics. <q>Cellular</q> means that the world is divided into discrete chunks, called cells. An <q>automaton</q> is a machine that performs computations &#x2014; it could be a real machine, but more often the <q>machine</q> is a mathematical abstraction or a computer simulation.</p>
+  <p><term>Church-Turing Thesis:</term> The claim that these definitions of computability capture something essential that is independent of any particular model of computation</p>
+  <p><term>Cross-Correlation:</term> Selecting elements from an array and adding them up</p>
+  <p><term>Falsifiability:</term> A hypothesis is this if there is an experiment, at least in the realm of practicality, that would contradict the hypothesis if it were false.</p>
+  <p><term>Pseudo-Random Number Generators (PRNGs):</term> Programs that produce random-seeming numbers.</p>
+  <p><term>Turing Complete (Universality):</term> Means that they can compute any computable function. Universality</p>
+  <p><term>Unfalsifiable:</term> A hypothesis is this if there is no way to have an experiment, at least in the realm of practicality, that would contradict the hypothesis.</p>
+</section>

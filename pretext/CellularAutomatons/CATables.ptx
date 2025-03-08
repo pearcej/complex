@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<section xml:id="CATables">
+  <title>CA Tables</title>
+  <p xml:id="cellular-automatons_id1-1" names="6.12">The function we have so far works if the CA is <q>totalitic</q>, which means that the rules only depend on the sum of the neighbors. But most rules also depend on which neighbors are on and off. For example, 100 and 001 have the same sum, but for many CAs, they would yield different results.</p>
+  <p>We can make <c>step2</c> more general using a window with elements [<math>4</math>, <math>2</math>, <math>1</math>], which interprets the neighborhood as a binary number. For example, the neighborhood <math>100</math> yields <math>4</math>; <math>010</math> yields <math>2</math>, and <math>001</math> yields <math>1</math>. Then we can take these results and look them up in the rule table.</p>
+  <p>Here's the more general version of <c>step2</c>:</p>
+  <pre>def step3(array, i, window=[4,2,1]):
+row = array[i-1]
+c = np.correlate(row, window, mode='same')
+array[i] = table[c]</pre>
+  <p>The first two lines are the same. Then the last line looks up each element from <c>c</c> in <c>table</c> and assigns the result to <c>array[i]</c>.</p>
+  <p>Here's the function that computes the table:</p>
+  <pre>def make_table(rule):
+rule = np.array([rule], dtype=np.uint8)
+table = np.unpackbits(rule)[::-1]
+return table</pre>
+  <p>The parameter, <c>rule</c>, is an integer between <math>0</math> and <math>255</math>. The first line puts <c>rule</c> into an array with a single element so we can use <c>unpackbits</c>, which converts the rule number to its binary representation. For example, here's the table for Rule 150:</p>
+  <pre>&gt;&gt;&gt; table = make_table(150)
+&gt;&gt;&gt; print(table)
+[0 1 1 0 1 0 0 1]</pre>
+  <p>The code in this section is encapsulated in the <c>Cell1D</c> class, defined in <c>Cell1D.py</c> in the repository for this book.</p>
+</section>

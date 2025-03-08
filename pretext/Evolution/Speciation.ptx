@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<section xml:id="Speciation">
+  <title>Speciation</title>
+  <p xml:id="evolution_evo-10" names="evo_10">The theory of evolution says that natural selection changes existing species and creates new ones. In our model, we have seen changes, but we have not seen a new species. It's not even clear, in the model, what a new species would look like.</p>
+  <p>Among species that reproduce sexually, two organisms are considered the same species if they can breed and produce fertile offspring. But the agents in the model don't reproduce sexually, so this definition doesn't apply.</p>
+  <p>Among organisms that reproduce asexually, like bacteria, the definition of species is not as clear-cut. Generally, a population is considered a species if their genotypes form a cluster, that is, if the genetic differences within the population are small compared to the differences between populations.</p>
+  <p>Before we can model new species, we need the ability to identify clusters of agents in the landscape, which means we need a definition of <c>distance</c> between locations. Since locations are represented with arrays of bits, we'll define distance as the number of bits that differ between locations. <c>FitnessLandscape</c> provides a distance method:</p>
+  <pre># class FitnessLandscape
+
+    def distance(self, loc1, loc2):
+        return np.sum(np.logical_xor(loc1, loc2))</pre>
+  <figure align="center" xml:id="id1-10">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 13.5: Mean distance between agents over time.</caption>
+    <image source="Evolution/Figures/DIST_OVER_TIME.png" width="50%" alt="&quot;Figure 13.5: Mean distance between agents over time.&quot;"/>
+  </figure>
+  <p>The <c>logical_xor</c> function computes <q>exclusive OR</q>, which is <c>True</c> for bits that differ, and <c>False</c> for the bits that are the same.</p>
+  <p>To quantify the dispersion of a population, we can compute the mean of the distances between pairs of agents. In the notebook for this chapter, you'll see the <c>MeanDistance</c> instrument, which computes this metric after each time step.</p>
+  <p><xref ref="evo-fig-5"/> shows mean distance between agents over time. Because we start with identical mutants, the initial distances are 0. As mutations occur, mean distance increases, reaching a maximum while the population migrates across the landscape.</p>
+  <p>Once the agents discover the optimal location, mean distance decreases until the population reaches an equilibrium where increasing distance due to mutation is balanced by decreasing distance as agents far from the optimal location disappear. In these simulations, the mean distance in equilibrium is near 1; that is, most agents are only one mutation away from optimal.</p>
+  <p>Now we are ready to look for new species. To model a simple kind of speciation, suppose a population evolves in an unchanging environment until it reaches steady state (like some species we find in nature that seem to have changed very little over long periods of time).</p>
+  <p>Now suppose we either change the environment or transport the population to a new environment. Some features that increased fitness in the old environment might decrease it in the new environment, and vice versa.</p>
+  <p>We can model these scenarios by running a simulation until the population reaches steady state, then changing the fitness landscape, and then resuming the simulation until the population reaches steady state again.</p>
+  <figure align="center" xml:id="id2-evo-fig-6">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 13.6: Mean fitness over time. After 500 time steps, we change the fitness landscape.</caption>
+    <image source="Evolution/Figures/500ST_MEAN_FIT.png" width="50%" alt="&quot; Figure 12.6: Mean fitness over time. After 500 time steps, we change the fitness landscape.&quot;"/>
+  </figure>
+  <p><xref ref="evo-fig-6"/> shows results from a simulation like that. We start with 100 identical mutants at a random location, and run the simulation for 500 time steps. At that point, many agents are at the optimal location, which has fitness near 0.65 in this example. The genotypes of the agents form a cluster, with the mean distance between agents near 1.</p>
+  <p>After 500 steps, we run <c>FitnessLandscape.set_values</c>, which changes the fitness landscape; then we resume the simulation. Mean fitness is lower, as we expect because the optimal location in the old landscape is no better than a random location in the new landscape.</p>
+  <p>After the change, mean fitness increases again as the population migrates across the new landscape, eventually finding the new optimum, which has fitness near 0.75 (which happens to be higher in this example, but needn't be).</p>
+  <p>Once the population reaches steady state, it forms a new cluster, with mean distance between agents near 1 again.</p>
+  <p>Now if we compute the distance between the agents' locations before and after the change, they differ by more than 6, on average. The distances between clusters are much bigger than the distances between agents in each cluster, so we can interpret these clusters as distinct species.</p>
+</section>

@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<section xml:id="SelfCheck-6">
+  <title>Self Check</title>
+  <exercise label="SC4_Q1">
+    <statement>
+      <p><BlankNode input_name="x"/> is a graph with n nodes, the nodes can be arranged in a circle with each node connected to the k nearest neighbors. <var/>  </p>
+    </statement>
+    <setup>
+      <var>
+        <condition string="^\s*ring\s+lattice\s*$">
+          <feedback>
+            <p>Correct.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*WS\s+graphs\s*$">
+          <feedback>
+            <p>Incorrect. WS graphs in the book refer to the Watts-Strogatz model that is based on a random graph generation model which produces graphs with small-world properties.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*Regular\s+graph\s*$">
+          <feedback>
+            <p>Incorrect. A regular graph is a graph where each node has the same number of neighbors. This graph is a kind of regular graph. Please try again.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Try again.</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise label="SC4_Q2">
+    <statement>
+      <p> Which of the below graph algorithms are used for computing the shortest path between nodes. Select multiple choices.</p>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement>
+          <p>Breadth-first search (BFS)</p>
+        </statement>
+        <feedback>
+          <p>Good Job!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Depth-first search (DFS)</p>
+        </statement>
+        <feedback>
+          <p>Incorrect, DFS is not used for computing the shortest path between  nodes. Please try again.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>Dijkstra's algorithm</p>
+        </statement>
+        <feedback>
+          <p>Correct!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Bellman-Ford Algorithm</p>
+        </statement>
+        <feedback>
+          <p>Incorrect, Bellman-Ford is not used. Please try again</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="SC4_Q3">
+    <statement>
+      <p>Match the following to the order that they need to be in to build a Watts-Strogatz (WS) graph.</p>
+    </statement>
+    <matches>
+      <match order="1">
+        <premise>1</premise>
+        <response>Rewire some of the edges of the ring lattice.</response>
+      </match>
+      <match order="2">
+        <premise>2</premise>
+        <response>Quantify the tendency for the nodes to form cliques.</response>
+      </match>
+      <match order="3">
+        <premise>3</premise>
+        <response>Compute the average length of the shortest path between each pair of nodes.</response>
+      </match>
+      <match order="4">
+        <premise>4</premise>
+        <response>You are ready to replicate the WS experiment.</response>
+      </match>
+    </matches>
+  </exercise>
+</section>

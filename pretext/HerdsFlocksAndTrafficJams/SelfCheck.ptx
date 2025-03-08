@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<section xml:id="SelfCheck-8">
+  <title>Self Check</title>
+  <exercise label="SC11_Q1">
+    <statement>
+      <p> The drivers had control over one thing that eventually caused them to create the traffic jams, which was <BlankNode input_name="x"/>. <var/>  </p>
+    </statement>
+    <setup>
+      <var>
+        <condition string="^\s*acceleration\s*$">
+          <feedback>
+            <p>Correct, they had control over speed!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Incorrect, please refer to the section 11.2.</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise label="SC11_Q2">
+    <statement>
+      <p>Agents in the <q>Flocks, herds, and schools</q> model are called boids. Name the behaviors that each agent simulates in this model.</p>
+    </statement>
+    <matches>
+      <match order="1">
+        <premise>Flock centering</premise>
+        <response>Move toward the center of the flock.</response>
+      </match>
+      <match order="2">
+        <premise>Collision avoidance</premise>
+        <response>Avoid obstacles, including other Boids.</response>
+      </match>
+      <match order="3">
+        <premise>Velocity Matching</premise>
+        <response>Align velocity (speed and direction) with neighboring Boids.</response>
+      </match>
+    </matches>
+  </exercise>
+  <exercise label="SC11_Q3">
+    <statement>
+      <p>Many complex systems have properties as a whole that their components do not. Drag and drop the properties of single agents and the behaviors of the complex system to the correct model.</p>
+    </statement>
+    <matches>
+      <match order="1">
+        <premise>The Rule 30 cellular automaton</premise>
+        <response>Is deterministic, and the rules that govern its evolution are completely known.</response>
+      </match>
+      <match order="2">
+        <premise>Schelling's model</premise>
+        <response>Are not racist, but the outcome of their interactions is a high degree of segregation</response>
+      </match>
+      <match order="3">
+        <premise>Sugarscape</premise>
+        <response>Agents in this model form waves that move diagonally even though they cannot do so on their own.</response>
+      </match>
+      <match order="4">
+        <premise>Traffic jams</premise>
+        <response>Move backward even though the cars in them are moving forward.</response>
+      </match>
+      <match order="5">
+        <premise>Flocks and heards</premise>
+        <response>They behave as if they are centrally organized even though the animals in them are making individual decisions based on local information.</response>
+      </match>
+    </matches>
+  </exercise>
+</section>

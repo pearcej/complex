@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<section xml:id="CrossCorrelation">
+  <title>Cross-Correlation</title>
+  <p xml:id="cellular-automatons_id1-2" names="6.11">The operation in the previous section &#x2014; selecting elements from an array and adding them up &#x2014; is an example of an operation that is so useful, in so many domains, that it has a name: <term>cross-correlation</term>. And NumPy provides a function, called <c>correlate</c>, that computes it. In this section we'll see how we can use NumPy to write a simpler, faster version of <c>step</c>.</p>
+  <p>The NumPy <c>correlate</c> function takes an array, <c>a</c>, and a <q>window</q>, <c>w</c>, with length N and computes a new array, <c>c</c>, where element <c>k</c> is the following summation:</p>
+  <math_block docname="CellularAutomatons/CrossCorrelation" label="True" nowrap="False" number="True" xml:space="preserve">c_k = \sum_{n=0}^{N-1} a_{n+k}*W_n</math_block>
+  <p>We can write this operation in Python like this:</p>
+  <pre>def c_k(a, w, k):
+    N = len(w)
+    return sum(a[k:k+N] * w)</pre>
+  <p>This function computes element <c>k</c> of the correlation between <c>a</c> and <c>w</c>. To show how it works, we will create an array of integers:</p>
+  <pre>N = 10
+row = np.arange(N, dtype=np.uint8)
+print(row)
+
+[0 1 2 3 4 5 6 7 8 9]</pre>
+  <p>And a window:</p>
+  <pre>window = [1, 1, 1]
+
+print(window)</pre>
+  <p>With this window, each element, <c>c_k</c>, is the sum of consecutive elements from <c>a</c>:</p>
+  <pre>c_k(row, window, 0)
+3
+
+c_k(row, window, 1)
+6</pre>
+  <p>We can use <c>c_k</c> to write <c>correlate</c>, which computes the elements of <c>c</c> for all values of <c>k</c> where the window and the array overlap.</p>
+  <pre>def correlate(row, window):
+    cols = len(row)
+    N = len(window)
+    c = [c_k(row, window, k) for k in range(cols-N+1)]
+    return np.array(c)</pre>
+  <p>Here's the result:</p>
+  <pre>c = correlate(row, window)
+print(c)
+
+[ 3  6  9 12 15 18 21 24]</pre>
+  <p>The NumPy function <c>correlate</c> does the same thing:</p>
+  <pre>c = np.correlate(row, window, mode='valid')
+print(c)
+
+[ 3  6  9 12 15 18 21 24]</pre>
+  <p>The argument <c>mode='valid'</c> means that the result contains only the elements where the window and <c>array</c> overlap, which are considered valid.</p>
+  <p>The drawback of this mode is that the result is not the same size as <c>array</c>. We can fix that with <c>mode='same'</c>, which adds zeros to the beginning and end of <c>array</c>:</p>
+  <pre>c = np.correlate(row, window, mode='same')
+print(c)
+
+[ 1  3  6  9 12 15 18 21 24 17]</pre>
+  <p>Now the result is the same size as <c>array</c>. As an exercise at the end of this chapter, you'll have a chance to write a version of <c>correlate</c> that does the same thing.</p>
+  <p>We can use NumPy's implementation of <c>correlate</c> to write a simple, faster version of <c>step</c>:</p>
+  <pre>def step2(array, i, window=[1,1,1]):
+row = array[i-1]
+c = np.correlate(row, window, mode='same')
+array[i] = c % 2</pre>
+  <p>In the notebook for this chapter, you'll see that <c>step2</c> yields the same results as <c>step</c>.</p>
+</section>

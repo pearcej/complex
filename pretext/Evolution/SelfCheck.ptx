@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<section xml:id="SelfCheck-5">
+  <title>Self Check</title>
+  <exercise label="SC12_Q1">
+    <statement>
+      <p> The theory of evolution is powerful because it explains <BlankNode input_name="x"/>, <BlankNode input_name="x"/>, and <BlankNode input_name="x"/> which are phenomena seen in the natural world that seem inexplicable initially. <var/>  <var/>  <var/>  </p>
+    </statement>
+    <setup>
+      <var>
+        <condition string="^\s*adaptation\s*$">
+          <feedback>
+            <p>Correct</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Incorrect, please refer back to the text.</p>
+          </feedback>
+        </condition>
+      </var>
+      <var>
+        <condition string="^\s*increasing\s+diversity\s*$">
+          <feedback>
+            <p>Correct</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Incorrect, please refer back to the text.</p>
+          </feedback>
+        </condition>
+      </var>
+      <var>
+        <condition string="^\s*increasing\s+complexity\s*$">
+          <feedback>
+            <p>Correct</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Incorrect, please refer back to the text.</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise label="SC12_2">
+    <statement>
+      <p> To quantify the dispersion of a population, we can compute the mean of the distances between <BlankNode input_name="x"/>  of <BlankNode input_name="x"/>. <var/>  <var/>  </p>
+    </statement>
+    <setup>
+      <var>
+        <condition string="^\s*pairs\s*$">
+          <feedback>
+            <p>Correct.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Incorrect.</p>
+          </feedback>
+        </condition>
+      </var>
+      <var>
+        <condition string="^\s*agents\s*$">
+          <feedback>
+            <p>Correct.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Incorrect.</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise label="SC12_3">
+    <statement>
+      <p> To induce evolution, we need <BlankNode input_name="x"/> relationship between genotype and fitness, but it turns out that it can be <BlankNode input_name="x"/> relationship. <var/>  <var/>  </p>
+    </statement>
+    <setup>
+      <var>
+        <condition string="^\s*some\s*$">
+          <feedback>
+            <p>Correct.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*any\s*$">
+          <feedback>
+            <p>Sorry this is incorrect, to induce evolution it has another characteristic.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Incorrect.</p>
+          </feedback>
+        </condition>
+      </var>
+      <var>
+        <condition string="^\s*any\s*$">
+          <feedback>
+            <p>Correct.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*some\s*$">
+          <feedback>
+            <p>Sorry this is incorrect, in the real world it is not as constrained as with the models.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Incorrect.</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+</section>

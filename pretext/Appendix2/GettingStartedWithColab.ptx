@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<section xml:id="GettingStartedWithColab">
+  <title>Getting Started With Google Colab</title>
+  <p>Follow these guidelines on how to use Colab to use the Jupyter notebooks without installing Anaconda.</p>
+  <p>
+    <ol label="1">
+      <li>
+        <p>Go to this link <url href="https://colab.research.google.com/" visual="https://colab.research.google.com/">https://colab.research.google.com/</url></p>
+      </li>
+    </ol>
+  </p>
+  <p>
+    <ul>
+      <li>
+        <p>If you are already signed in to a google account skip to step 4.</p>
+      </li>
+    </ul>
+  </p>
+  <p>
+    <ol label="1">
+      <li>
+        <p>Once the page with Welcome to Colaboratory opens press the blue <term>Sign In</term> button in the top right corner of the screen</p>
+      </li>
+    </ol>
+  </p>
+  <figure align="center" xml:id="id1-12">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Sign in button.</caption>
+    <image source="Appendix2/Figures/sign_in.png" width="50%" alt="&quot;Sign in button.&quot;"/>
+  </figure>
+  <p>
+    <ol label="1">
+      <li>
+        <p>Sign into your Gmail account as you would normally.</p>
+      </li>
+      <li>
+        <p>A box with an orange overlay should appear, please select the tab that says Github.</p>
+      </li>
+    </ol>
+  </p>
+  <figure align="center" xml:id="id2-7">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Pop up after sign in.</caption>
+    <image source="Appendix2/Figures/Github.png" width="50%" alt="&quot;Pop up after sign in.&quot;"/>
+  </figure>
+  <p>
+    <ul>
+      <li>
+        <p>If the box doesn't appear go to file and click open notebook. <term>Do not click on new notebook</term>.</p>
+      </li>
+    </ul>
+  </p>
+  <figure align="center" xml:id="id3-2">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Opening a notebook through file.</caption>
+    <image source="Appendix2/Figures/File.png" width="50%" alt="&quot;Opening a notebook through file.&quot;"/>
+  </figure>
+  <p>
+    <ul>
+      <li>
+        <p>If you are trying to access a private repository be sure to check the box in the top right corner to include private repositories.</p>
+      </li>
+      <li>
+        <p>If you are trying to access a private repository you will need to sign into your github account.</p>
+      </li>
+    </ul>
+  </p>
+  <figure align="center" xml:id="id4-1">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">The github authorization pop up.</caption>
+    <image source="Appendix2/Figures/Github_authorization.png" width="50%" alt="&quot;The github authorization pop up.&quot;"/>
+  </figure>
+  <p>
+    <ol label="1">
+      <li>
+        <p>Please enter the following URL in the blank provided: <url href="https://github.com/pearcej/complex-colab.git" visual="https://github.com/pearcej/complex-colab.git">https://github.com/pearcej/complex-colab.git</url></p>
+      </li>
+    </ol>
+  </p>
+  <figure align="center" xml:id="id5">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Link for repo.</caption>
+    <image source="Appendix2/Figures/Repo_link.png" width="50%" alt="&quot;Link for repo.&quot;"/>
+  </figure>
+  <p>
+    <ol label="1">
+      <li>
+        <p>Hit enter or click beside the word path. It may take a moment to think but a menu should appear below.</p>
+      </li>
+      <li>
+        <p>There should be a drop down box right underneath the line that you just put the URL in. Open the drop down box and find the complex/colab repository and click on it to open.</p>
+      </li>
+    </ol>
+  </p>
+  <figure align="center" xml:id="id6">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Repo drop down menu.</caption>
+    <image source="Appendix2/Figures/repo_drop_down.png" width="50%" alt="&quot;Repo drop down menu.&quot;"/>
+  </figure>
+  <p>
+    <ul>
+      <li>
+        <p>If the Repo doesn't show up the first time you might have to close the tab and reopen Google Colab.</p>
+      </li>
+    </ul>
+  </p>
+  <p>
+    <ol label="1">
+      <li>
+        <p>Scroll and find the Jupyter notebook that needs to be opened.</p>
+      </li>
+    </ol>
+  </p>
+  <figure align="center" xml:id="id7">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">List of the notebooks.</caption>
+    <image source="Appendix2/Figures/Repo.png" width="50%" alt="&quot;List of the notebooks.&quot;"/>
+  </figure>
+  <p>This should get you to the point where you can start to explore Colab and use it for class and homework.</p>
+  <figure align="center" xml:id="id8">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Chapter 2 notebook opened up.</caption>
+    <image source="Appendix2/Figures/opened_repo.png" width="50%" alt="&quot;Chapter 2 notebook opened up.&quot;"/>
+  </figure>
+</section>

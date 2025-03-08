@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<section xml:id="Matching-1">
+  <title>Matching</title>
+  <exercise label="matching_ch10">
+    <statement>
+      <p>
+</p>
+    </statement>
+    <matches>
+      <match order="1">
+        <premise>Agents</premise>
+        <response>Models meant to abstractly represent people and other entities since they gather information about the world, make decisions, and take actions. They usually are set up to interact with others within a space or network. Usually don't have all the information about where they are at. There are often differences between them. These models often include a form of randomness, in the world or in the models themselves.</response>
+      </match>
+      <match order="2">
+        <premise>Agnet-Based Models</premise>
+        <response>These models are computational models that are intended to simulate actions and interactions of autonomous agents with a view to assessing their effects on the systems as a whole.</response>
+      </match>
+      <match order="3">
+        <premise>Computationally Irreducible</premise>
+        <response>The only way to get the outcome is to implement the system.</response>
+      </match>
+      <match order="4">
+        <premise>Emergent Property</premise>
+        <response>It is a characteristic of a system that is the result of interaction of its components of the system not its properties.</response>
+      </match>
+      <match order="5">
+        <premise>Schelling's Model</premise>
+        <response>A grid where a cell represents a house and the houses are occupied by two kinds of agents in roughly equal numbers.</response>
+      </match>
+      <match order="6">
+        <premise>Sugarscape</premise>
+        <response>Model intended to support experiments related to economics and other social sciences based in an artificial society.</response>
+      </match>
+      <match order="7">
+        <premise>Metabolism</premise>
+        <response>The ammount of suguar consumed per time step.</response>
+      </match>
+      <match order="8">
+        <premise>Sugar</premise>
+        <response>Agents starts with an endowment of this chosen from a uniform distribution between 5 and 25 units.</response>
+      </match>
+      <match order="9">
+        <premise>Vision</premise>
+        <response>Agents can "see" the amount of suguar in nearby cells.</response>
+      </match>
+    </matches>
+  </exercise>
+</section>

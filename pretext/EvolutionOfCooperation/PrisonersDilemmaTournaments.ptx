@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<section xml:id="PrisonersDilemmaTournaments">
+  <title>Prisoner's Dilemma Tournaments</title>
+  <p>In the late 1970s Robert Axelrod, a political scientist at the University of Michigan, organized a tournament to compare strategies for playing Prisoner's Dilemma (PD).</p>
+  <p>He invited participants to submit strategies in the form of computer programs, then played the programs against each other and kept score. Specifically, they played the iterated version of PD, in which the agents play multiple rounds against the same opponent, so their decisions can be based on history.</p>
+  <p>In Axelrod's tournaments, a simple strategy that did surprisingly well was called <q>tit for tat</q>, or TFT. TFT always cooperates during the first round of an iterated match; after that, it copies whatever the opponent did during the previous round. If the opponent keeps cooperating, TFT keeps cooperating. If the opponent defects at any point, TFT defects in the next round. But if the opponent goes back to cooperating, so does TFT.</p>
+  <p>Looking at the strategies that did well in these tournaments, Alexrod identified the characteristics they tended to share:</p>
+  <p>
+    <ul>
+      <li>
+        <p><term>Nice</term>: The strategies that do well cooperate during the first round, and generally cooperate as often as they defect in subsequent rounds.</p>
+      </li>
+      <li>
+        <p><term>Retaliating</term>: Strategies that cooperate all the time did not do as well as strategies that retaliate if the opponent defects.</p>
+      </li>
+      <li>
+        <p><term>Forgiving</term>: But strategies that were too vindictive tended to punish themselves as well as their opponents.</p>
+      </li>
+      <li>
+        <p><term>Non-envious</term>: Some of the most successful strategies seldom outscore their opponents; they are successful because they do <em>well enough</em> against a wide variety of opponents.</p>
+      </li>
+    </ul>
+  </p>
+  <p>TFT has all of these properties.</p>
+  <p>Axelrod's tournaments offer a partial, possible answer to the problem of altruism: maybe the genes for altruism are prevalent because they are adaptive. To the degree that many social interactions can be modeled as variations on the Prisoner's Dilemma, a brain that is wired to be nice, tempered by a balance of retaliation and forgiveness, will tend to do well in a wide variety of circumstances.</p>
+  <p>But the strategies in Axelrod's tournaments were designed by people; they didn't evolve. We need to consider whether it is credible that genes for niceness, retribution, and forgiveness could appear by mutation, successfully invade a population of other strategies, and resist being invaded by subsequent mutations.</p>
+  <exercise label="q_13.4">
+    <statement>
+      <p> Match the shared characteristics of winning strategies to their descriptions:</p>
+    </statement>
+    <matches>
+      <match order="1">
+        <premise>Retaliating</premise>
+        <response>Strategies that cooperate all the time did not do as well as strategies that retaliate if the opponent defects.</response>
+      </match>
+      <match order="2">
+        <premise>Non-envious</premise>
+        <response>Some of the most successful strategies seldom outscore their opponents; they are successful because they do well enough against a wide variety of opponents</response>
+      </match>
+      <match order="3">
+        <premise>Forgiving</premise>
+        <response>But strategies that were too vindictive tended to punish themselves as well as their opponents.</response>
+      </match>
+      <match order="4">
+        <premise>Nice</premise>
+        <response>The strategies that do well cooperate during the first round, and generally cooperate as often as they defect in subsequent rounds.</response>
+      </match>
+    </matches>
+  </exercise>
+</section>

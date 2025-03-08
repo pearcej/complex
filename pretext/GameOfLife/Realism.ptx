@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<section xml:id="Realism">
+  <title>Realism</title>
+  <p>Stable patterns in GoL are hard not to notice, especially the ones that move. It is natural to think of them as persistent entities, but remember that a CA is made of cells; there is no such thing as a toad or a loaf. Gliders and other spaceships are even less real because they are not even made up of the same cells over time. So these patterns are like constellations of stars. We perceive them because we are good at seeing patterns, or because we have active imaginations, but they are not real.</p>
+  <p>Right?</p>
+  <p>Well, not so fast. Many entities that we consider <q>real</q> are also persistent patterns of entities at a smaller scale. Hurricanes are just patterns of air flow, but we give them personal names. And people, like gliders, are not made up of the same cells over time.</p>
+  <p>This is not a new observation &#x2014; about 2500 years ago Heraclitus pointed out that you can't step in the same river twice &#x2014; but the entities that appear in the Game of Life are a useful test case for thinking about scientific realism.</p>
+  <p><term>Scientific realism</term> pertains to scientific theories and the entities they postulate. A theory postulates an entity if it is expressed in terms of the properties and behavior of the entity. For example, theories about electromagnetism are expressed in terms of electrical and magnetic fields. Some theories about economics are expressed in terms of supply, demand, and market forces. And theories about biology are expressed in terms of genes.</p>
+  <p>But are these entities real? That is, do they exist in the world independent of us and our theories?</p>
+  <p>Again, it might prove useful to state philosophical positions in a range of strengths; here are four statements of scientific realism with increasing strength:</p>
+  <p><term>SR1:</term> Scientific theories are true or false to the degree that they approximate reality, but no theory is exactly true. Some postulated entities may be real, but there is no principled way to say which ones.</p>
+  <p><term>SR2:</term> As science advances, our theories become better approximations of reality. At least some postulated entities are known to be real.</p>
+  <p><term>SR3:</term> Some theories are exactly true; others are approximately true. Entities postulated by true theories, and some entities in approximate theories, are real.</p>
+  <p><term>SR4:</term> A theory is true if it describes reality correctly, and false otherwise. The entities postulated by true theories are real; others are not.</p>
+  <p>SR4 is so strong that it is probably untenable; by such a strict criterion, almost all current theories are known to be false. Most realists would accept something in the range between SR1 and SR3.</p>
+  <exercise label="q_7.9">
+    <statement>
+      <p> Scientific realism is a positive epistemic attitude toward the content of our best theories and models, recommending belief in both observable and unobservable aspects of the world described by the sciences.</p>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement>
+          <p>True</p>
+        </statement>
+        <feedback>
+          <p>Correct!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>False</p>
+        </statement>
+        <feedback>
+          <p>Please go back and see what the explanation for the term is within the section above.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="q_7.10">
+    <statement>
+      <p> Since SR4 is so defensible against attacks or objections most realists would accept something within the range of <BlankNode input_name="x"/> and <BlankNode input_name="x"/>. Pay attention to the order. <var/>  <var/>  </p>
+    </statement>
+    <setup>
+      <var>
+        <condition string="^\s*SR1\s*$">
+          <feedback>
+            <p>Correct, this is the start of the SRs that are accepted.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*SR2\s*$">
+          <feedback>
+            <p>It is within the range but not the answer we are looking for, please give the outer edges of the range.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*SR3\s*$">
+          <feedback>
+            <p>While this is a good candidate please try again.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*SR4\s*$">
+          <feedback>
+            <p>This SR is too powerful, please go back and look again at the section.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Incorrect.</p>
+          </feedback>
+        </condition>
+      </var>
+      <var>
+        <condition string="^\s*SR3\s*$">
+          <feedback>
+            <p>Correct, this is the end of the SRs that are accepted.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*SR1\s*$">
+          <feedback>
+            <p>While this is a good candidate please try again.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*SR2\s*$">
+          <feedback>
+            <p>It is within the range but not the answer we are looking for, please give the outer edges of the range.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*SR4\s*$">
+          <feedback>
+            <p>This SR is too powerful, please go back and look again at the section.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Incorrect.</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+</section>

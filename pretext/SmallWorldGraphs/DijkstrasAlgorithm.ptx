@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<section xml:id="DijkstrasAlgorithm">
+  <title>Dijkstra's Algorithm</title>
+  <p>Edsger W. Dijkstra was a Dutch computer scientist who invented an efficient shortest-path algorithm. He also invented the semaphore, which is a data structure used to coordinate programs that communicate with each other.
+            Dijkstra is famous (and notorious) as the author of a series of essays on computer science. Some, like <q>A Case against the GO TO Statement</q>, had a profound effect on programming practice. Others, like <q>On the Cruelty of Really Teaching Computing Science</q>, are entertaining in their cantankerousness, but less effective.</p>
+  <p><term>Dijkstra's algorithm</term> solves the <q>single source shortest path problem</q>, which means that it finds the minimum distance from a given <q>source</q> node to every other node in the graph (or at least every connected node).</p>
+  <p>We'll present a simplified version of the algorithm that considers all edges the same length. The more general version works with any non-negative edge lengths.</p>
+  <p>The simplified version is similar to the breadth-first search in the previous section except that we replace the set called <c>seen</c> with a dictionary called <c>dist</c>, which maps from each node to its distance from the source:</p>
+  <pre>def shortest_path_dijkstra(G, source):
+dist = {source: 0}
+queue = deque([source])
+while queue:
+    node = queue.popleft()
+    new_dist = dist[node] + 1
+
+    neighbors = set(G[node]).difference(dist)
+    for n in neighbors:
+        dist[n] = new_dist
+
+    queue.extend(neighbors)
+return dist</pre>
+  <p>Here's how it works:</p>
+  <p>
+    <ul>
+      <li>
+        <p>Initially, <c>queue</c> contains a single element, <c>source</c>, and <c>dist</c> maps from <c>source</c> to distance 0 (which is the distance from <c>source</c> to itself).</p>
+      </li>
+      <li>
+        <p>Each time through the loop, we use <c>popleft</c> to select the next node in the queue.</p>
+      </li>
+      <li>
+        <p>Next we find all neighbors of <c>node</c> that are not already in <c>dist</c>.</p>
+      </li>
+      <li>
+        <p>Since the distance from <c>source</c> to <c>node</c> is <c>dist[node]</c>, the distance to any of the undiscovered neighbors is <c>dist[node]+1</c>.</p>
+      </li>
+      <li>
+        <p>For each neighbor, we add an entry to <c>dist</c>, then we add the neighbors to the queue.</p>
+      </li>
+    </ul>
+  </p>
+  <p>This algorithm only works if we use BFS, not DFS. To see why, consider this:</p>
+  <p>
+    <ul>
+      <li>
+        <p>The first time through the loop <c>node</c> is source, and <c>new_dist</c> is 1. So the neighbors of <c>source</c> get distance 1 and they go in the queue.</p>
+      </li>
+      <li>
+        <p>When we process the neighbors of <c>source</c>, all of their neighbors get distance 2. We know that none of them can have distance 1, because if they did, we would have discovered them during the first iteration.</p>
+      </li>
+      <li>
+        <p>Similarly, when we process the nodes with distance 2, we give their neighbors distance 3. We know that none of them can have distance 1 or 2, because if they did, we would have discovered them during a previous iteration.</p>
+      </li>
+    </ul>
+  </p>
+  <p>And so on. If you are familiar with proof by induction, you can see where this is going.</p>
+  <p>But this argument only works if we process all nodes with distance 1 before we start processing nodes with distance 2, and so on. And that's exactly what BFS does.</p>
+  <p>In the exercises at the end of this chapter, you'll write a version of Dijkstra's algorithm using DFS, so you'll have a chance to see what goes wrong.</p>
+  <exercise label="q1_4.11">
+    <statement>
+      <p> Summarize how the Dijkstra's algorithm works.</p>
+    </statement>
+  </exercise>
+</section>

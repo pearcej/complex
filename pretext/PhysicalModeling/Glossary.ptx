@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<section xml:id="Glossary-10">
+  <title>Glossary</title>
+  <p><term>Box-Counting:</term> A way of determining the fractal dimension of a set S in a Euclidean space Rn, or more generally in a metric space (X, d).</p>
+  <p><term>Critical Phenomena:</term> A wide variety of systems display a common set of behaviors and characteristics when they are at or near a critical point.</p>
+  <p><term>Diffusion:</term> The intermixing of two or more substances by the natural movement of their particles.</p>
+  <p><term>Fractal Geometry:</term> For example, freezing water tends to form fractal patterns, including snowflakes and other crystal structures. Fractals are characterized by self-similarity; that is, parts of the pattern are similar to scaled copies of the whole.</p>
+  <p><term>Percolation:</term> A process in which a fluid flows through a semi-porous material.</p>
+  <p><term>Percolation Model:</term> A model used to represent percolation that can be abstracted to be use for epidemic modeling, networks of electrical resistors, and other systems that are not directly percolation.</p>
+  <p><term>Phase Change:</term> The rapid change in behavior near the critical value.</p>
+  <p><term>Random Walk:</term> A stochastic process consisting of a sequence of changes each of whose characteristics (as magnitude or direction) is determined by chance.</p>
+</section>

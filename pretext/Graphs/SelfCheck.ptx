@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<section xml:id="SelfCheck-7">
+  <title>Self Check</title>
+  <figure align="center" xml:id="id1-19">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">A Graphical represention of a Friend Network</caption>
+    <image source="Graphs/Figures/SELF_CHECK_FIG.png" width="50%" alt="&quot;Graph of Friend Network&quot;"/>
+  </figure>
+  <exercise label="SC_Q1">
+    <statement>
+      <p> Based on the graph above what social media platform would the user be using?</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>Instagram</p>
+        </statement>
+        <feedback>
+          <p>This is incorrect due to the graph not being directed.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Twitter</p>
+        </statement>
+        <feedback>
+          <p>This is incorrect due to the graph not being directed.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Reddit</p>
+        </statement>
+        <feedback>
+          <p>This is incorrect due to the graph not being directed.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>Facebook</p>
+        </statement>
+        <feedback>
+          <p>Correct, because the Graph is undirected.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="sc_match">
+    <statement>
+      <p>Match the correct NetworkX code piece to the correct  description.</p>
+    </statement>
+    <matches>
+      <match order="1">
+        <premise>G</premise>
+        <response>This variable is a DiGraph object that contains no nodes and no edges.</response>
+      </match>
+      <match order="2">
+        <premise>add_node</premise>
+        <response>This method adds nodes.</response>
+      </match>
+      <match order="3">
+        <premise>nodes</premise>
+        <response>This method gets a list of nodes.</response>
+      </match>
+      <match order="4">
+        <premise>Nodeview</premise>
+        <response>This class can be used in a for loop or it can make a list.</response>
+      </match>
+      <match order="5">
+        <premise>Edges</premise>
+        <response>This method gets a list of edges.</response>
+      </match>
+      <match order="6">
+        <premise>Draw_circular</premise>
+        <response>This method arranges the nodes in a circle and connects them with edges.</response>
+      </match>
+    </matches>
+  </exercise>
+  <exercise label="sc_parsons" indentation="hide" language="java">
+    <statement>
+      <p>Please construct def complete_graph:</p>
+    </statement>
+    <blocks>
+      <block order="5">
+        <cline>def make_complete_graph(n):</cline>
+      </block>
+      <block order="2">
+        <cline>    G = nx.Graph()</cline>
+        <cline>    </cline>
+      </block>
+      <block order="3">
+        <cline>    nodes = range(n)</cline>
+        <cline>    </cline>
+      </block>
+      <block order="1">
+        <cline>    G.add_nodes_from(nodes)</cline>
+        <cline>    </cline>
+      </block>
+      <block order="4">
+        <cline>    G.add_edges_from(all_pairs(nodes))</cline>
+        <cline>    </cline>
+      </block>
+      <block order="6">
+        <cline>    return G</cline>
+      </block>
+    </blocks>
+  </exercise>
+  <exercise label="blank_SC">
+    <statement>
+      <p> The order of growth for graph algorithms is usually expressed as a function of n, <BlankNode input_name="x"/> (nodes), and m, <BlankNode input_name="x"/>. <var/>  <var/>  </p>
+    </statement>
+    <setup>
+      <var>
+        <condition string="^\s*the\s+number\s+of\s+vertices\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*the\s+number\s+of\s+edges\s*$">
+          <feedback>
+            <p>Close, but this refers to something else.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*number\s+of\s+vertices\s*$">
+          <feedback>
+            <p>Close, add the to the beginning of your statement</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Sorry you are incorrect, try again and checkout section 3.9.</p>
+          </feedback>
+        </condition>
+      </var>
+      <var>
+        <condition string="^\s*the\s+number\s+of\s+edges\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*the\s+number\s+of\s+vertices\s*$">
+          <feedback>
+            <p>Close, but this refers to something else.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*number\s+of\s+edges\s*$">
+          <feedback>
+            <p>Close, add the to the beginning of your statement</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Sorry you are incorrect, Try again and checkout section 3.9.</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+</section>

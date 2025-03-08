@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<section xml:id="SelfCheck">
+  <title>Self Check</title>
+  <exercise label="SC13_Q1">
+    <statement>
+      <p><BlankNode input_name="x"/> is the tendency of many animals to help other animals, even to their own detriment. This creates a conflict with <BlankNode input_name="x"/>, where it suggests that animals live in a state of constant competition. <var/>  <var/>  </p>
+    </statement>
+    <setup>
+      <var>
+        <condition string="^\s*altruism\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Incorrect, please try again.</p>
+          </feedback>
+        </condition>
+      </var>
+      <var>
+        <condition string="^\s*natural\s+selection\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Incorrect, please try again.</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise label="SC13_Q2" indentation="hide" language="java">
+    <statement>
+      <p>Please complete the play function.</p>
+    </statement>
+    <blocks>
+      <block order="7">
+        <cline>def play(self, agent1, agent2):</cline>
+      </block>
+      <block order="10">
+        <cline>    agent1.reset()</cline>
+      </block>
+      <block order="1">
+        <cline>    agent2.reset()</cline>
+      </block>
+      <block order="3">
+        <cline>    for i in range(self.num_rounds):</cline>
+      </block>
+      <block order="5">
+        <cline>        resp1 = agent1.respond(agent2)</cline>
+      </block>
+      <block order="4">
+        <cline>        resp2 = agent2.respond(agent1)</cline>
+      </block>
+      <block order="6">
+        <cline>        pay1, pay2 = self.payoffs[resp1, resp2]</cline>
+      </block>
+      <block order="2">
+        <cline>        agent1.append(resp1, pay1)</cline>
+      </block>
+      <block order="9">
+        <cline>        agent2.append(resp2, pay2)</cline>
+      </block>
+      <block order="8">
+        <cline>    return agent1.score, agent2.score</cline>
+      </block>
+    </blocks>
+  </exercise>
+  <exercise label="SC13_Q3" indentation="hide" language="java">
+    <statement>
+      <p>Please put the step function in order.</p>
+    </statement>
+    <blocks>
+      <block order="3">
+        <cline>def step(self):</cline>
+        <cline>    n = len(self.agents)</cline>
+        <cline>    fits = self.get_fitnesses()</cline>
+      </block>
+      <block order="4">
+        <cline>    # see who dies</cline>
+        <cline>    index_dead = self.choose_dead(fits)</cline>
+        <cline>    num_dead = len(index_dead)</cline>
+      </block>
+      <block order="1">
+        <cline>    # replace the dead with copies of the living</cline>
+        <cline>    replacements = self.choose_replacements(num_dead, fits)</cline>
+        <cline>    self.agents[index_dead] = replacements</cline>
+      </block>
+      <block order="2">
+        <cline>    # update any instruments</cline>
+        <cline>    self.update_instruments()</cline>
+      </block>
+    </blocks>
+  </exercise>
+</section>

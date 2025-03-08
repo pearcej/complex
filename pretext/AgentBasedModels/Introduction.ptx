@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<section xml:id="Introduction-1">
+  <title>Introduction</title>
+  <p>The models we have seen so far might be characterized as <q>rule-based</q> in the sense that they involve systems governed by simple rules. In this and the following chapters, we explore agent-based models.</p>
+  <p>Agent-based models include agents that are intended to model people and other entities that gather information about the world, make decisions, and take actions.</p>
+  <p>The agents are usually situated in space or in a network, and interact with each other locally. They usually have imperfect or incomplete information about the world.</p>
+  <p>Often there are differences among agents, unlike previous models where all components are identical. And agent-based models often include randomness, either among the agents or in the world.</p>
+  <p>Since the 1970s, agent-based modeling has become an important tool in economics, other social sciences, and some natural sciences.</p>
+  <p>Agent-based models are useful for modeling the dynamics of systems that are not in equilibrium (although they are also used to study equilibrium). And they are particularly useful for understanding relationships between individual decisions and system behavior.</p>
+  <p>The code for this chapter is in <url href="https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap11.ipynb" visual="https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap11.ipynb">chap11.ipynb</url>, which is a notebook in the repository for this book. For more information about working with this code, see <xref ref="agent-based-models_agent-based-models_agent-based-models_preface_notebooks"/>.</p>
+</section>

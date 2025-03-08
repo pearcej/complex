@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<section xml:id="SelfCheck-2">
+  <title>Self Check</title>
+  <exercise label="SC6_Q1">
+    <statement>
+      <p> Several CAs are Turing complete, this means they can compute any computable function. What is this property called? <BlankNode input_name="x"/> <var/>  </p>
+    </statement>
+    <setup>
+      <var>
+        <condition string="^\s*universality\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*spaceships\s*$">
+          <feedback>
+            <p>Incorrect, a spaceship is a structure that appear within CAs that translate in space, apperaing as diagonals with different slopes, depending on how many time steps they take to shift by one column.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Incorrect. Please take a closer look to the properties of CAs.</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise label="SC6_Q2">
+    <statement>
+      <p> If you wanted to make a hypotheses that could never be proven wrong you would want to make a <BlankNode input_name="x"/> hypothesis. <var/>  </p>
+    </statement>
+    <setup>
+      <var>
+        <condition string="^\s*unfalsifiable\s*$">
+          <feedback>
+            <p>Correct, unfalsifiable hypoteses are impossible ot refute but are useless when you want to make reliable predicions about the wrold.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*falsifiable\s*$">
+          <feedback>
+            <p>Incorrect, falsifiable hypotheses are able to be proven or disproven.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Incorrect, please try again.</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise label="SC6_Q3">
+    <statement>
+      <p> If you make a simple model more realistic it will not become more reliable.</p>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement>
+          <p>True</p>
+        </statement>
+        <feedback>
+          <p>Correct, it only obscures the difference between the essential features.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>False</p>
+        </statement>
+        <feedback>
+          <p>Incorrect, more realistic simple models will not become more reliable.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</section>

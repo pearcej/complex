@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<section xml:id="introduction-2">
+  <title>Introduction</title>
+  <p>A <term>cellular automaton (CA)</term> is a model of a world with very simple physics. <q>Cellular</q> means that the world is divided into discrete chunks, called cells. An <q>automaton</q> is a machine that performs computations &#x2014; it could be a real machine, but more often the <q>machine</q> is a mathematical abstraction or a computer simulation.
+            This chapter presents experiments Stephen Wolfram performed in the 1980s, showing that some cellular automatons display surprisingly complicated behavior, including the ability to perform arbitrary computations.
+            I discuss implications of these results, and at the end of the chapter we suggest methods for implementing CAs efficiently in Python.
+            The code for this chapter is in <url href="https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap07.ipynb" visual="https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap07.ipynb">chap07.ipynb</url> in the repository for this book. More information about working with the code is in Section <xref ref="cellular-automatons_cellular-automatons_cellular-automatons_preface_notebooks"/>.</p>
+</section>

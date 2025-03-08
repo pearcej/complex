@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<section xml:id="exercise-selforganized">
+  <title>Exercises</title>
+  <p>The code for this chapter is in the Jupyter notebook <url href="https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap10.ipynb" visual="https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap10.ipynb">chap10.ipynb</url> in the repository for this book. Open this notebook, read the code, and run the cells. You can use this notebook to work on the following exercises.</p>
+  <p><term>Exercise 1:</term> To test whether the distributions of <c>T</c> and <c>S</c> are heavy-tailed, we plotted their PMFs on a log-log scale, which is what Bak, Tang and Wiesenfeld show in their paper. But as we saw in <xref ref="self-organized-criticality_self-organized-criticality_self-organized-criticality_scale-free-networks_cumulative-distributions"/>, this visualization can obscure the shape of the distribution. Using the same data, make a plot that shows the cumulative distributions (CDFs) of <c>S</c> and <c>T</c>. What can you say about their shape? Do they follow a power law? Are they heavy-tailed?</p>
+  <p>You might find it helpful to plot the CDFs on a log-x scale and on a log-log scale.</p>
+  <p><term>Exercise 2:</term> In <xref ref="self-organized-criticality_self-organized-criticality_self-organized-criticality_self-organized-criticality_self-organized-criticality_self-organized-criticality_self-organized-criticality_fractals"/> we showed that the initial configuration of the sand pile model produces fractal patterns. But after we drop a large number of random grains, the patterns look more random.</p>
+  <p>Starting with the example in <xref ref="self-organized-criticality_self-organized-criticality_self-organized-criticality_self-organized-criticality_self-organized-criticality_self-organized-criticality_self-organized-criticality_fractals"/>, run the sand pile model for a while and then compute fractal dimensions for each of the 4 levels. Is the sand pile model fractal in steady state?</p>
+  <p><term>Exercise 3:</term> Another version of the sand pile model, called the <q>single source</q> model, starts from a different initial condition: instead of all cells at the same level, all cells are set to 0 except the center cell, which is set to a large value. Write a function that creates a SandPile object, sets up the single source initial condition, and runs until the pile reaches equilibrium. Does the result appear to be fractal?</p>
+  <p><term>Exercise 4:</term> In their 1989 paper, Bak, Chen and Creutz suggest that the Game of Life is a self-organized critical system.</p>
+  <p>To replicate their tests, start with a random configuration and run the GoL CA until it stabilizes. Then choose a random cell and flip it. Run the CA until it stabilizes again, keeping track of <c>T</c>, the number of time steps it takes, and <c>S</c>, the number of cells affected. Repeat for a large number of trials and plot the distributions of <c>T</c> and <c>S</c>. Also, estimate the power spectrums of <c>T</c> and <c>S</c> as signals in time, and see if they are consistent with pink noise.</p>
+  <p><term>Exercise 5:</term> In The Fractal Geometry of Nature, Benoit Mandelbrot proposes what he calls a <q>heretical</q> explanation for the prevalence of heavy-tailed distributions in natural systems. It may not be, as Bak suggests, that many systems can generate this behavior in isolation. Instead there may be only a few, but interactions between systems might cause the behavior to propagate.</p>
+  <p>To support this argument, Mandelbrot points out:</p>
+  <p>
+    <ul>
+      <li>
+        <p>The distribution of observed data is often <q>the joint effect of a fixed underlying true distribution and a highly variable filter</q>.</p>
+      </li>
+      <li>
+        <p>Heavy-tailed distributions are robust to filtering; that is, <q>a wide variety of filters leave their asymptotic behavior unchanged</q>.</p>
+      </li>
+    </ul>
+  </p>
+  <p>What do you think of this argument? Would you characterize it as reductionist or holist?</p>
+  <p><term>Exercise 6:</term> Read about the <q>Great Man</q> theory of history. What implication does self-organized criticality have for this theory?</p>
+</section>

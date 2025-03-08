@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<section xml:id="Random">
+  <title>Random Graphs</title>
+  <p xml:id="graphs_g-4" names="g_4">A <term>random graph</term> is just what it sounds like: a graph with nodes and edges generated at random. Of course, there are many random processes that can generate graphs, so there are many kinds of random graphs.</p>
+  <p>One of the more interesting kinds is the Erd&#x151;s-R&#xE9;nyi model, studied by Paul Erd&#x151;s and Alfr&#xE9;d R&#xE9;nyi in the 1960s.</p>
+  <p>An <term>Erd&#x151;s-R&#xE9;nyi graph</term> (<term>ER graph</term>) is characterized by two parameters: <c>n</c> is the number of nodes and <c>p</c> is the probability that there is an edge between any two nodes.</p>
+  <p>Erd&#x151;s and R&#xE9;nyi studied the properties of these random graphs; one of their surprising results is the existence of abrupt changes in the properties of random graphs as random edges are added.</p>
+  <p>One of the properties that displays this kind of transition is connectivity. An <term>undirected graph</term> is connected if there is a path from every node to every other node.</p>
+  <p>In an ER graph, the probability that the graph is <term>connected</term> is very low when <math>p</math> is small and nearly 1 when <math>p</math> is large. Between these two regimes, there is a rapid transition at a particular value of <math>p</math>, denoted <math>p*</math>.</p>
+  <p>Erd&#x151;s and R&#xE9;nyi showed that this critical value is <math>p* = (lnn) / n</math>, where <math>n</math> is the number of nodes. A random graph, <math>G(n, p)</math>, is unlikely to be connected if <math>p &lt; p*</math> and very likely to be connected if <math>p &gt; p*</math>.</p>
+  <p>To test this claim, we'll develop algorithms to generate random graphs and check whether they are connected.</p>
+  <exercise label="question3_1">
+    <statement>
+      <p> Given that an Erd&#x151;s-R&#xE9;nyi graph (ER graph) a has a <math>p* = .6</math> and a <math>p = .7</math> it is more likely to be connected.</p>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement>
+          <p>True</p>
+        </statement>
+        <feedback>
+          <p>Correct! The value of p is greater than p*</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>False</p>
+        </statement>
+        <feedback>
+          <p>Not quite. In an ER graph when p is higher than p* this leads to a greater possiblity of the graph being connected.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</section>

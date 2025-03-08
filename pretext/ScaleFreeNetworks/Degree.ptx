@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<section xml:id="Degree">
+  <title>Degree</title>
+  <figure align="center" xml:id="id1-sfn-4">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 6.1: PMF of degree in the Facebook dataset and in the WS model.</caption>
+    <image source="ScaleFreeNetworks/Figures/thinkcomplexity2010.png" width="50%" alt="&quot;Figure 6.1: PMF of degree in the Facebook dataset and in the WS model.&quot;"/>
+  </figure>
+  <p>If the WS graph is a good model for the Facebook network, it should have the same average degree across nodes, and ideally the same variance in degree.</p>
+  <p>This function returns a list of degrees in a graph, one for each node:</p>
+  <pre>def degrees(G):
+    return [G.degree(u) for u in G]</pre>
+  <p>The mean degree in model is <math>44</math>, which is close to the mean degree in the dataset, <math>43.7</math>.</p>
+  <p>However, the standard deviation of degree in the model is <math>1.5</math>, which is not close to the standard deviation in the dataset, <math>52.4</math>. Oops.</p>
+  <p>What's the problem? To get a better view, we have to look at the distribution of degrees, not just the mean and standard deviation.</p>
+  <p>We will represent the distribution of degrees with a <c>Pmf</c> object, which is defined in the thinkstats2 module. <c>Pmf</c> stands for <q>probability mass function</q>.</p>
+  <p>Briefly, a <c>Pmf</c> maps from values to their probabilities. A <c>Pmf</c> of degrees is a mapping from each possible degree, <c>d</c>, to the fraction of nodes with degree <c>d</c>.</p>
+  <p>As an example, we construct a graph with nodes <math>1</math>, <math>2</math>, and <math>3</math> connected to a central node, <math>0</math>:</p>
+  <pre>G = nx.Graph()
+G.add_edge(1, 0)
+G.add_edge(2, 0)
+G.add_edge(3, 0)
+nx.draw(G)</pre>
+  <p>Here's the list of degrees in this graph:</p>
+  <pre>&gt;&gt;&gt; degrees(G)
+[3, 1, 1, 1]</pre>
+  <p>Node <math>0</math> has degree <math>3</math>, the others have degree <math>1</math>. Now we can make a <c>Pmf</c> that represents this degree distribution:</p>
+  <pre>&gt;&gt;&gt; from thinkstats2 import Pmf
+&gt;&gt;&gt; Pmf(degrees(G))
+Pmf({1: 0.75, 3: 0.25})</pre>
+  <p>The result is a <c>Pmf</c> object that maps from each degree to a fraction or probability. In this example, <math>75%</math> of the nodes have degree <math>1</math> and <math>25%</math> have degree <math>3</math>.</p>
+  <p>Now we can make a <c>Pmf</c> that contains node degrees from the dataset, and compute the mean and standard deviation:</p>
+  <pre>&gt;&gt;&gt; from thinkstats2 import Pmf
+&gt;&gt;&gt; pmf_fb = Pmf(degrees(fb))
+&gt;&gt;&gt; pmf_fb.Mean(), pmf_fb.Std()
+(43.691, 52.414)</pre>
+  <p>And the same for the WS model:</p>
+  <pre>&gt;&gt;&gt; pmf_ws = Pmf(degrees(ws))
+&gt;&gt;&gt; pmf_ws.mean(), pmf_ws.std()
+(44.000, 1.465)</pre>
+  <p>We can use the <c>thinkplot</c> module to plot the results:</p>
+  <pre>thinkplot.Pdf(pmf_fb, label='Facebook')
+thinkplot.Pdf(pmf_ws, label='WS graph')</pre>
+  <p><xref ref="sfn-fig-1"/> shows the two distributions. They are very different.</p>
+  <p>In the WS model, most users have about <math>44</math> friends; the minimum is <math>38</math> and the maximum is <math>50</math>. That's not much variation. In the dataset, there are many users with only <math>1</math> or <math>2</math> friends, but one has more than <math>1000</math>!</p>
+  <p>Distributions like this, with many small values and a few very large values, are called heavy-tailed.</p>
+</section>

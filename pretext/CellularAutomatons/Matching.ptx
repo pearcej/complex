@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<section xml:id="Matching-3">
+  <title>Matching</title>
+  <exercise label="Ch6_matching">
+    <statement>
+      <p>
+</p>
+    </statement>
+    <matches>
+      <match order="1">
+        <premise>Cellular automaton (CA)</premise>
+        <response>A world model with very simple physics.</response>
+      </match>
+      <match order="2">
+        <premise>Pseudo-random number generators (PRNGs)</premise>
+        <response>Produces seemingly random numbers.</response>
+      </match>
+      <match order="3">
+        <premise>Turing complete</premise>
+        <response>Can compute any computable function.</response>
+      </match>
+      <match order="4">
+        <premise>Cross-correlation</premise>
+        <response>Adding selected elements from an array.</response>
+      </match>
+      <match order="5">
+        <premise>Falsifiability</premise>
+        <response>A demarcation between scientific hypotheses and pseudoscience</response>
+      </match>
+      <match order="6">
+        <premise>Unfalsifiability</premise>
+        <response>A hypothesis that cannot be proven true or false based on observation or physical experiment.</response>
+      </match>
+      <match order="7">
+        <premise>Church-Turing Thesis</premise>
+        <response>The claim that these definitions of computability capture something essential that is independent of any particular model of computation</response>
+      </match>
+    </matches>
+  </exercise>
+</section>

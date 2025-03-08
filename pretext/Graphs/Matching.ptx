@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<section xml:id="Matching-8">
+  <title>Matching</title>
+  <exercise label="matching_1">
+    <statement>
+      <p>
+</p>
+    </statement>
+    <matches>
+      <match order="1">
+        <premise>Graph</premise>
+        <response>A representation of a system that contains discrete and interconnected elements.</response>
+      </match>
+      <match order="10">
+        <premise>Random Graph</premise>
+        <response>In this graph, nodes and edges are generated randomly.</response>
+      </match>
+      <match order="11">
+        <premise>Complete Graph</premise>
+        <response>In this graph, every node is connected to every other node.</response>
+      </match>
+      <match order="12">
+        <premise>Connected Graphs</premise>
+        <response>In this graph, there is a path from every node to every other node.</response>
+      </match>
+      <match order="13">
+        <premise>Stack</premise>
+        <response>Elements are added and removed from the top.</response>
+      </match>
+      <match order="14">
+        <premise>ER Graphs</premise>
+        <response>In these graphs, a random graph is generated using two closely related models.</response>
+      </match>
+      <match order="15">
+        <premise>Undirected Edge</premise>
+        <response>Comparable to a two way street, this edge is not constrained to a single direction and is symmetrical to each node it is connected to.</response>
+      </match>
+      <match order="16">
+        <premise>Directed Edge</premise>
+        <response>Comparable to a one way street, this edge is constrained to a single direction and is asymmetrical to each node it is connected to.</response>
+      </match>
+      <match order="2">
+        <premise>Nodes (Vertices)</premise>
+        <response>It represents the information that is contained in a single ADT.</response>
+      </match>
+      <match order="3">
+        <premise>Edges</premise>
+        <response>Enables the connection between nodes and networks.</response>
+      </match>
+      <match order="4">
+        <premise>Directed Gaph</premise>
+        <response>Sets of nodes where all edges are directed from one vertex to another.</response>
+      </match>
+      <match order="5">
+        <premise>Undirected Graph</premise>
+        <response>Set of nodes where all edges are bidirectional.</response>
+      </match>
+      <match order="6">
+        <premise>Graph Theory</premise>
+        <response>This models pairwise relations between objects from a certain collection using a mathematical structure.</response>
+      </match>
+      <match order="7">
+        <premise>Graph Algorithm</premise>
+        <response>This algorithm takes as an input one or more graphs.</response>
+      </match>
+      <match order="8">
+        <premise>Path</premise>
+        <response>A sequence of nodes with an edge between each consecutive pair.</response>
+      </match>
+      <match order="9">
+        <premise>NetworkX</premise>
+        <response>A python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks.</response>
+      </match>
+    </matches>
+  </exercise>
+</section>

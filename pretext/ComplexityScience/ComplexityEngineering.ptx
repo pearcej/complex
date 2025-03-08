@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<section xml:id="ComplexityEngineering">
+  <title>Complexity Engineering</title>
+  <p>We  have  been  talking  about  complex  systems  in  the  context  of  science,  but complexity is also a cause, and effect, of changes in engineering and the design of social systems:</p>
+  <p>
+    <term>Centralized &#x2192; decentralized</term>
+  </p>
+  <p>Centralized systems are conceptually simple and  easier  to  analyze,  but  decentralized  systems  can  be  more  robust. For example, in the World Wide Web clients send requests to centralized servers;  if the servers are down,  the service is unavailable.  In peer-to-peer networks, <em>every</em> node is both a client and a server.  To take down the service, you have to take down every node.</p>
+  <p>
+    <term>One-to-many &#x2192; many-to-many</term>
+  </p>
+  <p>In many communication systems, broad-cast services are being augmented, and sometimes replaced, by services that allow users to communicate with each other and create, share, and modify content.</p>
+  <p>
+    <term>Top-down &#x2192; bottom-up</term>
+  </p>
+  <p>In social,  political and economic systems,  many activities  that  would  normally  be  centrally  organized  now  operate  as grassroots movements.  Even armies, which are the canonical example of hierarchical structure, are moving toward devolved command and control.</p>
+  <p>
+    <term>Analysis &#x2192; computation</term>
+  </p>
+  <p>In classical engineering, the space of feasible de-signs is limited by our capability for analysis.  For example,  designing the Eiffel Tower was possible because Gustave Eiffel developed novel analytic techniques,  in  particular  for dealing with wind  load.  Now  tools for computer-aided design and analysis make it possible to build almost anything  that  can  be  imagined.   Frank  Gehry's  Guggenheim  Museum Bilbao is a great example.</p>
+  <p>
+    <term>Isolation &#x2192; interaction</term>
+  </p>
+  <p>In  classical  engineering,  the  complexity  of  large systems  is  managed  by  isolating  components  and  minimizing  interactions.  This is still an important engineering principle; nevertheless, the availability of computation makes it increasingly feasible to design systems with complex interactions between components.</p>
+  <p>
+    <term>Design &#x2192; search</term>
+  </p>
+  <p>Engineering is sometimes described as a search for solutions in a landscape of possible designs.  Increasingly, the search process can be automated.  For example, genetic algorithms explore large design spaces  and  discover  solutions  human  engineers  would  not  imagine  (or possibly even like).  The ultimate genetic algorithm, evolution, notoriously generates designs that violate the rules of human engineering.</p>
+</section>

@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<section xml:id="AnalysisOfGraphAlgorithms">
+  <title>Analysis of Graph Algorithms</title>
+  <p>Earlier in this chapter we presented an algorithm for checking whether a graph is connected; in the next few chapters, we will see other graph algorithms. Along the way, we will analyze the performance of those algorithms, figuring out how their run times grow as the size of the graphs increases.</p>
+  <p>The order of growth for graph algorithms is usually expressed as a function of <math>n</math>, the number of vertices (nodes), and <math>m</math>, the number of edges.</p>
+  <p>As an example, let's analyze <c>reachable_nodes</c> from <xref ref="graphs_graphs_graphs_graphs_connected"/></p>
+  <pre>def reachable_nodes(G, start):
+seen = set()
+stack = [start]
+while stack:
+    node = stack.pop()
+    if node not in seen:
+        seen.add(node)
+        stack.extend(G.neighbors(node))
+return seen</pre>
+  <p>Each time through the loop, we pop a node off the stack; by default, pop removes and returns the last element of a list, which is a constant time operation.</p>
+  <p>Next we check whether the node is in <c>seen</c>, which is a set, so checking membership is constant time.</p>
+  <p>If the node is not already in <c>seen</c>, we add it, which is constant time, and then add the neighbors to the stack, which is linear in the number of neighbors.</p>
+  <p>To express the run time in terms of <math>n</math> and <math>m</math>, we can add up the total number of times each node is added to <c>seen</c> and <c>stack</c>.</p>
+  <p>Each node is only added to <c>seen</c> once, so the total number of additions is <math>n</math>.</p>
+  <p>But nodes might be added to <c>stack</c> many times, depending on how many neighbors they have. If a node has <math>k</math> neighbors, it is added to <c>stack</c> <math>k</math> times. Of course, if it has <math>k</math> neighbors, that means it is connected to <math>k</math> edges.</p>
+  <p>So the total number of additions to <c>stack</c> is the total number of edges, <math>m</math>, doubled because we consider every edge twice.</p>
+  <p>Therefore, the order of growth for this function is <math>O(n + m)</math>, which is a convenient way to say that the run time grows in proportion to either n or m, whichever is bigger.</p>
+  <p>If we know the relationship between <math>n</math> and <math>m</math>, we can simplify this expression. For example, in a complete graph the number of edges is <math>n(n&#x2212;1)/2</math>, which is in <math>O(n^2)</math>. So for a complete graph, <c>reachable_nodes</c> is quadratic in <math>n</math>.</p>
+  <exercise label="question3_9">
+    <statement>
+      <p> It is possible for a node to be added to the stack multiple times depending on the amount of neighbors the node has</p>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement>
+          <p>True</p>
+        </statement>
+        <feedback>
+          <p>Correct, if a node has k neighbors, it is added to stack k times.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>False</p>
+        </statement>
+        <feedback>
+          <p>Incorrect, it depends on the amount of neighbors the node has.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</section>

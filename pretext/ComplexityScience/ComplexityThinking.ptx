@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<section xml:id="ComplexityThinking">
+  <title>Complexity Thinking</title>
+  <p>We are getting farther afield now, but the shifts we are postulating in the criteria of scientific modeling are related to 20th century developments in logic and epistemology.</p>
+  <p>
+    <term>Aristotelian logic &#x2192; many-valued logic</term>
+  </p>
+  <p>In traditional logic, any proposition is either true or false. This system lends itself to math-like proofs, but fails (in dramatic ways) for many real-world applications. Alternatives include many-valued logic, fuzzy logic, and other systems designed to handle indeterminacy, vagueness, and uncertainty. Bart Kosko discusses some of these systems in <em>Fuzzy Thinking</em>.</p>
+  <p>
+    <term>Frequentist probability &#x2192; Bayesianism</term>
+  </p>
+  <p>Bayesian probability has been around for centuries, but was not widely used until recently, facilitated by the availability of cheap computation and the reluctant acceptance of subjectivity in probabilistic claims. Sharon Bertsch McGrayne presents this history in <em>The Theory That Would Not Die</em>.</p>
+  <p>
+    <term>Objective &#x2192; subjective</term>
+  </p>
+  <p>The Enlightenment, and philosophic modernism, are based on belief in objective truth, that is, truths that are independent of the people that hold them. 20th century developments including quantum mechanics, Godel's Incompleteness Theorem, and Kuhn's study of the history of science called attention to seemingly unavoidable subjectivity in even <q>hard sciences</q> and mathematics. Rebecca Goldstein presents the historical context of Godel's proof in <em>Incompleteness</em>.</p>
+  <p>
+    <term>Physical law &#x2192; theory &#x2192; model</term>
+  </p>
+  <p>Some people distinguish between laws, theories, and models. Calling something a <q>law</q> implies that it is objectively true and immutable; <q>theory</q> suggests that it is subject to revision; and <q>model</q> concedes that it is a subjective choice based on simplifications and approximations.</p>
+  <p>But it is not clear that they are very different. Some concepts that are called laws are really definitions; others are, in effect, the assertion that a certain model predicts or explains the behavior of a system particularly well. We come back to the nature of physical laws in <xref ref="complexity-science_complexity-science_complexity-science_scale-free-networks_explanatory-models"/>, <xref ref="complexity-science_complexity-science_complexity-science_cellular-automatons_falsifiability"/>, and <xref ref="complexity-science_complexity-science_complexity-science_self-organized-criticality_reductionism-and-holism"/></p>
+  <p>
+    <term>Determinism &#x2192; indeterminism</term>
+  </p>
+  <p>Determinism is the view that all events are caused, inevitably, by prior events. Forms of indeterminism include randomness, probabilistic causation, and fundamental uncertainty. We will come back to this topic in <xref ref="complexity-science_complexity-science_complexity-science_cellular-automatons_determinism"/> and <xref ref="complexity-science_complexity-science_complexity-science_herds-flocks-and-traffic-jams_emergence-and-free-will"/></p>
+  <p>This chapter is an overview of the themes coming up in the book, but not all of it will make sense before you see the examples. When you get to the end of the book, you might find it helpful to read this chapter again.</p>
+</section>

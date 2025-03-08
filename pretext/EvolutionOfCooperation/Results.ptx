@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<section xml:id="Results">
+  <title>Results</title>
+  <p>Suppose we start with a population of three agents: one always cooperates, one always defects, and one plays the TFT strategy. If we run <c>Tournament.melee</c> with this population, the cooperator gets 1.5 points per round, the TFT agent gets 1.9, and the defector gets 3.33. This result suggests that <q>always defect</q> should quickly become the dominant strategy.</p>
+  <p>But <q>always defect</q> contains the seeds of its own destruction. If nicer strategies are driven to extinction, the defectors have no one to take advantage of. Their fitness drops, and they become vulnerable to invasion by cooperators.</p>
+  <p>Based on this analysis, it is not easy to predict how the system will behave: will it find a stable equilibrium, or oscillate between various points in the genotype landscape? Let's run the simulation and find out!</p>
+  <p>I start with 100 identical agents who always defect, and run the simulation for 5000 steps:</p>
+  <pre>tour = Tournament()
+agents = make_identical_agents(100, list('DDDDDDD'))
+sim = PDSimulation(tour, agents)</pre>
+  <figure align="center" xml:id="id1">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 14.1: Average fitness (points scored per round of Prisoner's Dilemma)</caption>
+    <image source="EvolutionOfCooperation/Figures/AVG_FIT.png" width="50%" alt="&quot;Figure 14.1: Average fitness (points scored per round of Prisoner&#x2019;s Dilemma)&quot;"/>
+  </figure>
+  <p><xref ref="eoc-fig-1"/> shows mean fitness over time (using the <c>MeanFitness</c> instrument from <xref ref="evolution-of-cooperation_evolution-of-cooperation_evolution-of-cooperation_evolution_evidence-of-evolution"/>). Initially mean fitness is 1, because when defectors face each other, they get only 1 point each per round.</p>
+  <p>After about 500 time steps, mean fitness increases to nearly 3, which is what cooperators get when they face each other. However, as we suspected, this situation in unstable. Over the next 500 steps, mean fitness drops below 2, climbs back toward 3, and continues to oscillate.</p>
+  <p>The rest of the simulation is highly variable, but with the exception of one big drop, mean fitness is usually between 2 and 3, with the long-term mean close to 2.5.</p>
+  <p>And that's not bad! It's not quite a utopia of cooperation, which would average 3 points per round, but it's a long way from the dystopia of perpetual defection. And it's a lot better than what we might expect from the natural selection of self-interested agents.</p>
+  <p>To get some insight into this level of fitness, let's look at a few more <c>instruments</c>. <c>Niceness</c> measures the fraction of cooperation in the genotypes of the agents after each time step:</p>
+  <pre>class Niceness(Instrument):
+
+    def update(self, sim):
+        responses = np.array([agent.values
+                            for agent in sim.agents])
+        metric = np.mean(responses == 'C')
+        self.metrics.append(metric)</pre>
+  <p><c>responses</c> is an array with one row for each agent and one column for each element of the genome. <c>metric</c> is the fraction of elements that are &#x2018;C', averaged across agents.</p>
+  <figure align="center" xml:id="id2">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 14.2: Average niceness across all genomes in the population (left), and fraction of population that cooperates in the first round (right).</caption>
+    <image source="EvolutionOfCooperation/Figures/AVG_NICE.png" width="50%" alt="&quot;Figure 14.2: Average niceness across all genomes in the population (left), and fraction of population that cooperates in the first round (right).&quot;"/>
+  </figure>
+  <p><xref ref="eoc-fig-2"/> (left) shows the results: starting from 0, average niceness increases quickly to 0.75, then oscillates between 0.4 and 0.85, with a long-term mean near 0.65. Again, that's a lot of niceness!</p>
+  <p>Looking specifically at the opening move, we can track the fraction of agents that cooperate in the first round. Here's the <c>instrument</c>:</p>
+  <pre>class Opening(Instrument):
+
+    def update(self, sim):
+        responses = np.array([agent.values[0]
+                            for agent in sim.agents])
+        metric = np.mean(responses == 'C')
+        self.metrics.append(metric)</pre>
+  <p><xref ref="eoc-fig-2"/> (right) shows the results, which are highly variable. The fraction of agents who cooperate in the first round is often near 1, and occasionally near 0. The long-term average is close to 0.65, similar to overall niceness. These results are consistent with Axelrod's tournaments; in general, nice strategies do well.</p>
+  <p>The other characteristics Axelrod identifies in successful strategies are retaliation and forgiveness. To measure retaliation, we define this <c>instrument</c>:</p>
+  <pre>class Retaliating(Instrument):
+
+    def update(self, sim):
+        after_d = np.array([agent.values[2::2]
+                            for agent in sim.agents])
+        after_c = np.array([agent.values[1::2]
+                            for agent in sim.agents])
+        metric = np.mean(after_d=='D') - np.mean(after_c=='D')</pre>
+  <p><c>Retaliating</c> compares the number of elements in all genomes where an agent defects after the opponent defects (elements 2, 4, and 6) with the number of places where an agents defects after the opponent cooperates. As you might expect by now, the results vary substantially (you can see the graph in the notebook). On average the difference between these fractions is less than 0.1, so if agents defect 30% of the time after the opponent cooperates, they might defect 40% of the time after a defection.</p>
+  <p>This result provides weak support for the claim that successful strategies retaliate. But maybe it's not necessary for all agents, or even many, to be retaliatory; if there is at least some tendency toward retaliation in the population as a whole, that might be enough to prevent high-defection strategies from gaining ground.</p>
+  <p>To measure forgiveness, we define one more <c>instrument</c> to see whether agents might be more likely to cooperate after D-C in the previous two rounds, compared to C-D. In the simulations, there is no evidence for this particular kind of forgiveness. On the other hand, the strategies in these simulations are necessarily forgiving because they consider only the previous two rounds of history. In this context, forgetting is a kind of forgiving.</p>
+  <exercise label="Ch13.8_Q1">
+    <statement>
+      <p> How many rounds do the strategies in these simulations take into consideration when choosing weather to cooperate or defect?</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>4 rounds</p>
+        </statement>
+        <feedback>
+          <p>Incorrect, please look at the amount of rounds again.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>1 round</p>
+        </statement>
+        <feedback>
+          <p>Incorrect, please look at the amount of rounds again.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>2 rounds</p>
+        </statement>
+        <feedback>
+          <p>Correct, they only base their decisions based on the previous two rounds.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>It takes all of the rounds into consideration.</p>
+        </statement>
+        <feedback>
+          <p>Incorrect, there is a number of rounds after which the strategies "forget" about what happened.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</section>

@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<section xml:id="Matching-11">
+  <title>Matching</title>
+  <exercise label="matching_9">
+    <statement>
+      <p>
+</p>
+    </statement>
+    <matches>
+      <match order="1">
+        <premise>Avalanche</premise>
+        <response>When a single grain causes the cells to topple which then affects a substantial friction of the grid.</response>
+      </match>
+      <match order="10">
+        <premise>Sand Pile Model</premise>
+        <response>A 2-D cellular automaton where the state of each cell represents the slope of part of a sand pile.</response>
+      </match>
+      <match order="11">
+        <premise>Self-Organized Critically (SOC)</premise>
+        <response>The tendency of some systems to evolve toward, and stay in, a critical state.</response>
+      </match>
+      <match order="12">
+        <premise>Signal</premise>
+        <response>Any quantity that varies in time.</response>
+      </match>
+      <match order="13">
+        <premise>Ultimate Cause</premise>
+        <response>A deeper kind of explanation for a large avalanche.</response>
+      </match>
+      <match order="2">
+        <premise>Box-Counting</premise>
+        <response>A way of determining the fractal dimension of a set S in a Euclidean space Rn.</response>
+      </match>
+      <match order="3">
+        <premise>Fractal geometry</premise>
+        <response>Patterns have self-similarity, they are similar when compared  to the copies of the whole.</response>
+      </match>
+      <match order="4">
+        <premise>Holistic Model</premise>
+        <response>This model focuses more on similarities between systems and less interest in analogous parts.</response>
+      </match>
+      <match order="5">
+        <premise>Noise</premise>
+        <response>It is a signal which contains many frequency components in the context of signal processing</response>
+      </match>
+      <match order="6">
+        <premise>Pink Noise</premise>
+        <response>In this, low-frequency components have more power than high-frequency components.</response>
+      </match>
+      <match order="7">
+        <premise>Power Spectrum</premise>
+        <response>A function that shows the power of each frequency component.</response>
+      </match>
+      <match order="8">
+        <premise>Proximate Cause</premise>
+        <response>The cause that is most immediately responsible for a large avalanche.</response>
+      </match>
+      <match order="9">
+        <premise>Reductionist Model</premise>
+        <response>Describing a system by describing their interactions and parts.</response>
+      </match>
+    </matches>
+  </exercise>
+</section>

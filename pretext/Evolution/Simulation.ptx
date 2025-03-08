@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<section xml:id="Simulation">
+  <title>Simulation</title>
+  <p xml:id="evolution_evo-5" names="evo_5">Now that we have agents and a fitness landscape, we will define a class called <c>Simulation</c> that simulates the creation, reproduction, and death of the agents. To avoid getting bogged down, we will see a simplified version of the code here; you can see the details in the notebook for this chapter.</p>
+  <p>Here's the definition of <c>Simulation</c>:</p>
+  <pre>class Simulation:
+
+    def __init__(self, fit_land, agents):
+        self.fit_land = fit_land
+        self.agents = agents</pre>
+  <p>The attributes of a Simulation are:</p>
+  <p>
+    <ul>
+      <li>
+        <p><c>fit_land</c>: A reference to a <c>FitnessLandscape</c> object.</p>
+      </li>
+      <li>
+        <p><c>agents</c>: An array of <c>Agent</c> objects.</p>
+      </li>
+    </ul>
+  </p>
+  <p>The most important function in <c>Simulation</c> is <c>step</c>, which simulates one time step:</p>
+  <pre># class Simulation:
+
+    def step(self):
+        n = len(self.agents)
+        fits = self.get_fitnesses()
+
+        # see who dies
+        index_dead = self.choose_dead(fits)
+        num_dead = len(index_dead)
+
+        # replace the dead with copies of the living
+        replacements = self.choose_replacements(num_dead, fits)
+        self.agents[index_dead] = replacements</pre>
+  <p><c>step</c> uses three other methods:</p>
+  <p>
+    <ul>
+      <li>
+        <p><c>get_fitnesses</c>: returns an array containing the fitness of each agent.</p>
+      </li>
+      <li>
+        <p><c>choose_dead</c>: decides which agents die during this time step, and returns an array that contains the indices of the dead agents.</p>
+      </li>
+      <li>
+        <p><c>choose_replacements</c>: decides which agents reproduce during this time step, invokes copy on each one, and returns an array of new <c>Agent</c> objects.</p>
+      </li>
+    </ul>
+  </p>
+  <p>In this version of the simulation, the number of new agents during each time step equals the number of dead agents, so the number of live agents is constant.</p>
+  <exercise label="q_12.5">
+    <statement>
+      <p> What happens when an agent dies in this version of the simulation?</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>If an agent dies then a new agent will be made in the next time step so the amount of agents is always changing.</p>
+        </statement>
+        <feedback>
+          <p>Sorry but when one agent dies another is made within that same time step so the amount of agents is constant.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>If an agent dies no new agent will take its place leading to all the agents being dead eventually.</p>
+        </statement>
+        <feedback>
+          <p>Sorry but a new agent will be made to replace an agent if it dies.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>If an agent dies then a new agent is made within that same time step so that the number of live agents is constant.</p>
+        </statement>
+        <feedback>
+          <p>Correct!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>None of the above.</p>
+        </statement>
+        <feedback>
+          <p>Incorrect. There is one correct answer.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="CH12.5_Q2">
+    <statement>
+      <p>
+</p>
+    </statement>
+    <matches>
+      <match order="1">
+        <premise>fit_land</premise>
+        <response>A reference to a FitnessLandscape object.</response>
+      </match>
+      <match order="2">
+        <premise>agents</premise>
+        <response> An array of Agent objects.</response>
+      </match>
+      <match order="3">
+        <premise>git_fitnesses</premise>
+        <response>Returns an array containing the fitness of each agent.</response>
+      </match>
+      <match order="4">
+        <premise>choose_dead</premise>
+        <response>Decides which agents die during this time step, and returns an array that contains the indices of the dead agents.</response>
+      </match>
+      <match order="5">
+        <premise>choose_replacements</premise>
+        <response>Decides which agents reproduce during this time step, invokes copy on each one, and returns an array of new Agent objects.</response>
+      </match>
+    </matches>
+  </exercise>
+</section>

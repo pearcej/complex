@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<section xml:id="changes">
+  <title>Changes from the Second Edition of <em>Think Complexity</em></title>
+  <p>by Jan Pearce</p>
+  <p>I have been teaching from Allen Downey's excellent
+            <url href="http://greenteapress.com/complexity/" visual="http://greenteapress.com/complexity/">Think Complexity</url>
+            for a number of years now. I was motivated to create a Runestone edition of this book,
+            so it could be interactive. I also plan to add some additional material on computational complexity in addition to the material on complexity science.</p>
+  <p>Thus far, I have added a chapter on algorithm analysis based on a chapter in
+            <url href="https://runestone.academy/runestone/static/cppds/index.html" visual="https://runestone.academy/runestone/static/cppds/index.html">Problem Solving with Algorithms and Data Structures using C++</url>
+            by Brad Miller, David Ranum, and Jan Pearce. To facilitate online work,
+            the possibility of using Google Colaboratory notebooks has been added in
+            addition to the original Jupyter Noteooks written by Allen Downey.</p>
+  <p>In future editions, I plan to add more material on the traveling salesman problem and
+            the use of heuristics as well as complexity classes as well as the important P vs NP problem.</p>
+</section>

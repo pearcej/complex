@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<section xml:id="Diffusion">
+  <title>Diffusion</title>
+  <p>In 1952 Alan Turing published a paper called <q>The chemical basis of morphogenesis</q>, which describes the behavior of systems involving two chemicals that diffuse in space and react with each other. He showed that these systems produce a wide range of patterns, depending on the diffusion and reaction rates, and conjectured that systems like this might be an important mechanism in biological growth processes, particularly the development of animal coloration patterns.</p>
+  <p>Turing's model is based on differential equations, but it can be implemented using a cellular automaton.</p>
+  <p>Before we get to Turing's model, we'll start with something simpler: a diffusion system with just one chemical. We'll use a 2-D CA where the state of each cell is a continuous quantity (usually between 0 and 1) that represents the concentration of the chemical.</p>
+  <p>We'll model the diffusion process by comparing each cell with the average of its neighbors. If the concentration of the center cell exceeds the neighborhood average, the chemical flows from the center to the neighbors. If the concentration of the center cell is lower, the chemical flows the other way.</p>
+  <p>The following kernel computes the difference between each cell and the average of its neighbors:</p>
+  <pre>kernel = np.array([[0, 1, 0],
+                   [1,-4, 1],
+                   [0, 1, 0]])</pre>
+  <p>Using <c>np.correlate2d</c>, we can apply this kernel to each cell in an array:</p>
+  <pre>c = correlate2d(array, kernel, mode='same')</pre>
+  <p>We'll use a diffusion constant, <c>r</c>, that relates the difference in concentration to the rate of flow:</p>
+  <pre>array += r * c</pre>
+  <figure align="center" xml:id="id1-23">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 9.1: A simple diffusion model after 0, 5, and 10 steps.</caption>
+    <image source="PhysicalModeling/Figures/SIMPLE_DIF.png" width="50%" alt="&quot;Figure 9.1: A simple diffusion model after 0, 5, and 10 steps.&quot;"/>
+  </figure>
+  <p><xref ref="pm-fig-1"/> shows results for a CA with size <c>n=9</c>, diffusion constant <c>r=0.1</c>, and initial concentration 0 everywhere except for an <q>island</q> in the middle. The figure shows the starting configuration and the state of the CA after 5 and 10 steps. The chemical spreads from the center outward, continuing until the concentration is the same everywhere.</p>
+  <exercise label="q_8.2">
+    <statement>
+      <p>Using a 2-D CA we can model the diffusion processes. Drag and drop the outcomes of diffusion in a 2-D CA to the processes.</p>
+    </statement>
+    <matches>
+      <match order="1">
+        <premise>The chemical flows from the neighbors to the center.</premise>
+        <response>If the concentration of the center cell is lower than the neighborhood average.</response>
+      </match>
+      <match order="2">
+        <premise>The chemical flows from the center to the neighbors.</premise>
+        <response>If the concentration of the center cell exceeds the neighborhood average.</response>
+      </match>
+    </matches>
+  </exercise>
+  <exercise label="q_8.2.2">
+    <statement>
+      <p> The usual range of concentration of the chemical in a 2-D CA model where the state of each cell is a continuous quantity is between <BlankNode input_name="x"/> and <BlankNode input_name="x"/>. <em>Please write the answer in numeral</em>. <var/>  <var/>  </p>
+    </statement>
+    <setup>
+      <var>
+        <condition number="[0, 0]">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*zero\s*$">
+          <feedback>
+            <p>Please write your answer in numeral form.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Incorrect. Please try again.</p>
+          </feedback>
+        </condition>
+      </var>
+      <var>
+        <condition number="[1, 1]">
+          <feedback>
+            <p>Correct.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*one\s*$">
+          <feedback>
+            <p>Please write your answer in numeral.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Incorrect. Please refer back to section.</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+</section>

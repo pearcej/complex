@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<section xml:id="Matching-6">
+  <title>Matching</title>
+  <exercise label="matching_Ch12">
+    <statement>
+      <p>
+</p>
+    </statement>
+    <matches>
+      <match order="1">
+        <premise>Environment</premise>
+        <response>The surroundings or conditions in which a person, animal, or plant lives or operates.</response>
+      </match>
+      <match order="10">
+        <premise>Differential Survival (Reproduction)</premise>
+        <response>Differences that idividuals have between each other that affect their reproducibility or survivability.</response>
+      </match>
+      <match order="11">
+        <premise>Variation</premise>
+        <response>differences between individuals.</response>
+      </match>
+      <match order="12">
+        <premise>Adaptation</premise>
+        <response>Species interact with their environments in ways that seem too good to happen by chance.</response>
+      </match>
+      <match order="13">
+        <premise>Increasing Complexity</premise>
+        <response>More complex organisms did not start appearing till later in earths geological record.</response>
+      </match>
+      <match order="14">
+        <premise>Increasing Diversity</premise>
+        <response>The ammount of species on earth has generally increased over time.</response>
+      </match>
+      <match order="2">
+        <premise>Fitness</premise>
+        <response>It is the ability of an agent to survive or reproduce.</response>
+      </match>
+      <match order="3">
+        <premise>Fitness Contributions</premise>
+        <response>Agent genotype corresponding to its location in the fitness landscape.</response>
+      </match>
+      <match order="4">
+        <premise>Fitness Landscape</premise>
+        <response>It is a function that maps from genotype to fitness.</response>
+      </match>
+      <match order="5">
+        <premise>Genotype</premise>
+        <response>This is the information that will get copied when the agent replicates itself.</response>
+      </match>
+      <match order="6">
+        <premise>Natural Selection</premise>
+        <response>The process in which the survival and reproduction of individuals depend on their inherited variations.</response>
+      </match>
+      <match order="7">
+        <premise>Phenotype</premise>
+        <response>Organism's genotype and how it is related to its physical form and capabilities.</response>
+      </match>
+      <match order="8">
+        <premise>Theory of Evolution by Natural Selection</premise>
+        <response>Existing species change due to natural selection creating a new species.</response>
+      </match>
+      <match order="9">
+        <premise>Replicators</premise>
+        <response>Way for agents to reproduce.</response>
+      </match>
+    </matches>
+  </exercise>
+</section>

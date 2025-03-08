@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<section xml:id="FractalsAndPercolationModels">
+  <title>Fractals and Percolation Models</title>
+  <figure align="center" xml:id="id1-pm-7">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 9.8: Percolation models with <literal>q=0.6</literal> and <literal>n=100</literal>, <literal>200</literal>, and <literal>300</literal>.</caption>
+    <image source="PhysicalModeling/Figures/PERC_MODEL.png" width="50%"/>
+  </figure>
+  <p>Now let's get back to percolation models. <xref ref="pm-fig-8"/> shows clusters of wet cells in percolation simulations with <c>p=0.6</c> and <c>n=100</c>, <c>200</c>, and <c>300</c>. Informally, they resemble fractal patterns seen in nature and in mathematical models.</p>
+  <p>To estimate their fractal dimension, we can run CAs with a range of sizes, count the number of wet cells in each percolating cluster, and then see how the cell counts scale as we increase the size of the array.</p>
+  <p>The following loop runs the simulations:</p>
+  <pre>res = []
+for size in sizes:
+    perc = Percolation(size, q)
+    if test_perc(perc):
+        num_filled = perc.num_wet() - size
+        res.append((size, size**2, num_filled))</pre>
+  <p>The result is a list of tuples where each tuple contains <c>size</c>, <c>size**2</c>, and the number of cells in the percolating cluster (not including the initial wet cells in the top row).</p>
+  <figure align="center" xml:id="id2-9">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 9.9: Number of cells in the percolating cluster versus CA size.</caption>
+    <image source="PhysicalModeling/Figures/NUM_CELL_IN_PERC_CLUSTER.png" width="50%" alt="&quot;Figure 9.9: Number of cells in the percolating cluster versus CA size.&quot;"/>
+  </figure>
+  <p><xref ref="pm-fig-9"/> shows the results for a range of sizes from 10 to 100. The dots show the number of cells in each percolating cluster. The slope of a line fitted to these dots is often near 1.85, which suggests that the percolating cluster is, in fact, fractal when <c>q</c> is near the critical value.</p>
+  <p>When <c>q</c> is larger than the critical value, nearly every porous cell gets filled, so the number of wet cells is close to <math>q * size^2</math>, which has dimension 2.</p>
+  <p>When <c>q</c> is substantially smaller than the critical value, the number of wet cells is proportional to the linear size of the array, so it has dimension 1.</p>
+  <exercise label="q_8.7">
+    <statement>
+      <p> When is a graph dimension 2?</p>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement>
+          <p>When the value q is larger than the critical value</p>
+        </statement>
+        <feedback>
+          <p>Correct!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>When the value  q is smaller than the critical value</p>
+        </statement>
+        <feedback>
+          <p>No, this would mean that the number of wet cells is proportional to the linear size of the array, so it has dimension 1.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>When the value  q is the same as the critical value</p>
+        </statement>
+        <feedback>
+          <p>Not quite, this would not typically happen.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>When the value q is near the critical value.</p>
+        </statement>
+        <feedback>
+          <p>No, this suggests that the percolating cluster is, in fact, fractal.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</section>

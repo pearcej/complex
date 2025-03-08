@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<section xml:id="Glossary-7">
+  <title>Glossary</title>
+  <p><term>Breadth-First Search:</term> This algorithm starts at the root of the tree and explores all of the neighbor nodes at the present level before moving on to the nodes at the next level.</p>
+  <p><term>Clique:</term> A set of nodes that are completely connected; that is, there are edges between all pairs of nodes in the set.</p>
+  <p><term>Clustering Coefficient:</term> A measure of the degree to which nodes in a graph tend to cluster together.</p>
+  <p><term>Clustering:</term> A measure of the <q>cliquishness</q> of the graph.</p>
+  <p><term>Depth-First Search:</term> An algorithm for traversing or searching a tree or graph data structures. It starts at the root node and explores as far as possible along each branch before backtracking.</p>
+  <p><term>Degree:</term> The number of neighbors a node has.</p>
+  <p><term>Dijkstra's Algorithm:</term> Solves the <q>single source shortest path problem</q>, which means that it finds the minimum distance from a given <q>source</q> node to every other node in the graph (or at least every connected node).</p>
+  <p><term>Generative Model:</term> Tries to explain a phenomenon by modeling the process that builds or leads to the phenomenon.</p>
+  <p><term>Path Length:</term> A measure of the average distance between two nodes.</p>
+  <p><term>Queue:</term> A data structure in which elements are removed in the same order they were entered.</p>
+  <p><term>Regular Graphs:</term> In a regular graph every node has the same number of neighbors.</p>
+  <p><term>Ring Lattice:</term> Is a kind of regular graph, with <math>n</math> nodes, the nodes can be arranged in a circle with each node connected to the <math>k</math> nearest neighbors.</p>
+  <p><term>Watts-Strogatz Graphs:</term> A random graph generation model that produces graphs with small-world properties, including short average path lengths and high clustering.</p>
+</section>

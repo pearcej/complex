@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<section xml:id="Determinism">
+  <title>Determinism</title>
+  <p>The existence of Class 3 CAs is surprising. To explain how surprising, let's start with philosophical <term>determinism</term>. Many philosophical stances are hard to define precisely because they come in a variety of flavors. It might be useful to define them with a list of statements ordered from weak to strong:</p>
+  <p><term>D1:</term>  Deterministic models can make accurate predictions for some physical systems.</p>
+  <p><term>D2:</term>  Many physical systems can be modeled by deterministic processes, but some are intrinsically random.</p>
+  <p><term>D3:</term>  All events are caused by prior events, but many physical systems are nevertheless fundamentally unpredictable.</p>
+  <p><term>D4:</term>  All events are caused by prior events, and can (at least in principle) be predicted.</p>
+  <p>Our goal in constructing this range is to make D1 so weak that virtually everyone would accept it, D4 so strong that almost no one would accept it, with intermediate statements that some people accept.</p>
+  <p>The center of mass of world opinion swings along this range in response to historical developments and scientific discoveries. Prior to the scientific revolution, many people regarded the working of the universe as fundamentally unpredictable or controlled by supernatural forces. After the triumphs of Newtonian mechanics, some optimists came to believe something like D4; for example, in 1814 Pierre-Simon Laplace wrote:</p>
+  <p>We may regard the present state of the universe as the effect of its past and the cause of its future. An intellect which at a certain moment would know all forces that set nature in motion, and all positions of all items of which nature is composed, if this intellect were also vast enough to submit these data to analysis, it would embrace in a single formula the movements of the greatest bodies of the universe and those of the tiniest atom; for such an intellect nothing would be uncertain and the future just like the past would be present before its eyes.
+            This <q>intellect</q> is now called <q>Laplace's Demon</q>. The word <q>demon</q> in this context has the sense of <q>spirit</q>, with no implication of evil.</p>
+  <p>Discoveries in the 19th and 20th centuries gradually dismantled Laplace's hope. Thermodynamics, radioactivity, and quantum mechanics posed successive challenges to strong forms of determinism.</p>
+  <p>In the 1960s chaos theory showed that in some deterministic systems prediction is only possible over short time scales, limited by precision in the measurement of initial conditions.</p>
+  <p>Most of these systems are continuous in space (if not time) and nonlinear, so the complexity of their behavior is not entirely surprising. Wolfram's demonstration of complex behavior in simple cellular automatons is more surprising &#x2014; and disturbing, at least to a deterministic world view.</p>
+  <p>So far we have focused on scientific challenges to determinism, but the longest-standing objection is the apparent conflict between determinism and human free will. Complexity science provides a possible resolution of this conflict; We'll come back to this topic in <xref ref="cellular-automatons_cellular-automatons_cellular-automatons_herds-flocks-and-traffic-jams_emergence-and-free-will"/>.</p>
+</section>

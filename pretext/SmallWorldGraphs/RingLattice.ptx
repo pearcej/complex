@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<section xml:id="RingLattice">
+  <title>Ring lattice</title>
+  <figure align="center" xml:id="id1-15">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 5.1: A ring lattice with <math>n=10</math> and <math>k=4</math>.</caption>
+    <image source="SmallWorldGraphs/Figures/thinkcomplexity2007.png" width="50%" alt="&quot;Figure 5.1: A ring lattice with n=10 and k=4.&quot;"/>
+  </figure>
+  <p>A regular graph is a graph where each node has the same number of neighbors; the number of neighbors is also called the <term>degree</term> of the node.</p>
+  <p>A <term>ring lattice</term> is a kind of regular graph, which Watts and Strogatz use as the basis of their model. In a ring lattice with <math>n</math> nodes, the nodes can be arranged in a circle with each node connected to the <math>k</math> nearest neighbors.</p>
+  <p>For example, a ring lattice with <math>n=3</math> and <math>k=2</math> would contain the following edges: <math>(0, 1)</math>, <math>(1, 2)</math>, and <math>(2, 0)</math>. Notice that the edges <q>wrap around</q> from the highest-numbered node back to <math>0</math>.</p>
+  <p>More generally, we can enumerate the edges like this:</p>
+  <pre>def adjacent_edges(nodes, halfk):
+n = len(nodes)
+for i, u in enumerate(nodes):
+    for j in range(i+1, i+halfk+1):
+        v = nodes[j % n]
+        yield u, v</pre>
+  <p><c>adjacent_edges</c> takes a list of nodes and a parameter, <c>halfk</c>, which is half of <math>k</math>. It is a generator function that yields one edge at a time. It uses the modulus operator, <math>\%</math>, to wrap around from the highest-numbered node to the lowest.</p>
+  <p>We can test it like this:</p>
+  <pre>&gt;&gt;&gt; nodes = range(3)
+&gt;&gt;&gt; for edge in adjacent_edges(nodes, 1):
+...     print(edge)
+(0, 1)
+(1, 2)
+(2, 0)</pre>
+  <p>Now we can use <c>adjacent_edges</c> to make a ring lattice:</p>
+  <pre>def make_ring_lattice(n, k):
+G = nx.Graph()
+nodes = range(n)
+G.add_nodes_from(nodes)
+G.add_edges_from(adjacent_edges(nodes, k//2))
+return G</pre>
+  <p>Notice that <c>make_ring_lattice</c> uses floor division to compute <c>halfk</c>, so it is only correct if <c>k</c> is even. If <c>k</c> is odd, floor division rounds down, so the result is a ring lattice with degree <c>k-1</c>. As one of the exercises at the end of the chapter, you will generate regular graphs with odd values of <c>k</c>.</p>
+  <p>We can test <c>make_ring_lattice</c> like this:</p>
+  <pre>lattice = make_ring_lattice(10, 4)</pre>
+  <p><xref ref="swg-fig-1"/> shows the result.</p>
+</section>

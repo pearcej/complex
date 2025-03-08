@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<section xml:id="Glossary-8">
+  <title>Glossary</title>
+  <p><term>Complete Graph:</term>  A complete graph is a graph where every node is connected to every other.</p>
+  <p><term>Connected Graphs:</term> A graph is connected if there is a path from every node to every other node.</p>
+  <p><term>Directed Edge:</term> This kind of edge is constrained to a single direction and is asymmetrical to each node it is connected to. Also comparable to a one way street.</p>
+  <p><term>Directed Graph:</term>  A directed graph is a graph, i.e., a set of objects (called vertices or nodes) that are connected together, where all the edges are directed from one vertex to another.</p>
+  <p><term>ER Graphs:</term> The ER model is either of two closely related models for generating random graphs. The ER graph G(n, p) contains n nodes, and each pair of nodes is connected by an edge with probability p.</p>
+  <p><term>Edges:</term>  An edge of a network is one of the connections between the nodes (or vertices) of the network.</p>
+  <p><term>Graph Theory:</term>  Graph theory is the study of graphs, a mathematical structure used to model pairwise relations between objects from a certain collection. A graph in this context refers to a collection of vertices or nodes and a collection of ed.</p>
+  <p><term>Graph Algorithm:</term>   A graph algorithm is an algorithm that takes one or more graphs as inputs.</p>
+  <p><term>Graph:</term>  A graph is a representation of a system that contains discrete, interconnected elements.</p>
+  <p><term>NetworkX:</term>  NetworkX is a Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks.</p>
+  <p><term>Nodes</term><em>(vertices)</em><term>:</term>  A node represents the information contained in a single data structure. These nodes may contain a value or condition, or possibly serve as another independent data structure.</p>
+  <p><term>Path:</term>  A path is a sequence of nodes with an edge between each consecutive pair.</p>
+  <p><term>Random Graph:</term>   A graph with nodes and edges generated at random.</p>
+  <p><term>Stack:</term> A stack is an Abstract Data Type (ADT) in which elements are added or removed from the top of the stack, in a <q>last in first, first out</q> or LIFO order.</p>
+  <p><term>Undirected Edge:</term> This kind of edge is not constrained to a single direction and is symmetrical to each node it is connected to. Also is comparable to a two way street.</p>
+  <p><term>Undirected Graph:</term>  An undirected graph is a graph, i.e., a set of objects (called vertices or nodes) that are connected together, where all the edges are bidirectional.</p>
+</section>

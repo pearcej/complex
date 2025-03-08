@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<section xml:id="ImplementingSugarscape">
+  <title>Implementing Sugarscape</title>
+  <p>Sugarscape is more complicated than the previous models, so we won't present the entire implementation here. we will outline the structure of the code and you can see the details in the Jupyter notebook for this chapter, <url href="https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap11.ipynb" visual="https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap11.ipynb">chap11.ipynb</url>, which is in the repository for this book. If you are not interested in the details, you can skip this section.</p>
+  <p>During each step, the agent moves, harvests sugar, and ages. Here is the <c>Agent</c> class and its <c>step</c> method:</p>
+  <pre>class Agent:
+
+    def step(self, env):
+        self.loc = env.look_and_move(self.loc, self.vision)
+        self.sugar += env.harvest(self.loc) - self.metabolism
+        self.age += 1</pre>
+  <p>The parameter <c>env</c> is a reference to the environment, which is a <c>Sugarscape</c> object. It provides methods <c>look_and_move</c> and <c>harvest</c>:</p>
+  <p>
+    <ul>
+      <li>
+        <p><c>look_and_move</c> takes the location of the agent, which is a tuple of coordinates, and the range of the agent's vision, which is an integer. It returns the agent's new location, which is the visible cell with the most sugar.</p>
+      </li>
+      <li>
+        <p><c>harvest</c> takes the (new) location of the agent, and removes and returns the sugar at that location.</p>
+      </li>
+    </ul>
+  </p>
+  <p><c>Sugarscape</c> inherits from <c>Cell2D</c>, so it is similar to the other grid-based models we've seen.</p>
+  <p>The attributes include <c>agents</c>, which is a list of <c>Agent</c> objects, and <c>occupied</c>, which is a set of tuples, where each tuple contains the coordinates of a cell occupied by an agent.</p>
+  <p>Here is the <c>Sugarscape</c> class and its <c>step</c> method:</p>
+  <pre>class Sugarscape(Cell2D):
+
+    def step(self):
+
+        # loop through the agents in random order
+        random_order = np.random.permutation(self.agents)
+        for agent in random_order:
+
+            # mark the current cell unoccupied
+            self.occupied.remove(agent.loc)
+
+            # execute one step
+            agent.step(self)
+
+            # if the agent is dead, remove from the list
+            if agent.is_starving():
+                self.agents.remove(agent)
+            else:
+                # otherwise mark its cell occupied
+                self.occupied.add(agent.loc)
+
+        # grow back some sugar
+        self.grow()
+        return len(self.agents)</pre>
+  <p>During each step, the <c>Sugarscape</c> uses the NumPy function <c>permutation</c> so it loops through the agents in random order. It invokes step on each agent and then checks whether it is dead. After all agents have moved, some of the sugar grows back. The return value is the number of agents still alive.</p>
+  <p>I won't show more details here; you can see them in the notebook for this chapter. If you want to learn more about NumPy, you might want to look at these functions in particular:</p>
+  <p>
+    <ul>
+      <li>
+        <p><c>make_visible_locs</c>, which builds the array of locations an agent can see, depending on its vision. The locations are sorted by distance, with locations at the same distance appearing in random order. This function uses <c>np.random.shuffle</c> and <c>np.vstack</c>.</p>
+      </li>
+      <li>
+        <p><c>make_capacity</c>, which initializes the capacity of the cells using NumPy functions <c>indices</c>, <c>hypot</c>, <c>minimum</c>, and <c>digitize</c>.</p>
+      </li>
+      <li>
+        <p><c>look_and_move</c>, which uses <c>argmax</c>.</p>
+      </li>
+    </ul>
+  </p>
+  <exercise label="CH10.7_Q1">
+    <statement>
+      <p>
+</p>
+    </statement>
+    <matches>
+      <match order="1">
+        <premise>look_and_move</premise>
+        <response>Takes the location of the agent, which is a tuple of coordinates, and the range of the agent's vision, which is an integer. It returns the agent's new location, which is the visible cell with the most sugar.</response>
+      </match>
+      <match order="2">
+        <premise>harvest</premise>
+        <response>Takes the (new) location of the agent, and removes and returns the sugar at that location.</response>
+      </match>
+      <match order="3">
+        <premise>make_visible_locs</premise>
+        <response>Builds the array of locations an agent can see, depending on its vision. The locations are sorted by distance, with locations at the same distance appearing in random order. This function uses np.random.shuffle and np.vstack.</response>
+      </match>
+      <match order="4">
+        <premise>make_capacity</premise>
+        <response>Initializes the capacity of the cells using NumPy functions indices, hypot, minimum, and digitize.</response>
+      </match>
+    </matches>
+  </exercise>
+</section>

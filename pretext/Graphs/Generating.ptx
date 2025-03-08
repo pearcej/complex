@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<section xml:id="Generating">
+  <title>Generating Graphs</title>
+  <figure align="center" xml:id="id1-fig-cpp-reference">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 4.3: A complete graph with 10 nodes.</caption>
+    <image source="Graphs/Figures/thinkcomplexity2003.png" width="50%" alt="&quot;Figure 4.3: A complete graph with 10 nodes.&quot;"/>
+  </figure>
+  <p>We'll start by generating a <term>complete graph</term>, which is a graph where every node is connected to every other.</p>
+  <p>Here's a generator function that takes a list of nodes and enumerates all distinct pairs. If you are not familiar with generator functions.</p>
+  <pre>def all_pairs(nodes):
+for i, u in enumerate(nodes):
+    for j, v in enumerate(nodes):
+        if i&gt;j:
+            yield u, v</pre>
+  <p>We can use <c>all_pairs</c> to construct a complete graph:</p>
+  <pre>def make_complete_graph(n):
+    G = nx.Graph()
+    nodes = range(n)
+    G.add_nodes_from(nodes)
+    G.add_edges_from(all_pairs(nodes))
+    return G</pre>
+  <p><c>make_complete_graph</c> takes the number of nodes, <c>n</c>, and returns a new <c>Graph</c> with <c>n</c> nodes and edges between all pairs of nodes.</p>
+  <p>The following code makes a complete graph with 10 nodes and draws it:</p>
+  <pre>complete = make_complete_graph(10)
+nx.draw_circular(complete,
+             node_color=COLORS[2],
+             node_size=1000,
+             with_labels=True)</pre>
+  <p><xref ref="g-fig-3"/> shows the result. Soon we will modify this code to generate ER graphs, but first we'll develop functions to check whether a graph is connected.</p>
+</section>

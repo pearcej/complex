@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<section xml:id="Glossary-6">
+  <title>Glossary</title>
+  <p><term>Adaptation:</term> Species interact with their environments in ways that seem too complex, too intricate, and too clever to happen by chance.</p>
+  <p><term>Differential Survival (Reproduction):</term> The differences between individuals have to affect their ability to survive or reproduce.</p>
+  <p><term>Environment:</term> The surroundings or conditions in which a person, animal, or plant lives or operates.</p>
+  <p><term>Fitness:</term> Fitness is a quantity related to the ability of an agent to survive or reproduce.</p>
+  <p><term>Fitness Contributions:</term> The genotype of an agent, which corresponds to its location in the fitness landscape, is represented by a NumPy array of zeros and ones.</p>
+  <p><term>Fitness Landscape:</term> The function that maps from genotype to fitness.</p>
+  <p><term>Genotype:</term> The information that gets copied when the agent replicates.</p>
+  <p><term>Increasing Complexity:</term> The history of life on earth starts with relatively simple life forms, with more complex organisms appearing later in the geological record.</p>
+  <p><term>Increasing Diversity:</term> Over time the number of species on earth has generally increased (despite several periods of mass extinction).</p>
+  <p><term>Natural Selection:</term> The process in which inherited variations between individuals cause differences in survival and reproduction.</p>
+  <p><term>Phenotype:</term> The fitness landscape represents information about how the genotype of an organism is related to its physical form and capabilities.</p>
+  <p><term>Replicators:</term> We need a population of agents that can reproduce in some way. We'll start with replicators that make perfect copies of themselves. Later we'll add imperfect copying, that is, mutation.</p>
+  <p><term>Theory of Evolution by Natural Selection:</term> Claims that new species are created and existing species change due to natural selection.</p>
+  <p><term>Variation:</term> We need variability in the population, that is, differences between individuals.</p>
+</section>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<section xml:id="exercise-cellular">
+  <title>Exercises</title>
+  <p>The code for this chapter is in the Jupyter notebook <url href="https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap07.ipynb" visual="https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap07.ipynb">chap07.ipynb</url> in the repository for this book. Open this notebook, read the code, and run the cells. You can use this notebook to work on the exercises in this chapter.</p>
+  <p><term>Exercise 1:</term>  Write a version of <c>correlate</c> that returns the same result as <c>np.correlate</c> with <c>mode='same'</c>. Hint: use the NumPy function pad.</p>
+  <p><term>Exercise 2:</term>  This exercise asks you to experiment with Rule 110 and some of its spaceships.</p>
+  <p>
+    <ol label="1">
+      <li>
+        <p>Read the Wikipedia page about Rule 110, which describes its background pattern and spaceships.</p>
+      </li>
+      <li>
+        <p>Create a Rule 110 CA with an initial condition that yields the stable background pattern. Note that the <c>Cell1D</c> class provides <c>start_string</c>, which allows you to initialize the state of the array using a string of 1s and 0s.</p>
+      </li>
+      <li>
+        <p>Modify the initial condition by adding different patterns in the center of the row and see which ones yield spaceships. You might want to enumerate all possible patterns of n bits, for some reasonable value of n. For each spaceship, can you find the period and rate of translation? What is the biggest spaceship you can find?</p>
+      </li>
+      <li>
+        <p>What happens when spaceships collide?</p>
+      </li>
+    </ol>
+  </p>
+  <p><term>Exercise 3:</term>  The goal of this exercise is to implement a Turing machine.</p>
+  <p>
+    <ol label="1">
+      <li>
+        <p>Read about Turing machines.</p>
+      </li>
+      <li>
+        <p>Write a class called <c>Turing</c> that implements a Turing machine. For the action table, use the rules for a 3-state busy beaver.</p>
+      </li>
+      <li>
+        <p>Write a class named <c>TuringViewer</c> that generates an image that represents the state of the tape and the position and state of the head. For one example of what that might look like.</p>
+      </li>
+    </ol>
+  </p>
+</section>

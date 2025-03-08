@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<section xml:id="Matching-2">
+  <title>Matching</title>
+  <exercise label="Ch2_matching">
+    <statement>
+      <p>
+</p>
+    </statement>
+    <matches>
+      <match order="1">
+        <premise>Complexity Science</premise>
+        <response>Concerned With dynamic, unpredictable, and multi-dimensional complex systems consisting of a collection of interconnected relationships and parts characterized by its non-linearity.</response>
+      </match>
+      <match order="2">
+        <premise>Spontaneous Synchronization</premise>
+        <response>The effect wherein a population of oscillating units with diverse natural frequencies and weak interactions with one another evolves to spontaneously exhibit collective oscillations at a common frequency.</response>
+      </match>
+      <match order="3">
+        <premise>Agent-Base Models</premise>
+        <response>It is a model used for simulating actions and interactions between autonomous agents to assess their effects on the system as a whole.</response>
+      </match>
+      <match order="4">
+        <premise>Pseudoscience</premise>
+        <response>Claims that are presented as scientific and factual but are incompatible with the scientific method.</response>
+      </match>
+      <match order="5">
+        <premise>Classical Models</premise>
+        <response>Law-based models proven by mathematical derivation.</response>
+      </match>
+      <match order="6">
+        <premise>Determinism</premise>
+        <response>According to this view, all events are inevitable and are caused by prior events.</response>
+      </match>
+      <match order="7">
+        <premise>Stochastic</premise>
+        <response>It may be analyzed statistically but may not be predicted precisely due to a random pattern or probability distribution.</response>
+      </match>
+    </matches>
+  </exercise>
+</section>

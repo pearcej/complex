@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<section xml:id="Matching-10">
+  <title>Matching</title>
+  <exercise label="matching_ch8">
+    <statement>
+      <p>
+</p>
+    </statement>
+    <matches>
+      <match order="1">
+        <premise>Box-Counting</premise>
+        <response>Generally in a metric space it is a way of determining the fractal dimension.</response>
+      </match>
+      <match order="2">
+        <premise>Critical Phenomena</premise>
+        <response>When at or near a critical point, a wide variety of systems display a common set of behaviors and characteristics.</response>
+      </match>
+      <match order="3">
+        <premise>Fractal Geometry</premise>
+        <response>Patterns formed by fractals.</response>
+      </match>
+      <match order="4">
+        <premise>Percolation</premise>
+        <response>A process in which a fluid flows through a semi-porous material.</response>
+      </match>
+      <match order="5">
+        <premise>Phase Change</premise>
+        <response>Rapid change in the behavior near the critical value.</response>
+      </match>
+      <match order="6">
+        <premise>Random Walk</premise>
+        <response>It is a process that consists of a series of changes that have random characteristics.</response>
+      </match>
+      <match order="7">
+        <premise>Diffusion</premise>
+        <response>The combining of substances by the natural movement of their particles.</response>
+      </match>
+      <match order="8">
+        <premise>Percolation Model</premise>
+        <response>A model used to represent percolation that can be abstracted to be use for epidemic modeling, networks of electrical resistors, and other systems that are not directly percolation.</response>
+      </match>
+    </matches>
+  </exercise>
+</section>
