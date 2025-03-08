@@ -5,7 +5,7 @@
   <p>To demonstrate the difference, we'll start with an example of classical science: suppose someone asks you why planetary orbits are elliptical. You might invoke Newton's Law of Universal Gravitation and use it to write a differential equation that describes planetary motion. Then you can solve the differential equation and show that the solution is an ellipse. QED!</p>
   <p>Most people find this kind of explanation satisfying. It includes a mathematical derivation &#x2014; so it has some of the rigor of a proof &#x2014; and it explains a specific observation, elliptical orbits, by appealing to a general principle, gravitation.</p>
   <p>Let's contrast that with a different kind of explanation. Suppose you move to a city like Detroit that is racially segregated, and you want to know why it's like that. If you do some research, you might find a paper by Thomas Schelling called <q>Dynamic Models of Segregation</q>, which proposes a simple model of racial segregation:</p>
-  <p>Here is the description of the model, from <xref ref="complexity-science_complexity-science_complexity-science_agent-based-models_introduction"/>:</p>
+  <p>Here is the description of the model, from <xref ref="Introduction-1"/>:</p>
   <p>
     <ul>
       <li>

@@ -8,10 +8,10 @@
   <p>
     <ul>
       <li>
-        <p><xref ref="preface_preface_preface_appendix1_installing-anaconda"/> Using Jupyter Notebooks via Anaconda</p>
+        <p><xref ref="InstallingAnaconda"/> Using Jupyter Notebooks via Anaconda</p>
       </li>
       <li>
-        <p><xref ref="preface_preface_preface_appendix2_getting-started-with-colab"/> Using Google Colabortory Notebooks</p>
+        <p><xref ref="GettingStartedWithColab"/> Using Google Colabortory Notebooks</p>
       </li>
     </ul>
   </p>

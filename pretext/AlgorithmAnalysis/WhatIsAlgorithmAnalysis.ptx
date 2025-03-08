@@ -17,7 +17,7 @@
             programming language. There may be many programs for the same algorithm,
             depending on the programmer and the programming language being used.</p>
   <p>To explore this difference further, consider the function shown in
-            <xref ref="lst-sum0"/>. This function solves a familiar problem, computing the
+            <xref ref="algorithm-analysis_lst-sum0"/>. This function solves a familiar problem, computing the
             sum of the first <em>n</em> integers. The algorithm uses the idea of an
             accumulator variable that is initialized to 0. The solution then
             iterates through the <em>n</em> integers, adding each to the accumulator.</p>
@@ -47,7 +47,7 @@ main()
       </program>
     </TabNode>
   </exercise>
-  <p>Now look at the function in <xref ref="lst-sum2"/>.
+  <p>Now look at the function in <xref ref="algorithm-analysis_lst-sum2"/>.
             At first glance it may look
             strange, but upon further inspection you can see that this function is
             essentially doing the same thing as the previous one. The reason this is
@@ -152,12 +152,12 @@ main()
       </program>
     </TabNode>
   </exercise>
-  <p><xref ref="lst-sum11"/> shows the original <c>sumOfN</c> function with the timing
+  <p><xref ref="algorithm-analysis_lst-sum11"/> shows the original <c>sumOfN</c> function with the timing
             calls embedded before and after the summation. The function returns the amount of time (in seconds)
             required for the calculation.</p>
   <exercise label="bigo1">
     <statement>
-      <p> In <xref ref="lst-sum11"/> above, how many times is the <title_reference>theSum = theSum + 1</title_reference> line executed? <var/>  </p>
+      <p> In <xref ref="algorithm-analysis_lst-sum11"/> above, how many times is the <title_reference>theSum = theSum + 1</title_reference> line executed? <var/>  </p>
     </statement>
     <setup>
       <var>
@@ -266,8 +266,8 @@ main()
                 which shows <c>sumOfN3</c>
                 taking advantage of the formula we just developed.</p>
     <exercise xml:id="empty-11">
-      <TabNode tabname="Python" tabnode_options="{'subchapter': 'WhatIsAlgorithmAnalysis', 'chapter': 'AlgorithmAnalysis', 'basecourse': 'complex', 'optional': '', 'optclass': '', 'tabname': 'Python'}">
-        <program xml:id="active3_py" interactive="activecode" language="java">
+      
+        <program xml:id="lst-sum3" interactive="activecode" language="java">
           <code>
 """ Performs same function as listing one, and also list the time it takes to perform
 the function, and it performs better with larger inputs or (n) """
@@ -284,7 +284,7 @@ main()
 
 </tests>
         </program>
-      </TabNode>
+      
     </exercise>
     <p>If we do the same benchmark measurement for <c>sumOfN3</c>,
                 using the value  10,000 for <c>n</c> and we get the following result:</p>

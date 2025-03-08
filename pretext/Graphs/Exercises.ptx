@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="exercise-graphs">
   <title>Exercises</title>
-  <p>The code for this chapter is in <url href="https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap04.ipynb" visual="https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap04.ipynb">chap04.ipynb</url> , which is a Jupyter notebook in the repository for this book. For more information about working with this code, see <xref ref="graphs_graphs_graphs_preface_notebooks"/>.</p>
+  <p>The code for this chapter is in <url href="https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap04.ipynb" visual="https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap04.ipynb">chap04.ipynb</url> , which is a Jupyter notebook in the repository for this book. For more information about working with this code, see <xref ref="notebooks"/>.</p>
   <p><term>Exercise 1:</term>   Launch <url href="https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap04.ipynb" visual="https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap04.ipynb">chap04.ipynb</url> and run the code. There are a few short exercises embedded in the notebook that you might want to try.</p>
   <p><term>Exercise 2:</term>   In <xref ref="graphs_graphs_graphs_graphs_analysis-of-graph-algorithms"/> we analyzed the performance of reachable_nodes and classified it in <math>O(n + m)</math>, where n is the number of nodes and <math>m</math> is the number of edges. Continuing the analysis, what is the order of growth for <c>is_connected</c>?</p>
   <pre>def is_connected(G):

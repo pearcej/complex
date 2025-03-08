@@ -39,7 +39,7 @@ for u, v in G.edges():
   </p>
   <p>As an aside, the expression <c>G[u]</c> returns a dictionary that contains the neighbors of <c>u</c> as keys. It is usually faster than using <c>G.neighbors</c>.</p>
   <p>This function does not consider the edges in the order specified by Watts and Strogatz, but that doesn't seem to affect the results.</p>
-  <p><xref ref="swg-fig-2"/> shows WS graphs with <math>n=20</math>, <math>k=4</math>, and a range of values of p. When <math>p=0</math>, the graph is a ring lattice. When <math>p=1</math>, it is completely random. As we'll see, the interesting things happen in between.</p>
+  <p><xref ref="id1-14"/> shows WS graphs with <math>n=20</math>, <math>k=4</math>, and a range of values of p. When <math>p=0</math>, the graph is a ring lattice. When <math>p=1</math>, it is completely random. As we'll see, the interesting things happen in between.</p>
   <exercise label="question_4.5.1">
     <statement>
       <p> As demonstrated in figure 4.2, what happens as p increases?</p>
