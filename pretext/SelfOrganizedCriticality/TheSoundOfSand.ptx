@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<section xml:id="self-organized-criticality_the-sound-of-sand">
+  <title>The Sound of Sand</title>
+  <p>As the implementation of SandPile runs, it records the number of cells that topple during each time step, accumulating the results in a list called <c>toppled_seq</c>. After running the model in <xref ref="self-organized-criticality_heavy-tailed-distributions"/>, we can extract the resulting signal:</p>
+  <pre>signal = pile2.toppled_seq</pre>
+  <p>To compute the power spectrum of this signal we can use the SciPy function <c>welch</c>:</p>
+  <pre>from scipy.signal import welch
+
+nperseg = 2048
+freqs, spectrum = welch(signal, nperseg=nperseg, fs=nperseg)</pre>
+  <p>This function uses Welch's method, which splits the signal into segments and computes the power spectrum of each segment. The result is typically noisy, so Welch's method averages across segments to estimate the average power at each frequency.</p>
+  <p>The parameter <c>nperseg</c> specifies the number of time steps per segment. With longer segments, we can estimate the power for more frequencies. With shorter segments, we get better estimates for each frequency. The value, 2048, seems to balances these tradeoffs.</p>
+  <p>The parameter <c>fs</c> is the <q>sampling frequency</q>, which is the number of data points in the signal per unit of time. By setting <c>fs=nperseg</c>, we get a range of frequencies from <c>0</c> to <c>nperseg/2</c>. This range is convenient, but because the units of time in the model are arbitrary, it doesn't mean much.</p>
+  <p>The return values, <c>freqs</c> and <c>powers</c>, are NumPy arrays containing the frequencies of the components and their corresponding powers, which we can plot. <xref ref="soc-fig-6"/> shows the result.</p>
+  <figure align="center" xml:id="soc-fig-6">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 10.6: Power spectrum of the number of toppled cells over time, log-log scale.</caption>
+    <image source="SelfOrganizedCriticality/Figures/POWER_SPECT.png" width="50%" alt="&quot;Figure Figure 10.6: Power spectrum of the number of toppled cells over time, log-log scale.&quot;"/>
+  </figure>
+  <p>For frequencies between 10 and 1000 (in arbitrary units), the spectrum falls on a straight line, which is what we expect for pink or red noise.</p>
+  <p>The gray line in the figure has slope &#x2212;1.58, which indicates that <math>logP(f) &#x223C; &#x2212;&#x3B2; logf</math> with parameter <math>&#x3B2;=1.58</math>, which is the same parameter reported by Bak, Tang, and Wiesenfeld. This result confirms that the sand pile model generates pink noise.</p>
+</section>

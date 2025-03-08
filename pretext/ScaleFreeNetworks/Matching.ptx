@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<section xml:id="scale-free-networks_matching">
+  <title>Matching</title>
+  <exercise label="M_5">
+    <statement>
+      <p>
+</p>
+    </statement>
+    <matches>
+      <match order="1">
+        <premise>Barab&#xE1;si-Albert Model</premise>
+        <response>Algorithm for generating random scale-free networks using a preferential attachment mechanism.</response>
+      </match>
+      <match order="10">
+        <premise>WS Model</premise>
+        <response>Has characteristics of a small world network, like the data, but it has low variability in the number of neighbors from node to node, unlike the data.</response>
+      </match>
+      <match order="11">
+        <premise>Probability Mass Function (PmF)</premise>
+        <response>A function that maps from each value to it's probabilities.</response>
+      </match>
+      <match order="12">
+        <premise>Growth</premise>
+        <response>Instead of starting with a fixed number of vertices, the BA model starts with a small graph and adds vertices one at a time.</response>
+      </match>
+      <match order="2">
+        <premise>Heavy-tailed Distributions</premise>
+        <response>A probability theory with probability distributions whose tails are not exponentially bounded.</response>
+      </match>
+      <match order="3">
+        <premise>Standard Deviation</premise>
+        <response>Used to indicate the extent of deviation for a group as a whole.</response>
+      </match>
+      <match order="4">
+        <premise>Power Law</premise>
+        <response>A distribution follows this law if :math:`PMF(k) &#x223C; k&#x2212;&#x3B1;` where ``PMF(k)`` is the fraction of nodes with degree ``k``, ``&#x3B1;`` is a parameter, and the symbol &#x223C; indicates that the ``PMF`` is asymptotic to ``k&#x2212;&#x3B1;`` as ``k`` increases.</response>
+      </match>
+      <match order="5">
+        <premise>Preferential Attachment</premise>
+        <response>A quantity of something is distributed according to how much already exsisting recipients have.</response>
+      </match>
+      <match order="6">
+        <premise>Scale-Free Network</premise>
+        <response>A network whose degree distribution follows a power law, at least asymptotically.</response>
+      </match>
+      <match order="7">
+        <premise>Cumulative Distribution Function</premise>
+        <response>Maps a value to the fraction of values less thank or equal to x.</response>
+      </match>
+      <match order="8">
+        <premise>Complementary CDF</premise>
+        <response>:math:`CCDF(x) &#x2261; 1 - CDF(x)`</response>
+      </match>
+      <match order="9">
+        <premise>Explanatory Models</premise>
+        <response>A model that gives a useful description of why and how a phenomenon is the way it is.</response>
+      </match>
+    </matches>
+  </exercise>
+</section>

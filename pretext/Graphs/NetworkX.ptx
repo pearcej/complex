@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<section xml:id="graphs_networkx-g-fig-2-g-3">
+  <title>NetworkX</title>
+  <figure align="center" xml:id="id1">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 4.2: An undirected graph that represents driving time between cities.</caption>
+    <image source="Graphs/Figures/thinkcomplexity2002.png" width="50%" alt="&quot;Figure 4.2: An undirected graph that represents driving time between cities.&quot;"/>
+  </figure>
+  <p>To represent graphs, we'll use a package called NetworkX, which is the most commonly used network library in Python.</p>
+  <p>We can create a directed graph by importing NetworkX (usually imported as <c>nx</c>) and instantiating <c>nx.DiGraph</c>:</p>
+  <pre>import networkx as nx
+G = nx.DiGraph()</pre>
+  <p>At this point, <c>G</c> is a <c>DiGraph</c> object that contains no nodes and no edges. We can add nodes using the <c>add_node</c> method:</p>
+  <pre>G.add_node('Alice')
+G.add_node('Bob')
+G.add_node('Chuck')</pre>
+  <p>Now we can use the <c>nodes</c> method to get a list of nodes:</p>
+  <pre>(G.nodes())
+NodeView(('Alice', 'Bob', 'Chuck'))</pre>
+  <p>The <c>nodes</c> method returns a <c>NodeView</c>, which can be used in a for loop or, as in this example, used to make a list.</p>
+  <p>Adding edges works pretty much the same way:</p>
+  <pre>G.add_edge('Alice', 'Bob')
+G.add_edge('Alice', 'Chuck')
+G.add_edge('Bob', 'Alice')
+G.add_edge('Bob', 'Chuck')</pre>
+  <p>And we can use <c>edges</c> to get the list of edges:</p>
+  <pre>(G.edges())
+[('Alice', 'Bob'), ('Alice', 'Chuck'),
+('Bob', 'Alice'), ('Bob', 'Chuck')]</pre>
+  <p>NetworkX provides several functions for drawing graphs; <c>draw_circular</c> arranges the nodes in a circle and connects them with edges:</p>
+  <pre>(nx.draw_circular(G,
+             node_color=COLORS[0],
+             node_size=2000,
+             with_labels=True)</pre>
+  <p>That's the code I use to generate <xref ref="graphs_what-is-a-graph"/>. The option <c>with_labels</c> causes the nodes to be labeled; in the next example we'll see how to label the edges.</p>
+  <p>To generate <xref ref="g-fig-2"/>, I start with a dictionary that maps from each city name to its approximate longitude and latitude:</p>
+  <pre>positions = dict(Albany=(-74, 43),
+            Boston=(-71, 42),
+            NYC=(-74, 41),
+            Philly=(-75, 40))</pre>
+  <p>Since this is an undirected graph, I instantiate <c>nx.Graph</c>:</p>
+  <pre>G = nx.Graph()</pre>
+  <p>Then I can use <c>add_nodes_from</c> to iterate the keys of <c>positions</c> and add them as nodes:</p>
+  <pre>G.add_nodes_from(positions)</pre>
+  <p>Next we will make a dictionary that maps from each edge to the corresponding driving time:</p>
+  <pre>drive_times = {('Albany', 'Boston'): 3,
+          ('Albany', 'NYC'): 4,
+          ('Boston', 'NYC'): 4,
+          ('NYC', 'Philly'): 2}</pre>
+  <p>Now I can use <c>add_edges_from</c>, which iterates the keys of <c>drive_times</c> and adds them as edges:</p>
+  <pre>G.add_edges_from(drive_times)</pre>
+  <p>Instead of <c>draw_circular</c>, which arranges the nodes in a circle, we will use <c>draw</c>, which takes the position dictionary as the second parameter:</p>
+  <pre>nx.draw(G, positions,
+   node_color=COLORS[1],
+   node_shape='s',
+   node_size=2500,
+   with_labels=True)</pre>
+  <p><c>draw</c> uses <c>positions</c> to determine the locations of the nodes.</p>
+  <p>To add the edge labels, we use <c>draw_networkx_edge_labels</c>:</p>
+  <pre>x.draw_networkx_edge_labels(G, positions,
+                        edge_labels=drive_times)</pre>
+  <p>The <c>edge_labels</c> parameter expects a dictionary that maps from each pair of nodes to a label; in this case, the labels are driving times between cities. And that's how I generated <xref ref="g-fig-2"/>.</p>
+  <p>In both of these examples, the nodes are strings, but in general they can be any hashable type.</p>
+  <exercise label="Q2_3.3">
+    <statement>
+      <p>
+</p>
+    </statement>
+    <matches>
+      <match order="1">
+        <premise>Positions</premise>
+        <response>A dictionary that maps from each city name to its approximate longitude and latitude.</response>
+      </match>
+      <match order="2">
+        <premise>Add_nodes_from</premise>
+        <response>This is a method that iterates through the keys of positions and adds them as nodes.</response>
+      </match>
+      <match order="3">
+        <premise>Drive_times</premise>
+        <response>A dictionary that maps from each edge to the corresponding driving time.</response>
+      </match>
+      <match order="4">
+        <premise>Add_edges_from</premise>
+        <response>This method iterates the keys of drive_times and adds them as edges.</response>
+      </match>
+      <match order="5">
+        <premise>Draw</premise>
+        <response>Takes the position dictionary as the second parameter, and uses positions to determine the locations of the nodes.</response>
+      </match>
+      <match order="6">
+        <premise>Draw_networkx_edge_labels</premise>
+        <response>This method adds edge labels.</response>
+      </match>
+      <match order="7">
+        <premise>edge_labels</premise>
+        <response>This parameter expects a dictionary that maps from each pair of nodes to a label; in this case, the labels are driving times between cities.</response>
+      </match>
+    </matches>
+  </exercise>
+</section>

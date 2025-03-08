@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<section xml:id="cellular-automatons_wolfram-s-experiment">
+  <title>Wolfram's Experiment</title>
+  <p xml:id="cellular-automatons_id1" names="6.2">In the early 1980s Stephen Wolfram published a series of papers presenting a systematic study of 1-D CAs. He identified four categories of behavior, each more interesting than the last.</p>
+  <p>In Wolfram's experiments, the cells are arranged in a lattice which you might remember from <xref ref="small-world-graphs_watts-and-strogatz"/> where each cell is connected to two neighbors. The lattice can be finite, infinite, or arranged in a ring.</p>
+  <p>The rules that determine how the system evolves in time are based on the notion of a <q>neighborhood</q>, which is the set of cells that determines the next state of a given cell. Wolfram's experiments use a 3-cell neighborhood: the cell itself and its two neighbors.</p>
+  <p>In these experiments, the cells have two states, denoted as 0 and 1 or <q>off</q> and <q>on</q>. A rule can be summarized by a table that maps from the state of the neighborhood (a tuple of three states) to the next state of the center cell. The following table shows an example:</p>
+  <figure align="center">
+    <image source="CellularAutomatons/Figures/Table.png" width="50%"/>
+  </figure>
+  <p xml:id="cellular-automatons_ca-fig-1" names="ca_fig_1">The first row shows the eight states a neighborhood can be in. The second row shows the state of the center cell during the next time step. As a concise encoding of this table, Wolfram suggested reading the bottom row as a binary number; because 00110010 in binary is 50 in decimal, Wolfram calls this CA <q>Rule 50</q>.</p>
+  <figure align="center" xml:id="id2">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 7.1: Rule 50 after 10 time steps</caption>
+    <image source="CellularAutomatons/Figures/thinkcomplexity2016.png" width="50%" alt="&quot;Figure 7.1: Rule 50 after 10 time steps&quot;"/>
+  </figure>
+  <p><xref ref="ca-fig-1"/> shows the effect of Rule 50 over 10 time steps. The first row shows the state of the system during the first time step; it starts with one cell <q>on</q> and the rest <q>off</q>. The second row shows the state of the system during the next time step, and so on.</p>
+  <p>The triangular shape in the figure is typical of these CAs; is it a consequence of the shape of the neighborhood. In one time step, each cell influences the state of one neighbor in either direction. During the next time step, that influence can propagate one more cell in each direction. So each cell in the past has a <q>triangle of influence</q> that includes all of the cells that can be affected by it.</p>
+</section>

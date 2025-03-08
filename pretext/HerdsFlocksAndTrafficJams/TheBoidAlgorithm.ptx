@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<section xml:id="herds-flocks-and-traffic-jams_the-boid-algorithm">
+  <title>The Boid Algorithm</title>
+  <p><c>Boids7.py</c> defines two classes: <c>Boid</c>, which implements the Boid behaviors, and <c>World</c>, which contains a list of Boids and a <q>carrot</q> the Boids are attracted to.</p>
+  <p>The <c>Boid</c> class defines the following methods:</p>
+  <p>
+    <ul>
+      <li>
+        <p><c>center</c>: Finds other Boids within range and computes a vector toward their centroid.</p>
+      </li>
+      <li>
+        <p><c>avoid</c>: Finds objects, including other Boids, within a given range, and computes a vector that points away from their centroid.</p>
+      </li>
+      <li>
+        <p><c>align</c>: Finds other Boids within range and computes the average of their headings.</p>
+      </li>
+      <li>
+        <p><c>love</c>: Computes a vector that points toward the carrot.</p>
+      </li>
+    </ul>
+  </p>
+  <p>Here's the implementation of <c>center</c>:</p>
+  <pre>def center(self, boids, radius=1, angle=1):
+        neighbors = self.get_neighbors(boids, radius, angle)
+        vecs = [boid.pos for boid in neighbors]
+        return self.vector_toward_center(vecs)</pre>
+  <p>The parameters <c>radius</c> and <c>angle</c> are the radius and angle of the field of view, which determines which other Boids are taken into consideration. <c>radius</c> is in arbitrary units of length; <c>angle</c> is in radians.</p>
+  <p><c>center</c> USES <c>get_neighbors</c> to get a list of <c>Boid</c> objects that are in the field of view. <c>vecs</c> is a list of <c>Vector</c> objects that represent their positions.</p>
+  <p>Finally, <c>vector_toward_center</c> computes a <c>Vector</c> that points from <c>self</c> to the centroid of <c>neighbors</c>.</p>
+  <p>Here's how <c>get_neighbors</c> works:</p>
+  <pre>def get_neighbors(self, boids, radius, angle):
+        neighbors = []
+        for boid in boids:
+            if boid is self:
+                continue
+
+            # if not in range, skip it
+            offset = boid.pos - self.pos
+            if offset.mag &gt; radius:
+                continue
+
+            # if not within viewing angle, skip it
+            if self.vel.diff_angle(offset) &gt; angle:
+                continue
+
+            # otherwise add it to the list
+            neighbors.append(boid)
+
+        return neighbors</pre>
+  <p>For each other Boid, <c>get_neighbors</c> uses vector subtraction to compute the vector from <c>self</c> to <c>boid</c>. The magnitude of this vector is the distance between them; if this magnitude exceeds <c>radius</c>, we ignore <c>boid</c>.</p>
+  <p><c>diff_angle</c> computes the angle between the velocity of <c>self</c>, which points in the direction the Boid is heading, and the position of <c>boid</c>. If this <c>angle</c> exceeds angle, we ignore <c>boid</c>.</p>
+  <p>Otherwise boid is in view, so we add it to <c>neighbors</c>.</p>
+  <p>Now here's the implementation of <c>vector_toward_center</c>, which computes a vector from <c>self</c> to the centroid of its neighbors.</p>
+  <pre>def vector_toward_center(self, vecs):
+        if vecs:
+            center = np.mean(vecs)
+            toward = vector(center - self.pos)
+            return limit_vector(toward)
+        else:
+            return null_vector</pre>
+  <p>VPython vectors work with NumPy, so <c>np.mean</c> computes the mean of <c>vecs</c>, which is a sequence of vectors. <c>limit_vector</c> limits the magnitude of the result to 1; <c>null_vector</c> has magnitude 0.</p>
+  <p>We use the same helper methods to implement <c>avoid</c>:</p>
+  <pre>def avoid(self, boids, carrot, radius=0.3, angle=np.pi):
+        objects = boids + [carrot]
+        neighbors = self.get_neighbors(objects, radius, angle)
+        vecs = [boid.pos for boid in neighbors]
+        return -self.vector_toward_center(vecs)</pre>
+  <p><c>avoid</c> is similar to <c>center</c>, but it takes into account the carrot as well as the other Boids. Also, the parameters are different: <c>radius</c> is smaller, so Boids only avoid objects that are too close, and <c>angle</c> is wider, so Boids avoid objects from all directions. Finally, the result from <c>vector_toward_center</c> is negated, so it points <em>away</em> from the centroid of any objects that are too close.</p>
+  <p>Here's the implementation of <c>align</c>:</p>
+  <pre>def align(self, boids, radius=0.5, angle=1):
+        neighbors = self.get_neighbors(boids, radius, angle)
+        vecs = [boid.vel for boid in neighbors]
+        return self.vector_toward_center(vecs)</pre>
+  <p><c>align</c> is also similar to <c>center</c>; the big difference is that it computes the average of the neighbors' velocities, rather than their positions. If the neighbors point in a particular direction, the Boid tends to steer toward that direction.</p>
+  <p>Finally, <c>love</c> computes a vector that points in the direction of the carrot.</p>
+  <pre>def love(self, carrot):
+        toward = carrot.pos - self.pos
+        return limit_vector(toward)</pre>
+  <p>The results from <c>center</c>, <c>avoid</c>, <c>align</c>, and <c>love</c> are what Reynolds calls <q>acceleration requests</q>, where each request is intended to achieve a different goal.</p>
+  <exercise label="q_11.5.1">
+    <statement>
+      <p>
+</p>
+    </statement>
+    <matches>
+      <match order="1">
+        <premise>Center</premise>
+        <response>Finds other Boids within range and computes a vector toward their centroid.</response>
+      </match>
+      <match order="2">
+        <premise>Avoid</premise>
+        <response>Finds objects, including other Boids, within a given range, and computes a vector that points away from their centroid.</response>
+      </match>
+      <match order="3">
+        <premise>Align</premise>
+        <response>Finds other Boids within range and computes the average of their headings.</response>
+      </match>
+      <match order="4">
+        <premise>Love</premise>
+        <response>Computes a vector that points toward the carrot.</response>
+      </match>
+    </matches>
+  </exercise>
+</section>

@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<section xml:id="self-organized-criticality_critical-systems">
+  <title>Critical Systems</title>
+  <p>Many critical systems demonstrate common behaviors:</p>
+  <p>
+    <ul>
+      <li>
+        <p>Fractal geometry: For example, freezing water tends to form fractal patterns, including snowflakes and other crystal structures. Fractals are characterized by self-similarity; that is, parts of the pattern are similar to scaled copies of the whole.</p>
+      </li>
+      <li>
+        <p>Heavy-tailed distributions of some physical quantities: For example, in freezing water the distribution of crystal sizes is characterized by a power law.</p>
+      </li>
+      <li>
+        <p>Variations in time that exhibit <term>pink noise</term>: Complex signals can be decomposed into their frequency components. In pink noise, low-frequency components have more power than high-frequency components. Specifically, the power at frequency <math>f</math> is proportional to <math>1/f</math>.</p>
+      </li>
+    </ul>
+  </p>
+  <p>Critical systems are usually unstable. For example, to keep water in a partially frozen state requires active control of the temperature. If the system is near the critical temperature, a small deviation tends to move the system into one phase or the other.</p>
+  <p>Many natural systems exhibit characteristic behaviors of criticality, but if critical points are unstable, they should not be common in nature. This is the puzzle Bak, Tang and Wiesenfeld address. Their solution is called self-organized criticality (SOC), where <q>self-organized</q> means that from any initial condition, the system moves toward a critical state, and stays there, without external control.</p>
+  <exercise label="q_9.2">
+    <statement>
+      <p>Q-1: What common behaviors do critical systems demonstrate?</p>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement>
+          <p>Variations in time that exhibit pink noise.</p>
+        </statement>
+        <feedback>
+          <p>Yes, complex signals can be decomposed int their frequency components.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>Fractal geometry</p>
+        </statement>
+        <feedback>
+          <p>Correct, they do share fractal geometry. for example, freezing water tends to form fractal patterns.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Stable systems</p>
+        </statement>
+        <feedback>
+          <p>No, critical systems are usually unstable.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>Heavy-tailed distributions of some physical quantities.</p>
+        </statement>
+        <feedback>
+          <p>Yes, For example, in freezing water the distribution of crystal sizes is characterized by a power law.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</section>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<section xml:id="evolution-of-cooperation_the-simulation">
+  <title>The Simulation</title>
+  <p>The <c>Simulation</c> class for this chapter is based on the one in <xref ref="evolution_simulation"/>; the only differences are in <c>__init__</c> and <c>step</c>.</p>
+  <p>Here's the <c>__init__</c> method:</p>
+  <pre>class PDSimulation(Simulation):
+
+    def __init__(self, tournament, agents):
+        self.tournament = tournament
+        self.agents = np.asarray(agents)
+        self.instruments = []</pre>
+  <p>A <c>Simulation</c> object contains a <c>Tournament</c> object, a sequence of <c>agents</c>, and a sequence of <c>Instrument</c> objects (as in <xref ref="evolution_evidence-of-evolution"/>).</p>
+  <p>Here's the <c>step</c> method:</p>
+  <pre>def step(self):
+    self.tournament.melee(self.agents)
+    Simulation.step(self)</pre>
+  <p>This version of <c>step</c> USES <c>Tournament.melee</c>, which sets the <c>fitness</c> attribute for each agent; then it calls the <c>step</c> method from the <c>Simulation</c> class, reproduced here:</p>
+  <pre># class Simulation
+
+    def step(self):
+        n = len(self.agents)
+        fits = self.get_fitnesses()
+
+        # see who dies
+        index_dead = self.choose_dead(fits)
+        num_dead = len(index_dead)
+
+        # replace the dead with copies of the living
+        replacements = self.choose_replacements(num_dead, fits)
+        self.agents[index_dead] = replacements
+
+        # update any instruments
+        self.update_instruments()</pre>
+  <p><c>Simulation.step</c> collects the agents' fitnesses in an array; then it calls <c>choose_dead</c> to decide which agents die, and <c>choose_replacements</c> to decide which agents reproduce.</p>
+  <p>The provided simulation includes differential survival, as in <xref ref="evolution_differential-survival"/>, but not differential reproduction. You can see the details in the notebook for this chapter. As one of the exercises, you will have a chance to explore the effect of differential reproduction.</p>
+</section>

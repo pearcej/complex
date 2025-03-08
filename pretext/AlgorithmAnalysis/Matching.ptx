@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<section xml:id="algorithm-analysis_matching">
+  <title>Matching</title>
+  <exercise label="matching_algorithmana">
+    <statement>
+      <p>Drag the word on the left to its corresponding definition</p>
+    </statement>
+    <feedback>
+      <p>Review classes and their properties.</p>
+    </feedback>
+    <matches>
+      <match order="1">
+        <premise>Algorithm</premise>
+        <response>Step-by-step list of instructions for solving a problem.</response>
+      </match>
+      <match order="10">
+        <premise>Exponential</premise>
+        <response>Function represented as a number being raised to a power that increases.</response>
+      </match>
+      <match order="11">
+        <premise>Linear</premise>
+        <response>Function that grows in a one to one relationship with its input.</response>
+      </match>
+      <match order="12">
+        <premise>Logarithmic</premise>
+        <response>Functions that are the inverse of exponential functions.</response>
+      </match>
+      <match order="13">
+        <premise>Order of Magnitude</premise>
+        <response>a function describing an algorithm's steps as the size of the problem increases.</response>
+      </match>
+      <match order="2">
+        <premise>Average Case</premise>
+        <response>When an algorithm performs between its worst and best case given a certain data set or circumstance.</response>
+      </match>
+      <match order="3">
+        <premise>Worst Case</premise>
+        <response>When an algorithm performs especially poorly given a certain data set or circumstance.</response>
+      </match>
+      <match order="4">
+        <premise>Quadratic</premise>
+        <response>Function describing a relationship who's highest order is a number squared.</response>
+      </match>
+      <match order="5">
+        <premise>Best Case</premise>
+        <response>When an algorithm performs especially good given a certain data set or circumstance.</response>
+      </match>
+      <match order="6">
+        <premise>Big-O Notation</premise>
+        <response>Another term for order of magnitude.</response>
+      </match>
+      <match order="7">
+        <premise>Brute Force</premise>
+        <response>Technique that tries to exhaust all possibilities of a problem.</response>
+      </match>
+      <match order="8">
+        <premise>Contiguous</premise>
+        <response>Adjacent.</response>
+      </match>
+      <match order="9">
+        <premise>Dynamic Size</premise>
+        <response>Able to change size automatically.</response>
+      </match>
+    </matches>
+  </exercise>
+</section>

@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<section xml:id="scale-free-networks_social-network-data">
+  <title>Social Network Data</title>
+  <p>Watts-Strogatz graphs are intended to model networks in the natural and social sciences. In their original paper, Watts and Strogatz looked at the network of film actors (connected if they have appeared in a movie together); the electrical power grid in the western United States; and the network of neurons in the brain of the roundworm <math>C</math>. <em>elegans</em>. They found that all of these networks had the high connectivity and low path lengths characteristic of small world graphs.</p>
+  <p>In this section we'll perform the same analysis with a different dataset, a set of Facebook users and their friends. If you are not familiar with Facebook, users who are connected to each other are called <q>friends</q>, regardless of the nature of their relationship in the real world.</p>
+  <p>We will use data from the Stanford Network Analysis Project (SNAP), which shares large datasets from online social networks and other sources. Specifically, we will use their Facebook data, which includes 4039 users and 88,234 friend relationships among them. This dataset is in the repository for this book, but it is also available from the SNAP website.</p>
+  <p>The data file contains one line per edge, with users identified by integers from 0 to 4038. Here's the code that reads the file:</p>
+  <pre>def read_graph(filename):
+    G = nx.Graph()
+    array = np.loadtxt(filename, dtype=int)
+    G.add_edges_from(array)
+    return G</pre>
+  <p>NumPy provides a function called <c>loadtext</c> that reads the given file and returns the contents as a NumPy array. The parameter <c>dtype</c> indicates that the <q>data type</q> of the array is int.</p>
+  <p>Then we use <c>add_edges_from</c> to iterate the rows of the array and make edges. Here are the results:</p>
+  <pre>&gt;&gt;&gt; fb = read_graph('facebook_combined.txt.gz')
+&gt;&gt;&gt; n = len(fb)
+&gt;&gt;&gt; m = len(fb.edges())
+&gt;&gt;&gt; n, m
+(4039, 88234)</pre>
+  <p>The node and edge counts are consistent with the documentation of the dataset.</p>
+  <p>Now we can check whether this dataset has the characteristics of a small world graph: high clustering and low path lengths.</p>
+  <p>In <xref ref="small-world-graphs_clustering"/> we wrote a function to compute the network average clustering coefficient. NetworkX provides a function called <c>average_clustering</c>, which does the same thing a little faster.</p>
+  <p>But for larger graphs, they are both too slow, taking time proportional to <math>n k^2</math>, where <c>n</c> is the number of nodes and <c>k</c> is the number of neighbors each node is connected to.</p>
+  <p>Fortunately, NetworkX provides a function that estimates the clustering coefficient by random sampling. You can invoke it like this:</p>
+  <pre>from networkx.algorithms.approximation import average_clustering
+    average_clustering(G, trials=1000)</pre>
+  <p>The following function does something similar for path lengths.</p>
+  <pre>def sample_path_lengths(G, nodes=None, trials=1000):
+    if nodes is None:
+        nodes = list(G)
+    else:
+        nodes = list(nodes)
+
+    pairs = np.random.choice(nodes, (trials, 2))
+    lengths = [nx.shortest_path_length(G, *pair)
+            for pair in pairs]
+    return lengths</pre>
+  <p><c>G</c> is a graph, <c>nodes</c> is the list of nodes to sample from, and <c>trials</c> is the number of random paths to sample. If <c>nodes</c> is None, we sample from the entire graph.</p>
+  <p><c>pairs</c> is a NumPy array of randomly chosen nodes with one row for each trial and two columns.</p>
+  <p>The list comprehension enumerates the rows in the array and computes the shortest distance between each pair of nodes. The result is a list of path lengths.</p>
+  <p><c>estimate_path_length</c> generates a list of random path lengths and returns their mean:</p>
+  <pre>def estimate_path_length(G, nodes=None, trials=1000):
+    return np.mean(sample_path_lengths(G, nodes, trials))</pre>
+  <p>We will use <c>average_clustering</c> to compute <c>C</c>:</p>
+  <pre>C = average_clustering(fb)</pre>
+  <p>And <c>estimate_path_lengths</c> to compute <c>L</c>:</p>
+  <pre>L = estimate_path_lengths(fb)</pre>
+  <p>The clustering coefficient is about 0.61, which is high, as we expect if this network has the small world property.</p>
+  <p>And the average path is 3.7, which is quite short in a network of more than 4000 users. It's a small world after all.</p>
+  <p>Now let's see if we can construct a WS graph that has the same characteristics as this network.</p>
+  <exercise label="Q1_5.2">
+    <statement>
+      <p>
+</p>
+    </statement>
+    <matches>
+      <match order="1">
+        <premise>loadtext</premise>
+        <response>A function that reads the given file and returns the contents as a NumPy array.</response>
+      </match>
+      <match order="10">
+        <premise>L</premise>
+        <response>Is computed using estimate_path_lengths.</response>
+      </match>
+      <match order="11">
+        <premise>C</premise>
+        <response>Is computed using average_clustering.</response>
+      </match>
+      <match order="2">
+        <premise>average_clustering</premise>
+        <response>Function provided by networkx that computes the network average clustering coefficient.</response>
+      </match>
+      <match order="3">
+        <premise>n</premise>
+        <response>The number of nodes.</response>
+      </match>
+      <match order="4">
+        <premise>K</premise>
+        <response>The number of neighbors each node is connected to.</response>
+      </match>
+      <match order="5">
+        <premise>G</premise>
+        <response>A graph.</response>
+      </match>
+      <match order="6">
+        <premise>nodes</premise>
+        <response>The list of nodes to sample from and if this is None, we sample from the entire graph.</response>
+      </match>
+      <match order="7">
+        <premise>Trails</premise>
+        <response>Is the number of random paths to sample.</response>
+      </match>
+      <match order="8">
+        <premise>pairs</premise>
+        <response>A NumPy array of randomly chosen nodes with one row for each trial and two columns.</response>
+      </match>
+      <match order="9">
+        <premise>estimate_path_length</premise>
+        <response>Function that  generates a list of random path lengths and returns their mean.</response>
+      </match>
+    </matches>
+  </exercise>
+</section>

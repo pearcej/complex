@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<section xml:id="appendix2_tips-and-tricks">
+  <title>Tips and Tricks</title>
+  <p>Below are a few useful things that can help with the use of Google Colab.</p>
+  <p>Run all</p>
+  <p>
+    <ul>
+      <li>
+        <p>Ctrl + F9</p>
+      </li>
+    </ul>
+  </p>
+  <p>Save</p>
+  <p>
+    <ul>
+      <li>
+        <p>Ctrl + S</p>
+      </li>
+    </ul>
+  </p>
+  <p>Undo</p>
+  <p>
+    <ul>
+      <li>
+        <p>Ctrl + Z</p>
+      </li>
+    </ul>
+  </p>
+  <p>Show all key commands</p>
+  <p>
+    <ul>
+      <li>
+        <p>Ctrl + M + H</p>
+      </li>
+    </ul>
+  </p>
+  <p>Make a copy of the notebook, and then:</p>
+  <p>
+    <ul>
+      <li>
+        <p>Hit add a copy to my drive.</p>
+      </li>
+      <li>
+        <p>Although Colab does allow multiple people to be on the same document and to edit it together, the document does not update in real time, so to make use of the software and be sure to be sure to practice good pair programming.</p>
+      </li>
+    </ul>
+  </p>
+</section>

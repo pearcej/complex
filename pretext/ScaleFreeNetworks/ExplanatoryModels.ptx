@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<section xml:id="scale-free-networks_explanatory-models">
+  <title>Explanatory Models</title>
+  <figure align="center" xml:id="sfn-fig-6">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 6.6: The logical structure of an explanatory model.</caption>
+    <image source="ScaleFreeNetworks/Figures/thinkcomplexity2015.png" width="50%" alt="&quot;Figure 6.6: The logical structure of an explanatory model.&quot;"/>
+  </figure>
+  <p>We started the discussion of networks with Milgram's Small World Experiment, which shows that path lengths in social networks are surprisingly small; hence, <q>six degrees of separation</q>.</p>
+  <p>When we see something surprising, it is natural to ask <q>Why?</q> but sometimes it's not clear what kind of answer we are looking for. One kind of answer is an <term>explanatory model</term> (see <xref ref="sfn-fig-6"/>). The logical structure of an explanatory model is:</p>
+  <p>
+    <ol label="1">
+      <li>
+        <p>In a system, <math>S</math>, we see something observable, <math>O</math>, that warrants explanation.</p>
+      </li>
+      <li>
+        <p>We construct a model, <math>M</math>, that is analogous to the system; that is, there is a correspondence between the elements of the model and the elements of the system.</p>
+      </li>
+      <li>
+        <p>By simulation or mathematical derivation, we show that the model exhibits a behavior, <math>B</math>, that is analogous to <math>O</math>.</p>
+      </li>
+      <li>
+        <p>We conclude that <math>S</math> exhibits <math>O</math> <em>because</em> <math>S</math> is similar to <math>M</math>, <math>M</math> exhibits <math>B</math>, and <math>B</math> is similar to <math>O</math>.</p>
+      </li>
+      <li>
+        <p>At its core, this is an argument by analogy, which says that if two things are similar in some ways, they are likely to be similar in other ways.</p>
+      </li>
+    </ol>
+  </p>
+  <p>Argument by analogy can be useful, and explanatory models can be satisfying, but they do not constitute a proof in the mathematical sense of the word.</p>
+  <p>Remember that all models leave out, or <q>abstract away</q>, details that we think are unimportant. For any system there are many possible models that include or ignore different features. And there might be models that exhibit different behaviors that are similar to <math>O</math> in different ways. In that case, which model explains <math>O</math>?</p>
+  <p>The small world phenomenon is an example: the Watts-Strogatz (WS) model and the Barab&#xE1;si-Albert (BA) model both exhibit elements of small world behavior, but they offer different explanations:</p>
+  <p>The WS model suggests that social networks are <q>small</q> because they include both strongly-connected clusters and <q>weak ties</q> that connect clusters.</p>
+  <p>The BA model suggests that social networks are small because they include nodes with high degree that act as hubs, and that hubs grow, over time, due to preferential attachment.</p>
+  <p>As is often the case in young areas of science, the problem is not that we have no explanations, but too many.</p>
+</section>
