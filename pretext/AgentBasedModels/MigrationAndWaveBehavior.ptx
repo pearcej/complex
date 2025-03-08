@@ -11,7 +11,7 @@
   <p>The result is a series of discrete waves of migration, where each wave resembles a coherent object, like the spaceships we saw in the Rule 110 CA and Game of Life (see <xref ref="cellular-automatons_determinism"/> and <xref ref="game-of-life_life-patterns"/>).</p>
   <p><xref ref="abm-fig-5"/>  shows the initial condition (left) and the state of the model after 6 steps (middle) and 12 steps (right). You can see the first two waves reaching and moving through the second peak, leaving a stripe of empty cells behind. You can see an animated version of this model, where the wave patterns are more clearly visible, in the notebook for this chapter.</p>
   <p>These waves move diagonally, which is surprising because the agents themselves only move north or east, never northeast. Outcomes like this &#x2014; groups or <q>aggregates</q> with properties and behaviors that the agents don't have &#x2014; are common in agent-based models. We will see more examples in the next chapter.</p>
-  <figure align="center" xml:id="id2">
+  <figure align="center" xml:id="abm-fig-5">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Gif 11.2: Wave behavior in a Sugarscape.</caption>
     <image source="AgentBasedModels/Figures/Sugarscape_Wave_Behavior_.gif" width="50%" alt="&quot;Gis 11.2: Wave behavior in a sugarscape.&quot;"/>
   </figure>

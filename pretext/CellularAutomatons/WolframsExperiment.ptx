@@ -8,7 +8,7 @@
   <figure align="center">
     <image source="CellularAutomatons/Figures/Table.png" width="50%"/>
   </figure>
-  <p xml:id="cellular-automatons_ca-fig-1" names="ca_fig_1">The first row shows the eight states a neighborhood can be in. The second row shows the state of the center cell during the next time step. As a concise encoding of this table, Wolfram suggested reading the bottom row as a binary number; because 00110010 in binary is 50 in decimal, Wolfram calls this CA <q>Rule 50</q>.</p>
+  <p xml:id="ca-fig-1" names="ca_fig_1">The first row shows the eight states a neighborhood can be in. The second row shows the state of the center cell during the next time step. As a concise encoding of this table, Wolfram suggested reading the bottom row as a binary number; because 00110010 in binary is 50 in decimal, Wolfram calls this CA <q>Rule 50</q>.</p>
   <figure align="center" xml:id="id2">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 7.1: Rule 50 after 10 time steps</caption>
     <image source="CellularAutomatons/Figures/thinkcomplexity2016.png" width="50%" alt="&quot;Figure 7.1: Rule 50 after 10 time steps&quot;"/>

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="scale-free-networks_cumulative-distributions">
   <title>Cumulative Distributions</title>
-  <figure align="center" xml:id="sfn-8">
+  <figure align="center" xml:id="sfn-fig-4">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 6.4: CDF of degree in the Facebook dataset along with the WS model (left) and the BA model (right), on a log-x scale.</caption>
     <image source="ScaleFreeNetworks/Figures/thinkcomplexity2013.png" width="50%" alt="&quot;Figure 6.4: CDF of degree in the Facebook dataset along with the WS model (left) and the BA model (right), on a log-x scale.&quot;"/>
   </figure>
@@ -22,7 +22,7 @@ cdf_fb = Cdf(degrees(fb), label='Facebook')</pre>
   <p>And <c>thinkplot</c> provides a function called <c>Cdf</c> that plots cumulative distribution functions.</p>
   <pre>thinkplot.Cdf(cdf_fb)</pre>
   <p><xref ref="sfn-fig-4"/> shows the degree CDF for the Facebook dataset along with the WS model (left) and the BA model (right). The x-axis is on a log scale.</p>
-  <figure align="center" xml:id="id2">
+  <figure align="center" xml:id="sfn-fig-5">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 6.5: Complementary CDF of degree in the Facebook dataset along with the WS model (left) and the BA model (right), on a log-log scale.</caption>
     <image source="ScaleFreeNetworks/Figures/thinkcomplexity2014.png" width="50%" alt="&quot;Figure 6.5: Complementary CDF of degree in the Facebook dataset along with the WS model (left) and the BA model (right), on a log-log scale.&quot;"/>
   </figure>

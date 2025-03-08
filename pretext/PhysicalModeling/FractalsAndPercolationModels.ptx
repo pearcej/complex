@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="physical-modeling_fractals-and-percolation-models">
   <title>Fractals and Percolation Models</title>
-  <figure align="center" xml:id="pm-7">
+  <figure align="center" xml:id="pm-fig-8">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 9.8: Percolation models with <literal>q=0.6</literal> and <literal>n=100</literal>, <literal>200</literal>, and <literal>300</literal>.</caption>
     <image source="PhysicalModeling/Figures/PERC_MODEL.png" width="50%"/>
   </figure>
@@ -15,7 +15,7 @@ for size in sizes:
         num_filled = perc.num_wet() - size
         res.append((size, size**2, num_filled))</pre>
   <p>The result is a list of tuples where each tuple contains <c>size</c>, <c>size**2</c>, and the number of cells in the percolating cluster (not including the initial wet cells in the top row).</p>
-  <figure align="center" xml:id="id2">
+  <figure align="center" xml:id="pm-fig-9">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 9.9: Number of cells in the percolating cluster versus CA size.</caption>
     <image source="PhysicalModeling/Figures/NUM_CELL_IN_PERC_CLUSTER.png" width="50%" alt="&quot;Figure 9.9: Number of cells in the percolating cluster versus CA size.&quot;"/>
   </figure>

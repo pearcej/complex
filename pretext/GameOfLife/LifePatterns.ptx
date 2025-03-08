@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<section xml:id="game-of-life_life-pattern-gol-fig-1-gol-3">
+<section xml:id="game-of-life_life-patterns">
   <title>Life Pattern</title>
-  <figure align="center" xml:id="id1">
+  <figure align="center" xml:id="gol-fig-1">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 8.1: A stable pattern called a beehive.</caption>
     <image source="GameOfLife/Figures/BEEHIVE.png" width="50%" alt="&quot;Figure 8.1: A stable pattern called a beehive.&quot;"/>
   </figure>
@@ -9,11 +9,11 @@
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 8.2: An oscillator called a toad.</caption>
     <image source="GameOfLife/Figures/TOAD.png" width="50%" alt="&quot;Figure 8.2: An oscillator called a toad.&quot;"/>
   </figure>
-  <figure align="center" xml:id="id3">
+  <figure align="center" xml:id="gol-fig-3">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Gif of An oscillator called a toad.</caption>
     <image source="GameOfLife/Figures/GoL_Toad.gif" width="50%" alt="&quot;Gif of An oscillator called a toad.&quot;"/>
   </figure>
-  <figure align="center" xml:id="id4">
+  <figure align="center" xml:id="gol-fig-4">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 8.3: A spaceship called a glider.</caption>
     <image source="GameOfLife/Figures/GLIDER.png" width="50%" alt="&quot;Figure 8.3: A spaceship called a glider.&quot;"/>
   </figure>

@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
-<section xml:id="graphs_probability-of-connectivity-g-fig-6-g-8-g-fig-5">
+<section xml:id="g-fig-5">
   <title>Probability of Connectivity</title>
   <figure align="center" xml:id="id1">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 4.5: Probability of connectivity with n=10 and a range of p. The vertical line shows the predicted critical value.</caption>
     <image source="Graphs/Figures/thinkcomplexity2005.png" width="50%" alt="&quot;Figure 4.5: Probability of connectivity with n=10 and a range of p. The vertical line shows the predicted critical value&quot;"/>
   </figure>
-  <figure align="center" xml:id="id2">
+  <figure align="center" xml:id="g-fig-6">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 4.6: Probability of connectivity for several values of n and a range of p.</caption>
     <image source="Graphs/Figures/thinkcomplexity2006.png" width="50%" alt="&quot;Figure 4.6: Probability of connectivity for several values of n and a range of p.&quot;"/>
   </figure>
