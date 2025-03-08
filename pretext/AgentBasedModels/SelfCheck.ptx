@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<section xml:id="agent-based-models_self-check">
+  <title>Self Check</title>
+  <exercise label="SC10_Q1">
+    <statement>
+      <p>
+</p>
+    </statement>
+    <matches>
+      <match order="1">
+        <premise>Sugar</premise>
+        <response>Each agent starts with an endowment of this chosen from a uniform distribution between 5 and 25 units.</response>
+      </match>
+      <match order="2">
+        <premise>Metabolism</premise>
+        <response>Each agent has some amount of sugar they must consume per time step, chosen uniformly between 1 and 4.</response>
+      </match>
+      <match order="3">
+        <premise>Vision</premise>
+        <response>Each agent can <q>see</q> the amount of sugar in nearby cells and move to the cell with the most, but some agents can see and move farther than others. The distance agents see is chosen uniformly between 1 and 6.</response>
+      </match>
+    </matches>
+  </exercise>
+  <exercise label="SC10_Q2">
+    <statement>
+      <p>Q-2: Why does the author say that the segregation seen in Schelling's model is an emergent property?</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>Because it is caused by all the moving of the agents.</p>
+        </statement>
+        <feedback>
+          <p>Incorrect, the movement of the agents does not matter.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>Because it is not caused by racist agents.</p>
+        </statement>
+        <feedback>
+          <p>Correct!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Because the agents were highly xenophobic.</p>
+        </statement>
+        <feedback>
+          <p>Incorrect, the agents in the Schelling model were mildly xenophobic.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Because the agents were chosen at random.</p>
+        </statement>
+        <feedback>
+          <p>Incorrect, randomness does not affect the emergent property.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="SC10_Q3">
+    <statement>
+      <p>Q-3: What behaviour does the aggergates show that the agents don't have?</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>They can see.</p>
+        </statement>
+        <feedback>
+          <p>Agents are able to see.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>They get sugar.</p>
+        </statement>
+        <feedback>
+          <p>To stay alive they have to get sugar to eat.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>They move diagonally.</p>
+        </statement>
+        <feedback>
+          <p>Correct!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>They Migrate.</p>
+        </statement>
+        <feedback>
+          <p>To stay alive agents have to migrate to find more surgar.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</section>

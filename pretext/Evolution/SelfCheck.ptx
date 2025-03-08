@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<section xml:id="evolution_self-check">
+  <title>Self Check</title>
+  <exercise>
+    <statement>
+      <p>Q-1: The theory of evolution is powerful because it explains <BlankNode/>, <BlankNode/>, and <BlankNode/> which are phenomena seen in the natural world that seem inexplicable initially. <var/>  <var/>  <var/>  </p>
+    </statement>
+    <setup>
+      <var>
+        <condition string="^\s*adaptation\s*$">
+          <feedback>
+            <p>Correct</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Incorrect, please refer back to the text.</p>
+          </feedback>
+        </condition>
+      </var>
+      <var>
+        <condition string="^\s*increasing\s+diversity\s*$">
+          <feedback>
+            <p>Correct</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Incorrect, please refer back to the text.</p>
+          </feedback>
+        </condition>
+      </var>
+      <var>
+        <condition string="^\s*increasing\s+complexity\s*$">
+          <feedback>
+            <p>Correct</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Incorrect, please refer back to the text.</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>Q-2: To quantify the dispersion of a population, we can compute the mean of the distances between <BlankNode/>  of <BlankNode/>. <var/>  <var/>  </p>
+    </statement>
+    <setup>
+      <var>
+        <condition string="^\s*pairs\s*$">
+          <feedback>
+            <p>Correct.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Incorrect.</p>
+          </feedback>
+        </condition>
+      </var>
+      <var>
+        <condition string="^\s*agents\s*$">
+          <feedback>
+            <p>Correct.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Incorrect.</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>Q-3: To induce evolution, we need <BlankNode/> relationship between genotype and fitness, but it turns out that it can be <BlankNode/> relationship. <var/>  <var/>  </p>
+    </statement>
+    <setup>
+      <var>
+        <condition string="^\s*some\s*$">
+          <feedback>
+            <p>Correct.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*any\s*$">
+          <feedback>
+            <p>Sorry this is incorrect, to induce evolution it has another characteristic.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Incorrect.</p>
+          </feedback>
+        </condition>
+      </var>
+      <var>
+        <condition string="^\s*any\s*$">
+          <feedback>
+            <p>Correct.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*some\s*$">
+          <feedback>
+            <p>Sorry this is incorrect, in the real world it is not as constrained as with the models.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Incorrect.</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+</section>

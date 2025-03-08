@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+        <title>Game Of Life</title>
+        <xi:include href='./Introduction.ptx' />
+        <xi:include href='./ConwaysGoL.ptx' />
+        <xi:include href='./LifePatterns.ptx' />
+        <xi:include href='./ConwaysConjecture.ptx' />
+        <xi:include href='./Realism.ptx' />
+        <xi:include href='./Instrumentalism.ptx' />
+        <xi:include href='./ImplementingLife.ptx' />
+        <xi:include href='./Exercises.ptx' />
+        <xi:include href='./Glossary.ptx' />
+        <xi:include href='./Matching.ptx' />
+        <xi:include href='./SelfCheck.ptx' />
+    </chapter>

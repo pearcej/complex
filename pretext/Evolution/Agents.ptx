@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<section xml:id="evolution_agents">
+  <title>Agents</title>
+  <p>Next we need agents. Here's the class definition:</p>
+  <pre>class Agent:
+
+    def __init__(self, loc, fit_land):
+        self.loc = loc
+        self.fit_land = fit_land
+        self.fitness = fit_land.fitness(self.loc)
+
+    def copy(self):
+        return Agent(self.loc, self.fit_land)</pre>
+  <p>The attributes of an <c>Agent</c> are:</p>
+  <p>
+    <ul>
+      <li>
+        <p><c>loc</c>: The location of the <c>Agent</c> in the fitness landscape.</p>
+      </li>
+      <li>
+        <p><c>fit_land</c>: A reference to a <c>FitnessLandscape</c> object.</p>
+      </li>
+      <li>
+        <p><c>fitness</c>: The fitness of this <c>Agent</c> in the <c>FitnessLandscape</c>, represented as a number between 0 and 1.</p>
+      </li>
+    </ul>
+  </p>
+  <p><c>Agent</c> provides <c>copy</c>, which copies the genotype exactly. Later, we will see a version that copies with mutation, but mutation is not necessary for evolution.</p>
+</section>

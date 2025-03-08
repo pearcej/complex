@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<section xml:id="evolution-of-cooperation_glossary">
+  <title>Glossary</title>
+  <p><term>Altruism:</term> The tendency of many animals to help other animals, even to their own detriment.</p>
+  <p><term>Forgiving:</term> The trait that made sure strategies  were too vindictive.</p>
+  <p><term>Nice:</term> The strategies that do well cooperate during the first round, and generally cooperate as often as they defect in subsequent rounds.</p>
+  <p><term>Non-Envious:</term> Some of the most successful strategies seldom outscore their opponents; they are successful because they do well enough against a wide variety of opponents.</p>
+  <p><term>Prisoner's Dilemma:</term> Two members of a criminal gang are arrested and imprisoned. Each prisoner is in solitary confinement with no means of communicating with the other. The prosecutors lack sufficient evidence to convict the pair on the principal charge, but they have enough to convict both on a lesser charge. Simultaneously, the prosecutors offer each prisoner a bargain. Each prisoner is given the opportunity to either: (1) betray the other by testifying that the other committed the crime, or (2) cooperate with the other by remaining silent. The offer is:</p>
+  <p>If A and B each betray the other, each of them serves 2 years in prison.</p>
+  <p>If A betrays B but B remains silent, A will be set free and B will serve 3 years in prison (and vice versa).</p>
+  <p>If A and B both remain silent, both of them will only serve 1 year in prison (on the lesser charge).</p>
+  <p><term>Problem of Altruism:</term> The apparent conflict between natural selection, which suggests that animals live in a state of constant competition, and altruism, which is the tendency of many animals to help other animals, even to their own detriment</p>
+  <p><term>Retaliating:</term> Strategies that cooperate all the time did not do as well as strategies that retaliate if the opponent defects.</p>
+  <p><term>Tit for Tat:</term> Rober Axelrod's Prisoner's Dilemma strategy, that will always cooperate in the first round of a match but will then copy whatever the opponent did in the previous round.</p>
+</section>

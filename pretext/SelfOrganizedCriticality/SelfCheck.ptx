@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+<section xml:id="self-organized-criticality_self-check">
+  <title>Self Check</title>
+  <exercise>
+    <statement>
+      <p>Q-1: <BlankNode/> means that from any initial condition, the system moves toward a <BlankNode/> state, and stays there, without external control. <var/>  <var/>  </p>
+    </statement>
+    <setup>
+      <var>
+        <condition string="^\s*Self-organized\s*$">
+          <feedback>
+            <p>Correct.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Incorrect.</p>
+          </feedback>
+        </condition>
+      </var>
+      <var>
+        <condition string="^\s*critical\s*$">
+          <feedback>
+            <p>Correct.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Incorrect.</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise label="SC9_Q2" indent="show" language="python">
+    <statement>
+      <p>Please put the step method that finds all cells above k and topples them.</p>
+    </statement>
+    <blocks>
+      <block order="6">
+        <cline>def step(self, K=3):</cline>
+      </block>
+      <block order="1">
+        <cline>    toppling = self.array &gt; K</cline>
+        <cline>    </cline>
+      </block>
+      <block order="3">
+        <cline>    num_toppled = np.sum(toppling)</cline>
+        <cline>    </cline>
+      </block>
+      <block order="2">
+        <cline>    c = correlate2d(toppling, self.kernel, mode='same')</cline>
+        <cline>    </cline>
+      </block>
+      <block order="5">
+        <cline>    self.array += c</cline>
+        <cline>    </cline>
+      </block>
+      <block order="4">
+        <cline>    return num_toppled</cline>
+      </block>
+    </blocks>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>Q-3: A <BlankNode/> model describes a system by describing its parts and their interactions. <BlankNode/> models are more focused on similarities between systems and less interested in analogous parts. <var/>  <var/>  </p>
+    </statement>
+    <setup>
+      <var>
+        <condition string="^\s*reductionist\s*$">
+          <feedback>
+            <p>Correct.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*holistic\s*$">
+          <feedback>
+            <p>Incorrect, holistic models are more focused on similarities between systems and less interested in analogous parts.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Incorrect.</p>
+          </feedback>
+        </condition>
+      </var>
+      <var>
+        <condition string="^\s*holistic\s*$">
+          <feedback>
+            <p>Correct.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*reductionist\s*$">
+          <feedback>
+            <p>Incorrect, reductionists models describe a system by describing its parts and their interactions.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Incorrect.</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>Q-4: The <BlankNode/> cause of an avalanch in a sand pile is a grain of sand and the <BlankNode/> cause is the structe and dynamics of the systems as a whole. <var/>  <var/>  </p>
+    </statement>
+    <setup>
+      <var>
+        <condition string="^\s*proximate\s*$">
+          <feedback>
+            <p>Correct.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*ultimate\s*$">
+          <feedback>
+            <p>Incorrect, the ultimate cause is the structure and dynamics as a whole.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Incorrect.</p>
+          </feedback>
+        </condition>
+      </var>
+      <var>
+        <condition string="^\s*ultimate\s*$">
+          <feedback>
+            <p>Correct.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*proximate\s*$">
+          <feedback>
+            <p>Incorrect, the proximate cause is the grain of sand that starts the avalanche.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Incorrect.</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+</section>

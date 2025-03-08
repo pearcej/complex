@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<section xml:id="evolution_differential-survival">
+  <title>Differential Survival</title>
+  <p xml:id="evolution_evo-8" names="evo_8">Let's add one more ingredient, differential survival. Here's a class that extends <c>Simulation</c> and overrides <c>choose_dead</c>:</p>
+  <pre>class SimWithDiffSurvival(Simulation):
+
+    def choose_dead(self, fits):
+        n = len(self.agents)
+        is_dead = np.random.random(n) &gt; fits
+        index_dead = np.nonzero(is_dead)[0]
+        return index_dead</pre>
+  <p>Now the probability of survival depends on fitness; in fact, in this version, the probability that an agent survives each time step <em>is</em> its fitness.</p>
+  <p xml:id="evolution_evo-fig-2" names="evo_fig_2">Since agents with low fitness are more likely to die, agents with high fitness are more likely to survive long enough to reproduce. Over time we expect the number of low-fitness agents to decrease, and the number of high-fitness agents to increase.</p>
+  <figure align="center" xml:id="id1">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 13.2: Mean fitness over time for 10 simulations with differential survival.</caption>
+    <image source="Evolution/Figures/DIF_SURVIVE_FIT.png" width="50%" alt="&quot;Figure 13.2: Mean fitness over time for 10 simulations with differential survival.&quot;"/>
+  </figure>
+  <p><xref ref="evo-fig-2"/> shows mean fitness over time for 10 simulations with differential survival. Mean fitness increases quickly at first, but then levels off.</p>
+  <p>You can probably figure out why it levels off: if there is only one agent at a particular location and it dies, it leaves that location unoccupied. Without mutation, there is no way for it to be occupied again.</p>
+  <p>With <c>N=8</c>, this simulation starts with 256 agents occupying all possible locations. Over time, the number of occupied locations decreases; if the simulation runs long enough, eventually all agents will occupy the same location.</p>
+  <p>So this simulation starts to explain adaptation: increasing fitness means that the species is getting better at surviving in its environment. But the number of occupied locations decreases over time, so this model does not explain increasing diversity at all.</p>
+  <p>In the notebook for this chapter, you will see the effect of differential reproduction. As you might expect, differential reproduction also increases mean fitness. But without mutation, we still don't see increasing diversity.</p>
+  <exercise label="q_12.8">
+    <statement>
+      <p>Q-1: What does the simulation above explain?</p>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement>
+          <p>Adaptation.</p>
+        </statement>
+        <feedback>
+          <p>Correct! Increasing fitness means that the species is getting better at surviving in its environment.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>The increasing diversity.</p>
+        </statement>
+        <feedback>
+          <p>Incorrect, the number of occupied locations decreases over time, so this model does not explain increasing diversity at all.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>The decrease in mean fitness.</p>
+        </statement>
+        <feedback>
+          <p>Incorrect, the decrease in mean fitness is not explained by simulation.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Increase of locations occupied over time.</p>
+        </statement>
+        <feedback>
+          <p>Incorrect, the number of occupied locations decrease.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</section>
