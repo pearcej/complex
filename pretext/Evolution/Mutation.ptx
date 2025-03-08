@@ -19,7 +19,7 @@
     new_loc = self.loc.copy()
     new_loc[direction] ^= 1
     return new_loc</pre>
-  <p xml:id="evolution_evo-fig-3" names="evo_fig_3">The operator ^= computes <q>exclusive OR</q>; with the operand 1, it has the effect of flipping a bit.</p>
+  <p xml:id="evo-fig-3" names="evo_fig_3">The operator ^= computes <q>exclusive OR</q>; with the operand 1, it has the effect of flipping a bit.</p>
   <p>Now that we have mutation, we don't have to start with an agent at every location. Instead, we can start with the minimum variability: all agents at the same location.</p>
   <figure align="center" xml:id="id1">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 13.3: Mean fitness over time for 10 simulations with mutation and differential survival and reproduction.</caption>

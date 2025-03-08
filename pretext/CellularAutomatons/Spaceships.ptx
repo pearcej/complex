@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
-<section xml:id="cellular-automatons_spaceships-ca-fig-4-ca-7">
+<section xml:id="ca-fig-4">
   <title>Spaceships</title>
   <figure align="center" xml:id="fig-tc-reference">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 7.4: Rule 110 after 100 time steps.</caption>
     <image source="CellularAutomatons/Figures/thinkcomplexity2019.png" width="50%" alt="&quot;Figure 7.4: Rule 110 after 100 time steps.&quot;"/>
   </figure>
-  <p xml:id="cellular-automatons_ca-fig-5" names="ca_fig_5">The behavior of Class 4 CAs is even more surprising. Several 1-D CAs, most notably Rule 110, are <term>Turing complete</term>, which means that they can compute any computable function. This property, also called <term>universality</term>, was proved by Matthew Cook in 1998.</p>
+  <p xml:id="ca-fig-5" names="ca_fig_5">The behavior of Class 4 CAs is even more surprising. Several 1-D CAs, most notably Rule 110, are <term>Turing complete</term>, which means that they can compute any computable function. This property, also called <term>universality</term>, was proved by Matthew Cook in 1998.</p>
   <p><xref ref="ca-fig-4"/> shows what Rule 110 looks like with an initial condition of a single cell and 100 time steps. At this time scale it is not apparent that anything special is going on. There are some regular patterns but also some features that are hard to characterize.</p>
   <p><xref ref="ca-fig-5"/> shows a bigger picture, starting with a random initial condition and 600 time steps:</p>
   <figure align="center" xml:id="id2">

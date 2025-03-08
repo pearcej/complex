@@ -21,7 +21,7 @@
             sum of the first <em>n</em> integers. The algorithm uses the idea of an
             accumulator variable that is initialized to 0. The solution then
             iterates through the <em>n</em> integers, adding each to the accumulator.</p>
-  <p xml:id="algorithm-analysis_lst-sum0" names="lst_sum0">
+  <p xml:id="lst-sum0" names="lst_sum0">
     <term>Listing 1</term>
   </p>
   <exercise>
@@ -50,7 +50,7 @@ main()
             not obvious is poor coding. We did not use good identifier names to
             assist with readability, and we used an extra assignment statement
             during the accumulation step that was not really necessary.</p>
-  <p xml:id="algorithm-analysis_lst-sum2" names="lst_sum2">
+  <p xml:id="lst-sum2" names="lst_sum2">
     <term>Listing 2</term>
   </p>
   <exercise>
@@ -107,7 +107,7 @@ main()
             arbitrary starting point. By calling this function twice, at the beginning
             and at the end, and then computing the difference, we can get an exact
             number of seconds (fractions in most cases) for execution.</p>
-  <p xml:id="algorithm-analysis_lst-sum11" names="lst_sum11">
+  <p xml:id="lst-sum11" names="lst_sum11">
     <term>Listing 3</term>
   </p>
   <exercise>
@@ -255,7 +255,7 @@ main()
                 taking advantage of the formula we just developed.</p>
     <exercise>
       <TabNode tabname="Python" tabnode_options="{'subchapter': 'WhatIsAlgorithmAnalysis', 'chapter': 'AlgorithmAnalysis', 'basecourse': 'complex', 'optional': '', 'optclass': '', 'tabname': 'Python'}">
-        <program xml:id="active3_py" interactive="activecode" language="python">
+        <program xml:id="lst-sum3" interactive="activecode" language="python">
           <input>
 """ Performs same function as listing one, and also list the time it takes to perform
 the function, and it performs better with larger inputs or (n) """

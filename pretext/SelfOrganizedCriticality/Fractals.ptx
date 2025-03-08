@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="self-organized-criticality_fractals">
   <title>Fractals</title>
-  <p xml:id="self-organized-criticality_soc-6" names="soc_6">Another property of critical systems is fractal geometry. The initial configuration in <xref ref="self-organized-criticality_implementing-the-sand-pile"/> (left) resembles a fractal, but you can't always tell by looking. A more reliable way to identify a fractal is to estimate its fractal dimension, as we saw in <xref ref="physical-modeling_fractals"/> and <xref ref="physical-modeling_fractals-and-percolation-models"/>.</p>
+  <p xml:id="self-organized-criticality_soc-6" names="soc_6">Another property of critical systems is fractal geometry. The initial configuration in <xref ref="implementing-the-self-organized-criticality_sand-pile"/> (left) resembles a fractal, but you can't always tell by looking. A more reliable way to identify a fractal is to estimate its fractal dimension, as we saw in <xref ref="physical-modeling_fractals"/> and <xref ref="physical-modeling_fractals-and-percolation-models"/>.</p>
   <p>We'll start by making a bigger sand pile, with <c>n=131</c> and initial level <c>22</c>.</p>
   <pre>pile3 = SandPile(n=131, level=22)
 pile3.run()</pre>
@@ -47,7 +47,7 @@ steps, steps2, cells = res</pre>
   <pre>thinkplot.plot(steps, steps2, linestyle='dashed')
 thinkplot.plot(steps, cells)
 thinkplot.plot(steps, steps, linestyle='dashed')</pre>
-  <figure align="center" xml:id="id2">
+  <figure align="center" xml:id="soc-fig-5">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 10.5: Box counts for cells with levels 0, 1, 2, and 3, compared to dashed lines with slopes 1 and 2.</caption>
     <image source="SelfOrganizedCriticality/Figures/BOX_COUNTS.png" width="50%" alt="&quot;Figure 10.5: Box counts for cells with levels 0, 1, 2, and 3, compared to dashed lines with slopes 1 and 2.&quot;"/>
   </figure>

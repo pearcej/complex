@@ -14,18 +14,18 @@ res = [pile2.drop_and_run() for _ in range(iters)]</pre>
   <p>A large majority of drops have duration 1 and no toppled cells; if we filter them out before plotting, we get a clearer view of the rest of the distribution.</p>
   <pre>T = T[T&gt;1]
 S = S[S&gt;0]</pre>
-  <p>The distributions of <c>T</c> and <c>S</c> have many small values and a few very large ones. We will use the <c>Pmf</c> class to make a PMF of the values, that is, a map from each value to its probability of occurring (see <xref ref="scale-free-networks_degree"/>).</p>
+  <p>The distributions of <c>T</c> and <c>S</c> have many small values and a few very large ones. We will use the <c>Pmf</c> class to make a PMF of the values, that is, a map from each value to its probability of occurring (see <xref ref="scale-free-networks_heavy-tailed-distributions"/>).</p>
   <pre>pmfT = Pmf(T)
 pmfS = Pmf(S)</pre>
-  <figure align="center" xml:id="self-organized-criticality_log-log">
+  <figure align="center" xml:id="soc-fig-2">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 10.2: Distribution of avalanche duration (left) and size (right), linear scale.</caption>
     <image source="SelfOrganizedCriticality/Figures/LINEAR_DIST_AVA.png" width="50%" alt="&quot;Figure 10.2: Distribution of avalanche duration (left) and size (right), linear scale.&quot;"/>
   </figure>
-  <figure align="center" xml:id="id2">
+  <figure align="center" xml:id="soc-fig-3">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 10.3: Distribution of avalanche duration (left) and size (right), self-organized-criticality_log-log scale.</caption>
     <image source="SelfOrganizedCriticality/Figures/LOGLOG_DIST_AVA.png" width="50%" alt="&quot;Figure 10.3: Distribution of avalanche duration (left) and size (right), self-organized-criticality_log-log scale.&quot;"/>
   </figure>
-  <p><xref ref="self-organized-criticality_linear-scale"/> shows the results for values less than 50.</p>
+  <p><xref ref="soc-fig-2"/> shows the results for values less than 50.</p>
   <p>As we saw in <xref ref="scale-free-networks_heavy-tailed-distributions"/>, we can get a clearer picture of these distributions by plotting them on a self-organized-criticality_log-log scale, as shown in <xref ref="self-organized-criticality_log-log"/>.</p>
   <p>For values between 1 and 100, the distributions are nearly straight on a self-organized-criticality_log-log scale, which is characteristic of a heavy tail. The gray lines in the figure have slopes near -1, which suggests that these distributions follow a power law with parameters near <math>&#x3B1;=1</math>.</p>
   <p>For values greater than 100, the distributions fall away more quickly than the power law model, which means there are fewer very large values than the model predicts. One possibility is that this effect is due to the finite size of the sand pile; if so, we might expect larger piles to fit the power law better.</p>

@@ -13,7 +13,7 @@
   <pre>c = correlate2d(array, kernel, mode='same')</pre>
   <p>We'll use a diffusion constant, <c>r</c>, that relates the difference in concentration to the rate of flow:</p>
   <pre>array += r * c</pre>
-  <figure align="center" xml:id="id1">
+  <figure align="center" xml:id="pm-fig-1">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 9.1: A simple diffusion model after 0, 5, and 10 steps.</caption>
     <image source="PhysicalModeling/Figures/SIMPLE_DIF.png" width="50%" alt="&quot;Figure 9.1: A simple diffusion model after 0, 5, and 10 steps.&quot;"/>
   </figure>

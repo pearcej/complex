@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<section xml:id="graphs_networkx-g-fig-2-g-3">
+<section xml:id="graphs-networkx">
   <title>NetworkX</title>
-  <figure align="center" xml:id="id1">
+  <figure align="center" xml:id="g-fig-2">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 4.2: An undirected graph that represents driving time between cities.</caption>
     <image source="Graphs/Figures/thinkcomplexity2002.png" width="50%" alt="&quot;Figure 4.2: An undirected graph that represents driving time between cities.&quot;"/>
   </figure>
@@ -31,7 +31,7 @@ G.add_edge('Bob', 'Chuck')</pre>
              node_color=COLORS[0],
              node_size=2000,
              with_labels=True)</pre>
-  <p>That's the code I use to generate <xref ref="graphs_what-is-a-graph"/>. The option <c>with_labels</c> causes the nodes to be labeled; in the next example we'll see how to label the edges.</p>
+  <p>That's the code I use to generate <xref ref="g-fig-1"/>. The option <c>with_labels</c> causes the nodes to be labeled; in the next example we'll see how to label the edges.</p>
   <p>To generate <xref ref="g-fig-2"/>, I start with a dictionary that maps from each city name to its approximate longitude and latitude:</p>
   <pre>positions = dict(Albany=(-74, 43),
             Boston=(-71, 42),

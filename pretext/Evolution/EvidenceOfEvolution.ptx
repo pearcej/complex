@@ -24,7 +24,7 @@ sim = Simulation(fit_land, agents)</pre>
 sim.add_instrument(instrument)
 sim.run()</pre>
   <p><c>Simulation</c> keeps a list of <c>Instrument</c> objects. After each time step it invokes <c>update</c> on each <c>Instrument</c> in the list.</p>
-  <figure align="center" xml:id="id1">
+  <figure align="center" xml:id="evo-fig-1">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 13.1: Mean fitness over time for 10 simulations with no differential survival or reproduction.</caption>
     <image source="Evolution/Figures/MEAN_FIT.png" width="50%" alt="&quot;Figure 13.1: Mean fitness over time for 10 simulations with no differential survival or reproduction.&quot;"/>
   </figure>

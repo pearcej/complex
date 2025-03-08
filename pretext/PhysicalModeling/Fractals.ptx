@@ -5,7 +5,7 @@
   <p>For simple geometric objects, dimension is defined in terms of scaling behavior. For example, if the side of a square has length <math>l</math>, its area is <math>l^2</math>. The exponent, 2, indicates that a square is two-dimensional. Similarly, if the side of a cube has length <math>l</math>, its volume is <math>l^3</math>, which indicates that a cube is three-dimensional.</p>
   <p>More generally, we can estimate the dimension of an object by measuring some kind of size (like area or volume) as a function of some kind of linear measure (like the length of a side).</p>
   <p>As an example, We'll estimate the dimension of a 1-D cellular automaton by measuring its area (total number of <q>on</q> cells) as a function of the number of rows.</p>
-  <figure align="center" xml:id="id1">
+  <figure align="center" xml:id="pm-fig-6">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 9.6: One-dimensional CAs with rules 20, 50, and 18, after 32 time steps.</caption>
     <image source="PhysicalModeling/Figures/1D_CA.png" width="50%" alt="&quot;Figure 9.6: One-dimensional CAs with rules 20, 50, and 18, after 32 time steps.&quot;"/>
   </figure>
@@ -22,7 +22,7 @@
         ca.step()
 
     return res</pre>
-  <figure align="center" xml:id="id2">
+  <figure align="center" xml:id="pm-fig-7">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 9.7: Number of <q>on</q> cells versus number of time steps for rules 20, 50, and 18.</caption>
     <image source="PhysicalModeling/Figures/NUM_ON_CELL.png" width="50%" alt="&quot;Figure 9.7: Number of &#x201C;on&#x201D; cells versus number of time steps for rules 20, 50, and 18.&quot;"/>
   </figure>

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="appendix1_installing-juypter-notebooks-through-anaconda">
+<section xml:id="appendix1_installing-anaconda">
   <title>Installing Juypter Notebooks through Anaconda</title>
   <p>If you don't already have Jupyter, it is a Python distribution that contains everything you need for the companion code for this book.
             It is easy to install on Windows, Mac, and Linux, and because it does a user-level install, it will not interfere with other

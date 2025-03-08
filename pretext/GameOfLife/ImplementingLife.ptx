@@ -19,7 +19,7 @@ for i in range(1, rows-1):
             if k == 3:
                 b[i, j] = 1</pre>
   <p>Initially, <c>b</c> is an array of zeros with the same size as <c>a</c>. Each time through the loop, <c>state</c> is the condition of the center cell and <c>neighbors</c> is the 3x3 neighborhood. <c>k</c> is the number of live neighbors (not including the center cell). The nested <c>if</c> statements evaluate the GoL rules and turn on cells in <c>b</c> accordingly.</p>
-  <p>This implementation is a straightforward translation of the rules, but it is verbose and slow. We can do better using cross-correlation, as we saw in <xref ref="cellular-automatons_implementing-c-as"/>. There, we used <c>np.correlate</c> to compute a 1-D correlation. Now, to perform 2-D correlation, we'll use <c>correlate2d</c> from <c>scipy.signal</c>, a SciPy module that provides functions related to signal processing:</p>
+  <p>This implementation is a straightforward translation of the rules, but it is verbose and slow. We can do better using cross-correlation, as we saw in <xref ref="cellular-automatons_implementing-cas"/>. There, we used <c>np.correlate</c> to compute a 1-D correlation. Now, to perform 2-D correlation, we'll use <c>correlate2d</c> from <c>scipy.signal</c>, a SciPy module that provides functions related to signal processing:</p>
   <pre>from scipy.signal import correlate2d
 
 kernel = np.array([[1, 1, 1],

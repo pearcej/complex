@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="self-organized-criticality_implementing-the-self-organized-criticality_self-organized-criticality_self-organized-criticality_sand-pile">
+<section xml:id="implementing-the-self-organized-criticality_sand-pile">
   <title>Implementing the Sand Pile</title>
   <p>To implement the sand pile model, We define a class called <c>SandPile</c> that inherits from <c>Cell2D</c>, which is defined in <c>Cell2D.py</c> in the repository for this book.</p>
   <pre>class SandPile(Cell2D):
@@ -63,10 +63,10 @@ pile.array[1, 3] = 4</pre>
    n, m = a.shape
    index = np.random.randint(n), np.random.randint(m)
    a[index] += 1</pre>
-  <p xml:id="self-organized-criticality_self-organized-criticality_self-organized-criticality_self-organized-criticality_sand-pile" names="sand_pile">Let's look at a bigger example, with <c>n=20</c>:</p>
+  <p>Let's look at a bigger example, with <c>n=20</c>:</p>
   <pre>pile = SandPile(n=20, level=10)
 pile.run()</pre>
-  <figure align="center" xml:id="id1">
+  <figure align="center" xml:id="sco-fig-1">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Gif of a sand pile running for 100 steps.</caption>
     <image source="SelfOrganizedCriticality/Figures/Sand_pile_3.gif" width="50%" alt="&quot;Gif of a sand pile running for 100 steps.&quot;"/>
   </figure>
@@ -74,9 +74,9 @@ pile.run()</pre>
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 10.1: Sand pile model initial state (left), after 200 steps (middle), and 400 steps (right).</caption>
     <image source="SelfOrganizedCriticality/Figures/SP_MODEL.png" width="50%" alt="&quot;Figure 10.1: Sand pile model initial state (left), after 200 steps (middle), and 400 steps (right).&quot;"/>
   </figure>
-  <p>With an initial level of 10, this sand pile takes 332 time steps to reach equilibrium, with a total of 53,336 topplings. <xref ref="self-organized-criticality_self-organized-criticality_self-organized-criticality_sand-pile"/> (left) shows the configuration after this initial run. Notice that it has the repeating elements that are characteristic of fractals. We'll come back to that soon.</p>
-  <p><xref ref="self-organized-criticality_self-organized-criticality_self-organized-criticality_sand-pile"/> (middle) shows the configuration of the sand pile after dropping 200 grains onto random cells, each time running until the pile reaches equilibrium. The symmetry of the initial configuration has been broken; the configuration looks random.</p>
-  <p>Finally <xref ref="self-organized-criticality_self-organized-criticality_self-organized-criticality_sand-pile"/> (right) shows the configuration after 400 drops. It looks similar to the configuration after 200 drops. In fact, the pile is now in a steady state where its statistical properties don't change over time. We will learn about some of those statistical properties in the next section.</p>
+  <p>With an initial level of 10, this sand pile takes 332 time steps to reach equilibrium, with a total of 53,336 topplings. <xref ref="sco-fig-1"/> (left) shows the configuration after this initial run. Notice that it has the repeating elements that are characteristic of fractals. We'll come back to that soon.</p>
+  <p><xref ref="sco-fig-1"/> (middle) shows the configuration of the sand pile after dropping 200 grains onto random cells, each time running until the pile reaches equilibrium. The symmetry of the initial configuration has been broken; the configuration looks random.</p>
+  <p>Finally <xref ref="sco-fig-1"/> (right) shows the configuration after 400 drops. It looks similar to the configuration after 200 drops. In fact, the pile is now in a steady state where its statistical properties don't change over time. We will learn about some of those statistical properties in the next section.</p>
   <exercise>
     <statement>
       <p>Q-1: The sand pile above reached an equilibrium after <BlankNode/> steps. <var/>  </p>

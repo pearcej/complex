@@ -24,7 +24,7 @@ return exist / possible</pre>
   <pre>&gt;&gt;&gt; lattice = make_ring_lattice(10, 4)
 &gt;&gt;&gt; node_clustering(lattice, 1)
 0.5</pre>
-  <p>In a ring lattice with <math>k=4</math>, the clustering coefficient for each node is <math>0.5</math> (if you are not convinced, take another look at <xref ref="small-world-graphs_ring-lattice"/>).</p>
+  <p>In a ring lattice with <math>k=4</math>, the clustering coefficient for each node is <math>0.5</math> (if you are not convinced, take another look at <xref ref="swg-fig-1"/>).</p>
   <p>Now we can compute the network average clustering coefficient like this:</p>
   <pre>def clustering_coefficient(G):
 cu = [node_clustering(G, node) for node in G]

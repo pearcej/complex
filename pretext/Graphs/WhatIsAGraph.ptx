@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="graphs_what-is-a-graph">
   <title>What is a Graph?</title>
-  <figure align="center" xml:id="g-2">
+  <figure align="center" xml:id="g-fig-1">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 4.1: A directed graph that represents a social network.</caption>
     <image source="Graphs/Figures/thinkcomplexity2001.png" width="50%" alt="&quot;Figure 4.1: A directed graph that represents a social network.&quot;"/>
   </figure>
@@ -13,5 +13,5 @@
   <p>Graphs have interesting mathematical properties, and there is a branch of mathematics called <term>graph theory</term> that studies them.</p>
   <p>Graphs are also useful, because there are many real world problems that can be solved using <term>graph algorithms</term>. For example, Dijkstra's shortest path algorithm is an efficient way to find the shortest path from a node to all other nodes in a graph. A <term>path</term> is a sequence of nodes with an edge between each consecutive pair.</p>
   <p>Graphs are usually drawn with squares or circles for nodes and lines for edges. For example, the <term>directed graph</term> in <xref ref="g-fig-1"/> might represent three people who follow each other on Twitter. The arrow indicates the direction of the relationship. In this example, Alice and Bob follow each other, both follow Chuck, and Chuck follows no one.</p>
-  <p>The <term>undirected graph</term> in <xref ref="graphs_network-x"/> shows four cities in the northeast United States; the labels on the edges indicate driving time in hours. In this example the placement of the nodes corresponds roughly to the geography of the cities, but in general the layout of a graph is arbitrary.</p>
+  <p>The <term>undirected graph</term> in <xref ref="g-fig-2"/> shows four cities in the northeast United States; the labels on the edges indicate driving time in hours. In this example the placement of the nodes corresponds roughly to the geography of the cities, but in general the layout of a graph is arbitrary.</p>
 </section>

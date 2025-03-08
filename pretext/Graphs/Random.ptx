@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="graphs_random-graphs">
+<section xml:id="graphs_random">
   <title>Random Graphs</title>
   <p xml:id="graphs_g-4" names="g_4">A <term>random graph</term> is just what it sounds like: a graph with nodes and edges generated at random. Of course, there are many random processes that can generate graphs, so there are many kinds of random graphs.</p>
   <p>One of the more interesting kinds is the Erd&#x151;s-R&#xE9;nyi model, studied by Paul Erd&#x151;s and Alfr&#xE9;d R&#xE9;nyi in the 1960s.</p>

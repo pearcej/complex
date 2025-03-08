@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="appendix2_getting-started-with-google-colab">
+<section xml:id="appendix2_getting-started-with-colab">
   <title>Getting Started With Google Colab</title>
   <p>Follow these guidelines on how to use Colab to use the Jupyter notebooks without installing Anaconda.</p>
   <p>
