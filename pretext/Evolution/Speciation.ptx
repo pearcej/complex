@@ -10,8 +10,8 @@
     def distance(self, loc1, loc2):
         return np.sum(np.logical_xor(loc1, loc2))</pre>
   <figure align="center" xml:id="evo-fig-5">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 13.5: Mean distance between agents over time.</caption>
-    <image source="Evolution/Figures/DIST_OVER_TIME.png" width="50%" alt="&quot;Figure 13.5: Mean distance between agents over time.&quot;"/>
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Mean distance between agents over time.</caption>
+    <image source="Evolution/Figures/DIST_OVER_TIME.png" width="50%" alt="&quot; Mean distance between agents over time.&quot;"/>
   </figure>
   <p>The <c>logical_xor</c> function computes <q>exclusive OR</q>, which is <c>True</c> for bits that differ, and <c>False</c> for the bits that are the same.</p>
   <p>To quantify the dispersion of a population, we can compute the mean of the distances between pairs of agents. In the notebook for this chapter, you'll see the <c>MeanDistance</c> instrument, which computes this metric after each time step.</p>
@@ -21,8 +21,8 @@
   <p>Now suppose we either change the environment or transport the population to a new environment. Some features that increased fitness in the old environment might decrease it in the new environment, and vice versa.</p>
   <p>We can model these scenarios by running a simulation until the population reaches steady state, then changing the fitness landscape, and then resuming the simulation until the population reaches steady state again.</p>
   <figure align="center" xml:id="evo-fig-6">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 13.6: Mean fitness over time. After 500 time steps, we change the fitness landscape.</caption>
-    <image source="Evolution/Figures/500ST_MEAN_FIT.png" width="50%" alt="&quot; Figure 12.6: Mean fitness over time. After 500 time steps, we change the fitness landscape.&quot;"/>
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Mean fitness over time. After 500 time steps, we change the fitness landscape.</caption>
+    <image source="Evolution/Figures/500ST_MEAN_FIT.png" width="50%" alt="&quot;  Mean fitness over time. After 500 time steps, we change the fitness landscape.&quot;"/>
   </figure>
   <p><xref ref="evo-fig-6"/> shows results from a simulation like that. We start with 100 identical mutants at a random location, and run the simulation for 500 time steps. At that point, many agents are at the optimal location, which has fitness near 0.65 in this example. The genotypes of the agents form a cluster, with the mean distance between agents near 1.</p>
   <p>After 500 steps, we run <c>FitnessLandscape.set_values</c>, which changes the fitness landscape; then we resume the simulation. Mean fitness is lower, as we expect because the optimal location in the old landscape is no better than a random location in the new landscape.</p>

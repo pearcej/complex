@@ -70,8 +70,8 @@
    self.array[(a==1) &amp; (c&gt;=5)] = 5</pre>
   <p>This function identifies porous cells, where <c>a==1</c>, that have at least one wet neighbor, where <c>c&gt;=5</c>, and sets their state to 5, which indicates that they are wet.</p>
   <figure align="center" xml:id="pm-fig-5">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 9.5: The first three steps of a percolation model with n=10 and p=0.7.</caption>
-    <image source="PhysicalModeling/Figures/3STEP_PERC.png" width="50%" alt="&quot;Figure 9.1: Sand pile model initial state (left), after 200 steps (middle), and 400 steps (right).&quot;"/>
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> The first three steps of a percolation model with n=10 and p=0.7.</caption>
+    <image source="PhysicalModeling/Figures/3STEP_PERC.png" width="50%" alt="&quot; Sand pile model initial state (left), after 200 steps (middle), and 400 steps (right).&quot;"/>
   </figure>
   <p><xref ref="pm-fig-5"/> shows the first few steps of a percolation model with <c>n=10</c> and <c>p=0.7</c>. Non-porous cells are white, porous cells are lightly shaded, and wet cells are dark.</p>
   <figure align="center" xml:id="id2">

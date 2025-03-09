@@ -2,8 +2,8 @@
 <section xml:id="scale-free-networks_heavy-tailed-distributions">
   <title>Heavy-tailed Distributions</title>
   <figure align="center" xml:id="sfn-fig-2">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 6.2: PMF of degree in the Facebook dataset and in the WS model, on a log-log scale.</caption>
-    <image source="ScaleFreeNetworks/Figures/thinkcomplexity2011.png" width="50%" alt="&quot;Figure 6.2: PMF of degree in the Facebook dataset and in the WS model, on a log-log scale.&quot;"/>
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> PMF of degree in the Facebook dataset and in the WS model, on a log-log scale.</caption>
+    <image source="ScaleFreeNetworks/Figures/thinkcomplexity2011.png" width="50%" alt="&quot; PMF of degree in the Facebook dataset and in the WS model, on a log-log scale.&quot;"/>
   </figure>
   <p><term>Heavy-tailed distributions</term> are a common feature in many areas of complexity science and they will be a recurring theme of this book.</p>
   <p>We can get a clearer picture of a heavy-tailed distribution by plotting it on a log-log axis, as shown in <xref ref="sfn-fig-2"/>. This transformation emphasizes the tail of the distribution; that is, the probabilities of large values.</p>

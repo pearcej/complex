@@ -2,8 +2,8 @@
 <section xml:id="graphs-networkx">
   <title>NetworkX</title>
   <figure align="center" xml:id="g-fig-2">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 4.2: An undirected graph that represents driving time between cities.</caption>
-    <image source="Graphs/Figures/thinkcomplexity2002.png" width="50%" alt="&quot;Figure 4.2: An undirected graph that represents driving time between cities.&quot;"/>
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> An undirected graph that represents driving time between cities.</caption>
+    <image source="Graphs/Figures/thinkcomplexity2002.png" width="50%" alt="&quot; An undirected graph that represents driving time between cities.&quot;"/>
   </figure>
   <p>To represent graphs, we'll use a package called NetworkX, which is the most commonly used network library in Python.</p>
   <p>We can create a directed graph by importing NetworkX (usually imported as <c>nx</c>) and instantiating <c>nx.DiGraph</c>:</p>

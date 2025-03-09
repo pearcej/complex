@@ -2,8 +2,8 @@
 <section xml:id="cellular-automatons_randomness">
   <title>Randomness</title>
   <figure align="center" xml:id="ca-fig-3">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 7.3: Rule 30 after 100 time steps.</caption>
-    <image source="CellularAutomatons/Figures/thinkcomplexity2018.png" width="50%" alt="&quot;Figure 7.3: Rule 30 after 100 time steps.&quot;"/>
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Rule 30 after 100 time steps.</caption>
+    <image source="CellularAutomatons/Figures/thinkcomplexity2018.png" width="50%" alt="&quot; Rule 30 after 100 time steps.&quot;"/>
   </figure>
   <p>Class 3 contains CAs that generate randomness. Rule 30 is an example; <xref ref="ca-fig-3"/> shows what it looks like after 100 time steps.</p>
   <p>Along the left side there is an apparent pattern, and on the right side there are triangles in various sizes, but the center seems quite random. In fact, if you take the center column and treat it as a sequence of bits, it is hard to distinguish from a truly random sequence. It passes many of the statistical tests people use to test whether a sequence of bits is random.</p>
