@@ -20,7 +20,7 @@ for size in sizes:
     <image source="PhysicalModeling/Figures/NUM_CELL_IN_PERC_CLUSTER.png" width="50%" alt="&quot;Figure 9.9: Number of cells in the percolating cluster versus CA size.&quot;"/>
   </figure>
   <p><xref ref="pm-fig-9"/> shows the results for a range of sizes from 10 to 100. The dots show the number of cells in each percolating cluster. The slope of a line fitted to these dots is often near 1.85, which suggests that the percolating cluster is, in fact, fractal when <c>q</c> is near the critical value.</p>
-  <p>When <c>q</c> is larger than the critical value, nearly every porous cell gets filled, so the number of wet cells is close to <math>q * size^2</math>, which has dimension 2.</p>
+  <p>When <c>q</c> is larger than the critical value, nearly every porous cell gets filled, so the number of wet cells is close to <m>q * size^2</m>, which has dimension 2.</p>
   <p>When <c>q</c> is substantially smaller than the critical value, the number of wet cells is proportional to the linear size of the array, so it has dimension 1.</p>
   <exercise label="q_8.7">
     <statement>

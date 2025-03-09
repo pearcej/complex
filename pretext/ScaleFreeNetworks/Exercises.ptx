@@ -21,6 +21,6 @@ def read_actor_network(filename, n=None):
             if n and i &gt;= n:
                 break
     return G</pre>
-  <p>Compute the number of actors in the graph and the average degree. Plot the PMF of degree on a <math>log-log</math> scale. Also plot the CDF of degree on a <math>log-x</math> scale, to see the general shape of the distribution, and on a <math>log-log</math> scale, to see whether the tail follows a power law.</p>
+  <p>Compute the number of actors in the graph and the average degree. Plot the PMF of degree on a <m>log-log</m> scale. Also plot the CDF of degree on a <m>log-x</m> scale, to see the general shape of the distribution, and on a <m>log-log</m> scale, to see whether the tail follows a power law.</p>
   <p>Note: The actor network is not connected, so you might want to use <c>nx.connected_component_subgraphs</c> to find connected subsets of the nodes.</p>
 </exercises>

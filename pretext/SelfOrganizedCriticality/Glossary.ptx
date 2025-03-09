@@ -7,7 +7,7 @@
   <p>Find a simple model that demonstrates that behavior.</p>
   <p>Identify the elements of the model that are necessary and sufficient to produce the behavior.</p>
   <p><term>Noise:</term> In common use, noise is usually an unwanted sound, but in the context of signal processing, it is a signal that contains many frequency components.</p>
-  <p><term>Pink Noise:</term> Complex signals can be decomposed into their frequency components. In pink noise, low-frequency components have more power than high-frequency components. Specifically, the power at frequency <math>f</math> is proportional to <math>1/f</math>.</p>
+  <p><term>Pink Noise:</term> Complex signals can be decomposed into their frequency components. In pink noise, low-frequency components have more power than high-frequency components. Specifically, the power at frequency <m>f</m> is proportional to <m>1/f</m>.</p>
   <p><term>Power Spectrum:</term> The power spectrum of a signal is a function that shows the power of each frequency component.</p>
   <p><term>Proximate Cause:</term> It is the cause most immediately responsible for a large avalanche.</p>
   <p><term>Reductionist Model:</term> A reductionist model describes a system by describing its parts and their interactions.</p>

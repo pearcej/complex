@@ -18,15 +18,15 @@
   <p>
     <ol label="1">
       <li>
-        <p>Start with a regular graph with <math>n</math> nodes and each node connected to <math>k</math> neighbors.</p>
+        <p>Start with a regular graph with <m>n</m> nodes and each node connected to <m>k</m> neighbors.</p>
       </li>
       <li>
         <p>Choose a subset of the edges and <q>rewire</q> them by replacing them with random edges.</p>
       </li>
     </ol>
   </p>
-  <p>The probability that an edge is rewired is a parameter, <math>p</math>, that controls how random the graph is. With <math>p=0</math>, the graph is regular; with <math>p=1</math> it is completely random.</p>
-  <p>Watts and Strogatz found that small values of <math>p</math> yield graphs with high clustering, like a regular graph, and low path lengths, like a random graph.</p>
+  <p>The probability that an edge is rewired is a parameter, <m>p</m>, that controls how random the graph is. With <m>p=0</m>, the graph is regular; with <m>p=1</m> it is completely random.</p>
+  <p>Watts and Strogatz found that small values of <m>p</m> yield graphs with high clustering, like a regular graph, and low path lengths, like a random graph.</p>
   <p>In this chapter we will replicate the Watts and Strogatz experiment in the following steps:</p>
   <p>
     <ol label="1">
@@ -40,7 +40,7 @@
         <p>We'll write a function to measure the degree of clustering and use a NetworkX function to compute path lengths.</p>
       </li>
       <li>
-        <p>Then we'll compute the degree of clustering and path length for a range of values of <math>p</math>.</p>
+        <p>Then we'll compute the degree of clustering and path length for a range of values of <m>p</m>.</p>
       </li>
       <li>
         <p>Finally, we will explore Dijkstra's algorithm, which computes shortest paths efficiently.</p>

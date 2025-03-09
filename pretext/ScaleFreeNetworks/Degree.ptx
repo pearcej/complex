@@ -9,12 +9,12 @@
   <p>This function returns a list of degrees in a graph, one for each node:</p>
   <pre>def degrees(G):
     return [G.degree(u) for u in G]</pre>
-  <p>The mean degree in model is <math>44</math>, which is close to the mean degree in the dataset, <math>43.7</math>.</p>
-  <p>However, the standard deviation of degree in the model is <math>1.5</math>, which is not close to the standard deviation in the dataset, <math>52.4</math>. Oops.</p>
+  <p>The mean degree in model is <m>44</m>, which is close to the mean degree in the dataset, <m>43.7</m>.</p>
+  <p>However, the standard deviation of degree in the model is <m>1.5</m>, which is not close to the standard deviation in the dataset, <m>52.4</m>. Oops.</p>
   <p>What's the problem? To get a better view, we have to look at the distribution of degrees, not just the mean and standard deviation.</p>
   <p>We will represent the distribution of degrees with a <c>Pmf</c> object, which is defined in the thinkstats2 module. <c>Pmf</c> stands for <q>probability mass function</q>.</p>
   <p>Briefly, a <c>Pmf</c> maps from values to their probabilities. A <c>Pmf</c> of degrees is a mapping from each possible degree, <c>d</c>, to the fraction of nodes with degree <c>d</c>.</p>
-  <p>As an example, we construct a graph with nodes <math>1</math>, <math>2</math>, and <math>3</math> connected to a central node, <math>0</math>:</p>
+  <p>As an example, we construct a graph with nodes <m>1</m>, <m>2</m>, and <m>3</m> connected to a central node, <m>0</m>:</p>
   <pre>G = nx.Graph()
 G.add_edge(1, 0)
 G.add_edge(2, 0)
@@ -23,11 +23,11 @@ nx.draw(G)</pre>
   <p>Here's the list of degrees in this graph:</p>
   <pre>&gt;&gt;&gt; degrees(G)
 [3, 1, 1, 1]</pre>
-  <p>Node <math>0</math> has degree <math>3</math>, the others have degree <math>1</math>. Now we can make a <c>Pmf</c> that represents this degree distribution:</p>
+  <p>Node <m>0</m> has degree <m>3</m>, the others have degree <m>1</m>. Now we can make a <c>Pmf</c> that represents this degree distribution:</p>
   <pre>&gt;&gt;&gt; from thinkstats2 import Pmf
 &gt;&gt;&gt; Pmf(degrees(G))
 Pmf({1: 0.75, 3: 0.25})</pre>
-  <p>The result is a <c>Pmf</c> object that maps from each degree to a fraction or probability. In this example, <math>75%</math> of the nodes have degree <math>1</math> and <math>25%</math> have degree <math>3</math>.</p>
+  <p>The result is a <c>Pmf</c> object that maps from each degree to a fraction or probability. In this example, <m>75%</m> of the nodes have degree <m>1</m> and <m>25%</m> have degree <m>3</m>.</p>
   <p>Now we can make a <c>Pmf</c> that contains node degrees from the dataset, and compute the mean and standard deviation:</p>
   <pre>&gt;&gt;&gt; from thinkstats2 import Pmf
 &gt;&gt;&gt; pmf_fb = Pmf(degrees(fb))
@@ -41,6 +41,6 @@ Pmf({1: 0.75, 3: 0.25})</pre>
   <pre>thinkplot.Pdf(pmf_fb, label='Facebook')
 thinkplot.Pdf(pmf_ws, label='WS graph')</pre>
   <p><xref ref="sfn-fig-1"/> shows the two distributions. They are very different.</p>
-  <p>In the WS model, most users have about <math>44</math> friends; the minimum is <math>38</math> and the maximum is <math>50</math>. That's not much variation. In the dataset, there are many users with only <math>1</math> or <math>2</math> friends, but one has more than <math>1000</math>!</p>
+  <p>In the WS model, most users have about <m>44</m> friends; the minimum is <m>38</m> and the maximum is <m>50</m>. That's not much variation. In the dataset, there are many users with only <m>1</m> or <m>2</m> friends, but one has more than <m>1000</m>!</p>
   <p>Distributions like this, with many small values and a few very large values, are called heavy-tailed.</p>
 </section>

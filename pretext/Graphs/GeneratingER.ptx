@@ -5,7 +5,7 @@
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 4.4: An ER graph with n=10 and p=0.3.</caption>
     <image source="Graphs/Figures/thinkcomplexity2004.png" width="50%" alt="&quot;Figure 4.4: An ER graph with n=10 and p=0.3.&quot;"/>
   </figure>
-  <p>The ER graph <math>G(n, p)</math> contains <math>n</math> nodes, and each pair of nodes is connected by an edge with probability <math>p</math>. Generating an ER graph is similar to generating a complete graph.</p>
+  <p>The ER graph <m>G(n, p)</m> contains <m>n</m> nodes, and each pair of nodes is connected by an edge with probability <m>p</m>. Generating an ER graph is similar to generating a complete graph.</p>
   <p>The following generator function enumerates all possible edges and chooses which ones should be added to the graph:</p>
   <pre>def random_pairs(nodes, p):
 for edge in all_pairs(nodes):
@@ -16,7 +16,7 @@ for edge in all_pairs(nodes):
 return np.random.random() &lt; p</pre>
   <p>This is the first example we've seen that uses NumPy. Following convention, we will import <c>numpy</c> as <c>np</c>. NumPy provides a module named <c>random</c>, which provides a method named <c>random</c>, which returns a number between 0 and 1, uniformly distributed.</p>
   <p>So <c>flip</c> returns <c>True</c> with the given probability, <c>p</c>, and <c>False</c> with the complementary probability, <c>1-p</c>.</p>
-  <p>Finally, <c>make_random_graph</c> generates and returns the ER graph <math>G(n, p)</math>:</p>
+  <p>Finally, <c>make_random_graph</c> generates and returns the ER graph <m>G(n, p)</m>:</p>
   <pre>def make_random_graph(n, p):
 G = nx.Graph()
 nodes = range(n)
@@ -24,7 +24,7 @@ G.add_nodes_from(nodes)
 G.add_edges_from(random_pairs(nodes, p))
 return G</pre>
   <p><c>make_random_graph</c> is almost identical to <c>make_complete_graph</c>; the only difference is that it uses <c>random_pairs</c> instead of <c>all_pairs</c>.</p>
-  <p>Here's an example with <math>p=0.3</math>:</p>
+  <p>Here's an example with <m>p=0.3</m>:</p>
   <pre>random_graph = make_random_graph(10, 0.3)</pre>
-  <p><xref ref="g-fig-7"/> shows the result. This graph turns out to be connected; in fact, most ER graphs with <math>n=10</math> and <math>p=0.3</math> are connected. In the next section, we'll see how many.</p>
+  <p><xref ref="g-fig-7"/> shows the result. This graph turns out to be connected; in fact, most ER graphs with <m>n=10</m> and <m>p=0.3</m> are connected. In the next section, we'll see how many.</p>
 </section>

@@ -25,9 +25,9 @@
     <term>Listing 1</term>
   </p>
   <exercise>
-    <TabNode tabname="Python" tabnode_options="{'subchapter': 'WhatIsAlgorithmAnalysis', 'chapter': 'AlgorithmAnalysis', 'basecourse': 'complex', 'optional': '', 'optclass': '', 'tabname': 'Python'}">
+    
       <program xml:id="ec1_py" interactive="activecode" language="python">
-        <input>
+        <code>
 # adds the sum of (n + n-1 + n-2 ...)
 def sumOfN(n):
     theSum = 0
@@ -39,9 +39,9 @@ def sumOfN(n):
 def main():
     print(sumOfN(10)) # n is 10 (10 + 9 + 8 ...)
 main()
-        </input>
+        </code>
       </program>
-    </TabNode>
+    
   </exercise>
   <p>Now look at the function in <xref ref="lst-sum2"/>.
             At first glance it may look
@@ -54,9 +54,9 @@ main()
     <term>Listing 2</term>
   </p>
   <exercise>
-    <TabNode tabname="Python" tabnode_options="{'subchapter': 'WhatIsAlgorithmAnalysis', 'chapter': 'AlgorithmAnalysis', 'basecourse': 'complex', 'optional': '', 'optclass': '', 'tabname': 'Python'}">
+    
       <program xml:id="ec2_py" interactive="activecode" language="python">
-        <input>
+        <code>
 #Performs same function as listing 1, but is less descriptive
 #This is not good practice
 
@@ -71,9 +71,9 @@ def foo(tom):
 def main():
     print(foo(10))
 main()
-        </input>
+        </code>
       </program>
-    </TabNode>
+    
   </exercise>
   <p>The question we raised earlier asked whether one function is better than
             another. The answer depends on your criteria. The function <c>sumOfN</c> is
@@ -111,9 +111,9 @@ main()
     <term>Listing 3</term>
   </p>
   <exercise>
-    <TabNode tabname="Python" tabnode_options="{'subchapter': 'WhatIsAlgorithmAnalysis', 'chapter': 'AlgorithmAnalysis', 'basecourse': 'complex', 'optional': '', 'optclass': '', 'tabname': 'Python'}">
+    
       <program xml:id="ec2py" interactive="activecode" language="python">
-        <input>
+        <code>
 import time
 
 """ Performs same function as listing one, and also list the time it takes to perform
@@ -136,9 +136,9 @@ def main():
     for i in range(5):
         sumOfN2(10000)
 main()
-        </input>
+        </code>
       </program>
-    </TabNode>
+    
   </exercise>
   <p><xref ref="lst-sum11"/> shows the original <c>sumOfN</c> function with the timing
             calls embedded before and after the summation. The function returns the amount of time (in seconds)
@@ -169,22 +169,22 @@ main()
   </exercise>
   <subsection xml:id="algorithm-analysis_some-needed-math-notation">
     <title>Some Needed Math Notation</title>
-    <p>This is the sigma symbol: <math>\sum_{}</math>.
+    <p>This is the sigma symbol: <m>\sum_{}</m>.
                 It tells us that we are summing up something
                 much like a mathematical loop typically with a counter.</p>
     <p>If we have
-                <math>\sum_{i=1}^{5}</math>
+                <m>\sum_{i=1}^{5}</m>
                 the bottom index <title_reference>i=1</title_reference> tells us that the index <title_reference>i</title_reference> begins at 1
                 and that <title_reference>i</title_reference> will terminate at <title_reference>5</title_reference>.</p>
     <p>What ever comes immediately afterwards is what
                 we are summing. So,
-                <math>\sum_{i=1}^{5} i</math>
-                tells us to add the integers <math>1+2+3+4+5</math>
+                <m>\sum_{i=1}^{5} i</m>
+                tells us to add the integers <m>1+2+3+4+5</m>
                 because just like in a <title_reference>for</title_reference> loop, we plug a value for each <title_reference>i</title_reference> value.
-                Similarly, <math>\sum_{i=2}^{4} i^2</math> means <math>2^2+3^2+4^2</math>.</p>
+                Similarly, <m>\sum_{i=2}^{4} i^2</m> means <m>2^2+3^2+4^2</m>.</p>
     <exercise label="somemath1">
       <statement>
-        <p>Q-5: Compute the result of <math>\sum_{i=1}^{3} i^3</math></p>
+        <p>Q-5: Compute the result of <m>\sum_{i=1}^{3} i^3</m></p>
       </statement>
       <choices>
         <choice>
@@ -234,29 +234,29 @@ main()
     <title>Applying the Math Notation</title>
     <p>There is often more than one way to solve a problem.
                 Let's consider the blue area in the
-                following <math>8 \times 9</math>.rectangle.</p>
+                following <m>8 \times 9</m>.rectangle.</p>
     <figure align="" xml:id="fig-sumof-n-integers">
       <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 1: Sum of <title_reference>n = 8</title_reference> integers</caption>
       <image source="AlgorithmAnalysis/Figures/sumof-n-integers.png" width="50%"/>
     </figure>
     <p>To find the blue area, we can count the number of blue squares
-                <math>1+2+3+4+5+6+7+8</math>, which we just learned
-                can be written as <math>\sum_{i=1}^{8} i.</math>
+                <m>1+2+3+4+5+6+7+8</m>, which we just learned
+                can be written as <m>\sum_{i=1}^{8} i.</m>
                 However, we also know how to find the area of a rectangle,
                 by multiplying height by width, and the blue squares represent
                 half of the rectangle.
                 So, the area with blue squares
-                is also just <math>\sum_{i=1}^{8} i = \frac {(8)(8+1)}{2}</math>.</p>
+                is also just <m>\sum_{i=1}^{8} i = \frac {(8)(8+1)}{2}</m>.</p>
     <p>Hence, when we have a variable <title_reference>n</title_reference>, we have learned that we can just use the
-                closed equation <math>\sum_{i=1}^{n} i = \frac {(n)(n+1)}{2}</math> to
+                closed equation <m>\sum_{i=1}^{n} i = \frac {(n)(n+1)}{2}</m> to
                 compute the sum of the first <c>n</c> integers without iterating.</p>
     <p>We see this in <xref ref="lst-sum3"/>,
                 which shows <c>sumOfN3</c>
                 taking advantage of the formula we just developed.</p>
     <exercise>
-      <TabNode tabname="Python" tabnode_options="{'subchapter': 'WhatIsAlgorithmAnalysis', 'chapter': 'AlgorithmAnalysis', 'basecourse': 'complex', 'optional': '', 'optclass': '', 'tabname': 'Python'}">
+      
         <program xml:id="lst-sum3" interactive="activecode" language="python">
-          <input>
+          <code>
 """ Performs same function as listing one, and also list the time it takes to perform
 the function, and it performs better with larger inputs or (n) """
 
@@ -266,9 +266,9 @@ def sumOfN3(n):
 def main():
     print(sumOfN3(10))
 main()
-        </input>
+        </code>
         </program>
-      </TabNode>
+      
     </exercise>
     <p>If we do the same benchmark measurement for <c>sumOfN3</c>,
                 using the value  10,000 for <c>n</c> and we get the following result:</p>

@@ -27,7 +27,7 @@
       <exercise>
         
           <program xml:id="lst-anagramsolution" interactive="activecode" language="python">
-            <input>
+            <code>
 #checks to see if the anagrams have the same number of characters
 
 def anagramSolution1(s1,s2):
@@ -61,7 +61,7 @@ def anagramSolution1(s1,s2):
 def main():
     print(anagramSolution1('abcd','dcba'))
 main()
-        </input>
+        </code>
           </program>
         
       </exercise>
@@ -73,9 +73,9 @@ main()
                     earlier that this can be written as:</p>
       <math_block docname="AlgorithmAnalysis/AlgorithmAnalysisExamples" label="True" nowrap="False" number="True" xml:space="preserve">\sum_{i=1}^{n} i &amp;= \frac {n(n+1)}{2} \\
                  &amp;= \frac {1}{2}n^{2} + \frac {1}{2}n</math_block>
-      <p>As <math>n</math> gets large, the <math>n^{2}</math> term will dominate the
-                    <math>n</math> term and the <math>\frac {1}{2}</math> can be ignored.
-                    Therefore, this solution is <math>O(n^{2})</math>.</p>
+      <p>As <m>n</m> gets large, the <m>n^{2}</m> term will dominate the
+                    <m>n</m> term and the <m>\frac {1}{2}</m> can be ignored.
+                    Therefore, this solution is <m>O(n^{2})</m>.</p>
     </subsubsection>
     <subsubsection xml:id="algorithm-analysis_solution-2-sort-and-compare">
       <title>Solution 2: Sort and Compare</title>
@@ -88,7 +88,7 @@ main()
       <exercise>
         
           <program xml:id="lst-ana2" interactive="activecode" language="python">
-            <input>
+            <code>
 # sorts anagrams in order from a-z, and then compares them
 def anagramSolution2(s1,s2):
     alist1 = list(s1)
@@ -111,16 +111,16 @@ def anagramSolution2(s1,s2):
 def main():
     print(anagramSolution2('abcde','edcba'))
 main()
-        </input>
+        </code>
           </program>
         
       </exercise>
       <p>At first glance you may be tempted to think that this algorithm is
-                    <math>O(n)</math>, since there are three consecutive simple iterations:
+                    <m>O(n)</m>, since there are three consecutive simple iterations:
                     the first two to convert strings to char arrays and the last
                     to compare the <em>n</em>
                     characters after the sorting process. Sorting is typically either
-                    <math>O(n^{2})</math> or <math>O(n\log n)</math>, so the sorting operations
+                    <m>O(n^{2})</m> or <m>O(n\log n)</m>, so the sorting operations
                     dominate the iteration. In the end, this algorithm will have the
                     same order of magnitude as that of the sorting process.</p>
     </subsubsection>
@@ -131,15 +131,15 @@ main()
                     simply generate an array of all possible strings using the characters from
                     <c>s1</c> and then see if <c>s2</c> occurs. However, there is a difficulty
                     with this approach. When generating all possible strings from <c>s1</c>,
-                    there are <em>n</em> possible first characters, <math>n-1</math> possible
-                    characters for the second position, <math>n-2</math> for the third, and so
+                    there are <em>n</em> possible first characters, <m>n-1</m> possible
+                    characters for the second position, <m>n-2</m> for the third, and so
                     on. The total number of candidate strings is
-                    <math>n*(n-1)*(n-2)*...*3*2*1</math>, which is <math>n!</math>. Although some
+                    <m>n*(n-1)*(n-2)*...*3*2*1</m>, which is <m>n!</m>. Although some
                     of the strings may be duplicates, the program cannot know this ahead of
-                    time and so it will still generate <math>n!</math> different strings.</p>
-      <p>It turns out that <math>n!</math> grows even faster than <math>2^{n}</math> as
+                    time and so it will still generate <m>n!</m> different strings.</p>
+      <p>It turns out that <m>n!</m> grows even faster than <m>2^{n}</m> as
                     <em>n</em> gets large. In fact, if <c>s1</c> were 20 characters long, there would
-                    be <math>20!=2,432,902,008,176,640,000</math> possible candidate strings.
+                    be <m>20!=2,432,902,008,176,640,000</m> possible candidate strings.
                     If we processed one possibility every second, it would take us
                     77,146,816,596 years to go through the entire array. This is probably not
                     going to be a good solution.</p>
@@ -158,7 +158,7 @@ main()
       <exercise>
         
           <program xml:id="lst-ana4" interactive="activecode" language="python">
-            <input>
+            <code>
 """ uses an array to count the number of a ocurrences of the two inputs
 if the number of occurrences is the same then the input is an anagram """
 
@@ -187,7 +187,7 @@ def anagramSolution4(s1,s2):
 def main():
     print(anagramSolution4('apple','pleap'))
 main()
-        </input>
+        </code>
           </program>
         
       </exercise>
@@ -196,7 +196,7 @@ main()
                     to count the characters are both based on <em>n</em>. The third iteration,
                     comparing the two arrays of counts, always takes 26 steps since there are
                     26 possible characters in the strings. Adding it all up gives us
-                    <math>T(n)=2n+26</math> steps. That is <math>O(n)</math>. We have found a
+                    <m>T(n)=2n+26</m> steps. That is <m>O(n)</m>. We have found a
                     linear order of magnitude algorithm for solving this problem.</p>
       <p>Before leaving this example, we need to say something about space
                     requirements. Although the last solution was able to run in linear time,
@@ -238,10 +238,10 @@ main()
                 at all well because n = 28 is quite a small number.</p>
     <p>As we know a <term>brute force</term> technique for solving a problem typically tries to exhaust all possibilities for our salesperson, that means trying every set of routes and checking the path distance.
                 Like the anagram detection example, the total number of paths that a salesperson could try is
-                <math>n*(n-1)*(n-2)*...*3*2*1</math>, which is <math>n!</math> because they have to choose
-                a first city from the <math>n</math> choices,
-                then there are only <math>n-1</math> choices for the next city.
-                Then <math>n-2</math> choices for the third etc. That is <math>O(n!)</math>.</p>
+                <m>n*(n-1)*(n-2)*...*3*2*1</m>, which is <m>n!</m> because they have to choose
+                a first city from the <m>n</m> choices,
+                then there are only <m>n-1</m> choices for the next city.
+                Then <m>n-2</m> choices for the third etc. That is <m>O(n!)</m>.</p>
     <p>Using brute force to solve this problem requires we check the 27 factorial ways
                 for the salesperson to consider traveling to each country.
                 This means that there are 10,888,869,450,418,352,160,768,000,000
@@ -255,7 +255,7 @@ main()
                 but for the last decade or so most processors have been multicore&#x2026;
                 So, this is a rough estimate. Next you should take, computation rate times
                 number of paths to give the amount of time in seconds,
-                then divide that by the number of seconds in a year <math>((24*60)*60)*365</math>.
+                then divide that by the number of seconds in a year <m>((24*60)*60)*365</m>.
                 It would take 345,283,785,211,134,961,972.6 years for the
                 Brute Force Solution to find the shortest path for our salesperson.
                 If you have 6 or 12 cores, you can just multiply by three or six, but that is
@@ -281,12 +281,12 @@ main()
           <p>Q-4: Given the following code fragment, what is its Big-O running time?</p>
           <blockquote>
             <program language="python">
-              <input>
+              <code>
 test = 0
 for i in range(n):
    for j in range(n):
       test = test + i * j
-</input>
+</code>
             </program>
           </blockquote>
         </statement>
@@ -330,14 +330,14 @@ for i in range(n):
           <p>Q-5: Given the following code fragment what is its Big-O running time?</p>
           <blockquote>
             <program language="python">
-              <input>
+              <code>
 test = 0
 for i in range(n):
    test = test + 1
 
 for j in range(n):
    test = test - 1
-</input>
+</code>
             </program>
           </blockquote>
         </statement>
@@ -381,12 +381,12 @@ for j in range(n):
           <p>Q-6: Given the following code fragment what is its Big-O running time?</p>
           <blockquote>
             <program language="python">
-              <input>
+              <code>
 i = n
 while i &gt; 0:
    k = 2 + 2
    i = i // 2
-</input>
+</code>
             </program>
           </blockquote>
         </statement>
@@ -427,7 +427,7 @@ while i &gt; 0:
       </exercise>
       <exercise>
         <statement>
-          <p>Q-7: If an algorithm performing at <math>O(n^{2})</math> has the integer 8 as input, what is the worst case scenario for the algorithm? <var/>  </p>
+          <p>Q-7: If an algorithm performing at <m>O(n^{2})</m> has the integer 8 as input, what is the worst case scenario for the algorithm? <var/>  </p>
         </statement>
         <setup>
           <var>

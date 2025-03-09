@@ -4,15 +4,15 @@
   <p><term>Barab&#xE1;si-Albert Model:</term> The Barab&#xE1;si&#x2013;Albert (BA) model is an algorithm for generating random scale-free networks using a preferential attachment mechanism.</p>
   <p>
     <term>Complementary CDF:</term>
-    <math>CCDF(x) &#x2261; 1 &#x2212; CDF(x)</math>
+    <m>CCDF(x) &#x2261; 1 &#x2212; CDF(x)</m>
   </p>
-  <p><term>Cumulative Distribution Function (CDF)</term> A function which maps from a value, <math>x</math>, to the fraction of values less than or equal to <math>x</math>.</p>
+  <p><term>Cumulative Distribution Function (CDF)</term> A function which maps from a value, <m>x</m>, to the fraction of values less than or equal to <m>x</m>.</p>
   <p><term>Explanatory Model:</term> Is a model that gives a useful description of why and how a phenomenon is the way it is.</p>
   <p><term>Growth:</term> Instead of starting with a fixed number of vertices, the BA model starts with a small graph and adds vertices one at a time.</p>
   <p><term>Heavy-tailed Distributions:</term> In probability theory, heavy-tailed distributions are probability distributions whose tails are not exponentially bounded.</p>
   <p><term>Preferential Attachment:</term> Is any of a class of processes in which some quantity is distributed among a number of individuals according to what they already have.</p>
   <p><term>Probability Mass Function (PmF):</term> A function that maps from each value to it's probabilities.</p>
-  <p><term>Power Law:</term> A distribution follows this law if <math>PMF(k) &#x223C; k&#x2212;&#x3B1;</math> where <c>PMF(k)</c> is the fraction of nodes with degree <c>k</c>, <c>&#x3B1;</c> is a parameter, and the symbol &#x223C; indicates that the <c>PMF</c> is asymptotic to <c>k&#x2212;&#x3B1;</c> as <c>k</c> increases.</p>
+  <p><term>Power Law:</term> A distribution follows this law if <m>PMF(k) &#x223C; k&#x2212;&#x3B1;</m> where <c>PMF(k)</c> is the fraction of nodes with degree <c>k</c>, <c>&#x3B1;</c> is a parameter, and the symbol &#x223C; indicates that the <c>PMF</c> is asymptotic to <c>k&#x2212;&#x3B1;</c> as <c>k</c> increases.</p>
   <p><term>Scale-Free Network:</term> A network whose degree distribution follows a power law, at least asymptotically.</p>
   <p><term>Standard Deviation:</term> A quantity calculated to indicate the extent of deviation for a group as a whole.</p>
   <p><term>WS Model:</term> A model that has characteristics of a small world network, like the data, but it has low variability in the number of neighbors from node to node, unlike the data.</p>

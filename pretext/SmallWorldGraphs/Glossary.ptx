@@ -12,6 +12,6 @@
   <p><term>Path Length:</term> A measure of the average distance between two nodes.</p>
   <p><term>Queue:</term> A data structure in which elements are removed in the same order they were entered.</p>
   <p><term>Regular Graphs:</term> In a regular graph every node has the same number of neighbors.</p>
-  <p><term>Ring Lattice:</term> Is a kind of regular graph, with <math>n</math> nodes, the nodes can be arranged in a circle with each node connected to the <math>k</math> nearest neighbors.</p>
+  <p><term>Ring Lattice:</term> Is a kind of regular graph, with <m>n</m> nodes, the nodes can be arranged in a circle with each node connected to the <m>k</m> nearest neighbors.</p>
   <p><term>Watts-Strogatz Graphs:</term> A random graph generation model that produces graphs with small-world properties, including short average path lengths and high clustering.</p>
 </section>

@@ -37,7 +37,7 @@ for i in range(1, end, 2):
 return np.transpose(res)</pre>
   <p>The parameter, <c>a</c>, is a boolean array. The size of the box is initially 1. Each time through the loop, it increases by 2 until it reaches <c>end</c>, which is the smaller of <c>n</c> and <c>m</c>.</p>
   <p>Each time through the loop, <c>box</c> is a set of cells with width and height <c>i</c>, centered in the array. <c>total</c> is the number of <q>on</q> cells in the box.</p>
-  <p>The result is a list of tuples, where each tuple contains <c>i</c>, <math>i^2</math>, and the number of cells in the box.
+  <p>The result is a list of tuples, where each tuple contains <c>i</c>, <m>i^2</m>, and the number of cells in the box.
             When we pass this result to <c>transpose</c>, NumPy converts it to an array with three columns, and then transposes it; that is, it makes the columns into rows and the rows into columns. The result is an array with 3 rows: <c>i</c>, <c>i**2</c>, and <c>total</c>.</p>
   <p>Here's how we use <c>count_cells</c>:</p>
   <pre>res = count_cells(pile.array==level)

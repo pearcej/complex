@@ -9,7 +9,7 @@
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 4.6: Probability of connectivity for several values of n and a range of p.</caption>
     <image source="Graphs/Figures/thinkcomplexity2006.png" width="50%" alt="&quot;Figure 4.6: Probability of connectivity for several values of n and a range of p.&quot;"/>
   </figure>
-  <p>For given values of <math>n</math> and <math>p</math>, we would like to know the probability that <math>G(n, p)</math> is connected. We can estimate it by generating a large number of random graphs and counting how many are connected. Here's how:</p>
+  <p>For given values of <m>n</m> and <m>p</m>, we would like to know the probability that <m>G(n, p)</m> is connected. We can estimate it by generating a large number of random graphs and counting how many are connected. Here's how:</p>
   <pre>def prob_connected(n, p, iters=100):
 tf = [is_connected(make_random_graph(n, p))
       for i in range(iters)]
@@ -19,14 +19,14 @@ return np.mean(bool)</pre>
   <p><c>np.mean</c> is a NumPy function that computes the mean of this list, treating <c>True</c> as 1 and <c>False</c> as 0. The result is the fraction of random graphs that are connected.</p>
   <pre>&gt;&gt;&gt; prob_connected(10, 0.23, iters=10000)
 0.33</pre>
-  <p>We chose 0.23 because it is close to the critical value where the probability of connectivity goes from near 0 to near 1. According to Erd&#x151;s and R&#xE9;nyi, <math>p* = lnn / n = 0.23</math>.</p>
-  <p>We can get a clearer view of the transition by estimating the probability of connectivity for a range of values of <math>p</math>:</p>
+  <p>We chose 0.23 because it is close to the critical value where the probability of connectivity goes from near 0 to near 1. According to Erd&#x151;s and R&#xE9;nyi, <m>p* = lnn / n = 0.23</m>.</p>
+  <p>We can get a clearer view of the transition by estimating the probability of connectivity for a range of values of <m>p</m>:</p>
   <pre>n = 10
 ps = np.logspace(-2.5, 0, 11)
 ys = [prob_connected(n, p) for p in ps]</pre>
-  <p>The NumPy function <c>logspace</c> returns an array of <math>11</math> values from <math>10^{&#x2212;2.5}</math> to <math>10^0 = 1</math>, equally spaced on a logarithmic scale.</p>
+  <p>The NumPy function <c>logspace</c> returns an array of <m>11</m> values from <m>10^{&#x2212;2.5}</m> to <m>10^0 = 1</m>, equally spaced on a logarithmic scale.</p>
   <p>For each value of <c>p</c> in the array, we compute the probability that a graph with parameter <c>p</c> is connected and store the results in <c>ys</c>.</p>
-  <p><xref ref="g-fig-5"/> shows the results, with a vertical line at the computed critical value, <math>p* = 0.23</math>. As expected, the transition from 0 to 1 occurs near the critical value.</p>
+  <p><xref ref="g-fig-5"/> shows the results, with a vertical line at the computed critical value, <m>p* = 0.23</m>. As expected, the transition from 0 to 1 occurs near the critical value.</p>
   <p><xref ref="g-fig-6"/> shows similar results for larger values of <c>n</c>. As <c>n</c> increases, the critical value gets smaller and the transition gets more abrupt.</p>
   <p>These experimental results are consistent with the analytic results Erd&#x151;s and R&#xE9;nyi presented in their papers.</p>
 </section>

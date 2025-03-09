@@ -36,7 +36,7 @@ cdf_fb = Cdf(degrees(fb), label='Facebook')</pre>
   <math_block docname="ScaleFreeNetworks/CumulativeDistributions" label="True" nowrap="False" number="True" xml:space="preserve">CCDF(x) &#x223C; (x/x_m)^-\ ^&#x3B1;
 
 </math_block>
-  <p>where <math>x_m</math> is the minimum possible value and <math>&#x3B1;</math> is a parameter that determines the shape of the distribution.</p>
+  <p>where <m>x_m</m> is the minimum possible value and <m>&#x3B1;</m> is a parameter that determines the shape of the distribution.</p>
   <p>Taking the log of both sides yields:</p>
   <math_block docname="ScaleFreeNetworks/CumulativeDistributions" label="True" nowrap="False" number="True" xml:space="preserve">logCCDF(x) &#x223C; &#x2212;&#x3B1; (logx &#x2212; logx_m)
 
