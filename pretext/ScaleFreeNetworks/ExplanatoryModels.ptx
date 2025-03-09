@@ -10,16 +10,16 @@
   <p>
     <ol label="1">
       <li>
-        <p>In a system, <math>S</math>, we see something observable, <math>O</math>, that warrants explanation.</p>
+        <p>In a system, <m>S</m>, we see something observable, <m>O</m>, that warrants explanation.</p>
       </li>
       <li>
-        <p>We construct a model, <math>M</math>, that is analogous to the system; that is, there is a correspondence between the elements of the model and the elements of the system.</p>
+        <p>We construct a model, <m>M</m>, that is analogous to the system; that is, there is a correspondence between the elements of the model and the elements of the system.</p>
       </li>
       <li>
-        <p>By simulation or mathematical derivation, we show that the model exhibits a behavior, <math>B</math>, that is analogous to <math>O</math>.</p>
+        <p>By simulation or mathematical derivation, we show that the model exhibits a behavior, <m>B</m>, that is analogous to <m>O</m>.</p>
       </li>
       <li>
-        <p>We conclude that <math>S</math> exhibits <math>O</math> <em>because</em> <math>S</math> is similar to <math>M</math>, <math>M</math> exhibits <math>B</math>, and <math>B</math> is similar to <math>O</math>.</p>
+        <p>We conclude that <m>S</m> exhibits <m>O</m> <em>because</em> <m>S</m> is similar to <m>M</m>, <m>M</m> exhibits <m>B</m>, and <m>B</m> is similar to <m>O</m>.</p>
       </li>
       <li>
         <p>At its core, this is an argument by analogy, which says that if two things are similar in some ways, they are likely to be similar in other ways.</p>
@@ -27,7 +27,7 @@
     </ol>
   </p>
   <p>Argument by analogy can be useful, and explanatory models can be satisfying, but they do not constitute a proof in the mathematical sense of the word.</p>
-  <p>Remember that all models leave out, or <q>abstract away</q>, details that we think are unimportant. For any system there are many possible models that include or ignore different features. And there might be models that exhibit different behaviors that are similar to <math>O</math> in different ways. In that case, which model explains <math>O</math>?</p>
+  <p>Remember that all models leave out, or <q>abstract away</q>, details that we think are unimportant. For any system there are many possible models that include or ignore different features. And there might be models that exhibit different behaviors that are similar to <m>O</m> in different ways. In that case, which model explains <m>O</m>?</p>
   <p>The small world phenomenon is an example: the Watts-Strogatz (WS) model and the Barab&#xE1;si-Albert (BA) model both exhibit elements of small world behavior, but they offer different explanations:</p>
   <p>The WS model suggests that social networks are <q>small</q> because they include both strongly-connected clusters and <q>weak ties</q> that connect clusters.</p>
   <p>The BA model suggests that social networks are small because they include nodes with high degree that act as hubs, and that hubs grow, over time, due to preferential attachment.</p>

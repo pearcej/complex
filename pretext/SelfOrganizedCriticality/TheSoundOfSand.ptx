@@ -17,5 +17,5 @@ freqs, spectrum = welch(signal, nperseg=nperseg, fs=nperseg)</pre>
     <image source="SelfOrganizedCriticality/Figures/POWER_SPECT.png" width="50%" alt="&quot;Figure Figure 10.6: Power spectrum of the number of toppled cells over time, log-log scale.&quot;"/>
   </figure>
   <p>For frequencies between 10 and 1000 (in arbitrary units), the spectrum falls on a straight line, which is what we expect for pink or red noise.</p>
-  <p>The gray line in the figure has slope &#x2212;1.58, which indicates that <math>logP(f) &#x223C; &#x2212;&#x3B2; logf</math> with parameter <math>&#x3B2;=1.58</math>, which is the same parameter reported by Bak, Tang, and Wiesenfeld. This result confirms that the sand pile model generates pink noise.</p>
+  <p>The gray line in the figure has slope &#x2212;1.58, which indicates that <m>logP(f) &#x223C; &#x2212;&#x3B2; logf</m> with parameter <m>&#x3B2;=1.58</m>, which is the same parameter reported by Bak, Tang, and Wiesenfeld. This result confirms that the sand pile model generates pink noise.</p>
 </section>

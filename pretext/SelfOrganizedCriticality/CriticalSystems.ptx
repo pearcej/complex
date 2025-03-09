@@ -11,7 +11,7 @@
         <p>Heavy-tailed distributions of some physical quantities: For example, in freezing water the distribution of crystal sizes is characterized by a power law.</p>
       </li>
       <li>
-        <p>Variations in time that exhibit <term>pink noise</term>: Complex signals can be decomposed into their frequency components. In pink noise, low-frequency components have more power than high-frequency components. Specifically, the power at frequency <math>f</math> is proportional to <math>1/f</math>.</p>
+        <p>Variations in time that exhibit <term>pink noise</term>: Complex signals can be decomposed into their frequency components. In pink noise, low-frequency components have more power than high-frequency components. Specifically, the power at frequency <m>f</m> is proportional to <m>1/f</m>.</p>
       </li>
     </ul>
   </p>

@@ -27,7 +27,7 @@ pmfS = Pmf(S)</pre>
   </figure>
   <p><xref ref="soc-fig-2"/> shows the results for values less than 50.</p>
   <p>As we saw in <xref ref="scale-free-networks_heavy-tailed-distributions"/>, we can get a clearer picture of these distributions by plotting them on a self-organized-criticality_log-log scale, as shown in <xref ref="self-organized-criticality_log-log"/>.</p>
-  <p>For values between 1 and 100, the distributions are nearly straight on a self-organized-criticality_log-log scale, which is characteristic of a heavy tail. The gray lines in the figure have slopes near -1, which suggests that these distributions follow a power law with parameters near <math>&#x3B1;=1</math>.</p>
+  <p>For values between 1 and 100, the distributions are nearly straight on a self-organized-criticality_log-log scale, which is characteristic of a heavy tail. The gray lines in the figure have slopes near -1, which suggests that these distributions follow a power law with parameters near <m>&#x3B1;=1</m>.</p>
   <p>For values greater than 100, the distributions fall away more quickly than the power law model, which means there are fewer very large values than the model predicts. One possibility is that this effect is due to the finite size of the sand pile; if so, we might expect larger piles to fit the power law better.</p>
   <p>Another possibility, which you can explore in one of the exercises at the end of this chapter, is that these distributions do not strictly obey a power law. But even if they are not power-law distributions, they might still be heavy-tailed.</p>
   <exercise label="q_9.5.1">

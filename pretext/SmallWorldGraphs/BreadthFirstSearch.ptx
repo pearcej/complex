@@ -19,7 +19,7 @@ return seen</pre>
   <p>In <c>reachable_nodes</c>, we use the list method <c>pop</c> to choose the next node to <q>explore</q>. By default, <c>pop</c> returns the last element of the list, which is the last one we added. In the example, that would be door F.</p>
   <p>If we want to perform a BFS instead, the simplest solution is to <c>pop</c> the first element of the list:</p>
   <pre>node = stack.pop(0)</pre>
-  <p>That works, but it is slow. In Python, popping the last element of a list takes constant time, but popping the first element is linear in the length of the list. In the worst case, the length of the stack is <math>O(n)</math>, which makes this implementation of BFS <math>O(nm)</math>, which is much worse than what it should be, <math>O(n + m)</math>.</p>
+  <p>That works, but it is slow. In Python, popping the last element of a list takes constant time, but popping the first element is linear in the length of the list. In the worst case, the length of the stack is <m>O(n)</m>, which makes this implementation of BFS <m>O(nm)</m>, which is much worse than what it should be, <m>O(n + m)</m>.</p>
   <p>We can solve this problem with a double-ended queue, also known as a <term>deque</term>. The important feature of a deque is that you can add and remove elements from the beginning or end in constant time.</p>
   <p>Python provides a <c>deque</c> in the <c>collections</c> module, so we can import it like this:</p>
   <pre>from collections import deque</pre>
@@ -44,7 +44,7 @@ return seen</pre>
       </li>
     </ul>
   </p>
-  <p>This version is back to being <math>O(n + m)</math>. Now we're ready to find shortest paths.</p>
+  <p>This version is back to being <m>O(n + m)</m>. Now we're ready to find shortest paths.</p>
   <exercise label="q1_4.10">
     <statement>
       <p>Q-1: Which of the following is an accurate statement when talking about BFS and DFS?</p>
