@@ -2,8 +2,8 @@
 <section xml:id="swg-fig-1">
   <title>Ring lattice</title>
   <figure align="center" xml:id="id1">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 5.1: A ring lattice with <m>n=10</m> and <m>k=4</m>.</caption>
-    <image source="SmallWorldGraphs/Figures/thinkcomplexity2007.png" width="50%" alt="&quot;Figure 5.1: A ring lattice with n=10 and k=4.&quot;"/>
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> A ring lattice with <m>n=10</m> and <m>k=4</m>.</caption>
+    <image source="SmallWorldGraphs/Figures/thinkcomplexity2007.png" width="50%" alt="&quot; A ring lattice with n=10 and k=4.&quot;"/>
   </figure>
   <p>A regular graph is a graph where each node has the same number of neighbors; the number of neighbors is also called the <term>degree</term> of the node.</p>
   <p>A <term>ring lattice</term> is a kind of regular graph, which Watts and Strogatz use as the basis of their model. In a ring lattice with <m>n</m> nodes, the nodes can be arranged in a circle with each node connected to the <m>k</m> nearest neighbors.</p>

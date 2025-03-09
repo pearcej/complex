@@ -6,8 +6,8 @@
   <p>More generally, we can estimate the dimension of an object by measuring some kind of size (like area or volume) as a function of some kind of linear measure (like the length of a side).</p>
   <p>As an example, We'll estimate the dimension of a 1-D cellular automaton by measuring its area (total number of <q>on</q> cells) as a function of the number of rows.</p>
   <figure align="center" xml:id="pm-fig-6">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 9.6: One-dimensional CAs with rules 20, 50, and 18, after 32 time steps.</caption>
-    <image source="PhysicalModeling/Figures/1D_CA.png" width="50%" alt="&quot;Figure 9.6: One-dimensional CAs with rules 20, 50, and 18, after 32 time steps.&quot;"/>
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> One-dimensional CAs with rules 20, 50, and 18, after 32 time steps.</caption>
+    <image source="PhysicalModeling/Figures/1D_CA.png" width="50%" alt="&quot; One-dimensional CAs with rules 20, 50, and 18, after 32 time steps.&quot;"/>
   </figure>
   <p><xref ref="pm-fig-6"/> shows three 1-D CAs like the ones we saw in <xref ref="cellular-automatons_a-simple-ca"/>. Rule 20 (left) generates a set of cells that seems like a line, so we expect it to be one-dimensional. Rule 50 (center) produces something like a triangle, so we expect it to be 2-D. Rule 18 (right) also produces something like a triangle, but the density is not uniform, so its scaling behavior is not obvious.</p>
   <p>We'll estimate the dimension of these CAs with the following function, which counts the number of on cells after each time step. It returns a list of tuples, where each tuple contains <c>i</c>, <m>i^2</m>, and the total number of cells.</p>
@@ -23,8 +23,8 @@
 
     return res</pre>
   <figure align="center" xml:id="pm-fig-7">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 9.7: Number of <q>on</q> cells versus number of time steps for rules 20, 50, and 18.</caption>
-    <image source="PhysicalModeling/Figures/NUM_ON_CELL.png" width="50%" alt="&quot;Figure 9.7: Number of &#x201C;on&#x201D; cells versus number of time steps for rules 20, 50, and 18.&quot;"/>
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Number of <q>on</q> cells versus number of time steps for rules 20, 50, and 18.</caption>
+    <image source="PhysicalModeling/Figures/NUM_ON_CELL.png" width="50%" alt="&quot; Number of &#x201C;on&#x201D; cells versus number of time steps for rules 20, 50, and 18.&quot;"/>
   </figure>
   <p><xref ref="pm-fig-7"/> shows the results plotted on a log-log scale.</p>
   <p>In each figure, the top dashed line shows <m>y = i^2</m>. Taking the log of both sides, we have <m>log y = 2 log i</m>. Since the figure is on a log-log scale, the slope of this line is 2.</p>

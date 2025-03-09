@@ -2,8 +2,8 @@
 <section xml:id="cellular-automatons_classifying-cas">
   <title>Classifying CAs</title>
   <figure align="center" xml:id="ca-fig-2">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 7.2: Rule 18 after 64 steps.</caption>
-    <image source="CellularAutomatons/Figures/thinkcomplexity2017.png" width="50%" alt="&quot;Figure 7.2: Rule 18 after 64 steps.&quot;"/>
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Rule 18 after 64 steps.</caption>
+    <image source="CellularAutomatons/Figures/thinkcomplexity2017.png" width="50%" alt="&quot; Rule 18 after 64 steps.&quot;"/>
   </figure>
   <p>How many of these CAs are there?</p>
   <p>Since each cell is either on or off, we can specify the state of a cell with a single bit. In a neighborhood with three cells, there are 8 possible configurations, so there are 8 entries in the rule tables. And since each entry contains a single bit, we can specify a table using 8 bits. With 8 bits, we can specify 256 different rules.</p>

@@ -2,8 +2,8 @@
 <section xml:id="swg-fig-2">
   <title>WS Graphs</title>
   <figure align="center" xml:id="id1">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 5.2: WS graphs with <m>n=20</m>, <m>k=4</m>, and <m>p=0</m> (left), <m>p=0.2</m> (middle), and <m>p=1</m> (right).</caption>
-    <image source="SmallWorldGraphs/Figures/thinkcomplexity2008.png" width="50%" alt="&quot;Figure 5.2: WS graphs with n=20, k=4, and p=0 (left), p=0.2 (middle), and p=1 (right).&quot;"/>
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> WS graphs with <m>n=20</m>, <m>k=4</m>, and <m>p=0</m> (left), <m>p=0.2</m> (middle), and <m>p=1</m> (right).</caption>
+    <image source="SmallWorldGraphs/Figures/thinkcomplexity2008.png" width="50%" alt="&quot; WS graphs with n=20, k=4, and p=0 (left), p=0.2 (middle), and p=1 (right).&quot;"/>
   </figure>
   <p>To make a <term>Watts-Strogatz</term> (<term>WS</term>) <term>graph</term>, we start with a ring lattice and <q>rewire</q> some of the edges. In their paper, Watts and Strogatz consider the edges in a particular order and rewire each one with probability <m>p</m>. If an edge is rewired, they leave the first node unchanged and choose the second node at random. They don't allow self loops or multiple edges; that is, you can't have a edge from a node to itself, and you can't have more than one edge between the same two nodes.</p>
   <p>Here is an implementation of this process.</p>

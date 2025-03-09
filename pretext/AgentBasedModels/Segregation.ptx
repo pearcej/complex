@@ -2,8 +2,8 @@
 <section xml:id="agent-based-models_segregation">
   <title>Segregation</title>
   <figure align="center" xml:id="abm-fig-1">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 11.1: Schelling's segregation model with n=100, initial condition (left), after 2 steps (middle), and after 10 steps (right).</caption>
-    <image source="AgentBasedModels/Figures/SEG_MODEL.png" width="50%" alt="&quot;Figure 11.1: Schelling&#x2019;s segregation model with n=100, initial condition (left), after 2 steps (middle), and after 10 steps (right).&quot;"/>
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Schelling's segregation model with n=100, initial condition (left), after 2 steps (middle), and after 10 steps (right).</caption>
+    <image source="AgentBasedModels/Figures/SEG_MODEL.png" width="50%" alt="&quot; Schelling&#x2019;s segregation model with n=100, initial condition (left), after 2 steps (middle), and after 10 steps (right).&quot;"/>
   </figure>
   <p>Now let's see what happens when we run the model, starting with <c>n=100</c> and <c>p=0.3</c>, and run for 10 steps.</p>
   <pre>grid = Schelling(n=100, p=0.3)
@@ -16,8 +16,8 @@ for i in range(10):
   <p>In <xref ref="abm-fig-1"/>, the average fraction of similar neighbors is 50% in the initial configuration, 65% after two steps, and 76% after 10 steps!</p>
   <p>Remember that when <c>p=0.3</c> the agents would be happy if 3 of 8 neighbors were their own color, but they end up living in neighborhoods where 6 or 7 of their neighbors are their own color, typically.</p>
   <figure align="center" xml:id="abm-fig-2">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 11.2: Degree of segregation in Schelling's model, over time, for a range of p.</caption>
-    <image source="AgentBasedModels/Figures/DEG_SEG.png" width="50%" alt="&quot;Figure 11.2: Degree of segregation in Schelling&#x2019;s model, over time, for a range of p.&quot;"/>
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Degree of segregation in Schelling's model, over time, for a range of p.</caption>
+    <image source="AgentBasedModels/Figures/DEG_SEG.png" width="50%" alt="&quot; Degree of segregation in Schelling&#x2019;s model, over time, for a range of p.&quot;"/>
   </figure>
   <p><xref ref="abm-fig-2"/> shows how the degree of segregation increases and where it levels off for several values of <c>p</c>. When <c>p=0.4</c>, the degree of segregation in steady state is about 82%, and a majority of agents have no neighbors with a different color.</p>
   <p>These results are surprising to many people, and they make a striking example of the unpredictable relationship between individual decisions and system behavior.</p>

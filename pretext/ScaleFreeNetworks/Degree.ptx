@@ -2,8 +2,8 @@
 <section xml:id="scale-free-networks_degree">
   <title>Degree</title>
   <figure align="center" xml:id="sfn-fig-1">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 6.1: PMF of degree in the Facebook dataset and in the WS model.</caption>
-    <image source="ScaleFreeNetworks/Figures/thinkcomplexity2010.png" width="50%" alt="&quot;Figure 6.1: PMF of degree in the Facebook dataset and in the WS model.&quot;"/>
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> PMF of degree in the Facebook dataset and in the WS model.</caption>
+    <image source="ScaleFreeNetworks/Figures/thinkcomplexity2010.png" width="50%" alt="&quot; PMF of degree in the Facebook dataset and in the WS model.&quot;"/>
   </figure>
   <p>If the WS graph is a good model for the Facebook network, it should have the same average degree across nodes, and ideally the same variance in degree.</p>
   <p>This function returns a list of degrees in a graph, one for each node:</p>
