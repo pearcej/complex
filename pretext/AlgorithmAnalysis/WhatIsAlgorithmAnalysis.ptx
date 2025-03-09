@@ -22,7 +22,7 @@
             accumulator variable that is initialized to 0. The solution then
             iterates through the <em>n</em> integers, adding each to the accumulator.</p>
   <p xml:id="lst-sum0" names="lst_sum0">
-    <term>Listing 1</term>
+    
   </p>
   <exercise>
     
@@ -51,13 +51,13 @@ main()
             assist with readability, and we used an extra assignment statement
             during the accumulation step that was not really necessary.</p>
   <p xml:id="lst-sum2" names="lst_sum2">
-    <term>Listing 2</term>
+    
   </p>
   <exercise>
     
       <program xml:id="ec2_py" interactive="activecode" language="python">
         <code>
-#Performs same function as listing 1, but is less descriptive
+#Performs same function as the first listing, but is less descriptive
 #This is not good practice
 
 def foo(tom):
@@ -108,7 +108,7 @@ main()
             and at the end, and then computing the difference, we can get an exact
             number of seconds (fractions in most cases) for execution.</p>
   <p xml:id="lst-sum11" names="lst_sum11">
-    <term>Listing 3</term>
+    
   </p>
   <exercise>
     
@@ -116,7 +116,7 @@ main()
         <code>
 import time
 
-""" Performs same function as listing one, and also list the time it takes to perform
+""" Performs same function as the first listing, and also list the time it takes to perform
 the function """
 
 def sumOfN2(n):
@@ -257,7 +257,7 @@ main()
       
         <program xml:id="lst-sum3" interactive="activecode" language="python">
           <code>
-""" Performs same function as listing one, and also list the time it takes to perform
+""" Performs same function as the first listing, and also list the time it takes to perform
 the function, and it performs better with larger inputs or (n) """
 
 def sumOfN3(n):

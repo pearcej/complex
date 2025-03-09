@@ -222,7 +222,7 @@
             anything, it is instructive to see how we can take actual code and
             analyze performance.</p>
   <p xml:id="lst-dummycode" names="lst_dummycode">
-    <term>Listing 2</term>
+   
   </p>
   <pre>def main():
     a=5
