@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<section xml:id="swg-fig-2">
+  <title>WS Graphs</title>
+  <figure align="center" xml:id="id1">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> WS graphs with <m>n=20</m>, <m>k=4</m>, and <m>p=0</m> (left), <m>p=0.2</m> (middle), and <m>p=1</m> (right).</caption>
+    <image source="SmallWorldGraphs/Figures/thinkcomplexity2008.png" width="50%" alt="&quot; WS graphs with n=20, k=4, and p=0 (left), p=0.2 (middle), and p=1 (right).&quot;"/>
+  </figure>
+  <p>To make a <term>Watts-Strogatz</term> (<term>WS</term>) <term>graph</term>, we start with a ring lattice and <q>rewire</q> some of the edges. In their paper, Watts and Strogatz consider the edges in a particular order and rewire each one with probability <m>p</m>. If an edge is rewired, they leave the first node unchanged and choose the second node at random. They don't allow self loops or multiple edges; that is, you can't have a edge from a node to itself, and you can't have more than one edge between the same two nodes.</p>
+  <p>Here is an implementation of this process.</p>
+  <pre>def rewire(G, p):
+nodes = set(G)
+for u, v in G.edges():
+    if flip(p):
+        choices = nodes - {u} - set(G[u])
+        new_v = np.random.choice(list(choices))
+        G.remove_edge(u, v)
+        G.add_edge(u, new_v)</pre>
+  <p>The parameter <c>p</c> is the probability of rewiring an edge. The for loop enumerates the edges and uses <c>flip</c> (defined below) to choose which ones get rewired.</p>
+  <pre>def flip(p):
+    return np.random.random() &lt; p</pre>
+  <p><c>flip</c> uses a module from NumPy (which is imported as np in this example) named <c>random</c>. This module has a method also named <c>random</c>, which returns a number between 0 and 1.</p>
+  <p><c>flip</c> returns <c>True</c> when the random number is less than the given probability <c>p</c>, it returns false when the random number is greater than or equal to <c>p</c>.</p>
+  <p>If we are rewiring an edge from node <c>u</c> to node <c>v</c>, we have to choose a replacement for <c>v</c>, called <c>new_v</c>.</p>
+  <p>
+    <ol label="1">
+      <li>
+        <p>To compute the possible choices, we start with <c>nodes</c>, which is a set, and subtract off u and its neighbors, which avoids self loops and multiple edges.</p>
+      </li>
+      <li>
+        <p>To choose <c>new_v</c>, we use the NumPy function <c>choice</c>, which is in the module random.</p>
+      </li>
+      <li>
+        <p>Then we remove the existing edge from <c>u</c> to <c>v</c>, and</p>
+      </li>
+      <li>
+        <p>Add a new edge from <c>u</c> to <c>new_v</c>.</p>
+      </li>
+    </ol>
+  </p>
+  <p>As an aside, the expression <c>G[u]</c> returns a dictionary that contains the neighbors of <c>u</c> as keys. It is usually faster than using <c>G.neighbors</c>.</p>
+  <p>This function does not consider the edges in the order specified by Watts and Strogatz, but that doesn't seem to affect the results.</p>
+  <p><xref ref="swg-fig-2"/> shows WS graphs with <m>n=20</m>, <m>k=4</m>, and a range of values of p. When <m>p=0</m>, the graph is a ring lattice. When <m>p=1</m>, it is completely random. As we'll see, the interesting things happen in between.</p>
+  <exercise label="question_4.5.1">
+    <statement>
+      <p>Q-1: As demonstrated in figure 4.2, what happens as p increases?</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>The graph becomes more like a lattice.</p>
+        </statement>
+        <feedback>
+          <p>Look again at the picture on the right where p is at its highest.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>The graph becomes more consistent.</p>
+        </statement>
+        <feedback>
+          <p>Look again of what happens as p goes higher.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>No rewiring happens.</p>
+        </statement>
+        <feedback>
+          <p>p is the probability that something is rewired.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>The graph becomes more random.</p>
+        </statement>
+        <feedback>
+          <p>Correct!</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</section>

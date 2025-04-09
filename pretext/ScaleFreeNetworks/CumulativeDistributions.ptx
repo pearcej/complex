@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<section xml:id="scale-free-networks_cumulative-distributions">
+  <title>Cumulative Distributions</title>
+  <figure align="center" xml:id="sfn-fig-4">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> CDF of degree in the Facebook dataset along with the WS model (left) and the BA model (right), on a log-x scale.</caption>
+    <image source="ScaleFreeNetworks/Figures/thinkcomplexity2013.png" width="50%" alt="&quot; CDF of degree in the Facebook dataset along with the WS model (left) and the BA model (right), on a log-x scale.&quot;"/>
+  </figure>
+  <p><xref ref="sfn-fig-4"/> represents the degree distribution by plotting the probability mass function (<c>PMF</c>) on a log-log scale. That's how Barab&#xE1;si and Albert present their results and it is the representation used most often in articles about power law distributions. But it is not the best way to look at data like this.</p>
+  <p>A better alternative is a <term>cumulative distribution function</term> (<c>CDF</c>), which maps from a value, <c>x</c>, to the fraction of values less than or equal to <c>x</c>.</p>
+  <p>Given a <c>Pmf</c>, the simplest way to compute a cumulative probability is to add up the probabilities for values up to and including <c>x</c>:</p>
+  <pre>def cumulative_prob(pmf, x):
+ps = [pmf[value] for value in pmf if value&lt;=x]
+return np.sum(ps)</pre>
+  <p>For example, given the degree distribution in the dataset, <c>pmf_fb</c>, we can compute the fraction of users with 25 or fewer friends:</p>
+  <pre>&gt;&gt;&gt; cumulative_prob(pmf_fb, 25)
+0.506</pre>
+  <p>The result is close to 0.5, which means that the median number of friends is about 25.</p>
+  <p><c>CDFs</c> are better for visualization because they are less noisy than <c>PMFs</c>. Once you get used to interpreting <c>CDFs</c>, they provide a clearer picture of the shape of a distribution than <c>PMFs</c>.</p>
+  <p>The <c>thinkstats</c> module provides a class called <c>Cdf</c> that represents a cumulative distribution function. We can use it to compute the <c>CDF</c> of degree in the dataset.</p>
+  <pre>from thinkstats2 import Cdf
+cdf_fb = Cdf(degrees(fb), label='Facebook')</pre>
+  <p>And <c>thinkplot</c> provides a function called <c>Cdf</c> that plots cumulative distribution functions.</p>
+  <pre>thinkplot.Cdf(cdf_fb)</pre>
+  <p><xref ref="sfn-fig-4"/> shows the degree CDF for the Facebook dataset along with the WS model (left) and the BA model (right). The x-axis is on a log scale.</p>
+  <figure align="center" xml:id="sfn-fig-5">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Complementary CDF of degree in the Facebook dataset along with the WS model (left) and the BA model (right), on a log-log scale.</caption>
+    <image source="ScaleFreeNetworks/Figures/thinkcomplexity2014.png" width="50%" alt="&quot; Complementary CDF of degree in the Facebook dataset along with the WS model (left) and the BA model (right), on a log-log scale.&quot;"/>
+  </figure>
+  <p>Clearly the <c>CDF</c> for the WS model is very different from the <c>CDF</c> from the data. The BA model is better, but still not very good, especially for small values.</p>
+  <p>In the tail of the distribution (values greater than 100) it looks like the BA model matches the dataset well enough, but it is hard to see. We can get a clearer view with one other view of the data: plotting the complementary <c>CDF</c> on a log-log scale.</p>
+  <p>The <term>complementary CDF</term> (CCDF) is defined</p>
+  <math_block docname="ScaleFreeNetworks/CumulativeDistributions" label="True" nowrap="False" number="True" xml:space="preserve">CCDF(x) &#x2261; 1 &#x2212; CDF(x)
+
+</math_block>
+  <p>This definition is useful because if the PMF follows a power law, the CCDF also follows a power law:</p>
+  <math_block docname="ScaleFreeNetworks/CumulativeDistributions" label="True" nowrap="False" number="True" xml:space="preserve">CCDF(x) &#x223C; (x/x_m)^-\ ^&#x3B1;
+
+</math_block>
+  <p>where <m>x_m</m> is the minimum possible value and <m>&#x3B1;</m> is a parameter that determines the shape of the distribution.</p>
+  <p>Taking the log of both sides yields:</p>
+  <math_block docname="ScaleFreeNetworks/CumulativeDistributions" label="True" nowrap="False" number="True" xml:space="preserve">logCCDF(x) &#x223C; &#x2212;&#x3B1; (logx &#x2212; logx_m)
+
+</math_block>
+  <p>So if the distribution obeys a power law, we expect the CCDF on a log-log scale to be a straight line with slope &#x2212;&#x3B1;.</p>
+  <p><xref ref="sfn-fig-5"/> shows the CCDF of degree for the Facebook data, along with the WS model (left) and the BA model (right), on a log-log scale.</p>
+  <p>With this way of looking at the data, we can see that the BA model matches the tail of the distribution (values above 20) reasonably well. The WS model does not.</p>
+</section>

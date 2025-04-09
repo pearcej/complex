@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+<section xml:id="physical-modeling_percolation">
+  <title>Percolation</title>
+  <p><term>Percolation</term> is a process in which a fluid flows through a semi-porous material. Examples include oil in rock formations, water in paper, and hydrogen gas in micropores. Percolation models are also used to study systems that are not literally percolation, including epidemics and networks of electrical resistors.</p>
+  <p>Percolation models are often represented using random graphs like the ones we saw in <xref ref="graphs_what-is-a-graph"/>, but they can also be represented using cellular automatons. In the next few sections we'll explore a 2-D CA that simulates percolation.</p>
+  <p>In this model:</p>
+  <p>
+    <ul>
+      <li>
+        <p>Initially, each cell is either <q>porous</q> with probability <c>q</c> or <q>non-porous</q> with probability <c>1-q</c>.</p>
+      </li>
+      <li>
+        <p>When the simulation begins, all cells are considered <q>dry</q> except the top row, which is <q>wet</q>.</p>
+      </li>
+      <li>
+        <p>During each time step, if a porous cell has at least one wet neighbor, it becomes wet. Non-porous cells stay dry.</p>
+      </li>
+      <li>
+        <p>The simulation runs until it reaches a <q>fixed point</q> where no more cells change state.</p>
+      </li>
+      <li>
+        <p>If there is a path of wet cells from the top to the bottom row, we say that the CA has a <q>percolating cluster</q>.</p>
+      </li>
+    </ul>
+  </p>
+  <p>Two questions of interest regarding percolation are (1) the probability that a random array contains a percolating cluster, and (2) how that probability depends on <c>q</c>. These questions might remind you of <xref ref="graphs_random"/> where we considered the probability that a random Erd&#x151;s-R&#xE9;nyi graph is connected. We will see several connections between that model and this one.</p>
+  <exercise>
+    <statement>
+      <p>Q-1: <BlankNode/> is the probability that a cell is porus initially <var/>  </p>
+    </statement>
+    <setup>
+      <var>
+        <condition string="^\s*q\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*1-q\s*$">
+          <feedback>
+            <p>Nice Try, but this represents something else.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Incorrect, please try again.</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <p>I define a new class to represent a percolation model:</p>
+  <pre>class Percolation(Cell2D):
+
+    def __init__(self, n, q):
+        self.q = q
+        self.array = np.random.choice([1, 0], (n, n), p=[q, 1-q])
+        self.array[0] = 5</pre>
+  <p><c>n</c> and <c>m</c> are the number of rows and columns in the CA.</p>
+  <p>The state of the CA is stored in <c>array</c>, which is initialized using <c>np.random.choice</c> to choose 1 (porous) with probability q, and 0 (non-porous) with probability <c>1-q</c>.</p>
+  <p>The state of the top row is set to 5, which represents a wet cell. Using 5, rather than the more obvious 2, makes it possible to use <c>correlate2d</c> to check whether any porous cell has a wet neighbor. Here is the kernel:</p>
+  <pre>kernel = np.array([[0, 1, 0],
+                   [1, 0, 1],
+                   [0, 1, 0]])</pre>
+  <p>This kernel defines a 4-cell <q>von Neumann</q> neighborhood; unlike the Moore neighborhood we saw in <xref ref="game-of-life_conways-gol"/>, it does not include the diagonals.</p>
+  <p>This kernel adds up the states of the neighbors. If any of them are wet, the result will exceed 5. Otherwise the maximum result is 4 (if all neighbors happen to be porous).</p>
+  <p>We can use this logic to write a simple, fast <c>step</c> function:</p>
+  <pre>def step(self):
+   a = self.array
+   c = correlate2d(a, self.kernel, mode='same')
+   self.array[(a==1) &amp; (c&gt;=5)] = 5</pre>
+  <p>This function identifies porous cells, where <c>a==1</c>, that have at least one wet neighbor, where <c>c&gt;=5</c>, and sets their state to 5, which indicates that they are wet.</p>
+  <figure align="center" xml:id="pm-fig-5">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> The first three steps of a percolation model with n=10 and p=0.7.</caption>
+    <image source="PhysicalModeling/Figures/3STEP_PERC.png" width="50%" alt="&quot; Sand pile model initial state (left), after 200 steps (middle), and 400 steps (right).&quot;"/>
+  </figure>
+  <p><xref ref="pm-fig-5"/> shows the first few steps of a percolation model with <c>n=10</c> and <c>p=0.7</c>. Non-porous cells are white, porous cells are lightly shaded, and wet cells are dark.</p>
+  <figure align="center" xml:id="id2">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Gif of how liquid interacts with porous and non-porous cells.</caption>
+    <image source="PhysicalModeling/Figures/Percolation.gif" width="50%" alt="&quot;Gif of how liquid interacts with porous and non-porous cells.&quot;"/>
+  </figure>
+  <exercise label="q_8.4.2">
+    <statement>
+      <p>Q-2: How does the different type of <q>neighborhood</q> affect the movement path of the <q>wet</q> cells?</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>The way it moves can be in any direction</p>
+        </statement>
+        <feedback>
+          <p>There are limitations to their movement please look again.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>It can move up and down but not diagonal</p>
+        </statement>
+        <feedback>
+          <p>Correct.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>It can move diagonal.</p>
+        </statement>
+        <feedback>
+          <p>Sorry try again, this is not the limitation set on the movement</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>It can only move into non-porous cells.</p>
+        </statement>
+        <feedback>
+          <p>Incorrect. Please refer back to section.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="q_8.4.5">
+    <statement>
+      <p>Q-3: If a porous cell and a non-porous cell has at least one wet neighbor they both become wet.</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>True</p>
+        </statement>
+        <feedback>
+          <p>Incorrect.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>False</p>
+        </statement>
+        <feedback>
+          <p>Correct. Only the porous cell becomes wet, the non-porous cell stays dry.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</section>

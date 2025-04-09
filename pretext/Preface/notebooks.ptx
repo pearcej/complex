@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<section xml:id="preface_notebooks">
+  <title>Running the Code</title>
+  <p xml:id="preface_pf-4" names="pf_4">To get a better understanding of the tools needed to interact with and run the given code,
+            first decide whether you wish to install Jupyter notebooks on your own machine or
+            the Google Collaboratory (Colab) notebooks in the Cloud.
+            Then examine the relevant appendix that are located at the end of the book:</p>
+  <p>
+    <ul>
+      <li>
+        <p><xref ref="appendix1_installing-anaconda"/> Using Jupyter Notebooks via Anaconda</p>
+      </li>
+      <li>
+        <p><xref ref="appendix2_getting-started-with-colab"/> Using Google Colabortory Notebooks</p>
+      </li>
+    </ul>
+  </p>
+</section>

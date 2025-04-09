@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<exercises xml:id="game-of-life_exercises">
+  <title>Exercises</title>
+  <p>The code for this chapter is in the notebook <url href="https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap08.ipynb" visual="https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap08.ipynb">chap08.ipynb</url> in the repository for this book. Open this notebook, read the code, and run the cells. You can use this notebook to work on the following exercises.</p>
+  <p><term>Exercise 1:</term> Start GoL in a random state and run it until it stabilizes. What stable patterns can you identify?</p>
+  <p><term>Exercise 2:</term> Many named patterns are available in portable file formats. Modify <c>Life.py</c> to parse one of these formats and initialize the grid.</p>
+  <p><term>Exercise 3:</term> In the given implementation, the <c>Life</c> class is based on a parent class called <c>Cell2D</c>, and the <c>LifeViewer</c> class is based on <c>Cell2DViewer</c>. You can use these base classes to implement other 2-D cellular automatons.</p>
+  <p>For example, one variation of GoL, called <q>Highlife</q>, has the same rules as GoL, plus one additional rule: a dead cell with 6 neighbors comes to life.</p>
+  <p>Write a class named Highlife that inherits from <c>Cell2D</c> and implements this version of the rules. Also write a class named <c>HighlifeViewer</c> that inherits from <c>Cell2DViewer</c> and try different ways to visualize the results. As a simple example, use a different colormap.</p>
+  <p>One of the more interesting patterns in Highlife is the replicator. Use <c>add_cells</c> to initialize Highlife with a replicator and see what it does.</p>
+  <p><term>Exercise 4:</term> If you generalize the Turing machine to two dimensions, or add a read-write head to a 2-D CA, the result is a cellular automaton called a Turmite. It is named after a termite because of the way the read-write head moves, but spelled wrong as an homage to Alan Turing.</p>
+  <p>The most famous Turmite is Langton's Ant, discovered by Chris Langton in 1986.</p>
+  <p>The ant is a read-write head with four states, which you can think of as facing north, south, east or west. The cells have two states, black and white.</p>
+  <p>The rules are simple. During each time step, the ant checks the color of the cell it is on. If black, the ant turns to the right, changes the cell to white, and moves forward one space. If the cell is white, the ant turns left, changes the cell to black, and moves forward.</p>
+  <p>Given a simple world, a simple set of rules, and only one moving part, you might expect to see simple behavior &#x2014; but you should know better by now. Starting with all white cells, Langton's ant moves in a seemingly random pattern for more than 10,000 steps before it enters a cycle with a period of 104 steps. After each cycle, the ant is translated diagonally, so it leaves a trail called the <q>highway</q>.</p>
+  <p>Write an implementation of Langton's Ant.</p>
+</exercises>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<section xml:id="self-organized-criticality_glossary">
+  <title>Glossary</title>
+  <p><term>Avalanche:</term> When a single grain causes the cells to topple which then affects a substantial friction of the grid.</p>
+  <p><term>Holistic Model:</term> Holistic models are more focused on similarities between systems and less interested in analogous parts. A holistic approach to modeling consists of these steps:</p>
+  <p>Observe a behavior that appears in a variety of systems.</p>
+  <p>Find a simple model that demonstrates that behavior.</p>
+  <p>Identify the elements of the model that are necessary and sufficient to produce the behavior.</p>
+  <p><term>Noise:</term> In common use, noise is usually an unwanted sound, but in the context of signal processing, it is a signal that contains many frequency components.</p>
+  <p><term>Pink Noise:</term> Complex signals can be decomposed into their frequency components. In pink noise, low-frequency components have more power than high-frequency components. Specifically, the power at frequency <m>f</m> is proportional to <m>1/f</m>.</p>
+  <p><term>Power Spectrum:</term> The power spectrum of a signal is a function that shows the power of each frequency component.</p>
+  <p><term>Proximate Cause:</term> It is the cause most immediately responsible for a large avalanche.</p>
+  <p><term>Reductionist Model:</term> A reductionist model describes a system by describing its parts and their interactions.</p>
+  <p><term>Sand Pile Model:</term> Proposed by Bak, Tang and Wiesenfeld in 1987. The sand pile model is a 2-D cellular automaton where the state of each cell represents the slope of a part of a sand pile.</p>
+  <p><term>Self-Organized Critically (SOC):</term> It is the tendency of some systems to evolve toward, and stay in, a critical state.</p>
+  <p><term>Signal:</term> A signal is any quantity that varies in time. One example is sound, which is variation in air density. In the sand pile model, the signals we'll consider are avalanche durations and sizes as they vary over time.</p>
+  <p><term>Ultimate Cause:</term> It is the cause that is considered some deeper kind of explanation for a large avalanche.</p>
+</section>

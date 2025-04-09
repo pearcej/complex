@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<section xml:id="physical-modeling_self-check">
+  <title>Self Check</title>
+  <exercise label="SC8_Q1">
+    <statement>
+      <p>Q-1: There is a possibility for animal patterns to be based on diffusion reactions?</p>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement>
+          <p>True</p>
+        </statement>
+        <feedback>
+          <p>Correct! When f=0.039 and k=0.065 the pattern that is produced looks like the patterns on animals. Though, this has not yet been proven.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>False</p>
+        </statement>
+        <feedback>
+          <p>Incorrect, please refer back to section.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="SC8_Q2">
+    <statement>
+      <p>Percolation models can be represented using cellular automatons. Below is an out of order representation of the processes of a 2-D CA that simulates percolation. Place them in the correct order.</p>
+    </statement>
+    <matches>
+      <match order="1">
+        <premise>1</premise>
+        <response>Percolation models can be represented using cellular automatons. Below is an out of order representation of the processes of a 2-D CA that simulates percolation. Place them in the correct order</response>
+      </match>
+      <match order="2">
+        <premise>2</premise>
+        <response>Each cell is either <q>porous</q> with probability q or <q>non-porous</q> with probability 1-q</response>
+      </match>
+      <match order="3">
+        <premise>3</premise>
+        <response>When the simulation begins, all cells are considered <q>dry</q> except the top row, which is <q>wet</q></response>
+      </match>
+      <match order="4">
+        <premise>4</premise>
+        <response>During each time step, if a porous cell has at least one wet neighbor, it becomes wet. Non-porous cells stay dry</response>
+      </match>
+      <match order="5">
+        <premise>5</premise>
+        <response>The simulation runs until it reaches a <q>fixed point</q> where no more cells change state</response>
+      </match>
+      <match order="6">
+        <premise>6</premise>
+        <response>If there is a path of wet cells from the top to the bottom row, we say that the CA has a <q>percolating cluster</q></response>
+      </match>
+    </matches>
+  </exercise>
+  <exercise label="SC8_Q3">
+    <statement>
+      <p>Q-3: What is the the rapid change in behavior near the critical value called?</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>Critical phenomena</p>
+        </statement>
+        <feedback>
+          <p>Incorrect, critical phenomena are a common set of behaviors that a wide variety of systems display when they are at or near a critical point.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>Phase change</p>
+        </statement>
+        <feedback>
+          <p>Correct!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Random walk</p>
+        </statement>
+        <feedback>
+          <p>Incorrect. Random walk is used to estimate the the critical value more precisely</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>None of the above</p>
+        </statement>
+        <feedback>
+          <p>Incorrect. There is one right answer</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="SC8_Q4" indent="show" language="python">
+    <statement>
+      <p>Please put the test_perc function together so that it will run.</p>
+    </statement>
+    <blocks>
+      <block order="5">
+        <cline>def test_perc(perc):</cline>
+      </block>
+      <block order="3">
+        <cline>    num_wet = perc.num_wet()</cline>
+      </block>
+      <block order="7">
+        <cline>    while True:</cline>
+        <cline>        perc.step()</cline>
+      </block>
+      <block order="2">
+        <cline>        if perc.bottom_row_wet():</cline>
+        <cline>            return True</cline>
+      </block>
+      <block order="4">
+        <cline>        new_num_wet = perc.num_wet()</cline>
+      </block>
+      <block order="1">
+        <cline>        if new_num_wet == num_wet:</cline>
+        <cline>            return False</cline>
+      </block>
+      <block order="6">
+        <cline>        num_wet = new_num_wet</cline>
+      </block>
+    </blocks>
+  </exercise>
+</section>

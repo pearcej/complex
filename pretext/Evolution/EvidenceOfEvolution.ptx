@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<section xml:id="evolution_evidence-of-evolution">
+  <title>Evidence of Evolution</title>
+  <p xml:id="evolution_evo-7" names="evo_7">The most inclusive definition of evolution is a change in the distribution of genotypes in a population. Evolution is an aggregate effect: in other words, individuals don't evolve; populations do.</p>
+  <p>In this simulation, genotypes are locations in a high-dimensional space, so it is hard to visualize changes in their distribution. However, if the genotypes change, we expect their fitness to change as well. So we will use <em>changes in the distribution of fitness</em> as evidence of evolution. In particular, we'll look at the mean and standard deviation of fitness over time.</p>
+  <p>Before we run the simulation, we have to add an <c>Instrument</c>, which is an object that gets updated after each time step, computes a statistic of interest, or <q>metric</q>, and stores the result in a sequence we can plot later.</p>
+  <p>Here is the parent class for all instruments:</p>
+  <pre>class Instrument:
+    def __init__(self):
+        self.metrics = []</pre>
+  <p>And here's the definition for <c>MeanFitness</c>, an instrument that computes the mean fitness of the population at each time step:</p>
+  <pre>class MeanFitness(Instrument):
+    def update(self, sim):
+        mean = np.nanmean(sim.get_fitnesses())
+        self.metrics.append(mean)</pre>
+  <p>Now we're ready to run the simulation. To avoid the effect of random changes in the starting population, we start every simulation with the same set of agents. And to make sure we explore the entire fitness landscape, we start with one agent at every location. Here's the code that creates the <c>Simulation</c>:</p>
+  <pre>N = 8
+fit_land = FitnessLandscape(N)
+agents = make_all_agents(fit_land, Agent)
+sim = Simulation(fit_land, agents)</pre>
+  <p><c>make_all_agents</c> creates one <c>Agent</c> for every location; the implementation is in the notebook for this chapter.</p>
+  <p>Now we can create and add a <c>MeanFitness</c> instrument, run the simulation, and plot the results:</p>
+  <pre>instrument = MeanFitness()
+sim.add_instrument(instrument)
+sim.run()</pre>
+  <p><c>Simulation</c> keeps a list of <c>Instrument</c> objects. After each time step it invokes <c>update</c> on each <c>Instrument</c> in the list.</p>
+  <figure align="center" xml:id="evo-fig-1">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Mean fitness over time for 10 simulations with no differential survival or reproduction.</caption>
+    <image source="Evolution/Figures/MEAN_FIT.png" width="50%" alt="&quot; Mean fitness over time for 10 simulations with no differential survival or reproduction.&quot;"/>
+  </figure>
+  <p><xref ref="evo-fig-1"/> shows the result of running this simulation 10 times. The mean fitness of the population drifts up or down at random. Since the distribution of fitness changes over time, we infer that the distribution of phenotypes is also changing. By the most inclusive definition, this random walk is a kind of evolution. But it is not a particularly interesting kind.</p>
+  <p>In particular, this kind of evolution does not explain how biological species change over time, or how new species appear. The theory of evolution is powerful because it explains phenomena we see in the natural world that seem inexplicable:</p>
+  <p>
+    <ul>
+      <li>
+        <p><term>Adaptation</term>: Species interact with their environments in ways that seem too complex, too intricate, and too clever to happen by chance. Many features of natural systems seem as if they were designed.</p>
+      </li>
+      <li>
+        <p><term>Increasing diversity</term>: Over time the number of species on earth has generally increased (despite several periods of mass extinction).</p>
+      </li>
+      <li>
+        <p><term>Increasing complexity</term>: The history of life on earth starts with relatively simple life forms, with more complex organisms appearing later in the geological record.</p>
+      </li>
+    </ul>
+  </p>
+  <p>These are the phenomena we want to explain. So far, our model doesn't do the job.</p>
+  <exercise label="q_13.7">
+    <statement>
+      <p>Q-1: Evolution is a change in the distribution of genotypes in individuals of a population.</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>True</p>
+        </statement>
+        <feedback>
+          <p>Incorrect. Please try again.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>False</p>
+        </statement>
+        <feedback>
+          <p>Correct. It is a change in the distribution of genotypes in a population. Individuals don't evolve, populations do.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</section>

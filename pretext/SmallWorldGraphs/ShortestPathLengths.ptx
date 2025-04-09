@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<section xml:id="small-world-graphs_shortest-path-lengths">
+  <title>Shortest Path Lengths</title>
+  <p>The next step is to compute the characteristic path length, <m>L</m>, which is the average length of the shortest path between each pair of nodes. To compute it, we will start with a function provided by NetworkX, shortest_path_length. We will use it to replicate the Watts and Strogatz experiment, then we will see how it works.</p>
+  <p>Here's a function that takes a graph and returns a list of shortest path lengths, one for each pair of nodes.</p>
+  <pre>def path_lengths(G):
+length_map = nx.shortest_path_length(G)
+lengths = [length_map[u][v] for u, v in all_pairs(G)]
+return lengths</pre>
+  <p>The return value from <c>nx.shortest_path_length</c> is a dictionary of dictionaries. The outer dictionary maps from each node, <c>u</c>, to a dictionary that maps from each node, <c>v</c>, to the length of the shortest path from <c>u</c> to <c>v</c>.</p>
+  <p>With the list of lengths from <c>path_lengths</c>, we can compute <m>L</m> like this:</p>
+  <pre>def characteristic_path_length(G):
+return np.mean(path_lengths(G))</pre>
+  <p>And we can test it with a small ring lattice:</p>
+  <pre>&gt;&gt;&gt; lattice = make_ring_lattice(3, 2)
+&gt;&gt;&gt; characteristic_path_length(lattice)
+1.0</pre>
+  <p>In this example, all 3 nodes are connected to each other, so the mean path length is <m>1</m>.</p>
+</section>
