@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<section xml:id="herds-flocks-and-traffic-jams_arbitration">
+  <title>Arbitration</title>
+  <p>To arbitrate among these possibly conflicting goals, we compute a weighted sum of the four requests:</p>
+  <pre>def set_goal(self, boids, carrot):
+        w_avoid = 10
+        w_center = 3
+        w_align = 1
+        w_love = 10
+
+        self.goal = (w_center * self.center(boids) +
+                    w_avoid * self.avoid(boids, carrot) +
+                    w_align * self.align(boids) +
+                    w_love * self.love(carrot))
+        self.goal.mag = 1</pre>
+  <p><c>w_center</c>, <c>w_avoid</c>, and the other weights determine the importance of the acceleration requests. Usually <c>w_avoid</c> is relatively high and <c>w_align</c> is relatively low.</p>
+  <p>After computing a goal for each Boid, we update their velocity and position:</p>
+  <pre>def move(self, mu=0.1, dt=0.1):
+        self.vel = (1-mu) * self.vel + mu * self.goal
+        self.vel.mag = 1
+        self.pos += dt * self.vel
+        self.axis = self.length * self.vel</pre>
+  <p>The new velocity is the weighted sum of the old velocity and the goal. The parameter <c>mu</c> determines how quickly the birds can change speed and direction. Then we normalize velocity so its magnitude is 1, and orient the axis of the Boid to point in the direction it is moving.</p>
+  <p>To update position, we multiply velocity by the time step, <c>dt</c>, to get the change in position. Finally, we update <c>axis</c> so the orientation of the Boid when it is drawn is aligned with its velocity.</p>
+  <p>Many parameters influence flock behavior, including the radius, angle and weight for each behavior, as well as maneuverability, <c>mu</c>. These parameters determine the ability of the Boids to form and maintain a flock, and the patterns of motion and organization within the flock. For some settings, the Boids resemble a flock of birds; other settings resemble a school of fish or a cloud of flying insects.</p>
+  <p>As one of the exercises at the end of this chapter, you can modify these parameters and see how they affect Boid behavior.</p>
+  <exercise>
+    <statement>
+      <p>Q-1: After computing a goal for each Boid, we update their <BlankNode/> and <BlankNode/>. <var/>  <var/>  </p>
+    </statement>
+    <setup>
+      <var>
+        <condition string="^\s*velocity\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*position\s*$">
+          <feedback>
+            <p>Nice try, but look at the ordering that it comes in the text</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Incorrect, please try again.</p>
+          </feedback>
+        </condition>
+      </var>
+      <var>
+        <condition string="^\s*position\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*velocity\s*$">
+          <feedback>
+            <p>Nice try, but look at the ordering that it comes in the text</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Incorrect, please try again.</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+</section>

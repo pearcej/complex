@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<section xml:id="herds-flocks-and-traffic-jams_glossary">
+  <title>Glossary</title>
+  <p><term>Boids:</term> Agents that are named such as it is both a contraction of <q>bird-oid</q> and an accented pronunciation of <q>bird</q>. Boids make decisions based on local information only; each Boid only sees (or pays attention to) other Boids in its field of vision.</p>
+  <p><term>Collision Avoidance:</term> The behavior of Boids wherein they avoid obstacles, including other Boids.</p>
+  <p><term>Flock Centering:</term> The behavior of Boids wherein they move toward the center of the flock.</p>
+  <p><term>Velocity matching:</term> The behavior of Boids wherein they align their velocity (speed and direction) with neighboring Boids.</p>
+</section>

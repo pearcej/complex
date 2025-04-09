@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<section xml:id="complexity-science_the-axes-of-scientific-models">
+  <title>The Axes of Scientific Models</title>
+  <p>Thus far, we have described classical models as based on physical laws, expressed in the form of equations, and solved by mathematical analysis; conversely, models of complex systems are often based on simple rules and implemented as computations. We can think of this trend as a shift over time along two axes:</p>
+  <p>
+    <term>Equation-based &#x2192; simulation-based</term>
+  </p>
+  <p>
+    <term>Analysis &#x2192; computation</term>
+  </p>
+  <p>Complexity science is different in several other ways.  We present them here so you know what's coming, but some of them might not make sense until you have seen the examples later in the book.</p>
+  <p>
+    <term>Continuous &#x2192; discrete</term>
+  </p>
+  <p>Classical  models  tend  to  be  based  on  continuous mathematics, like calculus; models of complex systems are often based on discrete mathematics, including graphs and cellular automatons.</p>
+  <p>
+    <term>Linear &#x2192; nonlinear</term>
+  </p>
+  <p>Classical models are often linear, or use linear approximations  to  nonlinear  systems;  complexity  science  is  more  friendly  to nonlinear models.</p>
+  <p>
+    <term>Deterministic&#x2192;stochastic</term>
+  </p>
+  <p>Classical models are usually deterministic, which may  reflect  underlying  philosophical  determinism,  discussed  in  <xref ref="cellular-automatons_introduction"/>; complex models often include randomness.</p>
+  <p>
+    <term>Abstract &#x2192; detailed</term>
+  </p>
+  <p>In classical models, planets are point masses, planes are frictionless, and cows are spherical (see <url href="https://en.wikipedia.org/wiki/Spherical_cow" visual="https://en.wikipedia.org/wiki/Spherical_cow">en.wikipedia.org/wiki/Spherical_cow</url>.   Simplifications  like  these  are  often  necessary  for  analysis,  but computational models can be more realistic.</p>
+  <p>
+    <term>One, two &#x2192; many</term>
+  </p>
+  <p>Classical models are often limited to small numbers of components.  For example, in celestial mechanics the two-body problem can be solved analytically; the three-body problem cannot.  Complexity science often works with large numbers of components and larger number of interactions.</p>
+  <p>
+    <term>Homogeneous &#x2192; heterogeneous</term>
+  </p>
+  <p>In classical models, the components and interactions  tend  to  be  identical;  complex  models  more  often  include heterogeneity.</p>
+  <p>These are generalizations, so we should not take them too seriously. And we are not intending to deprecate classical science. A more complicated model is not necessarily better; in fact, it is often worse.</p>
+  <p>And we don't mean to suggest that these changes are abrupt or complete. Rather, there is a gradual migration in the frontier of what is considered acceptable, respectable work. Some tools that used to be regarded with suspicion are now common, and some models that were widely accepted are now regarded with scrutiny.</p>
+  <p>For example, when Appel and Haken proved the four-color theorem in 1976, they used a computer to enumerate 1,936 special cases that were, in some sense, lemmas of their proof. At the time, many mathematicians did not consider the theorem truly proved. Now computer-assisted proofs are common and generally (but not universally) accepted.</p>
+  <p>Conversely, a substantial body of economic analysis is based on a model of human behavior called <q>Economic man</q>, or, with tongue in cheek, <em>Homo economicus</em>. Research based on this model was highly regarded for several decades, especially if it involved mathematical virtuosity. More recently, this model is treated with skepticism, and models that include imperfect information and bounded rationality are hot topics.</p>
+</section>

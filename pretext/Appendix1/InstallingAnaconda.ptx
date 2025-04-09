@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<section xml:id="appendix1_installing-anaconda">
+  <title>Installing Juypter Notebooks through Anaconda</title>
+  <p>If you don't already have Jupyter, it is a Python distribution that contains everything you need for the companion code for this book.
+            It is easy to install on Windows, Mac, and Linux, and because it does a user-level install, it will not interfere with other
+            Python installations.</p>
+  <p>Information about installing Anaconda is here: <url href="https://www.anaconda.com/products/individual" visual="https://www.anaconda.com/products/individual">https://www.anaconda.com/products/individual</url></p>
+  <p>The code for this book works in Python 3.</p>
+  <p>When you install Anaconda, you should get Jupyter by default, but if not, run</p>
+  <pre>conda install jupyter</pre>
+  <p>Once you have Jupyter, you can get Allen Downey's code from this Git repository on Github. If you have a Git client installed, you should be able to download it by running:</p>
+  <pre>git clone https://github.com/AllenDowney/ThinkComplexity2.git</pre>
+  <p>It should create a directory named ThinkComplexity2. Otherwise you can download the repository in this zip file and unzip it.</p>
+  <p>Then cd into the new directory:</p>
+  <pre>cd ThinkComplexity2</pre>
+  <p>To make sure you have the packages you need, you can use environment.yml to create a Conda environment named complexity.</p>
+  <pre>conda env create -f environment.yml</pre>
+  <p>Then activate the new environment</p>
+  <pre>conda activate complexity</pre>
+  <p>To start Jupyter, run:</p>
+  <pre>cd code
+jupyter notebook</pre>
+  <p>Jupyter should launch your default browser or open a tab in an existing browser window. If not, the Jupyter server should print a URL you can use. For example, you will likely get something like:</p>
+  <pre>~/ThinkComplexity2$ jupyter notebook
+[I 10:03:20.115 NotebookApp] Serving notebooks from local directory: /home/downey/ThinkComplexity2
+[I 10:03:20.115 NotebookApp] 0 active kernels
+[I 10:03:20.115 NotebookApp] The Jupyter Notebook is running at: http://localhost:8888/
+[I 10:03:20.115 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).</pre>
+  <p>In this case, the URL is <url href="http://localhost:8888" visual="http://localhost:8888">http://localhost:8888</url>.
+            When you start your server, you might get a different URL. Whatever it is, if you paste it into a browser, you should should see a home page with a list of the notebooks in the repository.</p>
+  <p>Click on chap09.ipynb. It should open the notebook for Chapter 9.</p>
+  <p>Select the cell with the import statements and press <q>Shift-Enter</q> to run the code in the cell. If it works and you get no error messages, you are all set.</p>
+  <p>If you get error messages about missing packages, you can install the packages you need using your package manager, or install Anaconda.</p>
+  <p>If you have trouble with the animations, you might have to install ffmpeg. The animations are not necessary for the text.</p>
+</section>

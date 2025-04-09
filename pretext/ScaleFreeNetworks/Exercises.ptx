@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<exercises xml:id="scale-free-networks_exercises">
+  <title>Exercises</title>
+  <p><term>Exercise 1:</term>
+            In <xref ref="scale-free-networks_explanatory-models"/> we discussed two explanations for the small world phenomenon, <q>weak ties</q> and <q>hubs</q>. Are these explanations compatible; that is, can they both be right? Which do you find more satisfying as an explanation, and why?</p>
+  <p>Is there data you could collect, or experiments you could perform, that would provide evidence in favor of one model over the other?</p>
+  <p>Choosing among competing models is the topic of Thomas Kuhn's essay, <q>Objectivity, Value Judgment, and Theory Choice</q>.</p>
+  <p>What criteria does Kuhn propose for choosing among competing models? Do these criteria influence your opinion about the WS and BA models? Are there other criteria you think should be considered?</p>
+  <p><term>Exercise 2:</term>
+            NetworkX provides a function called <c>powerlaw_cluster_graph</c> that implements the <q>Holme and Kim algorithm for growing graphs with powerlaw degree distribution and approximate average clustering</q>. Read the documentation of this function and see if you can use it to generate a graph that has the same number of nodes as the Facebook dataset, the same average degree, and the same clustering coefficient. How does the degree distribution in the model compare to the actual distribution?</p>
+  <p><term>Exercise 3:</term>
+            Data files from the Barab&#xE1;si and Albert paper are available from <url href="https://github.com/pearcej/complex-colab/tree/master/data" visual="https://github.com/pearcej/complex-colab/tree/master/data">here</url>. Their actor collaboration data is included in the repository for this book in a file named <c>actor.dat.gz</c>. The following function reads the file and builds the graph.</p>
+  <pre>import gzip
+
+def read_actor_network(filename, n=None):
+    G = nx.Graph()
+    with gzip.open(filename) as f:
+        for i, line in enumerate(f):
+            nodes = [int(x) for x in line.split()]
+            G.add_edges_from(thinkcomplexity.all_pairs(nodes))
+            if n and i &gt;= n:
+                break
+    return G</pre>
+  <p>Compute the number of actors in the graph and the average degree. Plot the PMF of degree on a <m>log-log</m> scale. Also plot the CDF of degree on a <m>log-x</m> scale, to see the general shape of the distribution, and on a <m>log-log</m> scale, to see whether the tail follows a power law.</p>
+  <p>Note: The actor network is not connected, so you might want to use <c>nx.connected_component_subgraphs</c> to find connected subsets of the nodes.</p>
+</exercises>

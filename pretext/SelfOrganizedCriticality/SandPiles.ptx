@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<section xml:id="self-organized-criticality_sand-piles">
+  <title>Sand Piles</title>
+  <p>The sand pile model was proposed by Bak, Tang and Wiesenfeld in 1987. It is not meant to be a realistic model of a sand pile, but rather an abstraction that models physical systems with a large number of elements that interact with their neighbors.</p>
+  <p>The sand pile model is a 2-D cellular automaton where the state of each cell represents the slope of a part of a sand pile. During each time step, each cell is checked to see whether it exceeds a critical value, <em>K</em>, which is usually 3. If so, it <q>topples</q> and transfers sand to four neighboring cells; that is, the slope of the cell is decreased by 4, and each of the neighbors is increased by 1. At the perimeter of the grid, all cells are kept at slope 0, so the excess spills over the edge.</p>
+  <p>Bak, Tang and Wiesenfeld initialize all cells at a level greater than K and run the model until it stabilizes. Then they observe the effect of small perturbations: they choose a cell at random, increment its value by 1, and run the model again until it stabilizes.</p>
+  <p>For each perturbation, they measure <c>T</c>, the number of time steps the pile takes to stabilize, and <c>S</c>, the total number of cells that topple.</p>
+  <p>Most of the time, dropping a single grain causes no cells to topple, so <c>T=1</c> and <c>S=0</c>. But occasionally a single grain can cause an <term>avalanche</term> that affects a substantial fraction of the grid. The distributions of <c>T</c> and <c>S</c> turn out to be heavy-tailed, which supports the claim that the system is in a critical state.</p>
+  <p>They conclude that the sand pile model exhibits <q>self-organized criticality</q>, which means that it evolves toward a critical state without the need for external control or what they call <q>fine tuning</q> of any parameters. And the model stays in a critical state as more grains are added.</p>
+  <p>In the next few sections we will replicate their experiments and interpret the results.</p>
+  <exercise>
+    <statement>
+      <p>Q-1: Bak, Tang and Wiesenfeld conclude that the sand pile model exhibits <BlankNode/>, which means that it evolves toward a <BlankNode/> without the need for <BlankNode/>. <var/>  <var/>  <var/>  </p>
+    </statement>
+    <setup>
+      <var>
+        <condition string="^\s*self\s+organized\s+criticality\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Incorrect, please reread the section.</p>
+          </feedback>
+        </condition>
+      </var>
+      <var>
+        <condition string="^\s*critical\s+state\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Incorrect, please reread the section.</p>
+          </feedback>
+        </condition>
+      </var>
+      <var>
+        <condition string="^\s*external\s+control\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Incorrect, please reread the section.</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+</section>

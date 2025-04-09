@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<section xml:id="physical-modeling_reaction-diffusion">
+  <title>Reaction-Diffusion</title>
+  <p>Now let's add a second chemical. We will define a new object, <c>ReactionDiffusion</c>, that contains two arrays, one for each chemical:</p>
+  <pre> class ReactionDiffusion(Cell2D):
+
+def __init__(self, n, m, params, noise=0.1):
+     self.params = params
+     self.array = np.ones((n, m), dtype=float)
+     self.array2 = noise * np.random.random((n, m))
+     add_island(self.array2)</pre>
+  <p><c>n</c> and <c>m</c> are the number of rows and columns in the array. <c>params</c> is a tuple of parameters, which is explained below.</p>
+  <p><c>array</c> represents the concentration of the first chemical, <c>A</c>; the NumPy function <c>ones</c> initializes it to 1 everywhere. The data type <c>float</c> indicates that the elements of <c>A</c> are floating-point values.</p>
+  <p><c>array2</c> represents the concentration of <c>B</c>, which is initialized with random values between 0 and <c>noise</c>, which is 0.1 by default. Then <c>add_island</c> adds an island of higher concentration in the middle:</p>
+  <pre>def add_island(a, height=0.1):
+    n, m = a.shape
+    radius = min(n, m) // 20
+    i = n//2
+    j = m//2
+    a[i-radius:i+radius, j-radius:j+radius] += height</pre>
+  <p>The radius of the island is one twentieth of <c>n</c> or <c>m</c>, whichever is smaller. The height of the island is <c>height</c>, with the default value 0.1.</p>
+  <p>Here is the <c>step</c> function that updates the arrays:</p>
+  <pre>def step(self):
+    A = self.array
+    B = self.array2
+    ra, rb, f, k = self.params
+
+    cA = correlate2d(A, self.kernel, **self.options)
+    cB = correlate2d(B, self.kernel, **self.options)
+
+    reaction = A * B**2
+    self.array += ra * cA - reaction + f * (1-A)
+    self.array2 += rb * cB + reaction - (f+k) * B</pre>
+  <p>The parameters are:</p>
+  <p><term>ra</term>:
+            The diffusion rate of <c>A</c> (analogous to <c>r</c> in the previous section).</p>
+  <p><term>rb</term>:
+            The diffusion rate of <c>B</c>. In most versions of this model, <c>rb</c> is about half of ra.</p>
+  <p><term>f</term>:
+            The <q>feed</q> rate, which controls how quickly <c>A</c> is added to the system</p>
+  <p><term>k</term>:
+            The <q>kill</q> rate, which controls how quickly <c>B</c> is removed from the system.</p>
+  <p>Now let's look more closely at the update statements:</p>
+  <pre>reaction = A * B**2
+self.array += ra * cA - reaction + f * (1-A)
+self.array2 += rb * cB + reaction - (f+k) * B</pre>
+  <p>The arrays <c>cA</c> and <c>cB</c> are the result of applying a diffusion kernel to <c>A</c> and <c>B</c>. Multiplying by <c>ra</c> and <c>rb</c> yields the rate of diffusion into or out of each cell.</p>
+  <p>The term <c>A * B**2</c> represents the rate that <c>A</c> and <c>B</c> react with each other. Assuming that the reaction consumes <c>A</c> and produces <c>B</c>, we subtract this term in the first equation and add it in the second.</p>
+  <p>The term <c>f * (1-A)</c> determines the rate that <c>A</c> is added to the system. Where <c>A</c> is near 0, the maximum feed rate is <c>f</c>. Where <c>A</c> approaches 1, the feed rate drops off to 0.</p>
+  <p>Finally, the term <c>(f+k) * B</c> determines the rate that <c>B</c> is removed from the system. As <c>B</c> approaches 0, this rate goes to 0.</p>
+  <p>As long as the rate parameters are not too high, the values of <c>A</c> and <c>B</c> usually stay between 0 and 1.</p>
+  <exercise label="q_8.3.3">
+    <statement>
+      <p>Q-1: In the above code A*B**2 sets the rate of reaction.</p>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement>
+          <p>True</p>
+        </statement>
+        <feedback>
+          <p>Correct. A*B**2 does set the rate of reaction.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>False</p>
+        </statement>
+        <feedback>
+          <p>Incorrect. Please try again.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <figure align="center" xml:id="pm-fig-1">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Reaction-diffusion model with parameters f=0.035 and k=0.057 after 1000, 2000, and 4000 steps.</caption>
+    <image source="PhysicalModeling/Figures/LIGHT_SPT_DARK_BACK.png" width="50%" alt="&quot; Sand pile model initial state (left), after 200 steps (middle), and 400 steps (right).&quot;"/>
+  </figure>
+  <p>With different parameters, this model can produce patterns similar to the stripes and spots on a variety of animals. In some cases, the similarity is striking, especially when the feed and kill parameters vary in space.</p>
+  <p>For all simulations in this section, <c>ra=0.5</c> and <c>rb=0.25</c>.</p>
+  <p><xref ref="pm-fig-1"/> shows results with <c>f=0.035</c> and <c>k=0.057</c>, with the concentration of <c>B</c> shown in darker colors. With these parameters, the system evolves toward a stable configuration with light spots of <c>A</c> on a dark background of <c>B</c>.</p>
+  <figure align="center" xml:id="pm-fig-2">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Reaction-diffusion model with parameters f=0.055 and k=0.062 after 1000, 2000, and 4000 steps.</caption>
+    <image source="PhysicalModeling/Figures/CORAL.png" width="50%" alt="&quot; Sand pile model initial state (left), after 200 steps (middle), and 400 steps (right).&quot;"/>
+  </figure>
+  <p><xref ref="pm-fig-2"/> shows results with <c>f=0.055</c> and <c>k=0.062</c>, which yields a coral-like pattern of <c>B</c> on a background of <c>A</c>.</p>
+  <figure align="center" xml:id="pm-fig-3">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> A reaction-diffusion model with parameters f=0.039 and k=0.065 after 1000, 2000, and 4000 steps.</caption>
+    <image source="PhysicalModeling/Figures/ANIMAL_SPOT.png" width="50%" alt="&quot; Sand pile model initial state (left), after 200 steps (middle), and 400 steps (right).&quot;"/>
+  </figure>
+  <p><xref ref="pm-fig-3"/> shows results with <c>f=0.039</c> and <c>k=0.065</c>. These parameters produce spots of <c>B</c> that grow and divide in a process that resembles mitosis, ending with a stable pattern of equally-spaced spots.</p>
+  <p>Since 1952, observations and experiments have provided some support for Turing's conjecture. At this point it seems likely, but not yet proven, that many animal patterns are actually formed by reaction-diffusion processes of some kind.</p>
+  <exercise label="q_8.3">
+    <statement>
+      <p>Q-2: At what point did there appear to be a coral-like pattern?</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>None of the below will yield a coral-like pattern</p>
+        </statement>
+        <feedback>
+          <p>Sorry but one of the options below does produce a coral-like pattern.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>f=0.035 and k=0.057</p>
+        </statement>
+        <feedback>
+          <p>Sorry but these parameters make the system evolve in a stable configuration with light spots.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>f=0.039 and k=0.065</p>
+        </statement>
+        <feedback>
+          <p>Sorry but these parameters produce spots that grow and divide in a process resembling mitosis.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>f=0.055 and k=0.062</p>
+        </statement>
+        <feedback>
+          <p>Correct! These parameters yield a coral-like pattern.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</section>

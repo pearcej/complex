@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<section xml:id="agent-based-models_sugarscape">
+  <title>Sugarscape</title>
+  <p xml:id="abm-fig-3" names="abm_fig_3 abm_5">In 1996 Joshua Epstein and Robert Axtell proposed Sugarscape, an agent-based model of an <q>artificial society</q> intended to support experiments related to economics and other social sciences.</p>
+  <p>Sugarscape is a versatile model that has been adapted for a wide variety of topics. As examples, we will replicate the first few experiments from Epstein and Axtell's book, <em>Growing Artificial Societies</em>.</p>
+  <p>In its simplest form, Sugarscape is a model of a simple economy where agents move around on a 2-D grid, harvesting and accumulating <q>sugar</q>, which represents economic wealth. Some parts of the grid produce more sugar than others, and some agents are better at finding it than others.</p>
+  <p>This version of Sugarscape is often used to explore and explain the distribution of wealth, in particular the tendency toward inequality.</p>
+  <p>In the Sugarscape grid, each cell has a capacity, which is the maximum amount of sugar it can hold. In the original configuration, there are two high-sugar regions, with capacity 4, surrounded by concentric rings with capacities 3, 2, and 1.</p>
+  <figure align="center" xml:id="id1">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Replication of the original Sugarscape model: initial configuration (left), after 2 steps (middle) and after 100 steps (right).</caption>
+    <image source="AgentBasedModels/Figures/SUG_MODEL.png" width="50%" alt="&quot; Replication of the original Sugarscape model: initial configuration (left), after 2 steps (middle) and after 100 steps (right).&quot;"/>
+  </figure>
+  <p><xref ref="abm-fig-3"/> (left) shows the initial configuration, with the darker areas indicating cells with higher capacity, and small dots representing the agents.</p>
+  <p>Initially there are 400 agents placed at random locations. Each agent has three randomly-chosen attributes:</p>
+  <p><term>Sugar:</term>  Each agent starts with an endowment of sugar chosen from a uniform distribution between 5 and 25 units.</p>
+  <p><term>Metabolism:</term>  Each agent has some amount of sugar they must consume per time step, chosen uniformly between 1 and 4.</p>
+  <p><term>Vision:</term>  Each agent can <q>see</q> the amount of sugar in nearby cells and move to the cell with the most, but some agents can see and move farther than others. The distance agents see is chosen uniformly between 1 and 6.</p>
+  <p>During each time step, agents move one at a time in a random order. Each agent follows these rules:</p>
+  <p>
+    <ul>
+      <li>
+        <p>The agent surveys <c>k</c> cells in each of the 4 compass directions, where <c>k</c> is the range of the agent's vision.</p>
+      </li>
+      <li>
+        <p>It chooses the unoccupied cell with the most sugar. In case of a tie, it chooses the closer cell; among cells at the same distance, it chooses randomly.</p>
+      </li>
+      <li>
+        <p>The agent moves to the selected cell and harvests the sugar, adding the harvest to its accumulated wealth and leaving the cell empty.</p>
+      </li>
+      <li>
+        <p>The agent consumes some part of its wealth, depending on its metabolism. If the resulting total is negative, the agent <q>starves</q> and is removed.</p>
+      </li>
+    </ul>
+  </p>
+  <p>After all agents have executed these steps, the cells grow back some sugar, typically 1 unit, but the total sugar in each cell is bounded by its capacity.</p>
+  <p><xref ref="abm-fig-3"/> (middle) shows the state of the model after two steps. Most agents are moving toward the areas with the most sugar. Agents with high vision move the fastest; agents with low vision tend to get stuck on the plateaus, wandering randomly until they get close enough to see the next level.</p>
+  <p>Agents born in the areas with the least sugar are likely to starve unless they have a high initial endowment and high vision.</p>
+  <p>Within the high-sugar areas, agents compete with each other to find and harvest sugar as it grows back. Agents with high metabolism or low vision are the most likely to starve.</p>
+  <p>When sugar grows back at 1 unit per time step, there is not enough sugar to sustain the 400 agents we started with. The population drops quickly at first, then more slowly, and levels off around 250.</p>
+  <p><xref ref="abm-fig-3"/> (right) shows the state of the model after 100 time steps, with about 250 agents. The agents who survive tend to be the lucky ones, born with high vision and/or low metabolism. Having survived to this point, they are likely to survive forever, accumulating unbounded stockpiles of sugar.</p>
+  <figure align="center" xml:id="id2">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Gif 11.1: Initial Sugarscape for 100 steps.</caption>
+    <image source="AgentBasedModels/Figures/Initial_Sugarscape.gif" width="50%" alt="&quot;Gif 11.1: Initial Sugarscape for 100 steps.&quot;"/>
+  </figure>
+  <exercise label="q_10.4">
+    <statement>
+      <p>Q-1: Which of the following are true about Sugarscapes:</p>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement>
+          <p>They are a model of a simple economy.</p>
+        </statement>
+        <feedback>
+          <p>Correct!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Agents move around a 3-D grid.</p>
+        </statement>
+        <feedback>
+          <p>Sorry they do use grids but they use 2-D grids.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>They are often used to explore and explain the distribution of wealth.</p>
+        </statement>
+        <feedback>
+          <p>Correct!</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>All of the agents in the sugarscape are able to hold the same amount of sugar and are all just as likely to locate sugar.</p>
+        </statement>
+        <feedback>
+          <p>Sorry but some agents are better than others at finding sugar.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>None of the above are related to sugarscapes.</p>
+        </statement>
+        <feedback>
+          <p>Sorry two of the answers given above are correct.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</section>

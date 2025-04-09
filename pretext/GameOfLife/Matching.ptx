@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<section xml:id="game-of-life_matching">
+  <title>Matching</title>
+  <exercise label="matching_7">
+    <statement>
+      <p>
+</p>
+    </statement>
+    <matches>
+      <match order="1">
+        <premise>Scientific realism</premise>
+        <response>This pertains to scientific theories and the entities they postulate.</response>
+      </match>
+      <match order="10">
+        <premise>Gosper's Gun</premise>
+        <response>The number of live cells grows indefinitely as a stable pattern that periodically produces a spaceship &#x2014; as the stream of spaceships moves out from the source.</response>
+      </match>
+      <match order="11">
+        <premise>Methuselahs</premise>
+        <response>Long-lived patterns that yield a surprising number of live cells.</response>
+      </match>
+      <match order="2">
+        <premise>Instrumentalism</premise>
+        <response>View that theories are instruments that we use for our purpose.</response>
+      </match>
+      <match order="3">
+        <premise>Beehive</premise>
+        <response>A stable pattern in which every cell in the beehive has 2 or 3 neighbors, so they all survive, and none of the dead cells adjacent to the beehive has 3 neighbors, so no new cells are born.</response>
+      </match>
+      <match order="4">
+        <premise>Glider</premise>
+        <response>Is back in the starting position, shifted one unit down and to the right, after a period of 4 steps.</response>
+      </match>
+      <match order="5">
+        <premise>Unstable Pattern</premise>
+        <response>Pattern that changes from generation to generation.</response>
+      </match>
+      <match order="6">
+        <premise>Toad</premise>
+        <response>These patterns change over time but eventually return to their initial configuration. It oscillates between two states.</response>
+      </match>
+      <match order="7">
+        <premise>Spaceship</premise>
+        <response>Some patterns oscillate and return to the starting configuration, but shifted in space.</response>
+      </match>
+      <match order="8">
+        <premise>Puffer Train</premise>
+        <response>leaves live cells in its wake as it is a translating pattern.</response>
+      </match>
+      <match order="9">
+        <premise>Stable Pattern</premise>
+        <response>Pattern that does not change from generation to generation.</response>
+      </match>
+    </matches>
+  </exercise>
+</section>

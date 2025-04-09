@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<section xml:id="cellular-automatons_classifying-cas">
+  <title>Classifying CAs</title>
+  <figure align="center" xml:id="ca-fig-2">
+    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Rule 18 after 64 steps.</caption>
+    <image source="CellularAutomatons/Figures/thinkcomplexity2017.png" width="50%" alt="&quot; Rule 18 after 64 steps.&quot;"/>
+  </figure>
+  <p>How many of these CAs are there?</p>
+  <p>Since each cell is either on or off, we can specify the state of a cell with a single bit. In a neighborhood with three cells, there are 8 possible configurations, so there are 8 entries in the rule tables. And since each entry contains a single bit, we can specify a table using 8 bits. With 8 bits, we can specify 256 different rules.</p>
+  <p>One of Wolfram's first experiments with CAs was to test all 256 possibilities and classify them.</p>
+  <p>Examining the results visually, he proposed that the behavior of CAs can be grouped into four classes. Class 1 contains the simplest (and least interesting) CAs, the ones that evolve from almost any starting condition to the same uniform pattern. As a trivial example, Rule 0 always generates an empty pattern after one time step.</p>
+  <p>Rule 50 is an example of Class 2. It generates a simple pattern with nested structure, that is, a pattern that contains many smaller versions of itself. Rule 18 makes the nested structure even clearer; <xref ref="ca-fig-2"/> shows what it looks like after 64 steps.</p>
+  <p>Some Class 2 CAs generate patterns that are intricate and pretty, but compared to Classes 3 and 4, they are relatively simple.</p>
+  <exercise>
+    <statement>
+      <p>Q-1: Wolfram proposed that there were <BlankNode/> Classes after examining the results of his first experiments to test all 356 CA possibilities. <var/>  </p>
+    </statement>
+    <setup>
+      <var>
+        <condition number="[4, 4]">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Incorrect.</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  <exercise label="q2_6.3">
+    <statement>
+      <p>Q-2: Of the proposed classes which are stated to be relatively simple?</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>Class 2 and Class 4</p>
+        </statement>
+        <feedback>
+          <p>Sorry Class 4 is more complex.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Class 1, Class 2, and Class 5</p>
+        </statement>
+        <feedback>
+          <p>Sorry there is no Class 5.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>Class 1 and Class 2</p>
+        </statement>
+        <feedback>
+          <p>Correct! Class 1 is said to be the simplest and Class 2 is said to be intricate and pretty but still relatively simple.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Class 1</p>
+        </statement>
+        <feedback>
+          <p>Sorry but the author says that there are two classes that are considered to be realatively simple.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</section>

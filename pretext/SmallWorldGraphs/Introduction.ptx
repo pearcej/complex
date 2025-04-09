@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<section xml:id="small-world-graphs_introduction">
+  <title>Introduction</title>
+  <p>Many networks in the real world, including social networks, have the <q>small world property</q>, which is that the average distance between nodes, measured in number of edges on the shortest path, is much smaller than expected.</p>
+  <p>In this chapter, we explore Stanley Milgram's famous Small World Experiment, which was the first demonstration of the small world property in a real social network. Then we'll consider Watts-Strogatz graphs, which are intended as a model of small world graphs. We will replicate the experiment Watts and Strogatz performed and explain what it is intended to show.</p>
+  <p>Along the way, we'll see two new graph algorithms: breadth-first search (BFS) and Dijkstra's algorithm for computing the shortest path between nodes in a graph.</p>
+  <p>The code for this chapter is in <url href="https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap05.ipynb" visual="https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap05.ipynb">chap05.ipynb</url> in the repository for this book. More information about working with the code is in <xref ref="preface_notebooks"/>.</p>
+</section>

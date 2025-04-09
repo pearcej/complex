@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<exercises xml:id="evolution_exercises">
+  <title>Exercises</title>
+  <p>The code for this chapter is in the Jupyter notebook <url href="https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap13.ipynb" visual="https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap13.ipynb">chap13.ipynb</url> in the repository for this book. Open the notebook, read the code, and run the cells. You can use the notebook to work on the following exercises.</p>
+  <p><term>Exercise 1:</term>  The notebook shows the effects of differential reproductions and survival separately. What if you have both? Write a class called <c>SimWithBoth</c> that uses the version of <c>choose_dead</c> from <c>SimWithDiffSurvival</c> and the version of <c>choose_replacements</c> from <c>SimWithDiffReproduction</c>. Does mean fitness increase more quickly?</p>
+  <p>As a Python challenge, can you write this class without copying code?</p>
+  <p><term>Exercise 2:</term>  When we change the landscape as in <xref ref="evolution_speciation"/>, the number of occupied locations and the mean distance usually increase, but the effect is not always big enough to be obvious. Try out some different random seeds to see how general the effect is.</p>
+</exercises>
