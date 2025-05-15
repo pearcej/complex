@@ -237,7 +237,12 @@ main()
                 following <m>8 \times 9</m>.rectangle.</p>
     <figure align="" xml:id="fig-sumof-n-integers">
       <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 1: Sum of <title_reference>n = 8</title_reference> integers</caption>
-      <image source="AlgorithmAnalysis/Figures/sumof-n-integers.png" width="50%" alt="Diagram illustrating the sum of the first 8 integers as a blue area within an 8x9 rectangle. The blue area represents 1+2+3+4+5+6+7+8 squares."/> 
+      <image source="AlgorithmAnalysis/Figures/sumof-n-integers.png" width="50%" /> 
+      <shortdescription>Diagram illustrating the sum of the first 8 integers as a stepped blue area.</shortdescription>
+        <description>
+          <p>The image displays a diagram that visually represents the sum of the first 8 integers (<m>1+2+3+4+5+6+7+8</m>). This sum is shown as a blue, stepped triangular area within a larger rectangle that is 8 units wide and 9 units high.</p>
+          <p>The blue area is composed of stacked rows of squares: the bottom row has 8 blue squares, the row above it has 7, and so on, up to the top row which has 1 blue square. This visually forms a right-angled triangular shape. The surrounding text explains that this blue area represents half of the <m>8 \times 9</m> rectangle, demonstrating the formula <m>\sum_{i=1}^{n} i = \frac{n(n+1)}{2}</m> for <m>n=8</m>.</p>
+        </description>
     </figure>
     <p>To find the blue area, we can count the number of blue squares
                 <m>1+2+3+4+5+6+7+8</m>, which we just learned
