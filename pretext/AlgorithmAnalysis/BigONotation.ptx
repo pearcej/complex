@@ -199,7 +199,12 @@
             another.</p>
   <figure align="" xml:id="fig-graphfigurecpp">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 1: Common Big-O Functions</caption>
-    <image source="AlgorithmAnalysis/Figures/newplot.png" width="50%" alt="Graph of common Big-O functions (constant, logarithmic, linear, n log n, quadratic, cubic, exponential) showing their comparative growth rates as n increases."/>
+    <image source="AlgorithmAnalysis/Figures/newplot.png" width="50%" />
+    <shortdescription>Graph comparing growth rates of common Big-O functions.</shortdescription>
+      <description>
+        <p>This graph visually compares the growth rates of several common Big-O functions as the input size, <m>n</m>, increases. The functions plotted include constant (<m>O(1)</m>), logarithmic (<m>O(\log n)</m>), linear (<m>O(n)</m>), log-linear (<m>O(n \log n)</m>), quadratic (<m>O(n^2)</m>), cubic (<m>O(n^3)</m>), and exponential (<m>O(2^n)</m>).</p>
+        <p>The x-axis represents <m>n</m> (input size), and the y-axis represents the number of operations or time. For small values of <m>n</m>, the differences between some functions may not be pronounced. However, as <m>n</m> grows larger, the graph clearly illustrates how functions with higher orders of magnitude (like exponential and cubic) increase much more rapidly than those with lower orders (like logarithmic and linear), demonstrating their comparative efficiency for large inputs.</p>
+      </description>
   </figure>
   <exercise label="parsonsBigO" indent="show" language="python">
     <statement>
@@ -252,7 +257,12 @@ main()</pre>
             ignored as <em>n</em> grows larger.</p>
   <figure align="" xml:id="fig-graphfigure2cpp">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 2: Comparing <m>T(n)</m> with Big-O Functions</caption>
-    <image source="AlgorithmAnalysis/Figures/newplot2.png" width="50%" alt="&quot;Graph comparing a specific T(n) function (3n^2+2n+4) with Big-O functions like O(n), O(n^2), and O(n^3), illustrating how T(n) is initially larger than O(n^3) but then grows at a slower rate than cubic and faster than quadratic&quot;"/>
+    <image source="AlgorithmAnalysis/Figures/newplot2.png" width="50%" />
+    <shortdescription>Graph comparing a specific T(n) function with O(n), O(n^2), and O(n^3).</shortdescription>
+      <description>
+        <p>This graph provides a visual comparison of a specific function, <m>T(n) = 3n^2+2n+4</m>, with several common Big-O functions, specifically <m>O(n)</m> (linear), <m>O(n^2)</m> (quadratic), and <m>O(n^3)</m> (cubic). The x-axis represents the input size <m>n</m>, and the y-axis represents the value of the functions (e.g., number of operations).</p>
+        <p>The plot illustrates how for small values of <m>n</m>, the <m>T(n)</m> function might initially appear larger than even the <m>O(n^3)</m> curve due to constants and lower-order terms. However, as <m>n</m> increases, the dominant <m>n^2</m> term in <m>T(n)</m> dictates its growth. The graph shows <m>T(n)</m> growing faster than <m>O(n)</m> and eventually aligning closely with the growth rate of <m>O(n^2)</m>, while the <m>O(n^3)</m> function grows much more rapidly and overtakes <m>T(n)</m>.</p>
+      </description>
   </figure>
   <p><xref ref="fig-graphfigure2cpp"/> shows a few of the common Big-O functions as they
             compare with the <m>T(n)</m> function discussed above. Note that
