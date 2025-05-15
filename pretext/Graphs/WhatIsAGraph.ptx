@@ -3,7 +3,17 @@
   <title>What is a Graph?</title>
   <figure align="center" xml:id="g-fig-1">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> A directed graph that represents a social network.</caption>
-    <image source="Graphs/Figures/thinkcomplexity2001.png" width="50%" alt="&quot; A directed graph that represents a social network.&quot;"/>
+    <image source="Graphs/Figures/thinkcomplexity2001.png" width="50%" alt="&quot; Figure 4.1: A directed graph that represents a social network. &quot;"/>
+          <shortdescription>Directed graph with three nodes illustrating social network connections.</shortdescription>
+    <description>
+        <p>The image displays a simple directed graph consisting of three nodes, visually representing elements in a network. Edges, depicted as arrows, indicate the direction of relationships or flow between these nodes. The specific structure shown is:</p>
+        <ul>
+          <li>Two of the nodes have a mutual (bidirectional) connection, with arrows pointing from each of these two nodes to the other (Bob and Alice).</li>
+          <li>Both of these mutually connected nodes also have outgoing arrows pointing towards the third node (Chuck).</li>
+          <li>The third node (Chuck) is a recipient in these relationships; it only has incoming arrows from the other two nodes and possesses no outgoing arrows.</li>
+        </ul>
+        <p>This visual structure corresponds to the example given in the text where 'Alice' and 'Bob' follow each other, and both also follow 'Chuck', while 'Chuck' does not follow anyone back.</p>
+      </description>
   </figure>
   <p>To most people a <q>graph</q> is a visual representation of data, like a bar chart or a plot of stock prices over time. That's not what this chapter is about.</p>
   <p>In this chapter, a <term>graph</term> is a representation of a system that contains discrete, interconnected elements. The elements are represented by <term>nodes</term> &#x2014; also called <term>vertices</term> &#x2013; and the interconnections are represented by <term>edges</term>.</p>

@@ -3,7 +3,12 @@
   <title>Generating ER Graphs</title>
   <figure align="center" xml:id="g-fig-7">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> An ER graph with n=10 and p=0.3.</caption>
-    <image source="Graphs/Figures/thinkcomplexity2004.png" width="50%" alt="&quot; An Erdős-Rényi (ER) random graph with 10 circular nodes, labeled 0 to 9, displayed in a somewhat irregular layout. Edges connect various pairs of nodes, but not all possible pairs, resulting in a network sparser than a complete graph. For instance, node 3 connects only to node 2, while other nodes like 7 have multiple connections.&quot;"/>
+    <image source="Graphs/Figures/thinkcomplexity2004.png" width="50%" alt="&quot; Figure 4.4: An ER graph with n=10 and p=0.3.&quot;"/>
+<shortdescription>Visual representation of an Erdős-Rényi random graph with 10 nodes and specific edge connections based on p=0.3.</shortdescription>
+      <description>
+        <p>The image displays an Erdős-Rényi (ER) random graph. It features 10 circular nodes, which are labeled with integers from 0 to 9. These nodes are arranged in a somewhat irregular, non-grid layout across the viewing area.</p>
+        <p>Edges, represented as lines, connect various pairs of these nodes. The graph is not complete, meaning not all possible pairs of nodes are connected. This visual sparsity is characteristic of an ER graph where edges form with a probability <m>p</m> (in this case, <m>p=0.3</m> for <m>n=10</m> nodes). For instance, the visual details show that node 3 is connected only to node 2, while other nodes, such as node 7, exhibit multiple connections to different nodes within the graph.</p>
+      </description>
   </figure>
   <p>The ER graph <m>G(n, p)</m> contains <m>n</m> nodes, and each pair of nodes is connected by an edge with probability <m>p</m>. Generating an ER graph is similar to generating a complete graph.</p>
   <p>The following generator function enumerates all possible edges and chooses which ones should be added to the graph:</p>
