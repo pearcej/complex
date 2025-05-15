@@ -3,7 +3,7 @@
   <title>NetworkX</title>
   <figure align="center" xml:id="g-fig-2">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> An undirected graph that represents driving time between cities.</caption>
-    <image source="Graphs/Figures/thinkcomplexity2002.png" width="50%" alt="&quot; Figure 4.2: An undirected graph that represents driving time between cities.&quot;"/>
+    <image source="Graphs/Figures/thinkcomplexity2002.png" width="50%" alt="&quot; An undirected graph that represents driving time between cities.&quot;"/>
     <shortdescription>Undirected graph showing driving times between Albany, Boston, NYC, and Philly.</shortdescription>
       <description>
         <p>The image displays an undirected graph representing a road network with driving times. It features four square-shaped nodes, each labeled with a city name: Albany, Boston, NYC (New York City), and Philly (Philadelphia). These nodes are positioned on the graph to roughly approximate their actual geographical locations relative to each other.</p>
