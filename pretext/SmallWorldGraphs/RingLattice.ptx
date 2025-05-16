@@ -3,7 +3,12 @@
   <title>Ring lattice</title>
   <figure align="center" xml:id="id1">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> A ring lattice with <m>n=10</m> and <m>k=4</m>.</caption>
-    <image source="SmallWorldGraphs/Figures/thinkcomplexity2007.png" width="50%" alt="&quot; A ring lattice with n=10 and k=4.&quot;"/>
+    <image source="SmallWorldGraphs/Figures/thinkcomplexity2007.png" width="50%" />
+    <shortdescription>Ring lattice graph with 10 nodes, each connected to its 4 nearest neighbors.</shortdescription>
+      <description>
+        <p>The image displays a ring lattice graph characterized by <m>n=10</m> nodes and where each node has <m>k=4</m> neighbors (degree of 4). The ten nodes, labeled with integers from 0 to 9, are visually arranged in a circular pattern.</p>
+        <p>Each node is connected by an undirected edge to its two closest neighbors in the clockwise direction and its two closest neighbors in the counter-clockwise direction along the ring. For example, node 0 is connected to nodes 1 and 2 (clockwise) and nodes 9 and 8 (counter-clockwise). This connectivity pattern, where each node is linked to its four nearest neighbors, is consistent for all nodes, illustrating the "wrap-around" characteristic of the ring lattice structure.</p>
+      </description>
   </figure>
   <p>A regular graph is a graph where each node has the same number of neighbors; the number of neighbors is also called the <term>degree</term> of the node.</p>
   <p>A <term>ring lattice</term> is a kind of regular graph, which Watts and Strogatz use as the basis of their model. In a ring lattice with <m>n</m> nodes, the nodes can be arranged in a circle with each node connected to the <m>k</m> nearest neighbors.</p>
