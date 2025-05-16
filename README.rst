@@ -10,7 +10,7 @@ since his work forms the core of this interactive book.
 
 The chapter on Algorithm Analysis was ported from one by Jan Pearce, Brad Miller, and David Ranum
 for the
-`Problem Solving with Algorithms and Data Structures using C++ <https://runestone.academy/runestone/static/cppds/index.html>`_
+`Problem Solving with Algorithms and Data Structures using C++ <https://runestone.academy/ns/books/published/cppds/index.html>`_
 which was also released under the
 `Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0) <http://creativecommons.org/licenses/by-nc-sa/4.0>`_
 
@@ -26,7 +26,7 @@ How to use this book
 
 Licensing
 =========
-
+https://runestone.academy/ns/books/published/cppds/index.html
 .. raw:: html
 
   <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">

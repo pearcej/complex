@@ -58,9 +58,13 @@
   <!-- You should be a little careful about what you put here -->
     <!-- Avoid elements that should have a number, for example  -->
     <p>
-      This textbook is designed for instructors, formal students, and self-learners. It explains what open source software is and teaches the basic skills of open source development incrementally, through real involvement in meaningful projects.
+      This book is an interactive version of Allen B. Downey's <url href="https://greenteapress.com/wp/think-complexity-2e/" visual="https://greenteapress.com/wp/think-complexity-2e/">Think Complexity</url> on complexity Science. We are very grateful to Allen B. Downey for his work in writing <url href="https://greenteapress.com/wp/think-complexity-2e/" visual="https://greenteapress.com/wp/think-complexity-2e/">Think Complexity</url> and for releasing it under the <url href="http://creativecommons.org/licenses/by-nc-sa/4.0" visual="http://creativecommons.org/licenses/by-nc-sa/4.0">Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)</url> since his work forms the core of this interactive book.
+    </p>
+    <p>
+      The chapter on Algorithm Analysis was ported from one by Jan Pearce, Brad Miller, and David Ranum for the <url href="https://runestone.academy/ns/books/published/cppds/index.html" visual="https://runestone.academy/ns/books/published/cppds/index.html">Problem Solving with Algorithms and Data Structures using C++</url> which was also released under the <url href="http://creativecommons.org/licenses/by-nc-sa/4.0" visual="http://creativecommons.org/licenses/by-nc-sa/4.0">Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)</url>.
     </p>
   </preface>
   <!-- Note: You can have more than one preface. -->
+</frontmatter>
 
   
