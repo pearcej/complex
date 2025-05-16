@@ -3,23 +3,16 @@
   <title>WS Graphs</title>
   <figure align="center" xml:id="id1">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> WS graphs with <m>n=20</m>, <m>k=4</m>, and <m>p=0</m> (left), <m>p=0.2</m> (middle), and <m>p=1</m> (right).</caption>
-    <image source="SmallWorldGraphs/Figures/thinkcomplexity2008.png" width="50%"/>
-    <shortdescription>Three Watts-Strogatz graphs (n=20, k=4) showing effect of increasing rewiring probability p (0, 0.2, 1).</shortdescription>
+    <image source="SmallWorldGraphs/Figures/thinkcomplexity2008.png" width="50%">
+      <shortdescription>Three Watts-Strogatz graphs (n=20, k=4) showing effect of increasing rewiring probability p (0, 0.2, 1).</shortdescription>
       <description>
-        <p>The image displays three Watts-Strogatz (WS) graphs side-by-side, illustrating the effect of different rewiring probabilities (<m>p</m>) on a network structure. Each graph has <m>n=20</m> nodes, initially connected with <m>k=4</m> neighbors per node, and the nodes are visually arranged in a circular layout.</p>
-        <ul>
-          <li>
-            <p><strong>Left Graph (<m>p=0</m>):</strong> This depicts a regular ring lattice. Each of the 20 nodes is strictly connected to its two nearest neighbors on each side along the ring. This results in an ordered, symmetrical appearance with no rewired edges.</p>
-          </li>
-          <li>
-            <p><strong>Middle Graph (<m>p=0.2</m>):</strong> This graph illustrates the structure with a rewiring probability of 0.2. While the underlying lattice structure is still apparent, several edges have been randomly rewired. These rewired edges create "shortcut" connections that span across the circular arrangement, introducing some randomness and reducing the graph's regularity compared to the p=0 case.</p>
-          </li>
-          <li>
-            <p><strong>Right Graph (<m>p=1</m>):</strong> This graph shows the outcome when the rewiring probability is 1, meaning every original edge had the chance to be rewired to a new random endpoint. The initial ordered lattice structure is almost entirely obscured, resulting in a graph that appears highly disordered and random, with numerous long-range connections crisscrossing the interior of the circular node arrangement.</p>
-          </li>
-        </ul>
-        <p>The progression from the left graph to the right graph visually demonstrates how increasing the rewiring probability <m>p</m> transitions a Watts-Strogatz graph from a highly ordered ring lattice to a network resembling a random graph.</p>
-      </description>
+    <p>The image displays three Watts-Strogatz (WS) graphs side-by-side, illustrating the effect of different rewiring probabilities (<m>p</m>) on a network structure. Each graph has <m>n=20</m> nodes, initially connected with <m>k=4</m> neighbors per node, and the nodes are visually arranged in a circular layout.</p>
+    <p>The leftmost graph, with a rewiring probability <m>p=0</m>, depicts a regular ring lattice. Each of its 20 nodes is strictly connected to its two nearest neighbors on each side along the ring. This results in an ordered, symmetrical appearance with no rewired edges.</p>
+    <p>The middle graph illustrates the structure with a rewiring probability <m>p=0.2</m>. While the underlying lattice structure is still apparent, several edges have been randomly rewired. These rewired edges create "shortcut" connections that span across the circular arrangement, introducing some randomness and reducing the graph's regularity compared to the <m>p=0</m> case.</p>
+    <p>The rightmost graph shows the outcome when the rewiring probability <m>p=1</m>. Here, every original edge had the chance to be rewired. The initial ordered lattice structure is almost entirely obscured, resulting in a graph that appears highly disordered and random, with numerous long-range connections crisscrossing the interior of the circular node arrangement.</p>
+    <p>The progression from left to right visually demonstrates how increasing the rewiring probability <m>p</m> transitions a Watts-Strogatz graph from a highly ordered ring lattice to a network resembling a random graph.</p>
+  </description>
+</image>
   </figure>
   <p>To make a <term>Watts-Strogatz</term> (<term>WS</term>) <term>graph</term>, we start with a ring lattice and <q>rewire</q> some of the edges. In their paper, Watts and Strogatz consider the edges in a particular order and rewire each one with probability <m>p</m>. If an edge is rewired, they leave the first node unchanged and choose the second node at random. They don't allow self loops or multiple edges; that is, you can't have a edge from a node to itself, and you can't have more than one edge between the same two nodes.</p>
   <p>Here is an implementation of this process.</p>
