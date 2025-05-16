@@ -5,6 +5,7 @@
  <book xml:id="comp2" permid="com">
     <title>On Complexity</title>
     <subtitle>The PreTeXt Interactive Edition</subtitle>
+    <xi:include href="./meta_frontmatter.ptx"/>
     <xi:include href="./Preface/toctree.ptx"/>
     <xi:include href="./ComplexityScience/toctree.ptx"/>
     <xi:include href="./AlgorithmAnalysis/toctree.ptx"/>
