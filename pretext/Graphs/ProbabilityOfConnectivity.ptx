@@ -3,7 +3,7 @@
   <title>Probability of Connectivity</title>
   <figure align="center" xml:id="id1">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Probability of connectivity with n=10 and a range of p. The vertical line shows the predicted critical value.</caption>
-    <image source="Graphs/Figures/thinkcomplexity2005.png" width="50%" alt="&quot; Probability of connectivity with n=10 and a range of p. The vertical line shows the predicted critical value.&quot;"/>
+    <image source="Graphs/Figures/thinkcomplexity2005.png" width="50%" />
     <shortdescription>Line graph: probability of connectivity (n=10) vs. probability of edge (p).</shortdescription>
       <description>
         <p>The graph plots the probability of graph connectivity against the probability of an edge (<m>p</m>) for a graph with <m>n=10</m> nodes. The x-axis, labeled 'Prob of edge (p)', is on a logarithmic scale ranging from <m>10^{-2.5}</m> to <m>10^0=1</m>. The y-axis, labeled 'Prob connected', ranges linearly from 0.0 to 1.0. A blue S-shaped curve illustrates the relationship, showing the probability of connectivity rising from near 0 to near 1. The steepest part of this ascent occurs around <m>p \approx 0.23</m>. A vertical gray line at this x-value indicates the predicted critical value for <m>p</m>.</p>
