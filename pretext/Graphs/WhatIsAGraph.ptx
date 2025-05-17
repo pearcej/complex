@@ -3,17 +3,14 @@
   <title>What is a Graph?</title>
   <figure align="center" xml:id="g-fig-1">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> A directed graph that represents a social network.</caption>
-    <image source="Graphs/Figures/thinkcomplexity2001.png" width="50%" />
-          <shortdescription>Directed graph with three nodes illustrating social network connections.</shortdescription>
-    <description>
-        <p>The image displays a simple directed graph consisting of three nodes, visually representing elements in a network. Edges, depicted as arrows, indicate the direction of relationships or flow between these nodes. The specific structure shown is:</p>
-        <ul>
-          <li>Two of the nodes have a mutual (bidirectional) connection, with arrows pointing from each of these two nodes to the other (Bob and Alice).</li>
-          <li>Both of these mutually connected nodes also have outgoing arrows pointing towards the third node (Chuck).</li>
-          <li>The third node (Chuck) is a recipient in these relationships; it only has incoming arrows from the other two nodes and possesses no outgoing arrows.</li>
-        </ul>
-        <p>This visual structure corresponds to the example given in the text where 'Alice' and 'Bob' follow each other, and both also follow 'Chuck', while 'Chuck' does not follow anyone back.</p>
+    <image source="Graphs/Figures/thinkcomplexity2001.png" width="50%">
+      <shortdescription>Directed three-node graph showing social network connections.</shortdescription>
+      <description>
+        <p>The image displays a simple directed graph with three nodes, visually representing network elements. Edges, as arrows, show the direction of relationships. The nodes can be identified as Alice, Bob, and Chuck based on the text's example.</p>
+        <p>A mutual, bidirectional connection exists between two nodes (Alice and Bob), shown by arrows pointing from each to the other. Both of these nodes also have outgoing arrows directed towards the third node (Chuck).</p>
+        <p>The third node (Chuck) only has incoming arrows from Alice and Bob and no outgoing arrows. This structure illustrates the example where Alice and Bob follow each other, both follow Chuck, and Chuck follows no one back.</p>
       </description>
+    </image>
   </figure>
   <p>To most people a <q>graph</q> is a visual representation of data, like a bar chart or a plot of stock prices over time. That's not what this chapter is about.</p>
   <p>In this chapter, a <term>graph</term> is a representation of a system that contains discrete, interconnected elements. The elements are represented by <term>nodes</term> &#x2014; also called <term>vertices</term> &#x2013; and the interconnections are represented by <term>edges</term>.</p>

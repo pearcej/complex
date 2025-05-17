@@ -3,19 +3,13 @@
   <title>Self Check</title>
   <figure align="center" xml:id="id1">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">A Graphical represention of a Friend Network</caption>
-    <image source="Graphs/Figures/SELF_CHECK_FIG.png" width="50%" />
+    <image source="Graphs/Figures/SELF_CHECK_FIG.png" width="50%" >
       <shortdescription>Graph of Friend Network</shortdescription>
-    <description>
-        <p>An undirected graph depicting a social network with five nodes representing individuals: Josh, Kate, Jerry, Mary, and Billy-Bob. Edges connect these individuals as follows:</p>
-        <ul>
-          <li>Josh is connected to Billy-Bob.</li>
-          <li>Kate is connected to Jerry, Mary, and Billy-Bob.</li>
-          <li>Jerry is connected to Kate and Billy-Bob.</li>
-          <li>Mary is connected to Kate and Billy-Bob.</li>
-          <li>Billy-Bob is connected to Josh, Kate, Jerry, and Mary, acting as a central connector.</li>
-        </ul>
-        <p>The connections are mutual, indicating friendships or bidirectional relationships.</p>
-      </description>
+  <description>
+    <p>An undirected graph depicts a social network with five nodes: Josh, Kate, Jerry, Mary, and Billy-Bob. Edges show connections between these individuals.</p>
+    <p>Josh is connected to Billy-Bob. Kate is connected to Jerry, Mary, and Billy-Bob. Jerry is connected to Kate and Billy-Bob; Mary is also connected to Kate and Billy-Bob. Billy-Bob connects to Josh, Kate, Jerry, and Mary, acting as a central connector.</p>
+    <p>The connections are mutual, indicating friendships or bidirectional relationships.</p>
+  </description> </image>
   </figure>
   <exercise label="SC_Q1">
     <statement>

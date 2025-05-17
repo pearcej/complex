@@ -3,25 +3,21 @@
   <title>Probability of Connectivity</title>
   <figure align="center" xml:id="id1">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Probability of connectivity with n=10 and a range of p. The vertical line shows the predicted critical value.</caption>
-    <image source="Graphs/Figures/thinkcomplexity2005.png" width="50%" />
+    <image source="Graphs/Figures/thinkcomplexity2005.png" width="50%" >
     <shortdescription>Line graph: probability of connectivity (n=10) vs. probability of edge (p).</shortdescription>
       <description>
         <p>The graph plots the probability of graph connectivity against the probability of an edge (<m>p</m>) for a graph with <m>n=10</m> nodes. The x-axis, labeled 'Prob of edge (p)', is on a logarithmic scale ranging from <m>10^{-2.5}</m> to <m>10^0=1</m>. The y-axis, labeled 'Prob connected', ranges linearly from 0.0 to 1.0. A blue S-shaped curve illustrates the relationship, showing the probability of connectivity rising from near 0 to near 1. The steepest part of this ascent occurs around <m>p \approx 0.23</m>. A vertical gray line at this x-value indicates the predicted critical value for <m>p</m>.</p>
-      </description>
+      </description> </image>
   </figure>
   <figure align="center" xml:id="g-fig-6">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Probability of connectivity for several values of n and a range of p.</caption>
-    <image source="Graphs/Figures/thinkcomplexity2006.png" width="50%" alt="&quot; Probability of connectivity for several values of n and a range of p.&quot;"/>
-  <shortdescription>Line graph: probability of connectivity vs. probability of edge (p) for n=30, 100, and 300.</shortdescription>
+    <image source="Graphs/Figures/thinkcomplexity2006.png" width="50%" alt="&quot; Probability of connectivity for several values of n and a range of p.&quot;">
+  <shortdescription>Connectivity probability vs. edge probability (p) for n=30, 100, 300.</shortdescription>
       <description>
-        <p>This line graph compares the probability of graph connectivity for different numbers of nodes (<m>n</m>) as the probability of an edge (<m>p</m>) varies. The x-axis, labeled 'Prob of edge (p)', is on a logarithmic scale from <m>10^{-2.5}</m> to <m>10^0=1</m>. The y-axis, labeled 'Prob connected', ranges from 0.0 to 1.0. Three distinct S-shaped curves are presented:</p>
-        <ul>
-          <li>A dark blue curve for <m>n=30</m>.</li>
-          <li>A medium blue curve for <m>n=100</m>.</li>
-          <li>A light blue curve for <m>n=300</m>.</li>
-        </ul>
-        <p>The graph illustrates that as the number of nodes (<m>n</m>) increases, the S-shaped curve representing the transition to connectivity shifts to the left (towards lower values of <m>p</m>) and the transition becomes steeper or more abrupt. Each curve is accompanied by a faint vertical line indicating its respective critical point for <m>p</m>.</p>
-      </description>
+        <p>This line graph shows how graph connectivity probability changes with varying numbers of nodes (<m>n</m>) and edge probability (<m>p</m>). The x-axis, 'Prob of edge (p)', is logarithmic (<m>10^{-2.5}</m> to <m>10^0</m>). The y-axis, 'Prob connected', ranges from 0.0 to 1.0.</p>
+        <p>Three S-shaped curves are shown: a dark blue curve for <m>n=30</m>, a medium blue curve for <m>n=100</m>, and a light blue curve for <m>n=300</m>. Each curve has a faint vertical line at its critical point for <m>p</m>.</p>
+        <p>As <m>n</m> increases, the S-curve (transition to connectivity) shifts left towards lower <m>p</m> values and becomes steeper, indicating a more abrupt transition.</p>
+      </description> </image>
   </figure>
   <p>For given values of <m>n</m> and <m>p</m>, we would like to know the probability that <m>G(n, p)</m> is connected. We can estimate it by generating a large number of random graphs and counting how many are connected. Here's how:</p>
   <pre>def prob_connected(n, p, iters=100):
