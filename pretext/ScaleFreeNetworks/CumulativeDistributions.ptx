@@ -29,7 +29,7 @@ cdf_fb = Cdf(degrees(fb), label='Facebook')</pre>
   <p><xref ref="sfn-fig-4"/> shows the degree CDF for the Facebook dataset along with the WS model (left) and the BA model (right). The x-axis is on a log scale.</p>
   <figure align="center" xml:id="sfn-fig-5">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Complementary CDF of degree in the Facebook dataset along with the WS model (left) and the BA model (right), on a log-log scale.</caption>
-<image source="ScaleFreeNetworks/Figures/thinkcomplexity2014.png" width="50%" alt="&quot; Complementary CDF of degree in the Facebook dataset along with the WS model (left) and the BA model (right), on a log-log scale.&quot;">
+<image source="ScaleFreeNetworks/Figures/thinkcomplexity2014.png" width="50%">
       <shortdescription>Complementary CDF of degree in the Facebook dataset along with the WS model (left) and the BA model (right), on a log-log scale.</shortdescription>
       <description>
         <p>This figure illustrates the Complementary Cumulative Distribution Functions (CCDFs) of node degrees, comparing the Facebook dataset with the Watts-Strogatz (WS) and Barabási-Albert (BA) models. The plot uses a log-log scale, meaning both the x-axis (degree) and the y-axis (complementary cumulative probability, 1-CDF) are logarithmically scaled. The presentation involves two panels or subplots as described in the caption.</p>
