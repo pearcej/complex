@@ -3,8 +3,16 @@
   <title>The WS Experiment</title>
   <figure align="center" xml:id="id1">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Clustering coefficient (C) and characteristic path length (L) for WS graphs with n=1000, k=10, and a range of p.</caption>
-    <image source="SmallWorldGraphs/Figures/thinkcomplexity2009.png" width="50%" alt="&quot; Clustering coefficient (C) and characteristic path length (L) for WS graphs with n=1000, k=10, and a range of p.&quot;"/>
-  </figure>
+<image source="SmallWorldGraphs/Figures/thinkcomplexity2009.png" width="50%">
+    <shortdescription>Normalized clustering (C) and path length (L) vs. rewiring probability (p) for Watts-Strogatz graphs.</shortdescription>
+      <description>
+        <p>This line graph, titled "Normalized clustering coefficient and path length," shows how these metrics change for Watts-Strogatz (WS) graphs (<m>n=1000</m> nodes, <m>k=10</m> initial connectivity) as rewiring probability (<m>p</m>) varies.</p>
+        <p>The x-axis, "Rewiring probability (p)", is logarithmic (<m>10^{-4}</m> to <m>10^0</m>). The y-axis shows normalized values (0.0 to 1.0) for both C and L.</p>
+        <p>Two curves are shown:</p>
+            <p><strong>Normalized Clustering Coefficient (<m>C(p)/C(0)</m>):</strong> (Dark blue squares) Starts at 1.0, stays high until <m>p \approx 10^{-2}</m>, then drops sharply towards 0 as <m>p</m> approaches <m>10^0</m>.</p>
+            <p><strong>Normalized Characteristic Path Length (<m>L(p)/L(0)</m>):</strong> (Light blue circles) Also starts at 1.0, but drops much earlier and faster, beginning its steep decline around <m>p=10^{-4}</m> to <m>10^{-3}</m> and stabilizing at a low value by <m>p \approx 10^{-1}</m>.</p>
+        <p>The graph illustrates the "small-world" phenomenon: a region (around <m>p \approx 10^{-3}</m> to <m>10^{-1}</m>) where path length (<m>L</m>) is low (like random graphs) while clustering (<m>C</m>) remains high (like regular lattices), indicating highly clustered networks with short average path lengths.</p>
+      </description> </image>  </figure>
   <p>Now we are ready to replicate the WS experiment, which shows that for a range of values of <m>p</m>, a WS graph has high clustering like a regular graph and short path lengths like a random graph.</p>
   <p>We will start with <c>run_one_graph</c>, which takes <c>n</c>, <c>k</c>, and <c>p</c>; it generates a WS graph with the given parameters and computes the mean path length, <c>mpl</c>, and clustering coefficient, <c>cc</c>:</p>
   <pre>def run_one_graph(n, k, p):
