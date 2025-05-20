@@ -25,8 +25,13 @@
   </p>
   <figure align="center" xml:id="id1">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 1: Sign in button.</caption>
-    <image source="Appendix2/Figures/sign_in.png" width="50%" alt="&quot;Sign in button.&quot;"/>
-  </figure>
+<image source="Appendix2/Figures/sign_in.png" width="50%" alt="&quot;Sign in button.&quot;">
+      <shortdescription>Sign in button on Colaboratory welcome page.</shortdescription>
+      <description>
+        <p>This screenshot shows the Google Colaboratory "Welcome to Colaboratory" interface. A central pop-up dialog is visible, featuring tabs such as 'Examples', 'Recent', 'Google Drive', 'GitHub', and 'Upload'.</p>
+        <p>The main point of focus, as indicated by the instructional text, is the blue 'Sign In' button located in the top right corner of the browser window, distinct from the central pop-up dialog.</p>
+      </description>
+    </image>  </figure>
   <p>
     <ol label="1">
       <li>
@@ -39,8 +44,13 @@
   </p>
   <figure align="center" xml:id="id2">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 2: Pop up after sign in.</caption>
-    <image source="Appendix2/Figures/Github.png" width="50%" alt="&quot;Pop up after sign in.&quot;"/>
-  </figure>
+<image source="Appendix2/Figures/Github.png" width="50%" alt="&quot;Pop up after sign in.&quot;">
+      <shortdescription>Google Colab 'Open notebook' pop-up with GitHub tab.</shortdescription>
+      <description>
+        <p>The screenshot displays the Google Colaboratory pop-up dialog titled 'Open notebook'. This dialog has a distinctive orange upper border and presents several tabs for sourcing notebooks: 'Examples', 'Recent', 'Google Drive', 'GitHub', and 'Upload'.</p>
+        <p>The 'GitHub' tab is the relevant tab for the current instruction. Below 'GitHub' tabs, an input field is visible, typically labeled 'Enter a GitHub URL or search by organization or user', ready for input.</p>
+      </description>
+    </image>  </figure>
   <p>
     <ul>
       <li>
@@ -50,8 +60,13 @@
   </p>
   <figure align="center" xml:id="id3">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 3: Opening a notebook through file.</caption>
-    <image source="Appendix2/Figures/File.png" width="50%" alt="&quot;Opening a notebook through file.&quot;"/>
-  </figure>
+<image source="Appendix2/Figures/File.png" width="50%" alt="&quot;Opening a notebook through file.&quot;">
+      <shortdescription>Google Colab 'File' menu showing 'Open notebook' option.</shortdescription>
+      <description>
+        <p>This screenshot captures a portion of the Google Colaboratory user interface, with the 'File' menu opened. The dropdown 'File' menu lists various actions that can be performed.</p>
+        <p>Highlighted by the instructional context is the 'Open notebook...' option within this menu, please click it. Other standard file operations like 'New notebook', 'Upload notebook...', 'Save a copy in Drive', etc., are also visible in the list.</p>
+      </description>
+    </image>  </figure>
   <p>
     <ul>
       <li>
@@ -64,8 +79,13 @@
   </p>
   <figure align="center" xml:id="id4">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 4: The github authorization pop up.</caption>
-    <image source="Appendix2/Figures/Github_authorization.png" width="50%" alt="&quot;The github authorization pop up.&quot;"/>
-  </figure>
+<image source="Appendix2/Figures/Github_authorization.png" width="50%" alt="&quot;The github authorization pop up.&quot;">
+      <shortdescription>GitHub authorization pop-up for Google Colaboratory access.</shortdescription>
+      <description>
+        <p>The screenshot shows a GitHub authorization pop-up window. This window is titled 'Authorize Google Colaboratory' and features the Google Colaboratory application icon.</p>
+        <p>The dialog requests permission for Google Colaboratory to access the user's GitHub account data. After filling in basic information like username and password, please click the button, typically green and labeled 'Sign in [username]' or 'Authorize application', is displayed for the user to grant these permissions.</p>
+      </description>
+    </image>  </figure>
   <p>
     <ol label="1">
       <li>
@@ -75,8 +95,13 @@
   </p>
   <figure align="center" xml:id="id5">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 5: Link for repo.</caption>
-    <image source="Appendix2/Figures/Repo_link.png" width="50%" alt="&quot;Link for repo.&quot;"/>
-  </figure>
+<image source="Appendix2/Figures/Repo_link.png" width="50%" alt="&quot;Link for repo.&quot;">
+      <shortdescription>Google Colab 'GitHub' tab with repository URL entered.</shortdescription>
+      <description>
+        <p>This screenshot focuses on the Google Colaboratory 'Open notebook' dialog, with the 'GitHub' tab active. The input field labeled 'Enter a GitHub URL or search by organization or user' is active now.</p>
+        <p>The URL 'https://github.com/pearcej/complex-colab.git', which could be different in your case, is shown typed into this field. A search icon (magnifying glass), enter key, or similar button is typically present to the right of the input field to initiate the search for the repository. Please click it.</p>
+      </description>
+    </image>  </figure>
   <p>
     <ol label="1">
       <li>
@@ -89,8 +114,13 @@
   </p>
   <figure align="center" xml:id="id6">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 6: Repo drop down menu.</caption>
-    <image source="Appendix2/Figures/repo_drop_down.png" width="50%" alt="&quot;Repo drop down menu.&quot;"/>
-  </figure>
+<image source="Appendix2/Figures/repo_drop_down.png" width="50%" alt="&quot;Repo drop down menu.&quot;">
+      <shortdescription>Repository dropdown menu in Google Colab's GitHub interface.</shortdescription>
+      <description>
+        <p>The screenshot shows a section of Google Colaboratory's 'Open notebook' interface, specifically after a GitHub URL has been processed. Below the URL input area, a 'Repository' dropdown menu is visible.</p>
+        <p>This dropdown menu is either shown as open or is the element to be interacted with, from which the user is expected to select the specific repository, such as 'pearcej/complex-colab' (implied by previous steps), to view its contents.</p>
+      </description>
+    </image>  </figure>
   <p>
     <ul>
       <li>
@@ -107,11 +137,21 @@
   </p>
   <figure align="center" xml:id="id7">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 7: List of the notebooks.</caption>
-    <image source="Appendix2/Figures/Repo.png" width="50%" alt="&quot;List of the notebooks.&quot;"/>
-  </figure>
+<image source="Appendix2/Figures/Repo.png" width="50%" alt="&quot;List of the notebooks.&quot;">
+      <shortdescription>List of Jupyter notebooks within a repository in Google Colab.</shortdescription>
+      <description>
+        <p>This screenshot displays the file browser area within Google Colaboratory's 'Open notebook' dialog, after a GitHub repository has been selected. A list of files and folders within that repository is shown.</p>
+        <p>The list predominantly features Jupyter notebooks (identifiable by icons or .ipynb extensions). The user is expected to navigate or scroll through this list to locate and select the desired notebook file to open.</p>
+      </description>
+    </image>  </figure>
   <p>This should get you to the point where you can start to explore Colab and use it for class and homework.</p>
   <figure align="center" xml:id="id8">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 8: Chapter 2 notebook opened up.</caption>
-    <image source="Appendix2/Figures/opened_repo.png" width="50%" alt="&quot;Chapter 2 notebook opened up.&quot;"/>
-  </figure>
+<image source="Appendix2/Figures/opened_repo.png" width="50%" alt="&quot;Chapter 2 notebook opened up.&quot;">
+      <shortdescription>An opened Jupyter notebook (e.g., Chapter 2) in Google Colaboratory.</shortdescription>
+      <description>
+        <p>The screenshot shows the main Google Colaboratory interface with a Jupyter notebook successfully opened and loaded. The caption identifies this as the 'Chapter 2 notebook'.</p>
+        <p>Visible elements include the notebook's title, cells containing code or text, a menu bar ('File', 'Edit', 'View', etc.) at the top, and a toolbar with common notebook operations. This image confirms the final step of opening a notebook.</p>
+      </description>
+    </image>  </figure>
 </section>
