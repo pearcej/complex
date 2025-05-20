@@ -15,7 +15,7 @@
   </p>
   <p>Reductionism is the view that the behavior of a system can be explained by understanding its components.  For example, the periodic table of the elements is a triumph of reductionism, because it explains the chemical behavior of elements with a model of electrons in atoms.  Holism is the view that some phenomena that appear at the system  level  do  not  exist  at  the  level  of  components,  and  cannot  be explained in component-level terms.</p>
   <p>We get back to explanatory models in <xref ref="scale-free-networks_introduction"/>, instrumentalism in <xref ref="game-of-life_introduction"/>, and holism in <xref ref="self-organized-criticality_introduction"/></p>
-  <exercise xml:id="exercise-classical-models" label = "exercise-classical">
+  <exercise>
     <statement>
       <p>Q-1: Classical models are better to <BlankNode/> <var/>  </p>
     </statement>
@@ -39,7 +39,7 @@
       </var>
     </setup>
   </exercise>
-  <exercise xml:id="exercise-complex-models" label = "exercise-classical-2">
+  <exercise>
     <statement>
       <p>Q-2: Complex Models are better to <BlankNode/> <var/>  </p>
     </statement>
