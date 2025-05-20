@@ -3,7 +3,13 @@
   <title>NetworkX</title>
   <figure align="center" xml:id="g-fig-2">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> An undirected graph that represents driving time between cities.</caption>
-    <image source="Graphs/Figures/thinkcomplexity2002.png" width="50%" alt="&quot; An undirected graph that represents driving time between cities.&quot;"/>
+    <image source="Graphs/Figures/thinkcomplexity2002.png" width="50%">
+      <shortdescription>Undirected graph: driving times for Albany, Boston, NYC, Philly.</shortdescription>
+      <description>
+        <p>The image displays an undirected graph representing a road network with driving times. It features four square-shaped nodes, labeled with city names: Albany, Boston, NYC (New York City), and Philly (Philadelphia), positioned to roughly approximate their geographical locations.</p>
+        <p>Edges, as lines, connect these cities, indicating direct driving routes. Each edge is labeled with the driving time in hours. Specifically, the connections are: Albany to Boston (3 hours), Albany to NYC (4 hours), Boston to NYC (4 hours), and NYC to Philly (2 hours).</p>
+      </description>
+    </image>
   </figure>
   <p>To represent graphs, we'll use a package called NetworkX, which is the most commonly used network library in Python.</p>
   <p>We can create a directed graph by importing NetworkX (usually imported as <c>nx</c>) and instantiating <c>nx.DiGraph</c>:</p>
