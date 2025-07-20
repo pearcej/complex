@@ -2,9 +2,9 @@
 <pretext xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
  <xi:include href="./bookinfo.ptx"/>
  
- <book xml:id="comp2" permid="com">
+ <book xml:id="complex2" permid="com">
     <title>On Complexity</title>
-    <subtitle>The PreTeXt Interactive Edition</subtitle>
+    <subtitle>PreTeXt Version 1.0</subtitle>
     <xi:include href="./Preface/toctree.ptx"/>
     <xi:include href="./ComplexityScience/toctree.ptx"/>
     <xi:include href="./AlgorithmAnalysis/toctree.ptx"/>
