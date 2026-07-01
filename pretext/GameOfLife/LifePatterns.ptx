@@ -24,7 +24,7 @@
   <p><xref ref="gol-fig-3"/> shows a spaceship called a <q>glider</q>. After a period of 4 steps, the glider is back in the starting configuration, shifted one unit down and to the right.</p>
   <p>Depending on the starting orientation, gliders can move along any of the four diagonals. There are other spaceships that move horizontally and vertically.</p>
   <p>People have spent embarrassing amounts of time finding and naming these patterns. If you search the web, you will find many collections.</p>
-  <exercise label="q_7.3">
+  <exercise label="q_7_3">
     <statement>
       <p>Match the GoL patterns to their properties:</p>
     </statement>
@@ -43,7 +43,7 @@
       </match>
     </matches>
   </exercise>
-  <exercise label="q_7.4">
+  <exercise label="q_7_4">
     <statement>
       <p>Q-2: If you run a GoL from a random starting state, a number of unstable patterns are likely to appear.</p>
     </statement>
@@ -66,7 +66,7 @@
       </choice>
     </choices>
   </exercise>
-  <exercise label="q_7.5">
+  <exercise label="q_7_5">
     <statement>
       <p>Q-3: Why do you think that people are fascinated with this kind of program so much that they name the formations?</p>
     </statement>

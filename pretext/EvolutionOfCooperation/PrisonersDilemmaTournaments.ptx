@@ -24,7 +24,7 @@
   <p>TFT has all of these properties.</p>
   <p>Axelrod's tournaments offer a partial, possible answer to the problem of altruism: maybe the genes for altruism are prevalent because they are adaptive. To the degree that many social interactions can be modeled as variations on the Prisoner's Dilemma, a brain that is wired to be nice, tempered by a balance of retaliation and forgiveness, will tend to do well in a wide variety of circumstances.</p>
   <p>But the strategies in Axelrod's tournaments were designed by people; they didn't evolve. We need to consider whether it is credible that genes for niceness, retribution, and forgiveness could appear by mutation, successfully invade a population of other strategies, and resist being invaded by subsequent mutations.</p>
-  <exercise label="q_13.4">
+  <exercise label="q_13_4">
     <statement>
       <p> Match the shared characteristics of winning strategies to their descriptions:</p>
     </statement>

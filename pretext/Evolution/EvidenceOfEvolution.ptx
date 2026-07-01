@@ -44,7 +44,7 @@ sim.run()</pre>
     </ul>
   </p>
   <p>These are the phenomena we want to explain. So far, our model doesn't do the job.</p>
-  <exercise label="q_13.7">
+  <exercise label="q_13_7">
     <statement>
       <p>Q-1: Evolution is a change in the distribution of genotypes in individuals of a population.</p>
     </statement>

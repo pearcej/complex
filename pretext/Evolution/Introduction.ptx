@@ -33,7 +33,7 @@
   <p>There's probably not much we can do about the first group, but we might be able to help the others. Empirically, the theory of evolution is hard for people to understand. At the same time, it is profoundly simple: for many people, once they understand it, it seems both obvious and irrefutable.</p>
   <p>To help people make this transition from confusion to clarity, the most powerful tool might surprisingly be computation. Ideas that are hard to understand in theory can be easy to understand when we see them happening in simulation. That is the goal of this chapter.</p>
   <p>The code for this chapter is in <url href="https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap13.ipynb" visual="https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap13.ipynb">chap13.ipynb</url>, which is a  notebook in the repository for this book. For more information about working with this code, see <xref ref="preface_notebooks"/>.</p>
-  <exercise label="q_12.1">
+  <exercise label="q_12_1">
     <statement>
       <p>Q-1: According to the author, only a third of Americans believe that the theory of evolution is true due to the following reasons:</p>
       <p>Some reject evolution for conflicts with their religious beliefs.

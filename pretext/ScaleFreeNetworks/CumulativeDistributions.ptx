@@ -39,16 +39,16 @@ cdf_fb = Cdf(degrees(fb), label='Facebook')</pre>
   <p>Clearly the <c>CDF</c> for the WS model is very different from the <c>CDF</c> from the data. The BA model is better, but still not very good, especially for small values.</p>
   <p>In the tail of the distribution (values greater than 100) it looks like the BA model matches the dataset well enough, but it is hard to see. We can get a clearer view with one other view of the data: plotting the complementary <c>CDF</c> on a log-log scale.</p>
   <p>The <term>complementary CDF</term> (CCDF) is defined</p>
-  <math_block docname="ScaleFreeNetworks/CumulativeDistributions" label="True" nowrap="False" number="True" xml:space="preserve">CCDF(x) &#x2261; 1 &#x2212; CDF(x)
+  <math_block docname="ScaleFreeNetworks/CumulativeDistributions"  nowrap="False" number="True" xml:space="preserve">CCDF(x) &#x2261; 1 &#x2212; CDF(x)
 
 </math_block>
   <p>This definition is useful because if the PMF follows a power law, the CCDF also follows a power law:</p>
-  <math_block docname="ScaleFreeNetworks/CumulativeDistributions" label="True" nowrap="False" number="True" xml:space="preserve">CCDF(x) &#x223C; (x/x_m)^-\ ^&#x3B1;
+  <math_block docname="ScaleFreeNetworks/CumulativeDistributions"  nowrap="False" number="True" xml:space="preserve">CCDF(x) &#x223C; (x/x_m)^-\ ^&#x3B1;
 
 </math_block>
   <p>where <m>x_m</m> is the minimum possible value and <m>&#x3B1;</m> is a parameter that determines the shape of the distribution.</p>
   <p>Taking the log of both sides yields:</p>
-  <math_block docname="ScaleFreeNetworks/CumulativeDistributions" label="True" nowrap="False" number="True" xml:space="preserve">logCCDF(x) &#x223C; &#x2212;&#x3B1; (logx &#x2212; logx_m)
+  <math_block docname="ScaleFreeNetworks/CumulativeDistributions"  nowrap="False" number="True" xml:space="preserve">logCCDF(x) &#x223C; &#x2212;&#x3B1; (logx &#x2212; logx_m)
 
 </math_block>
   <p>So if the distribution obeys a power law, we expect the CCDF on a log-log scale to be a straight line with slope &#x2212;&#x3B1;.</p>

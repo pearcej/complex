@@ -23,7 +23,7 @@
       </li>
     </ol>
   </p>
-  <figure align="center" xml:id="id1">
+  <figure align="center" xml:id="GettingStartedWithColab_figure_1">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 1: Sign in button.</caption>
 <image source="Appendix2/Figures/sign_in.png" width="50%" alt="&quot;Sign in button.&quot;">
       <shortdescription>Sign in button on Colaboratory welcome page.</shortdescription>
@@ -42,7 +42,7 @@
       </li>
     </ol>
   </p>
-  <figure align="center" xml:id="id2">
+  <figure align="center" xml:id="GettingStartedWithColab_figure_2">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 2: Pop up after sign in.</caption>
 <image source="Appendix2/Figures/Github.png" width="50%" alt="&quot;Pop up after sign in.&quot;">
       <shortdescription>Google Colab 'Open notebook' pop-up with GitHub tab.</shortdescription>
@@ -58,7 +58,7 @@
       </li>
     </ul>
   </p>
-  <figure align="center" xml:id="id3">
+  <figure align="center" xml:id="GettingStartedWithColab_figure_3">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 3: Opening a notebook through file.</caption>
 <image source="Appendix2/Figures/File.png" width="50%" alt="&quot;Opening a notebook through file.&quot;">
       <shortdescription>Google Colab 'File' menu showing 'Open notebook' option.</shortdescription>
@@ -77,7 +77,7 @@
       </li>
     </ul>
   </p>
-  <figure align="center" xml:id="id4">
+  <figure align="center" xml:id="GettingStartedWithColab_figure_4">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Figure 4: The github authorization pop up.</caption>
 <image source="Appendix2/Figures/Github_authorization.png" width="50%" alt="&quot;The github authorization pop up.&quot;">
       <shortdescription>GitHub authorization pop-up for Google Colaboratory access.</shortdescription>

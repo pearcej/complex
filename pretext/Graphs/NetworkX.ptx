@@ -60,7 +60,7 @@ G.add_edge('Bob', 'Chuck')</pre>
                         edge_labels=drive_times)</pre>
   <p>The <c>edge_labels</c> parameter expects a dictionary that maps from each pair of nodes to a label; in this case, the labels are driving times between cities. And that's how I generated <xref ref="g-fig-2"/>.</p>
   <p>In both of these examples, the nodes are strings, but in general they can be any hashable type.</p>
-  <exercise label="Q2_3.3">
+  <exercise label="Q2_3_3">
     <statement>
       <p>
 </p>

@@ -21,7 +21,7 @@
     return new_loc</pre>
   <p xml:id="evo-fig-3" names="evo_fig_3">The operator ^= computes <q>exclusive OR</q>; with the operand 1, it has the effect of flipping a bit.</p>
   <p>Now that we have mutation, we don't have to start with an agent at every location. Instead, we can start with the minimum variability: all agents at the same location.</p>
-  <figure align="center" xml:id="id1">
+  <figure align="center" xml:id="Mutation_figure_1">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Mean fitness over time for 10 simulations with mutation and differential survival and reproduction.</caption>
     <image source="Evolution/Figures/FIT_DIF_SURVIVE_REP.png" width="50%" alt="&quot; Mean fitness over time for 10 simulations with mutation and differential survival and reproduction.&quot;"/>
   </figure>
@@ -35,7 +35,7 @@
   <p>At that point, the system reaches an equilibrium where mutation occupies new locations at the same rate that differential survival causes lower-fitness locations to be left empty.</p>
   <p>The number of occupied locations in equilibrium depends on the mutation rate and the degree of differential survival. In these simulations the number of unique occupied locations at any point is typically 5&#x2013;15.</p>
   <p>It is important to remember that the agents in this model don't move, just as the genotype of an organism doesn't change. When an agent dies, it can leave a location unoccupied. And when a mutation occurs, it can occupy a new location. As agents disappear from some locations and appear in others, the population migrates across the landscape, like a glider in Game of Life. But organisms don't evolve; populations do.</p>
-  <exercise label="CH12.9_Q1">
+  <exercise label="CH12_9_Q1">
     <statement>
       <p>Q-1: All the agents start in the same location until we add in mutation then they start at every location across the landscape to increase the diversity of agents.</p>
     </statement>

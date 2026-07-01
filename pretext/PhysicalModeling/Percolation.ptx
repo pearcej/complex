@@ -74,11 +74,11 @@
     <image source="PhysicalModeling/Figures/3STEP_PERC.png" width="50%" alt="&quot; Sand pile model initial state (left), after 200 steps (middle), and 400 steps (right).&quot;"/>
   </figure>
   <p><xref ref="pm-fig-5"/> shows the first few steps of a percolation model with <c>n=10</c> and <c>p=0.7</c>. Non-porous cells are white, porous cells are lightly shaded, and wet cells are dark.</p>
-  <figure align="center" xml:id="id2">
+  <figure align="center" xml:id="Percolation_figure_2">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Gif of how liquid interacts with porous and non-porous cells.</caption>
     <image source="PhysicalModeling/Figures/Percolation.gif" width="50%" alt="&quot;Gif of how liquid interacts with porous and non-porous cells.&quot;"/>
   </figure>
-  <exercise label="q_8.4.2">
+  <exercise label="q_8_4_2">
     <statement>
       <p>Q-2: How does the different type of <q>neighborhood</q> affect the movement path of the <q>wet</q> cells?</p>
     </statement>
@@ -117,7 +117,7 @@
       </choice>
     </choices>
   </exercise>
-  <exercise label="q_8.4.5">
+  <exercise label="q_8_4_5">
     <statement>
       <p>Q-3: If a porous cell and a non-porous cell has at least one wet neighbor they both become wet.</p>
     </statement>

@@ -6,7 +6,7 @@
   <p>In its simplest form, Sugarscape is a model of a simple economy where agents move around on a 2-D grid, harvesting and accumulating <q>sugar</q>, which represents economic wealth. Some parts of the grid produce more sugar than others, and some agents are better at finding it than others.</p>
   <p>This version of Sugarscape is often used to explore and explain the distribution of wealth, in particular the tendency toward inequality.</p>
   <p>In the Sugarscape grid, each cell has a capacity, which is the maximum amount of sugar it can hold. In the original configuration, there are two high-sugar regions, with capacity 4, surrounded by concentric rings with capacities 3, 2, and 1.</p>
-  <figure align="center" xml:id="id1">
+  <figure align="center" xml:id="Sugarscape_figure_1">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Replication of the original Sugarscape model: initial configuration (left), after 2 steps (middle) and after 100 steps (right).</caption>
     <image source="AgentBasedModels/Figures/SUG_MODEL.png" width="50%" alt="&quot; Replication of the original Sugarscape model: initial configuration (left), after 2 steps (middle) and after 100 steps (right).&quot;"/>
   </figure>
@@ -38,11 +38,11 @@
   <p>Within the high-sugar areas, agents compete with each other to find and harvest sugar as it grows back. Agents with high metabolism or low vision are the most likely to starve.</p>
   <p>When sugar grows back at 1 unit per time step, there is not enough sugar to sustain the 400 agents we started with. The population drops quickly at first, then more slowly, and levels off around 250.</p>
   <p><xref ref="abm-fig-3"/> (right) shows the state of the model after 100 time steps, with about 250 agents. The agents who survive tend to be the lucky ones, born with high vision and/or low metabolism. Having survived to this point, they are likely to survive forever, accumulating unbounded stockpiles of sugar.</p>
-  <figure align="center" xml:id="id2">
+  <figure align="center" xml:id="Sugarscape_figure_2">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Gif 11.1: Initial Sugarscape for 100 steps.</caption>
     <image source="AgentBasedModels/Figures/Initial_Sugarscape.gif" width="50%" alt="&quot;Gif 11.1: Initial Sugarscape for 100 steps.&quot;"/>
   </figure>
-  <exercise label="q_10.4">
+  <exercise label="q_10_4">
     <statement>
       <p>Q-1: Which of the following are true about Sugarscapes:</p>
     </statement>

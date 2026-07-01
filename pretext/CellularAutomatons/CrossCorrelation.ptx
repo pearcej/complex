@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <section xml:id="cellular-automatons_cross-correlation">
   <title>Cross-Correlation</title>
-  <p xml:id="cellular-automatons_id1" names="6.11">The operation in the previous section &#x2014; selecting elements from an array and adding them up &#x2014; is an example of an operation that is so useful, in so many domains, that it has a name: <term>cross-correlation</term>. And NumPy provides a function, called <c>correlate</c>, that computes it. In this section we'll see how we can use NumPy to write a simpler, faster version of <c>step</c>.</p>
+  <p xml:id="cellular-automatons_cross-correlation-intro" names="6.11">The operation in the previous section — selecting elements from an array and adding them up — is an example of an operation that is so useful, in so many domains, that it has a name: <term>cross-correlation</term>. And NumPy provides a function, called <c>correlate</c>, that computes it. In this section we'll see how we can use NumPy to write a simpler, faster version of <c>step</c>.</p>
   <p>The NumPy <c>correlate</c> function takes an array, <c>a</c>, and a <q>window</q>, <c>w</c>, with length N and computes a new array, <c>c</c>, where element <c>k</c> is the following summation:</p>
-  <math_block docname="CellularAutomatons/CrossCorrelation" label="True" nowrap="False" number="True" xml:space="preserve">c_k = \sum_{n=0}^{N-1} a_{n+k}*W_n</math_block>
+  <math_block docname="CellularAutomatons/CrossCorrelation"  nowrap="False" number="True" xml:space="preserve">c_k = \sum_{n=0}^{N-1} a_{n+k}*W_n</math_block>
   <p>We can write this operation in Python like this:</p>
   <pre>def c_k(a, w, k):
     N = len(w)

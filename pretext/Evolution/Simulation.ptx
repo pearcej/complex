@@ -48,7 +48,7 @@
     </ul>
   </p>
   <p>In this version of the simulation, the number of new agents during each time step equals the number of dead agents, so the number of live agents is constant.</p>
-  <exercise label="q_12.5">
+  <exercise label="q_12_5">
     <statement>
       <p>Q-1: What happens when an agent dies in this version of the simulation?</p>
     </statement>
@@ -87,7 +87,7 @@
       </choice>
     </choices>
   </exercise>
-  <exercise label="CH12.5_Q2">
+  <exercise label="CH12_5_Q2">
     <statement>
       <p>
 </p>

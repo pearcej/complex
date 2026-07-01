@@ -26,8 +26,9 @@
                     and if found, checked off by replacement. <xref ref="lst-anagramsolution"/> shows this function.</p>
       <exercise>
         
-          <program xml:id="lst-anagramsolution" interactive="activecode" language="python">
-            <code>
+          <listing xml:id="lst-anagramsolution">
+            <program interactive="activecode" language="python">
+              <code>
 #checks to see if the anagrams have the same number of characters
 
 def anagramSolution1(s1,s2):
@@ -61,8 +62,9 @@ def anagramSolution1(s1,s2):
 def main():
     print(anagramSolution1('abcd','dcba'))
 main()
-        </code>
-          </program>
+              </code>
+            </program>
+          </listing>
         
       </exercise>
       <p>To analyze this algorithm, we need to note that each of the <em>n</em>
@@ -71,7 +73,7 @@ main()
                     array will be visited once to match a character from <c>s1</c>. The number
                     of visits then becomes the sum of the integers from 1 to <em>n</em>. We stated
                     earlier that this can be written as:</p>
-      <math_block docname="AlgorithmAnalysis/AlgorithmAnalysisExamples" label="True" nowrap="False" number="True" xml:space="preserve">\sum_{i=1}^{n} i &amp;= \frac {n(n+1)}{2} \\
+      <math_block docname="AlgorithmAnalysis/AlgorithmAnalysisExamples"  nowrap="False" number="True" xml:space="preserve">\sum_{i=1}^{n} i &amp;= \frac {n(n+1)}{2} \\
                  &amp;= \frac {1}{2}n^{2} + \frac {1}{2}n</math_block>
       <p>As <m>n</m> gets large, the <m>n^{2}</m> term will dominate the
                     <m>n</m> term and the <m>\frac {1}{2}</m> can be ignored.
@@ -87,8 +89,9 @@ main()
                     this solution.</p>
       <exercise>
         
-          <program xml:id="lst-ana2" interactive="activecode" language="python">
-            <code>
+          <listing xml:id="lst-ana2">
+            <program interactive="activecode" language="python">
+              <code>
 # sorts anagrams in order from a-z, and then compares them
 def anagramSolution2(s1,s2):
     alist1 = list(s1)
@@ -111,8 +114,9 @@ def anagramSolution2(s1,s2):
 def main():
     print(anagramSolution2('abcde','edcba'))
 main()
-        </code>
-          </program>
+              </code>
+            </program>
+          </listing>
         
       </exercise>
       <p>At first glance you may be tempted to think that this algorithm is
@@ -157,8 +161,9 @@ main()
                     anagrams. <xref ref="lst-ana4"/> shows this solution.</p>
       <exercise>
         
-          <program xml:id="lst-ana4" interactive="activecode" language="python">
-            <code>
+          <listing xml:id="lst-ana4">
+            <program interactive="activecode" language="python">
+              <code>
 """ uses an array to count the number of a ocurrences of the two inputs
 if the number of occurrences is the same then the input is an anagram """
 
@@ -187,8 +192,9 @@ def anagramSolution4(s1,s2):
 def main():
     print(anagramSolution4('apple','pleap'))
 main()
-        </code>
-          </program>
+              </code>
+            </program>
+          </listing>
         
       </exercise>
       <p>Again, the solution has a number of iterations. However, unlike the
