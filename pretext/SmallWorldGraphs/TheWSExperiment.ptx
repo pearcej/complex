@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="swg-fig-3">
   <title>The WS Experiment</title>
-  <figure align="center" xml:id="id1">
+  <figure align="center" xml:id="TheWSExperiment_figure_1">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Clustering coefficient (C) and characteristic path length (L) for WS graphs with n=1000, k=10, and a range of p.</caption>
     <image source="SmallWorldGraphs/Figures/thinkcomplexity2009.png" width="50%" alt="&quot; Clustering coefficient (C) and characteristic path length (L) for WS graphs with n=1000, k=10, and a range of p.&quot;"/>
   </figure>
@@ -33,7 +33,7 @@ C /= C[0]</pre>
   <p><xref ref="swg-fig-3"/> shows the results. As <c>p</c> increases, the mean path length drops quickly, because even a small number of randomly rewired edges provide shortcuts between regions of the graph that are far apart in the lattice. On the other hand, removing local links decreases the clustering coefficient much more slowly.</p>
   <p>As a result, there is a wide range of <c>p</c> where a WS graph has the properties of a small world graph, high clustering and low path lengths.</p>
   <p>And that's why Watts and Strogatz propose WS graphs as a model for real-world networks that exhibit the small world phenomenon.</p>
-  <exercise label="q_4.8">
+  <exercise label="q_4_8">
     <statement>
       <p>Q-1: Given that a node returns np.nan, what can you say about the number of edges that node has?</p>
     </statement>

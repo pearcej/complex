@@ -35,7 +35,7 @@
     values[index] = 'C' if values[index] == 'D' else 'D'
     return values</pre>
   <p>Now that we have agents, we need a tournament.</p>
-  <exercise label="q_13.5.1">
+  <exercise label="q_13_5_1">
     <statement>
       <p>Q-1: What would be the genotype for a strategy that always does the opposite of the round before?</p>
     </statement>

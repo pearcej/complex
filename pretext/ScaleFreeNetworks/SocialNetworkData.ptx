@@ -48,7 +48,7 @@
   <p>The clustering coefficient is about 0.61, which is high, as we expect if this network has the small world property.</p>
   <p>And the average path is 3.7, which is quite short in a network of more than 4000 users. It's a small world after all.</p>
   <p>Now let's see if we can construct a WS graph that has the same characteristics as this network.</p>
-  <exercise label="Q1_5.2">
+  <exercise label="Q1_5_2">
     <statement>
       <p>
 </p>

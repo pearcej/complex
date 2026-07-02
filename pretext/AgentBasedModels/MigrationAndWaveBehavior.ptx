@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="agent-based-models_migration-and-wave-behavior-abm-8-abm-fig-5">
   <title>Migration and Wave Behavior</title>
-  <figure align="center" xml:id="id1">
+  <figure align="center" xml:id="MigrationAndWaveBehavior_figure_1">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Wave behavior in Sugarscape: initial configuration (left), after 6 steps (middle) and after 12 steps (right).</caption>
     <image source="AgentBasedModels/Figures/WAVE_BEHAVE.png" width="50%" alt="&quot; Wave behavior in Sugarscape: initial configuration (left), after 6 steps (middle) and after 12 steps (right).&quot;"/>
   </figure>

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="cellular-automatons_ca-tables">
   <title>CA Tables</title>
-  <p xml:id="cellular-automatons_id1" names="6.12">The function we have so far works if the CA is <q>totalitic</q>, which means that the rules only depend on the sum of the neighbors. But most rules also depend on which neighbors are on and off. For example, 100 and 001 have the same sum, but for many CAs, they would yield different results.</p>
+  <p xml:id="cellular-automatons_ca-tables-intro" names="6.12">The function we have so far works if the CA is <q>totalitic</q>, which means that the rules only depend on the sum of the neighbors. But most rules also depend on which neighbors are on and off. For example, 100 and 001 have the same sum, but for many CAs, they would yield different results.</p>
   <p>We can make <c>step2</c> more general using a window with elements [<m>4</m>, <m>2</m>, <m>1</m>], which interprets the neighborhood as a binary number. For example, the neighborhood <m>100</m> yields <m>4</m>; <m>010</m> yields <m>2</m>, and <m>001</m> yields <m>1</m>. Then we can take these results and look them up in the rule table.</p>
   <p>Here's the more general version of <c>step2</c>:</p>
   <pre>def step3(array, i, window=[4,2,1]):

@@ -77,7 +77,7 @@
         toward = carrot.pos - self.pos
         return limit_vector(toward)</pre>
   <p>The results from <c>center</c>, <c>avoid</c>, <c>align</c>, and <c>love</c> are what Reynolds calls <q>acceleration requests</q>, where each request is intended to achieve a different goal.</p>
-  <exercise label="q_11.5.1">
+  <exercise label="q_11_5_1">
     <statement>
       <p>
 </p>

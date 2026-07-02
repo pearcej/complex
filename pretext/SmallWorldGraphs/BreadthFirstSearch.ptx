@@ -45,7 +45,7 @@ return seen</pre>
     </ul>
   </p>
   <p>This version is back to being <m>O(n + m)</m>. Now we're ready to find shortest paths.</p>
-  <exercise label="q1_4.10">
+  <exercise label="q1_4_10">
     <statement>
       <p>Q-1: Which of the following is an accurate statement when talking about BFS and DFS?</p>
     </statement>

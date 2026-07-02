@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="herds-flocks-and-traffic-jams_traffic-jams">
   <title>Traffic Jams</title>
-  <figure align="center" xml:id="id1">
+  <figure align="center" xml:id="TrafficJams_figure_1">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Gif 12.1: Simulation of traffic jams. Squares indicate the position of the drivers; triangles indicate places where one driver has to brake to avoid another.</caption>
     <image source="HerdsFlocksAndTrafficJams/Figures/Traffic_Jam.gif" width="50%" alt="&quot;Gif 12.1: Simulation of traffic jams. Squares indicate the position of the drivers; triangles indicate places where one driver has to brake to avoid another.&quot;"/>
   </figure>
@@ -97,7 +97,7 @@
   <p>During the next time step (middle) there are two collisions, indicated by the triangles.</p>
   <p>During the next time step (right) two cars collide with the stopped cars, and we can see the initial formation of a traffic jam. Once a jam forms, it tends to persist, with additional cars approaching from behind and colliding, and with cars in the front accelerating away.</p>
   <p>Under some conditions, the jam itself propagates backwards, as you can see if you watch the animations in the notebook for this chapter.</p>
-  <exercise label="Q_11.2.1">
+  <exercise label="Q_11_2_1">
     <statement>
       <p>
 </p>

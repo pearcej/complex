@@ -64,7 +64,7 @@ for i in range(10):
       </var>
     </setup>
   </exercise>
-  <exercise label="q_10.3">
+  <exercise label="q_10_3">
     <statement>
       <p>Q-2: When p=0.4 what is the approximate degree of segregation in a steady state?</p>
     </statement>

@@ -51,7 +51,7 @@ sim = PDSimulation(tour, agents)</pre>
   <p><c>Retaliating</c> compares the number of elements in all genomes where an agent defects after the opponent defects (elements 2, 4, and 6) with the number of places where an agents defects after the opponent cooperates. As you might expect by now, the results vary substantially (you can see the graph in the notebook). On average the difference between these fractions is less than 0.1, so if agents defect 30% of the time after the opponent cooperates, they might defect 40% of the time after a defection.</p>
   <p>This result provides weak support for the claim that successful strategies retaliate. But maybe it's not necessary for all agents, or even many, to be retaliatory; if there is at least some tendency toward retaliation in the population as a whole, that might be enough to prevent high-defection strategies from gaining ground.</p>
   <p>To measure forgiveness, we define one more <c>instrument</c> to see whether agents might be more likely to cooperate after D-C in the previous two rounds, compared to C-D. In the simulations, there is no evidence for this particular kind of forgiveness. On the other hand, the strategies in these simulations are necessarily forgiving because they consider only the previous two rounds of history. In this context, forgetting is a kind of forgiving.</p>
-  <exercise label="Ch13.8_Q1">
+  <exercise label="Ch13_8_Q1">
     <statement>
       <p>Q-1: How many rounds do the strategies in these simulations take into consideration when choosing weather to cooperate or defect?</p>
     </statement>

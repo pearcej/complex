@@ -51,7 +51,7 @@ return len(reachable) == len(G)</pre>
   <pre>&gt;&gt;&gt; is_connected(complete)
 True</pre>
   <p>In the next section we will generate ER graphs and check whether they are connected.</p>
-  <exercise label="Q1_3.6">
+  <exercise label="Q1_3_6">
     <statement>
       <p>
 </p>
@@ -71,7 +71,7 @@ True</pre>
       </match>
     </matches>
   </exercise>
-  <exercise label="Q2_3.6">
+  <exercise label="Q2_3_6">
     <statement>
       <p>Q-2:  <c>is_connected</c> checks to see if the set of nodes that can be reached from start is the same as the size of the graph?</p>
     </statement>

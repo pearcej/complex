@@ -18,7 +18,7 @@
   <p>To simulate these features, we'll define a population of agents that represent individual organisms. Each agent has genetic information, called its <term>genotype</term>, which is the information that gets copied when the agent replicates. In our model, a genotype is represented by a sequence of <c>N</c> binary digits (zeros and ones), where <c>N</c> is a parameter we choose.</p>
   <p>To generate variation, we create a population with a variety of genotypes; later we will explore mechanisms that create or increase variation.</p>
   <p>Finally, to generate differential survival and reproduction, we define a function that maps from each genotype to a <term>fitness</term>, where fitness is a quantity related to the ability of an agent to survive or reproduce.</p>
-  <exercise label="q_12.2">
+  <exercise label="q_12_2">
     <statement>
       <p>Q-1: Evolution needs three things to be present, what are those three things?</p>
     </statement>

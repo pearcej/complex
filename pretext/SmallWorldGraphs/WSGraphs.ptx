@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="swg-fig-2">
   <title>WS Graphs</title>
-  <figure align="center" xml:id="id1">
+  <figure align="center" xml:id="WSGraphs_figure_1">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> WS graphs with <m>n=20</m>, <m>k=4</m>, and <m>p=0</m> (left), <m>p=0.2</m> (middle), and <m>p=1</m> (right).</caption>
     <image source="SmallWorldGraphs/Figures/thinkcomplexity2008.png" width="50%" alt="&quot; WS graphs with n=20, k=4, and p=0 (left), p=0.2 (middle), and p=1 (right).&quot;"/>
   </figure>
@@ -40,7 +40,7 @@ for u, v in G.edges():
   <p>As an aside, the expression <c>G[u]</c> returns a dictionary that contains the neighbors of <c>u</c> as keys. It is usually faster than using <c>G.neighbors</c>.</p>
   <p>This function does not consider the edges in the order specified by Watts and Strogatz, but that doesn't seem to affect the results.</p>
   <p><xref ref="swg-fig-2"/> shows WS graphs with <m>n=20</m>, <m>k=4</m>, and a range of values of p. When <m>p=0</m>, the graph is a ring lattice. When <m>p=1</m>, it is completely random. As we'll see, the interesting things happen in between.</p>
-  <exercise label="question_4.5.1">
+  <exercise label="question_4_5_1">
     <statement>
       <p>Q-1: As demonstrated in figure 4.2, what happens as p increases?</p>
     </statement>
