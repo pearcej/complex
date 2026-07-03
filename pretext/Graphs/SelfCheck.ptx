@@ -105,54 +105,54 @@
     </blocks>
   </exercise>
   <exercise>
-  <statement>
-    <p>Q-4: The order of growth for graph algorithms is usually expressed as a function of n, <var/> (nodes), and m, <var/>.</p>
-  </statement>
-  <setup>
-    <var>
-      <condition string="^\s*the\s+number\s+of\s+vertices\s*$">
-        <feedback>
-          <p>Correct!</p>
-        </feedback>
-      </condition>
-      <condition string="^\s*the\s+number\s+of\s+edges\s*$">
-        <feedback>
-          <p>Close, but this refers to something else.</p>
-        </feedback>
-      </condition>
-      <condition string="^\s*number\s+of\s+vertices\s*$">
-        <feedback>
-          <p>Close, add "the" to the beginning of your statement.</p>
-        </feedback>
-      </condition>
-      <condition string="^\s*x\s*$">
-        <feedback>
-          <p>Sorry, you are incorrect. Try again and check out section 3.9.</p>
-        </feedback>
-      </condition>
-    </var>
-    <var>
-      <condition string="^\s*the\s+number\s+of\s+edges\s*$">
-        <feedback>
-          <p>Correct!</p>
-        </feedback>
-      </condition>
-      <condition string="^\s*the\s+number\s+of\s+vertices\s*$">
-        <feedback>
-          <p>Close, but this refers to something else.</p>
-        </feedback>
-      </condition>
-      <condition string="^\s*number\s+of\s+edges\s*$">
-        <feedback>
-          <p>Close, add "the" to the beginning of your statement.</p>
-        </feedback>
-      </condition>
-      <condition string="^\s*x\s*$">
-        <feedback>
-          <p>Sorry, you are incorrect. Try again and check out section 3.9.</p>
-        </feedback>
-      </condition>
-    </var>
-  </setup>
-</exercise>
+    <statement>
+<p>Q-4: The order of growth for graph algorithms is usually expressed as a function of n, <var/> (nodes), and m, <var/>.</p>
+    </statement>
+    <setup>
+      <var>
+        <condition string="^\s*the\s+number\s+of\s+vertices\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*the\s+number\s+of\s+edges\s*$">
+          <feedback>
+            <p>Close, but this refers to something else.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*number\s+of\s+vertices\s*$">
+          <feedback>
+            <p>Close, add the to the beginning of your statement</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Sorry you are incorrect, try again and checkout section 3.9.</p>
+          </feedback>
+        </condition>
+      </var>
+      <var>
+        <condition string="^\s*the\s+number\s+of\s+edges\s*$">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*the\s+number\s+of\s+vertices\s*$">
+          <feedback>
+            <p>Close, but this refers to something else.</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*number\s+of\s+edges\s*$">
+          <feedback>
+            <p>Close, add the to the beginning of your statement</p>
+          </feedback>
+        </condition>
+        <condition string="^\s*x\s*$">
+          <feedback>
+            <p>Sorry you are incorrect, Try again and checkout section 3.9.</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
 </section>
