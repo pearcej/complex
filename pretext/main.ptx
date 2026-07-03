@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pretext xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
  <xi:include href="./bookinfo.ptx"/>
- 
+
  <book xml:id="complex2" permid="com">
     <title>On Complexity</title>
     <subtitle>PreTeXt Version 1.0</subtitle>
+
+    <!-- Include frontmatter -->
+    <xi:include href="./frontmatter.ptx" />
+    
     <xi:include href="./Preface/toctree.ptx"/>
     <xi:include href="./ComplexityScience/toctree.ptx"/>
     <xi:include href="./AlgorithmAnalysis/toctree.ptx"/>
