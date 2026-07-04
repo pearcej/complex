@@ -36,7 +36,7 @@ return np.nanmean(cu)</pre>
   <p>In this graph, the local clustering coefficient for all nodes is <m>0.5</m>, so the average across nodes is <m>0.5</m>. Of course, we expect this value to be different for WS graphs.</p>
   <exercise>
     <statement>
-      <p>Q-1: If a node has fewer than <c>|blank|</c> neighbors, the clustering coefficient is <c>|blank|</c>, so we return np.nan, which is a special value that indicates <c>|blank|</c>. <var/>  <var/>  <var/>  </p>
+      <p>Q-1: If a node has fewer than <BlankNode/> <var/> neighbors, the clustering coefficient is <BlankNode/> <var/>, so we return np.nan, which is a special value that indicates <BlankNode/> <var/>.</p>
     </statement>
     <setup>
       <var>
