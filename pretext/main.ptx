@@ -9,7 +9,7 @@
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />
     
-    <xi:include href="./Preface/toctree.ptx"/>
+    <!-- xi:include href="./Preface/toctree.ptx"/ -->
     <xi:include href="./ComplexityScience/toctree.ptx"/>
     <xi:include href="./AlgorithmAnalysis/toctree.ptx"/>
     <xi:include href="./Graphs/toctree.ptx"/>
