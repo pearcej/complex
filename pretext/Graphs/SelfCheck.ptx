@@ -106,7 +106,7 @@
   </exercise>
   <exercise>
     <statement>
-      <p>Q-4: The order of growth for graph algorithms is usually expressed as a function of n, <BlankNode/> (nodes), and m, <BlankNode/>. <var/>  <var/>  </p>
+<p>The order of growth for graph algorithms is usually expressed as a function of n, <var/> (nodes), and m, <var/>.</p>
     </statement>
     <setup>
       <var>
