@@ -36,7 +36,7 @@
   </figure>
   <exercise>
     <statement>
-      <p>Q-1: The 3 features that distinguish a BA model from a WS model are <BlankNode/>, <BlankNode/>, and a degree distribution that obeys a <BlankNode/>. <var/>  <var/>  <var/>  </p>
+      <p>The 3 features that distinguish a BA model from a WS model are <BlankNode/> <var/>, <BlankNode/><var/>, and a degree distribution that obeys a <BlankNode/><var/>. </p>
     </statement>
     <setup>
       <var>
