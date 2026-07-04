@@ -26,7 +26,7 @@ ps = np.logspace(-2.5, 0, 11)
 ys = [prob_connected(n, p) for p in ps]</pre>
   <p>The NumPy function <c>logspace</c> returns an array of <m>11</m> values from <m>10^{&#x2212;2.5}</m> to <m>10^0 = 1</m>, equally spaced on a logarithmic scale.</p>
   <p>For each value of <c>p</c> in the array, we compute the probability that a graph with parameter <c>p</c> is connected and store the results in <c>ys</c>.</p>
-  <p><xref ref="g-fig-5"/> shows the results, with a vertical line at the computed critical value, <m>p* = 0.23</m>. As expected, the transition from 0 to 1 occurs near the critical value.</p>
+<p><xref ref="ProbabilityOfConnectivity_figure_1"/> shows the results, with a vertical line at the computed critical value, <m>p* = 0.23</m>. As expected, the transition from 0 to 1 occurs near the critical value.</p>
   <p><xref ref="g-fig-6"/> shows similar results for larger values of <c>n</c>. As <c>n</c> increases, the critical value gets smaller and the transition gets more abrupt.</p>
   <p>These experimental results are consistent with the analytic results Erd&#x151;s and R&#xE9;nyi presented in their papers.</p>
 </section>
