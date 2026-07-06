@@ -291,7 +291,7 @@ main()
       <title>Self Check</title>
       <exercise label="analysis_1">
         <statement>
-          <p>Q-4: Given the following code fragment, what is its Big-O running time?</p>
+          <p>Given the following code fragment, what is its Big-O running time?</p>
           <blockquote>
             <program language="python">
               <code>
@@ -340,7 +340,7 @@ for i in range(n):
       </exercise>
       <exercise label="analysis_2">
         <statement>
-          <p>Q-5: Given the following code fragment what is its Big-O running time?</p>
+          <p>Given the following code fragment what is its Big-O running time?</p>
           <blockquote>
             <program language="python">
               <code>
@@ -391,7 +391,7 @@ for j in range(n):
       </exercise>
       <exercise label="analysis_3">
         <statement>
-          <p>Q-6: Given the following code fragment what is its Big-O running time?</p>
+          <p>Given the following code fragment what is its Big-O running time?</p>
           <blockquote>
             <program language="python">
               <code>
@@ -440,7 +440,7 @@ while i &gt; 0:
       </exercise>
       <exercise>
         <statement>
-          <p>Q-7: If an algorithm performing at <m>O(n^{2})</m> has the integer 8 as input, what is the worst case scenario for the algorithm? <var/>  </p>
+          <p>If an algorithm performing at <m>O(n^{2})</m> has the integer 8 as input, what is the worst case scenario for the algorithm? <var/>  </p>
         </statement>
         <setup>
           <var>
