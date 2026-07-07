@@ -226,10 +226,10 @@
             shown in <xref ref="lst-dummycode"/>. Although this program does not really do
             anything, it is instructive to see how we can take actual code and
             analyze performance.</p>
-  <p xml:id="lst-dummycode" names="lst_dummycode">
-   
-  </p>
-  <pre>def main():
+<listing xml:id="lst-dummycode" names="lst_dummycode">
+  <program language="python">
+    <code>
+    def main():
     a=5
     b=6
     c=10
@@ -242,7 +242,10 @@
         w = a*k + 45
         v = b*b
     d = 33
-main()</pre>
+main()</code>
+  </program>
+</listing>
+
   <p>The number of assignment operations is the sum of four terms. The first
             term is the constant 3, representing the three assignment statements at
             the start of the fragment. The second term is <m>3n^{2}</m>, since
