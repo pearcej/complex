@@ -16,7 +16,7 @@
   <p>Applying these definitions to CAs, Classes 1 and 2 are <q>obviously simple</q>. It may be less obvious that Class 3 is simple, but in a way perfect randomness is as simple as perfect order; complexity happens in between. So Wolfram's claim is that Class 4 behavior is common in the natural world, and that almost all systems that manifest it are computationally equivalent.</p>
   <exercise label="q1_6_8">
     <statement>
-      <p>Q-1: The Turing machine is useful because it is possible to characterize the set of functions that can be computed by it.</p>
+      <p>The Turing machine is useful because it is possible to characterize the set of functions that can be computed by it.</p>
     </statement>
     <choices>
       <choice correct="yes">
