@@ -50,7 +50,7 @@ for u, v in G.edges():
   <p><xref ref="swg-fig-2"/> shows WS graphs with <m>n=20</m>, <m>k=4</m>, and a range of values of p. When <m>p=0</m>, the graph is a ring lattice. When <m>p=1</m>, it is completely random. As we'll see, the interesting things happen in between.</p>
   <exercise label="question_4_5_1">
     <statement>
-      <p>Q-1: As demonstrated in figure 4.2, what happens as p increases?</p>
+      <p>As demonstrated in figure 4.2, what happens as p increases?</p>
     </statement>
     <choices>
       <choice>
