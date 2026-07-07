@@ -16,7 +16,7 @@
   <p>The examples in this book and the principle of computational equivalence give good reasons to believe that at least some emergent properties can never be <q>explained</q> by a classical reductionist model.</p>
   <exercise>
     <statement>
-      <p>Q-1: Many cellular automatons are <BlankNode/>, which means that ther are no shortcuts. <var/>  </p>
+      <p>Many cellular automatons are <BlankNode/>, which means that ther are no shortcuts. <var/>  </p>
     </statement>
     <setup>
       <var>

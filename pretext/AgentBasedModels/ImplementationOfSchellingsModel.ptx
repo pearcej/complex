@@ -59,7 +59,7 @@ unhappy_locs = locs_where(unhappy)</pre>
   <p>Finally, we replace the entry in <c>empty_locs</c> with <c>source</c>, so the cell that just became empty can be chosen by the next agent.</p>
   <exercise>
     <statement>
-      <p>Q-1: The way Happiness is computed is base on if self.p is <BlankNode/> than frac_same. please use a word to describe the relationship <var/>  </p>
+      <p>The way Happiness is computed is base on if self.p is <BlankNode/> than frac_same. please use a word to describe the relationship <var/>  </p>
     </statement>
     <setup>
       <var>
