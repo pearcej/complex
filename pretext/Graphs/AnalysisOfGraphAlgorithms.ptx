@@ -24,7 +24,7 @@ return seen</pre>
   <p>If we know the relationship between <m>n</m> and <m>m</m>, we can simplify this expression. For example, in a complete graph the number of edges is <m>n(n&#x2212;1)/2</m>, which is in <m>O(n^2)</m>. So for a complete graph, <c>reachable_nodes</c> is quadratic in <m>n</m>.</p>
   <exercise label="question3_9">
     <statement>
-      <p>Q-1: It is possible for a node to be added to the stack multiple times depending on the amount of neighbors the node has</p>
+      <p>It is possible for a node to be added to the stack multiple times depending on the amount of neighbors the node has</p>
     </statement>
     <choices>
       <choice correct="yes">
