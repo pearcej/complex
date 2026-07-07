@@ -345,7 +345,7 @@ for i in range(n):
       </exercise>
       <exercise label="analysis_2">
         <statement>
-          <p>Q-5: Given the following code fragment what is its Big-O running time?</p>
+          <p>Given the following code fragment what is its Big-O running time?</p>
           <blockquote>
             <program language="python">
               <code>
