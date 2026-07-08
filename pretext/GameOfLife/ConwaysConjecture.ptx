@@ -27,8 +27,7 @@
   <p>If we believe Wolfram's Principle of Computational Equivalence, we expect GoL to be in Class 4, and it is. The Game of Life was proved Turing complete in 1982 (and again, independently, in 1983). Since then, several people have constructed GoL patterns that implement a Turing machine or another machine known to be Turing complete.</p>
   <exercise>
     <statement>
-      <p>Q-1: Conway conjectured that there were no initial patterns that never stabilized. He described two kinds of patterns that would prove him wrong <BlankNode/> and <BlankNode/>. <var/>  <var/>  </p>
-    </statement>
+<p>Q-1: Conway conjectured that there were no initial patterns that never stabilized. He described two kinds of patterns that would prove him wrong <var/> and <var/>.</p>    </statement>
     <setup>
       <var>
         <condition string="^\s*gun\s*$">
