@@ -3,7 +3,7 @@
   <title>Self Check</title>
   <exercise>
     <statement>
-      <p>Q-1: The drivers had control over one thing that eventually caused them to create the traffic jams, which was <BlankNode/>. <var/>  </p>
+      <p>The drivers had control over one thing that eventually caused them to create the traffic jams, which was <BlankNode/>. <var/>  </p>
     </statement>
     <setup>
       <var>
