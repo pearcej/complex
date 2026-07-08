@@ -59,7 +59,7 @@
             magnitude <m>f(n)=n^{2}</m>, or simply that it is <m>O(n^{2})</m>.</p>
   <exercise label="bigo3">
     <statement>
-      <p>Q-1: If the exact number of steps is <m>T(n)=2n+3n^{2}-1</m> what is the Big O?</p>
+      <p>If the exact number of steps is <m>T(n)=2n+3n^{2}-1</m> what is the Big O?</p>
     </statement>
     <choices>
       <choice>
@@ -272,7 +272,7 @@ main()</pre>
             <m>n</m> continues to grow.</p>
   <exercise label="crossoverefficiency">
     <statement>
-      <p>Q-3: Which of the following statements is true about the two algorithms?
+      <p>Which of the following statements is true about the two algorithms?
             Algorithm 1: 100n + 1
             Algorithm 2: n^2 + n + 1</p>
     </statement>
@@ -317,7 +317,7 @@ main()</pre>
   </note>
   <exercise>
     <statement>
-      <p>Q-4: The Big O of a particular algorithm is <m>O(n^{2})</m>. Given that it takes 2 seconds to complete the algorithm with 1 million inputs; <var/>  <var/>  </p>
+      <p>The Big O of a particular algorithm is <m>O(n^{2})</m>. Given that it takes 2 seconds to complete the algorithm with 1 million inputs; <var/>  <var/>  </p>
     </statement>
     <setup>
       <var>
@@ -340,7 +340,7 @@ main()</pre>
   </exercise>
   <exercise>
     <statement>
-      <p>Q-5: The Big O of a particular algorithm is <m>O(log_{2}n)</m>. Given that it takes 2 seconds to complete the algorithm with 3 million inputs;
+      <p>The Big O of a particular algorithm is <m>O(log_{2}n)</m>. Given that it takes 2 seconds to complete the algorithm with 3 million inputs;
 how long would it take with 4 million inputs? You may use a calculator on this one.
 <c>|blank|</c> seconds. <var/>  <var/>  </p>
     </statement>
@@ -390,7 +390,7 @@ how long would it take with 4 million inputs? You may use a calculator on this o
   </exercise>
   <exercise>
     <statement>
-      <p>Q-6: The Big O of a particular algorithm is <m>O(n^{3})</m>. Given that it takes 2 seconds to complete the algorithm with 1000 inputs;
+      <p>The Big O of a particular algorithm is <m>O(n^{3})</m>. Given that it takes 2 seconds to complete the algorithm with 1000 inputs;
 how long would it take with 2000 inputs?
 <c>|blank|</c> seconds. <var/>  <var/>  </p>
     </statement>
