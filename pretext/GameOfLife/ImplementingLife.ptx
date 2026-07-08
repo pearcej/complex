@@ -52,7 +52,7 @@ b = table[c]</pre>
   <p><c>Life.py</c>, which is included in the repository for this book, provides a <c>Life</c> class that encapsulates this implementation of the rules. If you run <c>Life.py</c>, you should see an animation of a <q>puffer train</q>, which is a spaceship that leaves a trail of detritus in its wake.</p>
   <exercise>
     <statement>
-      <p>Q-1: The text says the simplest method to compute the GoL rules is to use <BlankNode/> <var/>  </p>
+      <p>The text says the simplest method to compute the GoL rules is to use <BlankNode/> <var/>  </p>
     </statement>
     <setup>
       <var>
@@ -81,7 +81,7 @@ b = table[c]</pre>
   </exercise>
   <exercise label="q_7_13">
     <statement>
-      <p>Q-2: What does the author say about that version of implementation? <em>Refer back to the implementation method referred to in the previous question.</em></p>
+      <p>What does the author say about that version of implementation? <em>Refer back to the implementation method referred to in the previous question.</em></p>
     </statement>
   </exercise>
 </section>

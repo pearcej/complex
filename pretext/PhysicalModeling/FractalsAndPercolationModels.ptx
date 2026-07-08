@@ -24,7 +24,7 @@ for size in sizes:
   <p>When <c>q</c> is substantially smaller than the critical value, the number of wet cells is proportional to the linear size of the array, so it has dimension 1.</p>
   <exercise label="q_8_7">
     <statement>
-      <p>Q-1: When is a graph dimension 2?</p>
+      <p>When is a graph dimension 2?</p>
     </statement>
     <choices>
       <choice correct="yes">

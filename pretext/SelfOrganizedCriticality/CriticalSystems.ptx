@@ -19,7 +19,7 @@
   <p>Many natural systems exhibit characteristic behaviors of criticality, but if critical points are unstable, they should not be common in nature. This is the puzzle Bak, Tang and Wiesenfeld address. Their solution is called self-organized criticality (SOC), where <q>self-organized</q> means that from any initial condition, the system moves toward a critical state, and stays there, without external control.</p>
   <exercise label="q_9_2">
     <statement>
-      <p>Q-1: What common behaviors do critical systems demonstrate?</p>
+      <p>What common behaviors do critical systems demonstrate?</p>
     </statement>
     <choices>
       <choice correct="yes">

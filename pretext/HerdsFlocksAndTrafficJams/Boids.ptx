@@ -12,7 +12,7 @@
   <p>The given implementation uses VPython, which is a library that provides 3-D graphics. VPython provides a vector object, which can be used to represent the position and velocity of Boids in three dimensions.</p>
   <exercise label="q_11_4_2">
     <statement>
-      <p>Q-1: Boids make decisions based off of local information most of the time but they occasionally make decisions by looking at non local information.</p>
+      <p>Boids make decisions based off of local information most of the time but they occasionally make decisions by looking at non local information.</p>
     </statement>
     <choices>
       <choice>

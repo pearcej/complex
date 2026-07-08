@@ -79,7 +79,7 @@ pile.run()</pre>
   <p>Finally <xref ref="sco-fig-1"/> (right) shows the configuration after 400 drops. It looks similar to the configuration after 200 drops. In fact, the pile is now in a steady state where its statistical properties don't change over time. We will learn about some of those statistical properties in the next section.</p>
   <exercise>
     <statement>
-      <p>Q-1: The sand pile above reached an equilibrium after <BlankNode/> steps. <var/>  </p>
+      <p>The sand pile above reached an equilibrium after <BlankNode/> steps. <var/>  </p>
     </statement>
     <setup>
       <var>
