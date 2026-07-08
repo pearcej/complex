@@ -35,72 +35,57 @@
   <p>This way of estimating a fractal dimension is called <term>box-counting</term>.</p>
   <exercise>
     <statement>
-      <p>The estimated slope of rule 20 is <BlankNode/>, the estimated slope of rule 50 is <BlankNode/>, and the estimated slope of rule 18 is <BlankNode/>. <var/>  <var/>  <var/>  </p>
+      <p>The estimated slope of rule 20 is <var/>, the estimated slope of rule 50 is <var/>, and the estimated slope of rule 18 is <var/>.</p>
     </statement>
     <setup>
       <var>
-        <condition number="[1.01, 1.01]">
+        <condition number="1.01" tolerance="0.02">
           <feedback>
             <p>Correct!</p>
           </feedback>
         </condition>
-        <condition number="[1.97, 1.97]">
+        <condition number="1.97" tolerance="0.02">
           <feedback>
             <p>Look again at what rule's slope you are looking.</p>
           </feedback>
         </condition>
-        <condition number="[1.57, 1.57]">
+        <condition number="1.57" tolerance="0.02">
           <feedback>
             <p>Close, but this is not the slope for this rule.</p>
           </feedback>
         </condition>
-        <condition string="^\s*x\s*$">
-          <feedback>
-            <p>Incorrect, please try again.</p>
-          </feedback>
-        </condition>
       </var>
       <var>
-        <condition number="[1.97, 1.97]">
+        <condition number="1.97" tolerance="0.02">
           <feedback>
             <p>Correct!</p>
           </feedback>
         </condition>
-        <condition number="[1.57, 1.57]">
+        <condition number="1.57" tolerance="0.02">
           <feedback>
             <p>Close, but this is not the slope for this rule.</p>
           </feedback>
         </condition>
-        <condition number="[1.01, 1.01]">
+        <condition number="1.01" tolerance="0.02">
           <feedback>
             <p>This is incorrect sorry, please pay attention to what rule the blank is for.</p>
-          </feedback>
-        </condition>
-        <condition string="^\s*x\s*$">
-          <feedback>
-            <p>Incorrect, please try again.</p>
           </feedback>
         </condition>
       </var>
       <var>
-        <condition number="[1.57, 1.57]">
+        <condition number="1.57" tolerance="0.02">
           <feedback>
             <p>Correct!</p>
           </feedback>
         </condition>
-        <condition number="[1.01, 1.01]">
+        <condition number="1.01" tolerance="0.02">
           <feedback>
             <p>This is incorrect sorry, please pay attention to what rule the blank is for.</p>
           </feedback>
         </condition>
-        <condition number="[1.97, 1.97]">
+        <condition number="1.97" tolerance="0.02">
           <feedback>
             <p>Look again at what rule's slope you are looking.</p>
-          </feedback>
-        </condition>
-        <condition string="^\s*x\s*$">
-          <feedback>
-            <p>Incorrect, please try again.</p>
           </feedback>
         </condition>
       </var>
