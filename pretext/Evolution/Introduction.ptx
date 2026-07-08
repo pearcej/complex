@@ -35,7 +35,7 @@
   <p>The code for this chapter is in <url href="https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap13.ipynb" visual="https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap13.ipynb">chap13.ipynb</url>, which is a  notebook in the repository for this book. For more information about working with this code, see <xref ref="preface_notebooks"/>.</p>
   <exercise label="q_12_1">
     <statement>
-      <p>Q-1: According to the author, only a third of Americans believe that the theory of evolution is true due to the following reasons:</p>
+      <p>According to the author, only a third of Americans believe that the theory of evolution is true due to the following reasons:</p>
       <p>Some reject evolution for conflicts with their religious beliefs.
             Some were actively misinformed.
             Many people don't know anything about evolution.</p>

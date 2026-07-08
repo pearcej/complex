@@ -27,7 +27,7 @@
   <p>If we believe Wolfram's Principle of Computational Equivalence, we expect GoL to be in Class 4, and it is. The Game of Life was proved Turing complete in 1982 (and again, independently, in 1983). Since then, several people have constructed GoL patterns that implement a Turing machine or another machine known to be Turing complete.</p>
   <exercise>
     <statement>
-      <p>Q-1: Conway conjectured that there were no initial patterns that never stabilized. He described two kinds of patterns that would prove him wrong <BlankNode/> and <BlankNode/>. <var/>  <var/>  </p>
+      <p>Conway conjectured that there were no initial patterns that never stabilized. He described two kinds of patterns that would prove him wrong <BlankNode/> and <BlankNode/>. <var/>  <var/>  </p>
     </statement>
     <setup>
       <var>
@@ -98,7 +98,7 @@
   </exercise>
   <exercise label="q_7_7">
     <statement>
-      <p>Q-2: Which of the following is true about r-pentomino? Select all that apply.</p>
+      <p>Which of the following is true about r-pentomino? Select all that apply.</p>
     </statement>
     <choices>
       <choice correct="yes">
@@ -145,7 +145,7 @@
   </exercise>
   <exercise label="q_7_8">
     <statement>
-      <p>Q-3: There was a prediction of Gosper's gun, a stable pattern that periodically produces a spaceship. As the stream of spaceships move out from the source, the number of live cells grows indefinitely.</p>
+      <p>There was a prediction of Gosper's gun, a stable pattern that periodically produces a spaceship. As the stream of spaceships move out from the source, the number of live cells grows indefinitely.</p>
     </statement>
     <choices>
       <choice correct="yes">

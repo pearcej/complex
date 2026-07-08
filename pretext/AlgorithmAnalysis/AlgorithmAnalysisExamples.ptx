@@ -24,7 +24,6 @@
                     Each character
                     from the first string can be checked against the characters in the local second string
                     and if found, checked off by replacement. <xref ref="lst-anagramsolution"/> shows this function.</p>
-      <exercise>
         
           <listing xml:id="lst-anagramsolution">
             <program interactive="activecode" language="python">
@@ -66,7 +65,6 @@ main()
             </program>
           </listing>
         
-      </exercise>
       <p>To analyze this algorithm, we need to note that each of the <em>n</em>
                     characters in <c>s1</c> will cause an iteration through up to <em>n</em>
                     characters in the array from <c>s2</c>. Each of the <em>n</em> positions in the
@@ -94,7 +92,6 @@ main()
                     each string alphabetically, from a to z, we will end up with the same
                     string if the original two strings are anagrams. <xref ref="lst-ana2"/> shows
                     this solution.</p>
-      <exercise>
         
           <listing xml:id="lst-ana2">
             <program interactive="activecode" language="python">
@@ -125,7 +122,6 @@ main()
             </program>
           </listing>
         
-      </exercise>
       <p>At first glance you may be tempted to think that this algorithm is
                     <m>O(n)</m>, since there are three consecutive simple iterations:
                     the first two to convert strings to char arrays and the last
@@ -166,7 +162,6 @@ main()
                     particular character, we will increment the counter at that position. In
                     the end, if the two arrays of counters are identical, the strings must be
                     anagrams. <xref ref="lst-ana4"/> shows this solution.</p>
-      <exercise>
         
           <listing xml:id="lst-ana4">
             <program interactive="activecode" language="python">
@@ -203,7 +198,6 @@ main()
             </program>
           </listing>
         
-      </exercise>
       <p>Again, the solution has a number of iterations. However, unlike the
                     first solution, none of them are nested. The first two iterations used
                     to count the characters are both based on <em>n</em>. The third iteration,
@@ -291,7 +285,7 @@ main()
       <title>Self Check</title>
       <exercise label="analysis_1">
         <statement>
-          <p>Q-4: Given the following code fragment, what is its Big-O running time?</p>
+          <p>Given the following code fragment, what is its Big-O running time?</p>
           <blockquote>
             <program language="python">
               <code>
@@ -338,9 +332,10 @@ for i in range(n):
           </choice>
         </choices>
       </exercise>
+
       <exercise label="analysis_2">
         <statement>
-          <p>Q-5: Given the following code fragment what is its Big-O running time?</p>
+          <p>Given the following code fragment what is its Big-O running time?</p>
           <blockquote>
             <program language="python">
               <code>
@@ -391,7 +386,7 @@ for j in range(n):
       </exercise>
       <exercise label="analysis_3">
         <statement>
-          <p>Q-6: Given the following code fragment what is its Big-O running time?</p>
+          <p>Given the following code fragment what is its Big-O running time?</p>
           <blockquote>
             <program language="python">
               <code>
@@ -438,9 +433,10 @@ while i &gt; 0:
           </choice>
         </choices>
       </exercise>
+      
       <exercise>
         <statement>
-          <p>Q-7: If an algorithm performing at <m>O(n^{2})</m> has the integer 8 as input, what is the worst case scenario for the algorithm? <var/>  </p>
+          <p>If an algorithm performing at <m>O(n^{2})</m> has the integer 8 as input, what is the worst case scenario for the algorithm? <var/>  </p>
         </statement>
         <setup>
           <var>

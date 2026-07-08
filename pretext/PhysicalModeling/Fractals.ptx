@@ -35,7 +35,7 @@
   <p>This way of estimating a fractal dimension is called <term>box-counting</term>.</p>
   <exercise>
     <statement>
-      <p>Q-1: The estimated slope of rule 20 is <BlankNode/>, the estimated slope of rule 50 is <BlankNode/>, and the estimated slope of rule 18 is <BlankNode/>. <var/>  <var/>  <var/>  </p>
+      <p>The estimated slope of rule 20 is <BlankNode/>, the estimated slope of rule 50 is <BlankNode/>, and the estimated slope of rule 18 is <BlankNode/>. <var/>  <var/>  <var/>  </p>
     </statement>
     <setup>
       <var>
