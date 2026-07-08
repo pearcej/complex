@@ -53,7 +53,7 @@ sim = PDSimulation(tour, agents)</pre>
   <p>To measure forgiveness, we define one more <c>instrument</c> to see whether agents might be more likely to cooperate after D-C in the previous two rounds, compared to C-D. In the simulations, there is no evidence for this particular kind of forgiveness. On the other hand, the strategies in these simulations are necessarily forgiving because they consider only the previous two rounds of history. In this context, forgetting is a kind of forgiving.</p>
   <exercise label="Ch13_8_Q1">
     <statement>
-      <p>Q-1: How many rounds do the strategies in these simulations take into consideration when choosing weather to cooperate or defect?</p>
+      <p>How many rounds do the strategies in these simulations take into consideration when choosing weather to cooperate or defect?</p>
     </statement>
     <choices>
       <choice>

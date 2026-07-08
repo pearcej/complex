@@ -20,7 +20,7 @@
   <p>Finally, to generate differential survival and reproduction, we define a function that maps from each genotype to a <term>fitness</term>, where fitness is a quantity related to the ability of an agent to survive or reproduce.</p>
   <exercise label="q_12_2">
     <statement>
-      <p>Q-1: Evolution needs three things to be present, what are those three things?</p>
+      <p>Evolution needs three things to be present, what are those three things?</p>
     </statement>
     <choices>
       <choice correct="yes">

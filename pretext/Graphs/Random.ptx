@@ -11,7 +11,7 @@
   <p>To test this claim, we'll develop algorithms to generate random graphs and check whether they are connected.</p>
   <exercise label="question3_1">
     <statement>
-      <p>Q-1: Given that an Erd&#x151;s-R&#xE9;nyi graph (ER graph) a has a <m>p* = .6</m> and a <m>p = .7</m> it is more likely to be connected.</p>
+      <p>Given that an Erd&#x151;s-R&#xE9;nyi graph (ER graph) a has a <m>p* = .6</m> and a <m>p = .7</m> it is more likely to be connected.</p>
     </statement>
     <choices>
       <choice correct="yes">
