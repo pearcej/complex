@@ -3,7 +3,7 @@
   <title>Self Check</title>
   <exercise>
     <statement>
-      <p>Q-1: <BlankNode/> means that from any initial condition, the system moves toward a <BlankNode/> state, and stays there, without external control. <var/>  <var/>  </p>
+      <p><BlankNode/> means that from any initial condition, the system moves toward a <BlankNode/> state, and stays there, without external control. <var/>  <var/>  </p>
     </statement>
     <setup>
       <var>
@@ -63,7 +63,7 @@
   </exercise>
   <exercise>
     <statement>
-      <p>Q-3: A <BlankNode/> model describes a system by describing its parts and their interactions. <BlankNode/> models are more focused on similarities between systems and less interested in analogous parts. <var/>  <var/>  </p>
+      <p>A <BlankNode/> model describes a system by describing its parts and their interactions. <BlankNode/> models are more focused on similarities between systems and less interested in analogous parts. <var/>  <var/>  </p>
     </statement>
     <setup>
       <var>
@@ -104,7 +104,7 @@
   </exercise>
   <exercise>
     <statement>
-      <p>Q-4: The <BlankNode/> cause of an avalanch in a sand pile is a grain of sand and the <BlankNode/> cause is the structe and dynamics of the systems as a whole. <var/>  <var/>  </p>
+      <p>The <BlankNode/> cause of an avalanch in a sand pile is a grain of sand and the <BlankNode/> cause is the structe and dynamics of the systems as a whole. <var/>  <var/>  </p>
     </statement>
     <setup>
       <var>
