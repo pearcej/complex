@@ -37,5 +37,5 @@ return G</pre>
   <p>Notice that <c>make_ring_lattice</c> uses floor division to compute <c>halfk</c>, so it is only correct if <c>k</c> is even. If <c>k</c> is odd, floor division rounds down, so the result is a ring lattice with degree <c>k-1</c>. As one of the exercises at the end of the chapter, you will generate regular graphs with odd values of <c>k</c>.</p>
   <p>We can test <c>make_ring_lattice</c> like this:</p>
   <pre>lattice = make_ring_lattice(10, 4)</pre>
-  <p><xref ref="swg-fig-1"/> shows the result.</p>
+  <p><xref ref="small-world-graphs_ring-lattice-figure"/> shows the result.</p>
 </section>
