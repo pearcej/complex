@@ -2,7 +2,7 @@
 <section xml:id="small-world-graphs_clustering">
   <title>Clustering</title>
   <p xml:id="small-world-graphs_swg-6" names="swg_6">The next step is to compute the <term>clustering coefficient</term>, which quantifies the tendency for the nodes to form cliques. A clique is a set of nodes that are completely connected; that is, there are edges between all pairs of nodes in the set.</p>
-  <p>Suppose a particular node, <c>u</c>, has k neighbors. If all of the neighbors are connected to each other, there would be <m>k(k&#x2212;1)/2</m> edges among them. The fraction of those edges that actually exist is the local clustering coefficient for <m>u</m>, denoted <m>C_u</m>.</p>
+  <p>Suppose a particular node, <c>u</c>, has k neighbors. If all of the neighbors are connected to each other, there would be <md>\frac{k(k-1)}{2}</md>edges among them. The fraction of those edges that actually exist is the local clustering coefficient for <m>u</m>, denoted <m>C_u</m>.</p>
   <p>If we compute the average of <m>C_u</m> over all nodes, we get the <q>network average clustering coefficient</q>, denoted <m>C</m>.</p>
   <p>Here is a function that computes it.</p>
   <pre>def node_clustering(G, u):
@@ -36,7 +36,7 @@ return np.nanmean(cu)</pre>
   <p>In this graph, the local clustering coefficient for all nodes is <m>0.5</m>, so the average across nodes is <m>0.5</m>. Of course, we expect this value to be different for WS graphs.</p>
   <exercise>
     <statement>
-      <p>Q-1: If a node has fewer than <BlankNode/> <var/> neighbors, the clustering coefficient is <BlankNode/> <var/>, so we return np.nan, which is a special value that indicates <BlankNode/> <var/>.</p>
+      <p>If a node has fewer than <BlankNode/> <var/> neighbors, the clustering coefficient is <BlankNode/> <var/>, so we return np.nan, which is a special value that indicates <BlankNode/> <var/>.</p>
     </statement>
     <setup>
       <var>

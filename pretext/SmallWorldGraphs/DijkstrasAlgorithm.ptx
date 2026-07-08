@@ -58,7 +58,7 @@ return dist</pre>
   <p>In the exercises at the end of this chapter, you'll write a version of Dijkstra's algorithm using DFS, so you'll have a chance to see what goes wrong.</p>
   <exercise label="q1_4_11">
     <statement>
-      <p>Q-1: Summarize how the Dijkstra's algorithm works.</p>
+      <p>Summarize how the Dijkstra's algorithm works.</p>
     </statement>
   </exercise>
 </section>

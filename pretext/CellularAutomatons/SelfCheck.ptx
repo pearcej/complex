@@ -3,7 +3,7 @@
   <title>Self Check</title>
   <exercise>
     <statement>
-      <p>Q-1: Several CAs are Turing complete, this means they can compute any computable function. What is this property called? <BlankNode/> <var/>  </p>
+      <p>Several CAs are Turing complete, this means they can compute any computable function. What is this property called? <BlankNode/> <var/>  </p>
     </statement>
     <setup>
       <var>
@@ -27,7 +27,7 @@
   </exercise>
   <exercise>
     <statement>
-      <p>Q-2: If you wanted to make a hypotheses that could never be proven wrong you would want to make a <BlankNode/> hypothesis. <var/>  </p>
+      <p>If you wanted to make a hypotheses that could never be proven wrong you would want to make a <BlankNode/> hypothesis. <var/>  </p>
     </statement>
     <setup>
       <var>
@@ -51,7 +51,7 @@
   </exercise>
   <exercise label="SC6_Q3">
     <statement>
-      <p>Q-3: If you make a simple model more realistic it will not become more reliable.</p>
+      <p>If you make a simple model more realistic it will not become more reliable.</p>
     </statement>
     <choices>
       <choice correct="yes">

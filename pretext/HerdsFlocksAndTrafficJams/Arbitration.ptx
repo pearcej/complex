@@ -26,7 +26,7 @@
   <p>As one of the exercises at the end of this chapter, you can modify these parameters and see how they affect Boid behavior.</p>
   <exercise>
     <statement>
-      <p>Q-1: After computing a goal for each Boid, we update their <BlankNode/> and <BlankNode/>. <var/>  <var/>  </p>
+      <p>After computing a goal for each Boid, we update their <BlankNode/> and <BlankNode/>. <var/>  <var/>  </p>
     </statement>
     <setup>
       <var>

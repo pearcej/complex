@@ -3,7 +3,7 @@
   <title>Self Check</title>
   <exercise>
     <statement>
-      <p>Q-1: <BlankNode/> is a graph with n nodes, the nodes can be arranged in a circle with each node connected to the k nearest neighbors. <var/>  </p>
+      <p><BlankNode/> is a graph with n nodes, the nodes can be arranged in a circle with each node connected to the k nearest neighbors. <var/>  </p>
     </statement>
     <setup>
       <var>
