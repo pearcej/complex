@@ -3,7 +3,7 @@
   <title>Self Check</title>
   <exercise label="SC8_Q1">
     <statement>
-      <p>Q-1: There is a possibility for animal patterns to be based on diffusion reactions?</p>
+      <p>There is a possibility for animal patterns to be based on diffusion reactions?</p>
     </statement>
     <choices>
       <choice correct="yes">
@@ -57,7 +57,7 @@
   </exercise>
   <exercise label="SC8_Q3">
     <statement>
-      <p>Q-3: What is the the rapid change in behavior near the critical value called?</p>
+      <p>What is the the rapid change in behavior near the critical value called?</p>
     </statement>
     <choices>
       <choice>

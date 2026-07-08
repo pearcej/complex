@@ -19,7 +19,8 @@ return np.mean(bool)</pre>
   <p><c>np.mean</c> is a NumPy function that computes the mean of this list, treating <c>True</c> as 1 and <c>False</c> as 0. The result is the fraction of random graphs that are connected.</p>
   <pre>&gt;&gt;&gt; prob_connected(10, 0.23, iters=10000)
 0.33</pre>
-  <p>We chose 0.23 because it is close to the critical value where the probability of connectivity goes from near 0 to near 1. According to Erd&#x151;s and R&#xE9;nyi, <m>p* = lnn / n = 0.23</m>.</p>
+  <p>We chose 0.23 because it is close to the critical value where the probability of connectivity goes from near 0 to near 1. According to Erd&#x151;s and R&#xE9;nyi,</p>
+   <p> <md>p^* = \frac{\ln n}{n}</md></p>
   <p>We can get a clearer view of the transition by estimating the probability of connectivity for a range of values of <m>p</m>:</p>
   <pre>n = 10
 ps = np.logspace(-2.5, 0, 11)

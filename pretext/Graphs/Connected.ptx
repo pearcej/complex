@@ -73,7 +73,7 @@ True</pre>
   </exercise>
   <exercise label="Q2_3_6">
     <statement>
-      <p>Q-2:  <c>is_connected</c> checks to see if the set of nodes that can be reached from start is the same as the size of the graph?</p>
+      <p><c>is_connected</c> checks to see if the set of nodes that can be reached from start is the same as the size of the graph?</p>
     </statement>
     <choices>
       <choice correct="yes">

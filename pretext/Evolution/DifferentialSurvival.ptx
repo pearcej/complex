@@ -22,7 +22,7 @@
   <p>In the notebook for this chapter, you will see the effect of differential reproduction. As you might expect, differential reproduction also increases mean fitness. But without mutation, we still don't see increasing diversity.</p>
   <exercise label="q_12_8">
     <statement>
-      <p>Q-1: What does the simulation above explain?</p>
+      <p>What does the simulation above explain?</p>
     </statement>
     <choices>
       <choice correct="yes">

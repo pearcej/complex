@@ -43,7 +43,7 @@ C /= C[0]</pre>
   <p>And that's why Watts and Strogatz propose WS graphs as a model for real-world networks that exhibit the small world phenomenon.</p>
   <exercise label="q_4_8">
     <statement>
-      <p>Q-1: Given that a node returns np.nan, what can you say about the number of edges that node has?</p>
+      <p>Given that a node returns np.nan, what can you say about the number of edges that node has?</p>
     </statement>
     <choices>
       <choice correct="yes">

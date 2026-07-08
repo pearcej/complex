@@ -37,7 +37,7 @@
   <p>It is important to remember that the agents in this model don't move, just as the genotype of an organism doesn't change. When an agent dies, it can leave a location unoccupied. And when a mutation occurs, it can occupy a new location. As agents disappear from some locations and appear in others, the population migrates across the landscape, like a glider in Game of Life. But organisms don't evolve; populations do.</p>
   <exercise label="CH12_9_Q1">
     <statement>
-      <p>Q-1: All the agents start in the same location until we add in mutation then they start at every location across the landscape to increase the diversity of agents.</p>
+      <p>All the agents start in the same location until we add in mutation then they start at every location across the landscape to increase the diversity of agents.</p>
     </statement>
     <choices>
       <choice>

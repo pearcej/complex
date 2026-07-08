@@ -35,7 +35,7 @@
   </exercise>
   <exercise>
     <statement>
-      <p>Q-2: The usual range of concentration of the chemical in a 2-D CA model where the state of each cell is a continuous quantity is between <BlankNode/> and <BlankNode/>. <em>Please write the answer in numeral</em>. <var/>  <var/>  </p>
+      <p>The usual range of concentration of the chemical in a 2-D CA model where the state of each cell is a continuous quantity is between <BlankNode/> and <BlankNode/>. <em>Please write the answer in numeral</em>. <var/>  <var/>  </p>
     </statement>
     <setup>
       <var>
