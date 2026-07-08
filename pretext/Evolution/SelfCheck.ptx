@@ -3,7 +3,7 @@
   <title>Self Check</title>
   <exercise>
     <statement>
-      <p>Q-1: The theory of evolution is powerful because it explains <BlankNode/>, <BlankNode/>, and <BlankNode/> which are phenomena seen in the natural world that seem inexplicable initially. <var/>  <var/>  <var/>  </p>
+      <p>The theory of evolution is powerful because it explains <BlankNode/>, <BlankNode/>, and <BlankNode/> which are phenomena seen in the natural world that seem inexplicable initially. <var/>  <var/>  <var/>  </p>
     </statement>
     <setup>
       <var>
@@ -46,7 +46,7 @@
   </exercise>
   <exercise>
     <statement>
-      <p>Q-2: To quantify the dispersion of a population, we can compute the mean of the distances between <BlankNode/>  of <BlankNode/>. <var/>  <var/>  </p>
+      <p>To quantify the dispersion of a population, we can compute the mean of the distances between <BlankNode/>  of <BlankNode/>. <var/>  <var/>  </p>
     </statement>
     <setup>
       <var>
@@ -77,7 +77,7 @@
   </exercise>
   <exercise>
     <statement>
-      <p>Q-3: To induce evolution, we need <BlankNode/> relationship between genotype and fitness, but it turns out that it can be <BlankNode/> relationship. <var/>  <var/>  </p>
+      <p>To induce evolution, we need <BlankNode/> relationship between genotype and fitness, but it turns out that it can be <BlankNode/> relationship. <var/>  <var/>  </p>
     </statement>
     <setup>
       <var>
