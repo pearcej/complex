@@ -10,7 +10,7 @@
   <p>In the next few sections we will replicate their experiments and interpret the results.</p>
   <exercise>
     <statement>
-      <p>Q-1: Bak, Tang and Wiesenfeld conclude that the sand pile model exhibits <BlankNode/>, which means that it evolves toward a <BlankNode/> without the need for <BlankNode/>. <var/>  <var/>  <var/>  </p>
+      <p>Bak, Tang and Wiesenfeld conclude that the sand pile model exhibits <BlankNode/>, which means that it evolves toward a <BlankNode/> without the need for <BlankNode/>. <var/>  <var/>  <var/>  </p>
     </statement>
     <setup>
       <var>

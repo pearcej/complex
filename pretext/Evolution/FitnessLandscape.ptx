@@ -25,7 +25,7 @@ zero_values = [0.4, 0.7, 0.9]</pre>
   <p>In that case, the fitness of <c>loc = [0, 1, 0]</c> would be the mean of <c>[0.4, 0.2, 0.9]</c>, which is <c>0.5</c>.</p>
   <exercise label="q_12_3">
     <statement>
-      <p>Q-1: To induce evolution there needs to be a relationship between genotype and fitness, and it can be any relationship.</p>
+      <p>To induce evolution there needs to be a relationship between genotype and fitness, and it can be any relationship.</p>
     </statement>
     <choices>
       <choice correct="yes">

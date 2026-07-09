@@ -1,0 +1,21 @@
+WARNING : Project's CLI version could not be detected from `requirements.txt`.
+WARNING : Try `pretext update-project` to produce a compatible file.
+WARNING : Publication file at publication/publication.ptx does not exist.
+WARNING : print will not be available.
+WARNING : Publication file at publication/publication.ptx does not exist.
+WARNING : print-latex will not be available.
+WARNING : Publication file at publication/publication.ptx does not exist.
+WARNING : subset will not be available.
+INFO    : Now preparing local server to preview your project directory `/home/habiba_sorour/runestone/books/complex`.
+INFO    :   (Reminder: use `pretext deploy` to deploy your built project to a public
+INFO    :   GitHub Pages site that can be shared with readers who cannot access your
+INFO    :   personal computer.)
+INFO    : 
+INFO    : starting server ...
+INFO    : setting up PreTeXt web server ...
+INFO    : Added pretext web server entry 7d0ef9d590 20418 8128 localhost
+
+INFO    : Server will soon be available at http://localhost:8128
+INFO    : Opening browser for target `web` at http://localhost:8128/output/web
+INFO    : Stopping PreTeXt web server.
+INFO    : 

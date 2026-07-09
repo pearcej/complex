@@ -29,7 +29,7 @@
   </p>
   <exercise>
     <statement>
-      <p>Q-1: In the Game of life, cells are arranged in a 2-D grid and each cell in the grid has two states &#x2014; live and dead. Keeping that in mind, fill in the blanks, please give the numeral not the spelling. <var/>  <var/>  <var/>  </p>
+      <p>In the Game of life, cells are arranged in a 2-D grid and each cell in the grid has two states &#x2014; live and dead. Keeping that in mind, fill in the blanks, please give the numeral not the spelling. <var/>  <var/>  <var/>  </p>
     </statement>
     <setup>
       <var>
@@ -89,7 +89,7 @@
   </exercise>
   <exercise label="q7_2">
     <statement>
-      <p>Q-2: What are two of the reasons the author says GoL is popular?</p>
+      <p>What are two of the reasons the author says GoL is popular?</p>
     </statement>
   </exercise>
 </section>

@@ -41,7 +41,7 @@
   <p>A wide variety of systems display a common set of behaviors and characteristics when they are at or near a critical point. These behaviors are known collectively as <term>critical phenomena</term>. In the next section, we explore one of them: fractal geometry.</p>
   <exercise>
     <statement>
-      <p>Q-1: If you wanted to estimate the critical value more precisely you would want to use a <BlankNode/>. <var/>  </p>
+      <p>If you wanted to estimate the critical value more precisely you would want to use a <var/>. </p>
     </statement>
     <setup>
       <var>
