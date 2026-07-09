@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="preface_prerequisites">
+<section xml:id="prerequisites">
   <title>Prerequisites</title>
   <p>The examples and supporting code for this book are written in Python. You should know core Python and be familiar with its object-oriented features, specifically using and defining classes.</p>
   <p>If you are not already familiar with Python, you might want to start with a
