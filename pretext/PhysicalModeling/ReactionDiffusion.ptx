@@ -51,7 +51,7 @@ self.array2 += rb * cB + reaction - (f+k) * B</pre>
   <p>As long as the rate parameters are not too high, the values of <c>A</c> and <c>B</c> usually stay between 0 and 1.</p>
   <exercise label="q_8_3_3">
     <statement>
-      <p>Q-1: In the above code A*B**2 sets the rate of reaction.</p>
+      <p>In the above code A*B**2 sets the rate of reaction.</p>
     </statement>
     <choices>
       <choice correct="yes">
@@ -92,7 +92,7 @@ self.array2 += rb * cB + reaction - (f+k) * B</pre>
   <p>Since 1952, observations and experiments have provided some support for Turing's conjecture. At this point it seems likely, but not yet proven, that many animal patterns are actually formed by reaction-diffusion processes of some kind.</p>
   <exercise label="q_8_3">
     <statement>
-      <p>Q-2: At what point did there appear to be a coral-like pattern?</p>
+      <p>At what point did there appear to be a coral-like pattern?</p>
     </statement>
     <choices>
       <choice>

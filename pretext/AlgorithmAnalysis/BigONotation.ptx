@@ -59,7 +59,7 @@
             magnitude <m>f(n)=n^{2}</m>, or simply that it is <m>O(n^{2})</m>.</p>
   <exercise label="bigo3">
     <statement>
-      <p>Q-1: If the exact number of steps is <m>T(n)=2n+3n^{2}-1</m> what is the Big O?</p>
+      <p>If the exact number of steps is <m>T(n)=2n+3n^{2}-1</m> what is the Big O?</p>
     </statement>
     <choices>
       <choice>
@@ -226,10 +226,10 @@
             shown in <xref ref="lst-dummycode"/>. Although this program does not really do
             anything, it is instructive to see how we can take actual code and
             analyze performance.</p>
-  <p xml:id="lst-dummycode" names="lst_dummycode">
-   
-  </p>
-  <pre>def main():
+<listing xml:id="lst-dummycode" names="lst_dummycode">
+  <program language="python">
+    <code>
+    def main():
     a=5
     b=6
     c=10
@@ -242,7 +242,10 @@
         w = a*k + 45
         v = b*b
     d = 33
-main()</pre>
+main()</code>
+  </program>
+</listing>
+
   <p>The number of assignment operations is the sum of four terms. The first
             term is the constant 3, representing the three assignment statements at
             the start of the fragment. The second term is <m>3n^{2}</m>, since
@@ -272,7 +275,7 @@ main()</pre>
             <m>n</m> continues to grow.</p>
   <exercise label="crossoverefficiency">
     <statement>
-      <p>Q-3: Which of the following statements is true about the two algorithms?
+      <p>Which of the following statements is true about the two algorithms?
             Algorithm 1: 100n + 1
             Algorithm 2: n^2 + n + 1</p>
     </statement>
