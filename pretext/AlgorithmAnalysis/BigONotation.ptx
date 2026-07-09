@@ -320,120 +320,124 @@ main()</code>
   </note>
   <exercise>
     <statement>
-      <p>The Big O of a particular algorithm is <m>O(n^{2})</m>. Given that it takes 2 seconds to complete the algorithm with 1 million inputs; <var/>  <var/>  </p>
+      <p>The Big O of a particular algorithm is <m>O(n^{2})</m>. Given that it takes 2 seconds to complete the algorithm with 1 million inputs. </p>
+
+      <p>How long would it take with 2 million inputs? <var name="var1"/> seconds.</p>
+
+      <p>How long would it take with 10 million inputs? <var name="var2"/> seconds.</p>
+
     </statement>
     <setup>
-      <var>
-        <p>how long would it take with 2 million inputs? <c>|blank|</c> seconds.</p>
-        <p>10 million? <c>|blank|</c></p>
-      </var>
-      <var>
-        <condition number="[8, 8]">
+      <var name="var1">
+        <condition number="8">
           <feedback>
             <p>Correct!</p>
           </feedback>
         </condition>
-        <condition number="[2, 2]">
+        <condition number="2">
           <feedback>
             <p>Incorrect. Remember, think about what it means for the n to be squared.</p>
           </feedback>
         </condition>
+        <condition string=".*">
+          <feedback>
+            <p>Incorrect. Think about how scaling the inputs by 2x affects an O(n^2) algorithm.</p>
+          </feedback>
+        </condition>
+      </var>
+
+      <var name="var2">
+        <condition number="200">
+          <feedback>
+            <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string=".*">
+          <feedback>
+            <p>Incorrect. Remember to square the factor increase of the input size (10x input = 100x time).</p>
+          </feedback>
+        </condition>
       </var>
     </setup>
+
   </exercise>
   <exercise>
     <statement>
-      <p>The Big O of a particular algorithm is <m>O(log_{2}n)</m>. Given that it takes 2 seconds to complete the algorithm with 3 million inputs;
-how long would it take with 4 million inputs? You may use a calculator on this one.
-<c>|blank|</c> seconds. <var/>  <var/>  </p>
+      <p>The Big O of a particular algorithm is <m>O(log_{2}n)</m>. Given that it takes 2 seconds to complete the algorithm with 3 million inputs; you may use a calculator on this one. Approximate to the nearest two decimal places.</p>
+
+      <p>How long would it take with 4 million inputs? <var name="var1"/> seconds.</p>
+
+      <p>How long would it take with 10 million inputs? <var name="var2"/> seconds.</p>
+
     </statement>
     <setup>
-      <var>
-        <p>10 million?
-<c>|blank|</c> seconds.</p>
-        <condition number="[0.74, 0.74]">
+      <var name="var3">
+        <condition number="2.13">
           <feedback>
             <p>Correct!</p>
           </feedback>
         </condition>
-        <condition number="[-0.33, 0.73]">
+        <condition string=".*">
           <feedback>
-            <p>Try higher.</p>
-          </feedback>
-        </condition>
-        <condition number="[-0.7400000000000002, 5.26]">
-          <feedback>
-            <p>Try lower.</p>
+            <p>Incorrect. Use the ratio log2(4,000,000) / log2(3,000,000) multiplied by 2 seconds.</p>
           </feedback>
         </condition>
       </var>
-      <var>
-        <condition string="^\s*.*\s*$">
-          <feedback>
-            <p>Incorrect. try again.</p>
-          </feedback>
-        </condition>
-        <condition number="[3.44, 3.44]">
+      
+      <var name="var4">
+        <condition number="2.22">
           <feedback>
             <p>Correct!</p>
           </feedback>
         </condition>
-        <condition number="[-2.57, 3.43]">
+        <condition string=".*">
           <feedback>
-            <p>Incorrect. Try higher. Think about what happens to the time as more operations occur.</p>
-          </feedback>
-        </condition>
-        <condition number="[3.45, 9.45]">
-          <feedback>
-            <p>Incorrect. Try lower. Think about what happens to the time as more operations occur.</p>
+            <p>Incorrect. Use the ratio log2(10,000,000) / log2(3,000,000) multiplied by 2 seconds.</p>
           </feedback>
         </condition>
       </var>
     </setup>
+
   </exercise>
-  <exercise>
+ <exercise>
     <statement>
-      <p>The Big O of a particular algorithm is <m>O(n^{3})</m>. Given that it takes 2 seconds to complete the algorithm with 1000 inputs;
-how long would it take with 2000 inputs?
-<c>|blank|</c> seconds. <var/>  <var/>  </p>
+      <p>The Big O of a particular algorithm is <m>O(n^{3})</m>.</p>
+      
+      <p>Given that it takes 2 seconds to complete the algorithm with 1000 inputs; 
+      how long would it take with 2000 inputs? 
+       <var name="var1"/> seconds.</p>
+      
+      <p>How long would it take with 10,000 inputs? 
+      <var name="var2"/> seconds.</p>
     </statement>
-    <setup>
+    
+<setup>
       <var>
-        <p>10,000?
-<c>|blank|</c> seconds.</p>
-        <condition number="[16, 16]">
+        <condition number="16">
           <feedback>
             <p>Correct!</p>
           </feedback>
         </condition>
-        <condition number="[-3, 15]">
+        <condition string=".*">
           <feedback>
-            <p>Incorrect. Try higher. Think about what happens to the time as more operations occur.</p>
+            <p>Incorrect. Think about what happens to the execution time as the number of operations scales cubically.</p>
           </feedback>
         </condition>
       </var>
+      
       <var>
-        <condition number="[17, 29]">
-          <feedback>
-            <p>Incorrect. Try lower. Think about what happens to the time as more operations occur.</p>
-          </feedback>
-        </condition>
-        <condition number="[2000, 2000]">
+        <condition number="2000">
           <feedback>
             <p>Correct!</p>
           </feedback>
         </condition>
-        <condition number="[1001, 1999]">
+        <condition string=".*">
           <feedback>
-            <p>Incorrect. Try higher. Think about what happens to the time as more operations occur.</p>
-          </feedback>
-        </condition>
-        <condition number="[2001, 2999]">
-          <feedback>
-            <p>Incorrect. Try lower. Think about what happens to the time as more operations occur.</p>
+            <p>Incorrect. Think about what happens to the execution time as the number of operations scales cubically.</p>
           </feedback>
         </condition>
       </var>
     </setup>
+
   </exercise>
 </section>
