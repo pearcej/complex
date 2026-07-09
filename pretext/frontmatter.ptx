@@ -36,13 +36,13 @@
     <titlepage-items/>
   </titlepage>
 
-  <colophon xml:id="repository-and-license">
+  <colophon xml:id="preface-repository-and-license">
 	<title>Repository and License</title>
 	
     <colophon-items/>
   </colophon>
 
-	<preface xml:id="acknowledgements">
+	<preface xml:id="preface-acknowledgements">
 	<title>Acknowledgements</title>
 
 	<p>
@@ -78,7 +78,7 @@
             the use of heuristics as well as complexity classes as well as the important P vs NP problem.</p>
 </preface>
 
-	<preface xml:id="why-study-complexity-science">
+	<preface xml:id="preface-why-study-complexity-science">
   <title>Why Study Complexity Science?</title>
   <p>Complexity science is an interdisciplinary field &#x2014; at the intersection of mathematics, computer science and natural science &#x2014; that focuses on complex systems, which are systems with many interacting components.</p>
   <p>One of the core tools of complexity science is discrete models, including networks and graphs, cellular automatons, and agent-based simulations. These tools are useful in the natural and social sciences, and sometimes in arts and humanities.</p>
@@ -109,7 +109,7 @@
 	
 
 
-	<preface xml:id="preface_prerequisites">
+	<preface xml:id="preface-prerequisites">
   <title>Prerequisites</title>
   <p>The examples and supporting code for this book are written in Python. You should know core Python and be familiar with its object-oriented features, specifically using and defining classes.</p>
   <p>If you are not already familiar with Python, you might want to start with a
@@ -118,7 +118,10 @@
             several good choices.</p>
   <p>We will use the NumPy, SciPy, and NetworkX libraries throughout the book. If you are familiar with these libraries already, that's great, but we will also explain them when they appear.</p>
   <p>Some mathematics is also used. Logarithms are used in several places and vectors in one example. But that's about it.</p>
-  <p xml:id="preface_notebooks" names="pf_4">To get a better understanding of the tools needed to interact with and run the given code,
+
+
+  
+  <p xml:id="preface-notebooks" names="pf_4">To get a better understanding of the tools needed to interact with and run the given code,
             first decide whether you wish to install Jupyter notebooks on your own machine or
             the Google Collaboratory (Colab) notebooks in the Cloud.
             Then examine the relevant appendix that are located at the end of the book:</p>
