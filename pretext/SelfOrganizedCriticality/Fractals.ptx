@@ -18,7 +18,7 @@ pile3.run()</pre>
   <p>Inside the loop, it uses <c>a==level</c> to make a boolean array that's <c>True</c> where the array is <c>level</c> and <c>False</c> otherwise. <c>draw_array</c> treats these booleans as 1s and 0s.</p>
 <figure align="center" xml:id="soc-fig-sand-pile-equilibrium-levels">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Sand pile model in equilibrium, selecting cells with levels 0, 1, 2, and 3, left to right, top to bottom.</caption>
-    <image source="SelfOrganizedCriticality/Figures/SP_EQUILIBRIUM.png" width="50%" alt="&quot; Sand pile model in equilibrium, selecting cells with levels 0, 1, 2, and 3, left to right, top to bottom.&quot;">
+    <image source="SelfOrganizedCriticality/Figures/SP_EQUILIBRIUM.png" width="50%">
       <shortdescription>Four square panels showing intricate, symmetric fractal-like patterns in maroon on a cream background, each highlighting cells at a different sand pile level, from sparse to dense.</shortdescription>
       <description>
         <p>
@@ -56,7 +56,7 @@ thinkplot.plot(steps, cells)
 thinkplot.plot(steps, steps, linestyle='dashed')</pre>
 <figure align="center" xml:id="soc-fig-box-counts-by-level">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Box counts for cells with levels 0, 1, 2, and 3, compared to dashed lines with slopes 1 and 2.</caption>
-    <image source="SelfOrganizedCriticality/Figures/BOX_COUNTS.png" width="50%" alt="&quot; Box counts for cells with levels 0, 1, 2, and 3, compared to dashed lines with slopes 1 and 2.&quot;">
+    <image source="SelfOrganizedCriticality/Figures/BOX_COUNTS.png" width="50%">
       <shortdescription>Four log-log plots showing cell count versus box size for sand pile levels 0 through 3, each with a solid data line running between two dashed reference lines of slopes 1 and 2.</shortdescription>
       <description>
         <p>

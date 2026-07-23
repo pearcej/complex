@@ -74,7 +74,7 @@ self.array2 += rb * cB + reaction - (f+k) * B</pre>
   </exercise>
 <figure align="center" xml:id="physical-modeling_reaction-diffusion-figure-rings-to-speckles">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Reaction-diffusion model with parameters f=0.035 and k=0.057 after 1000, 2000, and 4000 steps.</caption>
-    <image source="PhysicalModeling/Figures/LIGHT_SPT_DARK_BACK.png" width="50%" alt="&quot;Reaction-diffusion model with parameters f=0.035 and k=0.057 after 1000, 2000, and 4000 steps.&quot;">
+    <image source="PhysicalModeling/Figures/LIGHT_SPT_DARK_BACK.png" width="50%">
       <shortdescription>Three square panels showing blue ring and speckle patterns on a pink background, evolving from concentric rings into a fine speckled texture.</shortdescription>
       <description>
         <p>
@@ -88,7 +88,7 @@ self.array2 += rb * cB + reaction - (f+k) * B</pre>
   <p><xref ref="physical-modeling_reaction-diffusion-figure-rings-to-speckles"/> shows results with <c>f=0.035</c> and <c>k=0.057</c>, with the concentration of <c>B</c> shown in darker colors. With these parameters, the system evolves toward a stable configuration with light spots of <c>A</c> on a dark background of <c>B</c>.</p>
 <figure align="center" xml:id="physical-modeling_reaction-diffusion-figure-coral">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Reaction-diffusion model with parameters f=0.055 and k=0.062 after 1000, 2000, and 4000 steps.</caption>
-    <image source="PhysicalModeling/Figures/CORAL.png" width="50%" alt="&quot;Reaction-diffusion model with parameters f=0.055 and k=0.062 after 1000, 2000, and 4000 steps.&quot;">
+    <image source="PhysicalModeling/Figures/CORAL.png" width="50%">
       <shortdescription>Three square panels showing blue coral-like patterns on a pink background, growing from a small blob into a dense, maze-like network filling the frame.</shortdescription>
       <description>
         <p>
@@ -100,7 +100,7 @@ self.array2 += rb * cB + reaction - (f+k) * B</pre>
   <p><xref ref="physical-modeling_reaction-diffusion-figure-coral"/> shows results with <c>f=0.055</c> and <c>k=0.062</c>, which yields a coral-like pattern of <c>B</c> on a background of <c>A</c>.</p>
 <figure align="center" xml:id="physical-modeling_reaction-diffusion-figure-animal-spot">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> A reaction-diffusion model with parameters f=0.039 and k=0.065 after 1000, 2000, and 4000 steps.</caption>
-    <image source="PhysicalModeling/Figures/ANIMAL_SPOT.png" width="50%" alt="&quot;A reaction-diffusion model with parameters f=0.039 and k=0.065 after 1000, 2000, and 4000 steps.&quot;">
+    <image source="PhysicalModeling/Figures/ANIMAL_SPOT.png" width="50%">
       <shortdescription>Three square panels showing small blue dots on a pink background, increasing in number from a handful of scattered spots to dozens covering the panel.</shortdescription>
       <description>
         <p>

@@ -15,7 +15,7 @@
   <pre>array += r * c</pre>
 <figure align="center" xml:id="physical-modeling_diffusion-figure">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> A simple diffusion model after 0, 5, and 10 steps.</caption>
-    <image source="PhysicalModeling/Figures/SIMPLE_DIF.png" width="50%" alt="&quot; A simple diffusion model after 0, 5, and 10 steps.&quot;">
+    <image source="PhysicalModeling/Figures/SIMPLE_DIF.png" width="50%">
       <shortdescription>Three square panels showing a dark red square gradually blurring and spreading outward into a softer, lighter diffuse shape.</shortdescription>
       <description>
         <p>

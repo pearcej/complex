@@ -14,7 +14,7 @@ freqs, spectrum = welch(signal, nperseg=nperseg, fs=nperseg)</pre>
   <p>The return values, <c>freqs</c> and <c>powers</c>, are NumPy arrays containing the frequencies of the components and their corresponding powers, which we can plot. <xref ref="soc-fig-power-spectrum-toppled-cells"/> shows the result.</p>
 <figure align="center" xml:id="soc-fig-power-spectrum-toppled-cells">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Power spectrum of the number of toppled cells over time, log-log scale.</caption>
-    <image source="SelfOrganizedCriticality/Figures/POWER_SPECT.png" width="50%" alt="&quot;Figure  Power spectrum of the number of toppled cells over time, log-log scale.&quot;">
+    <image source="SelfOrganizedCriticality/Figures/POWER_SPECT.png" width="50%">
       <shortdescription>A log-log plot of power versus frequency for the number of toppled cells over time, showing a roughly straight downward-sloping line with increasing scatter at higher frequencies.</shortdescription>
       <description>
         <p>

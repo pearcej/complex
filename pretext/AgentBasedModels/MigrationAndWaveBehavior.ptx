@@ -3,7 +3,7 @@
   <title>Migration and Wave Behavior</title>
   <figure align="center" xml:id="MigrationAndWaveBehavior_figure_1">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Wave behavior in Sugarscape: initial configuration (left), after 6 steps (middle) and after 12 steps (right).</caption>
-    <image source="AgentBasedModels/Figures/WAVE_BEHAVE.png" width="50%" alt="&quot; Wave behavior in Sugarscape: initial configuration (left), after 6 steps (middle) and after 12 steps (right).&quot;"/>
+    <image source="AgentBasedModels/Figures/WAVE_BEHAVE.png" width="50%"/>
   </figure>
   <p>Although the purpose of Sugarscape is not primarily to explore the movement of agents in space, Epstein and Axtell observed some interesting patterns when agents migrate.</p>
   <p>If we start with all agents in the lower-left corner, they quickly move toward the closest <q>peak</q> of high-capacity cells. But if there are more agents than a single peak can support, they quickly exhaust the sugar and agents are forced to move into lower-capacity areas.</p>
@@ -13,6 +13,6 @@
   <p>These waves move diagonally, which is surprising because the agents themselves only move north or east, never northeast. Outcomes like this &#x2014; groups or <q>aggregates</q> with properties and behaviors that the agents don't have &#x2014; are common in agent-based models. We will see more examples in the next chapter.</p>
   <figure align="center" xml:id="abm-fig-5">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Gif of wave behavior in a Sugarscape.</caption>
-    <image source="AgentBasedModels/Figures/Sugarscape_Wave_Behavior_.gif" width="50%" alt="&quot;Gis 11.2: Wave behavior in a sugarscape.&quot;"/>
+    <image source="AgentBasedModels/Figures/Sugarscape_Wave_Behavior_.gif" width="50%"/>
   </figure>
 </section>

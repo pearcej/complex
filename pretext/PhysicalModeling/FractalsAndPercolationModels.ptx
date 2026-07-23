@@ -24,7 +24,7 @@ for size in sizes:
   <p>The result is a list of tuples where each tuple contains <c>size</c>, <c>size**2</c>, and the number of cells in the percolating cluster (not including the initial wet cells in the top row).</p>
  <figure align="center" xml:id="pm-fig-9">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Number of cells in the percolating cluster versus CA size.</caption>
-    <image source="PhysicalModeling/Figures/NUM_CELL_IN_PERC_CLUSTER.png" width="50%" alt="&quot; Number of cells in the percolating cluster versus CA size.&quot;">
+    <image source="PhysicalModeling/Figures/NUM_CELL_IN_PERC_CLUSTER.png" width="50%">
       <shortdescription>A log-log scatter plot showing cell count in a percolating cluster increasing with array size, tracking between reference lines for one-dimensional (d=1) and two-dimensional (d=2) growth.</shortdescription>
       <description>
         <p>

@@ -24,12 +24,12 @@
   
   <figure align="center" xml:id="Mutation_figure_mean_fitness_over_time">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Mean fitness over time for 10 simulations with mutation and differential survival and reproduction.</caption>
-    <image source="Evolution/Figures/FIT_DIF_SURVIVE_REP.png" width="50%" alt="&quot; Mean fitness over time for 10 simulations with mutation and differential survival and reproduction.&quot;"/>
+    <image source="Evolution/Figures/FIT_DIF_SURVIVE_REP.png" width="50%"/>
   </figure>
   <p><xref ref="Mutation_figure_mean_fitness_over_time"/> shows the results of 10 simulations with mutation and differential survival and reproduction. In every case, the population evolves toward the location with maximum fitness.</p>
   <figure align="center" xml:id="Mutation_figure_occupied_locations" names="Mutation_figure_occupied_locations">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Number of occupied locations over time for 10 simulations with mutation and differential survival and reproduction.</caption>
-    <image source="Evolution/Figures/OCCUPIED_LOC.png" width="50%" alt="&quot; Number of occupied locations over time for 10 simulations with mutation and differential survival and reproduction.&quot;"/>
+    <image source="Evolution/Figures/OCCUPIED_LOC.png" width="50%"/>
   </figure>
   <p>To measure diversity in the population, we can plot the number of occupied locations after each time step. <xref ref="Mutation_figure_occupied_locations"/> shows the results. We start with 100 agents at the same location. As mutations occur, the number of occupied locations increases quickly.</p>
   <p>When an agent discovers a high-fitness location, it is more likely to survive and reproduce. Agents at lower-fitness locations eventually die out. Over time, the population migrates through the landscape until most agents are at the location with the highest fitness.</p>

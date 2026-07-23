@@ -3,7 +3,7 @@
   <title>Traffic Jams</title>
   <figure align="center" xml:id="TrafficJams_figure_1">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Gif of traffic jams. Squares indicate the position of the drivers; triangles indicate places where one driver has to brake to avoid another.</caption>
-    <image source="HerdsFlocksAndTrafficJams/Figures/Traffic_Jam.gif" width="50%" alt="Gif of traffic jams. Squares indicate the position of the drivers; triangles indicate places where one driver has to brake to avoid another."/>
+    <image source="HerdsFlocksAndTrafficJams/Figures/Traffic_Jam.gif" width="50%"/>
   </figure>
   <p>What causes traffic jams? Sometimes there is an obvious cause, like an accident, a speed trap, or something else that disturbs the flow of traffic. But other times traffic jams appear for no apparent reason.</p>
   <p>Agent-based models can help explain spontaneous traffic jams. As an example, we implement a highway simulation based on a model in Mitchell Resnick's book, <em>Turtles, Termites and Traffic Jams.</em></p>
@@ -91,7 +91,7 @@
   <p>Since the cars start out equally spaced, we expect them all to accelerate until they reach the speed limit, or until their speed exceeds the space between them. At that point, at least one <q>collision</q> will occur, causing some cars to stop.</p>
   <figure align="center" xml:id="hft-fig-1">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Simulation of drivers on a circular highway at three points in time. Squares indicate the position of the drivers; triangles indicate places where one driver has to brake to avoid another.</caption>
-    <image source="HerdsFlocksAndTrafficJams/Figures/DRIVER_SIM.png" width="50%" alt="&quot; Simulation of drivers on a circular highway at three points in time. Squares indicate the position of the drivers; triangles indicate places where one driver has to brake to avoid another.&quot;"/>
+    <image source="HerdsFlocksAndTrafficJams/Figures/DRIVER_SIM.png" width="50%" />
   </figure>
   <p><xref ref="hft-fig-1"/> shows a few steps in this process, starting with 30 cars and <c>eps=0.02</c>. On the left is the configuration after 16 time steps, with the highway mapped to a circle. Because of random noise, some cars are going faster than others, and the spacing has become uneven.</p>
   <p>During the next time step (middle) there are two collisions, indicated by the triangles.</p>

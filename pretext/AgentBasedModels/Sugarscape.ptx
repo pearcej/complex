@@ -9,7 +9,7 @@
 
   <figure align="center" xml:id="Sugarscape_figure_1">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Replication of the original Sugarscape model: initial configuration (left), after 2 steps (middle) and after 100 steps (right).</caption>
-    <image source="AgentBasedModels/Figures/SUG_MODEL.png" width="50%" alt="&quot; Replication of the original Sugarscape model: initial configuration (left), after 2 steps (middle) and after 100 steps (right).&quot;"/>
+    <image source="AgentBasedModels/Figures/SUG_MODEL.png" width="50%"/>
   </figure>
 
   <p><xref ref="Sugarscape_figure_1"/> (left) shows the initial configuration, with the darker areas indicating cells with higher capacity, and small dots representing the agents.</p>
@@ -42,7 +42,7 @@
   <p><xref ref="Sugarscape_figure_1"/> (right) shows the state of the model after 100 time steps, with about 250 agents. The agents who survive tend to be the lucky ones, born with high vision and/or low metabolism. Having survived to this point, they are likely to survive forever, accumulating unbounded stockpiles of sugar.</p>
   <figure align="center" xml:id="Sugarscape_figure_2">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Gif 11.1: Initial Sugarscape for 100 steps.</caption>
-    <image source="AgentBasedModels/Figures/Initial_Sugarscape.gif" width="50%" alt="&quot;Gif 11.1: Initial Sugarscape for 100 steps.&quot;"/>
+    <image source="AgentBasedModels/Figures/Initial_Sugarscape.gif" width="50%"/>
   </figure>
   <exercise label="q_10_4">
     <statement>

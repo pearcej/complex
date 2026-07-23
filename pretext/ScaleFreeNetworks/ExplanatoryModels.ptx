@@ -3,7 +3,7 @@
   <title>Explanatory Models</title>
   <figure align="center" xml:id="sfn-fig-6">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> The logical structure of an explanatory model.</caption>
-<image source="ScaleFreeNetworks/Figures/thinkcomplexity2015.png" width="50%" alt="&quot; The logical structure of an explanatory model.&quot;">
+<image source="ScaleFreeNetworks/Figures/thinkcomplexity2015.png" width="50%">
       <shortdescription>The logical structure of an explanatory model.</shortdescription>
       <description>
         <p>This figure provides a visual diagram illustrating the logical structure of an explanatory model. It uses elements such as boxes and arrows to represent the different stages or components involved in such a model.</p>
