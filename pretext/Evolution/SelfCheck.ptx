@@ -6,7 +6,7 @@
       <p>The theory of evolution is powerful because it explains <var/>, <var/>, and <var/> which are phenomena seen in the natural world that seem inexplicable initially.</p>
     </statement>
     <setup>
-      <var>
+      <var case="insensitive">
         <condition string="^\s*adaptation\s*$">
           <feedback>
             <p>Correct</p>
@@ -18,7 +18,7 @@
           </feedback>
         </condition>
       </var>
-      <var>
+      <var case="insensitive">
         <condition string="^\s*increasing\s+diversity\s*$">
           <feedback>
             <p>Correct</p>
@@ -30,7 +30,7 @@
           </feedback>
         </condition>
       </var>
-      <var>
+      <var case="insensitive">
         <condition string="^\s*increasing\s+complexity\s*$">
           <feedback>
             <p>Correct</p>
@@ -49,7 +49,7 @@
       <p>To quantify the dispersion of a population, we can compute the mean of the distances between <var/>  of <var/>.</p>
     </statement>
     <setup>
-      <var>
+      <var case="insensitive">
         <condition string="^\s*pairs\s*$">
           <feedback>
             <p>Correct.</p>
@@ -61,7 +61,7 @@
           </feedback>
         </condition>
       </var>
-      <var>
+      <var case="insensitive">
         <condition string="^\s*agents\s*$">
           <feedback>
             <p>Correct.</p>
@@ -80,7 +80,7 @@
       <p>To induce evolution, we need <var/> relationship between genotype and fitness, but it turns out that it can be <var/> relationship.</p>
     </statement>
     <setup>
-      <var>
+      <var case="insensitive">
         <condition string="^\s*some\s*$">
           <feedback>
             <p>Correct.</p>
@@ -97,7 +97,7 @@
           </feedback>
         </condition>
       </var>
-      <var>
+      <var case="insensitive">
         <condition string="^\s*any\s*$">
           <feedback>
             <p>Correct.</p>
