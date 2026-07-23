@@ -1,18 +1,32 @@
 <?xml version="1.0"?>
 <section xml:id="agent-based-models_migration-and-wave-behavior-abm-8-abm-fig-5">
   <title>Migration and Wave Behavior</title>
-  <figure align="center" xml:id="MigrationAndWaveBehavior_figure_1">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Wave behavior in Sugarscape: initial configuration (left), after 6 steps (middle) and after 12 steps (right).</caption>
-    <image source="AgentBasedModels/Figures/WAVE_BEHAVE.png" width="50%"/>
+<figure align="center" xml:id="abm-sugarscape-wave-behavior-figure">
+    <caption>Wave behavior in Sugarscape: initial configuration (left), after 6 steps (middle) and after 12 steps (right).</caption>
+    <image source="AgentBasedModels/Figures/WAVE_BEHAVE.png" width="50%">
+      <shortdescription>Three grids showing a dense square block of red dots in one corner migrating toward two sugar peaks and thinning into a wave-like arc over 12 steps.</shortdescription>
+      <description>
+        <p>
+          The image shows three square grids placed side by side, each with a pale yellow background marked by darker orange circular regions of higher sugar concentration, and red dots representing agents. In the leftmost grid, the initial configuration, agents are packed tightly into a solid square block in the lower-left corner, while two sugar peaks sit elsewhere on the grid, one near the upper-middle and one in the upper-right, both untouched by agents. In the middle grid, after 6 steps, the block has broken apart and spread into a rounded, more diffuse cluster of agents moving up and to the right, now overlapping the nearer of the two sugar peaks. In the rightmost grid, after 12 steps, the agents have thinned out further and stretched into a loose, curved band approaching the second sugar peak in the upper right, illustrating a wave of agents migrating across the grid toward regions of higher sugar.
+        </p>
+      </description>
+    </image>
   </figure>
   <p>Although the purpose of Sugarscape is not primarily to explore the movement of agents in space, Epstein and Axtell observed some interesting patterns when agents migrate.</p>
   <p>If we start with all agents in the lower-left corner, they quickly move toward the closest <q>peak</q> of high-capacity cells. But if there are more agents than a single peak can support, they quickly exhaust the sugar and agents are forced to move into lower-capacity areas.</p>
   <p>The ones with the longest vision cross the valley between the peaks and propagate toward the northeast in a pattern that resembles a wave front. Because they leave a stripe of empty cells behind them, other agents don't follow until the sugar grows back.</p>
   <p>The result is a series of discrete waves of migration, where each wave resembles a coherent object, like the spaceships we saw in the Rule 110 CA and Game of Life (see <xref ref="cellular-automatons_determinism"/> and <xref ref="game-of-life_life-patterns"/>).</p>
-  <p><xref ref="abm-fig-5"/>  shows the initial condition (left) and the state of the model after 6 steps (middle) and 12 steps (right). You can see the first two waves reaching and moving through the second peak, leaving a stripe of empty cells behind. You can see an animated version of this model, where the wave patterns are more clearly visible, in the notebook for this chapter.</p>
+  <p><xref ref="abm-sugarscape-wave-behavior-gif-figure"/>  shows the initial condition (left) and the state of the model after 6 steps (middle) and 12 steps (right). You can see the first two waves reaching and moving through the second peak, leaving a stripe of empty cells behind. You can see an animated version of this model, where the wave patterns are more clearly visible, in the notebook for this chapter.</p>
   <p>These waves move diagonally, which is surprising because the agents themselves only move north or east, never northeast. Outcomes like this &#x2014; groups or <q>aggregates</q> with properties and behaviors that the agents don't have &#x2014; are common in agent-based models. We will see more examples in the next chapter.</p>
-  <figure align="center" xml:id="abm-fig-5">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Gif of wave behavior in a Sugarscape.</caption>
-    <image source="AgentBasedModels/Figures/Sugarscape_Wave_Behavior_.gif" width="50%"/>
+<figure align="center" xml:id="abm-sugarscape-wave-behavior-gif-figure">
+    <caption>Gif 11.2: Wave behavior in a Sugarscape.</caption>
+    <image source="AgentBasedModels/Figures/Sugarscape_Wave_Behavior_.gif" width="50%">
+      <shortdescription>Animated GIF of a dense block of agents breaking apart and migrating as a thinning wave toward two sugar peaks.</shortdescription>
+      <description>
+        <p>
+          The image is an animated GIF showing a square grid with a pale yellow background marked by darker orange circular regions of higher sugar concentration, and red dots representing agents. Two sugar peaks are visible, one lower and left of center and one in the upper right, both empty of agents at the start. The animation begins with agents packed into a solid, dense square block in the lower-left corner of the grid, far from either peak. As the animation progresses, this block breaks apart and spreads outward, migrating up and to the right as a diffuse, thinning wave of agents. By the later frames, most agents have settled into a loose ring surrounding the nearer, lower sugar peak, while a smaller, thinner band of agents has broken off from the main group and stretched toward the second sugar peak in the upper right, illustrating a wave of migration moving across the grid toward regions of higher sugar.
+        </p>
+      </description>
+    </image>
   </figure>
 </section>

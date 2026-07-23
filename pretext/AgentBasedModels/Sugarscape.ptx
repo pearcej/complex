@@ -6,13 +6,18 @@
   <p>In its simplest form, Sugarscape is a model of a simple economy where agents move around on a 2-D grid, harvesting and accumulating <q>sugar</q>, which represents economic wealth. Some parts of the grid produce more sugar than others, and some agents are better at finding it than others.</p>
   <p>This version of Sugarscape is often used to explore and explain the distribution of wealth, in particular the tendency toward inequality.</p>
   <p>In the Sugarscape grid, each cell has a capacity, which is the maximum amount of sugar it can hold. In the original configuration, there are two high-sugar regions, with capacity 4, surrounded by concentric rings with capacities 3, 2, and 1.</p>
-
-  <figure align="center" xml:id="Sugarscape_figure_1">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Replication of the original Sugarscape model: initial configuration (left), after 2 steps (middle) and after 100 steps (right).</caption>
-    <image source="AgentBasedModels/Figures/SUG_MODEL.png" width="50%"/>
+<figure align="center" xml:id="abm-sugarscape-replication-figure">
+    <caption>Replication of the original Sugarscape model: initial configuration (left), after 2 steps (middle) and after 100 steps (right).</caption>
+    <image source="AgentBasedModels/Figures/SUG_MODEL.png" width="50%">
+      <shortdescription>Three grids of red dots on a yellow sugar-density background, showing agents starting scattered and clustering into circular sugar peaks over time.</shortdescription>
+      <description>
+        <p>
+          The image shows three square grids placed side by side, each depicting the Sugarscape model on a pale yellow background with darker orange rings marking areas of higher sugar concentration, and small red dots representing agents. In the leftmost grid, the initial configuration, red dots are scattered broadly across the grid with a loose concentration near the center, and the sugar rings are faint. In the middle grid, after 2 steps, the agents have begun clustering more tightly around two distinct circular sugar peaks, one upper-left and one lower-right, with the orange rings becoming more visible. In the rightmost grid, after 100 steps, the agents have fully concentrated into two dense, well-defined red clusters sitting directly on top of two prominent circular sugar peaks, with the surrounding areas nearly empty of agents.
+        </p>
+      </description>
+    </image>
   </figure>
-
-  <p><xref ref="Sugarscape_figure_1"/> (left) shows the initial configuration, with the darker areas indicating cells with higher capacity, and small dots representing the agents.</p>
+  <p><xref ref="abm-sugarscape-replication-figure"/> (left) shows the initial configuration, with the darker areas indicating cells with higher capacity, and small dots representing the agents.</p>
   <p>Initially there are 400 agents placed at random locations. Each agent has three randomly-chosen attributes:</p>
   <p><term>Sugar:</term>  Each agent starts with an endowment of sugar chosen from a uniform distribution between 5 and 25 units.</p>
   <p><term>Metabolism:</term>  Each agent has some amount of sugar they must consume per time step, chosen uniformly between 1 and 4.</p>
@@ -35,16 +40,23 @@
     </ul>
   </p>
   <p>After all agents have executed these steps, the cells grow back some sugar, typically 1 unit, but the total sugar in each cell is bounded by its capacity.</p>
-  <p><xref ref="Sugarscape_figure_1"/> (middle) shows the state of the model after two steps. Most agents are moving toward the areas with the most sugar. Agents with high vision move the fastest; agents with low vision tend to get stuck on the plateaus, wandering randomly until they get close enough to see the next level.</p>
+  <p><xref ref="abm-sugarscape-replication-figure"/> (middle) shows the state of the model after two steps. Most agents are moving toward the areas with the most sugar. Agents with high vision move the fastest; agents with low vision tend to get stuck on the plateaus, wandering randomly until they get close enough to see the next level.</p>
   <p>Agents born in the areas with the least sugar are likely to starve unless they have a high initial endowment and high vision.</p>
   <p>Within the high-sugar areas, agents compete with each other to find and harvest sugar as it grows back. Agents with high metabolism or low vision are the most likely to starve.</p>
   <p>When sugar grows back at 1 unit per time step, there is not enough sugar to sustain the 400 agents we started with. The population drops quickly at first, then more slowly, and levels off around 250.</p>
-  <p><xref ref="Sugarscape_figure_1"/> (right) shows the state of the model after 100 time steps, with about 250 agents. The agents who survive tend to be the lucky ones, born with high vision and/or low metabolism. Having survived to this point, they are likely to survive forever, accumulating unbounded stockpiles of sugar.</p>
-  <figure align="center" xml:id="Sugarscape_figure_2">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Gif 11.1: Initial Sugarscape for 100 steps.</caption>
-    <image source="AgentBasedModels/Figures/Initial_Sugarscape.gif" width="50%"/>
+  <p><xref ref="abm-sugarscape-replication-figure"/> (right) shows the state of the model after 100 time steps, with about 250 agents. The agents who survive tend to be the lucky ones, born with high vision and/or low metabolism. Having survived to this point, they are likely to survive forever, accumulating unbounded stockpiles of sugar.</p>
+<figure align="center" xml:id="abm-sugarscape-initial-100steps-figure">
+    <caption>Gif of Initial Sugarscape for 100 steps.</caption>
+    <image source="AgentBasedModels/Figures/Initial_Sugarscape.gif" width="50%">
+      <shortdescription>Animated GIF of red dots on a yellow sugar-density grid clustering into two dense circular groups over 100 steps.</shortdescription>
+      <description>
+        <p>
+          The image is an animated GIF showing a square grid with a pale yellow background marked by darker orange rings indicating areas of higher sugar concentration, and red dots representing agents. Two circular sugar peaks are visible, one in the upper right and one in the lower left of the grid. Throughout the animation, agents remain densely packed in and around both sugar peaks, with a scattering of additional dots across the rest of the grid. The clustering around each peak becomes somewhat tighter and more concentrated as the animation progresses, but a noticeable number of agents remain scattered outside the two main clusters even by the final frame.
+        </p>
+      </description>
+    </image>
   </figure>
-  <exercise label="q_10_4">
+  <exercise>
     <statement>
       <p>Which of the following are true about Sugarscapes:</p>
     </statement>

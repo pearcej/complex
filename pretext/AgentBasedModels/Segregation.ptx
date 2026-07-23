@@ -1,25 +1,39 @@
 <?xml version="1.0"?>
 <section xml:id="agent-based-models_segregation">
   <title>Segregation</title>
-  <figure align="center" xml:id="abm-fig-1">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Schelling's segregation model with n=100, initial condition (left), after 2 steps (middle), and after 10 steps (right).</caption>
-    <image source="AgentBasedModels/Figures/SEG_MODEL.png" width="50%"/>
+<figure align="center" xml:id="abm-schelling-segregation-figure">
+    <caption>Schelling's segregation model with n=100, initial condition (left), after 2 steps (middle), and after 10 steps (right).</caption>
+    <image source="AgentBasedModels/Figures/SEG_MODEL.png" width="50%">
+      <shortdescription>Three side-by-side grids of orange and blue dots showing increasing clustering from a random initial mix to a segregated pattern after 10 steps.</shortdescription>
+      <description>
+        <p>
+          The image shows three square grids placed side by side, each filled with small orange and blue dots representing agents in Schelling's segregation model. In the leftmost grid, the initial condition, the orange and blue dots are randomly and finely intermixed with no visible clustering. In the middle grid, after 2 steps, small clusters of same-colored dots have begun to form, with visible patches where orange or blue dots group together. In the rightmost grid, after 10 steps, the clustering is much more pronounced, with large, well-defined regions of solid orange and solid blue separated by more distinct boundaries, illustrating how the model evolves toward segregated neighborhoods over time.
+        </p>
+      </description>
+    </image>
   </figure>
   <p>Now let's see what happens when we run the model, starting with <c>n=100</c> and <c>p=0.3</c>, and run for 10 steps.</p>
   <pre>grid = Schelling(n=100, p=0.3)
 for i in range(10):
     grid.step()</pre>
-  <p><xref ref="abm-fig-1"/> shows the initial configuration (left), the state of the simulation after 2 steps (middle), and the state after 10 steps (right).</p>
+  <p><xref ref="abm-schelling-segregation-figure"/> shows the initial configuration (left), the state of the simulation after 2 steps (middle), and the state after 10 steps (right).</p>
   <p>Clusters form almost immediately and grow quickly, until most agents live in highly-segregated neighborhoods.</p>
   <p>As the simulation runs, we can compute the degree of segregation, which is the average, across agents, of the fraction of neighbors who are the same color as the agent:</p>
   <pre>np.nanmean(frac_same)</pre>
-  <p>In <xref ref="abm-fig-1"/>, the average fraction of similar neighbors is 50% in the initial configuration, 65% after two steps, and 76% after 10 steps!</p>
+  <p>In <xref ref="abm-schelling-segregation-figure"/>, the average fraction of similar neighbors is 50% in the initial configuration, 65% after two steps, and 76% after 10 steps!</p>
   <p>Remember that when <c>p=0.3</c> the agents would be happy if 3 of 8 neighbors were their own color, but they end up living in neighborhoods where 6 or 7 of their neighbors are their own color, typically.</p>
-  <figure align="center" xml:id="abm-fig-2">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Degree of segregation in Schelling's model, over time, for a range of p.</caption>
-    <image source="AgentBasedModels/Figures/DEG_SEG.png" width="50%"/>
+<figure align="center" xml:id="abm-degree-segregation-over-time-figure">
+    <caption>Degree of segregation in Schelling's model, over time, for a range of p.</caption>
+    <image source="AgentBasedModels/Figures/DEG_SEG.png" width="50%">
+      <shortdescription>Line chart showing segregation rising over time steps for four values of p, with higher p leading to higher final segregation.</shortdescription>
+      <description>
+        <p>
+          The image shows a line chart with time steps from 0 to 10 on the horizontal axis and a segregation measure from 0.0 to 1.0 on the vertical axis. Four lines are plotted, one for each value of p: 0.5, 0.4, 0.3, and 0.2, shown in progressively lighter shades of blue. All four lines start at approximately 0.5 and rise steeply over the first few time steps before leveling off into a plateau. The line for p = 0.5 climbs highest, reaching a final segregation level of roughly 0.87, followed by p = 0.4 at around 0.82, p = 0.3 at around 0.75, and p = 0.2 leveling off lowest at around 0.58. The chart illustrates that higher values of p lead to a greater final degree of segregation.
+        </p>
+      </description>
+    </image>
   </figure>
-  <p><xref ref="abm-fig-2"/> shows how the degree of segregation increases and where it levels off for several values of <c>p</c>. When <c>p=0.4</c>, the degree of segregation in steady state is about 82%, and a majority of agents have no neighbors with a different color.</p>
+  <p><xref ref="abm-degree-segregation-over-time-figure"/> shows how the degree of segregation increases and where it levels off for several values of <c>p</c>. When <c>p=0.4</c>, the degree of segregation in steady state is about 82%, and a majority of agents have no neighbors with a different color.</p>
   <p>These results are surprising to many people, and they make a striking example of the unpredictable relationship between individual decisions and system behavior.</p>
 <exercise>
     <statement>
