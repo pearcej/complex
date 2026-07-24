@@ -11,10 +11,15 @@
         return index_dead</pre>
   <p>Now the probability of survival depends on fitness; in fact, in this version, the probability that an agent survives each time step <em>is</em> its fitness.</p>
   <p xml:id="evo-fig-2" names="evo_fig_2">Since agents with low fitness are more likely to die, agents with high fitness are more likely to survive long enough to reproduce. Over time we expect the number of low-fitness agents to decrease, and the number of high-fitness agents to increase.</p>
-  <figure align="center" xml:id="DifferentialSurvival_figure_mean_fitness_over_time" names="DifferentialSurvival_figure_mean_fitness_over_time">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Mean fitness over time for 10 simulations with differential survival.</caption>
-    <image source="Evolution/Figures/DIF_SURVIVE_FIT.png" width="50%" alt="&quot; Mean fitness over time for 10 simulations with differential survival.&quot;"/>
-  </figure>
+<figure align="center" xml:id="DifferentialSurvival_figure_mean_fitness_over_time" names="DifferentialSurvival_figure_mean_fitness_over_time">
+  <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Mean fitness over time for 10 simulations with differential survival.</caption>
+  <image source="Evolution/Figures/DIF_SURVIVE_FIT.png" width="50%">
+    <shortdescription>Ten lines rising steeply then leveling off at different heights, unlike the random spread seen without selection.</shortdescription>
+    <description>
+      <p>The graph plots mean fitness (0.48 to 0.60, y-axis) against time (0 to 500, x-axis) for 10 separate simulation runs, each shown as a semi-transparent blue line. All 10 lines start together near a mean fitness of 0.47 at time 0 and rise quickly over the first 100 time steps. Most lines climb to around 0.58 to 0.60 and then level off, staying roughly flat for the remainder of the time range. A couple of lines plateau lower, around 0.56 to 0.58. Unlike a pattern of continued drifting apart, here the lines rise together and then stabilize at their own roughly constant level, reflecting how differential survival drives fitness upward before it levels off.</p>
+    </description>
+  </image>
+</figure>
   <p><xref ref="DifferentialSurvival_figure_mean_fitness_over_time"/> shows mean fitness over time for 10 simulations with differential survival. Mean fitness increases quickly at first, but then levels off.</p>
   <p>You can probably figure out why it levels off: if there is only one agent at a particular location and it dies, it leaves that location unoccupied. Without mutation, there is no way for it to be occupied again.</p>
   <p>With <c>N=8</c>, this simulation starts with 256 agents occupying all possible locations. Over time, the number of occupied locations decreases; if the simulation runs long enough, eventually all agents will occupy the same location.</p>

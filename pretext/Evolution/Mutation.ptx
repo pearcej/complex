@@ -22,15 +22,25 @@
   <p xml:id="evo-fig-3" names="evo_fig_3">The operator ^= computes <q>exclusive OR</q>; with the operand 1, it has the effect of flipping a bit.</p>
   <p>Now that we have mutation, we don't have to start with an agent at every location. Instead, we can start with the minimum variability: all agents at the same location.</p>
   
-  <figure align="center" xml:id="Mutation_figure_mean_fitness_over_time">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Mean fitness over time for 10 simulations with mutation and differential survival and reproduction.</caption>
-    <image source="Evolution/Figures/FIT_DIF_SURVIVE_REP.png" width="50%" alt="&quot; Mean fitness over time for 10 simulations with mutation and differential survival and reproduction.&quot;"/>
-  </figure>
+<figure align="center" xml:id="Mutation_figure_mean_fitness_over_time">
+  <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Mean fitness over time for 10 simulations with mutation and differential survival and reproduction.</caption>
+  <image source="Evolution/Figures/FIT_DIF_SURVIVE_REP.png" width="50%">
+    <shortdescription>Ten lines rising steadily and converging tightly near the top, higher and more uniform than in earlier figures.</shortdescription>
+    <description>
+      <p>The graph plots mean fitness (0.45 to 0.70, y-axis) against time (0 to 500, x-axis) for 10 separate simulation runs, each shown as a semi-transparent blue line. The lines start spread out between about 0.45 and 0.51 at time 0, then rise together in a somewhat jagged climb through the first 200 to 300 time steps. By around time 300, all 10 lines converge tightly and level off just above 0.70, remaining closely bunched together with little visible spread for the rest of the time range. Compared to the previous figure, the lines here reach a higher final fitness and converge more tightly, reflecting the added effect of mutation alongside differential survival and reproduction.</p>
+    </description>
+  </image>
+</figure>
   <p><xref ref="Mutation_figure_mean_fitness_over_time"/> shows the results of 10 simulations with mutation and differential survival and reproduction. In every case, the population evolves toward the location with maximum fitness.</p>
-  <figure align="center" xml:id="Mutation_figure_occupied_locations" names="Mutation_figure_occupied_locations">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Number of occupied locations over time for 10 simulations with mutation and differential survival and reproduction.</caption>
-    <image source="Evolution/Figures/OCCUPIED_LOC.png" width="50%" alt="&quot; Number of occupied locations over time for 10 simulations with mutation and differential survival and reproduction.&quot;"/>
-  </figure>
+ <figure align="center" xml:id="Mutation_figure_occupied_locations" names="Mutation_figure_occupied_locations">
+  <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Number of occupied locations over time for 10 simulations with mutation and differential survival and reproduction.</caption>
+  <image source="Evolution/Figures/OCCUPIED_LOC.png" width="50%">
+    <shortdescription>Ten jagged green lines rising quickly then fluctuating noisily around a roughly constant level.</shortdescription>
+    <description>
+      <p>The graph plots the number of occupied locations (0 to 20, y-axis) against time (0 to 500, x-axis) for 10 separate simulation runs, each shown as a semi-transparent green line. All 10 lines start near 0 at time 0 and rise sharply within the first 20 to 30 time steps. After this initial rise, the lines fluctuate noisily around a roughly stable range, mostly between about 8 and 15 occupied locations, with occasional spikes reaching as high as 20 to 22. Unlike the smoother mean-fitness curves in the previous figures, these lines remain visibly jagged and noisy throughout the full time range rather than settling into a smooth plateau.</p>
+    </description>
+  </image>
+</figure>
   <p>To measure diversity in the population, we can plot the number of occupied locations after each time step. <xref ref="Mutation_figure_occupied_locations"/> shows the results. We start with 100 agents at the same location. As mutations occur, the number of occupied locations increases quickly.</p>
   <p>When an agent discovers a high-fitness location, it is more likely to survive and reproduce. Agents at lower-fitness locations eventually die out. Over time, the population migrates through the landscape until most agents are at the location with the highest fitness.</p>
   <p>At that point, the system reaches an equilibrium where mutation occupies new locations at the same rate that differential survival causes lower-fitness locations to be left empty.</p>

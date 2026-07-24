@@ -24,11 +24,16 @@ sim = Simulation(fit_land, agents)</pre>
 sim.add_instrument(instrument)
 sim.run()</pre>
   <p><c>Simulation</c> keeps a list of <c>Instrument</c> objects. After each time step it invokes <c>update</c> on each <c>Instrument</c> in the list.</p>
-  <figure align="center" xml:id="evo-fig-1">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Mean fitness over time for 10 simulations with no differential survival or reproduction.</caption>
-    <image source="Evolution/Figures/MEAN_FIT.png" width="50%" alt="&quot; Mean fitness over time for 10 simulations with no differential survival or reproduction.&quot;"/>
-  </figure>
-  <p><xref ref="evo-fig-1"/> shows the result of running this simulation 10 times. The mean fitness of the population drifts up or down at random. Since the distribution of fitness changes over time, we infer that the distribution of phenotypes is also changing. By the most inclusive definition, this random walk is a kind of evolution. But it is not a particularly interesting kind.</p>
+<figure align="center" xml:id="evo-fig-mean-fitness-no-selection">
+  <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Mean fitness over time for 10 simulations with no differential survival or reproduction.</caption>
+  <image source="Evolution/Figures/MEAN_FIT.png" width="50%">
+    <shortdescription>Ten wavy lines starting at the same point and randomly drifting apart over time, like a bundle of strings fraying.</shortdescription>
+    <description>
+      <p>The graph plots mean fitness (0.40 to 0.54, y-axis) against time (0 to 500, x-axis) for 10 separate simulation runs, each shown as a semi-transparent blue line. All 10 lines begin at the same point, around a mean fitness of 0.47 to 0.48 at time 0. As time progresses, the lines drift apart in a random, jagged, walk-like pattern rather than trending consistently up or down. By time 500, the lines have spread out to span nearly the full range of the y-axis, from about 0.40 to 0.53, with no clear central tendency or convergence. This spreading-out pattern illustrates that with no differential survival or reproduction, mean fitness changes are due to random drift rather than directional selection.</p>
+    </description>
+  </image>
+</figure>
+  <p><xref ref="evo-fig-mean-fitness-no-selection"/> shows the result of running this simulation 10 times. The mean fitness of the population drifts up or down at random. Since the distribution of fitness changes over time, we infer that the distribution of phenotypes is also changing. By the most inclusive definition, this random walk is a kind of evolution. But it is not a particularly interesting kind.</p>
   <p>In particular, this kind of evolution does not explain how biological species change over time, or how new species appear. The theory of evolution is powerful because it explains phenomena we see in the natural world that seem inexplicable:</p>
   <p>
     <ul>
