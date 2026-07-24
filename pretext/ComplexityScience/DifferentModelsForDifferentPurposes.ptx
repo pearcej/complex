@@ -37,7 +37,7 @@
           </feedback>
         </condition>
       </var>
-      <var>
+      <var case="insensitive">
         <condition string="^\s*[Ee]xplain\s*$">
           <feedback>
             <p>Good job</p>
