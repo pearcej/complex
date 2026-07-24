@@ -1,10 +1,15 @@
 <?xml version="1.0"?>
 <section xml:id="herds-flocks-and-traffic-jams_traffic-jams">
   <title>Traffic Jams</title>
-  <figure align="center" xml:id="TrafficJams_figure_1">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Gif of traffic jams. Squares indicate the position of the drivers; triangles indicate places where one driver has to brake to avoid another.</caption>
-    <image source="HerdsFlocksAndTrafficJams/Figures/Traffic_Jam.gif" width="50%" alt="Gif of traffic jams. Squares indicate the position of the drivers; triangles indicate places where one driver has to brake to avoid another."/>
-  </figure>
+<figure align="center" xml:id="TrafficJams_figure_circular-traffic-model">
+  <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Gif of traffic jams. Squares indicate the position of the drivers; triangles indicate places where one driver has to brake to avoid another.</caption>
+  <image source="HerdsFlocksAndTrafficJams/Figures/Traffic_Jam.gif" width="50%">
+    <shortdescription>Blue squares arranged around a circular track, some bunching closer together than others as the animation runs.</shortdescription>
+    <description>
+      <p>The animation shows a set of evenly-spaced blue squares traveling around a circular track, representing cars on a circular road. As the simulation runs, small differences in speed cause squares to bunch together into clusters (traffic jams) while gaps open up elsewhere on the track. When a square catches up too closely to the one ahead, a small triangle briefly appears at that spot to mark a braking event, after which the square resumes moving and the pattern continues to shift around the circle.</p>
+    </description>
+  </image>
+</figure>
   <p>What causes traffic jams? Sometimes there is an obvious cause, like an accident, a speed trap, or something else that disturbs the flow of traffic. But other times traffic jams appear for no apparent reason.</p>
   <p>Agent-based models can help explain spontaneous traffic jams. As an example, we implement a highway simulation based on a model in Mitchell Resnick's book, <em>Turtles, Termites and Traffic Jams.</em></p>
   <p>Here's the class that represents the <q>highway</q>:</p>
@@ -89,11 +94,16 @@
   <p>The attributes <c>loc</c> and <c>speed</c> are the location and speed of the driver.</p>
   <p>This implementation of <c>choose_acceleration</c> is simple: it always accelerates at the maximum rate.</p>
   <p>Since the cars start out equally spaced, we expect them all to accelerate until they reach the speed limit, or until their speed exceeds the space between them. At that point, at least one <q>collision</q> will occur, causing some cars to stop.</p>
-  <figure align="center" xml:id="hft-fig-1">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Simulation of drivers on a circular highway at three points in time. Squares indicate the position of the drivers; triangles indicate places where one driver has to brake to avoid another.</caption>
-    <image source="HerdsFlocksAndTrafficJams/Figures/DRIVER_SIM.png" width="50%" alt="&quot; Simulation of drivers on a circular highway at three points in time. Squares indicate the position of the drivers; triangles indicate places where one driver has to brake to avoid another.&quot;"/>
-  </figure>
-  <p><xref ref="hft-fig-1"/> shows a few steps in this process, starting with 30 cars and <c>eps=0.02</c>. On the left is the configuration after 16 time steps, with the highway mapped to a circle. Because of random noise, some cars are going faster than others, and the spacing has become uneven.</p>
+<figure align="center" xml:id="hft-fig-circular-highway-snapshots">
+  <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Simulation of drivers on a circular highway at three points in time. Squares indicate the position of the drivers; triangles indicate places where one driver has to brake to avoid another.</caption>
+  <image source="HerdsFlocksAndTrafficJams/Figures/DRIVER_SIM.png" width="50%">
+    <shortdescription>Three circular tracks of blue squares, each showing a small red triangle where cars bunch up and one driver brakes.</shortdescription>
+    <description>
+      <p>The figure shows three side-by-side circles of blue squares, each circle representing the same circular highway at a different point in time. In the first circle, the squares are spaced fairly evenly with a small red triangle marking one spot where braking occurs. In the second and third circles, small clusters of squares bunch closer together in one or two places, each marked by a red triangle, while the squares elsewhere on the circle remain more evenly spaced. Comparing the three circles from left to right shows how these clusters, and the associated braking points, shift position and grow over time as the traffic jam develops.</p>
+    </description>
+  </image>
+</figure>
+  <p><xref ref="hft-fig-circular-highway-snapshots"/> shows a few steps in this process, starting with 30 cars and <c>eps=0.02</c>. On the left is the configuration after 16 time steps, with the highway mapped to a circle. Because of random noise, some cars are going faster than others, and the spacing has become uneven.</p>
   <p>During the next time step (middle) there are two collisions, indicated by the triangles.</p>
   <p>During the next time step (right) two cars collide with the stopped cars, and we can see the initial formation of a traffic jam. Once a jam forms, it tends to persist, with additional cars approaching from behind and colliding, and with cars in the front accelerating away.</p>
   <p>Under some conditions, the jam itself propagates backwards, as you can see if you watch the animations in the notebook for this chapter.</p>
