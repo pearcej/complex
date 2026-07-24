@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
 <section xml:id="herds-flocks-and-traffic-jams_self-check">
   <title>Self Check</title>
-  <exercise>
+ <exercise>
     <statement>
       <p>The drivers had control over one thing that eventually caused them to create the traffic jams, which was <BlankNode/><var/> .   </p>
     </statement>
     <setup>
       <var>
-        <condition string="^\s*[Aa]cceleration\s*$">
+        <condition string="^\s*[Aa][Cc][Cc][Ee][Ll][Ee][Rr][Aa][Tt][Ii][Oo][Nn]\s*$">
           <feedback>
             <p>Correct, they had control over speed!</p>
           </feedback>
         </condition>
-        <condition string="^\s*x\s*$">
+        <condition string="^\s*[Xx]\s*$">
           <feedback>
             <p>Incorrect, please refer to the section 11.2.</p>
           </feedback>
