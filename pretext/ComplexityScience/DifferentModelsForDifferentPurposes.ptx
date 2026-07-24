@@ -21,7 +21,7 @@
     </statement>
     <setup>
       <var>
-        <condition string="^\s*[Pp]redict\s*$">
+        <condition string="^\s*[Pp][Rr][Ee][Dd][Ii][Cc][Tt]\s*$">
           <feedback>
             <p>Good job</p>
           </feedback>
@@ -38,7 +38,7 @@
         </condition>
       </var>
       <var>
-        <condition string="^\s*[Ee]xplain\s*$">
+        <condition string="^\s*[Ee][Xx][Pp][Ll][Aa][Ii][Nn]\s*$">
           <feedback>
             <p>Good job</p>
           </feedback>
