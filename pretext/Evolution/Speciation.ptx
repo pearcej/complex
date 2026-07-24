@@ -9,22 +9,32 @@
 
     def distance(self, loc1, loc2):
         return np.sum(np.logical_xor(loc1, loc2))</pre>
-  <figure align="center" xml:id="evo-fig-5">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Mean distance between agents over time.</caption>
-    <image source="Evolution/Figures/DIST_OVER_TIME.png" width="50%" alt="&quot; Mean distance between agents over time.&quot;"/>
-  </figure>
+<figure align="center" xml:id="evo-fig-mean-distance-between-agents">
+  <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Mean distance between agents over time.</caption>
+  <image source="Evolution/Figures/DIST_OVER_TIME.png" width="50%">
+    <shortdescription>A single jagged orange line rising sharply, peaking early, then fluctuating and gradually trending downward.</shortdescription>
+    <description>
+      <p>The graph plots mean distance between agents (0.0 to 2.75, y-axis) against time (0 to 500, x-axis) as a single jagged orange line. The line starts near 0 at time 0 and rises sharply, reaching its highest peak of about 2.75 around time 50. It then fluctuates noisily, generally trending downward through roughly time 200, settling into a lower range mostly between about 0.5 and 1.5 for the remainder of the time span, though brief spikes toward 1.5 to 2.0 still occur intermittently. The line remains visibly noisy and jagged throughout, without settling into a smooth, stable plateau.</p>
+    </description>
+  </image>
+</figure> 
   <p>The <c>logical_xor</c> function computes <q>exclusive OR</q>, which is <c>True</c> for bits that differ, and <c>False</c> for the bits that are the same.</p>
   <p>To quantify the dispersion of a population, we can compute the mean of the distances between pairs of agents. In the notebook for this chapter, you'll see the <c>MeanDistance</c> instrument, which computes this metric after each time step.</p>
-  <p><xref ref="evo-fig-5"/> shows mean distance between agents over time. Because we start with identical mutants, the initial distances are 0. As mutations occur, mean distance increases, reaching a maximum while the population migrates across the landscape.</p>
+  <p><xref ref="evo-fig-mean-distance-between-agents"/> shows mean distance between agents over time. Because we start with identical mutants, the initial distances are 0. As mutations occur, mean distance increases, reaching a maximum while the population migrates across the landscape.</p>
   <p>Once the agents discover the optimal location, mean distance decreases until the population reaches an equilibrium where increasing distance due to mutation is balanced by decreasing distance as agents far from the optimal location disappear. In these simulations, the mean distance in equilibrium is near 1; that is, most agents are only one mutation away from optimal.</p>
   <p>Now we are ready to look for new species. To model a simple kind of speciation, suppose a population evolves in an unchanging environment until it reaches steady state (like some species we find in nature that seem to have changed very little over long periods of time).</p>
   <p>Now suppose we either change the environment or transport the population to a new environment. Some features that increased fitness in the old environment might decrease it in the new environment, and vice versa.</p>
   <p>We can model these scenarios by running a simulation until the population reaches steady state, then changing the fitness landscape, and then resuming the simulation until the population reaches steady state again.</p>
-  <figure align="center" xml:id="evo-fig-6">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Mean fitness over time. After 500 time steps, we change the fitness landscape.</caption>
-    <image source="Evolution/Figures/500ST_MEAN_FIT.png" width="50%" alt="&quot;  Mean fitness over time. After 500 time steps, we change the fitness landscape.&quot;"/>
-  </figure>
-  <p><xref ref="evo-fig-6"/> shows results from a simulation like that. We start with 100 identical mutants at a random location, and run the simulation for 500 time steps. At that point, many agents are at the optimal location, which has fitness near 0.65 in this example. The genotypes of the agents form a cluster, with the mean distance between agents near 1.</p>
+<figure align="center" xml:id="evo-fig-mean-fitness-landscape-change">
+  <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Mean fitness over time. After 500 time steps, we change the fitness landscape.</caption>
+  <image source="Evolution/Figures/500ST_MEAN_FIT.png" width="50%">
+    <shortdescription>A single line rising and leveling off, then dropping sharply at the midpoint before rising and leveling off again higher up.</shortdescription>
+    <description>
+      <p>The graph plots mean fitness (0.50 to 0.75, y-axis) against time (0 to 1000, x-axis) as a single blue line, with a vertical gray line marking time 500. From time 0 to about 100, the line rises steeply from around 0.47 to about 0.65, then levels off, fluctuating gently between about 0.65 and 0.67 until time 500. At time 500, marking the change in fitness landscape, the line drops sharply to about 0.50. It then rises steeply again over the next 100 to 150 time steps, reaching about 0.75 by roughly time 700, and levels off there for the remainder of the graph, fluctuating slightly between about 0.75 and 0.77 through time 1000.</p>
+    </description>
+  </image>
+</figure>
+  <p><xref ref="evo-fig-mean-fitness-landscape-change"/> shows results from a simulation like that. We start with 100 identical mutants at a random location, and run the simulation for 500 time steps. At that point, many agents are at the optimal location, which has fitness near 0.65 in this example. The genotypes of the agents form a cluster, with the mean distance between agents near 1.</p>
   <p>After 500 steps, we run <c>FitnessLandscape.set_values</c>, which changes the fitness landscape; then we resume the simulation. Mean fitness is lower, as we expect because the optimal location in the old landscape is no better than a random location in the new landscape.</p>
   <p>After the change, mean fitness increases again as the population migrates across the new landscape, eventually finding the new optimum, which has fitness near 0.75 (which happens to be higher in this example, but needn't be).</p>
   <p>Once the population reaches steady state, it forms a new cluster, with mean distance between agents near 1 again.</p>
