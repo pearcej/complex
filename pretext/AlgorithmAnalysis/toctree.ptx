@@ -6,4 +6,5 @@
         <xi:include href='./AlgorithmAnalysisExamples.ptx' />
         <xi:include href='./Glossary.ptx' />
         <xi:include href='./Matching.ptx' />
+        <xi:include href='./SelfCheck.ptx' />
     </chapter>
