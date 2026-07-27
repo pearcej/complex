@@ -3,7 +3,7 @@
   <title>Randomness</title>
 <figure align="center" xml:id="cellular-automatons_rule30-figure">
   <caption>Rule 30 after 100 time steps.</caption>
-  <image source="CellularAutomatons/Figures/thinkcomplexity2018.png" width="50%">
+  <image source="CellularAutomatons/Figures/rule30-100steps.png" width="50%">
     <shortdescription>An irregular, seemingly random triangular pattern with no visible repeating structure.</shortdescription>
     <description>
       <p>

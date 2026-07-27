@@ -39,7 +39,7 @@
 
 <figure align="center" xml:id="cellular-automatons_wolfram-rule50-figure">
   <caption>Rule 50 after 10 time steps</caption>
-  <image source="CellularAutomatons/Figures/thinkcomplexity2016.png" width="50%">
+  <image source="CellularAutomatons/Figures/rule50-10steps.png" width="50%">
     <shortdescription>A symmetric triangular pattern of black and white cells growing outward from a single center cell.</shortdescription>
     <description>
       <p>
