@@ -40,7 +40,7 @@ return np.nanmean(cu)</pre>
     </statement>
     <setup>
       <var>
-        <condition number="[2, 2]">
+        <condition number="2" tolerance = "0.5">
           <feedback>
             <p>Correct!</p>
           </feedback>
@@ -52,7 +52,7 @@ return np.nanmean(cu)</pre>
         </condition>
       </var>
       <var>
-        <condition string="^\s*undefined\s*$">
+        <condition string="^\s*[Uu][Nn][Dd][Ee][Ff][Ii][Nn][Ee][Dd]\s*$">
           <feedback>
             <p>Correct!</p>
           </feedback>
@@ -64,7 +64,7 @@ return np.nanmean(cu)</pre>
         </condition>
       </var>
       <var>
-        <condition string="^\s*not\s+a\s+number\s*$">
+        <condition string="^\s*[Nn][Oo][Tt]\s+[Aa]\s+[Nn][Uu][Mm][Bb][Ee][Rr]\s*$">
           <feedback>
             <p>Correct!</p>
           </feedback>

@@ -7,22 +7,22 @@
     </statement>
     <setup>
       <var>
-        <condition string="^\s*ring\s+lattice\s*$">
+        <condition string="^\s*[Rr][Ii][Nn][Gg]\s+[Ll][Aa][Tt][Tt][Ii][Cc][Ee]\s*$">
           <feedback>
             <p>Correct.</p>
           </feedback>
         </condition>
-        <condition string="^\s*WS\s+graphs\s*$">
+        <condition string="^\s*[Ww][Ss]\s+[Gg][Rr][Aa][Pp][Hh][Ss]\s*$">
           <feedback>
             <p>Incorrect. WS graphs in the book refer to the Watts-Strogatz model that is based on a random graph generation model which produces graphs with small-world properties.</p>
           </feedback>
         </condition>
-        <condition string="^\s*Regular\s+graph\s*$">
+        <condition string="^\s*[Rr][Ee][Gg][Uu][Ll][Aa][Rr]\s+[Gg][Rr][Aa][Pp][Hh]\s*$">
           <feedback>
             <p>Incorrect. A regular graph is a graph where each node has the same number of neighbors. This graph is a kind of regular graph. Please try again.</p>
           </feedback>
         </condition>
-        <condition string="^\s*x\s*$">
+        <condition string="^\s*[Xx]\s*$">
           <feedback>
             <p>Try again.</p>
           </feedback>
