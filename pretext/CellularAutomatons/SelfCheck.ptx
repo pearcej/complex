@@ -1,23 +1,23 @@
 <?xml version="1.0"?>
 <section xml:id="cellular-automatons_self-check">
   <title>Self Check</title>
-  <exercise>
+<exercise>
     <statement>
       <p>Several CAs are Turing complete, this means they can compute any computable function. What is this property called? <BlankNode/> <var/>  </p>
     </statement>
     <setup>
       <var>
-        <condition string="^\s*universality\s*$">
+        <condition string="^\s*[Uu][Nn][Ii][Vv][Ee][Rr][Ss][Aa][Ll][Ii][Tt][Yy]\s*$">
           <feedback>
             <p>Correct!</p>
           </feedback>
         </condition>
-        <condition string="^\s*spaceships\s*$">
+        <condition string="^\s*[Ss][Pp][Aa][Cc][Ee][Ss][Hh][Ii][Pp][Ss]\s*$">
           <feedback>
             <p>Incorrect, a spaceship is a structure that appear within CAs that translate in space, apperaing as diagonals with different slopes, depending on how many time steps they take to shift by one column.</p>
           </feedback>
         </condition>
-        <condition string="^\s*x\s*$">
+        <condition string="^\s*[Xx]\s*$">
           <feedback>
             <p>Incorrect. Please take a closer look to the properties of CAs.</p>
           </feedback>
@@ -31,17 +31,17 @@
     </statement>
     <setup>
       <var>
-        <condition string="^\s*unfalsifiable\s*$">
+        <condition string="^\s*[Uu][Nn][Ff][Aa][Ll][Ss][Ii][Ff][Ii][Aa][Bb][Ll][Ee]\s*$">
           <feedback>
             <p>Correct, unfalsifiable hypoteses are impossible ot refute but are useless when you want to make reliable predicions about the wrold.</p>
           </feedback>
         </condition>
-        <condition string="^\s*falsifiable\s*$">
+        <condition string="^\s*[Ff][Aa][Ll][Ss][Ii][Ff][Ii][Aa][Bb][Ll][Ee]\s*$">
           <feedback>
             <p>Incorrect, falsifiable hypotheses are able to be proven or disproven.</p>
           </feedback>
         </condition>
-        <condition string="^\s*x\s*$">
+        <condition string="^\s*[Xx]\s*$">
           <feedback>
             <p>Incorrect, please try again.</p>
           </feedback>
