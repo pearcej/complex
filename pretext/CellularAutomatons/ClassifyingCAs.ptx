@@ -3,7 +3,7 @@
   <title>Classifying CAs</title>
 <figure align="center" xml:id="cellular-automatons_rule18-figure">
   <caption>Rule 18 after 64 steps.</caption>
-  <image source="CellularAutomatons/Figures/thinkcomplexity2017.png" width="50%">
+  <image source="CellularAutomatons/Figures/rule18-64steps.png" width="50%">
     <shortdescription>A fractal-like triangular pattern with nested, self-similar triangular gaps.</shortdescription>
     <description>
       <p>
