@@ -20,7 +20,7 @@
   <p>Some Class 2 CAs generate patterns that are intricate and pretty, but compared to Classes 3 and 4, they are relatively simple.</p>
   <exercise>
     <statement>
-      <p>Wolfram proposed that there were <BlankNode/> <var/> Classes after examining the results of his first experiments to test all 256 CA possibilities. </p>
+      <p>Wolfram proposed that there were <BlankNode/> <var/> classes after examining the results of his first experiments to test all 256 CA possibilities. </p>
     </statement>
     <setup>
       <var>
