@@ -11,38 +11,38 @@
   <p>Of course, we have to keep in mind the limitations of this argument: Schelling's model demonstrates a possible cause of segregation, but says nothing about actual causes.</p>
   <exercise>
     <statement>
-      <p>Schelling's model demonstrates a <var/> cause of segregation, but says nothing about <var/> causes.</p>
+      <p>Schelling's model demonstrates a <BlankNode/><var/> cause of segregation, but says nothing about <BlankNode/><var/> causes.</p>
     </statement>
     <setup>
       <var>
-        <condition string="^\s*possible\s*$">
+        <condition string="^\s*[Pp][Oo][Ss][Ss][Ii][Bb][Ll][Ee]\s*$">
           <feedback>
             <p>Correct!</p>
           </feedback>
         </condition>
-        <condition string="^\s*actual\s*$">
+        <condition string="^\s*[Aa][Cc][Tt][Uu][Aa][Ll]\s*$">
           <feedback>
             <p>Incorrect, look again at what is demonstrated through the model.</p>
           </feedback>
         </condition>
-        <condition string="^\s*x\s*$">
+        <condition string="^\s*[Xx]\s*$">
           <feedback>
             <p>Incorrect, please try again.</p>
           </feedback>
         </condition>
       </var>
       <var>
-        <condition string="^\s*actual\s*$">
+        <condition string="^\s*[Aa][Cc][Tt][Uu][Aa][Ll]\s*$">
           <feedback>
             <p>Correct!</p>
           </feedback>
         </condition>
-        <condition string="^\s*possible\s*$">
+        <condition string="^\s*[Pp][Oo][Ss][Ss][Ii][Bb][Ll][Ee]\s*$">
           <feedback>
             <p>Look again at what the sections say about the model demonstrating.</p>
           </feedback>
         </condition>
-        <condition string="^\s*x\s*$">
+        <condition string="^\s*[Xx]\s*$">
           <feedback>
             <p>Incorrect, please try again.</p>
           </feedback>

@@ -20,12 +20,12 @@
     </statement>
     <setup>
       <var>
-        <condition string="^\s*computationally\s+irreducible\s*$">
+        <condition string="^\s*[Cc][Oo][Mm][Pp][Uu][Tt][Aa][Tt][Ii][Oo][Nn][Aa][Ll][Ll][Yy]\s+[Ii][Rr][Rr][Ee][Dd][Uu][Cc][Ii][Bb][Ll][Ee]\s*$">
           <feedback>
             <p>Correct, just like other complex systesm cellular automatons are computationally irreducible.</p>
           </feedback>
         </condition>
-        <condition string="^\s*x\s*$">
+        <condition string="^\s*[Xx]\s*$">
           <feedback>
             <p>Incorrect</p>
           </feedback>
