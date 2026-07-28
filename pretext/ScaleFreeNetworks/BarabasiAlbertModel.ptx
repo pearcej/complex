@@ -78,46 +78,46 @@
     </statement>
     <setup>
       <var>
-        <condition string="^\s*growth\s*$">
+        <condition string="^\s*[Gg][Rr][Oo][Ww][Tt][Hh]\s*$">
           <feedback>
             <p>Correct, a BA model will start with a small graph and add vertices one at a time instead of starting with a fixed number of vertices.</p>
           </feedback>
         </condition>
-        <condition string="^\s*preferential\s+attachment\s*$">
+        <condition string="^\s*[Pp][Rr][Ee][Ff][Ee][Rr][Ee][Nn][Tt][Ii][Aa][Ll]\s+[Aa][Tt][Tt][Aa][Cc][Hh][Mm][Ee][Nn][Tt]\s*$">
           <feedback>
             <p>Please move this answer to the second blank.</p>
           </feedback>
         </condition>
-        <condition string="^\s*x\s*$">
+        <condition string="^\s*[Xx]\s*$">
           <feedback>
             <p>Incorrect.</p>
           </feedback>
         </condition>
       </var>
       <var>
-        <condition string="^\s*preferential\s+attachment\s*$">
+        <condition string="^\s*[Pp][Rr][Ee][Ff][Ee][Rr][Ee][Nn][Tt][Ii][Aa][Ll]\s+[Aa][Tt][Tt][Aa][Cc][Hh][Mm][Ee][Nn][Tt]\s*$">
           <feedback>
             <p>Correct, when a new edge is created, it is more likely to connect to a vertex that already has a large number of edges.</p>
           </feedback>
         </condition>
-        <condition string="^\s*growth\s*$">
+        <condition string="^\s*[Gg][Rr][Oo][Ww][Tt][Hh]\s*$">
           <feedback>
             <p>Please move this answer to the first blank.</p>
           </feedback>
         </condition>
-        <condition string="^\s*x\s*$">
+        <condition string="^\s*[Xx]\s*$">
           <feedback>
             <p>Incorrect.</p>
           </feedback>
         </condition>
       </var>
       <var>
-        <condition string="^\s*power\s+law\s*$">
+        <condition string="^\s*[Pp][Oo][Ww][Ee][Rr]\s+[Ll][Aa][Ww]\s*$">
           <feedback>
             <p>Corect.</p>
           </feedback>
         </condition>
-        <condition string="^\s*x\s*$">
+        <condition string="^\s*[Xx]\s*$">
           <feedback>
             <p>Incorrect.</p>
           </feedback>
