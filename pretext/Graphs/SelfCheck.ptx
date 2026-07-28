@@ -110,25 +110,20 @@
       </block>
     </blocks>
   </exercise>
-  <exercise>
+ <exercise>
     <statement>
 <p>The order of growth for graph algorithms is usually expressed as a function of n, <var/> (nodes), and m, <var/>.</p>
     </statement>
     <setup>
       <var>
-        <condition string="^\s*[Tt][Hh][Ee]\s+[Nn][Uu][Mm][Bb][Ee][Rr]\s+[Oo][Ff]\s+[Vv][Ee][Rr][Tt][Ii][Cc][Ee][Ss]\s*$">
+        <condition string="^\s*([Tt][Hh][Ee]\s+)?[Nn][Uu][Mm][Bb][Ee][Rr]\s+[Oo][Ff]\s+[Vv][Ee][Rr][Tt][Ii][Cc][Ee][Ss]\s*$">
           <feedback>
             <p>Correct!</p>
           </feedback>
         </condition>
-        <condition string="^\s*[Tt][Hh][Ee]\s+[Nn][Uu][Mm][Bb][Ee][Rr]\s+[Oo][Ff]\s+[Ee][Dd][Gg][Ee][Ss]\s*$">
+        <condition string="^\s*([Tt][Hh][Ee]\s+)?[Nn][Uu][Mm][Bb][Ee][Rr]\s+[Oo][Ff]\s+[Ee][Dd][Gg][Ee][Ss]\s*$">
           <feedback>
             <p>Close, but this refers to something else.</p>
-          </feedback>
-        </condition>
-        <condition string="^\s*[Nn][Uu][Mm][Bb][Ee][Rr]\s+[Oo][Ff]\s+[Vv][Ee][Rr][Tt][Ii][Cc][Ee][Ss]\s*$">
-          <feedback>
-            <p>Close, add the to the beginning of your statement</p>
           </feedback>
         </condition>
         <condition string="^\s*[Xx]\s*$">
@@ -138,19 +133,14 @@
         </condition>
       </var>
       <var>
-        <condition string="^\s*[Tt][Hh][Ee]\s+[Nn][Uu][Mm][Bb][Ee][Rr]\s+[Oo][Ff]\s+[Ee][Dd][Gg][Ee][Ss]\s*$">
+        <condition string="^\s*([Tt][Hh][Ee]\s+)?[Nn][Uu][Mm][Bb][Ee][Rr]\s+[Oo][Ff]\s+[Ee][Dd][Gg][Ee][Ss]\s*$">
           <feedback>
             <p>Correct!</p>
           </feedback>
         </condition>
-        <condition string="^\s*[Tt][Hh][Ee]\s+[Nn][Uu][Mm][Bb][Ee][Rr]\s+[Oo][Ff]\s+[Vv][Ee][Rr][Tt][Ii][Cc][Ee][Ss]\s*$">
+        <condition string="^\s*([Tt][Hh][Ee]\s+)?[Nn][Uu][Mm][Bb][Ee][Rr]\s+[Oo][Ff]\s+[Vv][Ee][Rr][Tt][Ii][Cc][Ee][Ss]\s*$">
           <feedback>
             <p>Close, but this refers to something else.</p>
-          </feedback>
-        </condition>
-        <condition string="^\s*[Nn][Uu][Mm][Bb][Ee][Rr]\s+[Oo][Ff]\s+[Ee][Dd][Gg][Ee][Ss]\s*$">
-          <feedback>
-            <p>Close, add the to the beginning of your statement</p>
           </feedback>
         </condition>
         <condition string="^\s*[Xx]\s*$">
