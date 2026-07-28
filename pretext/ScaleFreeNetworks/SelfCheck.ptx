@@ -64,7 +64,7 @@
     </choices>
   </exercise>
 
-  <exercise>
+<exercise>
     <statement>
       <p>According to this model,  if two things are similar in some ways, they are likely to be similar in other ways. Keeping this in mind fill in the blanks.</p>
        <p>
@@ -89,7 +89,7 @@ We conclude that System exhibits Observable because System is similar to Model, 
     </statement>
 <setup>
       <var>
-        <condition string="^\s*[Oo]bservable\s*$">
+        <condition string="^\s*[Oo][Bb][Ss][Ee][Rr][Vv][Aa][Bb][Ll][Ee]\s*$">
           <feedback>
             <p>Correct</p>
           </feedback>
@@ -102,7 +102,7 @@ We conclude that System exhibits Observable because System is similar to Model, 
       </var>
 
       <var>
-        <condition string="^\s*[Ss]ystem\s*$">
+        <condition string="^\s*[Ss][Yy][Ss][Tt][Ee][Mm]\s*$">
           <feedback>
             <p>Correct</p>
           </feedback>
@@ -115,7 +115,7 @@ We conclude that System exhibits Observable because System is similar to Model, 
       </var>
 
       <var>
-        <condition string="^\s*[Bb]ehavior\s*$">
+        <condition string="^\s*[Bb][Ee][Hh][Aa][Vv][Ii][Oo][Rr]\s*$">
           <feedback>
             <p>Correct</p>
           </feedback>
@@ -128,7 +128,20 @@ We conclude that System exhibits Observable because System is similar to Model, 
       </var>
 
       <var>
-        <condition string="^\s*[Bb]ehavior\s*$">
+        <condition string="^\s*[Bb][Ee][Hh][Aa][Vv][Ii][Oo][Rr]\s*$">
+          <feedback>
+            <p>Correct</p>
+          </feedback>
+        </condition>
+        <condition string=".*">
+          <feedback>
+            <p>Incorrect</p>
+          </feedback>
+        </condition>
+      </var>
+
+      <var>
+        <condition string="^\s*[Oo][Bb][Ss][Ee][Rr][Vv][Aa][Bb][Ll][Ee]\s*$">
           <feedback>
             <p>Correct</p>
           </feedback>
