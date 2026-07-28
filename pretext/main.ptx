@@ -26,14 +26,14 @@
   <!--  <xi:include href="./Appendix1/toctree.ptx"/> -->
   <!--  <xi:include href="./Appendix2/toctree.ptx"/> -->
 
-     <!-- Include frontmatter -->
+ <!-- Appendices: its own top-level entry -->
     <xi:include href="./backmatter.ptx"/>
-    
-    
-    <backmatter>
-        <index>
-            <index-list/>
-        </index>
-    </backmatter>
+
+
+    <index>
+    <title>Index</title>
+    <index-list/>
+  </index>
+
   </book>
 </pretext>
