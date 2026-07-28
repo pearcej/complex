@@ -7,24 +7,24 @@
     </statement>
     <setup>
       <var>
-        <condition string="^\s*[Ss]elf\s*[- ]?\s*[Oo]rganized\s*$">
+        <condition string="^\s*[Ss][Ee][Ll][Ff]\s*[- ]?\s*[Oo][Rr][Gg][Aa][Nn][Ii][Zz][Ee][Dd]\s*$">
           <feedback>
             <p>Correct.</p>
           </feedback>
         </condition>
-        <condition string="^\s*x\s*$">
+        <condition string="^\s*[Xx]\s*$">
           <feedback>
             <p>Incorrect.</p>
           </feedback>
         </condition>
       </var>
       <var>
-        <condition string="^\s*critical\s*$">
+        <condition string="^\s*[Cc][Rr][Ii][Tt][Ii][Cc][Aa][Ll]\s*$">
           <feedback>
             <p>Correct.</p>
           </feedback>
         </condition>
-        <condition string="^\s*x\s*$">
+        <condition string="^\s*[Xx]\s*$">
           <feedback>
             <p>Incorrect.</p>
           </feedback>
@@ -72,34 +72,34 @@
     </statement>
     <setup>
       <var>
-        <condition string="^\s*[Rr]eductionist\s*$">
+        <condition string="^\s*[Rr][Ee][Dd][Uu][Cc][Tt][Ii][Oo][Nn][Ii][Ss][Tt]\s*$">
           <feedback>
             <p>Correct.</p>
           </feedback>
         </condition>
-        <condition string="^\s*[Hh]olistic\s*$">
+        <condition string="^\s*[Hh][Oo][Ll][Ii][Ss][Tt][Ii][Cc]\s*$">
           <feedback>
             <p>Incorrect, holistic models are more focused on similarities between systems and less interested in analogous parts.</p>
           </feedback>
         </condition>
-        <condition string="^\s*x\s*$">
+        <condition string="^\s*[Xx]\s*$">
           <feedback>
             <p>Incorrect.</p>
           </feedback>
         </condition>
       </var>
       <var>
-        <condition string="^\s*[Hh]olistic\s*$">
+        <condition string="^\s*[Hh][Oo][Ll][Ii][Ss][Tt][Ii][Cc]\s*$">
           <feedback>
             <p>Correct.</p>
           </feedback>
         </condition>
-        <condition string="^\s*[Rr]eductionist\s*$">
+        <condition string="^\s*[Rr][Ee][Dd][Uu][Cc][Tt][Ii][Oo][Nn][Ii][Ss][Tt]\s*$">
           <feedback>
             <p>Incorrect, reductionists models describe a system by describing its parts and their interactions.</p>
           </feedback>
         </condition>
-        <condition string="^\s*x\s*$">
+        <condition string="^\s*[Xx]\s*$">
           <feedback>
             <p>Incorrect.</p>
           </feedback>
@@ -107,40 +107,41 @@
       </var>
     </setup>
   </exercise>
+
   <exercise>
     <statement>
       <p>The <BlankNode/><var/> cause of an avalanch in a sand pile is a grain of sand and the <BlankNode/><var/>  cause is the structe and dynamics of the systems as a whole.</p>
     </statement>
     <setup>
       <var>
-        <condition string="^\s*[Pp]roximate\s*$">
+        <condition string="^\s*[Pp][Rr][Oo][Xx][Ii][Mm][Aa][Tt][Ee]\s*$">
           <feedback>
             <p>Correct.</p>
           </feedback>
         </condition>
-        <condition string="^\s*[Uu]ltimate\s*$">
+        <condition string="^\s*[Uu][Ll][Tt][Ii][Mm][Aa][Tt][Ee]\s*$">
           <feedback>
             <p>Incorrect, the ultimate cause is the structure and dynamics as a whole.</p>
           </feedback>
         </condition>
-        <condition string="^\s*x\s*$">
+        <condition string="^\s*[Xx]\s*$">
           <feedback>
             <p>Incorrect.</p>
           </feedback>
         </condition>
       </var>
       <var>
-        <condition string="^\s*[Uu]ltimate\s*$">
+        <condition string="^\s*[Uu][Ll][Tt][Ii][Mm][Aa][Tt][Ee]\s*$">
           <feedback>
             <p>Correct.</p>
           </feedback>
         </condition>
-        <condition string="^\s*[Pp]roximate\s*$">
+        <condition string="^\s*[Pp][Rr][Oo][Xx][Ii][Mm][Aa][Tt][Ee]\s*$">
           <feedback>
             <p>Incorrect, the proximate cause is the grain of sand that starts the avalanche.</p>
           </feedback>
         </condition>
-        <condition string="^\s*x\s*$">
+        <condition string="^\s*[Xx]\s*$">
           <feedback>
             <p>Incorrect.</p>
           </feedback>
