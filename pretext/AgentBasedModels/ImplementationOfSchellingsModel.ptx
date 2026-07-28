@@ -64,12 +64,12 @@ unhappy_locs = locs_where(unhappy)</pre>
     </statement>
     <setup>
       <var>
-        <condition string="^\s*greater\s*$">
+        <condition string="^\s*[Gg][Rr][Ee][Aa][Tt][Ee][Rr]\s*$">
           <feedback>
             <p>Correct!</p>
           </feedback>
         </condition>
-        <condition string="^\s*less\s*$">
+        <condition string="^\s*[Ll][Ee][Ss][Ss]\s*$">
           <feedback>
             <p>Look again at the relationship of the two numbers.</p>
           </feedback>
@@ -84,7 +84,7 @@ unhappy_locs = locs_where(unhappy)</pre>
             <p>please use a word to describe the relationship</p>
           </feedback>
         </condition>
-        <condition string="^\s*x\s*$">
+        <condition string="^\s*[Xx]\s*$">
           <feedback>
             <p>Incorrect please try again.</p>
           </feedback>
