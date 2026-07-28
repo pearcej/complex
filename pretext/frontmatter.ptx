@@ -36,11 +36,29 @@
     <titlepage-items/>
   </titlepage>
 
-  <colophon xml:id="preface_repository_and_license">
-	<title>Repository and License</title>
-	
-    <colophon-items/>
-  </colophon>
+<preface xml:id="preface_repository_and_license">
+    <title>Repository and License</title>
+
+    <p>
+      <url href="https://github.com/pearcej/complex">Repository on Github</url>
+    </p>
+
+    <p>
+      <url href="https://github.com/pearcej/complex/issues">Issue Queue on Github</url>
+    </p>
+
+    <p>
+      Found a typo, broken link, or have a suggestion? Please open a <url href="https://github.com/pearcej/complex/issues/new">new issue</url> describing the problem, including the chapter or section title and, if possible, a link to the specific page. If you don't already have a Github account, you'll be prompted to create one first <mdash /> this is free and only takes a minute.
+    </p>
+
+    <p>
+      ©2020<ndash />present Dr. Jan Pearce, Editor
+    </p>
+
+    <p>
+      This work is licensed under the Creative Commons Non-Commercial Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <url href="https://creativecommons.org/licenses/by-nc-sa/4.0/" visual="creativecommons.org/licenses/by-nc-sa/4.0/">CreativeCommons.org</url>. All product names, logos, and brands are property of their respective owners. All company, product and service names used in this text are for identification purposes only. Use of these names, logos, and brands does not imply endorsement. Many images used in this text are created by the original author, Allen Downey, and licensed under CC-BY-NC-SA except where otherwise noted.
+    </p>
+  </preface>
 
 	<preface xml:id="preface_acknowledgements">
 	<title>Acknowledgements</title>
