@@ -8,43 +8,43 @@
   <p>Most of the time, dropping a single grain causes no cells to topple, so <c>T=1</c> and <c>S=0</c>. But occasionally a single grain can cause an <idx>avalanche</idx><term>avalanche</term> that affects a substantial fraction of the grid. The distributions of <c>T</c> and <c>S</c> turn out to be heavy-tailed, which supports the claim that the system is in a critical state.</p>
   <p>They conclude that the sand pile model exhibits <q>self-organized criticality</q>, which means that it evolves toward a critical state without the need for external control or what they call <q>fine tuning</q> of any parameters. And the model stays in a critical state as more grains are added.</p>
   <p>In the next few sections we will replicate their experiments and interpret the results.</p>
-  <exercise>
+ <exercise>
     <statement>
       <p>Bak, Tang and Wiesenfeld conclude that the sand pile model exhibits <BlankNode/><var/>, which means that it evolves toward a <BlankNode/> <var/>without the need for <BlankNode/> <var/>. </p>
     </statement>
 
     <setup>
       <var>
-        <condition string="^\s*[Ss]elf\s+[Oo]rganized\s+[Cc]riticality\s*$">
+        <condition string="^\s*[Ss][Ee][Ll][Ff]\s+[Oo][Rr][Gg][Aa][Nn][Ii][Zz][Ee][Dd]\s+[Cc][Rr][Ii][Tt][Ii][Cc][Aa][Ll][Ii][Tt][Yy]\s*$">
           <feedback>
             <p>Correct!</p>
           </feedback>
         </condition>
-        <condition string="^\s*x\s*$">
+        <condition string="^\s*[Xx]\s*$">
           <feedback>
             <p>Incorrect, please reread the section.</p>
           </feedback>
         </condition>
       </var>
       <var>
-        <condition string="^\s*[Cc]ritical\s+[Ss]tate\s*$">
+        <condition string="^\s*[Cc][Rr][Ii][Tt][Ii][Cc][Aa][Ll]\s+[Ss][Tt][Aa][Tt][Ee]\s*$">
           <feedback>
             <p>Correct!</p>
           </feedback>
         </condition>
-        <condition string="^\s*x\s*$">
+        <condition string="^\s*[Xx]\s*$">
           <feedback>
             <p>Incorrect, please reread the section.</p>
           </feedback>
         </condition>
       </var>
       <var>
-        <condition string="^\s*[Ee]xternal\s+[Cc]ontrol\s*$">
+        <condition string="^\s*[Ee][Xx][Tt][Ee][Rr][Nn][Aa][Ll]\s+[Cc][Oo][Nn][Tt][Rr][Oo][Ll]\s*$">
           <feedback>
             <p>Correct!</p>
           </feedback>
         </condition>
-        <condition string="^\s*x\s*$">
+        <condition string="^\s*[Xx]\s*$">
           <feedback>
             <p>Incorrect, please reread the section.</p>
           </feedback>

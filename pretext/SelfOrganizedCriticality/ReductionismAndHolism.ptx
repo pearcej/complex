@@ -45,16 +45,18 @@
   <p>For reductionist models, realism is the primary virtue, and simplicity is secondary. For holistic models, it is the other way around.</p>
   <exercise>
     <statement>
-      <p>What is compared to genes as a means of understanding the evolutionary system? <var/>  </p>
+      <p>What is compared to genes as a means of understanding the evolutionary system? <BlankNode/><var/></p>
     </statement>
     <setup>
       <var>
-        <p>
-          <BlankNode/>
-        </p>
-        <condition string="^\s*memes\s*$">
+        <condition string="^\s*[Mm][Ee][Mm][Ee][Ss]\s*$">
           <feedback>
             <p>Correct!</p>
+          </feedback>
+        </condition>
+        <condition string=".*">
+          <feedback>
+            <p>Incorrect, please reread the section.</p>
           </feedback>
         </condition>
       </var>
