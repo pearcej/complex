@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="scale-free-networks_generating-ba-graphs">
   <title>Generating BA Graphs</title>
-  <p>In the previous sections we used a NetworkX function to generate BA graphs; now let's see how it works. Here is a version of <c>barabasi_albert_graph</c>, with some changes that were made to make it easier to read:</p>
+  <p>In the previous <xref ref="scale-free-networks_barabasi-albert-model"/> we used a NetworkX function to generate BA graphs; now let's see how it works. Here is a version of <c>barabasi_albert_graph</c>, with some changes that were made to make it easier to read:</p>
   <pre>def barabasi_albert_graph(n, k):
 
 G = nx.empty_graph(k)
