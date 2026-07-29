@@ -58,7 +58,41 @@ return dist</pre>
   <p>In the exercises at the end of this chapter, you'll write a version of Dijkstra's algorithm using DFS, so you'll have a chance to see what goes wrong.</p>
   <exercise label="q1_4_11">
     <statement>
-      <p>Summarize how the Dijkstra's algorithm works.</p>
+       <p> Which of these best summarizes how the Dijkstra's algorithm works.</p>
     </statement>
+    <choices>
+      <choice correct="yes">
+        <statement>
+          <p>Starting from the source, it uses a BFS to process all nodes at distance 1 before those at distance 2, and so on, assigning each node its distance from the source as it is discovered so that each node is first reached by its shortest path.</p>
+        </statement>
+        <feedback>
+          <p>Correct! Because BFS processes nodes level by level, every node is discovered by its shortest path first, which is what makes the distances accurate.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Starting from the source, it uses a DFS to explore one full branch at a time, assigning each node a distance as it goes, which still guarantees the shortest distance is found first.</p>
+        </statement>
+        <feedback>
+          <p>Not quite. This algorithm relies on BFS, not DFS. A DFS explores one branch fully before others, so it could reach a node by a longer path before a shorter one.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>It assigns every node a distance from the source at random, then repeatedly sorts the nodes until the distances stop changing.</p>
+        </statement>
+        <feedback>
+          <p>No. Distances are not random. Each node's distance is set to its parent's distance plus one as it is discovered through the BFS.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>It finds the single longest path from the source to every other node by exploring the graph with a stack.</p>
+        </statement>
+        <feedback>
+          <p>No. Dijkstra's algorithm finds the shortest path, not the longest, and this simplified version uses a queue (BFS), not a stack.</p>
+        </feedback>
+      </choice>
+    </choices>
   </exercise>
 </section>
