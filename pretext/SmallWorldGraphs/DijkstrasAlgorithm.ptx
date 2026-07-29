@@ -5,7 +5,7 @@
             Dijkstra is famous (and notorious) as the author of a series of essays on computer science. Some, like <q>A Case against the GO TO Statement</q>, had a profound effect on programming practice. Others, like <q>On the Cruelty of Really Teaching Computing Science</q>, are entertaining in their cantankerousness, but less effective.</p>
   <p><idx>Dijkstra's algorithm</idx><term>Dijkstra's algorithm</term> solves the <q>single source shortest path problem</q>, which means that it finds the minimum distance from a given <q>source</q> node to every other node in the graph (or at least every connected node).</p>
   <p>We'll present a simplified version of the algorithm that considers all edges the same length. The more general version works with any non-negative edge lengths.</p>
-  <p>The simplified version is similar to the breadth-first search in the previous section except that we replace the set called <c>seen</c> with a dictionary called <c>dist</c>, which maps from each node to its distance from the source:</p>
+  <p>The simplified version is similar to the breadth-first search in the previous <xref ref="small-world-graphs_breadth-first-search"/> except that we replace the set called <c>seen</c> with a dictionary called <c>dist</c>, which maps from each node to its distance from the source:</p>
   <pre>def shortest_path_dijkstra(G, source):
 dist = {source: 0}
 queue = deque([source])
