@@ -81,7 +81,35 @@ b = table[c]</pre>
   </exercise>
   <exercise label="q_7_13">
     <statement>
-      <p>What does the author say about that version of implementation? <em>Refer back to the implementation method referred to in the previous question.</em></p>
+      <p>What does the author say about that version of the implementation? Refer back to the implementation method referred to in the previous question.</p>
+      <p>The author says that version is a straightforward translation of the rules, but that it is <BlankNode/><var/> and <BlankNode/><var/>.</p>
     </statement>
+    <setup>
+      <var>
+        <condition string="^\s*[Vv][Ee][Rr][Bb][Oo][Ss][Ee]\s*$">
+          <feedback>
+            <p>Correct</p>
+          </feedback>
+        </condition>
+        <condition string=".*">
+          <feedback>
+            <p>Incorrect</p>
+          </feedback>
+        </condition>
+      </var>
+
+      <var>
+        <condition string="^\s*[Ss][Ll][Oo][Ww]\s*$">
+          <feedback>
+            <p>Correct</p>
+          </feedback>
+        </condition>
+        <condition string=".*">
+          <feedback>
+            <p>Incorrect</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
   </exercise>
 </section>
