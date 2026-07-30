@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="ca-fig-4">
+<section xml:id="cellular-automatons_spaceships">
   <title>Spaceships</title>
 <figure align="center" xml:id="cellular-automatons_rule110-figure">
   <caption>Rule 110 after 100 time steps.</caption>
