@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <exercises xml:id="physical-modeling_exercises">
   <title>Exercises</title>
-  <p><term>Exercise 1:</term> In <xref ref="physical-modeling_fractals-and-percolation-models"/> we showed that the Rule 18 CA produces a fractal. Can you find other 1-D CAs that produce fractals?</p>
+  <p><term>Exercise 1:</term> In <xref ref="physical-modeling_fractals"/> we showed that the Rule 18 CA produces a fractal. Can you find other 1-D CAs that produce fractals?</p>
   <p>Note: the <c>Cell1D</c> object does not wrap around from the left edge to the right, which creates artifacts at the boundaries for some rules. You might want to use <c>Wrap1D</c>, which is a child class of <c>Cell1D</c> that wraps around. It is defined in <c>Cell1D.py</c> in the repository for this book.</p>
   <p><term>Exercise 2:</term> In 1990 Bak, Chen and Tang proposed a cellular automaton that is an abstract model of a forest fire. Each cell is in one of three states: empty, occupied by a tree, or on fire.</p>
   <p>The rules of the CA are:</p>

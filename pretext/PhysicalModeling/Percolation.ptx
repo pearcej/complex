@@ -2,7 +2,7 @@
 <section xml:id="physical-modeling_percolation">
   <title>Percolation</title>
   <p><idx>percolation</idx><term>Percolation</term> is a process in which a fluid flows through a semi-porous material. Examples include oil in rock formations, water in paper, and hydrogen gas in micropores. Percolation models are also used to study systems that are not literally percolation, including epidemics and networks of electrical resistors.</p>
-  <p>Percolation models are often represented using random graphs like the ones we saw in <xref ref="graphs_what-is-a-graph"/>, but they can also be represented using cellular automatons. In the next few sections we'll explore a 2-D CA that simulates percolation.</p>
+  <p>Percolation models are often represented using random graphs like the ones we saw in <xref ref="graphs_random"/>, but they can also be represented using cellular automatons. In <xref ref="physical-modeling_fractals-and-percolation-models"/> we'll explore a 2-D CA that simulates percolation.</p>
   <p>In this model:</p>
   <p>
     <ul>

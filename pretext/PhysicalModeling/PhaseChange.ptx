@@ -38,7 +38,7 @@
     return qs</pre>
   <p>The result is a list of values for <c>q</c>. We can estimate the critical value, <c>q_crit</c>, by computing the mean of this list. With <c>n=100</c> the mean of <c>qs</c> is about <c>0.59</c>; this value does not seem to depend on <c>n</c>.</p>
   <p>The rapid change in behavior near the critical value is called a <idx>phase change</idx><term>phase change</term> by analogy with phase changes in physical systems, like the way water changes from liquid to solid at its freezing point.</p>
-  <p>A wide variety of systems display a common set of behaviors and characteristics when they are at or near a critical point. These behaviors are known collectively as <idx>critical phenomena</idx><term>critical phenomena</term>. In the next section, we explore one of them: fractal geometry.</p>
+  <p>A wide variety of systems display a common set of behaviors and characteristics when they are at or near a critical point. These behaviors are known collectively as <idx>critical phenomena</idx><term>critical phenomena</term>. In the next <xref ref="physical-modeling_fractals"/>, we explore one of them: fractal geometry.</p>
   <exercise>
     <statement>
       <p>If you wanted to estimate the critical value more precisely you would want to use a <var/>. </p>

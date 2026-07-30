@@ -33,7 +33,7 @@ def __init__(self, n, m, params, noise=0.1):
     self.array2 += rb * cB + reaction - (f+k) * B</pre>
   <p>The parameters are:</p>
   <p><term>ra</term>:
-            The diffusion rate of <c>A</c> (analogous to <c>r</c> in the previous section).</p>
+            The diffusion rate of <c>A</c> (analogous to <c>r</c> in the previous <xref ref="physical-modeling_diffusion"/>).</p>
   <p><term>rb</term>:
             The diffusion rate of <c>B</c>. In most versions of this model, <c>rb</c> is about half of ra.</p>
   <p><term>f</term>:
