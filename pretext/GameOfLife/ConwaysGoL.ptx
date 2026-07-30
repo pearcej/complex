@@ -97,8 +97,58 @@
 
   </exercise>
   <exercise label="q7_2">
-    <statement>
-      <p>What are two of the reasons the author says GoL is popular?</p>
+     <statement>
+      <p>Which of these were the reasons the author says GoL is popular? .</p>
     </statement>
+    <choices>
+      <choice correct="yes">
+        <statement>
+          <p>Simple initial conditions can produce surprisingly complex behavior.</p>
+        </statement>
+        <feedback>
+          <p>Correct! The author lists this as one of the reasons GoL is popular.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>There are many interesting stable patterns, including oscillators and spaceships.</p>
+        </statement>
+        <feedback>
+          <p>Correct! Stable and moving patterns are one of the reasons the author gives.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>GoL is Turing complete.</p>
+        </statement>
+        <feedback>
+          <p>Correct! Being Turing complete is one of the reasons the author lists.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>Conway's conjecture and the $50 bounty he offered generated interest in the game.</p>
+        </statement>
+        <feedback>
+          <p>Correct! The author mentions this as one of the reasons GoL became popular.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>GoL was the first cellular automaton ever developed by a computer scientist.</p>
+        </statement>
+        <feedback>
+          <p>Incorrect. The text says GoL was one of the first cellular automatons to be studied, not the first ever developed.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>GoL was originally designed to model real biological cells and predict cell growth accurately.</p>
+        </statement>
+        <feedback>
+          <p>Incorrect. The text says the behavior is only "loosely analogous" to real cell growth, and popularity was not attributed to biological accuracy.</p>
+        </feedback>
+      </choice>
+    </choices>
   </exercise>
 </section>
