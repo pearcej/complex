@@ -16,7 +16,7 @@
       </description>
     </image>
   </figure>
-  <p><xref ref="physical-modeling_figure_one_dimensional_cas"/> shows three 1-D CAs like the ones we saw in <xref ref="cellular-automatons_a-simple-ca"/>. Rule 20 (left) generates a set of cells that seems like a line, so we expect it to be one-dimensional. Rule 50 (center) produces something like a triangle, so we expect it to be 2-D. Rule 18 (right) also produces something like a triangle, but the density is not uniform, so its scaling behavior is not obvious.</p>
+  <p><xref ref="physical-modeling_figure_one_dimensional_cas"/> shows three 1-D CAs like the ones we saw in <xref ref="cellular-automatons_wolfram-rule50-figure"/>. Rule 20 (left) generates a set of cells that seems like a line, so we expect it to be one-dimensional. Rule 50 (center) produces something like a triangle, so we expect it to be 2-D. Rule 18 (right) also produces something like a triangle, but the density is not uniform, so its scaling behavior is not obvious.</p>
   <p>We'll estimate the dimension of these CAs with the following function, which counts the number of on cells after each time step. It returns a list of tuples, where each tuple contains <c>i</c>, <c>i**2</c>, and the total number of cells.</p>
   <pre>def count_cells(rule, n=500):
     ca = Cell1D(rule, n)
