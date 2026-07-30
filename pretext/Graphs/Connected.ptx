@@ -4,7 +4,7 @@
   <p>A graph is <title_reference>connected</title_reference> if there is a path from every node to every other node.</p>
   <p>For many applications involving graphs, it is useful to check whether a graph is connected. Fortunately, there is a simple algorithm that does it.</p>
   <p>You can start at any node and check whether you can reach all other nodes. If you can reach a node, <c>v</c>, you can reach any of the neighbors of <c>v</c>, which are the nodes connected to <c>v</c> by an edge.</p>
-  <p>The Graph class provides a method called neighbors that returns a list of neighbors for a given node. For example, in the complete graph we generated in the previous section:</p>
+  <p>The Graph class provides a method called neighbors that returns a list of neighbors for a given node. For example, in the complete graph we generated in the previous <xref ref="graphs_generating-graphs"/>:</p>
   <pre>&gt;&gt;&gt; complete.neighbors(0)
 [1, 2, 3, 4, 5, 6, 7, 8, 9]</pre>
   <p>Suppose we start at node <c>s</c> . We can mark <c>s</c> as <q>seen</q> and mark its neighbors. Then we mark the neighbor's neighbors, and their neighbors, and so on, until we can't reach any more nodes. If all nodes are seen, the graph is connected.</p>
@@ -50,7 +50,7 @@ return len(reachable) == len(G)</pre>
   <p>A complete graph is, not surprisingly, connected:</p>
   <pre>&gt;&gt;&gt; is_connected(complete)
 True</pre>
-  <p>In the next section we will generate ER graphs and check whether they are connected.</p>
+  <p>In the next <xref ref="graphs_generating-er-graphs"/> we will generate ER graphs and check whether they are connected.</p>
   <exercise label="Q1_3_6">
     <statement>
       <p>Drag the number on the left to its corresponding order.</p>
