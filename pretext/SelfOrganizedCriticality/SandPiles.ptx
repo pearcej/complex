@@ -7,7 +7,7 @@
   <p>For each perturbation, they measure <c>T</c>, the number of time steps the pile takes to stabilize, and <c>S</c>, the total number of cells that topple.</p>
   <p>Most of the time, dropping a single grain causes no cells to topple, so <c>T=1</c> and <c>S=0</c>. But occasionally a single grain can cause an <idx>avalanche</idx><term>avalanche</term> that affects a substantial fraction of the grid. The distributions of <c>T</c> and <c>S</c> turn out to be heavy-tailed, which supports the claim that the system is in a critical state.</p>
   <p>They conclude that the sand pile model exhibits <q>self-organized criticality</q>, which means that it evolves toward a critical state without the need for external control or what they call <q>fine tuning</q> of any parameters. And the model stays in a critical state as more grains are added.</p>
-  <p>In the next few sections we will replicate their experiments and interpret the results.</p>
+  <p>In the next few sections (<xref ref="implementing-the-self-organized-criticality_sand-pile"/>, <xref ref="self-organized-criticality_heavy-tailed-distributions"/>, <xref ref="self-organized-criticality_fractals"/>, <xref ref="self-organized-criticality_pink-noise"/>, and <xref ref="self-organized-criticality_the-sound-of-sand"/>) we will replicate their experiments and interpret the results.</p>
  <exercise>
     <statement>
       <p>Bak, Tang and Wiesenfeld conclude that the sand pile model exhibits <BlankNode/><var/>, which means that it evolves toward a <BlankNode/> <var/>without the need for <BlankNode/> <var/>. </p>
