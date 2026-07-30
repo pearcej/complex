@@ -11,7 +11,7 @@
         self.array = np.random.choice(choices, (n, n), p=probs)</pre>
   <p><c>n</c> is the size of the grid, and <c>p</c> is the threshold on the fraction of similar neighbors. For example, if <c>p=0.3</c>, an agent will be unhappy if fewer than 30% of their neighbors are the same color.</p>
   <p><c>array</c> is a NumPy array where each cell is 0 if empty, 1 if occupied by a red agent, and 2 if occupied by a blue agent. Initially 10% of the cells are empty, 45% red, and 45% blue.</p>
-  <p>The <c>step</c> function for Schelling's model is substantially more complicated than previous examples. If you are not interested in the details, you can skip to the next section. But if you stick around, you might pick up some NumPy tips.</p>
+  <p>The <c>step</c> function for Schelling's model is substantially more complicated than previous examples. If you are not interested in the details, you can skip to <xref ref="agent-based-models_segregation"/>. But if you stick around, you might pick up some NumPy tips.</p>
   <p>First, let's make boolean arrays that indicate which cells are red, blue, and empty:</p>
   <pre>a = self.array
         red = a==1
