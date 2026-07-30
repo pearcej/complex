@@ -31,5 +31,5 @@ return G</pre>
   <p><c>make_random_graph</c> is almost identical to <c>make_complete_graph</c>; the only difference is that it uses <c>random_pairs</c> instead of <c>all_pairs</c>.</p>
   <p>Here's an example with <m>p=0.3</m>:</p>
   <pre>random_graph = make_random_graph(10, 0.3)</pre>
-  <p><xref ref="g-fig-7"/> shows the result. This graph turns out to be connected; in fact, most ER graphs with <m>n=10</m> and <m>p=0.3</m> are connected. In the next section, we'll see how many.</p>
+  <p><xref ref="g-fig-7"/> shows the result. This graph turns out to be connected; in fact, most ER graphs with <m>n=10</m> and <m>p=0.3</m> are connected. In the next <xref ref="probability-of-connectivity"/>, we'll see how many.</p>
 </section>

@@ -128,7 +128,7 @@
         </condition>
         <condition string="^\s*[Xx]\s*$">
           <feedback>
-            <p>Sorry you are incorrect, try again and checkout section 3.9.</p>
+            <p>Sorry you are incorrect, try again and checkout <xref ref="graphs_analysis-of-graph-algorithms"/>.</p>
           </feedback>
         </condition>
       </var>
@@ -145,7 +145,7 @@
         </condition>
         <condition string="^\s*[Xx]\s*$">
           <feedback>
-            <p>Sorry you are incorrect, Try again and checkout section 3.9.</p>
+            <p>Sorry you are incorrect, Try again and checkout <xref ref="graphs_analysis-of-graph-algorithms"/>.</p>
           </feedback>
         </condition>
       </var>
