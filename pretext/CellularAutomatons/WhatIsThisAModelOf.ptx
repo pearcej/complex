@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="ca-fig-6">
+<section xml:id="cellular-automatons_what-is-this-a-model-of">
   <title>What is this a Model of?</title>
 <figure align="center" xml:id="cellular-automatons_model-structure-figure">
   <caption>The logical structure of a simple physical model.</caption>
@@ -24,5 +24,5 @@
   <p>Simple models offer a different kind of explanation than detailed models. With a detailed model, the argument goes something like this: <q>We are interested in physical system <m>S</m>, so we construct a detailed model, <m>M</m>, and show by analysis and simulation that <m>M</m> exhibits a behavior, <m>B</m>, that is similar (qualitatively or quantitatively) to an observation of the real system, <m>O</m>. So why does <m>O</m> happen? Because <m>S</m> is similar to <m>M</m>, and <m>B</m> is similar to <m>O</m>, and we can prove that <m>M</m> leads to <m>B</m>.</q></p>
   <p>With simple models we can't claim that <m>S</m> is similar to <m>M</m>, because it isn't. Instead, the argument goes like this: <q>There is a set of models that share a common set of features. Any model that has these features exhibits behavior <m>B</m>. If we make an observation, <m>O</m>, that resembles <m>B</m>, one way to explain it is to show that the system, <m>S</m>, has the set of features sufficient to produce <m>B</m>.</q></p>
   <p>For this kind of argument, adding more features doesn't help. Making the model more realistic doesn't make the model more reliable; it only obscures the difference between the essential features that cause B and the incidental features that are particular to <m>S</m>.</p>
-  <p><xref ref="ca-fig-6"/> shows the logical structure of this kind of model. The features x and y are sufficient to produce the behavior. Adding more detail, like features w and z, might make the model more realistic, but that realism adds no explanatory power.</p>
+  <p><xref ref="cellular-automatons_model-structure-figure"/> shows the logical structure of this kind of model. The features x and y are sufficient to produce the behavior. Adding more detail, like features w and z, might make the model more realistic, but that realism adds no explanatory power.</p>
 </section>

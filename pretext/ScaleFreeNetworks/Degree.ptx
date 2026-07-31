@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="scale-free-networks_degree">
   <title>Degree</title>
-  <figure align="center" xml:id="sfn-fig-1">
+  <figure align="center" xml:id="degree-pmf-facebook-vs-ws-fig">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> PMF of degree in the Facebook dataset and in the WS model.</caption>
     <image source="ScaleFreeNetworks/Figures/degree-pmf-facebook-vs-ws.png" width="50%">
       <shortdescription>PMF of degree in the Facebook dataset and in the WS model.</shortdescription>
@@ -46,7 +46,7 @@ Pmf({1: 0.75, 3: 0.25})</pre>
   <p>We can use the <c>thinkplot</c> module to plot the results:</p>
   <pre>thinkplot.Pdf(pmf_fb, label='Facebook')
 thinkplot.Pdf(pmf_ws, label='WS graph')</pre>
-  <p><xref ref="sfn-fig-1"/> shows the two distributions. They are very different.</p>
+  <p><xref ref="degree-pmf-facebook-vs-ws-fig"/> shows the two distributions. They are very different.</p>
   <p>In the WS model, most users have about <m>44</m> friends; the minimum is <m>38</m> and the maximum is <m>50</m>. That's not much variation. In the dataset, there are many users with only <m>1</m> or <m>2</m> friends, but one has more than <m>1000</m>!</p>
   <p>Distributions like this, with many small values and a few very large values, are called heavy-tailed.</p>
 </section>

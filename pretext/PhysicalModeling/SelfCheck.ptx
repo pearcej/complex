@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="physical-modeling_self-check">
   <title>Self Check</title>
-  <exercise label="SC8_Q1">
+  <exercise>
     <statement>
       <p>There is a possibility for animal patterns to be based on diffusion reactions?</p>
     </statement>
@@ -24,7 +24,7 @@
       </choice>
     </choices>
   </exercise>
-  <exercise label="SC8_Q2">
+  <exercise>
     <statement>
       <p>Percolation models can be represented using cellular automatons. Below is an out of order representation of the processes of a 2-D CA that simulates percolation. Place them in the correct order.</p>
     </statement>
@@ -55,7 +55,7 @@
       </match>
     </matches>
   </exercise>
-  <exercise label="SC8_Q3">
+  <exercise>
     <statement>
       <p>What is the the rapid change in behavior near the critical value called?</p>
     </statement>
@@ -94,7 +94,7 @@
       </choice>
     </choices>
   </exercise>
-  <exercise label="SC8_Q4" indent="show" language="python">
+  <exercise indent="show" language="python">
     <statement>
       <p>Please put the test_perc function together so that it will run.</p>
     </statement>

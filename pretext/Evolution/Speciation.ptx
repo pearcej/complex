@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="evolution_speciation">
   <title>Speciation</title>
-  <p xml:id="evolution_evo-10" names="evo_10">The theory of evolution says that natural selection changes existing species and creates new ones. In our model, we have seen changes, but we have not seen a new species. It's not even clear, in the model, what a new species would look like.</p>
+  <p xml:id="evolution_speciation-intro">The theory of evolution says that natural selection changes existing species and creates new ones. In our model, we have seen changes, but we have not seen a new species. It's not even clear, in the model, what a new species would look like.</p>
   <p>Among species that reproduce sexually, two organisms are considered the same species if they can breed and produce fertile offspring. But the agents in the model don't reproduce sexually, so this definition doesn't apply.</p>
   <p>Among organisms that reproduce asexually, like bacteria, the definition of species is not as clear-cut. Generally, a population is considered a species if their genotypes form a cluster, that is, if the genetic differences within the population are small compared to the differences between populations.</p>
   <p>Before we can model new species, we need the ability to identify clusters of agents in the landscape, which means we need a definition of <c>distance</c> between locations. Since locations are represented with arrays of bits, we'll define distance as the number of bits that differ between locations. <c>FitnessLandscape</c> provides a distance method:</p>

@@ -17,7 +17,7 @@
   <md>logP(f) = -\beta logf</md>
   <p>So if we plot <m>P(f)</m> versus <m>f</m> on a log-log scale, we expect a straight line with slope <m>-\beta</m>.</p>
   <p>What does this have to do with the sand pile model? Suppose that every time a cell topples, it makes a sound. If we record a sand pile model while its running, what would it sound like? In the next <xref ref="self-organized-criticality_the-sound-of-sand"/>, we'll simulate the sound of the sand pile model and see if it is pink noise.</p>
-  <exercise label="q_9_7_1">
+  <exercise>
     <statement>
       <p>Drag the word on the left to its corresponding definition.</p>
     </statement>

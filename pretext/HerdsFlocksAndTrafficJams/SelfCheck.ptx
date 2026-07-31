@@ -21,7 +21,7 @@
     </setup>
   </exercise>
 
-  <exercise label="SC11_Q2">
+  <exercise>
     <statement>
       <p>Agents in the <q>Flocks, herds, and schools</q> model are called boids. Name the behaviors that each agent simulates in this model.</p>
     </statement>
@@ -40,7 +40,7 @@
       </match>
     </matches>
   </exercise>
-  <exercise label="SC11_Q3">
+  <exercise>
     <statement>
       <p>Many complex systems have properties as a whole that their components do not. Drag and drop the properties of single agents and the behaviors of the complex system to the correct model.</p>
     </statement>

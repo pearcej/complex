@@ -30,7 +30,7 @@
       </var>
     </setup>
   </exercise>
-  <exercise label="SC4_Q2">
+  <exercise>
     <statement>
       <p>Which of the below graph algorithms are used for computing the shortest path between nodes. Select multiple choices.</p>
     </statement>
@@ -69,7 +69,7 @@
       </choice>
     </choices>
   </exercise>
-  <exercise label="SC4_Q3">
+  <exercise>
     <statement>
       <p>Match the following to the order that they need to be in to build a Watts-Strogatz (WS) graph.</p>
     </statement>

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="graphs_matching">
   <title>Matching</title>
-  <exercise label="matching_1">
+  <exercise>
     <statement>
       <p>Drag the word on the left to its corresponding definition.</p>
     </statement>

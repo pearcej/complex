@@ -11,7 +11,7 @@
       </description>
     </image>
   </figure>
-  <exercise label="SC_1">
+  <exercise>
     <statement>
       <p>What Game of Life pattern is presented in <xref ref="game-of-life_glider-self-check-figure"/>?</p>
     </statement>
@@ -60,7 +60,7 @@
       </description>
     </image>
   </figure>
-  <exercise label="SC_2">
+  <exercise>
     <statement>
       <p>The Game of Life pattern that is presented in <xref ref="game-of-life_glider-gun-animation"/> is one of the patterns that Conway said would disprove his conjecture.</p>
     </statement>
@@ -93,7 +93,7 @@
       </description>
     </image>
   </figure>
-  <exercise label="SC_3">
+  <exercise>
     <statement>
       <p>What Game of Life pattern is presented in <xref ref="game-of-life_r-pentomino-final-figure"/>?</p>
     </statement>

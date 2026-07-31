@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="game-of-life_matching">
   <title>Matching</title>
-  <exercise label="matching_7">
+  <exercise>
    <statement>
       <p>Drag the word on the left to its corresponding definition</p>
     </statement>

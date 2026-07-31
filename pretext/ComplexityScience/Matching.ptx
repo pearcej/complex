@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="complexity-science_matching">
   <title>Matching</title>
-  <exercise label="Ch2_matching">
+  <exercise>
     <statement>
       <p>Drag the term on the left to its corresponding definition.</p>
     </statement>

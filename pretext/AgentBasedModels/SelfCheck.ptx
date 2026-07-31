@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="agent-based-models_self-check">
   <title>Self Check</title>
-  <exercise label="SC10_Q1">
+  <exercise>
     <statement>
       <p>Drag the word on the left to its corresponding definition.</p>
     </statement>
@@ -20,7 +20,7 @@
       </match>
     </matches>
   </exercise>
-  <exercise label="SC10_Q2">
+  <exercise>
     <statement>
       <p>Why does the author say that the segregation seen in Schelling's model is an emergent property?</p>
     </statement>
@@ -59,7 +59,7 @@
       </choice>
     </choices>
   </exercise>
-  <exercise label="SC10_Q3">
+  <exercise>
     <statement>
       <p>What behaviour does the aggergates show that the agents don't have?</p>
     </statement>
