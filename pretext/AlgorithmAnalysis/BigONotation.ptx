@@ -59,7 +59,7 @@
             would say then that the function <m>T(n)</m> has an order of
             magnitude <m>f(n)=n^{2}</m>, or simply that it is <m>O(n^{2})</m>.</p>
 
-  <exercise label="bigo3">
+  <exercise>
     <statement>
       <p>If the exact number of steps is <md>T(n)=2n+3n^{2}-1</md>. What is the Big O?</p>
     </statement>
@@ -212,7 +212,7 @@
         <p>The x-axis represents <m>n</m> (input size), and the y-axis represents the number of operations or time. For small values of <m>n</m>, the differences between some functions may not be pronounced. However, as <m>n</m> grows larger, the graph clearly illustrates how functions with higher orders of magnitude (like exponential and cubic) increase much more rapidly than those with lower orders (like logarithmic and linear), demonstrating their comparative efficiency for large inputs.</p>
       </description> </image>
   </figure>
-  <exercise label="parsonsBigO" indent="show" language="python">
+  <exercise indent="show" language="python">
     <statement>
       <p>Without looking at the graph above, from top to bottom order the following from most to least efficient.</p>
     </statement>
@@ -232,7 +232,7 @@
             shown in <xref ref="lst-dummycode"/>. Although this program does not really do
             anything, it is instructive to see how we can take actual code and
             analyze performance.</p>
-<listing xml:id="lst-dummycode" names="lst_dummycode">
+<listing xml:id="lst-dummycode">
   <program language="python">
     <code>
     def main():
@@ -280,7 +280,7 @@ main()</code>
             n grows, the cubic function quickly overtakes <m>T(n)</m>. It is easy
             to see that <m>T(n)</m> then follows the <idx>quadratic</idx> quadratic function as
             <m>n</m> continues to grow.</p>
-  <exercise label="crossoverefficiency">
+  <exercise>
     <statement>
       <p>Which of the following statements is true about the two algorithms?
             Algorithm 1: <m>100n + 1</m>

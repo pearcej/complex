@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="graphs_generating-er-graphs">
   <title>Generating ER Graphs</title>
-  <figure align="center" xml:id="g-fig-7">
+  <figure align="center" xml:id="graphs_er-graph-figure">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> An ER graph with n=10 and p=0.3.</caption>
     <image source="Graphs/Figures/er-graph-n10-p0.3.png" width="50%" >
     <shortdescription>Visual representation of an Erdős-Rényi random graph with 10 nodes and specific edge connections based on p=0.3.</shortdescription>
@@ -31,5 +31,5 @@ return G</pre>
   <p><c>make_random_graph</c> is almost identical to <c>make_complete_graph</c>; the only difference is that it uses <c>random_pairs</c> instead of <c>all_pairs</c>.</p>
   <p>Here's an example with <m>p=0.3</m>:</p>
   <pre>random_graph = make_random_graph(10, 0.3)</pre>
-  <p><xref ref="g-fig-7"/> shows the result. This graph turns out to be connected; in fact, most ER graphs with <m>n=10</m> and <m>p=0.3</m> are connected. In the next <xref ref="probability-of-connectivity"/>, we'll see how many.</p>
+  <p><xref ref="graphs_er-graph-figure"/> shows the result. This graph turns out to be connected; in fact, most ER graphs with <m>n=10</m> and <m>p=0.3</m> are connected. In the next <xref ref="probability-of-connectivity"/>, we'll see how many.</p>
 </section>

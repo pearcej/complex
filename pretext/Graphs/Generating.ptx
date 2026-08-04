@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="graphs_generating-graphs">
   <title>Generating Graphs</title>
-  <figure align="center" xml:id="g-fig-3">
+  <figure align="center" xml:id="graphs_complete-graph-figure">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> A complete graph with 10 nodes.</caption>
     <image source="Graphs/Figures/complete-graph-10nodes.png" width="50%" >
     <shortdescription>Complete graph with 10 nodes.</shortdescription>
@@ -30,5 +30,5 @@ nx.draw_circular(complete,
              node_color=COLORS[2],
              node_size=1000,
              with_labels=True)</pre>
-  <p><xref ref="g-fig-3"/> shows the result. Soon we will modify this code to generate ER graphs, but first we'll develop functions to check whether a graph is connected.</p>
+  <p><xref ref="graphs_complete-graph-figure"/> shows the result. Soon we will modify this code to generate ER graphs, but first we'll develop functions to check whether a graph is connected.</p>
 </section>

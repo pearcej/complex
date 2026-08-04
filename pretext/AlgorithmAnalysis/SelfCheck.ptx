@@ -2,7 +2,7 @@
 <section xml:id="algorithm-analysis_self-check">
   <title>Self Check</title>
 
-      <exercise label="analysis_1">
+      <exercise>
         <statement>
           <p>Given the following code fragment, what is its Big-O running time?</p>
           <blockquote>
@@ -52,7 +52,7 @@ for i in range(n):
         </choices>
       </exercise>
 
-      <exercise label="analysis_2">
+      <exercise>
         <statement>
           <p>Given the following code fragment what is its Big-O running time?</p>
           <blockquote>
@@ -103,7 +103,7 @@ for j in range(n):
           </choice>
         </choices>
       </exercise>
-      <exercise label="analysis_3">
+      <exercise>
         <statement>
           <p>Given the following code fragment what is its Big-O running time?</p>
           <blockquote>

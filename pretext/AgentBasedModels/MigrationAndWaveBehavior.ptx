@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="agent-based-models_migration-and-wave-behavior-abm-8-abm-fig-5">
+<section xml:id="agent-based-models_migration-and-wave-behavior">
   <title>Migration and Wave Behavior</title>
 <figure align="center" xml:id="abm-sugarscape-wave-behavior-figure">
     <caption>Wave behavior in Sugarscape: initial configuration (left), after 6 steps (middle) and after 12 steps (right).</caption>

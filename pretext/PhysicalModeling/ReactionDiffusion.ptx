@@ -49,7 +49,7 @@ self.array2 += rb * cB + reaction - (f+k) * B</pre>
   <p>The term <c>f * (1-A)</c> determines the rate that <c>A</c> is added to the system. Where <c>A</c> is near 0, the maximum feed rate is <c>f</c>. Where <c>A</c> approaches 1, the feed rate drops off to 0.</p>
   <p>Finally, the term <c>(f+k) * B</c> determines the rate that <c>B</c> is removed from the system. As <c>B</c> approaches 0, this rate goes to 0.</p>
   <p>As long as the rate parameters are not too high, the values of <c>A</c> and <c>B</c> usually stay between 0 and 1.</p>
-  <exercise label="q_8_3_3">
+  <exercise>
     <statement>
       <p>In the above code A*B**2 sets the rate of reaction.</p>
     </statement>
@@ -111,7 +111,7 @@ self.array2 += rb * cB + reaction - (f+k) * B</pre>
   </figure>
   <p><xref ref="physical-modeling_reaction-diffusion-figure-animal-spot"/> shows results with <c>f=0.039</c> and <c>k=0.065</c>. These parameters produce spots of <c>B</c> that grow and divide in a process that resembles mitosis, ending with a stable pattern of equally-spaced spots.</p>
   <p>Since 1952, observations and experiments have provided some support for Turing's conjecture. At this point it seems likely, but not yet proven, that many animal patterns are actually formed by reaction-diffusion processes of some kind.</p>
-  <exercise label="q_8_3">
+  <exercise>
     <statement>
       <p>At what point did there appear to be a coral-like pattern?</p>
     </statement>

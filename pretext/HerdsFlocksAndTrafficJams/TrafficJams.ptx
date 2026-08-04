@@ -107,7 +107,7 @@
   <p>During the next time step (middle) there are two collisions, indicated by the triangles.</p>
   <p>During the next time step (right) two cars collide with the stopped cars, and we can see the initial formation of a traffic jam. Once a jam forms, it tends to persist, with additional cars approaching from behind and colliding, and with cars in the front accelerating away.</p>
   <p>Under some conditions, the jam itself propagates backwards, as you can see if you watch the animations in the notebook for this chapter.</p>
-  <exercise label="Q_11_2_1">
+  <exercise>
     <statement>
       <p>Drag the term on the left to its corresponding definition.</p>
     </statement> 

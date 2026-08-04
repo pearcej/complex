@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="evolution_evidence-of-evolution">
   <title>Evidence of Evolution</title>
-  <p xml:id="evolution_evo-7" names="evo_7">The most inclusive definition of evolution is a change in the distribution of genotypes in a population. Evolution is an aggregate effect: in other words, individuals don't evolve; populations do.</p>
+  <p xml:id="evolution_evidence-intro">The most inclusive definition of evolution is a change in the distribution of genotypes in a population. Evolution is an aggregate effect: in other words, individuals don't evolve; populations do.</p>
   <p>In this simulation, genotypes are locations in a high-dimensional space, so it is hard to visualize changes in their distribution. However, if the genotypes change, we expect their fitness to change as well. So we will use <em>changes in the distribution of fitness</em> as evidence of evolution. In particular, we'll look at the mean and standard deviation of fitness over time.</p>
   <p>Before we run the simulation, we have to add an <c>Instrument</c>, which is an object that gets updated after each time step, computes a statistic of interest, or <q>metric</q>, and stores the result in a sequence we can plot later.</p>
   <p>Here is the parent class for all instruments:</p>
@@ -49,7 +49,7 @@ sim.run()</pre>
     </ul>
   </p>
   <p>These are the phenomena we want to explain. So far, our model doesn't do the job.</p>
-  <exercise label="q_13_7">
+  <exercise>
     <statement>
       <p>Evolution is a change in the distribution of genotypes in individuals of a population.</p>
     </statement>

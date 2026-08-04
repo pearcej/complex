@@ -18,12 +18,12 @@
             programming language. There may be many programs for the same algorithm,
             depending on the programmer and the programming language being used.</p>
   <p>To explore this difference further, consider the function shown in
-            <xref ref="lst-sum0" visual="hybrid"/>. This function solves a familiar problem, computing the
+            <xref ref="lst-sum-basic" visual="hybrid"/>. This function solves a familiar problem, computing the
             sum of the first <em>n</em> integers. The algorithm uses the idea of an
             accumulator variable that is initialized to 0. The solution then
             iterates through the <em>n</em> integers, adding each to the accumulator.</p>
     
-      <listing  xml:id="lst-sum0" names="lst_sum0">
+      <listing  xml:id="lst-sum-basic">
         <program interactive="activecode" language="python">
           <code>
 # adds the sum of (n + n-1 + n-2 ...)
@@ -41,7 +41,7 @@ main()
         </program>
       </listing>
     
- <p>Now look at the function in <xref ref="lst-sum2"/>.
+ <p>Now look at the function in <xref ref="lst-sum-unclear"/>.
             At first glance it may look
             strange, but upon further inspection you can see that this function is
             essentially doing the same thing as the previous one. The reason this is
@@ -49,7 +49,7 @@ main()
             assist with readability, and we used an extra assignment statement
             during the accumulation step that was not really necessary.</p>
     
-      <listing xml:id="lst-sum2" names="lst_sum2">
+      <listing xml:id="lst-sum-unclear">
         <program interactive="activecode" language="python">
           <code>
 #Performs same function as the first listing, but is less descriptive
@@ -103,7 +103,7 @@ main()
             and at the end, and then computing the difference, we can get an exact
             number of seconds (fractions in most cases) for execution.</p>
     
-      <listing xml:id="lst-sum11" names="lst_sum11">
+      <listing xml:id="lst-sum-timed">
         <program interactive="activecode" language="python">
           <code>
 import time
@@ -132,12 +132,12 @@ main()
         </program>
       </listing>
     
-  <p><xref ref="lst-sum11"/> shows the original <c>sumOfN</c> function with the timing
+  <p><xref ref="lst-sum-timed"/> shows the original <c>sumOfN</c> function with the timing
             calls embedded before and after the summation. The function returns the amount of time (in seconds)
             required for the calculation.</p>
   <exercise>
     <statement>
-      <p>In <xref ref="lst-sum11"/> above, how many times is the <title_reference>theSum = theSum + 1</title_reference> line executed? <var/>  </p>
+      <p>In <xref ref="lst-sum-timed"/> above, how many times is the <title_reference>theSum = theSum + 1</title_reference> line executed? <var/>  </p>
     </statement>
     <setup>
       <var>
@@ -175,7 +175,7 @@ main()
                 tells us to add the integers <md>1+2+3+4+5</md>
                 because just like in a <title_reference>for</title_reference> loop, we plug a value for each <title_reference>i</title_reference> value.
                 Similarly, <md>\sum_{i=2}^{4} i^2</md> means <md>2^2+3^2+4^2</md>.</p>
-    <exercise label="somemath1">
+    <exercise>
       <statement>
         <p>Compute the result of <md>\sum_{i=1}^{3} i^3</md></p>
       </statement>

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="evolution_simulation">
   <title>Simulation</title>
-  <p xml:id="evolution_evo-5" names="evo_5">Now that we have agents and a fitness landscape, we will define a class called <c>Simulation</c> that simulates the creation, reproduction, and death of the agents. To avoid getting bogged down, we will see a simplified version of the code here; you can see the details in the notebook for this chapter.</p>
+  <p xml:id="evolution_simulation-intro">Now that we have agents and a fitness landscape, we will define a class called <c>Simulation</c> that simulates the creation, reproduction, and death of the agents. To avoid getting bogged down, we will see a simplified version of the code here; you can see the details in the notebook for this chapter.</p>
   <p>Here's the definition of <c>Simulation</c>:</p>
   <pre>class Simulation:
 
@@ -48,7 +48,7 @@
     </ul>
   </p>
   <p>In this version of the simulation, the number of new agents during each time step equals the number of dead agents, so the number of live agents is constant.</p>
-  <exercise label="q_12_5">
+  <exercise>
     <statement>
       <p>What happens when an agent dies in this version of the simulation?</p>
     </statement>
@@ -88,7 +88,7 @@
     </choices>
   </exercise>
 
-  <exercise label="CH12_5_Q2">
+  <exercise>
     <statement>
       <p>Drag the term on the left to its corresponding definition.</p>
     </statement>

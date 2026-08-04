@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="graphs_self-check">
   <title>Self Check</title>
-  <figure align="center" xml:id="SelfCheck_figure_1">
+  <figure align="center" xml:id="friend-network-graph-fig">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">A Graphical represention of a Friend Network</caption>
     <image source="Graphs/Figures/SELF_CHECK_FIG.png" width="50%" >
       <shortdescription>Graph of Friend Network</shortdescription>
@@ -11,7 +11,7 @@
     <p>The connections are mutual, indicating friendships or bidirectional relationships.</p>
   </description> </image>
   </figure>
-  <exercise label="SC_Q1">
+  <exercise>
     <statement>
       <p>Based on the graph above what social media platform would the user be using?</p>
     </statement>
@@ -50,7 +50,7 @@
       </choice>
     </choices>
   </exercise>
-  <exercise label="sc_match">
+  <exercise>
     <statement>
       <p>Match the correct NetworkX code piece to the correct  description.</p>
     </statement>
@@ -81,7 +81,7 @@
       </match>
     </matches>
   </exercise>
-  <exercise label="sc_parsons" indent="show" language="python">
+  <exercise indent="show" language="python">
     <statement>
       <p>Please construct def complete_graph:</p>
     </statement>

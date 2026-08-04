@@ -79,7 +79,7 @@ b = table[c]</pre>
       </var>
     </setup>
   </exercise>
-  <exercise label="q_7_13">
+  <exercise>
     <statement>
       <p>What does the author say about that version of the implementation? Refer back to the implementation method referred to in the previous question.</p>
       <p>The author says that version is a straightforward translation of the rules, but that it is <BlankNode/><var/> and <BlankNode/><var/>.</p>

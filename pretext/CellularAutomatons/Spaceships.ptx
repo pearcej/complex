@@ -13,7 +13,7 @@
   </image>
 </figure>
 
-  <p xml:id="cellular-automatons_spaceships_rule-figure" names="cellular-automatons_spaceships_rule-figure">The behavior of Class 4 CAs is even more surprising. Several 1-D CAs, most notably Rule 110, are <idx>Turing complete</idx><term>Turing complete</term>, which means that they can compute any computable function. This property, also called <idx>universality</idx><term>universality</term>, was proved by Matthew Cook in 1998.</p>
+  <p xml:id="cellular-automatons_spaceships_rule-figure">The behavior of Class 4 CAs is even more surprising. Several 1-D CAs, most notably Rule 110, are <idx>Turing complete</idx><term>Turing complete</term>, which means that they can compute any computable function. This property, also called <idx>universality</idx><term>universality</term>, was proved by Matthew Cook in 1998.</p>
 
   <p><xref ref="cellular-automatons_rule110-figure"/> shows what Rule 110 looks like with an initial condition of a single cell and 100 time steps. At this time scale it is not apparent that anything special is going on. There are some regular patterns but also some features that are hard to characterize.</p>
   <p><xref ref="cellular-automatons_rule110-random-figure"/> shows a bigger picture, starting with a random initial condition and 600 time steps:</p>

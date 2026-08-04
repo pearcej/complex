@@ -25,7 +25,7 @@
     </image>
   </figure>
   <p><xref ref="physical-modeling_diffusion-figure"/> shows results for a CA with size <c>n=9</c>, diffusion constant <c>r=0.1</c>, and initial concentration 0 everywhere except for an <q>island</q> in the middle. The figure shows the starting configuration and the state of the CA after 5 and 10 steps. The chemical spreads from the center outward, continuing until the concentration is the same everywhere.</p>
-  <exercise label="q_8_2">
+  <exercise>
     <statement>
       <p>Using a 2-D CA we can model the diffusion processes. Drag and drop the outcomes of diffusion in a 2-D CA to the processes.</p>
     </statement>

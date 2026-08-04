@@ -33,7 +33,7 @@
     </setup>
   </exercise>
 
-  <exercise label="SC9_Q2" indent="show" language="python">
+  <exercise indent="show" language="python">
     <statement>
       <p>Please put the step method that finds all cells above k and topples them.</p>
     </statement>

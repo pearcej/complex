@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="small-world-graphs_watts-and-strogatz">
   <title>Watts and Strogatz</title>
-  <p xml:id="small-world-graphs_swg-3" names="swg_3">In 1998 Duncan Watts and Steven Strogatz published a paper in <em>Nature</em>, <q>Collective dynamics of &#x2018;small-world' networks</q>, that proposed an explanation for the small world phenomenon.</p>
+  <p xml:id="small-world-graphs_swg-3">In 1998 Duncan Watts and Steven Strogatz published a paper in <em>Nature</em>, <q>Collective dynamics of &#x2018;small-world' networks</q>, that proposed an explanation for the small world phenomenon.</p>
   <p>Watts and Strogatz start with two kinds of graphs that were well understood: random graphs and regular graphs. In a random graph, nodes are connected at random. In a <idx>regular graph</idx><term>regular graph</term>, every node has the same number of neighbors. They consider two properties of these graphs, clustering and path length:</p>
   <p>
     <ul>
@@ -47,7 +47,7 @@
       </li>
     </ol>
   </p>
-  <exercise label="dnd-ex-1">
+  <exercise>
     <statement>
       <p>Drag the word on the left to its corresponding definition.</p>
     </statement>
