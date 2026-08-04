@@ -1,7 +1,9 @@
 <?xml version="1.0"?>
 <exercises xml:id="cellular-automatons_exercises">
   <title>Exercises</title>
-  <p>The code for this chapter is in the Jupyter notebook <url href="https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap07.ipynb" visual="https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap07.ipynb">chap07.ipynb</url> in the repository for this book. Open this notebook, read the code, and run the cells. You can use this notebook to work on the exercises in this chapter.</p>
+  <p>The code for this chapter is in the Jupyter notebook <url href="https://colab.research.google.com/drive/1IYc3-_WxZeDxgVGtqBt1Kg_DqXPlt4lA?usp=sharing" visual="https://colab.research.google.com/drive/1IYc3-_WxZeDxgVGtqBt1Kg_DqXPlt4lA?usp=sharing">Cellular Automata</url>. Open this notebook, read the code, and run the cells. You can use this notebook to work on the exercises in this chapter.</p>
+  <p><term>Notebook Exercises:</term> Launch <url href="https://colab.research.google.com/drive/1IYc3-_WxZeDxgVGtqBt1Kg_DqXPlt4lA?usp=sharing" visual="https://colab.research.google.com/drive/1IYc3-_WxZeDxgVGtqBt1Kg_DqXPlt4lA?usp=sharing">Cellular Automata</url>, make a copy, and run the code. There are a few exercises embedded in the notebook that you might want to try.</p>
+
   <p><term>Exercise 1:</term>  Write a version of <c>correlate</c> that returns the same result as <c>np.correlate</c> with <c>mode='same'</c>. Hint: use the NumPy function pad.</p>
   <p><term>Exercise 2:</term>  This exercise asks you to experiment with Rule 110 and some of its spaceships.</p>
   <p>
