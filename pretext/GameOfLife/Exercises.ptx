@@ -1,7 +1,10 @@
 <?xml version="1.0"?>
 <exercises xml:id="game-of-life_exercises">
   <title>Exercises</title>
-  <p>The code for this chapter is in the notebook <url href="https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap08.ipynb" visual="https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap08.ipynb">chap08.ipynb</url> in the repository for this book. Open this notebook, read the code, and run the cells. You can use this notebook to work on the following exercises.</p>
+   <p>The code for this chapter is in <url href="https://colab.research.google.com/drive/1h5toMRx4mXV3eGmNY5qH2xH2tneILloe?usp=sharing" visual="https://colab.research.google.com/drive/1h5toMRx4mXV3eGmNY5qH2xH2tneILloe?usp=sharing">Game of Life</url>. More information about working with the code is in <xref ref="preface_notebooks" text="custom">the preface discussion of notebooks</xref>. Open this notebook, read the code, and run the cells. You can use this notebook to work on the following exercises.</p>
+<p><term>Notebook Exercises:</term> Launch <url href="https://colab.research.google.com/drive/1h5toMRx4mXV3eGmNY5qH2xH2tneILloe?usp=sharing" visual="https://colab.research.google.com/drive/1h5toMRx4mXV3eGmNY5qH2xH2tneILloe?usp=sharing">Game of Life</url>, make a copy, and run the code. There are a few exercises embedded in the notebook that you might want to try.</p>
+
+
   <p><term>Exercise 1:</term> Start GoL in a random state and run it until it stabilizes. What stable patterns can you identify?</p>
   <p><term>Exercise 2:</term> Many named patterns are available in portable file formats. Modify <c>Life.py</c> to parse one of these formats and initialize the grid.</p>
   <p><term>Exercise 3:</term> In the given implementation, the <c>Life</c> class is based on a parent class called <c>Cell2D</c>, and the <c>LifeViewer</c> class is based on <c>Cell2DViewer</c>. You can use these base classes to implement other 2-D cellular automatons.</p>
