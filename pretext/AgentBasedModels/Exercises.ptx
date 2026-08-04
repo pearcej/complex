@@ -1,7 +1,11 @@
 <?xml version="1.0"?>
 <exercises xml:id="agent-based-models_exercises">
   <title>Exercises</title>
-  <p>The code for this chapter is in the notebook <url href="https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap11.ipynb" visual="https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap11.ipynb">chap11.ipynb</url> in the repository for this book. Open this notebook, read the code, and run the cells. You can use this notebook to work on the following exercises.</p>
+  <p>The code for this chapter is in <url href="https://colab.research.google.com/drive/1VK6qyGyyjm5AYnPjfxlHuXCLFSCUMY7z?usp=sharing" visual="https://colab.research.google.com/drive/1VK6qyGyyjm5AYnPjfxlHuXCLFSCUMY7z?usp=sharing">Agent-Based Models</url>. For more information about working with this code, see <xref ref="preface_notebooks" text="custom">the preface discussion of notebooks</xref>.</p>
+
+<p><term>Notebook Exercises:</term> Launch  <url href="https://colab.research.google.com/drive/1VK6qyGyyjm5AYnPjfxlHuXCLFSCUMY7z?usp=sharing" visual="https://colab.research.google.com/drive/1VK6qyGyyjm5AYnPjfxlHuXCLFSCUMY7z?usp=sharing">Agent-Based Models</url>, make a copy, and run the code. There are a few exercises embedded in the notebook that you might want to try.</p>
+
+
   <p><term>Exercise 1:</term>  Bill Bishop, author of <em>The Big Sort</em>, argues that American society is increasingly segregated by political opinion, as people choose to live among like-minded neighbors.</p>
   <p>The mechanism Bishop hypothesizes is not that people, like the agents in Schelling's model, are more likely to move if they are isolated, but that when they move for any reason, they are likely to choose a neighborhood with people like themselves.</p>
   <p>Modify your implementation of Schelling's model to simulate this kind of behavior and see if it yields similar degrees of segregation.</p>
