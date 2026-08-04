@@ -1,6 +1,8 @@
 <?xml version="1.0"?>
 <exercises xml:id="small-world-graphs_exercises">
   <title>Exercises</title>
+  <p>The code for this chapter is in <url href="https://colab.research.google.com/drive/1IB_qwEp2MeNoQbzO1Y_jFuqv5UD455eo?usp=sharing" visual="https://colab.research.google.com/drive/1IB_qwEp2MeNoQbzO1Y_jFuqv5UD455eo?usp=sharing">Small World Graphs</url>. More information about working with the code is in <xref ref="preface_notebooks" text="custom">the preface discussion of notebooks</xref>.</p>
+  <p><term>Notebook Exercises:</term> Launch <url href="https://colab.research.google.com/drive/1IB_qwEp2MeNoQbzO1Y_jFuqv5UD455eo?usp=sharing" visual="https://colab.research.google.com/drive/1IB_qwEp2MeNoQbzO1Y_jFuqv5UD455eo?usp=sharing">Small World Graphs</url>, make a copy, and run the code. There are a few exercises embedded in the notebook that you might want to try.</p>
   <p><term>Exercise 1:</term>
             In a ring lattice, every node has the same number of neighbors. The number of neighbors is called the <idx>degree</idx><term>degree</term> of the node, and a graph where all nodes have the same degree is called a <idx>regular path</idx><term>regular graph</term>.</p>
   <p>All ring lattices are regular, but not all regular graphs are ring lattices. In particular, if k is odd, we can't construct a ring lattice, but we might be able to construct a regular graph.</p>

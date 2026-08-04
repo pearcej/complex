@@ -23,7 +23,17 @@
   <p>This book will attempt to offer answers to these questions, but they are tentative and sometimes speculative. You are encouraged to consider them skeptically and reach your own conclusions.</p>
   <exercise>
     <statement>
-      <p>Considering the passage above, what is the difference between a Watts and Strogatz model and the like, and a conventional mathematical model?</p>
+      <p>Drag each model type to the description that matches it, based on the passage above.</p>
     </statement>
+    <matches>
+      <match order="1">
+        <premise>Watts and Strogatz style model</premise>
+        <response>Abstract and simulation-based, with results that resemble an example more than a proof.</response>
+      </match>
+      <match order="2">
+        <premise>Conventional mathematical model</premise>
+        <response>Realistic and equation-based, with results derived through mathematical analysis that resemble a formal proof.</response>
+      </match>
+    </matches>
   </exercise>
 </section>

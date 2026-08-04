@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="cellular-automatons_cross-correlation">
   <title>Cross-Correlation</title>
-  <p xml:id="cellular-automatons_cross-correlation-intro">The operation in the previous section — selecting elements from an array and adding them up — is an example of an operation that is so useful, in so many domains, that it has a name: <idx>cross-correlation</idx><term>cross-correlation</term>. And NumPy provides a function, called <c>correlate</c>, that computes it. In this section we'll see how we can use NumPy to write a simpler, faster version of <c>step</c>.</p>
+  <p> xml:id="cellular-automatons_cross-correlation-intro" The operation in the previous <xref ref="cellular-automatons_implementing-cas"/> — selecting elements from an array and adding them up — is an example of an operation that is so useful, in so many domains, that it has a name: <idx>cross-correlation</idx><term>cross-correlation</term>. And NumPy provides a function, called <c>correlate</c>, that computes it. In this section we'll see how we can use NumPy to write a simpler, faster version of <c>step</c>.</p>
   <p>The NumPy <c>correlate</c> function takes an array, <c>a</c>, and a <q>window</q>, <c>w</c>, with length N and computes a new array, <c>c</c>, where element <c>k</c> is the following summation:</p>
 
 <p>
