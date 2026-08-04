@@ -1,6 +1,9 @@
 <?xml version="1.0"?>
 <exercises xml:id="physical-modeling_exercises">
   <title>Exercises</title>
+ <p>The code for this chapter is in <url href="https://colab.research.google.com/drive/19cCq-KBM4UUsNSGv12GKPeJ0f7xPFt9i?usp=sharing" visual="https://colab.research.google.com/drive/19cCq-KBM4UUsNSGv12GKPeJ0f7xPFt9i?usp=sharing">Physical Modeling</url>. More information about working with the code is in <xref ref="preface_notebooks"/>.</p>
+  <p><term>Notebook Exercises:</term> Launch <url href="https://colab.research.google.com/drive/19cCq-KBM4UUsNSGv12GKPeJ0f7xPFt9i?usp=sharing" visual="https://colab.research.google.com/drive/19cCq-KBM4UUsNSGv12GKPeJ0f7xPFt9i?usp=sharing">Physical Modeling</url>, make a copy, and run the code. There are a few exercises embedded in the notebook that you might want to try.</p>
+
   <p><term>Exercise 1:</term> In <xref ref="physical-modeling_fractals"/> we showed that the Rule 18 CA produces a fractal. Can you find other 1-D CAs that produce fractals?</p>
   <p>Note: the <c>Cell1D</c> object does not wrap around from the left edge to the right, which creates artifacts at the boundaries for some rules. You might want to use <c>Wrap1D</c>, which is a child class of <c>Cell1D</c> that wraps around. It is defined in <c>Cell1D.py</c> in the repository for this book.</p>
   <p><term>Exercise 2:</term> In 1990 Bak, Chen and Tang proposed a cellular automaton that is an abstract model of a forest fire. Each cell is in one of three states: empty, occupied by a tree, or on fire.</p>
