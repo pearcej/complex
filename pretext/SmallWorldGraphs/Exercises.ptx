@@ -50,7 +50,7 @@ return visited</pre>
     </ul>
   </p>
   <p>If a range of similar models yield similar behavior, we say that the results of the paper are <idx>robust</idx><term>robust</term>.</p>
-  <p><term>Exercise 6:</term>
+  <p><term>Exercise 5:</term>
             Dijkstra's algorithm solves the <q>single source shortest path</q> problem, but to compute the characteristic path length of a graph, we actually want to solve the <q>all pairs shortest path</q> problem.</p>
   <p>Of course, one option is to run Dijkstra's algorithm n times, once for each starting node. And for some applications, that's probably good enough. But there are are more efficient alternatives.</p>
   <p>Find an algorithm for the all-pairs shortest path problem and implement it.</p>
