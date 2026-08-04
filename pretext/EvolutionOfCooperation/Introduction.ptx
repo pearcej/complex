@@ -13,5 +13,5 @@
     </ul>
   </p>
   <p>The tools we will use to address these questions are agent-based simulation (again) and game theory, which is a set of abstract models meant to describe ways agents interact. Specifically, the game we will consider is the Prisoner's Dilemma.</p>
-  <p>The code for this chapter is in <url href="https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap14.ipynb" visual="https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap14.ipynb">chap14.ipynb</url>, which is a notebook in the repository for this book. For more information about working with this code, see  <xref ref="preface_notebooks" text="custom">the preface discussion of notebooks</xref>.</p>
+  <p>The code for this chapter is in <url href="https://colab.research.google.com/drive/1v375Oz2H-WtRf5AKBxZRPcRn6ulsAmqc?usp=sharing" visual="https://colab.research.google.com/drive/1v375Oz2H-WtRf5AKBxZRPcRn6ulsAmqc?usp=sharing">Evolution of Cooperation</url>. For more information about working with this code, see  <xref ref="preface_notebooks" text="custom">the preface discussion of notebooks</xref>.</p>
 </section>
