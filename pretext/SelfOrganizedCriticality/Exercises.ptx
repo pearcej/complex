@@ -1,7 +1,10 @@
 <?xml version="1.0"?>
 <exercises xml:id="self-organized-criticality_exercises">
   <title>Exercises</title>
-  <p>The code for this chapter is in the Jupyter notebook <url href="https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap10.ipynb" visual="https://colab.research.google.com/github/pearcej/complex-colab/blob/master/notebooks/chap10.ipynb">chap10.ipynb</url> in the repository for this book. Open this notebook, read the code, and run the cells. You can use this notebook to work on the following exercises.</p>
+  <p>The code for this chapter is in <url href="https://colab.research.google.com/drive/1_7c13r_VHqM7n3UDgiVm0v5zlVXPtaPE?usp=sharing" visual="https://colab.research.google.com/drive/1_7c13r_VHqM7n3UDgiVm0v5zlVXPtaPE?usp=sharing">Self-Organized Criticality</url>. More information about working with the code is in <xref ref="preface_notebooks"/>.</p>
+<p><term>Notebook Exercises:</term> Launch  <url href="https://colab.research.google.com/drive/1_7c13r_VHqM7n3UDgiVm0v5zlVXPtaPE?usp=sharing" visual="https://colab.research.google.com/drive/1_7c13r_VHqM7n3UDgiVm0v5zlVXPtaPE?usp=sharing">Self-Organized Criticality</url>, make a copy, and run the code. There are a few exercises embedded in the notebook that you might want to try.</p>
+
+  
   <p><term>Exercise 1:</term> To test whether the distributions of <c>T</c> and <c>S</c> are heavy-tailed, we plotted their PMFs on a log-log scale, which is what Bak, Tang and Wiesenfeld show in their paper. But as we saw in <xref ref="scale-free-networks_cumulative-distributions"/>, this visualization can obscure the shape of the distribution. Using the same data, make a plot that shows the cumulative distributions (CDFs) of <c>S</c> and <c>T</c>. What can you say about their shape? Do they follow a power law? Are they heavy-tailed?</p>
   <p>You might find it helpful to plot the CDFs on a log-x scale and on a log-log scale.</p>
   <p><term>Exercise 2:</term> In <xref ref="self-organized-criticality_fractals"/> we showed that the initial configuration of the sand pile model produces fractal patterns. But after we drop a large number of random grains, the patterns look more random.</p>
